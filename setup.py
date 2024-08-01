@@ -7,8 +7,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="kabaddi_data_aggregator",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Aniruddha Mukherjee",
+    author_email="mukh.aniruddha@gmail.com",
     description="A Python module for aggregating Kabaddi data",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -27,6 +27,7 @@ setup(
     python_requires=">=3.7",
     install_requires=[
         "selenium",
+        "pandas",
         # Add any other dependencies here
     ],
 )
