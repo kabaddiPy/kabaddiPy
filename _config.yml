@@ -7,5 +7,3 @@ url: https://annimukherjee.github.io/ProKabaddi_API/
 aux_links:
   API Repository: https://github.com/abhineetraj1/prokabaddiAPI/tree/main
 
-plugins:
-  - jekyll-default-layout
