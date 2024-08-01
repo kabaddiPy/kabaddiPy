@@ -211,6 +211,59 @@ class KabaddiDataAggregator:
 
         return results
 
+    def load_data(self, TeamDetails=True, TeamMembers=True, PlayerDetails=True):
+        """
+    Load specified CSV files into pandas DataFrames based on the provided boolean parameters.
+
+    Parameters:
+    - TeamDetails (bool): Loads the 'teamDetails.csv' file. Default is True.
+    - TeamMembers (bool): Loads the 'teamMembers.csv' file. Default is True.
+    - PlayerDetails (bool): Loads the 'playerDetails.csv' file. Default is True.
+
+    Returns:
+    - tuple: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
+        """
+        default_download_directory = r"C:\Users\KIIT\Downloads"
+        if PlayerDetails:
+            player_details_df = pd.read_csv(f"{default_download_directory}/playerDetails.csv")
+            self.player_details_df = player_details_df
+            print("Loaded playerDetails.csv")
+        else:
+            player_details_df = None
+
+        if TeamDetails:
+            team_details_df = pd.read_csv(f"{default_download_directory}/teamDetails.csv")
+            self.team_details_df = team_details_df
+            print("Loaded teamDetails.csv")
+        else:
+            team_details_df = None
+
+        if TeamMembers:
+            team_members_df = pd.read_csv(f"{default_download_directory}/teamMembers.csv")
+            self.team_members_df = team_members_df
+            print("Loaded teamMembers.csv")
+        else:
+            team_members_df = None
+        print("loaded all")
+        return (player_details_df, team_details_df, team_members_df)
+
+    def get_top_raiders(self, df1, df2, team_name="PatnaPirates", top_n=5):
+        # Merge the two dataframes on PlayerName
+        merged_df = pd.merge(df1, df2, left_on="PlayerName", right_on="PlayerName")
+        print("merged")
+        print(merged_df.head())
+        # Filter for the specified team
+        team_df = merged_df[merged_df['TeamName'] == team_name]
+
+        # Sort by TotalPoints in descending order
+        sorted_df = team_df.sort_values('TotalPoints', ascending=False)
+
+        # Filter for Raiders only
+        raiders_df = sorted_df[sorted_df['PlayerProfile'] == 'Raider']
+
+        # Return the top N raiders
+        print(raiders_df.head(top_n))
+
 
 # Usage example
 if __name__ == "__main__":
