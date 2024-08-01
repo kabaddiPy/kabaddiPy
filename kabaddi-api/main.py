@@ -6,9 +6,9 @@ aggregator = KabaddiDataAggregator()
 team_names = aggregator.get_all_team_names()
 print("Team Names:", team_names)
 
-# # Get season standings
-# standings = aggregator.team_season_standings()
-# print("Season Standings:", standings)
+# Get season standings
+standings = aggregator.team_season_standings()
+print("Season Standings:", standings)
 
 # Get player information
 players_info = aggregator.get_players_team_info_and_profile_url()
