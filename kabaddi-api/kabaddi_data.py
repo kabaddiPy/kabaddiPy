@@ -98,71 +98,55 @@ class KabaddiDataAggregator:
         return {labels[0]: values[0], labels[1]: values[1], "teamName": team}
 
     def team_season_standings(self, team=None, rank=None):
+        """
+            Returns the latest season standings.
+            Parameters:
+            team (str, optional): The name of a specific team to get data for. Case-insensitive.
+            rank (int, optional): The rank (1-12) to get the team data for.
+            """
         if team is not None and rank is not None:
             return "Please provide either a team name or a rank, but not both. By default, all the teams will be listed."
-
-        self.driver.get("https://www.prokabaddi.com/")
+        driver.get("https://www.prokabaddi.com/")
         sleep(2)
-        team_names = [
-            i.get_attribute("innerText")
-            for i in self.driver.find_elements(By.CLASS_NAME, "team-name")
-            if i is not None
-        ]
-        plays = [
-            int(i.get_attribute("innerText"))
-            for i in self.driver.find_elements(By.CLASS_NAME, "matches-play")
-            if i is not None
-        ][:-1]
-        wins = [
-            int(i.get_attribute("innerText"))
-            for i in self.driver.find_elements(By.CLASS_NAME, "matches-won")
-            if i is not None
-        ][:-1]
-        losses = [
-            int(i.get_attribute("innerText"))
-            for i in self.driver.find_elements(By.CLASS_NAME, "matches-lost")
-            if i is not None
-        ][:-1]
-        draws = [
-            int(i.get_attribute("innerText"))
-            for i in self.driver.find_elements(By.CLASS_NAME, "matches-draw")
-            if i is not None
-        ][:-1]
-        points = [
-            int(i.get_attribute("innerText"))
-            for i in self.driver.find_elements(By.CLASS_NAME, "points")
-            if i is not None
-        ][:-1]
-
-        team_standings = [
-            {
-                "TeamName": name,
-                "play": play,
-                "won": won,
-                "lost": lost,
-                "draw": draw,
-                "points": point,
-            }
-            for name, play, won, lost, draw, point in zip(
-                team_names, plays, wins, losses, draws, points
-            )
-        ]
-
+        team_name = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "team-name") if
+                     i is not None]
+        play = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-play") if
+                i is not None]
+        play = play[::-1][:len(play) - 1][::-1]
+        won = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-won") if
+               i is not None]
+        won = won[::-1][:len(won) - 1][::-1]
+        lost = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-lost") if
+                i is not None]
+        lost = lost[::-1][:len(lost) - 1][::-1]
+        draw = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-draw") if
+                i is not None]
+        draw = draw[::-1][:len(draw) - 1][::-1]
+        points = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "points") if i is not None]
+        points = points[::-1][:len(points) - 1][::-1]
+        team_property_dict = {
+            team_name[i].lower(): {
+                "TeamName": team_name[i],
+                "play": int(play[i]),
+                "won": int(won[i]),
+                "lost": int(lost[i]),
+                "draw": int(draw[i]),
+                "points": int(points[i])
+            } for i in range(len(team_name))
+        }
         if team is None and rank is None:
-            return team_standings
-        if team is not None:
-            return next(
-                (t for t in team_standings if t["TeamName"].lower() == team.lower()),
-                "Enter a valid team name!",
-            )
-        if 1 <= rank <= 12:
-            sorted_teams = sorted(
-                team_standings, key=lambda x: x["points"], reverse=True
-            )
-            return sorted_teams[rank - 1]
+            return team_property_dict
+        if team != None:
+            if team.lower() in team_property_dict:
+                return team_property_dict.get(team.lower())
+            else:
+                return "Enter a valid team name!"
+        if (rank != None) and (1 <= rank <= 12):
+            sorted_teams = sorted(team_property_dict.values(), key=lambda x: x['points'], reverse=True)
+            print(f"Rank : {rank}")
+            return sorted_teams[int(rank)]
         else:
             return "Enter rank between 1 and 12!"
-
     def get_all_season_team_stats(self, url):
         self.driver.get(url)
         with open("get_team_performance.js", "r") as f:

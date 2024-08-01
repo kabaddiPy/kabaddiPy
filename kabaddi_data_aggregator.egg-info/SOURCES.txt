@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+kabaddi_data_aggregator.egg-info/PKG-INFO
+kabaddi_data_aggregator.egg-info/SOURCES.txt
+kabaddi_data_aggregator.egg-info/dependency_links.txt
+kabaddi_data_aggregator.egg-info/top_level.txt
