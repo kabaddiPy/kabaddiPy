@@ -25,4 +25,4 @@ enable_copy_code_button: true
 
 search_enabled: true
 
-permalink: pretty
+# permalink: pretty
