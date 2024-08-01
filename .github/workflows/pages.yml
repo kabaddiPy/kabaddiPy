@@ -1,21 +1,17 @@
-# This workflow deploys a Jekyll site from the 'docs' directory to GitHub Pages
-
 name: Deploy Jekyll site to Pages
 
 on:
   push:
     branches: ["main"]
     paths:
-      - 'docs/**'  # Only trigger on changes in the docs directory
-  workflow_dispatch:  # Allows manual triggering of the workflow
+      - 'docs/**'
+  workflow_dispatch:
 
-# Permissions required for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Ensure only one deployment happens at a time
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -23,6 +19,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs  # Set the default working directory for all run steps
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,32 +30,30 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: true  # Caches installed gems for faster builds
-          cache-version: 0  # Increment to clear the cache
-          working-directory: '${{ github.workspace }}/docs'  # Set Ruby environment in docs directory
+          bundler-cache: true
+          cache-version: 0
+          working-directory: '${{ github.workspace }}/docs'
       
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       
       - name: Build with Jekyll
-        run: |
-          cd docs  # Change to docs directory
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "docs/_site/"  # Upload the built site from docs/_site/
+          path: "docs/_site/"
 
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build  # Ensure build job completes before deploying
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
