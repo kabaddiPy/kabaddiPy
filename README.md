@@ -1,4 +1,22 @@
-# Kabaddi Data Aggregator
+<p align="center">
+  <img src="assets/kabaddi_api_logo.png" alt="Kabaddi Data Aggregator Logo" width="200"/>
+</p>
+
+<h1 align="center">Kabaddi Data Aggregator</h1>
+
+<p align="center">
+  <strong>Comprehensive data collection and analysis tools for professional Kabaddi leagues</strong>
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
+
+---
 
 Kabaddi Data Aggregator is a Python module that provides tools for collecting and analyzing data from professional Kabaddi leagues. It uses web scraping techniques to gather information about teams, players, and match statistics from various online sources.
 
@@ -82,5 +100,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions, feel free to reach out to [Your Name] at [your.email@example.com] or open an issue in the GitHub repository.
 
 ---
+
+<p align="center">
+  Made with ❤️ for Kabaddi enthusiasts and data analysts
+</p>
 
 Remember to star this repository if you find it helpful! Your support is greatly appreciated.
