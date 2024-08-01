@@ -2,6 +2,8 @@ title: Documentation for the ProKabaddi API
 description: A comprehensive description of all the endpoints for the API.
 theme: just-the-docs
 
+baseurl: "/docs"
+
 url: https://annimukherjee.github.io/ProKabaddi_API/
 
 aux_links:
