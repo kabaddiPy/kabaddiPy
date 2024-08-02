@@ -2,6 +2,7 @@
 title: ProKabaddi API Docs
 layout: default
 has_toc: false
+has_children: true
 ---
 
 
