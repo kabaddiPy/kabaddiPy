@@ -25,8 +25,11 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 
 ---
 
-## Endpoints API
-This is how you set up your endpoints.
+## Installation 
+Use the following command to install.
+```commandline
+pip install pro_kabaddi_data
+```
 
 ---
 ## load_data
