@@ -1,10 +1,15 @@
 ---
 title: Team Functions
 layout: default
-has_toc: false
+has_toc: true
 has_children: true
 ---
+# Team Functions
 
+- [Table of Contents](#table-of-contents)
+  - [get\_all\_team\_names](#get_all_team_names)
+    - [Usage](#usage)
+    - [Returns](#returns)
 ---
 
 ## get_all_team_names

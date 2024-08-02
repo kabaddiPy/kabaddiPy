@@ -16,6 +16,7 @@ This is an update.
 
 - [Prokabaddi API](#prokabaddi-api)
   - [Table of Contents](#table-of-contents)
+  - [Team Functions](#Team Functions)
   - [get\_all\_team\_names](#get_all_team_names)
     - [Usage](#usage)
     - [Returns](#returns)
