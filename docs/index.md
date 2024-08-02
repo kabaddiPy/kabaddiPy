@@ -19,6 +19,7 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
   - [Team Functions](team_docs/index.md)
   - [Player Functions](player_docs/index.md)
   - [Planned functions](planned_docs/index.md)
+
 ---
 
 ## Endpoints API
