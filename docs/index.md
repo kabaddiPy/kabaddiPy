@@ -10,161 +10,39 @@ has_children: true
 
 This documentation covers the main functions of the `KabaddiDataAggregator` class that return useful data for Kabaddi statistics and information.
 
-This is an update.
+**Note**: This documentation is actively being developed alongwith the API.
 
 ## Table of Contents
 
 - [Prokabaddi API](#prokabaddi-api)
-  - [Table of Contents](#table-of-contents)
-  - [Team Functions](#Team Functions)
-  - [get\_all\_team\_names](#get_all_team_names)
-    - [Usage](#usage)
-    - [Returns](#returns)
-  - [get\_all\_team\_url](#get_all_team_url)
-    - [Usage](#usage-1)
-    - [Returns](#returns-1)
-  - [get\_all\_player\_team\_url](#get_all_player_team_url)
-    - [Usage](#usage-2)
-    - [Returns](#returns-2)
-  - [get\_players\_team\_info\_and\_profile\_url](#get_players_team_info_and_profile_url)
-    - [Usage](#usage-3)
-    - [Returns](#returns-3)
-  - [get\_stats\_from\_player\_profile](#get_stats_from_player_profile)
-    - [Usage](#usage-4)
-    - [Parameters](#parameters)
-    - [Returns](#returns-4)
-  - [team\_season\_standings](#team_season_standings)
-    - [Usage](#usage-5)
-    - [Parameters](#parameters-1)
-    - [Returns](#returns-5)
-  - [get\_all\_season\_team\_stats](#get_all_season_team_stats)
-    - [Usage](#usage-6)
-    - [Parameters](#parameters-2)
-    - [Returns](#returns-6)
-  - [team\_line\_up](#team_line_up)
-    - [Usage](#usage-7)
-    - [Returns](#returns-7)
-  - [team\_level\_stats](#team_level_stats)
-    - [Usage](#usage-8)
-    - [Returns](#returns-8)
-  - [player\_performance](#player_performance)
-    - [Usage](#usage-9)
-    - [Returns](#returns-9)
-
+  - [Team Functions](team_docs/index.md)
+  - [Player Functions](player_docs/index.md)
+  - [Endpoints API](#endpoints-api)
+  - [Planned functions]()
 ---
 
-## get_all_team_names
+## Endpoints API
+This is how you set up your endpoints.
 
-Retrieves the names of all teams in the Pro Kabaddi League.
+---
+## load_data
+
+Loads files into pandas DataFrames based on provided boolean parameters.
 
 ### Usage
 
 ```python
-aggregator = KabaddiDataAggregator()
-team_names = aggregator.get_all_team_names()
+data_loader = KabaddiDataAggregator()
+player_df, team_df, members_df = data_loader.load_data(TeamDetails=True, TeamMembers=True, PlayerDetails=True)
 ```
-
-### Returns
-
-- `List[str]`: A list of team names.
-
----
-
-## get_all_team_url
-
-Retrieves the URLs for all team pages on the Pro Kabaddi website.
-
-### Usage
-
-```python
-aggregator = KabaddiDataAggregator()
-team_urls = aggregator.get_all_team_url()
-```
-
-### Returns
-
-- `List[str]`: A list of URLs for team pages.
-
----
-
-## get_all_player_team_url
-
-Retrieves the URLs for all player team pages on the Pro Kabaddi website.
-
-### Usage
-
-```python
-aggregator = KabaddiDataAggregator()
-player_team_urls = aggregator.get_all_player_team_url()
-```
-
-### Returns
-
-- `List[str]`: A list of URLs for player team pages.
-
----
-
-## get_players_team_info_and_profile_url
-
-Retrieves information about players, including their names, profile URLs, and team URLs.
-
-### Usage
-
-```python
-aggregator = KabaddiDataAggregator()
-players_info = aggregator.get_players_team_info_and_profile_url()
-```
-
-### Returns
-
-- `List[Dict[str, str]]`: A list of dictionaries, each containing:
-  - `name`: Player's name
-  - `profileURL`: URL of the player's profile page
-  - `teamURL`: URL of the player's team page
-
----
-
-## get_stats_from_player_profile
-
-Retrieves statistics from a player's profile page.
-
-### Usage
-
-```python
-aggregator = KabaddiDataAggregator()
-player_stats = aggregator.get_stats_from_player_profile(profile_url)
-```
-
 ### Parameters
-
-- `profile_url` (str): The URL of the player's profile page.
-
+- `TeamDetails` (bool): Loads the details of every team. Default is True.
+- `TeamMembers` (bool): Loads the members of all teams for the recent season. Default is True.
+- `PlayerDetails` (bool): Loads all individual attributes of players. Default is True.
+---
 ### Returns
-
-- `Dict[str, str]`: A dictionary containing:
-  - Two key-value pairs for player statistics (keys and values depend on the available data)
-  - `teamName`: The name of the player's team
+- `tuple`: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
 
 ---
-
-
-## player_performance
-
-Retrieves player performance data from a Tableau dashboard.
-
-### Usage
-
-```python
-aggregator = KabaddiDataAggregator()
-player_performance_data = aggregator.player_performance()
-```
-
-### Returns
-
-- `List`: A list containing player performance data extracted from the Tableau dashboard. The structure depends on the data available in the dashboard.
-
----
-
-**Note**: The functions that interact with Tableau dashboards (`team_line_up`, `team_level_stats`, and `player_performance`) may return complex data structures. The exact format of the returned data depends on the structure and content of the Tableau dashboards at the time of extraction.
 
 
