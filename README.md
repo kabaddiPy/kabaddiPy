@@ -13,7 +13,8 @@
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#contributing">Contributing</a> •
-  <a href="#license">License</a>
+  <a href="#license">License</a> •
+  <a href="https://annimukherjee.github.io/ProKabaddi_API/">Documentation</a>
 </p>
 
 ---
