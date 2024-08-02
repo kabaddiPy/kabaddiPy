@@ -44,9 +44,9 @@ data_loader = KabaddiDataAggregator()
 player_df, team_df, members_df = data_loader.load_data(TeamDetails=False, TeamMembers=False, PlayerDetails=True)
 ```
 ### Parameters
-- `TeamDetails` (bool): Loads the details of every team. Default is False.
-- `TeamMembers` (bool): Loads the members of all teams for the recent season. Default is False.
-- `PlayerDetails` (bool): Loads all individual attributes of players. Default is True.
+- `TeamDetails` (bool): Loads the details of every team. Default is `False`.
+- `TeamMembers` (bool): Loads the members of all teams for the recent season. Default is `False`.
+- `PlayerDetails` (bool): Loads all individual attributes of players. Default is `True`.
 
 ### Returns
 - `tuple`: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
