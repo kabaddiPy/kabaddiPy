@@ -5,10 +5,23 @@ has_toc: true
 has_children: false
 ---
 ## Table of Contents
-  - [get\_stats\_from\_player\_profile](#get_stats_from_player_profile)
-  - [player\_performance](#player_performance)
-  - [get\_all\_player\_team\_url](#get_all_player_team_url)
-  - [get\_players\_team\_info\_and\_profile\_url](#get_players_team_info_and_profile_url)
+- [Table of Contents](#table-of-contents)
+- [get\_stats\_from\_player\_profile](#get_stats_from_player_profile)
+  - [Usage](#usage)
+  - [Parameters](#parameters)
+  - [Returns](#returns)
+- [player\_performance](#player_performance)
+  - [Usage](#usage-1)
+  - [Returns](#returns-1)
+- [get\_all\_player\_team\_url](#get_all_player_team_url)
+  - [Usage](#usage-2)
+  - [Returns](#returns-2)
+- [get\_players\_team\_info\_and\_profile\_url](#get_players_team_info_and_profile_url)
+  - [Usage](#usage-3)
+  - [Returns](#returns-3)
+- [player\_performance](#player_performance-1)
+  - [Usage](#usage-4)
+  - [Returns](#returns-4)
 
 
 
@@ -90,7 +103,6 @@ players_info = aggregator.get_players_team_info_and_profile_url()
 
 
 
-<<<<<<< HEAD
 =======
 
 ## player_performance

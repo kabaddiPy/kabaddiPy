@@ -106,23 +106,23 @@ class KabaddiDataAggregator:
             """
         if team is not None and rank is not None:
             return "Please provide either a team name or a rank, but not both. By default, all the teams will be listed."
-        driver.get("https://www.prokabaddi.com/")
+        self.driver.get("https://www.prokabaddi.com/")
         sleep(2)
-        team_name = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "team-name") if
+        team_name = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "team-name") if
                      i is not None]
-        play = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-play") if
+        play = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-play") if
                 i is not None]
         play = play[::-1][:len(play) - 1][::-1]
-        won = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-won") if
+        won = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-won") if
                i is not None]
         won = won[::-1][:len(won) - 1][::-1]
-        lost = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-lost") if
+        lost = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-lost") if
                 i is not None]
         lost = lost[::-1][:len(lost) - 1][::-1]
-        draw = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "matches-draw") if
+        draw = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-draw") if
                 i is not None]
         draw = draw[::-1][:len(draw) - 1][::-1]
-        points = [i.get_attribute("innerText") for i in driver.find_elements(By.CLASS_NAME, "points") if i is not None]
+        points = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "points") if i is not None]
         points = points[::-1][:len(points) - 1][::-1]
         team_property_dict = {
             team_name[i].lower(): {
