@@ -17,7 +17,7 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 
 - [Prokabaddi API](#prokabaddi-api)
   - [Table of Contents](#table-of-contents)
-  - [Endpoints API](#endpoints-api)
+  - [Installation](#installation)
   - [load\_data](#load_data)
     - [Usage](#usage)
     - [Parameters](#parameters)
@@ -25,8 +25,11 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 
 ---
 
-## Endpoints API
-This is how you set up your endpoints.
+## Installation 
+Use the following command to install.
+```commandline
+pip install pro_kabaddi_data
+```
 
 ---
 ## load_data
@@ -37,11 +40,11 @@ Loads files into pandas DataFrames based on provided boolean parameters.
 
 ```python
 data_loader = KabaddiDataAggregator()
-player_df, team_df, members_df = data_loader.load_data(TeamDetails=True, TeamMembers=True, PlayerDetails=True)
+player_df, team_df, members_df = data_loader.load_data(TeamDetails=False, TeamMembers=False, PlayerDetails=True)
 ```
 ### Parameters
-- `TeamDetails` (bool): Loads the details of every team. Default is True.
-- `TeamMembers` (bool): Loads the members of all teams for the recent season. Default is True.
+- `TeamDetails` (bool): Loads the details of every team. Default is False.
+- `TeamMembers` (bool): Loads the members of all teams for the recent season. Default is False.
 - `PlayerDetails` (bool): Loads all individual attributes of players. Default is True.
 
 ### Returns
