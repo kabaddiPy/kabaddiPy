@@ -17,7 +17,7 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 
 - [Prokabaddi API](#prokabaddi-api)
   - [Table of Contents](#table-of-contents)
-  - [Endpoints API](#endpoints-api)
+  - [Installation](#installation)
   - [load\_data](#load_data)
     - [Usage](#usage)
     - [Parameters](#parameters)
