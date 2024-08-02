@@ -5,7 +5,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 import json
-
+import pandas as pd
+import glob
+import os
 
 WEBSITE_URL_1_PREFIX = "https://www.prokabaddi.com"
 
@@ -13,9 +15,11 @@ WEBSITE_URL_1_PREFIX = "https://www.prokabaddi.com"
 class KabaddiDataAggregator:
     def __init__(self, headless=True):
         options = webdriver.FirefoxOptions()
-        if headless:
-            options.add_argument("--headless")
+        options.add_argument("--headless")
         self.driver = webdriver.Firefox(options=options)
+        self.player_details_df = None
+        self.team_details_df = None
+        self.team_members_df = None
 
     def __del__(self):
         self.driver.quit()
@@ -36,46 +40,6 @@ class KabaddiDataAggregator:
             ]
             if i is not None and "players" in i
         ]
-
-    def get_all_player_team_url(self):
-        self.driver.get(f"{WEBSITE_URL_1_PREFIX}/stats")
-        return [
-            i
-            for i in [
-                i.get_attribute("href")
-                for i in self.driver.find_elements(By.TAG_NAME, "a")
-                if i is not None
-            ]
-            if i is not None and "players" in i
-        ]
-
-    def get_players_team_info_and_profile_url(self):
-        players_info = []
-        urls = self.get_all_player_team_url()
-        for url in urls:
-            self.driver.get(url)
-            try:
-                player_profile_urls = [
-                    x
-                    for x in [
-                        i.get_attribute("href")
-                        for i in self.driver.find_elements(By.TAG_NAME, "a")
-                        if i is not None
-                    ]
-                    if x is not None and "profile" in x and "/players/" in x
-                ]
-                player_names = [
-                    i.get_attribute("innerText").replace("\n", " ")
-                    for i in self.driver.find_elements(By.CLASS_NAME, "squad-name")
-                    if i is not None
-                ]
-                for name, profile_url in zip(player_names, player_profile_urls):
-                    players_info.append(
-                        {"name": name, "profileURL": profile_url, "teamURL": url}
-                    )
-            except Exception as e:
-                print(f"Error processing URL {url}: {str(e)}")
-        return players_info
 
     def get_stats_from_player_profile(self, profile_url):
         self.driver.get(profile_url)
@@ -122,7 +86,8 @@ class KabaddiDataAggregator:
         draw = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-draw") if
                 i is not None]
         draw = draw[::-1][:len(draw) - 1][::-1]
-        points = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "points") if i is not None]
+        points = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "points") if
+                  i is not None]
         points = points[::-1][:len(points) - 1][::-1]
         team_property_dict = {
             team_name[i].lower(): {
@@ -147,31 +112,32 @@ class KabaddiDataAggregator:
             return sorted_teams[int(rank)]
         else:
             return "Enter rank between 1 and 12!"
+
     def get_all_season_team_stats(self, url):
         self.driver.get(url)
         with open("get_team_performance.js", "r") as f:
             js_code = f.read()
         return self.driver.execute_script(js_code)
 
-    def team_line_up(self):
+    def team_line_up(self, season=None):
         return self._tableau_data_extraction(
             "https://public.tableau.com/views/DEMO_PKL_S9/TeamLine-up?%3Adisplay_static_image=y&%3Aembed=true&%3Aembed=y&%3Alanguage=en-US&publish=yes%20&%3AshowVizHome=n&%3AapiID=host0#navType=0&navSrc=Parse",
             5,
         )
 
-    def team_level_stats(self):
+    def team_level_stats(self, season=None):
         return self._tableau_data_extraction(
-            "https://public.tableau.com/views/DEMO_PKL_S9/Teamlevelstats?%3Adisplay_static_image=y&%3Aembed=true&%3Aembed=y&%3Alanguage=en-US&publish=yes%20&%3AshowVizHome=n&%3AapiID=host0#navType=0&navSrc=Parse",
-            3,
+            url="https://public.tableau.com/views/DEMO_PKL_S9/Teamlevelstats?%3Adisplay_static_image=y&%3Aembed=true&%3Aembed=y&%3Alanguage=en-US&publish=yes%20&%3AshowVizHome=n&%3AapiID=host0#navType=0&navSrc=Parse",
+            season=4,
         )
 
-    def player_performance(self):
+    def player_performance(self, team=None):
         return self._tableau_data_extraction(
             "https://public.tableau.com/views/DEMO_PKL_S9/PlayerPerformance?%3Adisplay_static_image=y&%3Aembed=true&%3Aembed=y&%3Alanguage=en-US&publish=yes%20&%3AshowVizHome=n&%3AapiID=host0#navType=0&navSrc=Parse",
             3,
         )
 
-    def _tableau_data_extraction(self, url, iterations):
+    def _tableau_data_extraction(self, url, season=None, iterations=0):
         """
         Extract data from the specified Tableau dashboard using Selenium.
 
@@ -187,51 +153,76 @@ class KabaddiDataAggregator:
         self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[0].click()
         self.driver.find_elements(By.CLASS_NAME, "FICheckRadio")[5].click()
 
-        results = []
-        for y in range(1, iterations + 1):
-            print(f"Iteration {y} started")
-            self.driver.find_elements(By.CLASS_NAME, "FICheckRadio")[y].click()
+        if season is not None:
+            self.driver.find_elements(By.CLASS_NAME, "FICheckRadio")[season].click()
             sleep(2)
-            with open("script.js", "r") as f:
-                js_code = f.read()
-            data = self.driver.execute_script(js_code)
-            results.append(data)
+            self.driver.execute_script(open("script.js", "r").read())
+            self.driver.save_screenshot(f"screenshot_{season}.png")
             sleep(7)
-            self.driver.save_screenshot(f"screenshot_{y}.png")
+            self.driver.save_screenshot("2.png")
             sleep(2)
             try:
-                self.driver.execute_script(
-                    "document.getElementsByClassName('f1b5ibck')[0].click()"
-                )
+                self.driver.execute_script("document.getElementsByClassName('f1b5ibck')[0].click()");
+            except:
+                pass
+                sleep(2)
+            self.driver.save_screenshot("3.png")
+            sleep(2)
+            try:
+                self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[0].click()
             except:
                 pass
             sleep(2)
             try:
-                self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[
-                    0
-                ].click()
-            except:
-                pass
-            sleep(2)
-            try:
-                self.driver.find_elements(By.CLASS_NAME, "FICheckRadio")[y].click()
-            except:
-                pass
-            print(f"Iteration {y} completed")
+                self.driver.find_elements(By.CLASS_NAME, "FICheckRadio")[season].click()
+            except Exception as e:
+                print(e)
+            print("done")
 
-        return results
+        if season is None:
+            results = []
+            for y in range(1, iterations + 1):
+                print(f"Iteration {y} started")
+                self.driver.find_elements(By.CLASS_NAME, "FICheckRadio")[y].click()
+                sleep(2)
+                with open("script.js", "r") as f:
+                    js_code = f.read()
+                data = self.driver.execute_script(js_code)
+                results.append(data)
+                sleep(7)
+                self.driver.save_screenshot(f"screenshot_{y}.png")
+                sleep(2)
+                try:
+                    self.driver.execute_script(
+                        "document.getElementsByClassName('f1b5ibck')[0].click()"
+                    )
+                except:
+                    pass
+                sleep(2)
+                try:
+                    self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[0].click()
+                except:
+                    pass
+                sleep(2)
+                try:
+                    self.driver.find_elements(By.CLASS_NAME, "FICheckRadio")[y].click()
+                except:
+                    pass
+                print(f"Iteration {y} completed")
+
+            return results
 
     def load_data(self, TeamDetails=True, TeamMembers=True, PlayerDetails=True):
         """
-    Load specified CSV files into pandas DataFrames based on the provided boolean parameters.
+        Load specified CSV files into pandas DataFrames based on the provided boolean parameters.
 
-    Parameters:
-    - TeamDetails (bool): Loads the 'teamDetails.csv' file. Default is True.
-    - TeamMembers (bool): Loads the 'teamMembers.csv' file. Default is True.
-    - PlayerDetails (bool): Loads the 'playerDetails.csv' file. Default is True.
+        Parameters:
+        - TeamDetails (bool): Loads the 'teamDetails.csv' file. Default is True.
+        - TeamMembers (bool): Loads the 'teamMembers.csv' file. Default is True.
+        - PlayerDetails (bool): Loads the 'playerDetails.csv' file. Default is True.
 
-    Returns:
-    - tuple: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
+        Returns:
+        - tuple: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
         """
         default_download_directory = r"C:\Users\KIIT\Downloads"
         if PlayerDetails:
@@ -257,36 +248,58 @@ class KabaddiDataAggregator:
         print("loaded all")
         return (player_details_df, team_details_df, team_members_df)
 
-    def get_top_raiders(self, df1, df2, team_name="PatnaPirates", top_n=5):
-        """
-        Retrieve the top N raiders from a specific team based on their total points.
+    # def get_top_raiders(self, df1, df2, team_name = "PatnaPirates", top_n=5):
+    #     # Merge the two dataframes on PlayerName
+    #     df1.PlayerName = df1.PlayerName.astype(str)
+    #     df2.PlayerName = df2.PlayerName.astype(str)
+    #     merged_df = pd.merge(df1, df2, left_on="PlayerName", right_on="PlayerName")
+    #     print("merged")
+    #     print(merged_df.head())
+    #     # Filter for the specified team
+    #     team_df = merged_df[merged_df['TeamName'] == team_name]
 
-        Parameters:
-        df1 (pd.DataFrame): The first dataframe containing player data.
-        df2 (pd.DataFrame): The second dataframe containing additional player data.
-        team_name (str, optional): The name of the team to filter by. Defaults to "PatnaPirates".
-        top_n (int, optional): The number of top raiders to retrieve. Defaults to 5.
+    #     # Sort by TotalPoints in descending order
+    #     sorted_df = team_df.sort_values('TotalPoints', ascending=False)
 
-        Returns:
-        - Dataframe containing the top N raiders for the specified team.
-    """
-        
-        merged_df = pd.merge(df1, df2, left_on="PlayerName", right_on="PlayerName")
-        print("merged")
-        print(merged_df.head())
-        team_df = merged_df[merged_df['TeamName'] == team_name]
-        sorted_df = team_df.sort_values('TotalPoints', ascending=False)
-        raiders_df = sorted_df[sorted_df['PlayerProfile'] == 'Raider']
-        return raiders_df.head(top_n)
+    #     # Filter for Raiders only
+    #     raiders_df = sorted_df[sorted_df['PlayerProfile'] == 'Raider']
+
+    #     # Return the top N raiders
+    #     print(raiders_df.head(top_n))
+
+
+# Usage:
+# top_raiders = self.get_top_raiders_alternative(df1, df2, team_name="Bengal Warriors", top_n=5)
 
 
 # Usage example
 if __name__ == "__main__":
     aggregator = KabaddiDataAggregator()
-    team_names = aggregator.get_all_team_names()
-    print("Team Names:", team_names)
+    # team_names = aggregator.get_all_team_names()
+    # print("Team Names:", team_names)
 
-    standings = aggregator.team_season_standings()
-    print("Season Standings:", json.dumps(standings, indent=2))
+    # standings = aggregator.team_season_standings()
+    # print("Season Standings:", json.dumps(standings, indent=2))
 
-    # Add more usage examples as needed
+    df1, df2, df3 = aggregator.load_data()
+    print(df1.head())
+    print(df3.head())
+    # print("df1 printed")
+    # #df_temp = aggregator.get_top_raiders(df1, df3)
+
+    # #df_temp = aggregator.get_top_raiders(df1, df3)
+    # xy = aggregator.team_level_stats(season=4)
+    # print(xy)
+    # team_names = aggregator.get_all_team_names()
+    # print("Team Names:", team_names)
+
+    # standings = aggregator.team_season_standings(rank=3)
+    # print("Season Standings:", standings)
+    xyz = aggregator.get_all_team_url()
+    print(xyz)
+    xy = aggregator.get_all_player_team_url()
+    print(xy)
+    # players_info = aggregator.get_players_team_info_and_profile_url()
+    # print("Players Info:", players_info)  # Print first 5 players
+    z = aggregator.get_players_team_info_and_profile_url()
+    print(z)
