@@ -172,6 +172,16 @@ class KabaddiDataAggregator:
         )
 
     def _tableau_data_extraction(self, url, iterations):
+        """
+        Extract data from the specified Tableau dashboard using Selenium.
+
+        Parameters:
+        - url (str): The URL of the Tableau dashboard to be accessed.
+        - iterations (int): The number of iterations to perform for data extraction.
+
+        Returns:
+        - results (list): A list of data extracted in each iteration.
+        """
         self.driver.get(url)
         sleep(10)
         self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[0].click()
@@ -248,21 +258,26 @@ class KabaddiDataAggregator:
         return (player_details_df, team_details_df, team_members_df)
 
     def get_top_raiders(self, df1, df2, team_name="PatnaPirates", top_n=5):
-        # Merge the two dataframes on PlayerName
+        """
+        Retrieve the top N raiders from a specific team based on their total points.
+
+        Parameters:
+        df1 (pd.DataFrame): The first dataframe containing player data.
+        df2 (pd.DataFrame): The second dataframe containing additional player data.
+        team_name (str, optional): The name of the team to filter by. Defaults to "PatnaPirates".
+        top_n (int, optional): The number of top raiders to retrieve. Defaults to 5.
+
+        Returns:
+        - Dataframe containing the top N raiders for the specified team.
+    """
+        
         merged_df = pd.merge(df1, df2, left_on="PlayerName", right_on="PlayerName")
         print("merged")
         print(merged_df.head())
-        # Filter for the specified team
         team_df = merged_df[merged_df['TeamName'] == team_name]
-
-        # Sort by TotalPoints in descending order
         sorted_df = team_df.sort_values('TotalPoints', ascending=False)
-
-        # Filter for Raiders only
         raiders_df = sorted_df[sorted_df['PlayerProfile'] == 'Raider']
-
-        # Return the top N raiders
-        print(raiders_df.head(top_n))
+        return raiders_df.head(top_n)
 
 
 # Usage example
