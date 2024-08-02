@@ -36,7 +36,5 @@ search_enabled: true
 nav_external_links:
   - title: ProKabaddi Official Website
     url: https://www.prokabaddi.com/stats
-  - title: ProKabaddi Tableau Data
-    url: https://public.tableau.com/app/profile/sports.kpi/viz/DEMO_PKL_S9/FrontPage?publish=yes%20
   - title: Kabaddi Adda
     url: https://www.kabaddiadda.com/players
