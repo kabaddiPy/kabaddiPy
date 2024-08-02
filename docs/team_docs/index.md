@@ -21,7 +21,10 @@ nav_order: 2
   - [team\_level\_stats](#team_level_stats)
   - [player\_performance](#player_performance)
 - [Player Functions](#player_docs/index.md)
+
+
 ---
+
 
 ## get_all_team_names
 
