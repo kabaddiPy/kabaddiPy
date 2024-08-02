@@ -3,10 +3,10 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kabaddi_data_aggregator"
+name = "ProKabaddi_API"
 version = "0.1.0"
 authors = [
-  { name="Your Name", email="your.email@example.com" },
+  { name="Aniruddha Mukherjee", email="mukh.aniruddha@gmail.com" },
 ]
 description = "A Python module for aggregating Kabaddi data"
 readme = "README.md"
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/kabaddi_data_aggregator"
-"Bug Tracker" = "https://github.com/yourusername/kabaddi_data_aggregator/issues"
+"Homepage" = "https://github.com/annimukherjee/ProKabaddi_API"
+"Bug Tracker" = "https://github.com/annimukherjee/ProKabaddi_API/issues"
