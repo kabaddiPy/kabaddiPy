@@ -8,7 +8,7 @@ has_children: true
 
 
 ## Table of Contents
-- [Team Functions](#Team Functions)
+- [**Team Functions**](#Team Functions)
   - [get\_all\_team\_names](#get_all_team_names)
   - [get\_all\_team\_url](#get_all_team_url)
   - [get\_all\_player\_team\_url](#get_all_player_team_url)

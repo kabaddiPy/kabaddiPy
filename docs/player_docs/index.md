@@ -2,7 +2,7 @@
 title: Player Functions
 layout: default
 has_toc: true
-has_children: true
+has_children: false
 ---
 ## Table of Contents
   - [get\_all\_player\_team\_url](#get_all_player_team_url)

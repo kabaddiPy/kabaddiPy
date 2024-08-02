@@ -15,10 +15,10 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 ## Table of Contents
 
 - [Prokabaddi API](#prokabaddi-api)
+  - [Endpoints API](#endpoints-api)
   - [Team Functions](team_docs/index.md)
   - [Player Functions](player_docs/index.md)
-  - [Endpoints API](#endpoints-api)
-  - [Planned functions]()
+  - [Planned functions](planned_docs/index.md)
 ---
 
 ## Endpoints API
@@ -39,7 +39,7 @@ player_df, team_df, members_df = data_loader.load_data(TeamDetails=True, TeamMem
 - `TeamDetails` (bool): Loads the details of every team. Default is True.
 - `TeamMembers` (bool): Loads the members of all teams for the recent season. Default is True.
 - `PlayerDetails` (bool): Loads all individual attributes of players. Default is True.
----
+
 ### Returns
 - `tuple`: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
 
