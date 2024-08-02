@@ -2,7 +2,7 @@
   <img src="docs/assets/kabaddi_api_logo.png" alt="Kabaddi Data Aggregator Logo" width="200"/>
 </p>
 
-<h1 align="center">Kabaddi Data Aggregator</h1>
+<h1 align="center">Kabaddi Data API</h1>
 
 <p align="center">
   <strong>Comprehensive data collection and analysis tools for professional Kabaddi leagues</strong>
