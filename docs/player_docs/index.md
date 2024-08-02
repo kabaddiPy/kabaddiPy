@@ -91,5 +91,7 @@ player_performance_data = aggregator.player_performance()
 ### Returns
 
 - `List`: A list containing player performance data extracted from the Tableau dashboard. The structure depends on the data available in the dashboard.
+  
 ---
+
 **Note**: The functions that interact with constantly updating dashboards (`team_line_up`, `team_level_stats`, and `player_performance`) may return complex data structures. The exact format of the returned data depends on the structure and content of the Tableau dashboards at the time of extraction.
