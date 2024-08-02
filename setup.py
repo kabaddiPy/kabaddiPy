@@ -5,14 +5,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="kabaddi_data_aggregator",
+    name="ProKabaddi_API",
     version="0.1.0",
     author="Aniruddha Mukherjee",
     author_email="mukh.aniruddha@gmail.com",
     description="A Python module for aggregating Kabaddi data",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/annimukherjee/kabaddi_data_aggregator",
+    url="https://github.com/annimukherjee/ProKabaddi_API",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
