@@ -3,6 +3,7 @@
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from bs4 import BeautifulSoup
 from time import sleep
 import json
 import pandas as pd
@@ -63,32 +64,50 @@ class KabaddiDataAggregator:
 
     def team_season_standings(self, team=None, rank=None):
         """
-            Returns the latest season standings.
-            Parameters:
-            team (str, optional): The name of a specific team to get data for. Case-insensitive.
-            rank (int, optional): The rank (1-12) to get the team data for.
-            """
+        Returns the latest season standings.
+        Parameters:
+        team (str, optional): The name of a specific team to get data for. Case-insensitive.
+        rank (int, optional): The rank (1-12) to get the team data for.
+        """
         if team is not None and rank is not None:
             return "Please provide either a team name or a rank, but not both. By default, all the teams will be listed."
         self.driver.get("https://www.prokabaddi.com/")
         sleep(2)
-        team_name = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "team-name") if
-                     i is not None]
-        play = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-play") if
-                i is not None]
-        play = play[::-1][:len(play) - 1][::-1]
-        won = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-won") if
-               i is not None]
-        won = won[::-1][:len(won) - 1][::-1]
-        lost = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-lost") if
-                i is not None]
-        lost = lost[::-1][:len(lost) - 1][::-1]
-        draw = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "matches-draw") if
-                i is not None]
-        draw = draw[::-1][:len(draw) - 1][::-1]
-        points = [i.get_attribute("innerText") for i in self.driver.find_elements(By.CLASS_NAME, "points") if
-                  i is not None]
-        points = points[::-1][:len(points) - 1][::-1]
+        team_name = [
+            i.get_attribute("innerText")
+            for i in self.driver.find_elements(By.CLASS_NAME, "team-name")
+            if i is not None
+        ]
+        play = [
+            i.get_attribute("innerText")
+            for i in self.driver.find_elements(By.CLASS_NAME, "matches-play")
+            if i is not None
+        ]
+        play = play[::-1][: len(play) - 1][::-1]
+        won = [
+            i.get_attribute("innerText")
+            for i in self.driver.find_elements(By.CLASS_NAME, "matches-won")
+            if i is not None
+        ]
+        won = won[::-1][: len(won) - 1][::-1]
+        lost = [
+            i.get_attribute("innerText")
+            for i in self.driver.find_elements(By.CLASS_NAME, "matches-lost")
+            if i is not None
+        ]
+        lost = lost[::-1][: len(lost) - 1][::-1]
+        draw = [
+            i.get_attribute("innerText")
+            for i in self.driver.find_elements(By.CLASS_NAME, "matches-draw")
+            if i is not None
+        ]
+        draw = draw[::-1][: len(draw) - 1][::-1]
+        points = [
+            i.get_attribute("innerText")
+            for i in self.driver.find_elements(By.CLASS_NAME, "points")
+            if i is not None
+        ]
+        points = points[::-1][: len(points) - 1][::-1]
         team_property_dict = {
             team_name[i].lower(): {
                 "TeamName": team_name[i],
@@ -96,8 +115,9 @@ class KabaddiDataAggregator:
                 "won": int(won[i]),
                 "lost": int(lost[i]),
                 "draw": int(draw[i]),
-                "points": int(points[i])
-            } for i in range(len(team_name))
+                "points": int(points[i]),
+            }
+            for i in range(len(team_name))
         }
         if team is None and rank is None:
             return team_property_dict
@@ -107,7 +127,9 @@ class KabaddiDataAggregator:
             else:
                 return "Enter a valid team name!"
         if (rank != None) and (1 <= rank <= 12):
-            sorted_teams = sorted(team_property_dict.values(), key=lambda x: x['points'], reverse=True)
+            sorted_teams = sorted(
+                team_property_dict.values(), key=lambda x: x["points"], reverse=True
+            )
             print(f"Rank : {rank}")
             return sorted_teams[int(rank)]
         else:
@@ -162,14 +184,18 @@ class KabaddiDataAggregator:
             self.driver.save_screenshot("2.png")
             sleep(2)
             try:
-                self.driver.execute_script("document.getElementsByClassName('f1b5ibck')[0].click()");
+                self.driver.execute_script(
+                    "document.getElementsByClassName('f1b5ibck')[0].click()"
+                )
             except:
                 pass
                 sleep(2)
             self.driver.save_screenshot("3.png")
             sleep(2)
             try:
-                self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[0].click()
+                self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[
+                    0
+                ].click()
             except:
                 pass
             sleep(2)
@@ -200,7 +226,9 @@ class KabaddiDataAggregator:
                     pass
                 sleep(2)
                 try:
-                    self.driver.find_elements(By.CLASS_NAME, "tabComboBoxNameContainer")[0].click()
+                    self.driver.find_elements(
+                        By.CLASS_NAME, "tabComboBoxNameContainer"
+                    )[0].click()
                 except:
                     pass
                 sleep(2)
@@ -212,7 +240,7 @@ class KabaddiDataAggregator:
 
             return results
 
-    def load_data(self, TeamDetails=True, TeamMembers=True, PlayerDetails=True):
+    def load_data(self, TeamDetails=False, TeamMembers=False, PlayerDetails=True):
         """
         Load specified CSV files into pandas DataFrames based on the provided boolean parameters.
 
@@ -224,29 +252,331 @@ class KabaddiDataAggregator:
         Returns:
         - tuple: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
         """
-        default_download_directory = r"C:\Users\KIIT\Downloads"
+        # default_download_directory = r"C:\Users\KIIT\Downloads"
         if PlayerDetails:
-            player_details_df = pd.read_csv(f"{default_download_directory}/playerDetails.csv")
+            player_details_df = pd.read_csv(
+                f"./playerDetails.csv"
+            )
             self.player_details_df = player_details_df
             print("Loaded playerDetails.csv")
         else:
             player_details_df = None
 
         if TeamDetails:
-            team_details_df = pd.read_csv(f"{default_download_directory}/teamDetails.csv")
+            team_details_df = pd.read_csv(
+                f"teamDetails.csv"
+            )
             self.team_details_df = team_details_df
             print("Loaded teamDetails.csv")
         else:
             team_details_df = None
 
         if TeamMembers:
-            team_members_df = pd.read_csv(f"{default_download_directory}/teamMembers.csv")
+            team_members_df = pd.read_csv(
+                f"teamMembers.csv"
+            )
             self.team_members_df = team_members_df
             print("Loaded teamMembers.csv")
+
+        if PlayerDetails:
+            
+            team_members_df = pd.read_csv(
+                f"playerDetails.csv"
+            )
+            self.player_details_df = player_details_df
+            print("Loaded playerDetails.csv")
+
         else:
             team_members_df = None
         print("loaded all")
         return (player_details_df, team_details_df, team_members_df)
+
+    def get_player_details(self):
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-102-player-total-points-statistics"
+        )
+        element = self.driver.find_element(By.CLASS_NAME, "loadmore")
+        for i in range(16):
+            self.driver.execute_script("arguments[0].click();", element)
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+
+        for info in soup.find_all("div", class_="info-name"):
+            first_name_elem = info.find("p", class_="name first-name")
+            last_name_elem = info.find("p", class_="name last-name")
+
+            if first_name_elem and last_name_elem:
+                first_name = first_name_elem.text.strip()
+                last_name = last_name_elem.text.strip()
+                full_name = f"{first_name} {last_name}"
+                with open("parsed.txt", "a") as f:
+                    f.write(full_name + "\n")
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", names=["playerName"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj = pd.DataFrame(data=[])
+        dfObj["PlayerName"] = playerDetails[playerDetails.columns[0]]
+
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data matches-played"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["MatchesPlayed"]
+        )
+        dfObj["MatchesPlayed"] = playerDetails[playerDetails.columns[0]]
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data rank"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["Rank"]
+        )
+        dfObj["Rank"] = playerDetails[playerDetails.columns[0]]
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="category"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["PlayerProfile"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["PlayerProfile"] = playerDetails[playerDetails.columns[0]]
+
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["TotalPoints"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["TotalPoints"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-21-successful-raids-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt",
+            encoding="ISO-8859-1",
+            sep="\t",
+            names=["Successful raids"],
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["SuccessfulRaidPoints"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-22-raid-points-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["raid points"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["RaidPoints"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-23-successful-tackles-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt",
+            encoding="ISO-8859-1",
+            sep="\t",
+            names=["successful tackles"],
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["SuccessfulTackles"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-103-tackle-points-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["tackle points"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["TacklePoints"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-22-avg-raid-points-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt",
+            encoding="ISO-8859-1",
+            sep="\t",
+            names=["avg. raid points"],
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["AverageRaidPoints"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-139-avg-tackle-points-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt",
+            encoding="ISO-8859-1",
+            sep="\t",
+            names=["avg. tackle points"],
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["AverageTacklePoints"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-132-do-or-die-raid-points-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt",
+            encoding="ISO-8859-1",
+            sep="\t",
+            names=["do or die points"],
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["DODRaidPoints"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-104-super-raids-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["super raids"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["SuperRaids"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-28-super-tackles-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["super tackles"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["SuperTackles"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get(
+            "https://www.prokabaddi.com/stats/0-100-super-10s-statistics"
+        )
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["super 10s"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["Super10s"] = playerDetails[playerDetails.columns[0]]
+
+        self.driver.get("https://www.prokabaddi.com/stats/0-101-high-5s-statistics")
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        for item in soup.find_all("div", class_="table-data total-points"):
+            [elem.extract() for elem in soup.find("div")]
+            file = open("parsed.txt", "a")
+            file.write(item.text)
+            file.write("\n")
+            file.close()
+        playerDetails = pd.read_csv(
+            "parsed.txt", encoding="ISO-8859-1", sep="\t", names=["high 5s"]
+        )
+        if os.path.exists("parsed.txt"):
+            os.remove("parsed.txt")
+        dfObj["High5s"] = playerDetails[playerDetails.columns[0]]
+
+        dfObj.drop(index=0, inplace=True)
+
+        return dfObj
 
     # def get_top_raiders(self, df1, df2, team_name = "PatnaPirates", top_n=5):
     #     # Merge the two dataframes on PlayerName
@@ -297,9 +627,13 @@ if __name__ == "__main__":
     # print("Season Standings:", standings)
     xyz = aggregator.get_all_team_url()
     print(xyz)
-    xy = aggregator.get_all_player_team_url()
-    print(xy)
+    # xy = aggregator.get_all_player_team_url()
+    # print(xy)
     # players_info = aggregator.get_players_team_info_and_profile_url()
     # print("Players Info:", players_info)  # Print first 5 players
-    z = aggregator.get_players_team_info_and_profile_url()
+    # z = aggregator.get_players_team_info_and_profile_url()
+    # print(z)
+
+
+    z = aggregator.get_player_details()
     print(z)
