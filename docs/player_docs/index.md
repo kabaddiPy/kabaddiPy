@@ -3,6 +3,7 @@ title: Player Functions
 layout: default
 has_toc: true
 has_children: false
+nav_order: 3
 ---
 ## Table of Contents
 - [Table of Contents](#table-of-contents)

@@ -2,6 +2,7 @@
 title: ProKabaddi API Docs
 layout: default
 has_toc: false
+nav_order: 1
 has_children: true
 ---
 
@@ -15,10 +16,12 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 ## Table of Contents
 
 - [Prokabaddi API](#prokabaddi-api)
+  - [Table of Contents](#table-of-contents)
   - [Endpoints API](#endpoints-api)
-  - [Team Functions](team_docs/index.md)
-  - [Player Functions](player_docs/index.md)
-  - [Planned functions](planned_docs/index.md)
+  - [load\_data](#load_data)
+    - [Usage](#usage)
+    - [Parameters](#parameters)
+    - [Returns](#returns)
 
 ---
 
