@@ -29,11 +29,6 @@ nav_order: 3
     - [Returns](#returns-4)
 
 
-
-## get_stats_from_player_profile
-
-Retrieves statistics from a player's profile page.
-
 ### Usage
 
 ```python
