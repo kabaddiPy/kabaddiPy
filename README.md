@@ -1,17 +1,5 @@
-<div style="display: flex; align-items: center;">
-  <img width="200" alt="kabaddi_api_logo" src="https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0" style="margin-right: 20px;">
-  <div>
-    <p><strong>Comprehensive data collection and analysis tools for professional Kabaddi leagues</strong></p>
-    <p>
-      <a href="#features">Features</a> •
-      <a href="#installation">Installation</a> •
-      <a href="#usage">Usage</a> •
-      <a href="#contributing">Contributing</a> •
-      <a href="#license">License</a> •
-      <a href="https://annimukherjee.github.io/ProKabaddi_API/">Documentation</a>
-    </p>
-  </div>
-</div>
+| <img width="200" alt="kabaddi_api_logo" src="https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0"> | <h3>Comprehensive data collection and analysis tools for professional Kabaddi leagues</h3><p><a href="#features">Features</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#contributing">Contributing</a> • <a href="#license">License</a> • <a href="https://annimukherjee.github.io/ProKabaddi_API/">Documentation</a></p> |
+|:---:|:---|
 
 ---
 
