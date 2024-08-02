@@ -1,4 +1,4 @@
-from kabaddi_data import KabaddiDataAggregator
+from prokabaddidata.prokabaddidata import KabaddiDataAggregator
 
 aggregator = KabaddiDataAggregator()
 
