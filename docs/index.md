@@ -27,7 +27,8 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 
 ## Installation 
 Use the following command to install.
-```commandline
+
+```shell
 pip install pro_kabaddi_data
 ```
 
