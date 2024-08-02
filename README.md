@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="docs/assets/kabaddi_api_logo.png" alt="Kabaddi Data Aggregator Logo" width="200"/>
+  <img width="200" alt="kabaddi_api_logo" src="https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0" alt="Kabaddi Data Aggregator Logo">
+
 </p>
 
 <h1 align="center">Kabaddi Data API</h1>
