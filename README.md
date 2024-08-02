@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/kabaddi_api_logo.png" alt="Kabaddi Data Aggregator Logo" width="200"/>
+  <img src="docs/assets/kabaddi_api_logo.png" alt="Kabaddi Data Aggregator Logo" width="200"/>
 </p>
 
 <h1 align="center">Kabaddi Data Aggregator</h1>
