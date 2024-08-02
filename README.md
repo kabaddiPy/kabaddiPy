@@ -29,13 +29,6 @@ Kabaddi Data Aggregator is a Python module that provides tools for collecting an
 - Analyze team-level statistics
 - Gather player performance data
 
-## Installation
-
-You can install the Kabaddi Data Aggregator using pip:
-
-```
-pip install kabaddi_data_aggregator
-```
 
 ## Installation 
 
