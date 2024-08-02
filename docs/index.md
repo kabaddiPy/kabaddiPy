@@ -1,12 +1,15 @@
 ---
 title: ProKabaddi API Docs
 layout: default
+has_toc=false
 ---
 
 
 # Prokabaddi API
 
 This documentation covers the main functions of the `KabaddiDataAggregator` class that return useful data for Kabaddi statistics and information.
+
+This is an update.
 
 ## Table of Contents
 
