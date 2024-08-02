@@ -2,7 +2,7 @@
 title: Team Functions
 layout: default
 has_toc: true
-has_children: true
+has_children: false
 nav_order: 2
 ---
 # Team Functions
