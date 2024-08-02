@@ -37,6 +37,17 @@ You can install the Kabaddi Data Aggregator using pip:
 pip install kabaddi_data_aggregator
 ```
 
+## Installation 
+
+Please install the Kabaddi Data API using pip:
+
+
+```shell
+pip install pro_kabaddi_data
+```
+
+Deployed here: https://pypi.org/project/pro-kabaddi-data/
+
 ## Requirements
 
 - Python 3.7+
@@ -45,13 +56,15 @@ pip install kabaddi_data_aggregator
 
 ## Usage
 
-Here's a quick example of how to use the Kabaddi Data Aggregator:
+Here's a quick minimal example of how to get started to use the Kabaddi Data Aggregator:
 
 ```python
-from kabaddi_data_aggregator import KabaddiDataAggregator
+from prokabaddidata import prokabaddidata
+
+
 
 # Initialize the aggregator
-aggregator = KabaddiDataAggregator()
+aggregator = prokabaddidata.KabaddiDataAggregator()
 
 # Get all team names
 team_names = aggregator.get_all_team_names()
@@ -65,9 +78,6 @@ print("Season Standings:", standings)
 players_info = aggregator.get_players_team_info_and_profile_url()
 print("Players Info:", players_info[:5])  # Print first 5 players
 
-# Get team line-up data
-line_up_data = aggregator.team_line_up()
-print("Team Line-up Data:", line_up_data)
 ```
 
 For more detailed usage instructions and API documentation, please refer to our [documentation page](https://annimukherjee.github.io/ProKabaddi_API/).
