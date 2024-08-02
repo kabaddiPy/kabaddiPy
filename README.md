@@ -70,7 +70,7 @@ line_up_data = aggregator.team_line_up()
 print("Team Line-up Data:", line_up_data)
 ```
 
-For more detailed usage instructions and API documentation, please refer to our [documentation page](https://your-documentation-url.com).
+For more detailed usage instructions and API documentation, please refer to our [documentation page](https://annimukherjee.github.io/ProKabaddi_API/).
 
 ## Contributing
 
@@ -83,7 +83,7 @@ We welcome contributions to the Kabaddi Data Aggregator project! If you'd like t
 5. Push to the branch (`git push origin feature/your-feature-name`)
 6. Create a new Pull Request
 
-Please make sure to update tests as appropriate and adhere to the project's coding standards.
+
 
 ## License
 
@@ -91,9 +91,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Thanks to the Pro Kabaddi League for providing the data sources
-- Selenium WebDriver for enabling web scraping capabilities
-- All contributors who have helped to improve this project
+- Thanks to the various website owners for providing the data sources
 
 ## Contact
 
@@ -105,4 +103,4 @@ If you have any questions, feel free to reach out to [Aniruddha Mukherjee] at [m
   Made with ❤️ for Kabaddi enthusiasts and data analysts
 </p>
 
-Remember to star this repository if you find it helpful! Your support is greatly appreciated.
+Please star this repository if you found it helpful! Your support is greatly appreciated.
