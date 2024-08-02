@@ -9,7 +9,7 @@ nav_order: 2
 
 
 ## Table of Contents
-- [**Team Functions**](#Team Functions)
+- [Team Functions**](#Team Functions)
   - [get\_all\_team\_names](#get_all_team_names)
   - [get\_all\_team\_url](#get_all_team_url)
   - [get\_all\_player\_team\_url](#get_all_player_team_url)
@@ -21,7 +21,10 @@ nav_order: 2
   - [team\_level\_stats](#team_level_stats)
   - [player\_performance](#player_performance)
 - [Player Functions](#player_docs/index.md)
+
+
 ---
+
 
 ## get_all_team_names
 
@@ -54,7 +57,9 @@ team_urls = aggregator.get_all_team_url()
 ### Returns
 
 - `List[str]`: A list of URLs for team pages.
+
 ---
+
 ## team_season_standings
 
 Retrieves the current season standings for teams in the Pro Kabaddi League.
