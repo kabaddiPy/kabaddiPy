@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pro_kabaddi_data"
-version = "0.1.2"
+version = "0.1.3"
 description = "A Python module for aggregating Kabaddi data"
 readme = "README.md"
 authors = [{name = "Bhaskar Lalwani", email = "bhaskarlalwani2040@gmail.com"}, {name = "Aniruddha Mukherjee", email = "mukh.aniruddha@example.com"}]
