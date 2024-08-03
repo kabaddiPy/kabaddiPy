@@ -5,19 +5,9 @@
 
 Kabaddi Data Aggregator is a Python module that provides tools for collecting and analyzing data from professional Kabaddi leagues. It uses web scraping techniques to gather information about teams, players, and match statistics from various online sources.
 
-## Features
-
-- Retrieve team names and URLs
-- Fetch player information and statistics
-- Get current season standings
-- Extract team line-up data
-- Analyze team-level statistics
-- Gather player performance data
-
-
 ## Installation 
 
-Please install the Kabaddi Data API using pip:
+Please install the development version of `ProKabaddi_API` using pip:
 
 
 ```shell
@@ -31,34 +21,61 @@ Deployed here: https://pypi.org/project/pro-kabaddi-data/
 - Python 3.7+
 - Selenium WebDriver
 - Firefox browser (for Selenium WebDriver)
+- BeautifulSoup4
+
 
 ## Usage
 
-Here's a quick minimal example of how to get started to use the Kabaddi Data Aggregator:
+Here's a quick minimal example of how to get started with the Kabaddi Data Aggregator:
 
 ```python
 from prokabaddidata import prokabaddidata
 
-
-
 # Initialize the aggregator
 aggregator = prokabaddidata.KabaddiDataAggregator()
 
-# Get all team names
-team_names = aggregator.get_all_team_names()
-print("Team Names:", team_names)
-
-# Get current season standings
-standings = aggregator.team_season_standings()
-print("Season Standings:", standings)
-
-# Get player information
-players_info = aggregator.get_players_team_info_and_profile_url()
-print("Players Info:", players_info[:5])  # Print first 5 players
+# Get all player information for a specific team
+players_info = aggregator.player_performance(team="Patna Pirates")
 
 ```
 
 For more detailed usage instructions and API documentation, please refer to our [documentation page](https://annimukherjee.github.io/ProKabaddi_API/).
+
+## Features
+Here are our current features. New and better features are actively being developed!!
+
+### Current season standings
+
+```python
+standings = aggregator.team_season_standings(team=None, rank=None)
+```
+Return the current season rankings of all teams by default
+#### **Parameters**
+- team (str, optional): Get season rank by team name
+- rank (int, optional): Get team by season rank
+
+### Player Performance
+```python
+stats = aggregator.player_performance("team="Bengal Warriors")
+```
+Returns career level player metrics. `team` should be specified.
+
+### Loading Lifetime Data
+
+```python
+player_df = aggregator.load_data(PlayerDetails=True, TeamDetails = False, TeamMembers = False)
+```
+Defaults to loading lifetime player data for all teams.
+#### **Parameters**
+- PlayerDetails (bool): Loads player details into a DataFrame. Default is True.
+- TeamDetails (bool): Loads team-level statistics into a DataFrame. Default is False.
+- TeamMembers (bool): Loads the details of current team members into a DataFrame. Default is False.
+
+### Team level stats
+```python
+teamstats = aggregator.team_level_stats(season=None)
+```
+Returns team-level stats by season. Defaults to latest season.
 
 ## Contributing
 
