@@ -144,7 +144,7 @@ class KabaddiDataAggregator:
     def team_line_up(self, season=None):
         return self._tableau_data_extraction(
             "https://public.tableau.com/views/DEMO_PKL_S9/TeamLine-up?%3Adisplay_static_image=y&%3Aembed=true&%3Aembed=y&%3Alanguage=en-US&publish=yes%20&%3AshowVizHome=n&%3AapiID=host0#navType=0&navSrc=Parse",
-            5,
+            season=2,
         )
 
     def team_level_stats(self, season=None):

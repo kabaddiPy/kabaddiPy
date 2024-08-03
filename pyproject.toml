@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pro_kabaddi_data"
-version = "0.1.0"
+version = "0.1.2"
 description = "A Python module for aggregating Kabaddi data"
 readme = "README.md"
 authors = [{name = "Bhaskar Lalwani", email = "bhaskarlalwani2040@gmail.com"}, {name = "Aniruddha Mukherjee", email = "mukh.aniruddha@example.com"}]
@@ -24,6 +24,7 @@ keywords = ["kabaddi", "data", "aggregator"]
 dependencies = [
     "selenium",
     "pandas",
+    "beautifulsoup4",
 ]
 requires-python = ">=3.7"
 
