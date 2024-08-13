@@ -41,6 +41,52 @@ class KabaddiDataAggregator:
             ]
             if i is not None and "players" in i
         ]
+    def get_auction_data(self):
+        self.driver.get("file:///C:/Users/KIIT/Documents/cmu-api-test/hello-kabaddi-adda-stats.html")
+        players = self.driver.find_elements(By.CLASS_NAME, "players-list-player")
+        print("start")
+        player_data = []
+        for player in players:
+            try:
+                link_element = player.find_element(By.TAG_NAME, "a")
+                link = link_element.get_attribute("href")
+                name = link_element.text
+
+                category_div = player.find_element(By.CLASS_NAME, "players-list-category")
+                category = category_div.text
+
+                short_stats_divs = player.find_elements(By.CLASS_NAME, "short-stats-div")
+                price = ""
+                for div in short_stats_divs:
+                    label = div.find_element(By.TAG_NAME, "div").text
+                    if label == "Auction Price":
+                        price = div.find_elements(By.TAG_NAME, "div")[1].text
+                        break
+
+                player_data.append({
+                    "name": name,
+                    "link": link,
+                    "category": category,
+                    "auction_price": price
+                    })
+            except Exception as e:
+                print(f"Error extracting data for a player: {e}")
+                continue
+
+            print("done")
+            print(f"Total players extracted: {len(player_data)}")
+            print(player_data)
+
+            df = pd.DataFrame(player_data)
+    
+            df['name'] = df['link'].apply(lambda x: x.split('/')[-1].replace('-', ' ').title())
+    
+            columns_order = ['name', 'link', 'category', 'auction_price']
+            df = df[columns_order]
+            output_file='player_data.csv'    
+            df.to_csv(output_file, index=False)
+            print(f"Data exported to {output_file}")
+
 
     def get_stats_from_player_profile(self, profile_url):
         self.driver.get(profile_url)
