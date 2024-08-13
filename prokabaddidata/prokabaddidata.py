@@ -86,6 +86,13 @@ class KabaddiDataAggregator:
             output_file='player_data.csv'    
             df.to_csv(output_file, index=False)
             print(f"Data exported to {output_file}")
+    
+    def clean_auction_data(self):
+        df = pd.read_csv(r"C:\Users\KIIT\Documents\cmu-api-test\player_data.csv")
+        df['name'] = df['name'].apply(lambda x: re.sub(r'\s+\d+$', '', x))
+        df['link'] = df['link'].str.replace('file:///', 'https://www.kabaddiadda.com/')
+        df.to_csv('updated_player_data.csv', index=False)
+        print("exported.")
 
 
     def get_stats_from_player_profile(self, profile_url):
