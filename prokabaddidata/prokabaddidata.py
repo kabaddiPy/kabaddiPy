@@ -94,6 +94,35 @@ class KabaddiDataAggregator:
         df.to_csv('updated_player_data.csv', index=False)
         print("exported.")
 
+    def auction_mykhel(self, url):
+        self.driver.get(url)
+
+        # Wait for the table to be present
+        table = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.CLASS_NAME, "oi_cms_table"))
+        )
+
+        # Find all rows in the table
+        rows = table.find_elements(By.TAG_NAME, "tr")
+
+        # Initialize a list to store the data
+        data = []
+
+        # Iterate through the rows
+        for row in rows:
+            cells = row.find_elements(By.TAG_NAME, "td")
+            if len(cells) == 6:  # Ensure it's a data row
+                player_data = {
+                    "Player Name": cells[0].text,
+                    "Category": cells[1].text,
+                    "Position": cells[2].text,
+                    "Base Price": cells[3].text,
+                    "Team": cells[4].text,
+                    "Bought For": cells[5].text
+                }
+                data.append(player_data)
+        return pd.DataFrame(data)
+
 
     def get_stats_from_player_profile(self, profile_url):
         self.driver.get(profile_url)
