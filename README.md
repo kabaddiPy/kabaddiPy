@@ -67,9 +67,9 @@ player_df = aggregator.load_data(PlayerDetails=True, TeamDetails = False, TeamMe
 ```
 Defaults to loading lifetime player data for all teams.
 #### **Parameters**
-- PlayerDetails (bool): Loads player details into a DataFrame. Default is True.
-- TeamDetails (bool): Loads team-level statistics into a DataFrame. Default is False.
-- TeamMembers (bool): Loads the details of current team members into a DataFrame. Default is False.
+- PlayerDetails (bool): Loads player details into a DataFrame. Default is `True`.
+- TeamDetails (bool): Loads team-level statistics into a DataFrame. Default is `False`.
+- TeamMembers (bool): Loads the details of current team members into a DataFrame. Default is `False`.
 
 ### Team level stats
 ```python
