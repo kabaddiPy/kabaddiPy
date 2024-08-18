@@ -1,5 +1,5 @@
 # kabaddi_data.py
-
+import csv
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,7 +8,9 @@ from time import sleep
 import json
 import pandas as pd
 import glob
+import re
 import os
+import numpy as np
 
 WEBSITE_URL_1_PREFIX = "https://www.prokabaddi.com"
 
@@ -93,22 +95,24 @@ class KabaddiDataAggregator:
         df['link'] = df['link'].str.replace('file:///', 'https://www.kabaddiadda.com/')
         df.to_csv('updated_player_data.csv', index=False)
         print("exported.")
+    def get_all_auction_data(self):
+        df = pd.read_csv(r"C:\Users\KIIT\Documents\cmu-api-test\updated_player_data.csv")
+        df['auction_link'] = df['link'] + '?tab=auction'
+        print(df.head())
+        df.to_csv('auction_link_player_data.csv', index=False)
+        print('exported.')
 
     def auction_mykhel(self, url):
         self.driver.get(url)
 
-        # Wait for the table to be present
+        # waiting for table to load
         table = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "oi_cms_table"))
         )
 
-        # Find all rows in the table
+        # finding all the rows in the table
         rows = table.find_elements(By.TAG_NAME, "tr")
-
-        # Initialize a list to store the data
         data = []
-
-        # Iterate through the rows
         for row in rows:
             cells = row.find_elements(By.TAG_NAME, "td")
             if len(cells) == 6:  # Ensure it's a data row
@@ -123,7 +127,43 @@ class KabaddiDataAggregator:
                 data.append(player_data)
         return pd.DataFrame(data)
 
+    def merge_auction(self):
+        folder_path = 'prokabaddidata\\loan_info_stuff_csv'
+        merged_df = pd.DataFrame()
+        for i in range(1, 8):
+            file_path = os.path.join(folder_path, f'kabaddi_auction_data_checkpoint_{i}.csv')
+            if os.path.exists(file_path):
+                df = pd.read_csv(file_path)
+                merged_df = pd.concat([merged_df, df], ignore_index=True)
 
+        output_path = 'final-kabaddi_auction_data_merged.csv'  # Specify the output file name
+        merged_df.to_csv(output_path, index=False)
+
+        print(f'Merged file saved to {output_path}')
+
+    def extract_player_name(self, url):
+        # Extract the player name from the URL
+        parts = url.split('player/')
+        if len(parts) > 1:
+            name = parts[1].split('?')[0]  # Remove any query parameters
+            return name
+        return url
+
+    def get_auction(self):
+        df_auction = pd.read_csv(r"merge-csv-auction.csv")
+        print(df_auction.head())
+
+    def get_player_info(self, player_name):
+        dataframe = pd.read_csv("finale-output-auction.csv")
+        # Filter the dataframe to only include rows where Player_Name matches the input
+        player_info = dataframe[dataframe['Player_Name'].str.contains(player_name, case=False, na=False)]
+
+        # If no matching rows are found, return a message
+        if player_info.empty:
+            return f"No information found for player: {player_name}"
+
+        # Otherwise, return the filtered dataframe
+        return player_info
     def get_stats_from_player_profile(self, profile_url):
         self.driver.get(profile_url)
         sleep(2)
@@ -660,28 +700,7 @@ class KabaddiDataAggregator:
 
         return dfObj
 
-    # def get_top_raiders(self, df1, df2, team_name = "PatnaPirates", top_n=5):
-    #     # Merge the two dataframes on PlayerName
-    #     df1.PlayerName = df1.PlayerName.astype(str)
-    #     df2.PlayerName = df2.PlayerName.astype(str)
-    #     merged_df = pd.merge(df1, df2, left_on="PlayerName", right_on="PlayerName")
-    #     print("merged")
-    #     print(merged_df.head())
-    #     # Filter for the specified team
-    #     team_df = merged_df[merged_df['TeamName'] == team_name]
 
-    #     # Sort by TotalPoints in descending order
-    #     sorted_df = team_df.sort_values('TotalPoints', ascending=False)
-
-    #     # Filter for Raiders only
-    #     raiders_df = sorted_df[sorted_df['PlayerProfile'] == 'Raider']
-
-    #     # Return the top N raiders
-    #     print(raiders_df.head(top_n))
-
-
-# Usage:
-# top_raiders = self.get_top_raiders_alternative(df1, df2, team_name="Bengal Warriors", top_n=5)
 
 
 # Usage example
@@ -694,8 +713,8 @@ if __name__ == "__main__":
     # print("Season Standings:", json.dumps(standings, indent=2))
 
     df1, df2, df3 = aggregator.load_data()
-    print(df1.head())
-    print(df3.head())
+    #print(df1.head())
+    #print(df3.head())
     # print("df1 printed")
     # #df_temp = aggregator.get_top_raiders(df1, df3)
 
@@ -705,17 +724,12 @@ if __name__ == "__main__":
     # team_names = aggregator.get_all_team_names()
     # print("Team Names:", team_names)
 
-    # standings = aggregator.team_season_standings(rank=3)
-    # print("Season Standings:", standings)
-    xyz = aggregator.get_all_team_url()
-    print(xyz)
-    # xy = aggregator.get_all_player_team_url()
-    # print(xy)
-    # players_info = aggregator.get_players_team_info_and_profile_url()
-    # print("Players Info:", players_info)  # Print first 5 players
-    # z = aggregator.get_players_team_info_and_profile_url()
+
+    #aggregator.get_auction()
+    df_a = pd.read_csv("finale-output-auction.csv")
+    #print(df_a.tail())
+    #print(df_a.head())
+    result = aggregator.get_player_info("pardeep-narwal")
+    print(result)
+    # z = aggregator.get_player_details()
     # print(z)
-
-
-    z = aggregator.get_player_details()
-    print(z)

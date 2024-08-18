@@ -20,7 +20,7 @@ nav_order: 2
   - [team\_line\_up](#team_line_up)
   - [team\_level\_stats](#team_level_stats)
   - [player\_performance](#player_performance)
-- [Player Functions](#player_docs/index.md)
+- [Player Functions](#docs/player_docs/index.md)
 
 
 ---
