@@ -96,6 +96,9 @@ class KabaddiDataAggregator:
         df.to_csv('updated_player_data.csv', index=False)
         print("exported.")
     def get_all_auction_data(self):
+        '''
+        appends all kabaddi-adda links with ?tab=auction
+        '''
         df = pd.read_csv(r"C:\Users\KIIT\Documents\cmu-api-test\updated_player_data.csv")
         df['auction_link'] = df['link'] + '?tab=auction'
         print(df.head())
@@ -103,6 +106,9 @@ class KabaddiDataAggregator:
         print('exported.')
 
     def auction_mykhel(self, url):
+        '''
+            Function to get the basic tables from mykhel.com
+        '''
         self.driver.get(url)
 
         # waiting for table to load
@@ -142,16 +148,22 @@ class KabaddiDataAggregator:
         print(f'Merged file saved to {output_path}')
 
     def extract_player_name(self, url):
-        # Extract the player name from the URL
-        parts = url.split('player/')
-        if len(parts) > 1:
-            name = parts[1].split('?')[0]  # Remove any query parameters
-            return name
-        return url
+        '''
+        used for extracting player names from urls (kabaddi-adda)
+        '''
+        match = re.search(r'/player/([^-]+(?:-[^-]+)*)-\d+', url)
+        if match:
+            return match.group(1).replace('-', ' ').title()
+        return None
 
-    def get_auction(self):
-        df_auction = pd.read_csv(r"merge-csv-auction.csv")
-        print(df_auction.head())
+    def get_clean_auction_data(self):
+        df = pd.read_csv("loan_info_stuff_csv/kabaddi_auction_data_FINAL.csv")
+        df['Player_Name'] = df['Player_Name'].apply(self.extract_player_name)
+        columns = ['Player_Name'] + [col for col in df.columns if col != 'Player_Name']
+        df = df[columns]
+        print(df.head())
+        df.to_csv('processed_kabaddi_auction_data.csv', index=False)
+        print("exported.")
 
     def get_player_info(self, player_name):
         dataframe = pd.read_csv("finale-output-auction.csv")
@@ -706,30 +718,9 @@ class KabaddiDataAggregator:
 # Usage example
 if __name__ == "__main__":
     aggregator = KabaddiDataAggregator()
-    # team_names = aggregator.get_all_team_names()
-    # print("Team Names:", team_names)
 
-    # standings = aggregator.team_season_standings()
-    # print("Season Standings:", json.dumps(standings, indent=2))
-
-    df1, df2, df3 = aggregator.load_data()
-    #print(df1.head())
-    #print(df3.head())
-    # print("df1 printed")
-    # #df_temp = aggregator.get_top_raiders(df1, df3)
-
-    # #df_temp = aggregator.get_top_raiders(df1, df3)
-    # xy = aggregator.team_level_stats(season=4)
-    # print(xy)
-    # team_names = aggregator.get_all_team_names()
-    # print("Team Names:", team_names)
-
-
-    #aggregator.get_auction()
-    df_a = pd.read_csv("finale-output-auction.csv")
-    #print(df_a.tail())
-    #print(df_a.head())
-    result = aggregator.get_player_info("pardeep-narwal")
-    print(result)
+    # result = aggregator.get_player_info("pardeep-narwal")
+    # print(result)
     # z = aggregator.get_player_details()
     # print(z)
+    aggregator.get_clean_auction_data()
