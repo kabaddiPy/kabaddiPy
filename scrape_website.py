@@ -67,6 +67,9 @@ stat_types = {
     101: "High 5s"
 }
 
+# update from new mac
+
+
 # Get the list of all seasons
 initial_url = base_url.format(44, 21)  # Using season 10 and successful raids as initial page
 initial_soup = get_soup(initial_url)
