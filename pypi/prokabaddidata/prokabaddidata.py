@@ -157,25 +157,69 @@ class KabaddiDataAggregator:
         return None
 
     def get_clean_auction_data(self):
-        df = pd.read_csv("loan_info_stuff_csv/kabaddi_auction_data_FINAL.csv")
-        df['Player_Name'] = df['Player_Name'].apply(self.extract_player_name)
-        columns = ['Player_Name'] + [col for col in df.columns if col != 'Player_Name']
-        df = df[columns]
-        print(df.head())
-        df.to_csv('processed_kabaddi_auction_data.csv', index=False)
-        print("exported.")
+        df = pd.read_csv("loan_info_stuff_csv/kabaddi_auction_data_FINAL_NAMES.csv")
 
-    def get_player_info(self, player_name):
-        dataframe = pd.read_csv("finale-output-auction.csv")
-        # Filter the dataframe to only include rows where Player_Name matches the input
-        player_info = dataframe[dataframe['Player_Name'].str.contains(player_name, case=False, na=False)]
+        # Step 1: Remove numbers from Player_Name
+        df['Player_Name'] = df['Player_Name'].apply(lambda x: re.sub(r'\d+', '', x))
 
-        # If no matching rows are found, return a message
+        # Display the result after step 1
+        print("After removing numbers:")
+        print(df['Player_Name'].head())
+        print("\n")
+
+        # Step 2: Remove dashes from Player_Name
+        df['Player_Name'] = df['Player_Name'].apply(lambda x: x.replace('-', ' ').strip())
+
+        # Display the final result
+        print("After removing dashes:")
+        print(df['Player_Name'].head())
+        df.to_csv('processed_auction_data.csv', index=False)
+
+    def get_player_auction_info(self, player_name):
+        """
+        Retrieves auction information for a specified player.
+        The search is case-insensitive and handles cases where the player name might be partially matched.
+
+        Args:
+            player_name (str): The name of the player for whom auction information is to be retrieved.
+
+        Returns:
+            pandas.DataFrame or str: If information about the player is found, returns a DataFrame containing the
+            auction details for that player. If no information is found, returns a message indicating that no
+            information was found for the specified player.
+        """
+        dataframe = pd.read_csv("loan_info_stuff_csv/FINAL-processed_auction_data.csv")
+        player_info = dataframe[dataframe['Player_Name'].str.contains(player_name.lower(), case=False, na=False)]
+
         if player_info.empty:
             return f"No information found for player: {player_name}"
-
-        # Otherwise, return the filtered dataframe
         return player_info
+
+    def get_season_auction_data(self, season=None, top=None):
+        """
+        yet to handle units.
+        """
+        df = pd.read_csv("loan_info_stuff_csv/FINAL-processed_auction_data.csv")
+        result = df.copy()
+
+        result['Price'] = result['Price'].str.replace(' L', '').astype(float)
+
+        if season:
+            result = result[result['Tournament'] == f'Pro Kabaddi Season {season}']
+
+        # Sort by Price in descending order
+        result = result.sort_values('Price', ascending=False)
+
+        # If top is specified, limit the results
+        if top:
+            result = result.head(top)
+
+        # Reset the index
+        result = result.reset_index(drop=True)
+
+        return result
+
+
     def get_stats_from_player_profile(self, profile_url):
         self.driver.get(profile_url)
         sleep(2)
@@ -715,6 +759,8 @@ class KabaddiDataAggregator:
 
 
 
+
+
 # Usage example
 if __name__ == "__main__":
     aggregator = KabaddiDataAggregator()
@@ -723,4 +769,5 @@ if __name__ == "__main__":
     # print(result)
     # z = aggregator.get_player_details()
     # print(z)
-    aggregator.get_clean_auction_data()
+    print(aggregator.get_player_auction_info("Paul graham"))
+    print(aggregator.get_season_auction_data(season=8, top=10))
