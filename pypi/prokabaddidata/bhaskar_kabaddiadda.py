@@ -749,7 +749,7 @@ if __name__ == "__main__":
     checkpoint_size = 500
     num_checkpoints = ceil(total_players / checkpoint_size)
 
-    for checkpoint in range(4, num_checkpoints):
+    for checkpoint in range(num_checkpoints):
         start_idx = checkpoint * checkpoint_size
         end_idx = min((checkpoint + 1) * checkpoint_size, total_players)
         
@@ -767,7 +767,7 @@ if __name__ == "__main__":
         df_checkpoint = pd.DataFrame(
             all_data, columns=["Player_Name", "Tournament", "Team", "Price", "Status"]
         )
-        checkpoint_filename = f"kabaddi_auction_data_checkpoint_{checkpoint + 1}.csv"
+        checkpoint_filename = f"kabaddiaddacheckpoints/kabaddi_auction_data_checkpoint_{checkpoint + 1}.csv"
         df_checkpoint.to_csv(checkpoint_filename, index=False)
         print(f"Checkpoint {checkpoint + 1} saved: {checkpoint_filename}")
 
