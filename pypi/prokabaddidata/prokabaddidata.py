@@ -769,5 +769,6 @@ if __name__ == "__main__":
     # print(result)
     # z = aggregator.get_player_details()
     # print(z)
-    print(aggregator.get_player_auction_info("Paul graham"))
-    print(aggregator.get_season_auction_data(season=8, top=10))
+    #print(aggregator.get_player_auction_info("Paul"))
+    #print(aggregator.get_season_auction_data(season=8, top=10))
+    aggregator.team_level_stats()
