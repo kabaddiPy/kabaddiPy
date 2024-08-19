@@ -1,0 +1,217 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+2024,Arjun Deshwal,24,296,3,,JAI,1,8,Raider,Jaipur Pink Panthers,12.333333333333334
+4944,Bharat,23,282,1,,BLR,2,8,Raider,Bengaluru Bulls,12.26086956521739
+2296,Naveen Kumar,23,258,2,,DEL,3,8,Raider,Dabang Delhi K.C.,11.217391304347826
+5093,Narender,23,249,29,,CHE,4,8,Raider,Tamil Thalaivas,10.826086956521738
+143,Maninder Singh,21,240,4,,KOL,5,8,Raider,Bengal Warriors,11.428571428571429
+197,Pardeep Narwal,22,220,30,,U.P.,6,8,Raider,U.P. Yoddhas,10.0
+5124,Parteek Dahiya,19,183,31,,GUJ,7,0,All-Rounder,Gujarat Giants,9.631578947368421
+757,Sachin,20,179,6,,PAT,8,8,Raider,Patna Pirates,8.95
+763,Manjeet,22,163,28,,HAR,9,8,Raider,Haryana Steelers,7.409090909090909
+4947,Ashu Malik,23,158,2,,DEL,10,8,Raider,Dabang Delhi K.C.,6.869565217391305
+4960,Aslam Inamdar,17,150,7,,PUN,11,8,Raider,Puneri Paltan,8.823529411764707
+3023,Rohit Gulia,19,148,6,,PAT,12,0,All-Rounder,Patna Pirates,7.7894736842105265
+3241,Surender Gill,14,145,30,,U.P.,13,8,Raider,U.P. Yoddhas,10.357142857142858
+2026,Siddharth Desai,17,144,8,,HYD,14,8,Raider,Telugu Titans,8.470588235294118
+4959,Akash Shinde,22,142,7,,PUN,15,8,Raider,Puneri Paltan,6.454545454545454
+3097,Ajinkya Pawar,22,141,29,,CHE,16,8,Raider,Tamil Thalaivas,6.409090909090909
+366,Vikash Kandola,24,139,1,,BLR,17,8,Raider,Bengaluru Bulls,5.791666666666667
+3032,Guman Singh,18,137,5,,MUM,18,8,Raider,U Mumba,7.611111111111111
+4022,Mohit Goyat,17,137,7,,PUN,19,8,Raider,Puneri Paltan,8.058823529411764
+4183,Meetu Sharma,20,137,28,,HAR,20,8,Raider,Haryana Steelers,6.85
+3966,Rakesh,17,133,31,,GUJ,21,8,Raider,Gujarat Giants,7.823529411764706
+106,Shrikant Jadhav,21,129,4,,KOL,22,8,Raider,Bengal Warriors,6.142857142857143
+3028,Ashish,21,120,5,,MUM,23,8,Raider,U Mumba,5.714285714285714
+3038,Neeraj Narwal,24,115,1,,BLR,24,8,Raider,Bengaluru Bulls,4.791666666666667
+3053,V Ajith Kumar,21,103,3,,JAI,25,8,Raider,Jaipur Pink Panthers,4.904761904761905
+36,Chandran Ranjit,17,99,31,,GUJ,26,8,Raider,Gujarat Giants,5.823529411764706
+3574,Ankush,24,89,3,,JAI,27,0,Defender - Left Corner,Jaipur Pink Panthers,3.7083333333333335
+4925,Mohammadreza Chiyaneh,20,89,6,,PAT,28,0,All-Rounder,Patna Pirates,4.45
+4222,Rohit Tomar,18,86,30,,U.P.,29,8,Raider,U.P. Yoddhas,4.777777777777778
+3081,Vijay Malik,11,82,2,,DEL,30,0,All-Rounder,Dabang Delhi K.C.,7.454545454545454
+5002,Jai Bhagwan,19,82,5,,MUM,31,8,Raider,U Mumba,4.315789473684211
+81,Rahul Chaudhari,21,73,3,,JAI,32,8,Raider,Jaipur Pink Panthers,3.4761904761904763
+3228,Saurabh Nandal,24,73,1,,BLR,33,0,Defender - Left Corner,Bengaluru Bulls,3.0416666666666665
+3965,Manjeet,20,69,2,,DEL,34,8,Raider,Dabang Delhi K.C.,3.45
+368,Sunil Kumar,23,65,3,,JAI,35,9,Defender,Jaipur Pink Panthers,2.8260869565217392
+3233,Pankaj Mohite,13,60,7,,PUN,36,8,Raider,Puneri Paltan,4.615384615384615
+3161,Himanshu,23,60,29,,CHE,37,0,Defender - Left Corner,Tamil Thalaivas,2.608695652173913
+4972,Aman,24,60,1,,BLR,38,0,Defender - Left Corner,Bengaluru Bulls,2.5
+3964,Rinku,19,59,5,,MUM,39,0,Defender - Right Corner,U Mumba,3.1052631578947367
+2028,Abhishek Singh,16,59,8,,HYD,40,8,Raider,Telugu Titans,3.6875
+357,Parvesh Bhainswal,21,58,8,,HYD,41,0,Defender - Left Cover,Telugu Titans,2.761904761904762
+3159,Vishal,22,58,2,,DEL,42,0,Defender - Left Cover,Dabang Delhi K.C.,2.6363636363636362
+4184,Jaideep Dahiya,21,57,28,,HAR,43,0,Defender - Left Cover,Haryana Steelers,2.7142857142857144
+4769,Sahul Kumar,24,57,3,,JAI,44,0,Defender - Right Corner,Jaipur Pink Panthers,2.375
+4965,Sahil Gulia,23,57,29,,CHE,45,0,Defender - Left Corner,Tamil Thalaivas,2.4782608695652173
+3240,Sumit,21,56,30,,U.P.,46,0,Defender - Left Corner,U.P. Yoddhas,2.6666666666666665
+259,Fazel Atrachali,21,56,7,,PUN,47,9,Defender,Puneri Paltan,2.6666666666666665
+41,Deepak Hooda,17,56,4,,KOL,48,0,All-Rounder,Bengal Warriors,3.2941176470588234
+163,Mahendra Rajput,15,54,31,,GUJ,49,8,Raider,Gujarat Giants,3.6
+3236,Sagar,17,53,29,,CHE,50,0,Defender - Right Corner,Tamil Thalaivas,3.1176470588235294
+161,Girish Maruti Ernak,18,51,4,,KOL,51,0,Defender - Left Corner,Bengal Warriors,2.8333333333333335
+204,Rakesh Narwal,15,50,28,,HAR,52,8,Raider,Haryana Steelers,3.3333333333333335
+4963,Himanshu Singh,18,50,29,,CHE,53,8,Raider,Tamil Thalaivas,2.7777777777777777
+3239,Ashu Singh,23,49,30,,U.P.,54,0,Defender - Right Cover,U.P. Yoddhas,2.130434782608696
+3128,Sonu,12,46,31,,GUJ,55,8,Raider,Gujarat Giants,3.8333333333333335
+3083,Vishal Bhardwaj,19,45,8,,HYD,56,9,Defender,Telugu Titans,2.3684210526315788
+769,Mahender Singh,23,45,1,,BLR,57,0,Defender - Left Cover,Bengaluru Bulls,1.9565217391304348
+4954,Mohit Nandal,21,45,28,,HAR,58,0,Defender - Right Cover,Haryana Steelers,2.142857142857143
+5032,Mohit,20,44,5,,MUM,59,0,Defender - Left Corner,U Mumba,2.2
+3065,Nitin Rawal,22,44,28,,HAR,60,0,All-Rounder,Haryana Steelers,2.0
+3103,Shubham Shinde,20,44,4,,KOL,61,0,Defender - Right Corner,Bengal Warriors,2.2
+3106,Sunil,22,42,6,,PAT,62,0,Defender - Right Corner,Patna Pirates,1.9090909090909092
+5095,Vinay,15,42,8,,HYD,63,8,Raider,Telugu Titans,2.8
+3014,M. Abishek,23,40,29,,CHE,64,0,Defender - Right Cover,Tamil Thalaivas,1.7391304347826086
+2297,Arkam Shaikh,22,40,31,,GUJ,65,0,All-Rounder,Gujarat Giants,1.8181818181818181
+219,K. Prapanjan,13,40,28,,HAR,66,8,Raider,Haryana Steelers,3.076923076923077
+522,Dong Geon Lee,12,39,31,,GUJ,67,8,Raider,Gujarat Giants,3.25
+3084,Rinku Narwal,20,39,31,,GUJ,68,9,Defender,Gujarat Giants,1.95
+3154,Sachin Narwal,16,39,1,,BLR,69,0,All-Rounder,Bengaluru Bulls,2.4375
+3095,Adarsh T,15,38,8,,HYD,70,0,Defender - Left Corner,Telugu Titans,2.533333333333333
+3086,Surinder Singh,12,36,5,,MUM,71,9,Defender,U Mumba,3.0
+3176,Mohammad Nabibakhsh,15,36,7,,PUN,72,0,All-Rounder,Puneri Paltan,2.4
+3082,Monu,18,36,6,,PAT,73,8,Raider,Patna Pirates,2.0
+2041,Gurdeep,20,36,30,,U.P.,74,0,All-Rounder,U.P. Yoddhas,1.8
+660,Bhavani Rajput,14,36,3,,JAI,75,8,Raider,Jaipur Pink Panthers,2.5714285714285716
+5022,Reza Mirbagheri,16,36,3,,JAI,76,9,Defender,Jaipur Pink Panthers,2.25
+3000,Sombir,18,35,7,,PUN,77,9,Defender,Puneri Paltan,1.9444444444444444
+3593,Sourav Gulia,16,35,31,,GUJ,78,9,Defender,Gujarat Giants,2.1875
+4192,Abinesh Nadarajan,15,35,7,,PUN,79,0,Defender - Right Cover,Puneri Paltan,2.3333333333333335
+3088,Nitesh Kumar,22,34,30,,U.P.,80,9,Defender,U.P. Yoddhas,1.5454545454545454
+567,Mohsen Maghsoudlou,16,34,8,,HYD,81,0,All-Rounder,Telugu Titans,2.125
+5018,Heidarali Ekrami,12,34,5,,MUM,82,8,Raider,U Mumba,2.8333333333333335
+4949,Krishan,21,34,2,,DEL,83,9,Defender,Dabang Delhi K.C.,1.619047619047619
+4964,Mohit,22,34,29,,CHE,84,0,Defender - Left Cover,Tamil Thalaivas,1.5454545454545454
+388,Monu Goyat,10,33,8,,HYD,85,8,Raider,Telugu Titans,3.3
+3054,Vinay,15,33,28,,HAR,86,8,Raider,Haryana Steelers,2.2
+290,Sandeep Dhull,17,31,2,,DEL,87,0,Defender - Left Corner,Dabang Delhi K.C.,1.8235294117647058
+3151,Manoj Gowda,15,31,4,,KOL,88,0,All-Rounder,Bengal Warriors,2.066666666666667
+5114,Vaibhav Garje,18,31,4,,KOL,89,0,Defender - Right Cover,Bengal Warriors,1.7222222222222223
+3107,Neeraj Kumar,21,30,6,,PAT,90,0,Defender - Right Cover,Patna Pirates,1.4285714285714286
+3234,Sanket Sawant,24,30,7,,PUN,91,0,Defender - Left Cover,Puneri Paltan,1.25
+212,Amit Hooda,13,29,2,,DEL,92,0,Defender - Right Corner,Dabang Delhi K.C.,2.230769230769231
+3227,Ankit,15,28,8,,HYD,93,9,Defender,Telugu Titans,1.8666666666666667
+4795,K Hanumanthu,8,28,8,,HYD,94,0,All-rounder,Telugu Titans,3.5
+3138,Harendra Kumar,21,26,5,,MUM,95,0,Defender - Left Cover,U Mumba,1.2380952380952381
+5117,Pranay Rane,11,26,5,,MUM,96,8,Raider,U Mumba,2.3636363636363638
+5113,Abhishek KS,18,25,3,,JAI,97,0,Defender - Left Cover,Jaipur Pink Panthers,1.3888888888888888
+4978,Balaji D,18,25,4,,KOL,98,0,All-Rounder,Bengal Warriors,1.3888888888888888
+5039,Shankar Gadai,20,25,31,,GUJ,99,0,All-Rounder,Gujarat Giants,1.25
+4928,Amirhossein Bastami,16,24,28,,HAR,100,9,Defender,Haryana Steelers,1.5
+240,Ravi Kumar,19,22,2,,DEL,101,0,Defender - Right Cover,Dabang Delhi K.C.,1.1578947368421053
+142,Sandeep Narwal,7,22,30,,U.P.,102,0,All Rounder,U.P. Yoddhas,3.142857142857143
+5037,Kiran Magar,16,21,5,,MUM,103,0,Defender - Left Corner,U Mumba,1.3125
+5046,Visvanath V,11,21,29,,CHE,104,0,All-Rounder,Tamil Thalaivas,1.9090909090909092
+5128,Gaurav Khatri,16,21,7,,PUN,105,0,Defender - Right Corner,Puneri Paltan,1.3125
+5116,Aditya Shinde,6,20,7,,PUN,106,8,Raider,Puneri Paltan,3.3333333333333335
+5096,Vijay Kumar,18,19,2,,DEL,107,0,Defender - Left Corner,Dabang Delhi K.C.,1.0555555555555556
+322,Surjeet Singh,13,19,8,,HYD,108,0,Defender - Right Cover,Telugu Titans,1.4615384615384615
+3973,Durgesh Kumar,10,19,30,,U.P.,109,8,Raider,U.P. Yoddhas,1.9
+4186,Rahul Sethpal,15,18,5,,MUM,110,0,Defender - Right Corner,U Mumba,1.2
+644,Anand Tomar,4,18,6,,PAT,111,8,Raider,Patna Pirates,4.5
+5121,Anil Kumar,7,18,30,,U.P.,112,8,Raider,U.P. Yoddhas,2.5714285714285716
+5091,Ranjit Naik,7,17,6,,PAT,113,8,Raider,Patna Pirates,2.4285714285714284
+5101,Monu Hooda,14,17,28,,HAR,114,0,Defender - Right Corner,Haryana Steelers,1.2142857142857142
+4179,Sushil,5,17,28,,HAR,115,8,Raider,Haryana Steelers,3.4
+4848,Mayur Kadam,17,16,1,,BLR,116,0,Defender - Right Cover,Bengaluru Bulls,0.9411764705882353
+768,Vijay Kumar,11,16,8,,HYD,117,0,Defender - Right Corner,Telugu Titans,1.4545454545454546
+2025,Ajinkya Kapre,7,14,4,,KOL,118,0,All-Rounder,Bengal Warriors,2.0
+4224,Arpit Saroha,8,14,29,,CHE,119,0,Defender - Right Corner,Tamil Thalaivas,1.75
+4675,Akash Pikalmunde,3,14,4,,KOL,120,8,Raider,Bengal Warriors,4.666666666666667
+5055,Manish Gulia,4,14,28,,HAR,121,8,Raider,Haryana Steelers,3.5
+4948,Dipak,9,13,2,,DEL,122,9,Defender,Dabang Delhi K.C.,1.4444444444444444
+5107,Anuj Kumar,5,12,6,,PAT,123,8,Raider,Patna Pirates,2.4
+5130,Sachin,9,12,29,,CHE,124,0,Raider ,Tamil Thalaivas,1.3333333333333333
+3101,Ponparthiban Subramanian,4,12,1,,BLR,125,0,,Bengaluru Bulls,3.0
+202,Ashish Sangwan,7,12,4,,KOL,126,0,All-Rounder,Bengal Warriors,1.7142857142857142
+146,Surender Nada,10,11,4,,KOL,127,0,Defender - Left Corner,Bengal Warriors,1.1
+2290,Rajnish,2,11,8,,HYD,128,8,Raider,Telugu Titans,5.5
+5129,Saurabh,2,11,7,,PUN,129,8,Raider,Puneri Paltan,5.5
+5118,Mahipal,5,11,30,,U.P.,130,8,Raider,U.P. Yoddhas,2.2
+5042,Lucky Sharma,15,11,3,,JAI,131,0,Defender - Right Corner,Jaipur Pink Panthers,0.7333333333333333
+4970,Shivam,5,10,5,,MUM,132,8,Raider,U Mumba,2.0
+5100,Ashish Narwal,7,10,2,,DEL,133,8,Raider,Dabang Delhi K.C.,1.4285714285714286
+3343,Sajin C,13,10,6,,PAT,134,0,All-Rounder,Patna Pirates,0.7692307692307693
+4693,Manuj,10,10,31,,GUJ,135,0,Defender - Right Corner,Gujarat Giants,1.0
+4798,Abdul Insamam,7,10,6,,PAT,136,0,All-Rounder,Patna Pirates,1.4285714285714286
+4750,Kapil,7,9,31,,GUJ,137,0,Defender - Right Cover,Gujarat Giants,1.2857142857142858
+4157,Lovepreet Singh,3,9,28,,HAR,138,8,Raider,Haryana Steelers,3.0
+4032,Shivansh Thakur,6,9,5,,MUM,139,0,Defender - Right Cover,U Mumba,1.5
+3174,Daniel Odhiambo,2,9,6,,PAT,140,0,All-Rounder,Patna Pirates,4.5
+5102,Naveen Kundu,2,9,28,,HAR,141,0,Defender - Left Corner,Haryana Steelers,4.5
+5104,Sunny Sehrawat,6,9,28,,HAR,142,0,Defender - Right Cover,Haryana Steelers,1.5
+4935,Aslam Thambi,5,9,4,,KOL,143,8,Raider,Bengal Warriors,1.8
+4957,Manish,13,8,6,,PAT,144,9,Defender,Patna Pirates,0.6153846153846154
+4962,Aashish,6,8,29,,CHE,145,0,Defender - Left Cover,Tamil Thalaivas,1.3333333333333333
+5108,Badal Singh,12,7,7,,PUN,146,0,Defender - Left Corner,Puneri Paltan,0.5833333333333334
+5109,Mohit Pahal,3,7,8,,HYD,147,0,Defender - Left Corner,Telugu Titans,2.3333333333333335
+3100,Parveen Satpal,5,7,4,,KOL,148,0,Defender - Left Corner,Bengal Warriors,1.4
+4058,Sager Kumar,1,7,6,,PAT,149,0,All-rounder,Patna Pirates,7.0
+4757,Vishwas S,4,7,6,,PAT,150,8,Raider,Patna Pirates,1.75
+4723,Rohit,3,7,4,,KOL,151,0,All-Rounder,Bengal Warriors,2.3333333333333335
+4849,Sudhakar Krishant,9,7,1,,BLR,152,0,Defender - Left Cover,Bengaluru Bulls,0.7777777777777778
+4933,James Kamweti,5,7,30,,U.P.,153,8,Raider,U.P. Yoddhas,1.4
+4917,Govind Gurjar,2,6,7,,PUN,154,0,All-Rounder,Puneri Paltan,3.0
+4228,Shubham Kumar,11,6,30,,U.P.,155,0,Defender - Left Cover,U.P. Yoddhas,0.5454545454545454
+3970,Himanshu Narwal,3,6,29,,CHE,156,8,Raider,Tamil Thalaivas,2.0
+3238,Navneet,3,6,3,,JAI,157,8,Raider,Jaipur Pink Panthers,2.0
+3025,Sahil,7,6,29,,CHE,158,9,Defender,Tamil Thalaivas,0.8571428571428571
+194,Joginder Narwal,8,6,28,,HAR,159,0,Defender - Left Corner,Haryana Steelers,0.75
+248,Sandeep Kandola,14,6,31,,GUJ,160,9,Defender,Gujarat Giants,0.42857142857142855
+5120,R Guhan,3,6,4,,KOL,161,8,Raider,Bengal Warriors,2.0
+4968,Kamlesh,4,6,5,,MUM,162,8,Raider,U Mumba,1.5
+5111,Nitin,8,5,8,,HYD,163,0,Defender - Right Cover,Telugu Titans,0.625
+5103,Harsh,5,5,28,,HAR,164,0,Defender - Left Cover,Haryana Steelers,1.0
+5092,Thiyagarajan Yuvaraj,3,5,6,,PAT,165,9,Defender,Patna Pirates,1.6666666666666667
+5090,Naveen Sharma,8,5,6,,PAT,166,9,Defender,Patna Pirates,0.625
+160,Ran Singh,8,5,1,,BLR,167,0,All Rounder,Bengaluru Bulls,0.625
+3472,Rathan K,4,5,30,,U.P.,168,8,Raider,U.P. Yoddhas,1.25
+4195,Sakthivel R,7,5,4,,KOL,169,0,Defender - Right Corner,Bengal Warriors,0.7142857142857143
+3152,Nitin Panwar,4,4,3,,JAI,170,8,Raider,Jaipur Pink Panthers,1.0
+3115,Amit Sheoran,2,4,4,,KOL,171,9,Defender,Bengal Warriors,2.0
+3039,Nitin Panwar,4,4,30,,U.P.,172,0,All-Rounder,U.P. Yoddhas,1.0
+5106,Devank,5,4,3,,JAI,173,8,Raider,Jaipur Pink Panthers,0.8
+4971,Aman,3,4,30,,U.P.,174,8,Raider,U.P. Yoddhas,1.3333333333333333
+5078,Harsh Lad,1,4,7,,PUN,175,0,Defender - Left Corner,Puneri Paltan,4.0
+5052,Alankar Patil,3,3,7,,PUN,176,0,Defender - Right Corner,Puneri Paltan,1.0
+5003,Md. Arif Rabbani,2,3,29,,CHE,177,0,Defender - Left Corner,Tamil Thalaivas,1.5
+5115,Suyog Gaikar,2,3,4,,KOL,178,8,Raider,Bengal Warriors,1.5
+5110,Mohit,5,3,8,,HYD,179,0,Defender - Left Cover,Telugu Titans,0.6
+3011,Balasaheb Jadhav,6,3,7,,PUN,180,0,All-Rounder,Puneri Paltan,0.5
+772,More G B,10,3,1,,BLR,181,8,Raider,Bengaluru Bulls,0.3
+629,Narender Hooda,9,3,1,,BLR,182,0,All Rounder,Bengaluru Bulls,0.3333333333333333
+726,Babu M,2,3,30,,U.P.,183,0,Defender - Left Cover,U.P. Yoddhas,1.5
+311,Anil Kumar,5,3,2,,DEL,184,0,Defender - Left Cover,Dabang Delhi K.C.,0.6
+3225,Harmanjit Singh,3,3,1,,BLR,185,8,Raider,Bengaluru Bulls,1.0
+4198,K. Abhimanyu,6,3,29,,CHE,186,0,All-Rounder,Tamil Thalaivas,0.5
+3969,Prince D,9,3,8,,HYD,187,0,Defender - Right Cover,Telugu Titans,0.3333333333333333
+621,Baldev Singh,8,2,31,,GUJ,188,0,Defender - Right Corner,Gujarat Giants,0.25
+155,Prashanth Kumar Rai,3,2,31,,GUJ,189,8,Raider,Gujarat Giants,0.6666666666666666
+743,Maninder Singh,1,2,28,,HAR,190,8,Raider,Haryana Steelers,2.0
+647,Gulveer Singh,2,2,30,,U.P.,191,8,Raider,U.P. Yoddhas,1.0
+5097,Parshant Kumar,1,2,4,,KOL,192,8,Raider,Bengal Warriors,2.0
+5098,Rajnesh,5,2,1,,BLR,193,0,Defender - Right Cover,Bengaluru Bulls,0.4
+5053,Rakesh Ram,8,2,7,,PUN,194,0,Defender - Right Cover,Puneri Paltan,0.25
+4966,Muhammed Shihas,6,2,8,,HYD,195,0,Defender - Left Corner,Telugu Titans,0.3333333333333333
+4967,Palla Ramakrishna,2,2,8,,HYD,196,0,Defender - Left Cover,Telugu Titans,1.0
+4956,Deepak Singh,3,2,3,,JAI,197,0,Defender - Right Cover,Jaipur Pink Panthers,0.6666666666666666
+4939,Pardeep Kumar,5,1,31,,GUJ,198,8,Raider,Gujarat Giants,0.2
+5019,Mohammad Ghorbani,1,1,31,,GUJ,199,0,Raider ,Gujarat Giants,1.0
+5105,Ashish,4,1,3,,JAI,200,0,Defender - Left Corner,Jaipur Pink Panthers,0.25
+5132,Priyank Chandel,3,1,31,,GUJ,201,9,Defender,Gujarat Giants,0.3333333333333333
+764,Vinod Kumar,3,1,4,,KOL,202,0,All-Rounder,Bengal Warriors,0.3333333333333333
+3075,Purna Singh,2,1,31,,GUJ,203,8,Raider,Gujarat Giants,0.5
+157,Ravinder Pahal,4,1,8,,HYD,204,0,Defender - Right Corner,Telugu Titans,0.25
+123,Vishal Mane,1,1,5,,MUM,205,9,Defender,U Mumba,1.0
+185,Vijin Thangadurai,4,1,31,,GUJ,206,9,Defender,Gujarat Giants,0.25
+326,Rohit Kumar,2,1,31,,GUJ,207,8,Raider,Gujarat Giants,0.5
+318,Pawan Sehrawat,1,1,29,,CHE,208,8,Raider,Tamil Thalaivas,1.0
+320,Nitin Tomar,5,1,30,,U.P.,209,8,Raider,U.P. Yoddhas,0.2
+299,Sandeep,3,1,31,,GUJ,210,9,Defender,Gujarat Giants,0.3333333333333333
+4106,Tejas Patil,2,1,2,,DEL,211,0,All-Rounder,Dabang Delhi K.C.,0.5
+4141,D MahindraPrasad,1,1,7,,PUN,212,0,Defender - Left Corner,Puneri Paltan,1.0
+4036,Nitin Chandel,3,1,3,,JAI,213,0,Defender - Right Corner,Jaipur Pink Panthers,0.3333333333333333
+4929,Soleiman Pahlevani,3,1,4,,KOL,214,9,Defender,Bengal Warriors,0.3333333333333333
+3175,Mohammad Mahalli,2,1,28,,HAR,215,8,Raider,Haryana Steelers,0.5
+3169,Satywan,2,1,5,,MUM,216,0,Defender - Left Cover,U Mumba,0.5

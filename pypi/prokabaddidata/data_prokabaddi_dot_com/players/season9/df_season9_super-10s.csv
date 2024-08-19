@@ -1,0 +1,44 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+2024,Arjun Deshwal,24,17,3,,JAI,1,8,Raider,Jaipur Pink Panthers,0.7083333333333334
+2296,Naveen Kumar,23,16,2,,DEL,2,8,Raider,Dabang Delhi K.C.,0.6956521739130435
+4944,Bharat,23,16,1,,BLR,3,8,Raider,Bengaluru Bulls,0.6956521739130435
+5093,Narender,23,15,29,,CHE,4,8,Raider,Tamil Thalaivas,0.6521739130434783
+143,Maninder Singh,21,14,4,,KOL,5,8,Raider,Bengal Warriors,0.6666666666666666
+197,Pardeep Narwal,22,11,30,,U.P.,6,8,Raider,U.P. Yoddhas,0.5
+5124,Parteek Dahiya,19,11,31,,GUJ,7,0,All-Rounder,Gujarat Giants,0.5789473684210527
+757,Sachin,20,8,6,,PAT,8,8,Raider,Patna Pirates,0.4
+3241,Surender Gill,14,8,30,,U.P.,9,8,Raider,U.P. Yoddhas,0.5714285714285714
+3966,Rakesh,17,7,31,,GUJ,10,8,Raider,Gujarat Giants,0.4117647058823529
+3023,Rohit Gulia,19,7,6,,PAT,11,0,All-Rounder,Patna Pirates,0.3684210526315789
+3032,Guman Singh,18,7,5,,MUM,12,8,Raider,U Mumba,0.3888888888888889
+763,Manjeet,22,6,28,,HAR,13,8,Raider,Haryana Steelers,0.2727272727272727
+2026,Siddharth Desai,17,6,8,,HYD,14,8,Raider,Telugu Titans,0.35294117647058826
+4947,Ashu Malik,23,5,2,,DEL,15,8,Raider,Dabang Delhi K.C.,0.21739130434782608
+4959,Akash Shinde,22,5,7,,PUN,16,8,Raider,Puneri Paltan,0.22727272727272727
+4183,Meetu Sharma,20,5,28,,HAR,17,8,Raider,Haryana Steelers,0.25
+4960,Aslam Inamdar,17,4,7,,PUN,18,8,Raider,Puneri Paltan,0.23529411764705882
+4022,Mohit Goyat,17,4,7,,PUN,19,8,Raider,Puneri Paltan,0.23529411764705882
+3081,Vijay Malik,11,4,2,,DEL,20,0,All-Rounder,Dabang Delhi K.C.,0.36363636363636365
+366,Vikash Kandola,24,4,1,,BLR,21,8,Raider,Bengaluru Bulls,0.16666666666666666
+3097,Ajinkya Pawar,22,3,29,,CHE,22,8,Raider,Tamil Thalaivas,0.13636363636363635
+3053,V Ajith Kumar,21,3,3,,JAI,23,8,Raider,Jaipur Pink Panthers,0.14285714285714285
+3233,Pankaj Mohite,13,2,7,,PUN,24,8,Raider,Puneri Paltan,0.15384615384615385
+36,Chandran Ranjit,17,2,31,,GUJ,25,8,Raider,Gujarat Giants,0.11764705882352941
+81,Rahul Chaudhari,21,2,3,,JAI,26,8,Raider,Jaipur Pink Panthers,0.09523809523809523
+106,Shrikant Jadhav,21,2,4,,KOL,27,8,Raider,Bengal Warriors,0.09523809523809523
+3038,Neeraj Narwal,24,2,1,,BLR,28,8,Raider,Bengaluru Bulls,0.08333333333333333
+3028,Ashish,21,2,5,,MUM,29,8,Raider,U Mumba,0.09523809523809523
+163,Mahendra Rajput,15,1,31,,GUJ,30,8,Raider,Gujarat Giants,0.06666666666666667
+522,Dong Geon Lee,12,1,31,,GUJ,31,8,Raider,Gujarat Giants,0.08333333333333333
+204,Rakesh Narwal,15,1,28,,HAR,32,8,Raider,Haryana Steelers,0.06666666666666667
+3128,Sonu,12,1,31,,GUJ,33,8,Raider,Gujarat Giants,0.08333333333333333
+4179,Sushil,5,1,28,,HAR,34,8,Raider,Haryana Steelers,0.2
+3965,Manjeet,20,1,2,,DEL,35,8,Raider,Dabang Delhi K.C.,0.05
+4963,Himanshu Singh,18,1,29,,CHE,36,8,Raider,Tamil Thalaivas,0.05555555555555555
+5002,Jai Bhagwan,19,1,5,,MUM,37,8,Raider,U Mumba,0.05263157894736842
+4222,Rohit Tomar,18,1,30,,U.P.,38,8,Raider,U.P. Yoddhas,0.05555555555555555
+4675,Akash Pikalmunde,3,1,4,,KOL,39,8,Raider,Bengal Warriors,0.3333333333333333
+4795,K Hanumanthu,8,1,8,,HYD,40,0,All-rounder,Telugu Titans,0.125
+5129,Saurabh,2,1,7,,PUN,41,8,Raider,Puneri Paltan,0.5
+5116,Aditya Shinde,6,1,7,,PUN,42,8,Raider,Puneri Paltan,0.16666666666666666
+5117,Pranay Rane,11,1,5,,MUM,43,8,Raider,U Mumba,0.09090909090909091

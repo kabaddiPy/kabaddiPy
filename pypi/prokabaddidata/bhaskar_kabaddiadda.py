@@ -739,7 +739,7 @@ if __name__ == "__main__":
     
     print("hello")
 
-    df = pd.read_csv(r"./auction_link_player_data.csv")
+    df = pd.read_csv(f"./data_kabaddi_adda/auction_link_player_data.csv")
 
     player_links = df["auction_link"].tolist()
     print(f"Total players to process: {len(player_links)}")
