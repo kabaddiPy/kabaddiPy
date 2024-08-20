@@ -1,0 +1,24 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+146,Surender Nada,15,5,5,,MUM,1,9,Defender,U Mumba,0.3333333333333333
+162,D. Suresh Kumar,12,4,6,,PAT,2,9,Defender,Patna Pirates,0.3333333333333333
+157,Ravinder Pahal,9,3,2,,DEL,3,9,Defender,Dabang Delhi K.C.,0.3333333333333333
+96,Rohit Rana,15,3,3,,JAI,4,9,Defender,Jaipur Pink Panthers,0.2
+69,Manjeet Chhillar,16,3,1,,BLR,5,0,All Rounder,Bengaluru Bulls,0.1875
+71,Mohit Chhillar,16,2,5,,MUM,6,9,Defender,U Mumba,0.125
+73,Nilesh Shinde,14,2,4,,KOL,7,9,Defender,Bengal Warriors,0.14285714285714285
+42,Dharmaraj Cheralathan,16,2,1,,BLR,8,9,Defender,Bengaluru Bulls,0.125
+55,Jitesh Joshi,14,2,7,,PUN,9,0,All Rounder,Puneri Paltan,0.14285714285714285
+86,Rajesh Narwal,16,2,3,,JAI,10,0,All Rounder,Jaipur Pink Panthers,0.125
+89,Ram Kumar Sah,9,2,6,,PAT,11,9,Defender,Patna Pirates,0.2222222222222222
+147,Prashant Chavan,15,2,3,,JAI,12,9,Defender,Jaipur Pink Panthers,0.13333333333333333
+142,Sandeep Narwal,16,2,6,,PAT,13,0,All Rounder,Patna Pirates,0.125
+166,Vijendar Singh,8,2,8,,HYD,14,0,,Telugu Titans,0.25
+165,Sachin Shingade,10,1,8,,HYD,15,9,Defender,Telugu Titans,0.1
+160,Ran Singh,10,1,3,,JAI,16,0,All Rounder,Jaipur Pink Panthers,0.1
+161,Girish Maruti Ernak,12,1,6,,PAT,17,9,Defender,Patna Pirates,0.08333333333333333
+123,Vishal Mane,16,1,5,,MUM,18,9,Defender,U Mumba,0.0625
+141,Sunil Jaipal,13,1,4,,KOL,19,8,Raider,Bengal Warriors,0.07692307692307693
+28,Amit Singh Chhillar,14,1,2,,DEL,20,9,Defender,Dabang Delhi K.C.,0.07142857142857142
+45,Gurpreet Singh,16,1,1,,BLR,21,9,Defender,Bengaluru Bulls,0.0625
+76,Nitin More,9,1,7,,PUN,22,9,Defender,Puneri Paltan,0.1111111111111111
+72,Navneet Gautam,14,1,3,,JAI,23,9,Defender,Jaipur Pink Panthers,0.07142857142857142

@@ -1,0 +1,30 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+29,Anup Kumar,16,8,5,,MUM,1,8,Raider,U Mumba,0.5
+142,Sandeep Narwal,16,7,6,,PAT,2,0,All Rounder,Patna Pirates,0.4375
+12,Jang Kun Lee,11,5,4,,KOL,3,8,Raider,Bengal Warriors,0.45454545454545453
+92,Ravi Dalal,16,4,6,,PAT,4,8,Raider,Patna Pirates,0.25
+86,Rajesh Narwal,16,3,3,,JAI,5,0,All Rounder,Jaipur Pink Panthers,0.1875
+111,Sukesh Hegde,14,3,8,,HYD,6,8,Raider,Telugu Titans,0.21428571428571427
+143,Maninder Singh,16,3,3,,JAI,7,8,Raider,Jaipur Pink Panthers,0.1875
+58,Kashiling Adake,14,3,2,,DEL,8,8,Raider,Dabang Delhi K.C.,0.21428571428571427
+41,Deepak Niwas Hooda,14,3,8,,HYD,9,0,All Rounder,Telugu Titans,0.21428571428571427
+75,Nitin Madane,12,3,4,,KOL,10,8,Raider,Bengal Warriors,0.25
+79,Pravin Niwale,7,3,7,,PUN,11,8,Raider,Puneri Paltan,0.42857142857142855
+81,Rahul Chaudhari,14,2,8,,HYD,12,8,Raider,Telugu Titans,0.14285714285714285
+85,Rajesh Mondal,15,2,1,,BLR,13,8,Raider,Bengaluru Bulls,0.13333333333333333
+67,Mahipal Narwal,5,2,7,,PUN,14,0,All Rounder,Puneri Paltan,0.4
+69,Manjeet Chhillar,16,2,1,,BLR,15,0,All Rounder,Bengaluru Bulls,0.125
+70,Manoj Kumar,14,2,7,,PUN,16,9,Defender,Puneri Paltan,0.14285714285714285
+52,Jasvir Singh,15,2,3,,JAI,17,8,Raider,Jaipur Pink Panthers,0.13333333333333333
+118,Surjeet Narwal,14,2,2,,DEL,18,8,Raider,Dabang Delhi K.C.,0.14285714285714285
+124,Wazir Singh,12,2,7,,PUN,19,8,Raider,Puneri Paltan,0.16666666666666666
+141,Sunil Jaipal,13,2,4,,KOL,20,8,Raider,Bengal Warriors,0.15384615384615385
+26,Ajay Thakur,15,2,1,,BLR,21,8,Raider,Bengaluru Bulls,0.13333333333333333
+94,Rishank Devadiga,16,2,5,,MUM,22,8,Raider,U Mumba,0.125
+105,Shabeer Bappu,10,2,5,,MUM,23,8,Raider,U Mumba,0.2
+160,Ran Singh,10,1,3,,JAI,24,0,All Rounder,Jaipur Pink Panthers,0.1
+56,Kalimuthu Balamahendran,14,1,7,,PUN,25,9,Defender,Puneri Paltan,0.07142857142857142
+66,Mahesh Goud,13,1,4,,KOL,26,8,Raider,Bengal Warriors,0.07692307692307693
+16,Waleed Al Hasani,6,1,7,,PUN,27,8,Raider,Puneri Paltan,0.16666666666666666
+21,Sinotharan Kanesharajah,1,1,1,,BLR,28,8,Raider,Bengaluru Bulls,1.0
+68,Mandeep Kumar,7,1,6,,PAT,29,8,Raider,Patna Pirates,0.14285714285714285

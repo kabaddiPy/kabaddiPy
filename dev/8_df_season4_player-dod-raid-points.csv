@@ -1,0 +1,55 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+81,Rahul Chaudhari,16,38,8,,HYD,1,8,Raider,Telugu Titans,2.375
+389,Ajay Kumar,15,36,3,,JAI,2,8,Raider,Jaipur Pink Panthers,2.4
+41,Deepak Niwas Hooda,16,34,7,,PUN,3,0,All Rounder,Puneri Paltan,2.125
+85,Rajesh Mondal,15,33,6,,PAT,4,8,Raider,Patna Pirates,2.2
+264,Selvamani K,13,27,2,,DEL,5,8,Raider,Dabang Delhi K.C.,2.076923076923077
+26,Ajay Thakur,16,25,7,,PUN,6,8,Raider,Puneri Paltan,1.5625
+197,Pardeep Narwal,16,23,6,,PAT,7,8,Raider,Patna Pirates,1.4375
+251,Meraj Sheykh,14,22,2,,DEL,8,0,All Rounder,Dabang Delhi K.C.,1.5714285714285714
+75,Nitin Madane,13,21,4,,KOL,9,8,Raider,Bengal Warriors,1.6153846153846154
+94,Rishank Devadiga,14,19,5,,MUM,10,8,Raider,U Mumba,1.3571428571428572
+293,Nilesh Salunke,15,18,8,,HYD,11,8,Raider,Telugu Titans,1.2
+388,Monu Goyat,13,18,4,,KOL,12,8,Raider,Bengal Warriors,1.3846153846153846
+326,Rohit Kumar,14,17,1,,BLR,13,8,Raider,Bengaluru Bulls,1.2142857142857142
+52,Jasvir Singh,14,16,3,,JAI,14,8,Raider,Jaipur Pink Panthers,1.1428571428571428
+58,Kashiling Adake,13,16,2,,DEL,15,8,Raider,Dabang Delhi K.C.,1.2307692307692308
+86,Rajesh Narwal,16,14,3,,JAI,16,0,All Rounder,Jaipur Pink Panthers,0.875
+12,Jang Kun Lee,11,13,4,,KOL,17,8,Raider,Bengal Warriors,1.1818181818181819
+155,Prashanth Kumar Rai,9,12,2,,DEL,18,8,Raider,Dabang Delhi K.C.,1.3333333333333333
+173,Suresu Kumar,11,12,5,,MUM,19,8,Raider,U Mumba,1.0909090909090908
+320,Nitin Tomar,12,11,7,,PUN,20,8,Raider,Puneri Paltan,0.9166666666666666
+300,Abolfazl Maghsodloumahali,9,9,6,,PAT,21,8,Raider,Patna Pirates,1.0
+156,Pawan Kumar Kadian,9,9,1,,BLR,22,8,Raider,Bengaluru Bulls,1.0
+219,K. Prapanjan,11,9,8,,HYD,23,8,Raider,Telugu Titans,0.8181818181818182
+387,Vinod Kumar,9,8,1,,BLR,24,8,Raider,Bengaluru Bulls,0.8888888888888888
+92,Ravi Dalal,6,7,4,,KOL,25,8,Raider,Bengal Warriors,1.1666666666666667
+318,Pawan Kumar Sehrawat,10,6,1,,BLR,26,8,Raider,Bengaluru Bulls,0.6
+242,Tushar Patil,8,6,3,,JAI,27,8,Raider,Jaipur Pink Panthers,0.75
+245,Yogesh Hooda,5,6,1,,BLR,28,8,Raider,Bengaluru Bulls,1.2
+202,Ashish Kumar,14,5,1,,BLR,29,9,Defender,Bengaluru Bulls,0.35714285714285715
+174,Deepak Kumar Dahiya,7,5,1,,BLR,30,8,Raider,Bengaluru Bulls,0.7142857142857143
+111,Sukesh Hegde,9,5,8,,HYD,31,8,Raider,Telugu Titans,0.5555555555555556
+119,Surjeet Singh,10,5,6,,PAT,32,8,Raider,Patna Pirates,0.5
+211,Deepak Narwal,6,4,2,,DEL,33,8,Raider,Dabang Delhi K.C.,0.6666666666666666
+67,Mahipal Narwal,14,4,3,,JAI,34,0,All Rounder,Jaipur Pink Panthers,0.2857142857142857
+234,Surender Singh,11,4,5,,MUM,35,8,Raider,U Mumba,0.36363636363636365
+376,Athul MS,4,4,8,,HYD,36,8,Raider,Telugu Titans,1.0
+366,Vikash Khandola,4,3,2,,DEL,37,8,Raider,Dabang Delhi K.C.,0.75
+29,Anup Kumar,14,3,5,,MUM,38,8,Raider,U Mumba,0.21428571428571427
+231,Amit Om Prakash Rathi,2,3,1,,BLR,39,8,Raider,Bengaluru Bulls,1.5
+172,Vinoth Kumar,3,2,8,,HYD,40,8,Raider,Telugu Titans,0.6666666666666666
+118,Surjeet Narwal,5,2,4,,KOL,41,8,Raider,Bengal Warriors,0.4
+190,Sonu Narwal,11,2,7,,PUN,42,8,Raider,Puneri Paltan,0.18181818181818182
+46,Gurvinder Singh,6,2,5,,MUM,43,8,Raider,U Mumba,0.3333333333333333
+69,Manjeet Chhillar,12,2,7,,PUN,44,0,All Rounder,Puneri Paltan,0.16666666666666666
+105,Shabeer Bappu,12,2,3,,JAI,45,8,Raider,Jaipur Pink Panthers,0.16666666666666666
+3104,Sumit Singh,5,2,1,,BLR,46,8,Raider,Bengaluru Bulls,0.4
+367,Nitin Kumar,1,1,5,,MUM,47,0,All Rounder,U Mumba,1.0
+386,Anil Kumar,9,1,2,,DEL,48,9,Defender,Dabang Delhi K.C.,0.1111111111111111
+272,Umesh Mhatre,2,1,2,,DEL,49,8,Raider,Dabang Delhi K.C.,0.5
+88,Rakesh Kumar,14,1,5,,MUM,50,0,All Rounder,U Mumba,0.07142857142857142
+66,Mahesh Goud,7,1,6,,PAT,51,8,Raider,Patna Pirates,0.14285714285714285
+194,Joginder Singh Narwal,16,1,7,,PUN,52,9,Defender,Puneri Paltan,0.0625
+150,Parmod Narwal,8,1,7,,PUN,53,0,All Rounder,Puneri Paltan,0.125
+210,Sunny,3,1,6,,PAT,54,8,Raider,Patna Pirates,0.3333333333333333

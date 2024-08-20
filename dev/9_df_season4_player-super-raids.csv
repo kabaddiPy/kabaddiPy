@@ -1,0 +1,29 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+81,Rahul Chaudhari,16,6,8,,HYD,1,8,Raider,Telugu Titans,0.375
+26,Ajay Thakur,16,5,7,,PUN,2,8,Raider,Puneri Paltan,0.3125
+251,Meraj Sheykh,14,4,2,,DEL,3,0,All Rounder,Dabang Delhi K.C.,0.2857142857142857
+197,Pardeep Narwal,16,3,6,,PAT,4,8,Raider,Patna Pirates,0.1875
+326,Rohit Kumar,14,3,1,,BLR,5,8,Raider,Bengaluru Bulls,0.21428571428571427
+58,Kashiling Adake,13,3,2,,DEL,6,8,Raider,Dabang Delhi K.C.,0.23076923076923078
+86,Rajesh Narwal,16,3,3,,JAI,7,0,All Rounder,Jaipur Pink Panthers,0.1875
+94,Rishank Devadiga,14,2,5,,MUM,8,8,Raider,U Mumba,0.14285714285714285
+12,Jang Kun Lee,11,2,4,,KOL,9,8,Raider,Bengal Warriors,0.18181818181818182
+41,Deepak Niwas Hooda,16,2,7,,PUN,10,0,All Rounder,Puneri Paltan,0.125
+155,Prashanth Kumar Rai,9,2,2,,DEL,11,8,Raider,Dabang Delhi K.C.,0.2222222222222222
+300,Abolfazl Maghsodloumahali,9,2,6,,PAT,12,8,Raider,Patna Pirates,0.2222222222222222
+320,Nitin Tomar,12,1,7,,PUN,13,8,Raider,Puneri Paltan,0.08333333333333333
+264,Selvamani K,13,1,2,,DEL,14,8,Raider,Dabang Delhi K.C.,0.07692307692307693
+293,Nilesh Salunke,15,1,8,,HYD,15,8,Raider,Telugu Titans,0.06666666666666667
+174,Deepak Kumar Dahiya,7,1,1,,BLR,16,8,Raider,Bengaluru Bulls,0.14285714285714285
+211,Deepak Narwal,6,1,2,,DEL,17,8,Raider,Dabang Delhi K.C.,0.16666666666666666
+389,Ajay Kumar,15,1,3,,JAI,18,8,Raider,Jaipur Pink Panthers,0.06666666666666667
+29,Anup Kumar,14,1,5,,MUM,19,8,Raider,U Mumba,0.07142857142857142
+67,Mahipal Narwal,14,1,3,,JAI,20,0,All Rounder,Jaipur Pink Panthers,0.07142857142857142
+69,Manjeet Chhillar,12,1,7,,PUN,21,0,All Rounder,Puneri Paltan,0.08333333333333333
+75,Nitin Madane,13,1,4,,KOL,22,8,Raider,Bengal Warriors,0.07692307692307693
+105,Shabeer Bappu,12,1,3,,JAI,23,8,Raider,Jaipur Pink Panthers,0.08333333333333333
+119,Surjeet Singh,10,1,6,,PAT,24,8,Raider,Patna Pirates,0.1
+150,Parmod Narwal,8,1,7,,PUN,25,0,All Rounder,Puneri Paltan,0.125
+88,Rakesh Kumar,14,1,5,,MUM,26,0,All Rounder,U Mumba,0.07142857142857142
+92,Ravi Dalal,6,1,4,,KOL,27,8,Raider,Bengal Warriors,0.16666666666666666
+85,Rajesh Mondal,15,1,6,,PAT,28,8,Raider,Patna Pirates,0.06666666666666667

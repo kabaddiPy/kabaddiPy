@@ -1,0 +1,56 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+318,Pawan Kumar,24,11,1,,BLR,1,8,raider,Bengaluru Bulls,0.4583333333333333
+2026,Siddharth Desai,21,10,5,,MUM,2,8,Raider,U Mumba,0.47619047619047616
+197,Pardeep Narwal,21,6,6,,PAT,3,8,Raider,Patna Pirates,0.2857142857142857
+143,Maninder Singh,22,6,4,,KOL,4,8,raider,Bengal Warriors,0.2727272727272727
+326,Rohit Kumar,24,5,1,,BLR,5,8,raider,Bengaluru Bulls,0.20833333333333334
+366,Vikash Khandola,22,5,28,,HAR,6,8,raider,Haryana Steelers,0.22727272727272727
+251,Meraj Sheykh,19,4,2,,DEL,7,0,All Rounder,Dabang Delhi K.C.,0.21052631578947367
+293,Nilesh Salunke,19,4,8,,HYD,8,9,Defender,Telugu Titans,0.21052631578947367
+106,Shrikant Jadhav,25,4,30,,U.P.,9,8,raider,U.P. Yoddha,0.16
+41,Deepak Hooda,22,4,3,,JAI,10,0,All Rounder,Jaipur Pink Panthers,0.18181818181818182
+81,Rahul Chaudhari,21,4,8,,HYD,11,8,Raider,Telugu Titans,0.19047619047619047
+2357,Naveen ,21,4,28,,HAR,12,8,Raider,Haryana Steelers,0.19047619047619047
+264,Selvamani K ,14,3,3,,JAI,13,8,raider,Jaipur Pink Panthers,0.21428571428571427
+94,Rishank Devadiga,23,3,30,,U.P.,14,8,Raider,U.P. Yoddha,0.13043478260869565
+58,Kashiling Adake,20,3,1,,BLR,15,8,Raider,Bengaluru Bulls,0.15
+66,Mahesh Goud,10,3,4,,KOL,16,8,Raider,Bengal Warriors,0.3
+26,Ajay Thakur,22,3,29,,CHE,17,8,Raider,Tamil Thalaivas,0.13636363636363635
+111,Sukesh Hegde,17,3,29,,CHE,18,8,Raider,Tamil Thalaivas,0.17647058823529413
+163,Mahendra Rajput,13,3,31,,GUJ,19,8,raider,Gujarat Giants,0.23076923076923078
+388,Monu Goyat,20,3,28,,HAR,20,8,Raider,Haryana Steelers,0.15
+763,Manjeet ,22,3,6,,PAT,21,8,raider,Patna Pirates,0.13636363636363635
+155,Prashanth Rai,21,2,30,,U.P.,22,8,raider,U.P. Yoddha,0.09523809523809523
+29,Anup Kumar,13,2,3,,JAI,23,8,Raider,Jaipur Pink Panthers,0.15384615384615385
+12,Jang Lee,18,2,4,,KOL,24,8,Raider,Bengal Warriors,0.1111111111111111
+36,Chandran Ranjit,24,2,2,,DEL,25,8,Raider,Dabang Delhi K.C.,0.08333333333333333
+3094,Ravindra Kumavat,12,2,4,,KOL,26,8,raider,Bengal Warriors,0.16666666666666666
+3023,Rohit Gulia,19,2,31,,GUJ,27,0,All Rounder,Gujarat Giants,0.10526315789473684
+2296,Naveen Kumar,22,2,2,,DEL,28,8,Raider,Dabang Delhi K.C.,0.09090909090909091
+2298,Armaan ,4,1,8,,HYD,29,0,,Telugu Titans,0.25
+2314,Dharmender ,4,1,31,,GUJ,30,0,,Gujarat Giants,0.25
+2316,Azad Singh,9,1,30,,U.P.,31,0,,U.P. Yoddha,0.1111111111111111
+3065,Nitin Rawal,9,1,3,,JAI,32,0,All Rounder,Jaipur Pink Panthers,0.1111111111111111
+3082,Monu ,14,1,7,,PUN,33,8,Raider,Puneri Paltan,0.07142857142857142
+3097,Ajinkya Ashok Pawar,17,1,3,,JAI,34,8,Raider,Jaipur Pink Panthers,0.058823529411764705
+3110,Amit Kumar,6,1,7,,PUN,35,0,,Puneri Paltan,0.16666666666666666
+3133,Amit Kumar,17,1,3,,JAI,36,0,,Jaipur Pink Panthers,0.058823529411764705
+2028,Abhishek Singh,15,1,5,,MUM,37,8,Raider,U Mumba,0.06666666666666667
+34,Bhupender Singh,4,1,4,,KOL,38,0,All Rounder,Bengal Warriors,0.25
+156,Pawan Kumar,13,1,2,,DEL,39,8,Raider,Dabang Delhi K.C.,0.07692307692307693
+174,Deepak Dahiya,11,1,7,,PUN,40,9,Defender,Puneri Paltan,0.09090909090909091
+119,Surjeet Singh,9,1,29,,CHE,41,8,Raider,Tamil Thalaivas,0.1111111111111111
+121,Vikash Jaglan,14,1,6,,PAT,42,0,All Rounder,Patna Pirates,0.07142857142857142
+142,Sandeep Narwal,18,1,7,,PUN,43,0,All Rounder,Puneri Paltan,0.05555555555555555
+772,More G B,22,1,7,,PUN,44,8,Raider,Puneri Paltan,0.045454545454545456
+320,Nitin Tomar,11,1,7,,PUN,45,8,raider,Puneri Paltan,0.09090909090909091
+324,DARSHAN ,14,1,5,,MUM,46,8,Raider,U Mumba,0.07142857142857142
+389,Ajay Kumar,13,1,31,,GUJ,47,8,Raider,Gujarat Giants,0.07692307692307693
+522,Dong Geon Lee,11,1,31,,GUJ,48,8,Raider,Gujarat Giants,0.09090909090909091
+576,Anand Patil,7,1,3,,JAI,49,8,Raider,Jaipur Pink Panthers,0.14285714285714285
+757,Sachin ,23,1,31,,GUJ,50,8,Raider,Gujarat Giants,0.043478260869565216
+300,Abolfazel Maghsodlo,10,1,5,,MUM,51,8,Raider,U Mumba,0.1
+261,Rohit Baliyan,19,1,5,,MUM,52,8,Raider,U Mumba,0.05263157894736842
+204,Rakesh Narwal,6,1,4,,KOL,53,8,Raider,Bengal Warriors,0.16666666666666666
+211,Deepak Narwal,17,1,6,,PAT,54,8,Raider,Patna Pirates,0.058823529411764705
+219,K.Prapanjan ,22,1,31,,GUJ,55,8,raider,Gujarat Giants,0.045454545454545456

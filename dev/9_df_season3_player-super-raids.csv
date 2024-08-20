@@ -1,0 +1,29 @@
+player_id,player_name,match_played,value,team_id,team,team_name,rank,position_id,position_name,team_full_name,points_per_match
+197,Pardeep Narwal,16,10,6,,PAT,1,8,Raider,Patna Pirates,0.625
+94,Rishank Devadiga,16,4,5,,MUM,2,8,Raider,U Mumba,0.25
+326,Rohit Kumar,12,4,6,,PAT,3,8,Raider,Patna Pirates,0.3333333333333333
+174,Deepak Kumar Dahiya,10,3,1,,BLR,4,8,Raider,Bengaluru Bulls,0.3
+29,Anup Kumar,13,3,5,,MUM,5,8,Raider,U Mumba,0.23076923076923078
+58,Kashiling Adake,11,3,2,,DEL,6,8,Raider,Dabang Delhi K.C.,0.2727272727272727
+69,Manjeet Chhillar,15,2,7,,PUN,7,0,All Rounder,Puneri Paltan,0.13333333333333333
+85,Rajesh Mondal,9,2,6,,PAT,8,8,Raider,Patna Pirates,0.2222222222222222
+86,Rajesh Narwal,14,2,3,,JAI,9,0,All Rounder,Jaipur Pink Panthers,0.14285714285714285
+52,Jasvir Singh,4,2,3,,JAI,10,8,Raider,Jaipur Pink Panthers,0.5
+12,Jang Kun Lee,15,2,4,,KOL,11,8,Raider,Bengal Warriors,0.13333333333333333
+26,Ajay Thakur,14,2,7,,PUN,12,8,Raider,Puneri Paltan,0.14285714285714285
+190,Sonu Narwal,11,2,3,,JAI,13,8,Raider,Jaipur Pink Panthers,0.18181818181818182
+118,Surjeet Narwal,12,2,1,,BLR,14,8,Raider,Bengaluru Bulls,0.16666666666666666
+160,Ran Singh,14,2,3,,JAI,15,0,All Rounder,Jaipur Pink Panthers,0.14285714285714285
+234,Surender Singh,12,2,7,,PUN,16,8,Raider,Puneri Paltan,0.16666666666666666
+242,Tushar Patil,13,2,7,,PUN,17,8,Raider,Puneri Paltan,0.15384615384615385
+261,Rohit Baliyan,11,2,8,,HYD,18,8,Raider,Telugu Titans,0.18181818181818182
+264,Selvamani K,8,1,2,,DEL,19,8,Raider,Dabang Delhi K.C.,0.125
+275,Deepak Kumar Rathee,14,1,1,,BLR,20,0,All Rounder,Bengaluru Bulls,0.07142857142857142
+277,Anil Shriram Nimbolkar,6,1,2,,DEL,21,8,Raider,Dabang Delhi K.C.,0.16666666666666666
+293,Nilesh Salunke,7,1,7,,PUN,22,8,Raider,Puneri Paltan,0.14285714285714285
+318,Pawan Kumar Sehrawat,13,1,1,,BLR,23,8,Raider,Bengaluru Bulls,0.07692307692307693
+320,Nitin Tomar,10,1,4,,KOL,24,8,Raider,Bengal Warriors,0.1
+107,Shrikant Tewthia,13,1,1,,BLR,25,0,All Rounder,Bengaluru Bulls,0.07692307692307693
+108,Shyam Kumar Sah,7,1,4,,KOL,26,9,Defender,Bengal Warriors,0.14285714285714285
+231,Amit Om Prakash Rathi,8,1,1,,BLR,27,8,Raider,Bengaluru Bulls,0.125
+81,Rahul Chaudhari,13,1,8,,HYD,28,8,Raider,Telugu Titans,0.07692307692307693
