@@ -93,7 +93,7 @@ def process_chunk(chunk_links):
 
 if __name__ == "__main__":
     with KabaddiDataAggregator() as aggregator:
-        df = pd.read_csv(f"./data_kabaddi_adda/auction_link_player_data.csv")
+        df = pd.read_csv(f"./data_kabaddi_adda/old/auction_link_player_data.csv")
         player_links = df["auction_link"].tolist()
         print(f"Total players to process: {len(player_links)}")
 
