@@ -21,6 +21,14 @@ Dan Morse: https://www.stat.cmu.edu/cmsac/conference/2022/assets/pdf/Morse.pdf
 
 ## CMSAC 2021
 
+https://www.stat.cmu.edu/cmsac/conference/2021/
+
+### Reproducible Research Competition
+
+Data + Software Student-Track Winner
+
+
+
 
 
 ## CMSAC 2020
