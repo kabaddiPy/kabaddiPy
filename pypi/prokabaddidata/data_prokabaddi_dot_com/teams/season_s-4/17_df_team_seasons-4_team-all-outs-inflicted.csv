@@ -1,0 +1,9 @@
+match_played,value,team_id,team_name,rank,points_per_match
+16,12,8,Telugu Titans,1,0.75
+16,10,7,Puneri Paltan,2,0.625
+16,8,3,Jaipur Pink Panthers,3,0.5
+14,7,4,Bengal Warriors,4,0.5
+16,7,6,Patna Pirates,5,0.4375
+14,6,5,U Mumba,6,0.42857142857142855
+14,5,2,Dabang Delhi K.C.,7,0.35714285714285715
+14,4,1,Bengaluru Bulls,8,0.2857142857142857
