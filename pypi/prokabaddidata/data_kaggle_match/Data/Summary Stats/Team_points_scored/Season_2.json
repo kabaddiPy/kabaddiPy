@@ -1,0 +1,76 @@
+{
+  "stat": "Team Total Points",
+  "stat_id": "96",
+  "minimum_criteria": "",
+  "data": [
+    {
+      "team_id": 8,
+      "team_name": "Telugu Titans",
+      "match_played": 16,
+      "value": 586,
+      "rank": "1"
+    },
+    {
+      "team_id": 1,
+      "team_name": "Bengaluru Bulls",
+      "match_played": 16,
+      "value": 508,
+      "rank": "2"
+    },
+    {
+      "team_id": 5,
+      "team_name": "U Mumba",
+      "match_played": 16,
+      "value": 489,
+      "rank": "3"
+    },
+    {
+      "team_id": 6,
+      "team_name": "Patna Pirates",
+      "match_played": 16,
+      "value": 444,
+      "rank": "4"
+    },
+    {
+      "team_id": 3,
+      "team_name": "Jaipur Pink Panthers",
+      "match_played": 14,
+      "value": 442,
+      "rank": "5"
+    },
+    {
+      "team_id": 2,
+      "team_name": "Dabang Delhi K.C.",
+      "match_played": 14,
+      "value": 396,
+      "rank": "6"
+    },
+    {
+      "team_id": 7,
+      "team_name": "Puneri Paltan",
+      "match_played": 14,
+      "value": 391,
+      "rank": "7"
+    },
+    {
+      "team_id": 4,
+      "team_name": "Bengal Warriors",
+      "match_played": 14,
+      "value": 367,
+      "rank": "8"
+    }
+  ],
+  "language_lookup": {
+    "stat": "Stat",
+    "stat_id": "Stat Id",
+    "minimum_criteria": "Minimum Criteria",
+    "team_id": "Team Id",
+    "team_name": "Team Name",
+    "player_id": "Player Id",
+    "player_name": "Player Name",
+    "value": "Value",
+    "match_played": "Match Played",
+    "team": "Team",
+    "tackles": "Tackles"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "stat": "Team Tackle Points",
+  "stat_id": "95",
+  "minimum_criteria": "",
+  "data": [
+    {
+      "team_id": 1,
+      "team_name": "Bengaluru Bulls",
+      "match_played": 16,
+      "value": 164,
+      "rank": "1"
+    },
+    {
+      "team_id": 3,
+      "team_name": "Jaipur Pink Panthers",
+      "match_played": 15,
+      "value": 164,
+      "rank": "1"
+    },
+    {
+      "team_id": 7,
+      "team_name": "Puneri Paltan",
+      "match_played": 14,
+      "value": 157,
+      "rank": "3"
+    },
+    {
+      "team_id": 4,
+      "team_name": "Bengal Warriors",
+      "match_played": 16,
+      "value": 155,
+      "rank": "4"
+    },
+    {
+      "team_id": 6,
+      "team_name": "Patna Pirates",
+      "match_played": 15,
+      "value": 154,
+      "rank": "5"
+    },
+    {
+      "team_id": 30,
+      "team_name": "U.P. Yoddha",
+      "match_played": 14,
+      "value": 149,
+      "rank": "6"
+    },
+    {
+      "team_id": 5,
+      "team_name": "U Mumba",
+      "match_played": 15,
+      "value": 148,
+      "rank": "7"
+    },
+    {
+      "team_id": 28,
+      "team_name": "Haryana Steelers",
+      "match_played": 14,
+      "value": 148,
+      "rank": "7"
+    },
+    {
+      "team_id": 8,
+      "team_name": "Telugu Titans",
+      "match_played": 14,
+      "value": 146,
+      "rank": "9"
+    },
+    {
+      "team_id": 31,
+      "team_name": "Gujarat Fortunegiants",
+      "match_played": 14,
+      "value": 141,
+      "rank": "10"
+    },
+    {
+      "team_id": 29,
+      "team_name": "Tamil Thalaivas",
+      "match_played": 15,
+      "value": 132,
+      "rank": "11"
+    },
+    {
+      "team_id": 2,
+      "team_name": "Dabang Delhi K.C.",
+      "match_played": 14,
+      "value": 127,
+      "rank": "12"
+    }
+  ],
+  "language_lookup": {
+    "stat": "Stat",
+    "stat_id": "Stat Id",
+    "minimum_criteria": "Minimum Criteria",
+    "team_id": "Team Id",
+    "team_name": "Team Name",
+    "player_id": "Player Id",
+    "player_name": "Player Name",
+    "value": "Value",
+    "match_played": "Match Played",
+    "team": "Team",
+    "tackles": "Tackles"
+  }
+}
