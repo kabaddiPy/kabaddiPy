@@ -778,6 +778,6 @@ if __name__ == "__main__":
     #print(aggregator.get_player_auction_info("Paul"))
     #print(aggregator.get_season_auction_data(season=8, top=10))
     #aggregator.get_team_standings()
-    df = pd.read_csv(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\matchesoverview\merged_match_overview.csv")
+    df = pd.read_csv(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\teams\all_seasons_team_stats.csv")
     column_headers = df.columns.to_list()
     print("The Column Header :", column_headers)
