@@ -1,0 +1,139 @@
+id,result,prev_position,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
+632,W,,2018-10-10,29,CHE,37,1,BLR,48,,Bengaluru Bulls Won by 11 Pts,1
+644,W,,2018-10-17,1,BLR,44,29,CHE,35,,Bengaluru Bulls Won by 9 Pts,1
+653,L,,2018-10-21,7,PUNE,27,1,BLR,25,,Puneri Paltan Won by 2 Pts,1
+656,W,,2018-10-24,1,BLR,42,28,HAR,34,,Bengaluru Bulls Won by 8 Pts,1
+667,W,,2018-10-31,6,PAT,41,1,BLR,43,,Bengaluru Bulls Won by 2 Pts,1
+672,W,,2018-11-03,30,UP,29,1,BLR,35,,Bengaluru Bulls Won by 6 Pts,1
+679,W,,2018-11-08,30,UP,27,1,BLR,37,,Bengaluru Bulls Won by 10 Pts,1
+688,L,,2018-11-14,5,MUM,32,1,BLR,29,,U Mumba Won by 3 Pts,1
+694,,,2018-11-17,31,GUJ,30,1,BLR,30,,,1
+695,W,,2018-11-18,3,JAI,32,1,BLR,45,,Bengaluru Bulls Won by 13 Pts,1
+702,L,,2018-11-23,1,BLR,31,4,KOL,33,,Bengal Warriorz Won by 2 Pts,1
+705,W,,2018-11-24,1,BLR,36,29,CHE,22,,Bengaluru Bulls Won by 14 Pts,1
+706,L,,2018-11-25,1,BLR,32,6,PAT,35,,Patna Pirates Won by 3 Pts,1
+635,W,,2018-11-26,1,BLR,37,30,UP,27,,Bengaluru Bulls Won by 10 Pts,1
+710,W,,2018-11-28,1,BLR,34,8,HYD,26,,Bengaluru Bulls Won by 8 Pts,1
+712,L,,2018-11-29,1,BLR,37,4,KOL,44,,Bengal Warriorz Won by 7 Pts,1
+721,L,,2018-12-05,2,DEL,32,1,BLR,31,,Dabang Delhi K.C. Won by 1 Pts,1
+733,W,,2018-12-12,8,HYD,24,1,BLR,37,,Bengaluru Bulls Won by 13 Pts,1
+741,W,,2018-12-18,1,BLR,44,8,HYD,28,,Bengaluru Bulls Won by 16 Pts,1
+743,,,2018-12-19,6,PAT,40,1,BLR,40,,,1
+754,L,,2018-12-26,4,KOL,37,1,BLR,31,,Bengal Warriorz Won by 6 Pts,1
+755,W,,2018-12-27,3,JAI,32,1,BLR,40,,Bengaluru Bulls Won by 8 Pts,1
+759,W,,2018-12-31,31,GUJ,29,1,BLR,41,,Bengaluru Bulls Won by 12 Pts,1
+762,W,,2019-01-05,1,BLR,38,31,GUJ,33,,Bengaluru Bulls Won by 5 Pts,1
+634,W,,2018-10-11,29,CHE,27,4,KOL,36,,Bengal Warriorz Won by 9 Pts,4
+642,W,,2018-10-16,4,KOL,30,8,HYD,25,,Bengal Warriorz Won by 5 Pts,4
+650,,,2018-10-20,30,UP,40,4,KOL,40,,,4
+652,L,,2018-10-21,2,DEL,39,4,KOL,30,,Dabang Delhi K.C. Won by 9 Pts,4
+660,W,,2018-10-27,3,JAI,28,4,KOL,39,,Bengal Warriorz Won by 11 Pts,4
+668,L,,2018-11-01,6,PAT,29,4,KOL,27,,Patna Pirates Won by 2 Pts,4
+674,,,2018-11-04,30,UP,30,4,KOL,30,,,4
+681,W,,2018-11-09,4,KOL,30,8,HYD,25,,Bengal Warriorz Won by 5 Pts,4
+682,L,,2018-11-10,6,PAT,50,4,KOL,30,,Patna Pirates Won by 20 Pts,4
+691,L,,2018-11-16,31,GUJ,35,4,KOL,23,,Gujarat Giants Won by 12 Pts,4
+693,W,,2018-11-17,7,PUNE,22,4,KOL,26,,Bengal Warriorz Won by 4 Pts,4
+702,W,,2018-11-23,1,BLR,31,4,KOL,33,,Bengal Warriorz Won by 2 Pts,4
+712,W,,2018-11-29,1,BLR,37,4,KOL,44,,Bengal Warriorz Won by 7 Pts,4
+720,L,,2018-12-05,28,HAR,35,4,KOL,33,,Haryana Steelers Won by 2 Pts,4
+726,L,,2018-12-08,5,MUM,31,4,KOL,20,,U Mumba Won by 11 Pts,4
+736,W,,2018-12-14,4,KOL,28,29,CHE,21,,Bengal Warriorz Won by 7 Pts,4
+750,W,,2018-12-21,4,KOL,27,29,CHE,24,,Bengal Warriorz Won by 3 Pts,4
+748,W,,2018-12-22,4,KOL,39,6,PAT,23,,Bengal Warriorz Won by 16 Pts,4
+749,L,,2018-12-23,4,KOL,31,2,DEL,37,,Dabang Delhi K.C. Won by 6 Pts,4
+752,W,,2018-12-25,4,KOL,39,8,HYD,34,,Bengal Warriorz Won by 5 Pts,4
+754,W,,2018-12-26,4,KOL,37,1,BLR,31,,Bengal Warriorz Won by 6 Pts,4
+756,L,,2018-12-27,4,KOL,25,30,UP,41,,UP Yoddhas Won by 16 Pts,4
+758,L,,2018-12-30,2,DEL,39,4,KOL,28,,Dabang Delhi K.C. Won by 11 Pts,4
+628,W,,2018-10-08,29,CHE,32,30,UP,37,,UP Yoddhas Won by 5 Pts,30
+677,L,,2018-10-11,30,UP,41,6,PAT,43,,Patna Pirates Won by 2 Pts,30
+640,L,,2018-10-13,8,HYD,34,30,UP,29,,Telugu Titans Won by 5 Pts,30
+637,L,,2018-10-14,6,PAT,43,30,UP,37,,Patna Pirates Won by 6 Pts,30
+650,,,2018-10-20,30,UP,40,4,KOL,40,,,30
+657,W,,2018-10-24,7,PUNE,23,30,UP,29,,UP Yoddhas Won by 6 Pts,30
+662,W,,2018-10-28,2,DEL,36,30,UP,38,,UP Yoddhas Won by 2 Pts,30
+669,L,,2018-11-02,30,UP,24,29,CHE,46,,Tamil Thalaivas Won by 22 Pts,30
+672,L,,2018-11-03,30,UP,29,1,BLR,35,,Bengaluru Bulls Won by 6 Pts,30
+674,,,2018-11-04,30,UP,30,4,KOL,30,,,30
+676,,,2018-11-06,30,UP,26,8,HYD,26,,,30
+679,L,,2018-11-08,30,UP,27,1,BLR,37,,Bengaluru Bulls Won by 10 Pts,30
+686,L,,2018-11-13,5,MUM,41,30,UP,24,,U Mumba Won by 17 Pts,30
+692,L,,2018-11-16,3,JAI,45,30,UP,28,,Jaipur Pink Panthers Won by 17 Pts,30
+696,L,,2018-11-18,31,GUJ,37,30,UP,32,,Gujarat Giants Won by 5 Pts,30
+635,L,,2018-11-26,1,BLR,37,30,UP,27,,Bengaluru Bulls Won by 10 Pts,30
+722,W,,2018-12-06,30,UP,30,28,HAR,29,,UP Yoddhas Won by 1 Pts,30
+731,W,,2018-12-11,8,HYD,20,30,UP,27,,UP Yoddhas Won by 7 Pts,30
+737,,,2018-12-15,30,UP,25,29,CHE,25,,,30
+739,W,,2018-12-16,6,PAT,31,30,UP,47,,UP Yoddhas Won by 16 Pts,30
+747,W,,2018-12-22,5,MUM,32,30,UP,34,,UP Yoddhas Won by 2 Pts,30
+756,W,,2018-12-27,4,KOL,25,30,UP,41,,UP Yoddhas Won by 16 Pts,30
+757,W,,2018-12-30,5,MUM,29,30,UP,34,,UP Yoddhas Won by 5 Pts,30
+760,W,,2018-12-31,30,UP,45,2,DEL,33,,UP Yoddhas Won by 12 Pts,30
+761,L,,2019-01-03,31,GUJ,38,30,UP,31,,Gujarat Giants Won by 7 Pts,30
+625,L,,2018-10-07,29,CHE,42,6,PAT,26,,Tamil Thalaivas Won by 16 Pts,6
+677,W,,2018-10-11,30,UP,41,6,PAT,43,,Patna Pirates Won by 2 Pts,6
+637,W,,2018-10-14,6,PAT,43,30,UP,37,,Patna Pirates Won by 6 Pts,6
+648,L,,2018-10-19,6,PAT,31,8,HYD,35,,Telugu Titans Won by 4 Pts,6
+658,W,,2018-10-26,6,PAT,41,3,JAI,30,,Patna Pirates Won by 11 Pts,6
+661,L,,2018-10-27,6,PAT,39,5,MUM,40,,U Mumba Won by 1 Pts,6
+663,L,,2018-10-28,6,PAT,32,28,HAR,43,,Haryana Steelers Won by 11 Pts,6
+665,L,,2018-10-30,6,PAT,32,8,HYD,53,,Telugu Titans Won by 21 Pts,6
+667,L,,2018-10-31,6,PAT,41,1,BLR,43,,Bengaluru Bulls Won by 2 Pts,6
+668,W,,2018-11-01,6,PAT,29,4,KOL,27,,Patna Pirates Won by 2 Pts,6
+682,W,,2018-11-10,6,PAT,50,4,KOL,30,,Patna Pirates Won by 20 Pts,6
+689,W,,2018-11-15,6,PAT,38,2,DEL,35,,Patna Pirates Won by 3 Pts,6
+699,W,,2018-11-21,6,PAT,45,29,CHE,27,,Patna Pirates Won by 18 Pts,6
+706,W,,2018-11-25,1,BLR,32,6,PAT,35,,Patna Pirates Won by 3 Pts,6
+714,,,2018-11-30,29,CHE,35,6,PAT,35,,,6
+718,L,,2018-12-04,6,PAT,27,31,GUJ,45,,Gujarat Giants Won by 18 Pts,6
+725,W,,2018-12-07,6,PAT,53,7,PUNE,36,,Patna Pirates Won by 17 Pts,6
+734,L,,2018-12-13,8,HYD,41,6,PAT,36,,Telugu Titans Won by 5 Pts,6
+739,L,,2018-12-16,6,PAT,31,30,UP,47,,UP Yoddhas Won by 16 Pts,6
+743,,,2018-12-19,6,PAT,40,1,BLR,40,,,6
+748,L,,2018-12-22,4,KOL,39,6,PAT,23,,Bengal Warriorz Won by 16 Pts,6
+753,L,,2018-12-26,31,GUJ,37,6,PAT,29,,Gujarat Giants Won by 8 Pts,6
+630,W,,2018-10-09,29,CHE,28,8,HYD,33,,Telugu Titans Won by 5 Pts,8
+640,W,,2018-10-13,8,HYD,34,30,UP,29,,Telugu Titans Won by 5 Pts,8
+642,L,,2018-10-16,4,KOL,30,8,HYD,25,,Bengal Warriorz Won by 5 Pts,8
+648,W,,2018-10-19,6,PAT,31,8,HYD,35,,Telugu Titans Won by 4 Pts,8
+654,L,,2018-10-23,5,MUM,41,8,HYD,20,,U Mumba Won by 21 Pts,8
+665,W,,2018-10-30,6,PAT,32,8,HYD,53,,Telugu Titans Won by 21 Pts,8
+676,,,2018-11-06,30,UP,26,8,HYD,26,,,8
+681,L,,2018-11-09,4,KOL,30,8,HYD,25,,Bengal Warriorz Won by 5 Pts,8
+685,W,,2018-11-13,7,PUNE,25,8,HYD,28,,Telugu Titans Won by 3 Pts,8
+697,L,,2018-11-20,29,CHE,27,8,HYD,23,,Tamil Thalaivas Won by 4 Pts,8
+708,L,,2018-11-26,29,CHE,31,8,HYD,25,,Tamil Thalaivas Won by 6 Pts,8
+710,L,,2018-11-28,1,BLR,34,8,HYD,26,,Bengaluru Bulls Won by 8 Pts,8
+719,L,,2018-12-04,2,DEL,34,8,HYD,29,,Dabang Delhi K.C. Won by 5 Pts,8
+724,L,,2018-12-07,8,HYD,27,31,GUJ,29,,Gujarat Giants Won by 2 Pts,8
+727,W,,2018-12-08,8,HYD,36,3,JAI,26,,Telugu Titans Won by 10 Pts,8
+729,W,,2018-12-09,8,HYD,35,28,HAR,31,,Telugu Titans Won by 4 Pts,8
+731,L,,2018-12-11,8,HYD,20,30,UP,27,,UP Yoddhas Won by 7 Pts,8
+733,L,,2018-12-12,8,HYD,24,1,BLR,37,,Bengaluru Bulls Won by 13 Pts,8
+734,W,,2018-12-13,8,HYD,41,6,PAT,36,,Telugu Titans Won by 5 Pts,8
+741,L,,2018-12-18,1,BLR,44,8,HYD,28,,Bengaluru Bulls Won by 16 Pts,8
+746,L,,2018-12-21,7,PUNE,35,8,HYD,20,,Puneri Paltan Won by 15 Pts,8
+752,L,,2018-12-25,4,KOL,39,8,HYD,34,,Bengal Warriorz Won by 5 Pts,8
+625,W,,2018-10-07,29,CHE,42,6,PAT,26,,Tamil Thalaivas Won by 16 Pts,29
+628,L,,2018-10-08,29,CHE,32,30,UP,37,,UP Yoddhas Won by 5 Pts,29
+630,L,,2018-10-09,29,CHE,28,8,HYD,33,,Telugu Titans Won by 5 Pts,29
+632,L,,2018-10-10,29,CHE,37,1,BLR,48,,Bengaluru Bulls Won by 11 Pts,29
+634,L,,2018-10-11,29,CHE,27,4,KOL,36,,Bengal Warriorz Won by 9 Pts,29
+644,L,,2018-10-17,1,BLR,44,29,CHE,35,,Bengaluru Bulls Won by 9 Pts,29
+655,W,,2018-10-23,7,PUNE,31,29,CHE,36,,Tamil Thalaivas Won by 5 Pts,29
+659,L,,2018-10-26,31,GUJ,36,29,CHE,25,,Gujarat Giants Won by 11 Pts,29
+669,W,,2018-11-02,30,UP,24,29,CHE,46,,Tamil Thalaivas Won by 22 Pts,29
+687,,,2018-11-14,29,CHE,32,28,HAR,32,,,29
+690,L,,2018-11-15,5,MUM,36,29,CHE,22,,U Mumba Won by 14 Pts,29
+697,W,,2018-11-20,29,CHE,27,8,HYD,23,,Tamil Thalaivas Won by 4 Pts,29
+699,L,,2018-11-21,6,PAT,45,29,CHE,27,,Patna Pirates Won by 18 Pts,29
+705,L,,2018-11-24,1,BLR,36,29,CHE,22,,Bengaluru Bulls Won by 14 Pts,29
+708,W,,2018-11-26,29,CHE,31,8,HYD,25,,Tamil Thalaivas Won by 6 Pts,29
+714,,,2018-11-30,29,CHE,35,6,PAT,35,,,29
+723,L,,2018-12-06,2,DEL,37,29,CHE,33,,Dabang Delhi K.C. Won by 4 Pts,29
+728,L,,2018-12-09,29,CHE,24,3,JAI,37,,Jaipur Pink Panthers Won by 13 Pts,29
+736,L,,2018-12-14,4,KOL,28,29,CHE,21,,Bengal Warriorz Won by 7 Pts,29
+737,,,2018-12-15,30,UP,25,29,CHE,25,,,29
+750,L,,2018-12-21,4,KOL,27,29,CHE,24,,Bengal Warriorz Won by 3 Pts,29
+751,,,2018-12-25,28,HAR,40,29,CHE,40,,,29

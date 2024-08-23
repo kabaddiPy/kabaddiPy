@@ -1,0 +1,119 @@
+id,result,prev_position,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
+504,W,,2015-07-18,5,MUM,20,3,JAI,18,,U Mumba Won by 2 Pts,5
+506,W,,2015-07-19,5,MUM,18,1,BLR,10,,U Mumba Won by 8 Pts,5
+507,W,,2015-07-20,5,MUM,9,6,PAT,7,,U Mumba Won by 2 Pts,5
+509,W,,2015-07-21,5,MUM,17,7,PUNE,6,,U Mumba Won by 11 Pts,5
+514,W,,2015-07-24,4,KOL,17,5,MUM,18,,U Mumba Won by 1 Pts,5
+518,W,,2015-07-26,8,HYD,16,5,MUM,14,,U Mumba Won by -2 Pts,5
+527,W,,2015-08-01,2,DEL,15,5,MUM,14,,U Mumba Won by -1 Pts,5
+502,W,,2015-08-04,5,MUM,19,2,DEL,15,,U Mumba Won by 4 Pts,5
+536,L,,2015-08-07,3,JAI,23,5,MUM,16,,Jaipur Pink Panthers Won by 7 Pts,5
+540,W,,2015-08-09,5,MUM,10,4,KOL,7,,U Mumba Won by 3 Pts,5
+544,W,,2015-08-12,1,BLR,15,5,MUM,24,,U Mumba Won by 9 Pts,5
+549,W,,2015-08-15,6,PAT,15,5,MUM,16,,U Mumba Won by 1 Pts,5
+554,W,,2015-08-17,7,PUNE,21,5,MUM,22,,U Mumba Won by 1 Pts,5
+555,L,,2015-08-18,5,MUM,9,8,HYD,21,,Telugu Titans Won by 12 Pts,5
+563,W,,2015-08-21,5,MUM,23,6,PAT,9,,U Mumba Won by 14 Pts,5
+561,W,,2015-08-23,5,MUM,19,1,BLR,15,,U Mumba Won by 4 Pts,5
+505,W,,2015-07-19,8,HYD,16,2,DEL,15,,Telugu Titans Won by 1 Pts,8
+508,W,,2015-07-20,7,PUNE,10,8,HYD,25,,Telugu Titans Won by 15 Pts,8
+512,W,,2015-07-23,4,KOL,14,8,HYD,14,,Telugu Titans Won by 0 Pts,8
+518,L,,2015-07-26,8,HYD,16,5,MUM,14,,U Mumba Won by -2 Pts,8
+520,W,,2015-07-27,3,JAI,11,8,HYD,15,,Telugu Titans Won by 4 Pts,8
+524,W,,2015-07-30,6,PAT,15,8,HYD,17,,Telugu Titans Won by 2 Pts,8
+525,L,,2015-07-31,8,HYD,8,1,BLR,23,,Bengaluru Bulls Won by 15 Pts,8
+532,,,2015-08-04,8,HYD,17,3,JAI,17,,,8
+533,L,,2015-08-05,8,HYD,26,4,KOL,8,,Bengal Warriorz Won by -18 Pts,8
+535,W,,2015-08-06,8,HYD,28,6,PAT,15,,Telugu Titans Won by 13 Pts,8
+537,,,2015-08-07,8,HYD,13,7,PUNE,14,,,8
+543,,,2015-08-11,2,DEL,17,8,HYD,17,,,8
+550,L,,2015-08-15,1,BLR,24,8,HYD,14,,Bengaluru Bulls Won by 10 Pts,8
+555,W,,2015-08-18,5,MUM,9,8,HYD,21,,Telugu Titans Won by 12 Pts,8
+558,L,,2015-08-21,8,HYD,24,1,BLR,20,,Bengaluru Bulls Won by -4 Pts,8
+560,W,,2015-08-23,6,PAT,12,8,HYD,15,,Telugu Titans Won by 3 Pts,8
+562,W,,2016-07-20,7,PUNE,10,8,HYD,25,,Telugu Titans Won by 15 Pts,8
+503,W,,2015-07-18,1,BLR,18,4,KOL,17,,Bengaluru Bulls Won by 1 Pts,1
+506,L,,2015-07-19,5,MUM,18,1,BLR,10,,U Mumba Won by 8 Pts,1
+511,W,,2015-07-22,1,BLR,17,6,PAT,16,,Bengaluru Bulls Won by 1 Pts,1
+515,W,,2015-07-25,1,BLR,17,7,PUNE,14,,Bengaluru Bulls Won by 3 Pts,1
+519,W,,2015-07-27,2,DEL,9,1,BLR,20,,Bengaluru Bulls Won by 11 Pts,1
+521,L,,2015-07-28,3,JAI,23,1,BLR,14,,Jaipur Pink Panthers Won by 9 Pts,1
+525,W,,2015-07-31,8,HYD,8,1,BLR,23,,Bengaluru Bulls Won by 15 Pts,1
+534,W,,2015-08-06,4,KOL,15,1,BLR,17,,Bengaluru Bulls Won by 2 Pts,1
+544,L,,2015-08-12,1,BLR,15,5,MUM,24,,U Mumba Won by 9 Pts,1
+546,L,,2015-08-13,1,BLR,12,3,JAI,17,,Jaipur Pink Panthers Won by 5 Pts,1
+547,W,,2015-08-14,1,BLR,22,2,DEL,13,,Bengaluru Bulls Won by 9 Pts,1
+550,W,,2015-08-15,1,BLR,24,8,HYD,14,,Bengaluru Bulls Won by 10 Pts,1
+557,W,,2015-08-19,7,PUNE,13,1,BLR,14,,Bengaluru Bulls Won by 1 Pts,1
+558,W,,2015-08-21,8,HYD,24,1,BLR,20,,Bengaluru Bulls Won by -4 Pts,1
+561,L,,2015-08-23,5,MUM,19,1,BLR,15,,U Mumba Won by 4 Pts,1
+507,L,,2015-07-20,5,MUM,9,6,PAT,7,,U Mumba Won by 2 Pts,6
+511,L,,2015-07-22,1,BLR,17,6,PAT,16,,Bengaluru Bulls Won by 1 Pts,6
+517,W,,2015-07-26,3,JAI,11,6,PAT,14,,Patna Pirates Won by 3 Pts,6
+524,L,,2015-07-30,6,PAT,15,8,HYD,17,,Telugu Titans Won by 2 Pts,6
+526,W,,2015-07-31,6,PAT,25,2,DEL,10,,Patna Pirates Won by 15 Pts,6
+528,W,,2015-08-01,6,PAT,20,7,PUNE,14,,Patna Pirates Won by 6 Pts,6
+531,,,2015-08-02,6,PAT,13,4,KOL,10,,,6
+535,L,,2015-08-06,8,HYD,28,6,PAT,15,,Telugu Titans Won by 13 Pts,6
+539,L,,2015-08-09,2,DEL,23,6,PAT,12,,Dabang Delhi K.C. Won by 11 Pts,6
+548,W,,2015-08-14,4,KOL,16,6,PAT,15,,Patna Pirates Won by -1 Pts,6
+549,L,,2015-08-15,6,PAT,15,5,MUM,16,,U Mumba Won by 1 Pts,6
+564,W,,2015-08-19,6,PAT,17,3,JAI,18,,Patna Pirates Won by -1 Pts,6
+563,L,,2015-08-21,5,MUM,23,6,PAT,9,,U Mumba Won by 14 Pts,6
+560,L,,2015-08-23,6,PAT,12,8,HYD,15,,Telugu Titans Won by 3 Pts,6
+504,L,,2015-07-18,5,MUM,20,3,JAI,18,,U Mumba Won by 2 Pts,3
+510,L,,2015-07-22,4,KOL,17,3,JAI,11,,Bengal Warriorz Won by 6 Pts,3
+517,L,,2015-07-26,3,JAI,11,6,PAT,14,,Patna Pirates Won by 3 Pts,3
+520,L,,2015-07-27,3,JAI,11,8,HYD,15,,Telugu Titans Won by 4 Pts,3
+521,W,,2015-07-28,3,JAI,23,1,BLR,14,,Jaipur Pink Panthers Won by 9 Pts,3
+523,L,,2015-07-29,3,JAI,15,2,DEL,22,,Dabang Delhi K.C. Won by 7 Pts,3
+530,W,,2015-08-02,7,PUNE,12,3,JAI,19,,Jaipur Pink Panthers Won by 7 Pts,3
+532,,,2015-08-04,8,HYD,17,3,JAI,17,,,3
+536,W,,2015-08-07,3,JAI,23,5,MUM,16,,Jaipur Pink Panthers Won by 7 Pts,3
+541,W,,2015-08-10,2,DEL,11,3,JAI,24,,Jaipur Pink Panthers Won by 13 Pts,3
+542,W,,2015-08-11,3,JAI,16,7,PUNE,8,,Jaipur Pink Panthers Won by 8 Pts,3
+546,W,,2015-08-13,1,BLR,12,3,JAI,17,,Jaipur Pink Panthers Won by 5 Pts,3
+565,L,,2015-08-16,3,JAI,13,4,KOL,24,,Bengal Warriorz Won by 11 Pts,3
+564,L,,2015-08-19,6,PAT,17,3,JAI,18,,Patna Pirates Won by -1 Pts,3
+503,L,,2015-07-18,1,BLR,18,4,KOL,17,,Bengaluru Bulls Won by 1 Pts,4
+510,W,,2015-07-22,4,KOL,17,3,JAI,11,,Bengal Warriorz Won by 6 Pts,4
+512,L,,2015-07-23,4,KOL,14,8,HYD,14,,Telugu Titans Won by 0 Pts,4
+514,L,,2015-07-24,4,KOL,17,5,MUM,18,,U Mumba Won by 1 Pts,4
+516,L,,2015-07-25,4,KOL,17,2,DEL,21,, Won,4
+522,L,,2015-07-29,7,PUNE,20,4,KOL,15,,Puneri Paltan Won by 5 Pts,4
+531,,,2015-08-02,6,PAT,13,4,KOL,10,,,4
+533,W,,2015-08-05,8,HYD,26,4,KOL,8,,Bengal Warriorz Won by -18 Pts,4
+534,L,,2015-08-06,4,KOL,15,1,BLR,17,,Bengaluru Bulls Won by 2 Pts,4
+538,W,,2015-08-08,2,DEL,9,4,KOL,13,,Bengal Warriorz Won by 4 Pts,4
+540,L,,2015-08-09,5,MUM,10,4,KOL,7,,U Mumba Won by 3 Pts,4
+545,W,,2015-08-13,4,KOL,19,7,PUNE,14,,Bengal Warriorz Won by 5 Pts,4
+548,L,,2015-08-14,4,KOL,16,6,PAT,15,,Patna Pirates Won by -1 Pts,4
+565,W,,2015-08-16,3,JAI,13,4,KOL,24,,Bengal Warriorz Won by 11 Pts,4
+505,L,,2015-07-19,8,HYD,16,2,DEL,15,,Telugu Titans Won by 1 Pts,2
+513,W,,2015-07-24,2,DEL,21,7,PUNE,13,,Dabang Delhi K.C. Won by 8 Pts,2
+516,L,,2015-07-25,4,KOL,17,2,DEL,21,, Won,2
+519,L,,2015-07-27,2,DEL,9,1,BLR,20,,Bengaluru Bulls Won by 11 Pts,2
+523,W,,2015-07-29,3,JAI,15,2,DEL,22,,Dabang Delhi K.C. Won by 7 Pts,2
+526,L,,2015-07-31,6,PAT,25,2,DEL,10,,Patna Pirates Won by 15 Pts,2
+527,L,,2015-08-01,2,DEL,15,5,MUM,14,,U Mumba Won by -1 Pts,2
+502,L,,2015-08-04,5,MUM,19,2,DEL,15,,U Mumba Won by 4 Pts,2
+538,L,,2015-08-08,2,DEL,9,4,KOL,13,,Bengal Warriorz Won by 4 Pts,2
+539,W,,2015-08-09,2,DEL,23,6,PAT,12,,Dabang Delhi K.C. Won by 11 Pts,2
+541,L,,2015-08-10,2,DEL,11,3,JAI,24,,Jaipur Pink Panthers Won by 13 Pts,2
+543,,,2015-08-11,2,DEL,17,8,HYD,17,,,2
+547,L,,2015-08-14,1,BLR,22,2,DEL,13,,Bengaluru Bulls Won by 9 Pts,2
+553,L,,2015-08-16,7,PUNE,17,2,DEL,15,,Puneri Paltan Won by 2 Pts,2
+508,L,,2015-07-20,7,PUNE,10,8,HYD,25,,Telugu Titans Won by 15 Pts,7
+509,L,,2015-07-21,5,MUM,17,7,PUNE,6,,U Mumba Won by 11 Pts,7
+513,L,,2015-07-24,2,DEL,21,7,PUNE,13,,Dabang Delhi K.C. Won by 8 Pts,7
+515,L,,2015-07-25,1,BLR,17,7,PUNE,14,,Bengaluru Bulls Won by 3 Pts,7
+522,W,,2015-07-29,7,PUNE,20,4,KOL,15,,Puneri Paltan Won by 5 Pts,7
+528,L,,2015-08-01,6,PAT,20,7,PUNE,14,,Patna Pirates Won by 6 Pts,7
+530,L,,2015-08-02,7,PUNE,12,3,JAI,19,,Jaipur Pink Panthers Won by 7 Pts,7
+537,,,2015-08-07,8,HYD,13,7,PUNE,14,,,7
+542,L,,2015-08-11,3,JAI,16,7,PUNE,8,,Jaipur Pink Panthers Won by 8 Pts,7
+545,L,,2015-08-13,4,KOL,19,7,PUNE,14,,Bengal Warriorz Won by 5 Pts,7
+553,W,,2015-08-16,7,PUNE,17,2,DEL,15,,Puneri Paltan Won by 2 Pts,7
+554,L,,2015-08-17,7,PUNE,21,5,MUM,22,,U Mumba Won by 1 Pts,7
+557,L,,2015-08-19,7,PUNE,13,1,BLR,14,,Bengaluru Bulls Won by 1 Pts,7
+562,L,,2016-07-20,7,PUNE,10,8,HYD,25,,Telugu Titans Won by 15 Pts,7
