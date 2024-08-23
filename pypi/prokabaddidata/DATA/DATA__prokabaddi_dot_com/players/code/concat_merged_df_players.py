@@ -9,11 +9,15 @@ all_dfs = []
 
 # Iterate through all directories in the base directory
 for season_dir in os.listdir(base_dir):
+    
     if season_dir.startswith("season"):
         season_path = os.path.join(base_dir, season_dir)
+        
         if os.path.isdir(season_path):
             csv_path = os.path.join(season_path, "merged_player_stats_all.csv")
+            
             if os.path.exists(csv_path):
+                
                 # Read the CSV file
                 df = pd.read_csv(csv_path)
 
