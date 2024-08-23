@@ -221,7 +221,6 @@ class KabaddiDataAggregator:
 
         return result
 
-
     def get_stats_from_player_profile(self, profile_url):
         self.driver.get(profile_url)
         sleep(2)
@@ -758,6 +757,11 @@ class KabaddiDataAggregator:
 
         return dfObj
 
+    def get_team_standings(self):
+        df = pd.read_csv(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\improved_standings\standings_csvs\teams\json_s1_teams.csv")
+        print(df.head())
+        column_headers = df.columns.to_list()
+        print("The Column Header :", column_headers)
 
 
 
@@ -773,4 +777,4 @@ if __name__ == "__main__":
     # print(z)
     #print(aggregator.get_player_auction_info("Paul"))
     #print(aggregator.get_season_auction_data(season=8, top=10))
-    aggregator.team_level_stats()
+    aggregator.get_team_standings()
