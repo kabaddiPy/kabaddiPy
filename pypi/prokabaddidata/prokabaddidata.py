@@ -1,8 +1,8 @@
 # kabaddi_data.py
 import csv
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
 from bs4 import BeautifulSoup
 from time import sleep
 import json
@@ -11,6 +11,8 @@ import glob
 import re
 import os
 import numpy as np
+
+
 
 WEBSITE_URL_1_PREFIX = "https://www.prokabaddi.com"
 
