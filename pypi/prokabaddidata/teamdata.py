@@ -72,24 +72,24 @@ class TeamData:
                 all_seasons_data.extend(result)
             return sorted(all_seasons_data, key=lambda x: x[metric], reverse=True)[:n]
 
-    def get_team_performance_trend(self, team_name: str) -> Dict[int, str]:
-       '''
-       DOESN'T WORK
-       '''
-
-        trends = {}
-        # for season, df in sorted(self.season_data.items()):
-        #     team_data = df[df['team_name'] == team_name]
-        #     if not team_data.empty:
-        #         current_position = team_data.iloc[0]['position']
-        #         prev_position = team_data.iloc[0]['prev_position']
-        #         if current_position < prev_position:
-        #             trends[season] = 'Improving'
-        #         elif current_position > prev_position:
-        #             trends[season] = 'Declining'
-        #         else:
-        #             trends[season] = 'Stable'
-        return trends
+    # def get_team_performance_trend(self, team_name: str) -> Dict[int, str]:
+    #    '''
+    #    DOESN'T WORK
+    #    '''
+    #
+    #     trends = {}
+    #     # for season, df in sorted(self.season_data.items()):
+    #     #     team_data = df[df['team_name'] == team_name]
+    #     #     if not team_data.empty:
+    #     #         current_position = team_data.iloc[0]['position']
+    #     #         prev_position = team_data.iloc[0]['prev_position']
+    #     #         if current_position < prev_position:
+    #     #             trends[season] = 'Improving'
+    #     #         elif current_position > prev_position:
+    #     #             trends[season] = 'Declining'
+    #     #         else:
+    #     #             trends[season] = 'Stable'
+    #     return trends
 
     def get_team_win_percentage(self, team_name: str, season: Optional[int] = None) -> Union[float, Dict[int, float]]:
         """
@@ -117,7 +117,7 @@ class TeamData:
                     win_percentages[s] = round(win_percentage, 2)
             return win_percentages
 
-    def compare_team_across_seasons(self, team_name: str) -> Dict[str, List[Union[int, float]]]:
+    def compare_team_across_seasons(self, team_name: str) -> pd.DataFrame:
         """
         Compare a team's performance across all available seasons.
 
@@ -144,8 +144,7 @@ class TeamData:
                         comparison[metric].append(data[metric])
                 win_percentage = (data['wins'] / data['played']) * 100
                 comparison['win_percentage'].append(round(win_percentage, 2))
-
-        return comparison
+        return pd.DataFrame.from_dict(comparison)
 
     def get_most_improved_team(self, metric: str = 'points') -> Dict[str, Union[str, int, float]]:
         """ TOTALLY BROKEN
@@ -206,8 +205,8 @@ if __name__ == "__main__":
 # win_percentages = analyzer.get_team_win_percentage('Bengalur Bulls')
 # print(win_percentages)
 
-# team_comparison = analyzer.compare_team_across_seasons('Patna Pirates')
-# print(team_comparison)
+team_comparison = analyzer.compare_team_across_seasons('U Mumba')
+print(team_comparison)
 
 # most_improved = analyzer.get_most_improved_team()
 # print(most_improved)
