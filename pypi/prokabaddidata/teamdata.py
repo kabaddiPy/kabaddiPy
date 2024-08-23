@@ -3,7 +3,7 @@ import os
 from typing import List, Dict, Union, Optional
 
 
-class KabaddiDataAnalyzer:
+class TeamData:
     def __init__(self, data_directory: str):
         self.data_directory = data_directory
         self.season_data = self._load_season_data()
@@ -73,24 +73,22 @@ class KabaddiDataAnalyzer:
             return sorted(all_seasons_data, key=lambda x: x[metric], reverse=True)[:n]
 
     def get_team_performance_trend(self, team_name: str) -> Dict[int, str]:
-        """
-        Determine the performance trend of a team across all available seasons.
+       '''
+       DOESN'T WORK
+       '''
 
-        :param team_name: Name of the team
-        :return: Dictionary with season numbers as keys and trend as values ('Improving', 'Declining', or 'Stable')
-        """
         trends = {}
-        for season, df in sorted(self.season_data.items()):
-            team_data = df[df['team_name'] == team_name]
-            if not team_data.empty:
-                current_position = team_data.iloc[0]['position']
-                prev_position = team_data.iloc[0]['prev_position']
-                if current_position < prev_position:
-                    trends[season] = 'Improving'
-                elif current_position > prev_position:
-                    trends[season] = 'Declining'
-                else:
-                    trends[season] = 'Stable'
+        # for season, df in sorted(self.season_data.items()):
+        #     team_data = df[df['team_name'] == team_name]
+        #     if not team_data.empty:
+        #         current_position = team_data.iloc[0]['position']
+        #         prev_position = team_data.iloc[0]['prev_position']
+        #         if current_position < prev_position:
+        #             trends[season] = 'Improving'
+        #         elif current_position > prev_position:
+        #             trends[season] = 'Declining'
+        #         else:
+        #             trends[season] = 'Stable'
         return trends
 
     def get_team_win_percentage(self, team_name: str, season: Optional[int] = None) -> Union[float, Dict[int, float]]:
@@ -132,8 +130,6 @@ class KabaddiDataAnalyzer:
             'wins': [],
             'lost': [],
             'points': [],
-            'points_scored': [],
-            'points_conceded': [],
             'score_diff': [],
             'win_percentage': []
         }
@@ -152,7 +148,7 @@ class KabaddiDataAnalyzer:
         return comparison
 
     def get_most_improved_team(self, metric: str = 'points') -> Dict[str, Union[str, int, float]]:
-        """
+        """ TOTALLY BROKEN
         Determine the most improved team based on a specific metric across all seasons.
 
         :param metric: Metric to measure improvement (default: 'points')
@@ -177,7 +173,7 @@ class KabaddiDataAnalyzer:
         return most_improved
 
     def get_season_summary(self, season: int) -> Dict[str, Union[str, int, float]]:
-        """
+        """ ADD MORE SUMMARY STATS
         Get a summary of a specific season.
 
         :param season: Season number
@@ -190,34 +186,31 @@ class KabaddiDataAnalyzer:
         return {
             'season': season,
             'total_matches': df['played'].sum() // 2,  # Divide by 2 to avoid double counting
-            'total_points_scored': df['points_scored'].sum(),
-            'avg_points_per_match': round(df['points_scored'].sum() / (df['played'].sum() // 2), 2),
-            'highest_scoring_team': df.loc[df['points_scored'].idxmax(), 'team_name'],
-            'best_defense_team': df.loc[df['points_conceded'].idxmin(), 'team_name'],
+            'total_league_points': df['points'].sum(),
+            #'avg_points_per_match': round(df['points'].sum() / (df['played'].sum() // 2), 2),
+            'highest_scoring_team': df.loc[df['points'].idxmax(), 'team_name'],
+            #'best_defense_team': df.loc[df['points'].idxmin(), 'team_name'],
             'most_wins': df.loc[df['wins'].idxmax(), 'team_name'],
             'champion': df.loc[df['position'].idxmin(), 'team_name']
         }
 
 if __name__ == "__main__":
     print("hello")
-    analyzer = KabaddiDataAnalyzer(r'C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\improved_standings\standings_csvs\teams')
+    analyzer = TeamData(r'C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\improved_standings\standings_csvs\teams')
     # team_stats = analyzer.get_team_stats('Jaipur Pink Panthers', season=10)
     # print(team_stats)
 #
-top_teams = analyzer.get_top_n_teams_by_metric('points', n=3)
-print(top_teams)
-#
-# team_trend = analyzer.get_team_performance_trend('U Mumba')
-# print(team_trend)
-#
-# win_percentages = analyzer.get_team_win_percentage('Bengaluru Bulls')
+# top_teams = analyzer.get_top_n_teams_by_metric('points', n=3)
+# print(top_teams)
+
+# win_percentages = analyzer.get_team_win_percentage('Bengalur Bulls')
 # print(win_percentages)
-#
+
 # team_comparison = analyzer.compare_team_across_seasons('Patna Pirates')
 # print(team_comparison)
-#
+
 # most_improved = analyzer.get_most_improved_team()
 # print(most_improved)
-#
-# season_summary = analyzer.get_season_summary(10)
+
+# season_summary = analyzer.get_season_summary(7)
 # print(season_summary)
