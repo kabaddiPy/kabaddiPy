@@ -1,16 +1,17 @@
 import os
 import json
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 from collections import defaultdict
 from datetime import datetime
-
+import pandas as pd
+from pandas import DataFrame
 
 
 class KabaddiDataAPI:
     def __init__(self, base_path: str):
         self.base_path = base_path
 
-    def get_match_data(self, season: str, match_id: str) -> Dict[str, Any]:
+    def internal_match_data(self, season: str, match_id: str) -> pd.DataFrame:
         """
         Get the full data for a specific match.
 
@@ -28,6 +29,30 @@ class KabaddiDataAPI:
         except:
             print(f"Could not load {file_path}")
 
+    def get_match_data(self, season: str, match_id: str) -> tuple[DataFrame, DataFrame, DataFrame, DataFrame]:
+        """
+        Get the full data for a specific match.
+
+        Args:
+            season (str): The season year.
+            match_id (str): The match ID.
+
+        Returns:
+            Dict[str, Any]: The match data as a dictionary.
+        """
+        file_path = os.path.join(self.base_path, "Match_Data", season, f"{match_id}.json")
+        try:
+            with open(file_path, 'r') as file:
+                temp = json.load(file)
+            match_detail_df = pd.DataFrame([temp.get("match_detail", {})])
+            teams_df = pd.DataFrame(temp.get("teams", {}).get("team", []))
+            events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
+            zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
+
+            return match_detail_df, teams_df, events_df, zones_df
+        except:
+            print(f"Could not load {file_path}")
+
 
 
     def get_match_events(self, season: str, match_id: str) -> List[Dict[str, Any]]:
@@ -41,8 +66,10 @@ class KabaddiDataAPI:
         Returns:
             List[Dict[str, Any]]: A list of all events in the match.
         """
-        match_data = self.get_match_data(season, match_id)
-        return match_data['events']['event']
+        match_data = self.internal_match_data(season, match_id)
+        data = match_data['events']['event']
+        df = pd.DataFrame(data)  # .T transposes the DataFrame
+        return df
 
     def get_raid_events(self, season: str, match_id: str) -> List[Dict[str, Any]]:
         """
@@ -56,7 +83,7 @@ class KabaddiDataAPI:
             List[Dict[str, Any]]: A list of all raid events in the match.
         """
         events = self.get_match_events(season, match_id)
-        return [event for event in events if event['event'] in ['Successful Raid', 'Unsuccessful Raid', 'Empty Raid']]
+        return [event for event in events if event[event] in ['Successful Raid', 'Unsuccessful Raid', 'Empty Raid']]
 
     def get_player_raid_stats(self, season: str, match_id: str, raider_id: int) -> Dict[str, Any]:
         """
@@ -181,7 +208,7 @@ class KabaddiDataAPI:
         Returns:
             Dict[str, Any]: A dictionary containing the match summary.
         """
-        match_data = self.get_match_data(season, match_id)
+        match_data = self.internal_match_data(season, match_id)
         if match_data is None:
             print(f"No match data for {match_id}. Check season or match id!")
             return None
@@ -236,20 +263,6 @@ class KabaddiDataAPI:
         season_path = os.path.join(self.base_path, "Match_Data", season)
         return [file.split('.')[0] for file in os.listdir(season_path) if file.endswith('.json')]
 
-    def get_match_data(self, season: str, match_id: str) -> Dict[str, Any]:
-        """
-        Get the full data for a specific match.
-
-        Args:
-            season (str): The season year.
-            match_id (str): The match ID.
-
-        Returns:
-            Dict[str, Any]: The match data as a dictionary.
-        """
-        file_path = os.path.join(self.base_path, "Match_Data", season, f"{match_id}.json")
-        with open(file_path, 'r') as file:
-            return json.load(file)
 
     def get_team_names(self, season: str, match_id: str) -> List[str]:
         """
@@ -262,7 +275,7 @@ class KabaddiDataAPI:
         Returns:
             List[str]: A list containing the names of the two teams.
         """
-        match_data = self.get_match_data(season, match_id)
+        match_data = self.internal_match_data(season, match_id)
         return [match_data['team1'], match_data['team2']]
 
     def get_match_result(self, season: str, match_id: str) -> Dict[str, Any]:
@@ -276,7 +289,7 @@ class KabaddiDataAPI:
         Returns:
             Dict[str, Any]: A dictionary containing the match result information.
         """
-        match_data = self.get_match_data(season, match_id)
+        match_data = self.internal_match_data(season, match_id)
         return {
             "winner": match_data['winner'],
             "score": match_data['score'],
@@ -295,7 +308,7 @@ class KabaddiDataAPI:
         Returns:
             Optional[Dict[str, Any]]: A dictionary containing the player's statistics, or None if not found.
         """
-        match_data = self.get_match_data(season, match_id)
+        match_data = self.internal_match_data(season, match_id)
         for team in ['team1_players', 'team2_players']:
             for player in match_data[team]:
                 if player['name'] == player_name:
@@ -315,7 +328,7 @@ class KabaddiDataAPI:
         """
         raiders = []
         for match_id in self.get_matches_for_season(season):
-            match_data = self.get_match_data(season, match_id)
+            match_data = self.internal_match_data(season, match_id)
             for team in ['team1_players', 'team2_players']:
                 for player in match_data[team]:
                     if player['role'] == 'raider':
@@ -346,7 +359,7 @@ class KabaddiDataAPI:
         }
 
         for match_id in self.get_matches_for_season(season):
-            match_data = self.get_match_data(season, match_id)
+            match_data = self.internal_match_data(season, match_id)
             if team_name in [match_data['team1'], match_data['team2']]:
                 performance['matches_played'] += 1
                 if match_data['winner'] == team_name:
@@ -361,19 +374,6 @@ class KabaddiDataAPI:
 
         return performance
 
-    def get_match_timeline(self, season: str, match_id: str) -> List[Dict[str, Any]]:
-        """
-        Get the timeline of events for a specific match.
-
-        Args:
-            season (str): The season year.
-            match_id (str): The match ID.
-
-        Returns:
-            List[Dict[str, Any]]: A list of dictionaries containing match events in chronological order.
-        """
-        match_data = self.get_match_data(season, match_id)
-        return match_data['timeline']
 
     def search_matches_by_date(self, date: datetime) -> List[Dict[str, Any]]:
         """
@@ -388,8 +388,9 @@ class KabaddiDataAPI:
         matches = []
         for season in self.get_available_seasons():
             for match_id in self.get_matches_for_season(season):
-                match_data = self.get_match_data(season, match_id)
-                match_date = datetime.strptime(match_data['date'], '%Y-%m-%d')
+                match_data = self.internal_match_data(season, match_id)
+                print(match_data)
+                match_date = datetime.strptime(match_data['match_detail']['date'], '%Y-%m-%d')
                 if match_date.date() == date.date():
                     matches.append({
                         'season': season,
@@ -403,9 +404,18 @@ class KabaddiDataAPI:
 
 # Example usage:
 api = KabaddiDataAPI(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA_kaggle_match")
-match_summary = api.get_match_summary('2019', '761')
+match_events = api.get_match_events('2019', '1690')
 seasons = api.get_available_seasons()
-matches = api.get_matches_for_season('2019')
-print(match_summary)
-# player_performance = api.get_player_performance('2022', '123456', 182)
+matches = api.get_matches_for_season("2019")
+
+df1, df2, df3, df4 = api.get_match_data('2019','1690')
+print(df1['series'])
+# player_performance = api.get_player_performance('2019', '1761', 182)
+# print(player_performance)
+# temp = api.search_matches_by_date('2019-09-06')
+# print(temp)
 # score_progression = api.get_score_progression('2022', '123456')
+x= datetime(2019,5,17) # Example date: August 24, 2023
+# temp = api.search_matches_by_date(x)
+# print(temp)
+#t = api.get_match_timeline("2019","761")
