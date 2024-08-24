@@ -40,13 +40,50 @@ class KabaddiAnalyzer:
         """Analyze a team's performance trend across seasons."""
         team_data = self.df[self.df['team_name'] == team_name]
         x = team_data[['season', 'team-total-points_value', 'team-raid-points_value', 'team-tackle-points_value']]
-        return x.sort_values('season')
+        return x
+    def best_raiding_team(self, season: int) -> pd.DataFrame:
+        """Identify the best raiding team in a given season."""
+        return self.top_n_teams_by_stat('team-raid-points', season, n=1)
+
+    def best_defending_team(self, season: int) -> pd.DataFrame:
+        """Identify the best defending team in a given season."""
+        return self.top_n_teams_by_stat('team-tackle-points', season, n=1)
+
+    def most_balanced_team(self, season: int) -> pd.DataFrame:
+        """Identify the most balanced team (good in both raid and defense) in a given season."""
+        season_data = self.df[self.df['season'] == season].copy()
+        season_data['balance_score'] = season_data['team-raid-points_rank'] + season_data['team-tackle-points_rank']
+        return season_data.sort_values('balance_score')[
+            ['team_name', 'team-raid-points_rank', 'team-tackle-points_rank']].head(1)
+
+    def team_efficiency(self, season: int) -> pd.DataFrame:
+        """Calculate team efficiency (points scored vs points conceded) for a given season."""
+        season_data = self.df[self.df['season'] == season].copy()
+        season_data['efficiency'] = season_data['team-total-points_value'] / season_data[
+            'team-total-points-conceded_value']
+        return season_data[['team_name', 'efficiency']].sort_values('efficiency', ascending=False)
+
+    def most_improved_team(self, stat: str) -> pd.DataFrame:
+        """Identify the most improved team across seasons for a given stat."""
+        improvements = []
+        for team in self.df['team_name'].unique():
+            team_data = self.df[self.df['team_name'] == team].sort_values('season')
+            if len(team_data) > 1:
+                improvement = team_data.iloc[-1][f'{stat}_value'] - team_data.iloc[0][f'{stat}_value']
+                improvements.append({'team_name': team, 'improvement': improvement})
+        return pd.DataFrame(improvements).sort_values('improvement', ascending=False).head(1)
 
     def season_competitiveness(self, season: int) -> pd.DataFrame:
         """Measure the competitiveness of a season based on the spread of total points."""
         season_data = self.df[self.df['season'] == season]
         competitiveness = season_data['team-total-points_value'].std()
         return pd.DataFrame({'season': [season], 'competitiveness': [competitiveness]})
+
+    def team_consistency(self) -> pd.DataFrame:
+        """Measure teams' consistency across seasons."""
+        consistency = self.df.groupby('team_name')['team-total-points_value'].std().reset_index()
+        consistency.columns = ['team_name', 'consistency']
+        return consistency.sort_values('consistency')
 
     def most_exciting_team(self, season: int) -> pd.DataFrame:
         """Identify the most exciting team (high scoring with high points conceded) in a given season."""
@@ -62,4 +99,3 @@ print(analyzer.get_team_stats('Patna Pirates', 2))
 # print(analyzer.compare_teams('Bengaluru Bulls', 'Patna Pirates', 2))
 print(analyzer.top_n_teams_by_stat('team-tackle-points',4))
 print(analyzer.team_performance_trend("Patna Pirates"))
-print(analyzer.top_n_teams_by_stat('team-tackle-points',4))

@@ -146,6 +146,31 @@ class TeamData:
                 comparison['win_percentage'].append(round(win_percentage, 2))
         return pd.DataFrame.from_dict(comparison)
 
+    def get_most_improved_team(self, metric: str = 'points') -> Dict[str, Union[str, int, float]]:
+        """ TOTALLY BROKEN
+        Determine the most improved team based on a specific metric across all seasons.
+
+        :param metric: Metric to measure improvement (default: 'points')
+        :return: Dictionary containing team name, improvement value, and seasons
+        """
+        improvements = []
+        for team_name in set(df['team_name'].unique() for df in self.season_data.values()):
+            team_data = self.compare_team_across_seasons(team_name)
+            if len(team_data['season']) > 1:
+                improvement = team_data[metric][-1] - team_data[metric][0]
+                improvements.append({
+                    'team_name': team_name,
+                    'improvement': improvement,
+                    'start_season': team_data['season'][0],
+                    'end_season': team_data['season'][-1]
+                })
+
+        if not improvements:
+            return {"message": "Not enough data to determine most improved team"}
+
+        most_improved = max(improvements, key=lambda x: x['improvement'])
+        return most_improved
+
     def get_season_summary(self, season: int) -> Dict[str, Union[str, int, float]]:
         """ ADD MORE SUMMARY STATS
         Get a summary of a specific season.

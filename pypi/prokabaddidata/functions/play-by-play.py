@@ -133,20 +133,6 @@ class KabaddiDataAPI:
         }
         return stats
 
-    def get_match_timeline(self, season: str, match_id: str) -> List[Dict[str, Any]]:
-        """
-        Get the timeline of events for a specific match.
-
-        Args:
-            season (str): The season year.
-            match_id (str): The match ID.
-
-        Returns:
-            List[Dict[str, Any]]: A list of dictionaries containing match events in chronological order.
-        """
-        events = self.get_match_events(season, match_id)
-        return sorted(events, key=lambda x: x['event_no'])
-
     def get_score_progression(self, season: str, match_id: str) -> List[Dict[str, Any]]:
         """
         Get the score progression throughout the match.
@@ -360,7 +346,7 @@ class KabaddiDataAPI:
 
         for match_id in self.get_matches_for_season(season):
             match_data = self.internal_match_data(season, match_id)
-            if team_name in [match_data['team1'], match_data['team2']]:
+            if team_name in [match_data['teams']['team'][0], match_data['teams']['team'][1]]:
                 performance['matches_played'] += 1
                 if match_data['winner'] == team_name:
                     performance['wins'] += 1
@@ -419,3 +405,4 @@ x= datetime(2019,5,17) # Example date: August 24, 2023
 # temp = api.search_matches_by_date(x)
 # print(temp)
 #t = api.get_match_timeline("2019","761")
+print(api.get_team_performance("2019", "Patna Pirates"))
