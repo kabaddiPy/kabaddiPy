@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [ProKabaddi API Docs](README.md)
 
 ## Getting Started
 

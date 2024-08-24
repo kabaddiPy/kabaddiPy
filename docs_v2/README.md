@@ -17,11 +17,14 @@ layout:
     visible: true
 ---
 
-# Welcome
+# ProKabaddi API Docs
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+This documentation covers the main functions of the <mark style="color:red;">`KabaddiDataAggregator`</mark> class that return useful data for Kabaddi statistics and information.
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+**Note**: This documentation is actively being developed alongwith the API.
+
+\
+
 
 ### Jump right in
 
