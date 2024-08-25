@@ -4,6 +4,7 @@ from datetime import datetime
 
 
 class KabaddiMatchAnalyzer:
+    
     def __init__(self, csv_file_path: str):
         self.df = pd.read_csv(csv_file_path)
 
@@ -214,7 +215,7 @@ class KabaddiMatchAnalyzer:
         }
 
 # Usage example:
-analyzer = KabaddiMatchAnalyzer(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\matchesoverview\merged_match_overview.csv")
+analyzer = KabaddiMatchAnalyzer(r"..\DATA\DATA__prokabaddi_dot_com\matchesoverview\merged_match_overview.csv")
 
 match_details = analyzer.get_match_details(1815)  # Using game_id instead of Match_No
 print(match_details)

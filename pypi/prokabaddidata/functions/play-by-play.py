@@ -22,6 +22,7 @@ class KabaddiDataAPI:
         Returns:
             Dict[str, Any]: The match data as a dictionary.
         """
+
         file_path = os.path.join(self.base_path, "Match_Data", season, f"{match_id}.json")
         try:
             with open(file_path, 'r') as file:
@@ -52,8 +53,6 @@ class KabaddiDataAPI:
             return match_detail_df, teams_df, events_df, zones_df
         except:
             print(f"Could not load {file_path}")
-
-
 
     def get_match_events(self, season: str, match_id: str) -> List[Dict[str, Any]]:
         """
@@ -389,20 +388,50 @@ class KabaddiDataAPI:
         return matches
 
 # Example usage:
-api = KabaddiDataAPI(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA_kaggle_match")
-match_events = api.get_match_events('2019', '1690')
-seasons = api.get_available_seasons()
-matches = api.get_matches_for_season("2019")
+api = KabaddiDataAPI(r"../DATA/DATA_kaggle_match")
 
-df1, df2, df3, df4 = api.get_match_data('2019','1690')
-print(df1['series'])
+# match_events = 
+# seasons = api.get_available_seasons()
+# matches = api.get_matches_for_season("2019")
+
+
+
+# Func1
+# match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019','1690')
+
+# Func2
+# events_df = api.get_match_events('2019', '1690')
+
+# Func3
+season_match_id = api.get_matches_for_season('2019')
+
+nums = []
+
+for i in season_match_id:
+    # print(i)
+    match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019',i)
+    if match_detail_df['match_number'][0] == 'Final':
+        matches_nums = match_detail_df['match_number'][0]
+    else:
+        matches_nums = match_detail_df['match_number'][0].split(" ")[1]
+        nums.append((int(matches_nums), i)) 
+    # print(matches_nums)
+
+nums.sort()
+print(nums)
+
+print(season_match_id)
+    
+
+
+# print(df1['series'])
 # player_performance = api.get_player_performance('2019', '1761', 182)
 # print(player_performance)
 # temp = api.search_matches_by_date('2019-09-06')
 # print(temp)
 # score_progression = api.get_score_progression('2022', '123456')
-x= datetime(2019,5,17) # Example date: August 24, 2023
+# x= datetime(2019,5,17) # Example date: August 24, 2023
 # temp = api.search_matches_by_date(x)
 # print(temp)
 #t = api.get_match_timeline("2019","761")
-print(api.get_team_performance("2019", "Patna Pirates"))
+# print(api.get_team_performance("2019", "Patna Pirates"))
