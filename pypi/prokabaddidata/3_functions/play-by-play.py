@@ -403,14 +403,15 @@ class KabaddiDataAPI:
 api = KabaddiDataAPI(r"../1_DATA/DATA__kaggle_match")
 
 # match_events = 
-# seasons = api.get_available_seasons()
-# matches = api.get_matches_for_season("2019")
-
+seasons = api.get_available_seasons()
+print(seasons)
+matches = api.get_matches_for_season("2019")
+#print(matches)
 
 
 # Func1
-# match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019','1690')
-
+match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019','1690')
+print(events_df)
 # Func2
 # events_df = api.get_match_events('2019', '1690')
 

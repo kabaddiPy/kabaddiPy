@@ -98,7 +98,7 @@ def plot_kabaddi_court_with_player_data(data, player_id, zone_type='strong'):
     plt.show()
 
 # Usage
-file_path = '../0_DATA/DATA_kaggle_match/Match_Data/2017/410.json'  # Make sure this file is in the same directory as your script
+file_path = '../1_DATA/DATA__kaggle_match/Match_Data/2017/410.json'  # Make sure this file is in the same directory as your script
 data = load_json_data(file_path)
 
 # Example usage: Plot strong zones for player with ID 41 (Deepak Hooda)
