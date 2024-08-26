@@ -30,6 +30,18 @@ class KabaddiDataAPI:
         except:
             print(f"Could not load {file_path}")
 
+    def internal_sort_pkl_match(self):
+        season_match_id = api.get_matches_for_season('2019')
+        print(season_match_id)
+        not_pkl = []
+        for j in season_match_id:
+            df1, df2, df3, df4 = api.get_match_data("2019", f'{j}')
+            if 'Pro Kabaddi League' not in df1['series'][0]['name']:
+                print(df1['series'][0]['name'])
+                not_pkl.append(f'{j}')
+        # not_pkl.sort()
+        print(not_pkl)
+
     def get_match_data(self, season: str, match_id: str) -> tuple[DataFrame, DataFrame, DataFrame, DataFrame]:
         """
         Get the full data for a specific match.
@@ -388,7 +400,7 @@ class KabaddiDataAPI:
         return matches
 
 # Example usage:
-api = KabaddiDataAPI(r"../DATA/DATA_kaggle_match")
+api = KabaddiDataAPI(r"../1_DATA/DATA__kaggle_match")
 
 # match_events = 
 # seasons = api.get_available_seasons()
@@ -402,25 +414,27 @@ api = KabaddiDataAPI(r"../DATA/DATA_kaggle_match")
 # Func2
 # events_df = api.get_match_events('2019', '1690')
 
-# Func3
-season_match_id = api.get_matches_for_season('2019')
+# # Func3
+# season_match_id = api.get_matches_for_season('2019')
+#
+# nums = []
+#
+# for i in season_match_id:
+#     # print(i)
+#     match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019',i)
+#     if match_detail_df['match_number'][0] == 'Final':
+#         matches_nums = match_detail_df['match_number'][0]
+#     else:
+#         matches_nums = match_detail_df['match_number'][0].split(" ")[1]
+#         nums.append((int(matches_nums), i))
+#     # print(matches_nums)
+#
+# nums.sort()
+# print(nums)
+#
+# print(season_match_id)
 
-nums = []
 
-for i in season_match_id:
-    # print(i)
-    match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019',i)
-    if match_detail_df['match_number'][0] == 'Final':
-        matches_nums = match_detail_df['match_number'][0]
-    else:
-        matches_nums = match_detail_df['match_number'][0].split(" ")[1]
-        nums.append((int(matches_nums), i)) 
-    # print(matches_nums)
-
-nums.sort()
-print(nums)
-
-print(season_match_id)
     
 
 
