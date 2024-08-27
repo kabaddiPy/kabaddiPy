@@ -1,13 +1,13 @@
-Season,Team Name,Total matches,Total touch points,Total bonus points,Total tackle points,Total super raids,Touch raid points per match,Bonus raid points per match,Tackle points per match,Super raids per match
-PKL9,Bengal Warriors,22,357,132,214,22,16.2,6,9.7,1
-PKL9,Bengaluru Bulls,24,415,135,254,20,17.3,5.6,10.6,0.8
-PKL9,Dabang Delhi,23,363,179,245,13,15.8,7.8,10.7,0.6
-PKL9,Gujarat Fortunegiants,22,405,144,180,16,18.4,6.5,8.2,0.7
-PKL9,Haryana Steelers,22,347,111,224,13,15.8,5,10.2,0.6
-PKL9,Jaipur Pink Panthers,24,401,118,290,11,16.7,4.9,12.1,0.5
-PKL9,Patna Pirates,22,318,100,214,9,14.5,4.5,9.7,0.4
-PKL9,Puneri Paltan,24,395,112,252,11,16.5,4.7,10.5,0.5
-PKL9,Tamil Thalaivas,24,351,136,271,11,14.6,5.7,11.3,0.5
-PKL9,Telugu Titans,22,261,115,202,6,11.9,5.2,9.2,0.3
-PKL9,U Mumba,22,283,101,246,12,12.9,4.6,11.2,0.5
-PKL9,UP Yoddha,23,372,132,224,20,16.2,5.7,9.7,0.9
+Season,team_id,Team Name,Total matches,Total touch points,Total bonus points,Total tackle points,Total super raids,Touch raid points per match,Bonus raid points per match,Tackle points per match,Super raids per match
+PKL9,1,Bengaluru Bulls,24,415,135,254,20,17.3,5.6,10.6,0.8
+PKL9,2,Dabang Delhi,23,363,179,245,13,15.8,7.8,10.7,0.6
+PKL9,3,Jaipur Pink Panthers,24,401,118,290,11,16.7,4.9,12.1,0.5
+PKL9,4,Bengal Warriors,22,357,132,214,22,16.2,6,9.7,1
+PKL9,6,Patna Pirates,22,318,100,214,9,14.5,4.5,9.7,0.4
+PKL9,6,U Mumba,22,283,101,246,12,12.9,4.6,11.2,0.5
+PKL9,7,Puneri Paltan,24,395,112,252,11,16.5,4.7,10.5,0.5
+PKL9,8,Telugu Titans,22,261,115,202,6,11.9,5.2,9.2,0.3
+PKL9,28,Haryana Steelers,22,347,111,224,13,15.8,5,10.2,0.6
+PKL9,29,Tamil Thalaivas,24,351,136,271,11,14.6,5.7,11.3,0.5
+PKL9,30,UP Yoddha,23,372,132,224,20,16.2,5.7,9.7,0.9
+PKL9,31,Gujarat Fortunegiants,22,405,144,180,16,18.4,6.5,8.2,0.7

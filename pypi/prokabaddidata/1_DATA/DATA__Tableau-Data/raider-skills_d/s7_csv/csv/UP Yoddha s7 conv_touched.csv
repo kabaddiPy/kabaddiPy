@@ -1,0 +1,46 @@
+Counter Action Skill,Successful Raids,,
+Release,100,,
+Out Turn,27,,
+Struggle,26,,
+Jump,6,,
+In Turn,5,,
+Dubki,4,,
+Create Gap,1,,
+,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Shrikant Jadhav,294,113,38%
+Rishank Devadiga,194,65,34%
+Surender Gill,189,58,31%
+Monu Goyat,151,58,38%
+Surender Singh,37,12,32%
+Mohsen Maghsoudlou,33,5,15%
+Azad Singh,26,5,19%
+Sachin Kumar,19,3,16%
+Amit,14,1,7%
+Ankush,13,6,46%
+Sumit,8,2,25%
+Nitesh Kumar,2,0,0%
+Ashu Singh,1,0,0%
+,,,
+Attacking Skill,Successful Raids,,
+Running Hand Touch,40,,
+Hand Touch,24,,
+Toe Touch,20,,
+Defender self out,9,,
+Reverse Kick,7,,
+Side Kick,4,,
+Defender self out (lobby shirt pull),5,,
+Running Kick,2,,
+Leg Thrust,2,,
+,,,
+Defensive Skill,Unsuccessful Raids,,
+Dive,66,,
+Thigh Hold,43,,
+Block,34,,
+Push,26,,
+Ankle Hold,24,,
+Self-out,13,,
+Body Hold,10,,
+Chain_def,8,,
+Follow,2,,
