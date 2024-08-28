@@ -1,41 +1,15 @@
-Counter Action Skill,Unnamed: 1,Successful Raids,Unnamed: 3,Unnamed: 4,Unnamed: 5
-Release,,,96,,
-Struggle,,25,,,
-Out Turn,,14,,,
-Jump,7,,,,
-In Turn,7,,,,
-Create Gap,3,,,,
-Dubki,2,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Shrikant Jadhav,332,112,34%,,
-Rishank Devadiga,262,84,32%,0.000,1.0
-Prashanth Kumar Rai,262,115,44%,,
-Sachin Kumar,89,21,24%,,
-Azad Singh,48,14,29%,,
-Rohit Kumar Choudary,22,2,9%,,
-Bhanu Tomar,22,6,27%,,
-Vishav Chaudhary,11,1,9%,,
-Sagar Krishna,9,0,0%,,
-Nitesh Kumar,6,0,0%,,
-Md Masud Karim,3,2,67%,,
-MD.Masud Karim,1,0,0%,,
-Jeeva Kumar,1,0,0%,,
-Attacking Skill,,Successful Raids,,,
-Running Hand Touch,,,59,,
-Hand Touch,,33,,,
-Leg Thrust,,22,,,
-Toe Touch,,12,,,
-Defender self out,,11,,,
-Reverse Kick,6,,,,
-Side Kick,6,,,,
-Defensive Skill,,Unsuccessful Raids,,,
-Block,,54,,,
-Dive,,51,,,
-Ankle Hold,,48,,,
-Thigh Hold,,32,,,
-Push,,27,,,
-Body Hold,,18,,,
-Self-out,,10,,,
-Chain_def,2,,,,
-Follow,1,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Shrikant Jadhav,332,112,34%
+Rishank Devadiga,262,84,32%
+Prashanth Kumar Rai,262,115,44%
+Sachin Kumar,89,21,24%
+Azad Singh,48,14,29%
+Rohit Kumar Choudary,22,2,9%
+Bhanu Tomar,22,6,27%
+Vishav Chaudhary,11,1,9%
+Sagar Krishna,9,0,0%
+Nitesh Kumar,6,0,0%
+Md Masud Karim,3,2,67%
+MD.Masud Karim,1,0,0%
+Jeeva Kumar,1,0,0%

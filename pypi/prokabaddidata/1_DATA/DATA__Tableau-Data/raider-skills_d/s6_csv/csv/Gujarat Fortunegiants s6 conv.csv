@@ -1,49 +1,17 @@
-Counter Action Skill,Successful Raids,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5
-Release,118,,,,
-Out Turn,35,,,,
-Struggle,27,,,,
-Jump,12,,,,
-Dubki,5,,,,
-Create Gap,4,,,,
-In Turn,2,,,,
-,,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Sachin,366,166,45%,,
-K. Prapanjan,255,97,38%,0.000,1.0
-Rohit Gulia,152,50,33%,,
-Ajay Kumar,88,26,30%,,
-Mahendra Rajput,66,19,29%,,
-Dong Geon Lee,65,23,35%,,
-Sunil Kumar,30,0,0%,,
-Shubham Ashok Palkar,13,2,15%,,
-Hadi Oshtorak,11,4,36%,,
-Lalit Chaudhary,7,1,14%,,
-Dharmender,6,2,33%,,
-Sachin V.,5,2,40%,,
-Anil,4,0,0%,,
-Ruturaj Shivaji Koravi,3,0,0%,,
-Parvesh Bhainswal,1,0,0%,,
-,,,,,
-,,,,,
-Attacking Skill,Successful Raids,,,,
-Running Hand Touch,75,,,,
-Hand Touch,45,,,,
-Defender self out,19,,,,
-Toe Touch,19,,,,
-Leg Thrust,11,,,,
-Reverse Kick,7,,,,
-Side Kick,0,,,,
-Running Kick,2,,,,
-,,,,,
-,,,,,
-Defensive Skill,Unsuccessful Raids,,,,
-Dive,61,,,,
-Ankle Hold,39,,,,
-Thigh Hold,38,,,,
-Block,30,,,,
-Push,28,,,,
-Self-out,26,,,,
-Body Hold,17,,,,
-Chain_def,3,,,,
-Follow,1,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Sachin,366,166,45%
+K. Prapanjan,255,97,38%
+Rohit Gulia,152,50,33%
+Ajay Kumar,88,26,30%
+Mahendra Rajput,66,19,29%
+Dong Geon Lee,65,23,35%
+Sunil Kumar,30,0,0%
+Shubham Ashok Palkar,13,2,15%
+Hadi Oshtorak,11,4,36%
+Lalit Chaudhary,7,1,14%
+Dharmender,6,2,33%
+Sachin V.,5,2,40%
+Anil,4,0,0%
+Ruturaj Shivaji Koravi,3,0,0%
+Parvesh Bhainswal,1,0,0%

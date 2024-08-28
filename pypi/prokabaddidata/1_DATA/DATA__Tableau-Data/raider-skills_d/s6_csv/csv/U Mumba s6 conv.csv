@@ -1,41 +1,15 @@
-Counter Action Skill,Unnamed: 1,Successful Raids,Unnamed: 3,Unnamed: 4,Unnamed: 5
-Release,,,109,,
-Struggle,,36,,,
-Out Turn,,19,,,
-Jump,8,,,,
-In Turn,6,,,,
-Dubki,4,,,,
-Create Gap,1,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Siddharth Sirish Desai,321,174,54%,,
-Rohit Baliyan,188,82,44%,0.000,1.0
-Darshan Kadian,141,40,28%,,
-Abhishek Singh,117,38,32%,,
-Abolfazl Maghsodloumah..,77,19,25%,,
-Vinod Kumar,68,15,22%,,
-Dharmaraj Cheralathan,22,0,0%,,
-Fazel Atrachali,14,0,0%,,
-Arjun Deshwal,11,3,27%,,
-Gaurav Kumar,10,2,20%,,
-R. Sriram,4,0,0%,,
-Surender Singh,3,0,0%,,
-Anil,2,0,0%,,
-Attacking Skill,Successful Raids,,,,
-Hand Touch,,34,,,
-Running Hand Touch,,33,,,
-Reverse Kick,16,,,,
-Leg Thrust,24,,,,
-Toe Touch,19,,,,
-Side Kick,17,,,,
-Running Kick,16,,,,
-Defender self out,8,,,,
-Defensive Skill,,Unsuccessful Raids,,,
-Thigh Hold,,,39,,
-Ankle Hold,,35,,,
-Dive,,33,,,
-Push,,28,,,
-Block,,23,,,
-Self-out,,13,,,
-Body Hold,,10,,,
-Follow,2,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Siddharth Sirish Desai,321,174,54%
+Rohit Baliyan,188,82,44%
+Darshan Kadian,141,40,28%
+Abhishek Singh,117,38,32%
+Abolfazl Maghsodloumah..,77,19,25%
+Vinod Kumar,68,15,22%
+Dharmaraj Cheralathan,22,0,0%
+Fazel Atrachali,14,0,0%
+Arjun Deshwal,11,3,27%
+Gaurav Kumar,10,2,20%
+R. Sriram,4,0,0%
+Surender Singh,3,0,0%
+Anil,2,0,0%

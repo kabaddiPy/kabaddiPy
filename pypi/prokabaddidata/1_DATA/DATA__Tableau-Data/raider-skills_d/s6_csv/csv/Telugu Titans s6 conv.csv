@@ -1,43 +1,17 @@
-Counter Action Skill,Unnamed: 1,Successful Raids,Unnamed: 3,Unnamed: 4,Unnamed: 5
-Release,,,64,,
-Out Turn,,22,,,
-Struggle,,14,,,
-Jump,5,,,,
-In Turn,5,,,,
-Dubki,3,,,,
-Create Gap,3,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Rahul Chaudhari,350,139,40%,,
-Nilesh Salunke,201,61,30%,0.000,1.0
-Mohsen Maghsoudlou,111,26,23%,,
-Farhad Milaghardan,61,17,28%,,
-Vishal Bhardwaj,40,0,0%,,
-Rakshith,39,12,31%,,
-Kamal Singh,35,7,20%,,
-Rajnish,26,8,31%,,
-Abozar Mighani,26,0,0%,,
-Armaan,23,10,43%,,
-C Manoj Kumar,21,7,33%,,
-Anil Kumar,9,0,0%,,
-Anuj Kumar,5,1,20%,,
-Krushna Madane,3,1,33%,,
-Ankit Beniwal,3,0,0%,,
-Attacking Skill,,Successful Raids,,,
-Running Hand Touch,,,37,,
-Hand Touch,,32,,,
-Reverse Kick,,12,,,
-Defender self out,,9,,,
-Toe Touch,,9,,,
-Side Kick,,7,,,
-Running Kick,,6,,,
-Leg Thrust,4,,,,
-Defensive Skill,,Unsuccessful Raids,,,
-Block,,,49,,
-Dive,,39,,,
-Ankle Hold,,34,,,
-Thigh Hold,,32,,,
-Self-out,,24,,,
-Push,,23,,,
-Body Hold,,19,,,
-Follow,2,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Rahul Chaudhari,350,139,40%
+Nilesh Salunke,201,61,30%
+Mohsen Maghsoudlou,111,26,23%
+Farhad Milaghardan,61,17,28%
+Vishal Bhardwaj,40,0,0%
+Rakshith,39,12,31%
+Kamal Singh,35,7,20%
+Rajnish,26,8,31%
+Abozar Mighani,26,0,0%
+Armaan,23,10,43%
+C Manoj Kumar,21,7,33%
+Anil Kumar,9,0,0%
+Anuj Kumar,5,1,20%
+Krushna Madane,3,1,33%
+Ankit Beniwal,3,0,0%

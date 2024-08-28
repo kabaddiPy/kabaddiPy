@@ -1,39 +1,14 @@
-Counter Action Skill,Unnamed: 1,Successful Raids,Unnamed: 3,Unnamed: 4,Unnamed: 5
-Release,,,86,,
-Out Turn,,35,,,
-Struggle,,27,,,
-Jump,,19,,,
-Dubki,9,,,,
-In Turn,7,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Pawan Sehrawat,375,214,57%,,
-Rohit Kumar,341,134,39%,0.000,1.0
-Kashiling Adake,164,51,31%,,
-Harish Naik,29,14,48%,,
-Sumit Singh,27,7,26%,,
-Ashish Kumar,27,3,11%,,
-Anand V,15,3,20%,,
-Mahesh Maruti Magdum,12,5,42%,,
-Mahender Singh,10,0,0%,,
-Sandeep,2,0,0%,,
-Ankit,2,0,0%,,
-Gyung Tae Kim,1,0,0%,,
-Attacking Skill,,Successful Raids,,,
-Running Hand Touch,,,97,,
-Hand Touch,,62,,,
-Reverse Kick,,15,,,
-Toe Touch,,12,,,
-Leg Thrust,,11,,,
-Defender self out,,10,,,
-Side Kick,2,,,,
-Running Kick,1,,,,
-Defensive Skill,,Unsuccessful Raids,,,
-Dive,,,44,,
-Thigh Hold,,38,,,
-Block,,37,,,
-Ankle Hold,,30,,,
-Push,,22,,,
-Body Hold,,15,,,
-Self-out,,11,,,
-Follow,2,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Pawan Sehrawat,375,214,57%
+Rohit Kumar,341,134,39%
+Kashiling Adake,164,51,31%
+Harish Naik,29,14,48%
+Sumit Singh,27,7,26%
+Ashish Kumar,27,3,11%
+Anand V,15,3,20%
+Mahesh Maruti Magdum,12,5,42%
+Mahender Singh,10,0,0%
+Sandeep,2,0,0%
+Ankit,2,0,0%
+Gyung Tae Kim,1,0,0%
