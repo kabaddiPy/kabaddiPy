@@ -1,46 +1,20 @@
-Counter Action Skill,Unnamed: 1,Unnamed: 2,Successful Raids,Unnamed: 4,Unnamed: 5
-Release,,,,54,
-Struggle,,,39,,
-Out Turn,,,12,,
-Create Gap,,,12,,
-Jump,,8,,,
-In Turn,,6,,,
-Dubki,2,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Siddharth Sirish Desai,224,114,51%,,
-Abhishek Singh,188,50,27%,0.000,1.0
-Mohsen Maghsoudlou Jaf..,111,20,18%,,
-Adarsh T,99,30,30%,,
-Vinay,95,28,29%,,
-Monu Goyat,84,22,26%,,
-K Hanumanthu,57,21,37%,,
-Rajnish,23,8,35%,,
-Vijay Kumar,15,1,7%,,
-Surjeet Singh,11,1,9%,,
-Vishal Bhardwaj,10,0,0%,,
-Prince D,7,0,0%,,
-Parvesh Bhainswal,7,0,0%,,
-Ankit,3,2,67%,,
-Mohit Pahal,2,0,0%,,
-Palla Ramakrishna,1,0,0%,,
-Nitin,1,0,0%,,
-Muhammed Shihas S,1,0,0%,,
-Attacking Skill,,Successful Raids,,,
-Running Hand Touch,,,45,,
-Side Kick,,23,,,
-Toe Touch,,23,,,
-Hand Touch,,17,,,
-Defender self out (lobby shirt pull),,12,,,
-Reverse Kick,,11,,,
-Running Kick,4,,,,
-Defensive Skill,,,Unsuccessful Raids,,
-Thigh Hold,,,61,,
-Ankle Hold,,,59,,
-Block,,,47,,
-Dive,,,26,,
-Push,,,23,,
-Body Hold,,,23,,
-Chain_def,,,16,,
-Self-out,,7,,,
-Follow,0,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Siddharth Sirish Desai,224,114,51%
+Abhishek Singh,188,50,27%
+Mohsen Maghsoudlou Jaf..,111,20,18%
+Adarsh T,99,30,30%
+Vinay,95,28,29%
+Monu Goyat,84,22,26%
+K Hanumanthu,57,21,37%
+Rajnish,23,8,35%
+Vijay Kumar,15,1,7%
+Surjeet Singh,11,1,9%
+Vishal Bhardwaj,10,0,0%
+Prince D,7,0,0%
+Parvesh Bhainswal,7,0,0%
+Ankit,3,2,67%
+Mohit Pahal,2,0,0%
+Palla Ramakrishna,1,0,0%
+Nitin,1,0,0%
+Muhammed Shihas S,1,0,0%

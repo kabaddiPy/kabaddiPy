@@ -1,47 +1,17 @@
-Counter Action Skill,Unnamed: 1,Successful Raids,Unnamed: 3,Unnamed: 4,Unnamed: 5
-Release,,,64,,
-Struggle,,44,,,
-Out Turn,,18,,,
-Dubki,,11,,,
-,,11,,,
-Jump,,10,,,
-In Turn,5,,,,
-Create Gap,4,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Narender,371,184,50%,,
-Ajinkya Ashok Pawar,282,90,32%,0.000,1.0
-Himanshu,138,27,20%,,
-Himanshu Singh,95,27,28%,,
-Visvanath V,34,10,29%,,
-Sachin Nehra,26,9,35%,,
-Narender,11,6,55%,,
-Himanshu Narwal,10,4,40%,,
-Mohit,9,2,22%,,
-Sachin,5,1,20%,,
-Mohit Jakhar,4,0,0%,,
-K Abhimanyu,3,1,33%,,
-Pawan Sehrawat,2,1,50%,,
-Md. Arif Rabbani,2,0,0%,,
-Aashish,2,1,50%,,
-Attacking Skill,,,Successful Raids,,
-Running Hand Touch,,,,54,
-Hand Touch,,,46,,
-,,,11,,
-Toe Touch,,,20,,
-Defender self out (lobby shirt pull),,,14,,
-Side Kick,,8,,,
-Toe touch,1,,,,
-Running Kick,1,,,,
-Hand touch,1,,,,
-Defender selfout(lobby shirt pull),1,,,,
-Defender self out(lobby shirt pull),0,,,,
-Defensive Skill,Unsuccessful Raids,,,,
-Thigh Hold,,55,,,
-Ankle hold,41,,,,
-Block,33,,,,
-Push,26,,,,
-Dive,19,,,,
-Self-out,12,,,,
-Chain_def,11,,,,
-Body Hold,10,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Narender,371,184,50%
+Ajinkya Ashok Pawar,282,90,32%
+Himanshu,138,27,20%
+Himanshu Singh,95,27,28%
+Visvanath V,34,10,29%
+Sachin Nehra,26,9,35%
+Narender,11,6,55%
+Himanshu Narwal,10,4,40%
+Mohit,9,2,22%
+Sachin,5,1,20%
+Mohit Jakhar,4,0,0%
+K Abhimanyu,3,1,33%
+Pawan Sehrawat,2,1,50%
+Md. Arif Rabbani,2,0,0%
+Aashish,2,1,50%

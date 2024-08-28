@@ -1,47 +1,21 @@
-Counter Action Skill,Unnamed: 1,Successful Raids,Unnamed: 3,Unnamed: 4,Unnamed: 5
-Release,,,66,,
-Struggle,,55,,,
-Out Turn,,17,,,
-Dubki,,15,,,
-Jump,,14,,,
-In Turn,8,,,,
-Create Gap,8,,,,
-Raider Success rate,,,,,
-Raider Name,Total Raids,Successful Raids,,Color % Successful Raids,
-Pardeep Narwal,355,162,46%,,
-Surender Gill,206,101,49%,0.000,1.0
-Rohit Tomar,166,57,34%,,
-Anil Kumar,38,11,29%,,
-Sandeep Narwal,35,8,23%,,
-Durgesh Kumar,29,7,24%,,
-Mahipal,26,8,31%,,
-Ashu Singh,14,0,0%,,
-Nitin Tomar,11,2,18%,,
-James Kamweti,10,3,30%,,
-Aman Hooda,10,4,40%,,
-Sumit,7,1,14%,,
-Gulveer Singh,7,0,0%,,
-Rathan K,6,2,33%,,
-Nitin Panwar,3,1,33%,,
-Jaideep,2,0,0%,,
-Nehal B Sawal Desai,1,0,0%,,
-Gurdeep,1,0,0%,,
-Babu M,1,0,0%,,
-Attacking Skill,,,Successful Raids,,
-Running Hand Touch,,,,52,
-Hand Touch,,,42,,
-Defender self out (lobby shirt pull),,,18,,
-Toe Touch,,,18,,
-Side Kick,,9,,,
-Running Kick,4,,,,
-Reverse Kick,2,,,,
-Defensive Skill,,Unsuccessful Raids,,,
-Block,,48,,,
-Thigh Hold,,45,,,
-Ankle Hold,,38,,,
-Push,,20,,,
-Dive,,18,,,
-Chain_def,,16,,,
-Body Hold,,16,,,
-Self-out,,12,,,
-Follow,0,,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Pardeep Narwal,355,162,46%
+Surender Gill,206,101,49%
+Rohit Tomar,166,57,34%
+Anil Kumar,38,11,29%
+Sandeep Narwal,35,8,23%
+Durgesh Kumar,29,7,24%
+Mahipal,26,8,31%
+Ashu Singh,14,0,0%
+Nitin Tomar,11,2,18%
+James Kamweti,10,3,30%
+Aman Hooda,10,4,40%
+Sumit,7,1,14%
+Gulveer Singh,7,0,0%
+Rathan K,6,2,33%
+Nitin Panwar,3,1,33%
+Jaideep,2,0,0%
+Nehal B Sawal Desai,1,0,0%
+Gurdeep,1,0,0%
+Babu M,1,0,0%
