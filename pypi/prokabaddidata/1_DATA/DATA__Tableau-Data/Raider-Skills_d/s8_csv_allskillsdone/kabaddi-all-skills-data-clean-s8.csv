@@ -1,0 +1,25 @@
+Skill Type,Skill Name,Bengal Warriors,Bengaluru Bull,Dabang Delhi,Gujarat Fortunegiant,Harayana Steelers,Jaipur Pink Panther,Patna Pirates,Puneri Paltan,Tamil Thailaiva,Telugu Titan,U Mumba,UP Yoddha
+Counter Action Skill,Release,86,82,90,80,63,59,75,61,61,63,55,88
+Counter Action Skill,Struggle,47,61,31,41,40,34,43,32,32,47,34,59
+Counter Action Skill,Out Turn,21,24,20,16,13,19,18,23,12,15,18,17
+Counter Action Skill,Jump,10,29,21,11,20,5,14,20,8,7,27,19
+Counter Action Skill,Create Gap,11,9,5,7,8,5,8,4,9,12,3,12
+Counter Action Skill,In Turn,4,4,2,8,1,10,5,1,1,2,6,1
+Counter Action Skill,Dubki,0,1,6,5,3,2,4,5,1,0,5,8
+Attacking Skill,Running Hand Touch,47,58,38,30,55,49,67,67,71,27,76,44
+Attacking Skill,Hand Touch,22,35,52,17,28,51,36,47,35,17,33,31
+Attacking Skill,Defender self out (lobby shirt pull),8,15,14,8,10,14,4,14,12,8,10,12
+Attacking Skill,Toe Touch,7,8,15,13,18,23,22,15,5,17,8,14
+Attacking Skill,Side Kick,5,14,15,22,7,14,7,5,4,20,3,14
+Attacking Skill,Reverse Kick,1,5,7,11,3,1,13,5,3,11,3,2
+Attacking Skill,Running Kick,,5,1,5,6,2,,5,5,7,,5
+Attacking Skill,Leg Thrust,2,,,,5,2,1,,2,1,1,5
+Defensive Skill,Thigh Hold,51,62,38,46,53,33,43,35,53,51,43,59
+Defensive Skill,Ankle Hold,52,50,35,37,47,40,39,37,41,56,31,42
+Defensive Skill,Block,30,40,34,41,31,22,34,22,30,37,44,51
+Defensive Skill,Dive,20,43,46,28,30,17,37,42,40,35,34,33
+Defensive Skill,Push,21,28,24,21,17,30,22,14,27,34,31,19
+Defensive Skill,Chain_def,10,17,14,15,11,10,6,10,15,11,16,12
+Defensive Skill,Body Hold,12,16,8,14,17,14,8,7,13,16,12,16
+Defensive Skill,Self-out,8,14,9,16,12,11,14,20,16,11,11,14
+Defensive Skill,Follow,,,,0,0,,,,0,,1,

@@ -1,121 +1,121 @@
-id,result,prev_position,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
-6,W,,2016-06-27,7,PUNE,14,6,PAT,15,,Patna Pirates Won by 1 Pts,6
-9,W,,2016-06-29,5,MUM,20,6,PAT,17,,Patna Pirates Won by -3 Pts,6
-15,W,,2016-07-03,8,HYD,17,6,PAT,16,,Patna Pirates Won by -1 Pts,6
-22,W,,2016-07-07,6,PAT,17,1,BLR,12,,Patna Pirates Won by 5 Pts,6
-24,W,,2016-07-08,6,PAT,20,4,KOL,12,,Patna Pirates Won by 8 Pts,6
-26,L,,2016-07-09,6,PAT,7,2,DEL,22,,Dabang Delhi K.C. Won by 15 Pts,6
-28,L,,2016-07-10,6,PAT,12,3,JAI,19,,Jaipur Pink Panthers Won by 7 Pts,6
-33,W,,2016-07-14,1,BLR,15,6,PAT,26,,Patna Pirates Won by 11 Pts,6
-37,W,,2016-07-16,6,PAT,22,5,MUM,15,,Patna Pirates Won by 7 Pts,6
-39,W,,2016-07-17,4,KOL,16,6,PAT,20,,Patna Pirates Won by 4 Pts,6
-46,L,,2016-07-22,3,JAI,15,6,PAT,11,,Jaipur Pink Panthers Won by 4 Pts,6
-48,W,,2016-07-23,6,PAT,17,7,PUNE,16,,Patna Pirates Won by 1 Pts,6
-52,W,,2016-07-25,2,DEL,21,6,PAT,12,,Patna Pirates Won by -9 Pts,6
-53,L,,2016-07-26,6,PAT,12,8,HYD,25,,Telugu Titans Won by 13 Pts,6
-57,W,,2016-07-29,6,PAT,22,7,PUNE,16,,Patna Pirates Won by 6 Pts,6
-60,W,,2016-07-31,6,PAT,20,3,JAI,13,,Patna Pirates Won by 7 Pts,6
-1,L,,2016-06-25,7,PUNE,16,8,HYD,16,,Puneri Paltan Won by 0 Pts,8
-8,L,,2016-06-29,3,JAI,14,8,HYD,14,,Jaipur Pink Panthers Won by 0 Pts,8
-15,L,,2016-07-03,8,HYD,17,6,PAT,16,,Patna Pirates Won by -1 Pts,8
-18,W,,2016-07-04,8,HYD,18,4,KOL,12,,Telugu Titans Won by 6 Pts,8
-19,L,,2016-07-05,8,HYD,10,1,BLR,15,,Bengaluru Bulls Won by 5 Pts,8
-21,W,,2016-07-06,8,HYD,16,5,MUM,15,,Telugu Titans Won by 1 Pts,8
-27,W,,2016-07-10,2,DEL,16,8,HYD,17,,Telugu Titans Won by 1 Pts,8
-29,W,,2016-07-12,1,BLR,10,8,HYD,20,,Telugu Titans Won by 10 Pts,8
-34,W,,2016-07-15,8,HYD,21,7,PUNE,15,,Telugu Titans Won by 6 Pts,8
-40,,,2016-07-18,4,KOL,19,8,HYD,16,,,8
-41,W,,2016-07-19,8,HYD,19,2,DEL,13,,Telugu Titans Won by 6 Pts,8
-45,,,2016-07-21,5,MUM,14,8,HYD,11,,,8
-51,W,,2016-07-24,8,HYD,22,3,JAI,12,,Telugu Titans Won by 10 Pts,8
-53,W,,2016-07-26,6,PAT,12,8,HYD,25,,Telugu Titans Won by 13 Pts,8
-58,L,,2016-07-29,8,HYD,9,3,JAI,16,,Jaipur Pink Panthers Won by 7 Pts,8
-59,L,,2016-07-31,8,HYD,11,7,PUNE,20,,Puneri Paltan Won by 9 Pts,8
-32,L,,2014-03-14,3,JAI,9,5,MUM,18,,U Mumba Won by 9 Pts,3
-2,L,,2016-06-25,5,MUM,22,3,JAI,17,,U Mumba Won by 5 Pts,3
-8,W,,2016-06-29,3,JAI,14,8,HYD,14,,Jaipur Pink Panthers Won by 0 Pts,3
-10,,,2016-06-30,3,JAI,15,1,BLR,17,,,3
-12,W,,2016-07-01,3,JAI,15,4,KOL,14,,Jaipur Pink Panthers Won by 1 Pts,3
-14,L,,2016-07-02,3,JAI,15,7,PUNE,17,,Puneri Paltan Won by 2 Pts,3
-20,W,,2016-07-06,2,DEL,11,3,JAI,24,,Jaipur Pink Panthers Won by 13 Pts,3
-28,W,,2016-07-10,6,PAT,12,3,JAI,19,,Jaipur Pink Panthers Won by 7 Pts,3
-31,W,,2016-07-13,1,BLR,10,3,JAI,15,,Jaipur Pink Panthers Won by 5 Pts,3
-36,L,,2016-07-16,4,KOL,15,3,JAI,11,,Bengal Warriorz Won by 4 Pts,3
-38,W,,2016-07-17,7,PUNE,12,3,JAI,17,,Jaipur Pink Panthers Won by 5 Pts,3
-44,W,,2016-07-21,3,JAI,10,2,DEL,14,,Jaipur Pink Panthers Won by -4 Pts,3
-46,W,,2016-07-22,3,JAI,15,6,PAT,11,,Jaipur Pink Panthers Won by 4 Pts,3
-51,L,,2016-07-24,8,HYD,22,3,JAI,12,,Telugu Titans Won by 10 Pts,3
-58,W,,2016-07-29,8,HYD,9,3,JAI,16,,Jaipur Pink Panthers Won by 7 Pts,3
-60,L,,2016-07-31,6,PAT,20,3,JAI,13,,Patna Pirates Won by 7 Pts,3
-1,W,,2016-06-25,7,PUNE,16,8,HYD,16,,Puneri Paltan Won by 0 Pts,7
-4,W,,2016-06-26,7,PUNE,17,5,MUM,10,,Puneri Paltan Won by 7 Pts,7
-6,L,,2016-06-27,7,PUNE,14,6,PAT,15,,Patna Pirates Won by 1 Pts,7
-7,,,2016-06-28,7,PUNE,11,2,DEL,15,,,7
-14,W,,2016-07-02,3,JAI,15,7,PUNE,17,,Puneri Paltan Won by 2 Pts,7
-17,L,,2016-07-04,1,BLR,18,7,PUNE,14,,Bengaluru Bulls Won by 4 Pts,7
-25,W,,2016-07-09,4,KOL,15,7,PUNE,18,,Puneri Paltan Won by 3 Pts,7
-30,,,2016-07-12,7,PUNE,16,4,KOL,26,,,7
-34,L,,2016-07-15,8,HYD,21,7,PUNE,15,,Telugu Titans Won by 6 Pts,7
-38,L,,2016-07-17,7,PUNE,12,3,JAI,17,,Jaipur Pink Panthers Won by 5 Pts,7
-43,L,,2016-07-20,5,MUM,16,7,PUNE,16,,U Mumba Won by 0 Pts,7
-48,L,,2016-07-23,6,PAT,17,7,PUNE,16,,Patna Pirates Won by 1 Pts,7
-54,W,,2016-07-26,2,DEL,21,7,PUNE,12,,Puneri Paltan Won by -9 Pts,7
-55,W,,2016-07-27,7,PUNE,20,1,BLR,22,,Puneri Paltan Won by -2 Pts,7
-57,L,,2016-07-29,6,PAT,22,7,PUNE,16,,Patna Pirates Won by 6 Pts,7
-59,W,,2016-07-31,8,HYD,11,7,PUNE,20,,Puneri Paltan Won by 9 Pts,7
-32,W,,2014-03-14,3,JAI,9,5,MUM,18,,U Mumba Won by 9 Pts,5
-2,W,,2016-06-25,5,MUM,22,3,JAI,17,,U Mumba Won by 5 Pts,5
-4,L,,2016-06-26,7,PUNE,17,5,MUM,10,,Puneri Paltan Won by 7 Pts,5
-9,L,,2016-06-29,5,MUM,20,6,PAT,17,,Patna Pirates Won by -3 Pts,5
-11,W,,2016-07-01,5,MUM,17,2,DEL,15,,U Mumba Won by 2 Pts,5
-16,W,,2016-07-03,4,KOL,8,5,MUM,19,,U Mumba Won by 11 Pts,5
-21,L,,2016-07-06,8,HYD,16,5,MUM,15,,Telugu Titans Won by 1 Pts,5
-23,W,,2016-07-08,1,BLR,13,5,MUM,13,,U Mumba Won by 0 Pts,5
-37,L,,2016-07-16,6,PAT,22,5,MUM,15,,Patna Pirates Won by 7 Pts,5
-43,W,,2016-07-20,5,MUM,16,7,PUNE,16,,U Mumba Won by 0 Pts,5
-45,,,2016-07-21,5,MUM,14,8,HYD,11,,,5
-47,L,,2016-07-21,5,MUM,11,4,KOL,18,,Bengal Warriorz Won by 7 Pts,5
-49,L,,2016-07-23,5,MUM,17,1,BLR,18,,Bengaluru Bulls Won by 1 Pts,5
-56,W,,2016-07-27,2,DEL,18,5,MUM,23,,U Mumba Won by 5 Pts,5
-3,W,,2016-06-26,1,BLR,12,4,KOL,13,,Bengaluru Bulls Won by -1 Pts,1
-10,,,2016-06-30,3,JAI,15,1,BLR,17,,,1
-13,L,,2016-07-02,2,DEL,23,1,BLR,13,,Dabang Delhi K.C. Won by 10 Pts,1
-17,W,,2016-07-04,1,BLR,18,7,PUNE,14,,Bengaluru Bulls Won by 4 Pts,1
-19,W,,2016-07-05,8,HYD,10,1,BLR,15,,Bengaluru Bulls Won by 5 Pts,1
-22,L,,2016-07-07,6,PAT,17,1,BLR,12,,Patna Pirates Won by 5 Pts,1
-23,L,,2016-07-08,1,BLR,13,5,MUM,13,,U Mumba Won by 0 Pts,1
-29,L,,2016-07-12,1,BLR,10,8,HYD,20,,Telugu Titans Won by 10 Pts,1
-31,L,,2016-07-13,1,BLR,10,3,JAI,15,,Jaipur Pink Panthers Won by 5 Pts,1
-33,L,,2016-07-14,1,BLR,15,6,PAT,26,,Patna Pirates Won by 11 Pts,1
-35,L,,2016-07-15,1,BLR,9,2,DEL,21,,Dabang Delhi K.C. Won by 12 Pts,1
-42,W,,2016-07-19,4,KOL,12,1,BLR,15,,Bengaluru Bulls Won by 3 Pts,1
-49,W,,2016-07-23,5,MUM,17,1,BLR,18,,Bengaluru Bulls Won by 1 Pts,1
-55,L,,2016-07-27,7,PUNE,20,1,BLR,22,,Puneri Paltan Won by -2 Pts,1
-5,L,,2016-06-27,4,KOL,16,2,DEL,15,,Bengal Warriorz Won by 1 Pts,2
-7,,,2016-06-28,7,PUNE,11,2,DEL,15,,,2
-11,L,,2016-07-01,5,MUM,17,2,DEL,15,,U Mumba Won by 2 Pts,2
-13,W,,2016-07-02,2,DEL,23,1,BLR,13,,Dabang Delhi K.C. Won by 10 Pts,2
-20,L,,2016-07-06,2,DEL,11,3,JAI,24,,Jaipur Pink Panthers Won by 13 Pts,2
-26,W,,2016-07-09,6,PAT,7,2,DEL,22,,Dabang Delhi K.C. Won by 15 Pts,2
-27,L,,2016-07-10,2,DEL,16,8,HYD,17,,Telugu Titans Won by 1 Pts,2
-35,W,,2016-07-15,1,BLR,9,2,DEL,21,,Dabang Delhi K.C. Won by 12 Pts,2
-41,L,,2016-07-19,8,HYD,19,2,DEL,13,,Telugu Titans Won by 6 Pts,2
-44,L,,2016-07-21,3,JAI,10,2,DEL,14,,Jaipur Pink Panthers Won by -4 Pts,2
-50,W,,2016-07-24,2,DEL,19,4,KOL,14,,Dabang Delhi K.C. Won by 5 Pts,2
-52,L,,2016-07-25,2,DEL,21,6,PAT,12,,Patna Pirates Won by -9 Pts,2
-54,L,,2016-07-26,2,DEL,21,7,PUNE,12,,Puneri Paltan Won by -9 Pts,2
-56,L,,2016-07-27,2,DEL,18,5,MUM,23,,U Mumba Won by 5 Pts,2
-3,L,,2016-06-26,1,BLR,12,4,KOL,13,,Bengaluru Bulls Won by -1 Pts,4
-5,W,,2016-06-27,4,KOL,16,2,DEL,15,,Bengal Warriorz Won by 1 Pts,4
-12,L,,2016-07-01,3,JAI,15,4,KOL,14,,Jaipur Pink Panthers Won by 1 Pts,4
-16,L,,2016-07-03,4,KOL,8,5,MUM,19,,U Mumba Won by 11 Pts,4
-18,L,,2016-07-04,8,HYD,18,4,KOL,12,,Telugu Titans Won by 6 Pts,4
-24,L,,2016-07-08,6,PAT,20,4,KOL,12,,Patna Pirates Won by 8 Pts,4
-25,L,,2016-07-09,4,KOL,15,7,PUNE,18,,Puneri Paltan Won by 3 Pts,4
-30,,,2016-07-12,7,PUNE,16,4,KOL,26,,,4
-36,W,,2016-07-16,4,KOL,15,3,JAI,11,,Bengal Warriorz Won by 4 Pts,4
-39,L,,2016-07-17,4,KOL,16,6,PAT,20,,Patna Pirates Won by 4 Pts,4
-40,,,2016-07-18,4,KOL,19,8,HYD,16,,,4
-42,L,,2016-07-19,4,KOL,12,1,BLR,15,,Bengaluru Bulls Won by 3 Pts,4
-47,W,,2016-07-21,5,MUM,11,4,KOL,18,,Bengal Warriorz Won by 7 Pts,4
-50,L,,2016-07-24,2,DEL,19,4,KOL,14,,Dabang Delhi K.C. Won by 5 Pts,4
+id,result,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
+6,W,27/06/16,7,PUNE,14,6,PAT,15,,Patna Pirates Won by 1 Pts,6
+9,W,29/06/16,5,MUM,20,6,PAT,17,,Patna Pirates Won by -3 Pts,6
+15,W,03/07/16,8,HYD,17,6,PAT,16,,Patna Pirates Won by -1 Pts,6
+22,W,07/07/16,6,PAT,17,1,BLR,12,,Patna Pirates Won by 5 Pts,6
+24,W,08/07/16,6,PAT,20,4,KOL,12,,Patna Pirates Won by 8 Pts,6
+26,L,09/07/16,6,PAT,7,2,DEL,22,,Dabang Delhi K.C. Won by 15 Pts,6
+28,L,10/07/16,6,PAT,12,3,JAI,19,,Jaipur Pink Panthers Won by 7 Pts,6
+33,W,14/07/16,1,BLR,15,6,PAT,26,,Patna Pirates Won by 11 Pts,6
+37,W,16/07/16,6,PAT,22,5,MUM,15,,Patna Pirates Won by 7 Pts,6
+39,W,17/07/16,4,KOL,16,6,PAT,20,,Patna Pirates Won by 4 Pts,6
+46,L,22/07/16,3,JAI,15,6,PAT,11,,Jaipur Pink Panthers Won by 4 Pts,6
+48,W,23/07/16,6,PAT,17,7,PUNE,16,,Patna Pirates Won by 1 Pts,6
+52,W,25/07/16,2,DEL,21,6,PAT,12,,Patna Pirates Won by -9 Pts,6
+53,L,26/07/16,6,PAT,12,8,HYD,25,,Telugu Titans Won by 13 Pts,6
+57,W,29/07/16,6,PAT,22,7,PUNE,16,,Patna Pirates Won by 6 Pts,6
+60,W,31/07/16,6,PAT,20,3,JAI,13,,Patna Pirates Won by 7 Pts,6
+1,L,25/06/16,7,PUNE,16,8,HYD,16,,Puneri Paltan Won by 0 Pts,8
+8,L,29/06/16,3,JAI,14,8,HYD,14,,Jaipur Pink Panthers Won by 0 Pts,8
+15,L,03/07/16,8,HYD,17,6,PAT,16,,Patna Pirates Won by -1 Pts,8
+18,W,04/07/16,8,HYD,18,4,KOL,12,,Telugu Titans Won by 6 Pts,8
+19,L,05/07/16,8,HYD,10,1,BLR,15,,Bengaluru Bulls Won by 5 Pts,8
+21,W,06/07/16,8,HYD,16,5,MUM,15,,Telugu Titans Won by 1 Pts,8
+27,W,10/07/16,2,DEL,16,8,HYD,17,,Telugu Titans Won by 1 Pts,8
+29,W,12/07/16,1,BLR,10,8,HYD,20,,Telugu Titans Won by 10 Pts,8
+34,W,15/07/16,8,HYD,21,7,PUNE,15,,Telugu Titans Won by 6 Pts,8
+40,,18/07/16,4,KOL,19,8,HYD,16,,,8
+41,W,19/07/16,8,HYD,19,2,DEL,13,,Telugu Titans Won by 6 Pts,8
+45,,21/07/16,5,MUM,14,8,HYD,11,,,8
+51,W,24/07/16,8,HYD,22,3,JAI,12,,Telugu Titans Won by 10 Pts,8
+53,W,26/07/16,6,PAT,12,8,HYD,25,,Telugu Titans Won by 13 Pts,8
+58,L,29/07/16,8,HYD,9,3,JAI,16,,Jaipur Pink Panthers Won by 7 Pts,8
+59,L,31/07/16,8,HYD,11,7,PUNE,20,,Puneri Paltan Won by 9 Pts,8
+32,L,14/03/14,3,JAI,9,5,MUM,18,,U Mumba Won by 9 Pts,3
+2,L,25/06/16,5,MUM,22,3,JAI,17,,U Mumba Won by 5 Pts,3
+8,W,29/06/16,3,JAI,14,8,HYD,14,,Jaipur Pink Panthers Won by 0 Pts,3
+10,,30/06/16,3,JAI,15,1,BLR,17,,,3
+12,W,01/07/16,3,JAI,15,4,KOL,14,,Jaipur Pink Panthers Won by 1 Pts,3
+14,L,02/07/16,3,JAI,15,7,PUNE,17,,Puneri Paltan Won by 2 Pts,3
+20,W,06/07/16,2,DEL,11,3,JAI,24,,Jaipur Pink Panthers Won by 13 Pts,3
+28,W,10/07/16,6,PAT,12,3,JAI,19,,Jaipur Pink Panthers Won by 7 Pts,3
+31,W,13/07/16,1,BLR,10,3,JAI,15,,Jaipur Pink Panthers Won by 5 Pts,3
+36,L,16/07/16,4,KOL,15,3,JAI,11,,Bengal Warriorz Won by 4 Pts,3
+38,W,17/07/16,7,PUNE,12,3,JAI,17,,Jaipur Pink Panthers Won by 5 Pts,3
+44,W,21/07/16,3,JAI,10,2,DEL,14,,Jaipur Pink Panthers Won by -4 Pts,3
+46,W,22/07/16,3,JAI,15,6,PAT,11,,Jaipur Pink Panthers Won by 4 Pts,3
+51,L,24/07/16,8,HYD,22,3,JAI,12,,Telugu Titans Won by 10 Pts,3
+58,W,29/07/16,8,HYD,9,3,JAI,16,,Jaipur Pink Panthers Won by 7 Pts,3
+60,L,31/07/16,6,PAT,20,3,JAI,13,,Patna Pirates Won by 7 Pts,3
+1,W,25/06/16,7,PUNE,16,8,HYD,16,,Puneri Paltan Won by 0 Pts,7
+4,W,26/06/16,7,PUNE,17,5,MUM,10,,Puneri Paltan Won by 7 Pts,7
+6,L,27/06/16,7,PUNE,14,6,PAT,15,,Patna Pirates Won by 1 Pts,7
+7,,28/06/16,7,PUNE,11,2,DEL,15,,,7
+14,W,02/07/16,3,JAI,15,7,PUNE,17,,Puneri Paltan Won by 2 Pts,7
+17,L,04/07/16,1,BLR,18,7,PUNE,14,,Bengaluru Bulls Won by 4 Pts,7
+25,W,09/07/16,4,KOL,15,7,PUNE,18,,Puneri Paltan Won by 3 Pts,7
+30,,12/07/16,7,PUNE,16,4,KOL,26,,,7
+34,L,15/07/16,8,HYD,21,7,PUNE,15,,Telugu Titans Won by 6 Pts,7
+38,L,17/07/16,7,PUNE,12,3,JAI,17,,Jaipur Pink Panthers Won by 5 Pts,7
+43,L,20/07/16,5,MUM,16,7,PUNE,16,,U Mumba Won by 0 Pts,7
+48,L,23/07/16,6,PAT,17,7,PUNE,16,,Patna Pirates Won by 1 Pts,7
+54,W,26/07/16,2,DEL,21,7,PUNE,12,,Puneri Paltan Won by -9 Pts,7
+55,W,27/07/16,7,PUNE,20,1,BLR,22,,Puneri Paltan Won by -2 Pts,7
+57,L,29/07/16,6,PAT,22,7,PUNE,16,,Patna Pirates Won by 6 Pts,7
+59,W,31/07/16,8,HYD,11,7,PUNE,20,,Puneri Paltan Won by 9 Pts,7
+32,W,14/03/14,3,JAI,9,5,MUM,18,,U Mumba Won by 9 Pts,5
+2,W,25/06/16,5,MUM,22,3,JAI,17,,U Mumba Won by 5 Pts,5
+4,L,26/06/16,7,PUNE,17,5,MUM,10,,Puneri Paltan Won by 7 Pts,5
+9,L,29/06/16,5,MUM,20,6,PAT,17,,Patna Pirates Won by -3 Pts,5
+11,W,01/07/16,5,MUM,17,2,DEL,15,,U Mumba Won by 2 Pts,5
+16,W,03/07/16,4,KOL,8,5,MUM,19,,U Mumba Won by 11 Pts,5
+21,L,06/07/16,8,HYD,16,5,MUM,15,,Telugu Titans Won by 1 Pts,5
+23,W,08/07/16,1,BLR,13,5,MUM,13,,U Mumba Won by 0 Pts,5
+37,L,16/07/16,6,PAT,22,5,MUM,15,,Patna Pirates Won by 7 Pts,5
+43,W,20/07/16,5,MUM,16,7,PUNE,16,,U Mumba Won by 0 Pts,5
+45,,21/07/16,5,MUM,14,8,HYD,11,,,5
+47,L,21/07/16,5,MUM,11,4,KOL,18,,Bengal Warriorz Won by 7 Pts,5
+49,L,23/07/16,5,MUM,17,1,BLR,18,,Bengaluru Bulls Won by 1 Pts,5
+56,W,27/07/16,2,DEL,18,5,MUM,23,,U Mumba Won by 5 Pts,5
+3,W,26/06/16,1,BLR,12,4,KOL,13,,Bengaluru Bulls Won by -1 Pts,1
+10,,30/06/16,3,JAI,15,1,BLR,17,,,1
+13,L,02/07/16,2,DEL,23,1,BLR,13,,Dabang Delhi K.C. Won by 10 Pts,1
+17,W,04/07/16,1,BLR,18,7,PUNE,14,,Bengaluru Bulls Won by 4 Pts,1
+19,W,05/07/16,8,HYD,10,1,BLR,15,,Bengaluru Bulls Won by 5 Pts,1
+22,L,07/07/16,6,PAT,17,1,BLR,12,,Patna Pirates Won by 5 Pts,1
+23,L,08/07/16,1,BLR,13,5,MUM,13,,U Mumba Won by 0 Pts,1
+29,L,12/07/16,1,BLR,10,8,HYD,20,,Telugu Titans Won by 10 Pts,1
+31,L,13/07/16,1,BLR,10,3,JAI,15,,Jaipur Pink Panthers Won by 5 Pts,1
+33,L,14/07/16,1,BLR,15,6,PAT,26,,Patna Pirates Won by 11 Pts,1
+35,L,15/07/16,1,BLR,9,2,DEL,21,,Dabang Delhi K.C. Won by 12 Pts,1
+42,W,19/07/16,4,KOL,12,1,BLR,15,,Bengaluru Bulls Won by 3 Pts,1
+49,W,23/07/16,5,MUM,17,1,BLR,18,,Bengaluru Bulls Won by 1 Pts,1
+55,L,27/07/16,7,PUNE,20,1,BLR,22,,Puneri Paltan Won by -2 Pts,1
+5,L,27/06/16,4,KOL,16,2,DEL,15,,Bengal Warriorz Won by 1 Pts,2
+7,,28/06/16,7,PUNE,11,2,DEL,15,,,2
+11,L,01/07/16,5,MUM,17,2,DEL,15,,U Mumba Won by 2 Pts,2
+13,W,02/07/16,2,DEL,23,1,BLR,13,,Dabang Delhi K.C. Won by 10 Pts,2
+20,L,06/07/16,2,DEL,11,3,JAI,24,,Jaipur Pink Panthers Won by 13 Pts,2
+26,W,09/07/16,6,PAT,7,2,DEL,22,,Dabang Delhi K.C. Won by 15 Pts,2
+27,L,10/07/16,2,DEL,16,8,HYD,17,,Telugu Titans Won by 1 Pts,2
+35,W,15/07/16,1,BLR,9,2,DEL,21,,Dabang Delhi K.C. Won by 12 Pts,2
+41,L,19/07/16,8,HYD,19,2,DEL,13,,Telugu Titans Won by 6 Pts,2
+44,L,21/07/16,3,JAI,10,2,DEL,14,,Jaipur Pink Panthers Won by -4 Pts,2
+50,W,24/07/16,2,DEL,19,4,KOL,14,,Dabang Delhi K.C. Won by 5 Pts,2
+52,L,25/07/16,2,DEL,21,6,PAT,12,,Patna Pirates Won by -9 Pts,2
+54,L,26/07/16,2,DEL,21,7,PUNE,12,,Puneri Paltan Won by -9 Pts,2
+56,L,27/07/16,2,DEL,18,5,MUM,23,,U Mumba Won by 5 Pts,2
+3,L,26/06/16,1,BLR,12,4,KOL,13,,Bengaluru Bulls Won by -1 Pts,4
+5,W,27/06/16,4,KOL,16,2,DEL,15,,Bengal Warriorz Won by 1 Pts,4
+12,L,01/07/16,3,JAI,15,4,KOL,14,,Jaipur Pink Panthers Won by 1 Pts,4
+16,L,03/07/16,4,KOL,8,5,MUM,19,,U Mumba Won by 11 Pts,4
+18,L,04/07/16,8,HYD,18,4,KOL,12,,Telugu Titans Won by 6 Pts,4
+24,L,08/07/16,6,PAT,20,4,KOL,12,,Patna Pirates Won by 8 Pts,4
+25,L,09/07/16,4,KOL,15,7,PUNE,18,,Puneri Paltan Won by 3 Pts,4
+30,,12/07/16,7,PUNE,16,4,KOL,26,,,4
+36,W,16/07/16,4,KOL,15,3,JAI,11,,Bengal Warriorz Won by 4 Pts,4
+39,L,17/07/16,4,KOL,16,6,PAT,20,,Patna Pirates Won by 4 Pts,4
+40,,18/07/16,4,KOL,19,8,HYD,16,,,4
+42,L,19/07/16,4,KOL,12,1,BLR,15,,Bengaluru Bulls Won by 3 Pts,4
+47,W,21/07/16,5,MUM,11,4,KOL,18,,Bengal Warriorz Won by 7 Pts,4
+50,L,24/07/16,2,DEL,19,4,KOL,14,,Dabang Delhi K.C. Won by 5 Pts,4

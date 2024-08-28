@@ -1,275 +1,275 @@
-id,result,prev_position,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
-1692,W,,2019-07-24,8,HYD,33,2,DEL,34,,Dabang Delhi K.C. Won by 1 Pts,2
-1693,W,,2019-07-25,2,DEL,30,29,CHE,29,,Dabang Delhi K.C. Won by 1 Pts,2
-1698,W,,2019-07-28,2,DEL,41,28,HAR,21,,Dabang Delhi K.C. Won by 20 Pts,2
-1704,L,,2019-08-01,31,GUJ,31,2,DEL,26,,Gujarat Giants Won by 5 Pts,2
-1711,W,,2019-08-05,2,DEL,35,3,JAI,24,,Dabang Delhi K.C. Won by 11 Pts,2
-1719,W,,2019-08-10,7,PUNE,30,2,DEL,32,,Dabang Delhi K.C. Won by 2 Pts,2
-1730,,,2019-08-17,4,KOL,30,2,DEL,30,,,2
-1740,W,,2019-08-24,2,DEL,33,1,BLR,31,,Dabang Delhi K.C. Won by 2 Pts,2
-1743,W,,2019-08-25,2,DEL,36,30,UP,27,,Dabang Delhi K.C. Won by 9 Pts,2
-1747,W,,2019-08-28,2,DEL,40,5,MUM,24,,Dabang Delhi K.C. Won by 16 Pts,2
-1750,W,,2019-08-30,2,DEL,38,6,PAT,35,,Dabang Delhi K.C. Won by 3 Pts,2
-1757,W,,2019-09-04,3,JAI,44,2,DEL,46,,Dabang Delhi K.C. Won by 2 Pts,2
-1763,L,,2019-09-07,2,DEL,25,28,HAR,47,,Haryana Steelers Won by 22 Pts,2
-1764,W,,2019-09-08,2,DEL,50,29,CHE,34,,Dabang Delhi K.C. Won by 16 Pts,2
-1775,W,,2019-09-15,2,DEL,34,31,GUJ,30,,Dabang Delhi K.C. Won by 4 Pts,2
-1778,W,,2019-09-16,8,HYD,29,2,DEL,37,,Dabang Delhi K.C. Won by 8 Pts,2
-1789,,,2019-09-23,2,DEL,39,1,BLR,39,,,2
-1792,W,,2019-09-26,6,PAT,39,2,DEL,43,,Dabang Delhi K.C. Won by 4 Pts,2
-1797,W,,2019-09-29,7,PUNE,40,2,DEL,60,,Dabang Delhi K.C. Won by 20 Pts,2
-1799,L,,2019-09-30,4,KOL,42,2,DEL,33,,Bengal Warriorz Won by 9 Pts,2
-1806,L,,2019-10-05,30,UP,50,2,DEL,33,,UP Yoddhas Won by 17 Pts,2
-1815,,,2019-10-11,2,DEL,37,5,MUM,37,,,2
-1819,W,,2019-10-16,2,DEL,44,1,BLR,38,,Dabang Delhi K.C. Won by 6 Pts,2
-1821,L,,2019-10-19,2,DEL,34,4,KOL,39,,Bengal Warriorz Won by 5 Pts,2
-1691,W,,2019-07-24,30,UP,17,4,KOL,48,,Bengal Warriorz Won by 31 Pts,4
-1697,L,,2019-07-27,3,JAI,27,4,KOL,25,,Jaipur Pink Panthers Won by 2 Pts,4
-1701,W,,2019-07-29,4,KOL,43,7,PUNE,23,,Bengal Warriorz Won by 20 Pts,4
-1708,L,,2019-08-03,4,KOL,42,1,BLR,43,,Bengaluru Bulls Won by 1 Pts,4
-1716,W,,2019-08-09,4,KOL,32,5,MUM,30,,Bengal Warriorz Won by 2 Pts,4
-1722,,,2019-08-12,4,KOL,29,8,HYD,29,,,4
-1725,W,,2019-08-14,31,GUJ,26,4,KOL,28,,Bengal Warriorz Won by 2 Pts,4
-1730,,,2019-08-17,4,KOL,30,2,DEL,30,,,4
-1737,W,,2019-08-22,4,KOL,35,6,PAT,26,,Bengal Warriorz Won by 9 Pts,4
-1744,L,,2019-08-26,4,KOL,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,4
-1748,W,,2019-08-29,4,KOL,35,29,CHE,26,,Bengal Warriorz Won by 9 Pts,4
-1753,L,,2019-09-01,30,UP,32,4,KOL,29,,UP Yoddhas Won by 3 Pts,4
-1762,,,2019-09-07,4,KOL,25,31,GUJ,25,,,4
-1765,W,,2019-09-08,4,KOL,42,7,PUNE,39,,Bengal Warriorz Won by 3 Pts,4
-1769,W,,2019-09-11,4,KOL,29,5,MUM,26,,Bengal Warriorz Won by 3 Pts,4
-1772,W,,2019-09-12,4,KOL,42,1,BLR,40,,Bengal Warriorz Won by 2 Pts,4
-1781,W,,2019-09-19,4,KOL,48,28,HAR,36,,Bengal Warriorz Won by 12 Pts,4
-1787,W,,2019-09-22,3,JAI,40,4,KOL,41,,Bengal Warriorz Won by 1 Pts,4
-1790,W,,2019-09-25,8,HYD,39,4,KOL,40,,Bengal Warriorz Won by 1 Pts,4
-1799,W,,2019-09-30,4,KOL,42,2,DEL,33,,Bengal Warriorz Won by 9 Pts,4
-1808,L,,2019-10-06,4,KOL,41,6,PAT,69,,Patna Pirates Won by 28 Pts,4
-1812,W,,2019-10-09,4,KOL,33,29,CHE,29,,Bengal Warriorz Won by 4 Pts,4
-1820,W,,2019-10-16,4,KOL,37,5,MUM,35,,Bengal Warriorz Won by 2 Pts,4
-1821,W,,2019-10-19,2,DEL,34,4,KOL,39,,Bengal Warriorz Won by 5 Pts,4
-1691,L,,2019-07-24,30,UP,17,4,KOL,48,,Bengal Warriorz Won by 31 Pts,30
-1694,L,,2019-07-26,30,UP,19,31,GUJ,44,,Gujarat Giants Won by 25 Pts,30
-1703,W,,2019-07-31,5,MUM,23,30,UP,27,,UP Yoddhas Won by 4 Pts,30
-1705,,,2019-08-02,8,HYD,20,30,UP,20,,,30
-1713,,,2019-08-07,30,UP,28,29,CHE,28,,,30
-1717,L,,2019-08-09,6,PAT,41,30,UP,20,,Patna Pirates Won by 21 Pts,30
-1723,W,,2019-08-12,30,UP,35,1,BLR,33,,UP Yoddhas Won by 2 Pts,30
-1724,L,,2019-08-14,30,UP,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,30
-1734,W,,2019-08-19,30,UP,31,3,JAI,24,,UP Yoddhas Won by 7 Pts,30
-1743,L,,2019-08-25,2,DEL,36,30,UP,27,,Dabang Delhi K.C. Won by 9 Pts,30
-1745,W,,2019-08-26,30,UP,35,7,PUNE,30,,UP Yoddhas Won by 5 Pts,30
-1753,W,,2019-09-01,30,UP,32,4,KOL,29,,UP Yoddhas Won by 3 Pts,30
-1760,W,,2019-09-06,6,PAT,29,30,UP,41,,UP Yoddhas Won by 12 Pts,30
-1766,W,,2019-09-09,30,UP,33,31,GUJ,26,,UP Yoddhas Won by 7 Pts,30
-1777,W,,2019-09-16,3,JAI,32,30,UP,38,,UP Yoddhas Won by 6 Pts,30
-1779,L,,2019-09-18,5,MUM,39,30,UP,36,,U Mumba Won by 3 Pts,30
-1785,W,,2019-09-21,30,UP,42,29,CHE,22,,UP Yoddhas Won by 20 Pts,30
-1795,W,,2019-09-28,28,HAR,30,30,UP,37,,UP Yoddhas Won by 7 Pts,30
-1806,W,,2019-10-05,30,UP,50,2,DEL,33,,UP Yoddhas Won by 17 Pts,30
-1809,W,,2019-10-06,30,UP,43,7,PUNE,39,,UP Yoddhas Won by 4 Pts,30
-1813,L,,2019-10-09,30,UP,36,8,HYD,41,,Telugu Titans Won by 5 Pts,30
-1816,W,,2019-10-11,30,UP,45,1,BLR,33,,UP Yoddhas Won by 12 Pts,30
-1817,L,,2019-10-14,30,UP,45,1,BLR,48,,Bengaluru Bulls Won by 3 Pts,30
-1685,W,,2019-07-20,8,HYD,25,5,MUM,31,,U Mumba Won by 6 Pts,5
-1689,L,,2019-07-22,5,MUM,23,3,JAI,42,,Jaipur Pink Panthers Won by 19 Pts,5
-1696,W,,2019-07-27,5,MUM,33,7,PUNE,23,,U Mumba Won by 10 Pts,5
-1699,L,,2019-07-28,5,MUM,26,1,BLR,30,,Bengaluru Bulls Won by 4 Pts,5
-1703,L,,2019-07-31,5,MUM,23,30,UP,27,,UP Yoddhas Won by 4 Pts,5
-1706,W,,2019-08-02,5,MUM,32,31,GUJ,20,,U Mumba Won by 12 Pts,5
-1716,L,,2019-08-09,4,KOL,32,5,MUM,30,,Bengal Warriorz Won by 2 Pts,5
-1727,W,,2019-08-16,5,MUM,34,6,PAT,30,,U Mumba Won by 4 Pts,5
-1733,L,,2019-08-19,5,MUM,27,28,HAR,30,,Haryana Steelers Won by 3 Pts,5
-1739,W,,2019-08-23,29,CHE,24,5,MUM,29,,U Mumba Won by 5 Pts,5
-1747,L,,2019-08-28,2,DEL,40,5,MUM,24,,Dabang Delhi K.C. Won by 16 Pts,5
-1752,W,,2019-08-31,5,MUM,47,3,JAI,21,,U Mumba Won by 26 Pts,5
-1759,,,2019-09-05,7,PUNE,33,5,MUM,33,,,5
-1771,W,,2019-09-10,8,HYD,27,5,MUM,41,,U Mumba Won by 14 Pts,5
-1769,L,,2019-09-11,4,KOL,29,5,MUM,26,,Bengal Warriorz Won by 3 Pts,5
-1779,W,,2019-09-18,5,MUM,39,30,UP,36,,U Mumba Won by 3 Pts,5
-1786,W,,2019-09-22,5,MUM,31,31,GUJ,25,,U Mumba Won by 6 Pts,5
-1793,L,,2019-09-27,5,MUM,33,1,BLR,35,,Bengaluru Bulls Won by 2 Pts,5
-1800,W,,2019-09-30,29,CHE,32,5,MUM,36,,U Mumba Won by 4 Pts,5
-1801,W,,2019-10-02,5,MUM,30,6,PAT,26,,U Mumba Won by 4 Pts,5
-1814,W,,2019-10-10,5,MUM,39,28,HAR,33,,U Mumba Won by 6 Pts,5
-1815,,,2019-10-11,2,DEL,37,5,MUM,37,,,5
-1818,W,,2019-10-14,5,MUM,46,28,HAR,38,,U Mumba Won by 8 Pts,5
-1820,L,,2019-10-16,4,KOL,37,5,MUM,35,,Bengal Warriorz Won by 2 Pts,5
-1690,W,,2019-07-22,7,PUNE,24,28,HAR,34,,Haryana Steelers Won by 10 Pts,28
-1698,L,,2019-07-28,2,DEL,41,28,HAR,21,,Dabang Delhi K.C. Won by 20 Pts,28
-1702,L,,2019-07-31,28,HAR,21,3,JAI,37,,Jaipur Pink Panthers Won by 16 Pts,28
-1709,L,,2019-08-04,28,HAR,28,29,CHE,35,,Tamil Thalaivas Won by 7 Pts,28
-1714,W,,2019-08-07,6,PAT,26,28,HAR,35,,Haryana Steelers Won by 9 Pts,28
-1720,W,,2019-08-11,1,BLR,30,28,HAR,33,,Haryana Steelers Won by 3 Pts,28
-1724,W,,2019-08-14,30,UP,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,28
-1731,L,,2019-08-18,28,HAR,29,8,HYD,40,,Telugu Titans Won by 11 Pts,28
-1733,W,,2019-08-19,5,MUM,27,28,HAR,30,,Haryana Steelers Won by 3 Pts,28
-1744,W,,2019-08-26,4,KOL,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,28
-1746,W,,2019-08-28,31,GUJ,25,28,HAR,41,,Haryana Steelers Won by 16 Pts,28
-1755,W,,2019-09-02,7,PUNE,27,28,HAR,41,,Haryana Steelers Won by 14 Pts,28
-1763,W,,2019-09-07,2,DEL,25,28,HAR,47,,Haryana Steelers Won by 22 Pts,28
-1768,,,2019-09-11,28,HAR,32,3,JAI,32,,,28
-1774,W,,2019-09-14,29,CHE,35,28,HAR,43,,Haryana Steelers Won by 8 Pts,28
-1781,L,,2019-09-19,4,KOL,48,28,HAR,36,,Bengal Warriorz Won by 12 Pts,28
-1788,W,,2019-09-23,6,PAT,34,28,HAR,39,,Haryana Steelers Won by 5 Pts,28
-1795,L,,2019-09-28,28,HAR,30,30,UP,37,,UP Yoddhas Won by 7 Pts,28
-1798,W,,2019-09-29,28,HAR,38,31,GUJ,37,,Haryana Steelers Won by 1 Pts,28
-1802,L,,2019-10-02,28,HAR,36,1,BLR,59,,Bengaluru Bulls Won by 23 Pts,28
-1805,W,,2019-10-04,28,HAR,52,8,HYD,32,,Haryana Steelers Won by 20 Pts,28
-1814,L,,2019-10-10,5,MUM,39,28,HAR,33,,U Mumba Won by 6 Pts,28
-1818,L,,2019-10-14,5,MUM,46,28,HAR,38,,U Mumba Won by 8 Pts,28
-1686,W,,2019-07-20,1,BLR,34,6,PAT,32,,Bengaluru Bulls Won by 2 Pts,1
-1687,L,,2019-07-21,1,BLR,24,31,GUJ,42,,Gujarat Giants Won by 18 Pts,1
-1699,W,,2019-07-28,5,MUM,26,1,BLR,30,,Bengaluru Bulls Won by 4 Pts,1
-1708,W,,2019-08-03,4,KOL,42,1,BLR,43,,Bengaluru Bulls Won by 1 Pts,1
-1715,W,,2019-08-08,8,HYD,26,1,BLR,47,,Bengaluru Bulls Won by 21 Pts,1
-1720,L,,2019-08-11,1,BLR,30,28,HAR,33,,Haryana Steelers Won by 3 Pts,1
-1723,L,,2019-08-12,30,UP,35,1,BLR,33,,UP Yoddhas Won by 2 Pts,1
-1729,W,,2019-08-17,29,CHE,21,1,BLR,32,,Bengaluru Bulls Won by 11 Pts,1
-1735,L,,2019-08-21,7,PUNE,31,1,BLR,23,,Puneri Paltan Won by 8 Pts,1
-1740,L,,2019-08-24,2,DEL,33,1,BLR,31,,Dabang Delhi K.C. Won by 2 Pts,1
-1742,W,,2019-08-25,3,JAI,30,1,BLR,41,,Bengaluru Bulls Won by 11 Pts,1
-1751,L,,2019-08-31,1,BLR,23,31,GUJ,32,,Gujarat Giants Won by 9 Pts,1
-1754,W,,2019-09-01,1,BLR,33,29,CHE,27,,Bengaluru Bulls Won by 6 Pts,1
-1758,W,,2019-09-04,1,BLR,40,6,PAT,39,,Bengaluru Bulls Won by 1 Pts,1
-1761,W,,2019-09-06,1,BLR,40,8,HYD,39,,Bengaluru Bulls Won by 1 Pts,1
-1772,L,,2019-09-12,4,KOL,42,1,BLR,40,,Bengal Warriorz Won by 2 Pts,1
-1783,L,,2019-09-20,7,PUNE,42,1,BLR,38,,Puneri Paltan Won by 4 Pts,1
-1789,,,2019-09-23,2,DEL,39,1,BLR,39,,,1
-1793,W,,2019-09-27,5,MUM,33,1,BLR,35,,Bengaluru Bulls Won by 2 Pts,1
-1802,W,,2019-10-02,28,HAR,36,1,BLR,59,,Bengaluru Bulls Won by 23 Pts,1
-1804,L,,2019-10-04,3,JAI,41,1,BLR,34,,Jaipur Pink Panthers Won by 7 Pts,1
-1816,L,,2019-10-11,30,UP,45,1,BLR,33,,UP Yoddhas Won by 12 Pts,1
-1817,W,,2019-10-14,30,UP,45,1,BLR,48,,Bengaluru Bulls Won by 3 Pts,1
-1819,L,,2019-10-16,2,DEL,44,1,BLR,38,,Dabang Delhi K.C. Won by 6 Pts,1
-1689,W,,2019-07-22,5,MUM,23,3,JAI,42,,Jaipur Pink Panthers Won by 19 Pts,3
-1697,W,,2019-07-27,3,JAI,27,4,KOL,25,,Jaipur Pink Panthers Won by 2 Pts,3
-1702,W,,2019-07-31,28,HAR,21,3,JAI,37,,Jaipur Pink Panthers Won by 16 Pts,3
-1707,W,,2019-08-03,6,PAT,21,3,JAI,34,,Jaipur Pink Panthers Won by 13 Pts,3
-1711,L,,2019-08-05,2,DEL,35,3,JAI,24,,Dabang Delhi K.C. Won by 11 Pts,3
-1726,W,,2019-08-15,3,JAI,33,7,PUNE,25,,Jaipur Pink Panthers Won by 8 Pts,3
-1728,W,,2019-08-16,31,GUJ,19,3,JAI,22,,Jaipur Pink Panthers Won by 3 Pts,3
-1734,L,,2019-08-19,30,UP,31,3,JAI,24,,UP Yoddhas Won by 7 Pts,3
-1736,W,,2019-08-21,29,CHE,26,3,JAI,28,,Jaipur Pink Panthers Won by 2 Pts,3
-1741,L,,2019-08-24,3,JAI,21,8,HYD,24,,Telugu Titans Won by 3 Pts,3
-1742,L,,2019-08-25,3,JAI,30,1,BLR,41,,Bengaluru Bulls Won by 11 Pts,3
-1752,L,,2019-08-31,5,MUM,47,3,JAI,21,,U Mumba Won by 26 Pts,3
-1757,L,,2019-09-04,3,JAI,44,2,DEL,46,,Dabang Delhi K.C. Won by 2 Pts,3
-1768,,,2019-09-11,28,HAR,32,3,JAI,32,,,3
-1770,L,,2019-09-12,3,JAI,33,6,PAT,36,,Patna Pirates Won by 3 Pts,3
-1777,L,,2019-09-16,3,JAI,32,30,UP,38,,UP Yoddhas Won by 6 Pts,3
-1784,,,2019-09-21,3,JAI,28,31,GUJ,28,,,3
-1787,L,,2019-09-22,3,JAI,40,4,KOL,41,,Bengal Warriorz Won by 1 Pts,3
-1791,W,,2019-09-25,3,JAI,43,7,PUNE,34,,Jaipur Pink Panthers Won by 9 Pts,3
-1794,L,,2019-09-27,3,JAI,31,8,HYD,51,,Telugu Titans Won by 20 Pts,3
-1804,W,,2019-10-04,3,JAI,41,1,BLR,34,,Jaipur Pink Panthers Won by 7 Pts,3
-1811,L,,2019-10-07,29,CHE,35,3,JAI,33,,Tamil Thalaivas Won by 2 Pts,3
-1686,L,,2019-07-20,1,BLR,34,6,PAT,32,,Bengaluru Bulls Won by 2 Pts,6
-1695,W,,2019-07-26,8,HYD,22,6,PAT,34,,Patna Pirates Won by 12 Pts,6
-1700,W,,2019-07-29,29,CHE,23,6,PAT,24,,Patna Pirates Won by 1 Pts,6
-1707,L,,2019-08-03,6,PAT,21,3,JAI,34,,Jaipur Pink Panthers Won by 13 Pts,6
-1710,L,,2019-08-04,6,PAT,20,7,PUNE,41,,Puneri Paltan Won by 21 Pts,6
-1714,L,,2019-08-07,6,PAT,26,28,HAR,35,,Haryana Steelers Won by 9 Pts,6
-1717,W,,2019-08-09,6,PAT,41,30,UP,20,,Patna Pirates Won by 21 Pts,6
-1727,L,,2019-08-16,5,MUM,34,6,PAT,30,,U Mumba Won by 4 Pts,6
-1737,L,,2019-08-22,4,KOL,35,6,PAT,26,,Bengal Warriorz Won by 9 Pts,6
-1738,L,,2019-08-23,31,GUJ,29,6,PAT,26,,Gujarat Giants Won by 3 Pts,6
-1750,L,,2019-08-30,2,DEL,38,6,PAT,35,,Dabang Delhi K.C. Won by 3 Pts,6
-1758,L,,2019-09-04,1,BLR,40,6,PAT,39,,Bengaluru Bulls Won by 1 Pts,6
-1760,L,,2019-09-06,6,PAT,29,30,UP,41,,UP Yoddhas Won by 12 Pts,6
-1767,W,,2019-09-09,29,CHE,25,6,PAT,51,,Patna Pirates Won by 26 Pts,6
-1770,W,,2019-09-12,3,JAI,33,6,PAT,36,,Patna Pirates Won by 3 Pts,6
-1776,W,,2019-09-15,7,PUNE,33,6,PAT,55,,Patna Pirates Won by 22 Pts,6
-1782,,,2019-09-20,8,HYD,42,6,PAT,42,,,6
-1788,L,,2019-09-23,6,PAT,34,28,HAR,39,,Haryana Steelers Won by 5 Pts,6
-1792,L,,2019-09-26,6,PAT,39,2,DEL,43,,Dabang Delhi K.C. Won by 4 Pts,6
-1801,L,,2019-10-02,5,MUM,30,6,PAT,26,,U Mumba Won by 4 Pts,6
-1807,W,,2019-10-05,31,GUJ,33,6,PAT,39,,Patna Pirates Won by 6 Pts,6
-1808,W,,2019-10-06,4,KOL,41,6,PAT,69,,Patna Pirates Won by 28 Pts,6
-1687,W,,2019-07-21,1,BLR,24,31,GUJ,42,,Gujarat Giants Won by 18 Pts,31
-1694,W,,2019-07-26,30,UP,19,31,GUJ,44,,Gujarat Giants Won by 25 Pts,31
-1704,W,,2019-08-01,31,GUJ,31,2,DEL,26,,Gujarat Giants Won by 5 Pts,31
-1706,L,,2019-08-02,5,MUM,32,31,GUJ,20,,U Mumba Won by 12 Pts,31
-1712,L,,2019-08-05,31,GUJ,31,7,PUNE,33,,Puneri Paltan Won by 2 Pts,31
-1718,L,,2019-08-10,31,GUJ,28,29,CHE,34,,Tamil Thalaivas Won by 6 Pts,31
-1721,L,,2019-08-11,31,GUJ,24,8,HYD,30,,Telugu Titans Won by 6 Pts,31
-1725,L,,2019-08-14,31,GUJ,26,4,KOL,28,,Bengal Warriorz Won by 2 Pts,31
-1728,L,,2019-08-16,31,GUJ,19,3,JAI,22,,Jaipur Pink Panthers Won by 3 Pts,31
-1738,W,,2019-08-23,31,GUJ,29,6,PAT,26,,Gujarat Giants Won by 3 Pts,31
-1746,L,,2019-08-28,31,GUJ,25,28,HAR,41,,Haryana Steelers Won by 16 Pts,31
-1751,W,,2019-08-31,1,BLR,23,31,GUJ,32,,Gujarat Giants Won by 9 Pts,31
-1762,,,2019-09-07,4,KOL,25,31,GUJ,25,,,31
-1766,L,,2019-09-09,30,UP,33,31,GUJ,26,,UP Yoddhas Won by 7 Pts,31
-1773,L,,2019-09-14,7,PUNE,43,31,GUJ,33,,Puneri Paltan Won by 10 Pts,31
-1775,L,,2019-09-15,2,DEL,34,31,GUJ,30,,Dabang Delhi K.C. Won by 4 Pts,31
-1784,,,2019-09-21,3,JAI,28,31,GUJ,28,,,31
-1786,L,,2019-09-22,5,MUM,31,31,GUJ,25,,U Mumba Won by 6 Pts,31
-1796,W,,2019-09-28,31,GUJ,50,29,CHE,21,,Gujarat Giants Won by 29 Pts,31
-1798,L,,2019-09-29,28,HAR,38,31,GUJ,37,,Haryana Steelers Won by 1 Pts,31
-1807,L,,2019-10-05,31,GUJ,33,6,PAT,39,,Patna Pirates Won by 6 Pts,31
-1810,W,,2019-10-07,8,HYD,38,31,GUJ,48,,Gujarat Giants Won by 10 Pts,31
-1690,L,,2019-07-22,7,PUNE,24,28,HAR,34,,Haryana Steelers Won by 10 Pts,7
-1696,L,,2019-07-27,5,MUM,33,7,PUNE,23,,U Mumba Won by 10 Pts,7
-1701,L,,2019-07-29,4,KOL,43,7,PUNE,23,,Bengal Warriorz Won by 20 Pts,7
-1710,W,,2019-08-04,6,PAT,20,7,PUNE,41,,Puneri Paltan Won by 21 Pts,7
-1712,W,,2019-08-05,31,GUJ,31,7,PUNE,33,,Puneri Paltan Won by 2 Pts,7
-1719,L,,2019-08-10,7,PUNE,30,2,DEL,32,,Dabang Delhi K.C. Won by 2 Pts,7
-1726,L,,2019-08-15,3,JAI,33,7,PUNE,25,,Jaipur Pink Panthers Won by 8 Pts,7
-1732,,,2019-08-18,29,CHE,31,7,PUNE,31,,,7
-1735,W,,2019-08-21,7,PUNE,31,1,BLR,23,,Puneri Paltan Won by 8 Pts,7
-1745,L,,2019-08-26,30,UP,35,7,PUNE,30,,UP Yoddhas Won by 5 Pts,7
-1749,W,,2019-08-30,8,HYD,27,7,PUNE,34,,Puneri Paltan Won by 7 Pts,7
-1755,L,,2019-09-02,7,PUNE,27,28,HAR,41,,Haryana Steelers Won by 14 Pts,7
-1759,,,2019-09-05,7,PUNE,33,5,MUM,33,,,7
-1765,L,,2019-09-08,4,KOL,42,7,PUNE,39,,Bengal Warriorz Won by 3 Pts,7
-1773,W,,2019-09-14,7,PUNE,43,31,GUJ,33,,Puneri Paltan Won by 10 Pts,7
-1776,L,,2019-09-15,7,PUNE,33,6,PAT,55,,Patna Pirates Won by 22 Pts,7
-1780,,,2019-09-18,7,PUNE,36,29,CHE,36,,,7
-1783,W,,2019-09-20,7,PUNE,42,1,BLR,38,,Puneri Paltan Won by 4 Pts,7
-1791,L,,2019-09-25,3,JAI,43,7,PUNE,34,,Jaipur Pink Panthers Won by 9 Pts,7
-1797,L,,2019-09-29,7,PUNE,40,2,DEL,60,,Dabang Delhi K.C. Won by 20 Pts,7
-1803,W,,2019-10-03,8,HYD,50,7,PUNE,53,,Puneri Paltan Won by 3 Pts,7
-1809,L,,2019-10-06,30,UP,43,7,PUNE,39,,UP Yoddhas Won by 4 Pts,7
-1685,L,,2019-07-20,8,HYD,25,5,MUM,31,,U Mumba Won by 6 Pts,8
-1688,L,,2019-07-21,8,HYD,26,29,CHE,39,,Tamil Thalaivas Won by 13 Pts,8
-1692,L,,2019-07-24,8,HYD,33,2,DEL,34,,Dabang Delhi K.C. Won by 1 Pts,8
-1695,L,,2019-07-26,8,HYD,22,6,PAT,34,,Patna Pirates Won by 12 Pts,8
-1705,,,2019-08-02,8,HYD,20,30,UP,20,,,8
-1715,L,,2019-08-08,8,HYD,26,1,BLR,47,,Bengaluru Bulls Won by 21 Pts,8
-1721,W,,2019-08-11,31,GUJ,24,8,HYD,30,,Telugu Titans Won by 6 Pts,8
-1722,,,2019-08-12,4,KOL,29,8,HYD,29,,,8
-1731,W,,2019-08-18,28,HAR,29,8,HYD,40,,Telugu Titans Won by 11 Pts,8
-1741,W,,2019-08-24,3,JAI,21,8,HYD,24,,Telugu Titans Won by 3 Pts,8
-1749,L,,2019-08-30,8,HYD,27,7,PUNE,34,,Puneri Paltan Won by 7 Pts,8
-1756,W,,2019-09-02,8,HYD,35,29,CHE,30,,Telugu Titans Won by 5 Pts,8
-1761,L,,2019-09-06,1,BLR,40,8,HYD,39,,Bengaluru Bulls Won by 1 Pts,8
-1771,L,,2019-09-10,8,HYD,27,5,MUM,41,,U Mumba Won by 14 Pts,8
-1778,L,,2019-09-16,8,HYD,29,2,DEL,37,,Dabang Delhi K.C. Won by 8 Pts,8
-1782,,,2019-09-20,8,HYD,42,6,PAT,42,,,8
-1790,L,,2019-09-25,8,HYD,39,4,KOL,40,,Bengal Warriorz Won by 1 Pts,8
-1794,W,,2019-09-27,3,JAI,31,8,HYD,51,,Telugu Titans Won by 20 Pts,8
-1803,L,,2019-10-03,8,HYD,50,7,PUNE,53,,Puneri Paltan Won by 3 Pts,8
-1805,L,,2019-10-04,28,HAR,52,8,HYD,32,,Haryana Steelers Won by 20 Pts,8
-1810,L,,2019-10-07,8,HYD,38,31,GUJ,48,,Gujarat Giants Won by 10 Pts,8
-1813,W,,2019-10-09,30,UP,36,8,HYD,41,,Telugu Titans Won by 5 Pts,8
-1688,W,,2019-07-21,8,HYD,26,29,CHE,39,,Tamil Thalaivas Won by 13 Pts,29
-1693,L,,2019-07-25,2,DEL,30,29,CHE,29,,Dabang Delhi K.C. Won by 1 Pts,29
-1700,L,,2019-07-29,29,CHE,23,6,PAT,24,,Patna Pirates Won by 1 Pts,29
-1709,W,,2019-08-04,28,HAR,28,29,CHE,35,,Tamil Thalaivas Won by 7 Pts,29
-1713,,,2019-08-07,30,UP,28,29,CHE,28,,,29
-1718,W,,2019-08-10,31,GUJ,28,29,CHE,34,,Tamil Thalaivas Won by 6 Pts,29
-1729,L,,2019-08-17,29,CHE,21,1,BLR,32,,Bengaluru Bulls Won by 11 Pts,29
-1732,,,2019-08-18,29,CHE,31,7,PUNE,31,,,29
-1736,L,,2019-08-21,29,CHE,26,3,JAI,28,,Jaipur Pink Panthers Won by 2 Pts,29
-1739,L,,2019-08-23,29,CHE,24,5,MUM,29,,U Mumba Won by 5 Pts,29
-1748,L,,2019-08-29,4,KOL,35,29,CHE,26,,Bengal Warriorz Won by 9 Pts,29
-1754,L,,2019-09-01,1,BLR,33,29,CHE,27,,Bengaluru Bulls Won by 6 Pts,29
-1756,L,,2019-09-02,8,HYD,35,29,CHE,30,,Telugu Titans Won by 5 Pts,29
-1764,L,,2019-09-08,2,DEL,50,29,CHE,34,,Dabang Delhi K.C. Won by 16 Pts,29
-1767,L,,2019-09-09,29,CHE,25,6,PAT,51,,Patna Pirates Won by 26 Pts,29
-1774,L,,2019-09-14,29,CHE,35,28,HAR,43,,Haryana Steelers Won by 8 Pts,29
-1780,,,2019-09-18,7,PUNE,36,29,CHE,36,,,29
-1785,L,,2019-09-21,30,UP,42,29,CHE,22,,UP Yoddhas Won by 20 Pts,29
-1796,L,,2019-09-28,31,GUJ,50,29,CHE,21,,Gujarat Giants Won by 29 Pts,29
-1800,L,,2019-09-30,29,CHE,32,5,MUM,36,,U Mumba Won by 4 Pts,29
-1811,W,,2019-10-07,29,CHE,35,3,JAI,33,,Tamil Thalaivas Won by 2 Pts,29
-1812,L,,2019-10-09,4,KOL,33,29,CHE,29,,Bengal Warriorz Won by 4 Pts,29
+id,result,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
+1692,W,24/07/19,8,HYD,33,2,DEL,34,,Dabang Delhi K.C. Won by 1 Pts,2
+1693,W,25/07/19,2,DEL,30,29,CHE,29,,Dabang Delhi K.C. Won by 1 Pts,2
+1698,W,28/07/19,2,DEL,41,28,HAR,21,,Dabang Delhi K.C. Won by 20 Pts,2
+1704,L,01/08/19,31,GUJ,31,2,DEL,26,,Gujarat Giants Won by 5 Pts,2
+1711,W,05/08/19,2,DEL,35,3,JAI,24,,Dabang Delhi K.C. Won by 11 Pts,2
+1719,W,10/08/19,7,PUNE,30,2,DEL,32,,Dabang Delhi K.C. Won by 2 Pts,2
+1730,,17/08/19,4,KOL,30,2,DEL,30,,,2
+1740,W,24/08/19,2,DEL,33,1,BLR,31,,Dabang Delhi K.C. Won by 2 Pts,2
+1743,W,25/08/19,2,DEL,36,30,UP,27,,Dabang Delhi K.C. Won by 9 Pts,2
+1747,W,28/08/19,2,DEL,40,5,MUM,24,,Dabang Delhi K.C. Won by 16 Pts,2
+1750,W,30/08/19,2,DEL,38,6,PAT,35,,Dabang Delhi K.C. Won by 3 Pts,2
+1757,W,04/09/19,3,JAI,44,2,DEL,46,,Dabang Delhi K.C. Won by 2 Pts,2
+1763,L,07/09/19,2,DEL,25,28,HAR,47,,Haryana Steelers Won by 22 Pts,2
+1764,W,08/09/19,2,DEL,50,29,CHE,34,,Dabang Delhi K.C. Won by 16 Pts,2
+1775,W,15/09/19,2,DEL,34,31,GUJ,30,,Dabang Delhi K.C. Won by 4 Pts,2
+1778,W,16/09/19,8,HYD,29,2,DEL,37,,Dabang Delhi K.C. Won by 8 Pts,2
+1789,,23/09/19,2,DEL,39,1,BLR,39,,,2
+1792,W,26/09/19,6,PAT,39,2,DEL,43,,Dabang Delhi K.C. Won by 4 Pts,2
+1797,W,29/09/19,7,PUNE,40,2,DEL,60,,Dabang Delhi K.C. Won by 20 Pts,2
+1799,L,30/09/19,4,KOL,42,2,DEL,33,,Bengal Warriorz Won by 9 Pts,2
+1806,L,05/10/19,30,UP,50,2,DEL,33,,UP Yoddhas Won by 17 Pts,2
+1815,,11/10/19,2,DEL,37,5,MUM,37,,,2
+1819,W,16/10/19,2,DEL,44,1,BLR,38,,Dabang Delhi K.C. Won by 6 Pts,2
+1821,L,19/10/19,2,DEL,34,4,KOL,39,,Bengal Warriorz Won by 5 Pts,2
+1691,W,24/07/19,30,UP,17,4,KOL,48,,Bengal Warriorz Won by 31 Pts,4
+1697,L,27/07/19,3,JAI,27,4,KOL,25,,Jaipur Pink Panthers Won by 2 Pts,4
+1701,W,29/07/19,4,KOL,43,7,PUNE,23,,Bengal Warriorz Won by 20 Pts,4
+1708,L,03/08/19,4,KOL,42,1,BLR,43,,Bengaluru Bulls Won by 1 Pts,4
+1716,W,09/08/19,4,KOL,32,5,MUM,30,,Bengal Warriorz Won by 2 Pts,4
+1722,,12/08/19,4,KOL,29,8,HYD,29,,,4
+1725,W,14/08/19,31,GUJ,26,4,KOL,28,,Bengal Warriorz Won by 2 Pts,4
+1730,,17/08/19,4,KOL,30,2,DEL,30,,,4
+1737,W,22/08/19,4,KOL,35,6,PAT,26,,Bengal Warriorz Won by 9 Pts,4
+1744,L,26/08/19,4,KOL,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,4
+1748,W,29/08/19,4,KOL,35,29,CHE,26,,Bengal Warriorz Won by 9 Pts,4
+1753,L,01/09/19,30,UP,32,4,KOL,29,,UP Yoddhas Won by 3 Pts,4
+1762,,07/09/19,4,KOL,25,31,GUJ,25,,,4
+1765,W,08/09/19,4,KOL,42,7,PUNE,39,,Bengal Warriorz Won by 3 Pts,4
+1769,W,11/09/19,4,KOL,29,5,MUM,26,,Bengal Warriorz Won by 3 Pts,4
+1772,W,12/09/19,4,KOL,42,1,BLR,40,,Bengal Warriorz Won by 2 Pts,4
+1781,W,19/09/19,4,KOL,48,28,HAR,36,,Bengal Warriorz Won by 12 Pts,4
+1787,W,22/09/19,3,JAI,40,4,KOL,41,,Bengal Warriorz Won by 1 Pts,4
+1790,W,25/09/19,8,HYD,39,4,KOL,40,,Bengal Warriorz Won by 1 Pts,4
+1799,W,30/09/19,4,KOL,42,2,DEL,33,,Bengal Warriorz Won by 9 Pts,4
+1808,L,06/10/19,4,KOL,41,6,PAT,69,,Patna Pirates Won by 28 Pts,4
+1812,W,09/10/19,4,KOL,33,29,CHE,29,,Bengal Warriorz Won by 4 Pts,4
+1820,W,16/10/19,4,KOL,37,5,MUM,35,,Bengal Warriorz Won by 2 Pts,4
+1821,W,19/10/19,2,DEL,34,4,KOL,39,,Bengal Warriorz Won by 5 Pts,4
+1691,L,24/07/19,30,UP,17,4,KOL,48,,Bengal Warriorz Won by 31 Pts,30
+1694,L,26/07/19,30,UP,19,31,GUJ,44,,Gujarat Giants Won by 25 Pts,30
+1703,W,31/07/19,5,MUM,23,30,UP,27,,UP Yoddhas Won by 4 Pts,30
+1705,,02/08/19,8,HYD,20,30,UP,20,,,30
+1713,,07/08/19,30,UP,28,29,CHE,28,,,30
+1717,L,09/08/19,6,PAT,41,30,UP,20,,Patna Pirates Won by 21 Pts,30
+1723,W,12/08/19,30,UP,35,1,BLR,33,,UP Yoddhas Won by 2 Pts,30
+1724,L,14/08/19,30,UP,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,30
+1734,W,19/08/19,30,UP,31,3,JAI,24,,UP Yoddhas Won by 7 Pts,30
+1743,L,25/08/19,2,DEL,36,30,UP,27,,Dabang Delhi K.C. Won by 9 Pts,30
+1745,W,26/08/19,30,UP,35,7,PUNE,30,,UP Yoddhas Won by 5 Pts,30
+1753,W,01/09/19,30,UP,32,4,KOL,29,,UP Yoddhas Won by 3 Pts,30
+1760,W,06/09/19,6,PAT,29,30,UP,41,,UP Yoddhas Won by 12 Pts,30
+1766,W,09/09/19,30,UP,33,31,GUJ,26,,UP Yoddhas Won by 7 Pts,30
+1777,W,16/09/19,3,JAI,32,30,UP,38,,UP Yoddhas Won by 6 Pts,30
+1779,L,18/09/19,5,MUM,39,30,UP,36,,U Mumba Won by 3 Pts,30
+1785,W,21/09/19,30,UP,42,29,CHE,22,,UP Yoddhas Won by 20 Pts,30
+1795,W,28/09/19,28,HAR,30,30,UP,37,,UP Yoddhas Won by 7 Pts,30
+1806,W,05/10/19,30,UP,50,2,DEL,33,,UP Yoddhas Won by 17 Pts,30
+1809,W,06/10/19,30,UP,43,7,PUNE,39,,UP Yoddhas Won by 4 Pts,30
+1813,L,09/10/19,30,UP,36,8,HYD,41,,Telugu Titans Won by 5 Pts,30
+1816,W,11/10/19,30,UP,45,1,BLR,33,,UP Yoddhas Won by 12 Pts,30
+1817,L,14/10/19,30,UP,45,1,BLR,48,,Bengaluru Bulls Won by 3 Pts,30
+1685,W,20/07/19,8,HYD,25,5,MUM,31,,U Mumba Won by 6 Pts,5
+1689,L,22/07/19,5,MUM,23,3,JAI,42,,Jaipur Pink Panthers Won by 19 Pts,5
+1696,W,27/07/19,5,MUM,33,7,PUNE,23,,U Mumba Won by 10 Pts,5
+1699,L,28/07/19,5,MUM,26,1,BLR,30,,Bengaluru Bulls Won by 4 Pts,5
+1703,L,31/07/19,5,MUM,23,30,UP,27,,UP Yoddhas Won by 4 Pts,5
+1706,W,02/08/19,5,MUM,32,31,GUJ,20,,U Mumba Won by 12 Pts,5
+1716,L,09/08/19,4,KOL,32,5,MUM,30,,Bengal Warriorz Won by 2 Pts,5
+1727,W,16/08/19,5,MUM,34,6,PAT,30,,U Mumba Won by 4 Pts,5
+1733,L,19/08/19,5,MUM,27,28,HAR,30,,Haryana Steelers Won by 3 Pts,5
+1739,W,23/08/19,29,CHE,24,5,MUM,29,,U Mumba Won by 5 Pts,5
+1747,L,28/08/19,2,DEL,40,5,MUM,24,,Dabang Delhi K.C. Won by 16 Pts,5
+1752,W,31/08/19,5,MUM,47,3,JAI,21,,U Mumba Won by 26 Pts,5
+1759,,05/09/19,7,PUNE,33,5,MUM,33,,,5
+1771,W,10/09/19,8,HYD,27,5,MUM,41,,U Mumba Won by 14 Pts,5
+1769,L,11/09/19,4,KOL,29,5,MUM,26,,Bengal Warriorz Won by 3 Pts,5
+1779,W,18/09/19,5,MUM,39,30,UP,36,,U Mumba Won by 3 Pts,5
+1786,W,22/09/19,5,MUM,31,31,GUJ,25,,U Mumba Won by 6 Pts,5
+1793,L,27/09/19,5,MUM,33,1,BLR,35,,Bengaluru Bulls Won by 2 Pts,5
+1800,W,30/09/19,29,CHE,32,5,MUM,36,,U Mumba Won by 4 Pts,5
+1801,W,02/10/19,5,MUM,30,6,PAT,26,,U Mumba Won by 4 Pts,5
+1814,W,10/10/19,5,MUM,39,28,HAR,33,,U Mumba Won by 6 Pts,5
+1815,,11/10/19,2,DEL,37,5,MUM,37,,,5
+1818,W,14/10/19,5,MUM,46,28,HAR,38,,U Mumba Won by 8 Pts,5
+1820,L,16/10/19,4,KOL,37,5,MUM,35,,Bengal Warriorz Won by 2 Pts,5
+1690,W,22/07/19,7,PUNE,24,28,HAR,34,,Haryana Steelers Won by 10 Pts,28
+1698,L,28/07/19,2,DEL,41,28,HAR,21,,Dabang Delhi K.C. Won by 20 Pts,28
+1702,L,31/07/19,28,HAR,21,3,JAI,37,,Jaipur Pink Panthers Won by 16 Pts,28
+1709,L,04/08/19,28,HAR,28,29,CHE,35,,Tamil Thalaivas Won by 7 Pts,28
+1714,W,07/08/19,6,PAT,26,28,HAR,35,,Haryana Steelers Won by 9 Pts,28
+1720,W,11/08/19,1,BLR,30,28,HAR,33,,Haryana Steelers Won by 3 Pts,28
+1724,W,14/08/19,30,UP,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,28
+1731,L,18/08/19,28,HAR,29,8,HYD,40,,Telugu Titans Won by 11 Pts,28
+1733,W,19/08/19,5,MUM,27,28,HAR,30,,Haryana Steelers Won by 3 Pts,28
+1744,W,26/08/19,4,KOL,33,28,HAR,36,,Haryana Steelers Won by 3 Pts,28
+1746,W,28/08/19,31,GUJ,25,28,HAR,41,,Haryana Steelers Won by 16 Pts,28
+1755,W,02/09/19,7,PUNE,27,28,HAR,41,,Haryana Steelers Won by 14 Pts,28
+1763,W,07/09/19,2,DEL,25,28,HAR,47,,Haryana Steelers Won by 22 Pts,28
+1768,,11/09/19,28,HAR,32,3,JAI,32,,,28
+1774,W,14/09/19,29,CHE,35,28,HAR,43,,Haryana Steelers Won by 8 Pts,28
+1781,L,19/09/19,4,KOL,48,28,HAR,36,,Bengal Warriorz Won by 12 Pts,28
+1788,W,23/09/19,6,PAT,34,28,HAR,39,,Haryana Steelers Won by 5 Pts,28
+1795,L,28/09/19,28,HAR,30,30,UP,37,,UP Yoddhas Won by 7 Pts,28
+1798,W,29/09/19,28,HAR,38,31,GUJ,37,,Haryana Steelers Won by 1 Pts,28
+1802,L,02/10/19,28,HAR,36,1,BLR,59,,Bengaluru Bulls Won by 23 Pts,28
+1805,W,04/10/19,28,HAR,52,8,HYD,32,,Haryana Steelers Won by 20 Pts,28
+1814,L,10/10/19,5,MUM,39,28,HAR,33,,U Mumba Won by 6 Pts,28
+1818,L,14/10/19,5,MUM,46,28,HAR,38,,U Mumba Won by 8 Pts,28
+1686,W,20/07/19,1,BLR,34,6,PAT,32,,Bengaluru Bulls Won by 2 Pts,1
+1687,L,21/07/19,1,BLR,24,31,GUJ,42,,Gujarat Giants Won by 18 Pts,1
+1699,W,28/07/19,5,MUM,26,1,BLR,30,,Bengaluru Bulls Won by 4 Pts,1
+1708,W,03/08/19,4,KOL,42,1,BLR,43,,Bengaluru Bulls Won by 1 Pts,1
+1715,W,08/08/19,8,HYD,26,1,BLR,47,,Bengaluru Bulls Won by 21 Pts,1
+1720,L,11/08/19,1,BLR,30,28,HAR,33,,Haryana Steelers Won by 3 Pts,1
+1723,L,12/08/19,30,UP,35,1,BLR,33,,UP Yoddhas Won by 2 Pts,1
+1729,W,17/08/19,29,CHE,21,1,BLR,32,,Bengaluru Bulls Won by 11 Pts,1
+1735,L,21/08/19,7,PUNE,31,1,BLR,23,,Puneri Paltan Won by 8 Pts,1
+1740,L,24/08/19,2,DEL,33,1,BLR,31,,Dabang Delhi K.C. Won by 2 Pts,1
+1742,W,25/08/19,3,JAI,30,1,BLR,41,,Bengaluru Bulls Won by 11 Pts,1
+1751,L,31/08/19,1,BLR,23,31,GUJ,32,,Gujarat Giants Won by 9 Pts,1
+1754,W,01/09/19,1,BLR,33,29,CHE,27,,Bengaluru Bulls Won by 6 Pts,1
+1758,W,04/09/19,1,BLR,40,6,PAT,39,,Bengaluru Bulls Won by 1 Pts,1
+1761,W,06/09/19,1,BLR,40,8,HYD,39,,Bengaluru Bulls Won by 1 Pts,1
+1772,L,12/09/19,4,KOL,42,1,BLR,40,,Bengal Warriorz Won by 2 Pts,1
+1783,L,20/09/19,7,PUNE,42,1,BLR,38,,Puneri Paltan Won by 4 Pts,1
+1789,,23/09/19,2,DEL,39,1,BLR,39,,,1
+1793,W,27/09/19,5,MUM,33,1,BLR,35,,Bengaluru Bulls Won by 2 Pts,1
+1802,W,02/10/19,28,HAR,36,1,BLR,59,,Bengaluru Bulls Won by 23 Pts,1
+1804,L,04/10/19,3,JAI,41,1,BLR,34,,Jaipur Pink Panthers Won by 7 Pts,1
+1816,L,11/10/19,30,UP,45,1,BLR,33,,UP Yoddhas Won by 12 Pts,1
+1817,W,14/10/19,30,UP,45,1,BLR,48,,Bengaluru Bulls Won by 3 Pts,1
+1819,L,16/10/19,2,DEL,44,1,BLR,38,,Dabang Delhi K.C. Won by 6 Pts,1
+1689,W,22/07/19,5,MUM,23,3,JAI,42,,Jaipur Pink Panthers Won by 19 Pts,3
+1697,W,27/07/19,3,JAI,27,4,KOL,25,,Jaipur Pink Panthers Won by 2 Pts,3
+1702,W,31/07/19,28,HAR,21,3,JAI,37,,Jaipur Pink Panthers Won by 16 Pts,3
+1707,W,03/08/19,6,PAT,21,3,JAI,34,,Jaipur Pink Panthers Won by 13 Pts,3
+1711,L,05/08/19,2,DEL,35,3,JAI,24,,Dabang Delhi K.C. Won by 11 Pts,3
+1726,W,15/08/19,3,JAI,33,7,PUNE,25,,Jaipur Pink Panthers Won by 8 Pts,3
+1728,W,16/08/19,31,GUJ,19,3,JAI,22,,Jaipur Pink Panthers Won by 3 Pts,3
+1734,L,19/08/19,30,UP,31,3,JAI,24,,UP Yoddhas Won by 7 Pts,3
+1736,W,21/08/19,29,CHE,26,3,JAI,28,,Jaipur Pink Panthers Won by 2 Pts,3
+1741,L,24/08/19,3,JAI,21,8,HYD,24,,Telugu Titans Won by 3 Pts,3
+1742,L,25/08/19,3,JAI,30,1,BLR,41,,Bengaluru Bulls Won by 11 Pts,3
+1752,L,31/08/19,5,MUM,47,3,JAI,21,,U Mumba Won by 26 Pts,3
+1757,L,04/09/19,3,JAI,44,2,DEL,46,,Dabang Delhi K.C. Won by 2 Pts,3
+1768,,11/09/19,28,HAR,32,3,JAI,32,,,3
+1770,L,12/09/19,3,JAI,33,6,PAT,36,,Patna Pirates Won by 3 Pts,3
+1777,L,16/09/19,3,JAI,32,30,UP,38,,UP Yoddhas Won by 6 Pts,3
+1784,,21/09/19,3,JAI,28,31,GUJ,28,,,3
+1787,L,22/09/19,3,JAI,40,4,KOL,41,,Bengal Warriorz Won by 1 Pts,3
+1791,W,25/09/19,3,JAI,43,7,PUNE,34,,Jaipur Pink Panthers Won by 9 Pts,3
+1794,L,27/09/19,3,JAI,31,8,HYD,51,,Telugu Titans Won by 20 Pts,3
+1804,W,04/10/19,3,JAI,41,1,BLR,34,,Jaipur Pink Panthers Won by 7 Pts,3
+1811,L,07/10/19,29,CHE,35,3,JAI,33,,Tamil Thalaivas Won by 2 Pts,3
+1686,L,20/07/19,1,BLR,34,6,PAT,32,,Bengaluru Bulls Won by 2 Pts,6
+1695,W,26/07/19,8,HYD,22,6,PAT,34,,Patna Pirates Won by 12 Pts,6
+1700,W,29/07/19,29,CHE,23,6,PAT,24,,Patna Pirates Won by 1 Pts,6
+1707,L,03/08/19,6,PAT,21,3,JAI,34,,Jaipur Pink Panthers Won by 13 Pts,6
+1710,L,04/08/19,6,PAT,20,7,PUNE,41,,Puneri Paltan Won by 21 Pts,6
+1714,L,07/08/19,6,PAT,26,28,HAR,35,,Haryana Steelers Won by 9 Pts,6
+1717,W,09/08/19,6,PAT,41,30,UP,20,,Patna Pirates Won by 21 Pts,6
+1727,L,16/08/19,5,MUM,34,6,PAT,30,,U Mumba Won by 4 Pts,6
+1737,L,22/08/19,4,KOL,35,6,PAT,26,,Bengal Warriorz Won by 9 Pts,6
+1738,L,23/08/19,31,GUJ,29,6,PAT,26,,Gujarat Giants Won by 3 Pts,6
+1750,L,30/08/19,2,DEL,38,6,PAT,35,,Dabang Delhi K.C. Won by 3 Pts,6
+1758,L,04/09/19,1,BLR,40,6,PAT,39,,Bengaluru Bulls Won by 1 Pts,6
+1760,L,06/09/19,6,PAT,29,30,UP,41,,UP Yoddhas Won by 12 Pts,6
+1767,W,09/09/19,29,CHE,25,6,PAT,51,,Patna Pirates Won by 26 Pts,6
+1770,W,12/09/19,3,JAI,33,6,PAT,36,,Patna Pirates Won by 3 Pts,6
+1776,W,15/09/19,7,PUNE,33,6,PAT,55,,Patna Pirates Won by 22 Pts,6
+1782,,20/09/19,8,HYD,42,6,PAT,42,,,6
+1788,L,23/09/19,6,PAT,34,28,HAR,39,,Haryana Steelers Won by 5 Pts,6
+1792,L,26/09/19,6,PAT,39,2,DEL,43,,Dabang Delhi K.C. Won by 4 Pts,6
+1801,L,02/10/19,5,MUM,30,6,PAT,26,,U Mumba Won by 4 Pts,6
+1807,W,05/10/19,31,GUJ,33,6,PAT,39,,Patna Pirates Won by 6 Pts,6
+1808,W,06/10/19,4,KOL,41,6,PAT,69,,Patna Pirates Won by 28 Pts,6
+1687,W,21/07/19,1,BLR,24,31,GUJ,42,,Gujarat Giants Won by 18 Pts,31
+1694,W,26/07/19,30,UP,19,31,GUJ,44,,Gujarat Giants Won by 25 Pts,31
+1704,W,01/08/19,31,GUJ,31,2,DEL,26,,Gujarat Giants Won by 5 Pts,31
+1706,L,02/08/19,5,MUM,32,31,GUJ,20,,U Mumba Won by 12 Pts,31
+1712,L,05/08/19,31,GUJ,31,7,PUNE,33,,Puneri Paltan Won by 2 Pts,31
+1718,L,10/08/19,31,GUJ,28,29,CHE,34,,Tamil Thalaivas Won by 6 Pts,31
+1721,L,11/08/19,31,GUJ,24,8,HYD,30,,Telugu Titans Won by 6 Pts,31
+1725,L,14/08/19,31,GUJ,26,4,KOL,28,,Bengal Warriorz Won by 2 Pts,31
+1728,L,16/08/19,31,GUJ,19,3,JAI,22,,Jaipur Pink Panthers Won by 3 Pts,31
+1738,W,23/08/19,31,GUJ,29,6,PAT,26,,Gujarat Giants Won by 3 Pts,31
+1746,L,28/08/19,31,GUJ,25,28,HAR,41,,Haryana Steelers Won by 16 Pts,31
+1751,W,31/08/19,1,BLR,23,31,GUJ,32,,Gujarat Giants Won by 9 Pts,31
+1762,,07/09/19,4,KOL,25,31,GUJ,25,,,31
+1766,L,09/09/19,30,UP,33,31,GUJ,26,,UP Yoddhas Won by 7 Pts,31
+1773,L,14/09/19,7,PUNE,43,31,GUJ,33,,Puneri Paltan Won by 10 Pts,31
+1775,L,15/09/19,2,DEL,34,31,GUJ,30,,Dabang Delhi K.C. Won by 4 Pts,31
+1784,,21/09/19,3,JAI,28,31,GUJ,28,,,31
+1786,L,22/09/19,5,MUM,31,31,GUJ,25,,U Mumba Won by 6 Pts,31
+1796,W,28/09/19,31,GUJ,50,29,CHE,21,,Gujarat Giants Won by 29 Pts,31
+1798,L,29/09/19,28,HAR,38,31,GUJ,37,,Haryana Steelers Won by 1 Pts,31
+1807,L,05/10/19,31,GUJ,33,6,PAT,39,,Patna Pirates Won by 6 Pts,31
+1810,W,07/10/19,8,HYD,38,31,GUJ,48,,Gujarat Giants Won by 10 Pts,31
+1690,L,22/07/19,7,PUNE,24,28,HAR,34,,Haryana Steelers Won by 10 Pts,7
+1696,L,27/07/19,5,MUM,33,7,PUNE,23,,U Mumba Won by 10 Pts,7
+1701,L,29/07/19,4,KOL,43,7,PUNE,23,,Bengal Warriorz Won by 20 Pts,7
+1710,W,04/08/19,6,PAT,20,7,PUNE,41,,Puneri Paltan Won by 21 Pts,7
+1712,W,05/08/19,31,GUJ,31,7,PUNE,33,,Puneri Paltan Won by 2 Pts,7
+1719,L,10/08/19,7,PUNE,30,2,DEL,32,,Dabang Delhi K.C. Won by 2 Pts,7
+1726,L,15/08/19,3,JAI,33,7,PUNE,25,,Jaipur Pink Panthers Won by 8 Pts,7
+1732,,18/08/19,29,CHE,31,7,PUNE,31,,,7
+1735,W,21/08/19,7,PUNE,31,1,BLR,23,,Puneri Paltan Won by 8 Pts,7
+1745,L,26/08/19,30,UP,35,7,PUNE,30,,UP Yoddhas Won by 5 Pts,7
+1749,W,30/08/19,8,HYD,27,7,PUNE,34,,Puneri Paltan Won by 7 Pts,7
+1755,L,02/09/19,7,PUNE,27,28,HAR,41,,Haryana Steelers Won by 14 Pts,7
+1759,,05/09/19,7,PUNE,33,5,MUM,33,,,7
+1765,L,08/09/19,4,KOL,42,7,PUNE,39,,Bengal Warriorz Won by 3 Pts,7
+1773,W,14/09/19,7,PUNE,43,31,GUJ,33,,Puneri Paltan Won by 10 Pts,7
+1776,L,15/09/19,7,PUNE,33,6,PAT,55,,Patna Pirates Won by 22 Pts,7
+1780,,18/09/19,7,PUNE,36,29,CHE,36,,,7
+1783,W,20/09/19,7,PUNE,42,1,BLR,38,,Puneri Paltan Won by 4 Pts,7
+1791,L,25/09/19,3,JAI,43,7,PUNE,34,,Jaipur Pink Panthers Won by 9 Pts,7
+1797,L,29/09/19,7,PUNE,40,2,DEL,60,,Dabang Delhi K.C. Won by 20 Pts,7
+1803,W,03/10/19,8,HYD,50,7,PUNE,53,,Puneri Paltan Won by 3 Pts,7
+1809,L,06/10/19,30,UP,43,7,PUNE,39,,UP Yoddhas Won by 4 Pts,7
+1685,L,20/07/19,8,HYD,25,5,MUM,31,,U Mumba Won by 6 Pts,8
+1688,L,21/07/19,8,HYD,26,29,CHE,39,,Tamil Thalaivas Won by 13 Pts,8
+1692,L,24/07/19,8,HYD,33,2,DEL,34,,Dabang Delhi K.C. Won by 1 Pts,8
+1695,L,26/07/19,8,HYD,22,6,PAT,34,,Patna Pirates Won by 12 Pts,8
+1705,,02/08/19,8,HYD,20,30,UP,20,,,8
+1715,L,08/08/19,8,HYD,26,1,BLR,47,,Bengaluru Bulls Won by 21 Pts,8
+1721,W,11/08/19,31,GUJ,24,8,HYD,30,,Telugu Titans Won by 6 Pts,8
+1722,,12/08/19,4,KOL,29,8,HYD,29,,,8
+1731,W,18/08/19,28,HAR,29,8,HYD,40,,Telugu Titans Won by 11 Pts,8
+1741,W,24/08/19,3,JAI,21,8,HYD,24,,Telugu Titans Won by 3 Pts,8
+1749,L,30/08/19,8,HYD,27,7,PUNE,34,,Puneri Paltan Won by 7 Pts,8
+1756,W,02/09/19,8,HYD,35,29,CHE,30,,Telugu Titans Won by 5 Pts,8
+1761,L,06/09/19,1,BLR,40,8,HYD,39,,Bengaluru Bulls Won by 1 Pts,8
+1771,L,10/09/19,8,HYD,27,5,MUM,41,,U Mumba Won by 14 Pts,8
+1778,L,16/09/19,8,HYD,29,2,DEL,37,,Dabang Delhi K.C. Won by 8 Pts,8
+1782,,20/09/19,8,HYD,42,6,PAT,42,,,8
+1790,L,25/09/19,8,HYD,39,4,KOL,40,,Bengal Warriorz Won by 1 Pts,8
+1794,W,27/09/19,3,JAI,31,8,HYD,51,,Telugu Titans Won by 20 Pts,8
+1803,L,03/10/19,8,HYD,50,7,PUNE,53,,Puneri Paltan Won by 3 Pts,8
+1805,L,04/10/19,28,HAR,52,8,HYD,32,,Haryana Steelers Won by 20 Pts,8
+1810,L,07/10/19,8,HYD,38,31,GUJ,48,,Gujarat Giants Won by 10 Pts,8
+1813,W,09/10/19,30,UP,36,8,HYD,41,,Telugu Titans Won by 5 Pts,8
+1688,W,21/07/19,8,HYD,26,29,CHE,39,,Tamil Thalaivas Won by 13 Pts,29
+1693,L,25/07/19,2,DEL,30,29,CHE,29,,Dabang Delhi K.C. Won by 1 Pts,29
+1700,L,29/07/19,29,CHE,23,6,PAT,24,,Patna Pirates Won by 1 Pts,29
+1709,W,04/08/19,28,HAR,28,29,CHE,35,,Tamil Thalaivas Won by 7 Pts,29
+1713,,07/08/19,30,UP,28,29,CHE,28,,,29
+1718,W,10/08/19,31,GUJ,28,29,CHE,34,,Tamil Thalaivas Won by 6 Pts,29
+1729,L,17/08/19,29,CHE,21,1,BLR,32,,Bengaluru Bulls Won by 11 Pts,29
+1732,,18/08/19,29,CHE,31,7,PUNE,31,,,29
+1736,L,21/08/19,29,CHE,26,3,JAI,28,,Jaipur Pink Panthers Won by 2 Pts,29
+1739,L,23/08/19,29,CHE,24,5,MUM,29,,U Mumba Won by 5 Pts,29
+1748,L,29/08/19,4,KOL,35,29,CHE,26,,Bengal Warriorz Won by 9 Pts,29
+1754,L,01/09/19,1,BLR,33,29,CHE,27,,Bengaluru Bulls Won by 6 Pts,29
+1756,L,02/09/19,8,HYD,35,29,CHE,30,,Telugu Titans Won by 5 Pts,29
+1764,L,08/09/19,2,DEL,50,29,CHE,34,,Dabang Delhi K.C. Won by 16 Pts,29
+1767,L,09/09/19,29,CHE,25,6,PAT,51,,Patna Pirates Won by 26 Pts,29
+1774,L,14/09/19,29,CHE,35,28,HAR,43,,Haryana Steelers Won by 8 Pts,29
+1780,,18/09/19,7,PUNE,36,29,CHE,36,,,29
+1785,L,21/09/19,30,UP,42,29,CHE,22,,UP Yoddhas Won by 20 Pts,29
+1796,L,28/09/19,31,GUJ,50,29,CHE,21,,Gujarat Giants Won by 29 Pts,29
+1800,L,30/09/19,29,CHE,32,5,MUM,36,,U Mumba Won by 4 Pts,29
+1811,W,07/10/19,29,CHE,35,3,JAI,33,,Tamil Thalaivas Won by 2 Pts,29
+1812,L,09/10/19,4,KOL,33,29,CHE,29,,Bengal Warriorz Won by 4 Pts,29

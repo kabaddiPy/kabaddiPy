@@ -1,275 +1,275 @@
-id,result,prev_position,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
-2894,L,,2022-10-07,3,JAI,32,30,UP,34,,UP Yoddhas Won by 2 Pts,3
-2898,W,,2022-10-09,3,JAI,35,6,PAT,30,,Jaipur Pink Panthers Won by 5 Pts,3
-2908,W,,2022-10-14,28,HAR,31,3,JAI,44,,Jaipur Pink Panthers Won by 13 Pts,3
-2910,W,,2022-10-15,3,JAI,25,31,GUJ,18,,Jaipur Pink Panthers Won by 7 Pts,3
-2917,W,,2022-10-18,4,KOL,24,3,JAI,39,,Jaipur Pink Panthers Won by 15 Pts,3
-2925,W,,2022-10-22,3,JAI,51,8,HYD,27,,Jaipur Pink Panthers Won by 24 Pts,3
-2929,L,,2022-10-25,7,PUNE,32,3,JAI,24,,Puneri Paltan Won by 8 Pts,3
-2933,L,,2022-10-28,29,CHE,38,3,JAI,27,,Tamil Thalaivas Won by 11 Pts,3
-2939,L,,2022-10-30,3,JAI,31,1,BLR,37,,Bengaluru Bulls Won by 6 Pts,3
-2948,W,,2022-11-04,2,DEL,40,3,JAI,45,,Jaipur Pink Panthers Won by 5 Pts,3
-2955,W,,2022-11-07,5,MUM,39,3,JAI,42,,Jaipur Pink Panthers Won by 3 Pts,3
-2963,L,,2022-11-11,6,PAT,37,3,JAI,30,,Patna Pirates Won by 7 Pts,3
-2966,W,,2022-11-12,3,JAI,57,2,DEL,32,,Jaipur Pink Panthers Won by 25 Pts,3
-2971,W,,2022-11-15,3,JAI,32,5,MUM,22,,Jaipur Pink Panthers Won by 10 Pts,3
-2978,W,,2022-11-19,30,UP,29,3,JAI,42,,Jaipur Pink Panthers Won by 13 Pts,3
-2987,L,,2022-11-23,3,JAI,32,7,PUNE,39,,Puneri Paltan Won by 7 Pts,3
-2990,W,,2022-11-25,3,JAI,41,29,CHE,26,,Jaipur Pink Panthers Won by 15 Pts,3
-2998,W,,2022-11-28,8,HYD,28,3,JAI,48,,Jaipur Pink Panthers Won by 20 Pts,3
-3001,W,,2022-11-30,1,BLR,25,3,JAI,45,,Jaipur Pink Panthers Won by 20 Pts,3
-3008,W,,2022-12-03,3,JAI,57,4,KOL,31,,Jaipur Pink Panthers Won by 26 Pts,3
-3012,W,,2022-12-05,3,JAI,44,28,HAR,30,,Jaipur Pink Panthers Won by 14 Pts,3
-3019,,,2022-12-09,31,GUJ,51,3,JAI,51,,,3
-3026,W,,2022-12-15,3,JAI,49,1,BLR,29,,Jaipur Pink Panthers Won by 20 Pts,3
-3028,W,,2022-12-17,3,JAI,33,7,PUNE,29,,Jaipur Pink Panthers Won by 4 Pts,3
-2895,,,2022-10-08,6,PAT,34,7,PUNE,34,,,7
-2900,L,,2022-10-09,7,PUNE,39,1,BLR,41,,Bengaluru Bulls Won by 2 Pts,7
-2909,L,,2022-10-14,31,GUJ,47,7,PUNE,37,,Gujarat Giants Won by 10 Pts,7
-2913,W,,2022-10-16,7,PUNE,30,5,MUM,28,,Puneri Paltan Won by 2 Pts,7
-2918,W,,2022-10-18,8,HYD,25,7,PUNE,26,,Puneri Paltan Won by 1 Pts,7
-2922,W,,2022-10-21,7,PUNE,27,4,KOL,25,,Puneri Paltan Won by 2 Pts,7
-2929,W,,2022-10-25,7,PUNE,32,3,JAI,24,,Puneri Paltan Won by 8 Pts,7
-2934,,,2022-10-28,28,HAR,27,7,PUNE,27,,,7
-2943,W,,2022-11-01,7,PUNE,43,2,DEL,38,,Puneri Paltan Won by 5 Pts,7
-2949,W,,2022-11-04,30,UP,31,7,PUNE,40,,Puneri Paltan Won by 9 Pts,7
-2954,L,,2022-11-06,7,PUNE,34,29,CHE,35,,Tamil Thalaivas Won by 1 Pts,7
-2960,W,,2022-11-09,29,CHE,34,7,PUNE,35,,Puneri Paltan Won by 1 Pts,7
-2962,L,,2022-11-11,5,MUM,34,7,PUNE,33,,U Mumba Won by 1 Pts,7
-2969,W,,2022-11-14,4,KOL,27,7,PUNE,43,,Puneri Paltan Won by 16 Pts,7
-2975,W,,2022-11-18,7,PUNE,41,28,HAR,28,,Puneri Paltan Won by 13 Pts,7
-2982,W,,2022-11-20,1,BLR,33,7,PUNE,35,,Puneri Paltan Won by 2 Pts,7
-2987,W,,2022-11-23,3,JAI,32,7,PUNE,39,,Puneri Paltan Won by 7 Pts,7
-2993,W,,2022-11-26,7,PUNE,38,8,HYD,25,,Puneri Paltan Won by 13 Pts,7
-2999,L,,2022-11-29,7,PUNE,39,31,GUJ,51,,Gujarat Giants Won by 12 Pts,7
-3006,W,,2022-12-03,2,DEL,44,7,PUNE,47,,Puneri Paltan Won by 3 Pts,7
-3011,W,,2022-12-05,7,PUNE,44,6,PAT,30,,Puneri Paltan Won by 14 Pts,7
-3020,L,,2022-12-09,7,PUNE,41,30,UP,45,,UP Yoddhas Won by 4 Pts,7
-3027,W,,2022-12-15,7,PUNE,39,29,CHE,37,,Puneri Paltan Won by 2 Pts,7
-3028,L,,2022-12-17,3,JAI,33,7,PUNE,29,,Jaipur Pink Panthers Won by 4 Pts,7
-2893,W,,2022-10-07,1,BLR,34,8,HYD,29,,Bengaluru Bulls Won by 5 Pts,1
-2900,W,,2022-10-09,7,PUNE,39,1,BLR,41,,Bengaluru Bulls Won by 2 Pts,1
-2905,L,,2022-10-12,1,BLR,33,4,KOL,42,,Bengal Warriorz Won by 9 Pts,1
-2914,L,,2022-10-16,30,UP,44,1,BLR,37,,UP Yoddhas Won by 7 Pts,1
-2920,W,,2022-10-19,1,BLR,45,29,CHE,28,,Bengaluru Bulls Won by 17 Pts,1
-2924,W,,2022-10-22,5,MUM,32,1,BLR,42,,Bengaluru Bulls Won by 10 Pts,1
-2927,,,2022-10-23,1,BLR,31,6,PAT,31,,,1
-2936,W,,2022-10-29,1,BLR,47,2,DEL,43,,Bengaluru Bulls Won by 4 Pts,1
-2939,W,,2022-10-30,3,JAI,31,1,BLR,37,,Bengaluru Bulls Won by 6 Pts,1
-2944,L,,2022-11-01,28,HAR,29,1,BLR,27,,Haryana Steelers Won by 2 Pts,1
-2953,L,,2022-11-06,1,BLR,44,31,GUJ,46,,Gujarat Giants Won by 2 Pts,1
-2959,W,,2022-11-09,1,BLR,36,28,HAR,33,,Bengaluru Bulls Won by 3 Pts,1
-2968,W,,2022-11-13,29,CHE,34,1,BLR,40,,Bengaluru Bulls Won by 6 Pts,1
-2972,W,,2022-11-15,8,HYD,38,1,BLR,49,,Bengaluru Bulls Won by 11 Pts,1
-2977,W,,2022-11-18,31,GUJ,38,1,BLR,45,,Bengaluru Bulls Won by 7 Pts,1
-2982,L,,2022-11-20,1,BLR,33,7,PUNE,35,,Puneri Paltan Won by 2 Pts,1
-2988,L,,2022-11-23,4,KOL,41,1,BLR,38,,Bengal Warriorz Won by 3 Pts,1
-2996,W,,2022-11-27,2,DEL,49,1,BLR,52,,Bengaluru Bulls Won by 3 Pts,1
-3001,L,,2022-11-30,1,BLR,25,3,JAI,45,,Jaipur Pink Panthers Won by 20 Pts,1
-3010,W,,2022-12-04,1,BLR,38,30,UP,35,,Bengaluru Bulls Won by 3 Pts,1
-3015,W,,2022-12-07,6,PAT,44,1,BLR,57,,Bengaluru Bulls Won by 13 Pts,1
-3021,L,,2022-12-10,1,BLR,30,5,MUM,36,,U Mumba Won by 6 Pts,1
-3024,W,,2022-12-13,1,BLR,56,2,DEL,24,,Bengaluru Bulls Won by 32 Pts,1
-3026,L,,2022-12-15,3,JAI,49,1,BLR,29,,Jaipur Pink Panthers Won by 20 Pts,1
-2894,W,,2022-10-07,3,JAI,32,30,UP,34,,UP Yoddhas Won by 2 Pts,30
-2901,L,,2022-10-10,5,MUM,30,30,UP,23,,U Mumba Won by 7 Pts,30
-2906,L,,2022-10-12,30,UP,42,2,DEL,44,,Dabang Delhi K.C. Won by 2 Pts,30
-2914,W,,2022-10-16,30,UP,44,1,BLR,37,,UP Yoddhas Won by 7 Pts,30
-2919,L,,2022-10-19,31,GUJ,51,30,UP,45,,Gujarat Giants Won by 6 Pts,30
-2928,W,,2022-10-23,30,UP,41,29,CHE,24,,UP Yoddhas Won by 17 Pts,30
-2935,L,,2022-10-28,6,PAT,34,30,UP,29,,Patna Pirates Won by 5 Pts,30
-2942,W,,2022-10-31,30,UP,43,8,HYD,24,,UP Yoddhas Won by 19 Pts,30
-2949,L,,2022-11-04,30,UP,31,7,PUNE,40,,Puneri Paltan Won by 9 Pts,30
-2952,,,2022-11-05,28,HAR,36,30,UP,36,,,30
-2957,,,2022-11-08,4,KOL,41,30,UP,41,,,30
-2961,W,,2022-11-11,30,UP,40,28,HAR,34,,UP Yoddhas Won by 6 Pts,30
-2965,W,,2022-11-12,8,HYD,30,30,UP,41,,UP Yoddhas Won by 11 Pts,30
-2974,W,,2022-11-16,2,DEL,31,30,UP,50,,UP Yoddhas Won by 19 Pts,30
-2978,L,,2022-11-19,30,UP,29,3,JAI,42,,Jaipur Pink Panthers Won by 13 Pts,30
-2984,W,,2022-11-21,30,UP,35,31,GUJ,31,,UP Yoddhas Won by 4 Pts,30
-2994,W,,2022-11-26,30,UP,35,6,PAT,33,,UP Yoddhas Won by 2 Pts,30
-2997,W,,2022-11-28,30,UP,33,4,KOL,32,,UP Yoddhas Won by 1 Pts,30
-3003,W,,2022-12-02,30,UP,38,5,MUM,28,,UP Yoddhas Won by 10 Pts,30
-3010,L,,2022-12-04,1,BLR,38,30,UP,35,,Bengaluru Bulls Won by 3 Pts,30
-3016,L,,2022-12-07,29,CHE,43,30,UP,28,,Tamil Thalaivas Won by 15 Pts,30
-3020,W,,2022-12-09,7,PUNE,41,30,UP,45,,UP Yoddhas Won by 4 Pts,30
-3025,L,,2022-12-13,30,UP,36,29,CHE,36,,Tamil Thalaivas Won by 0 Pts,30
-2896,,,2022-10-08,31,GUJ,31,29,CHE,31,,,29
-2903,L,,2022-10-11,28,HAR,27,29,CHE,22,,Haryana Steelers Won by 5 Pts,29
-2907,L,,2022-10-14,29,CHE,32,5,MUM,39,,U Mumba Won by 7 Pts,29
-2915,W,,2022-10-17,29,CHE,33,6,PAT,32,,Tamil Thalaivas Won by 1 Pts,29
-2920,L,,2022-10-19,1,BLR,45,29,CHE,28,,Bengaluru Bulls Won by 17 Pts,29
-2928,L,,2022-10-23,30,UP,41,29,CHE,24,,UP Yoddhas Won by 17 Pts,29
-2933,W,,2022-10-28,29,CHE,38,3,JAI,27,,Tamil Thalaivas Won by 11 Pts,29
-2940,W,,2022-10-30,29,CHE,49,2,DEL,39,,Tamil Thalaivas Won by 10 Pts,29
-2946,,,2022-11-02,4,KOL,41,29,CHE,41,,,29
-2951,W,,2022-11-05,29,CHE,39,8,HYD,31,,Tamil Thalaivas Won by 8 Pts,29
-2954,W,,2022-11-06,7,PUNE,34,29,CHE,35,,Tamil Thalaivas Won by 1 Pts,29
-2960,L,,2022-11-09,29,CHE,34,7,PUNE,35,,Puneri Paltan Won by 1 Pts,29
-2968,L,,2022-11-13,29,CHE,34,1,BLR,40,,Bengaluru Bulls Won by 6 Pts,29
-2973,,,2022-11-16,6,PAT,33,29,CHE,33,,,29
-2983,W,,2022-11-21,29,CHE,35,4,KOL,30,,Tamil Thalaivas Won by 5 Pts,29
-2985,W,,2022-11-22,5,MUM,20,29,CHE,34,,Tamil Thalaivas Won by 14 Pts,29
-2990,L,,2022-11-25,3,JAI,41,29,CHE,26,,Jaipur Pink Panthers Won by 15 Pts,29
-2995,W,,2022-11-27,29,CHE,42,31,GUJ,39,,Tamil Thalaivas Won by 3 Pts,29
-3002,,,2022-11-30,2,DEL,37,29,CHE,37,,,29
-3007,W,,2022-12-03,8,HYD,24,29,CHE,52,,Tamil Thalaivas Won by 28 Pts,29
-3016,W,,2022-12-07,29,CHE,43,30,UP,28,,Tamil Thalaivas Won by 15 Pts,29
-3022,L,,2022-12-10,29,CHE,38,28,HAR,61,,Haryana Steelers Won by 23 Pts,29
-3025,W,,2022-12-13,30,UP,36,29,CHE,36,,Tamil Thalaivas Won by 0 Pts,29
-3027,L,,2022-12-15,7,PUNE,39,29,CHE,37,,Puneri Paltan Won by 2 Pts,29
-2892,W,,2022-10-07,2,DEL,41,5,MUM,27,,Dabang Delhi K.C. Won by 14 Pts,2
-2902,W,,2022-10-10,2,DEL,53,31,GUJ,33,,Dabang Delhi K.C. Won by 20 Pts,2
-2906,W,,2022-10-12,30,UP,42,2,DEL,44,,Dabang Delhi K.C. Won by 2 Pts,2
-2911,W,,2022-10-15,8,HYD,26,2,DEL,46,,Dabang Delhi K.C. Won by 20 Pts,2
-2916,W,,2022-10-17,2,DEL,38,28,HAR,36,,Dabang Delhi K.C. Won by 2 Pts,2
-2923,L,,2022-10-21,6,PAT,37,2,DEL,33,,Patna Pirates Won by 4 Pts,2
-2932,L,,2022-10-26,2,DEL,30,4,KOL,35,,Bengal Warriorz Won by 5 Pts,2
-2936,L,,2022-10-29,1,BLR,47,2,DEL,43,,Bengaluru Bulls Won by 4 Pts,2
-2940,L,,2022-10-30,29,CHE,49,2,DEL,39,,Tamil Thalaivas Won by 10 Pts,2
-2943,L,,2022-11-01,7,PUNE,43,2,DEL,38,,Puneri Paltan Won by 5 Pts,2
-2948,L,,2022-11-04,2,DEL,40,3,JAI,45,,Jaipur Pink Panthers Won by 5 Pts,2
-2958,W,,2022-11-08,2,DEL,40,8,HYD,33,,Dabang Delhi K.C. Won by 7 Pts,2
-2966,L,,2022-11-12,3,JAI,57,2,DEL,32,,Jaipur Pink Panthers Won by 25 Pts,2
-2974,L,,2022-11-16,2,DEL,31,30,UP,50,,UP Yoddhas Won by 19 Pts,2
-2980,W,,2022-11-19,2,DEL,30,6,PAT,27,,Dabang Delhi K.C. Won by 3 Pts,2
-2981,W,,2022-11-20,28,HAR,30,2,DEL,42,,Dabang Delhi K.C. Won by 12 Pts,2
-2989,W,,2022-11-25,31,GUJ,47,2,DEL,50,,Dabang Delhi K.C. Won by 3 Pts,2
-2996,L,,2022-11-27,2,DEL,49,1,BLR,52,,Bengaluru Bulls Won by 3 Pts,2
-3002,,,2022-11-30,2,DEL,37,29,CHE,37,,,2
-3006,L,,2022-12-03,2,DEL,44,7,PUNE,47,,Puneri Paltan Won by 3 Pts,2
-3013,W,,2022-12-06,5,MUM,24,2,DEL,41,,Dabang Delhi K.C. Won by 17 Pts,2
-3017,,,2022-12-08,4,KOL,46,2,DEL,46,,,2
-3024,L,,2022-12-13,1,BLR,56,2,DEL,24,,Bengaluru Bulls Won by 32 Pts,2
-2897,W,,2022-10-08,4,KOL,33,28,HAR,41,,Haryana Steelers Won by 8 Pts,28
-2903,W,,2022-10-11,28,HAR,27,29,CHE,22,,Haryana Steelers Won by 5 Pts,28
-2908,L,,2022-10-14,28,HAR,31,3,JAI,44,,Jaipur Pink Panthers Won by 13 Pts,28
-2916,L,,2022-10-17,2,DEL,38,28,HAR,36,,Dabang Delhi K.C. Won by 2 Pts,28
-2921,L,,2022-10-21,5,MUM,32,28,HAR,31,,U Mumba Won by 1 Pts,28
-2926,L,,2022-10-22,28,HAR,38,31,GUJ,42,,Gujarat Giants Won by 4 Pts,28
-2930,W,,2022-10-25,8,HYD,24,28,HAR,43,,Haryana Steelers Won by 19 Pts,28
-2934,,,2022-10-28,28,HAR,27,7,PUNE,27,,,28
-2944,W,,2022-11-01,28,HAR,29,1,BLR,27,,Haryana Steelers Won by 2 Pts,28
-2952,,,2022-11-05,28,HAR,36,30,UP,36,,,28
-2956,L,,2022-11-07,6,PAT,41,28,HAR,32,,Patna Pirates Won by 9 Pts,28
-2959,L,,2022-11-09,1,BLR,36,28,HAR,33,,Bengaluru Bulls Won by 3 Pts,28
-2961,L,,2022-11-11,30,UP,40,28,HAR,34,,UP Yoddhas Won by 6 Pts,28
-2970,W,,2022-11-14,31,GUJ,32,28,HAR,33,,Haryana Steelers Won by 1 Pts,28
-2975,L,,2022-11-18,7,PUNE,41,28,HAR,28,,Puneri Paltan Won by 13 Pts,28
-2981,L,,2022-11-20,28,HAR,30,2,DEL,42,,Dabang Delhi K.C. Won by 12 Pts,28
-2991,W,,2022-11-25,28,HAR,33,6,PAT,23,,Haryana Steelers Won by 10 Pts,28
-3000,W,,2022-11-29,28,HAR,35,5,MUM,33,,Haryana Steelers Won by 2 Pts,28
-3005,W,,2022-12-02,28,HAR,32,4,KOL,26,,Haryana Steelers Won by 6 Pts,28
-3012,L,,2022-12-05,3,JAI,44,28,HAR,30,,Jaipur Pink Panthers Won by 14 Pts,28
-3018,W,,2022-12-08,28,HAR,50,8,HYD,33,,Haryana Steelers Won by 17 Pts,28
-3022,W,,2022-12-10,29,CHE,38,28,HAR,61,,Haryana Steelers Won by 23 Pts,28
-2896,,,2022-10-08,31,GUJ,31,29,CHE,31,,,31
-2902,L,,2022-10-10,2,DEL,53,31,GUJ,33,,Dabang Delhi K.C. Won by 20 Pts,31
-2909,W,,2022-10-14,31,GUJ,47,7,PUNE,37,,Gujarat Giants Won by 10 Pts,31
-2910,L,,2022-10-15,3,JAI,25,31,GUJ,18,,Jaipur Pink Panthers Won by 7 Pts,31
-2919,W,,2022-10-19,31,GUJ,51,30,UP,45,,Gujarat Giants Won by 6 Pts,31
-2926,W,,2022-10-22,28,HAR,38,31,GUJ,42,,Gujarat Giants Won by 4 Pts,31
-2931,L,,2022-10-26,31,GUJ,29,5,MUM,37,,U Mumba Won by 8 Pts,31
-2937,W,,2022-10-29,8,HYD,19,31,GUJ,30,,Gujarat Giants Won by 11 Pts,31
-2941,L,,2022-10-31,31,GUJ,28,6,PAT,34,,Patna Pirates Won by 6 Pts,31
-2950,L,,2022-11-05,31,GUJ,40,4,KOL,45,,Bengal Warriorz Won by 5 Pts,31
-2953,W,,2022-11-06,1,BLR,44,31,GUJ,46,,Gujarat Giants Won by 2 Pts,31
-2964,L,,2022-11-12,4,KOL,46,31,GUJ,27,,Bengal Warriorz Won by 19 Pts,31
-2970,L,,2022-11-14,31,GUJ,32,28,HAR,33,,Haryana Steelers Won by 1 Pts,31
-2977,L,,2022-11-18,31,GUJ,38,1,BLR,45,,Bengaluru Bulls Won by 7 Pts,31
-2984,L,,2022-11-21,30,UP,35,31,GUJ,31,,UP Yoddhas Won by 4 Pts,31
-2989,L,,2022-11-25,31,GUJ,47,2,DEL,50,,Dabang Delhi K.C. Won by 3 Pts,31
-2995,L,,2022-11-27,29,CHE,42,31,GUJ,39,,Tamil Thalaivas Won by 3 Pts,31
-2999,W,,2022-11-29,7,PUNE,39,31,GUJ,51,,Gujarat Giants Won by 12 Pts,31
-3004,W,,2022-12-02,6,PAT,34,31,GUJ,40,,Gujarat Giants Won by 6 Pts,31
-3009,W,,2022-12-04,5,MUM,36,31,GUJ,38,,Gujarat Giants Won by 2 Pts,31
-3014,W,,2022-12-06,31,GUJ,44,8,HYD,30,,Gujarat Giants Won by 14 Pts,31
-3019,,,2022-12-09,31,GUJ,51,3,JAI,51,,,31
-2892,L,,2022-10-07,2,DEL,41,5,MUM,27,,Dabang Delhi K.C. Won by 14 Pts,5
-2901,W,,2022-10-10,5,MUM,30,30,UP,23,,U Mumba Won by 7 Pts,5
-2907,W,,2022-10-14,29,CHE,32,5,MUM,39,,U Mumba Won by 7 Pts,5
-2913,L,,2022-10-16,7,PUNE,30,5,MUM,28,,Puneri Paltan Won by 2 Pts,5
-2921,W,,2022-10-21,5,MUM,32,28,HAR,31,,U Mumba Won by 1 Pts,5
-2924,L,,2022-10-22,5,MUM,32,1,BLR,42,,Bengaluru Bulls Won by 10 Pts,5
-2931,W,,2022-10-26,31,GUJ,29,5,MUM,37,,U Mumba Won by 8 Pts,5
-2938,W,,2022-10-29,4,KOL,25,5,MUM,36,,U Mumba Won by 11 Pts,5
-2945,W,,2022-11-02,5,MUM,40,8,HYD,37,,U Mumba Won by 3 Pts,5
-2947,L,,2022-11-04,6,PAT,34,5,MUM,31,,Patna Pirates Won by 3 Pts,5
-2955,L,,2022-11-07,5,MUM,39,3,JAI,42,,Jaipur Pink Panthers Won by 3 Pts,5
-2962,W,,2022-11-11,5,MUM,34,7,PUNE,33,,U Mumba Won by 1 Pts,5
-2967,W,,2022-11-13,5,MUM,36,6,PAT,23,,U Mumba Won by 13 Pts,5
-2971,L,,2022-11-15,3,JAI,32,5,MUM,22,,Jaipur Pink Panthers Won by 10 Pts,5
-2979,L,,2022-11-19,8,HYD,32,5,MUM,26,,Telugu Titans Won by 6 Pts,5
-2985,L,,2022-11-22,5,MUM,20,29,CHE,34,,Tamil Thalaivas Won by 14 Pts,5
-2992,W,,2022-11-26,5,MUM,49,4,KOL,41,,U Mumba Won by 8 Pts,5
-3000,L,,2022-11-29,28,HAR,35,5,MUM,33,,Haryana Steelers Won by 2 Pts,5
-3003,L,,2022-12-02,30,UP,38,5,MUM,28,,UP Yoddhas Won by 10 Pts,5
-3009,L,,2022-12-04,5,MUM,36,31,GUJ,38,,Gujarat Giants Won by 2 Pts,5
-3013,L,,2022-12-06,5,MUM,24,2,DEL,41,,Dabang Delhi K.C. Won by 17 Pts,5
-3021,W,,2022-12-10,1,BLR,30,5,MUM,36,,U Mumba Won by 6 Pts,5
-2895,,,2022-10-08,6,PAT,34,7,PUNE,34,,,6
-2898,L,,2022-10-09,3,JAI,35,6,PAT,30,,Jaipur Pink Panthers Won by 5 Pts,6
-2904,L,,2022-10-11,6,PAT,21,8,HYD,30,,Telugu Titans Won by 9 Pts,6
-2912,L,,2022-10-15,4,KOL,54,6,PAT,26,,Bengal Warriorz Won by 28 Pts,6
-2915,L,,2022-10-17,29,CHE,33,6,PAT,32,,Tamil Thalaivas Won by 1 Pts,6
-2923,W,,2022-10-21,6,PAT,37,2,DEL,33,,Patna Pirates Won by 4 Pts,6
-2927,,,2022-10-23,1,BLR,31,6,PAT,31,,,6
-2935,W,,2022-10-28,6,PAT,34,30,UP,29,,Patna Pirates Won by 5 Pts,6
-2941,W,,2022-10-31,31,GUJ,28,6,PAT,34,,Patna Pirates Won by 6 Pts,6
-2947,W,,2022-11-04,6,PAT,34,5,MUM,31,,Patna Pirates Won by 3 Pts,6
-2956,W,,2022-11-07,6,PAT,41,28,HAR,32,,Patna Pirates Won by 9 Pts,6
-2963,W,,2022-11-11,6,PAT,37,3,JAI,30,,Patna Pirates Won by 7 Pts,6
-2967,L,,2022-11-13,5,MUM,36,6,PAT,23,,U Mumba Won by 13 Pts,6
-2973,,,2022-11-16,6,PAT,33,29,CHE,33,,,6
-2980,L,,2022-11-19,2,DEL,30,6,PAT,27,,Dabang Delhi K.C. Won by 3 Pts,6
-2986,W,,2022-11-22,8,HYD,35,6,PAT,36,,Patna Pirates Won by 1 Pts,6
-2991,L,,2022-11-25,28,HAR,33,6,PAT,23,,Haryana Steelers Won by 10 Pts,6
-2994,L,,2022-11-26,30,UP,35,6,PAT,33,,UP Yoddhas Won by 2 Pts,6
-3004,L,,2022-12-02,6,PAT,34,31,GUJ,40,,Gujarat Giants Won by 6 Pts,6
-3011,L,,2022-12-05,7,PUNE,44,6,PAT,30,,Puneri Paltan Won by 14 Pts,6
-3015,L,,2022-12-07,6,PAT,44,1,BLR,57,,Bengaluru Bulls Won by 13 Pts,6
-3023,W,,2022-12-10,6,PAT,49,4,KOL,38,,Patna Pirates Won by 11 Pts,6
-2897,L,,2022-10-08,4,KOL,33,28,HAR,41,,Haryana Steelers Won by 8 Pts,4
-2899,W,,2022-10-09,8,HYD,25,4,KOL,45,,Bengal Warriorz Won by 20 Pts,4
-2905,W,,2022-10-12,1,BLR,33,4,KOL,42,,Bengal Warriorz Won by 9 Pts,4
-2912,W,,2022-10-15,4,KOL,54,6,PAT,26,,Bengal Warriorz Won by 28 Pts,4
-2917,L,,2022-10-18,4,KOL,24,3,JAI,39,,Jaipur Pink Panthers Won by 15 Pts,4
-2922,L,,2022-10-21,7,PUNE,27,4,KOL,25,,Puneri Paltan Won by 2 Pts,4
-2932,W,,2022-10-26,2,DEL,30,4,KOL,35,,Bengal Warriorz Won by 5 Pts,4
-2938,L,,2022-10-29,4,KOL,25,5,MUM,36,,U Mumba Won by 11 Pts,4
-2946,,,2022-11-02,4,KOL,41,29,CHE,41,,,4
-2950,W,,2022-11-05,31,GUJ,40,4,KOL,45,,Bengal Warriorz Won by 5 Pts,4
-2957,,,2022-11-08,4,KOL,41,30,UP,41,,,4
-2964,W,,2022-11-12,4,KOL,46,31,GUJ,27,,Bengal Warriorz Won by 19 Pts,4
-2969,L,,2022-11-14,4,KOL,27,7,PUNE,43,,Puneri Paltan Won by 16 Pts,4
-2976,W,,2022-11-18,4,KOL,36,8,HYD,28,,Bengal Warriorz Won by 8 Pts,4
-2983,L,,2022-11-21,29,CHE,35,4,KOL,30,,Tamil Thalaivas Won by 5 Pts,4
-2988,W,,2022-11-23,4,KOL,41,1,BLR,38,,Bengal Warriorz Won by 3 Pts,4
-2992,L,,2022-11-26,5,MUM,49,4,KOL,41,,U Mumba Won by 8 Pts,4
-2997,L,,2022-11-28,30,UP,33,4,KOL,32,,UP Yoddhas Won by 1 Pts,4
-3005,L,,2022-12-02,28,HAR,32,4,KOL,26,,Haryana Steelers Won by 6 Pts,4
-3008,L,,2022-12-03,3,JAI,57,4,KOL,31,,Jaipur Pink Panthers Won by 26 Pts,4
-3017,,,2022-12-08,4,KOL,46,2,DEL,46,,,4
-3023,L,,2022-12-10,6,PAT,49,4,KOL,38,,Patna Pirates Won by 11 Pts,4
-2893,L,,2022-10-07,1,BLR,34,8,HYD,29,,Bengaluru Bulls Won by 5 Pts,8
-2899,L,,2022-10-09,8,HYD,25,4,KOL,45,,Bengal Warriorz Won by 20 Pts,8
-2904,W,,2022-10-11,6,PAT,21,8,HYD,30,,Telugu Titans Won by 9 Pts,8
-2911,L,,2022-10-15,8,HYD,26,2,DEL,46,,Dabang Delhi K.C. Won by 20 Pts,8
-2918,L,,2022-10-18,8,HYD,25,7,PUNE,26,,Puneri Paltan Won by 1 Pts,8
-2925,L,,2022-10-22,3,JAI,51,8,HYD,27,,Jaipur Pink Panthers Won by 24 Pts,8
-2930,L,,2022-10-25,8,HYD,24,28,HAR,43,,Haryana Steelers Won by 19 Pts,8
-2937,L,,2022-10-29,8,HYD,19,31,GUJ,30,,Gujarat Giants Won by 11 Pts,8
-2942,L,,2022-10-31,30,UP,43,8,HYD,24,,UP Yoddhas Won by 19 Pts,8
-2945,L,,2022-11-02,5,MUM,40,8,HYD,37,,U Mumba Won by 3 Pts,8
-2951,L,,2022-11-05,29,CHE,39,8,HYD,31,,Tamil Thalaivas Won by 8 Pts,8
-2958,L,,2022-11-08,2,DEL,40,8,HYD,33,,Dabang Delhi K.C. Won by 7 Pts,8
-2965,L,,2022-11-12,8,HYD,30,30,UP,41,,UP Yoddhas Won by 11 Pts,8
-2972,L,,2022-11-15,8,HYD,38,1,BLR,49,,Bengaluru Bulls Won by 11 Pts,8
-2976,L,,2022-11-18,4,KOL,36,8,HYD,28,,Bengal Warriorz Won by 8 Pts,8
-2979,W,,2022-11-19,8,HYD,32,5,MUM,26,,Telugu Titans Won by 6 Pts,8
-2986,L,,2022-11-22,8,HYD,35,6,PAT,36,,Patna Pirates Won by 1 Pts,8
-2993,L,,2022-11-26,7,PUNE,38,8,HYD,25,,Puneri Paltan Won by 13 Pts,8
-2998,L,,2022-11-28,8,HYD,28,3,JAI,48,,Jaipur Pink Panthers Won by 20 Pts,8
-3007,L,,2022-12-03,8,HYD,24,29,CHE,52,,Tamil Thalaivas Won by 28 Pts,8
-3014,L,,2022-12-06,31,GUJ,44,8,HYD,30,,Gujarat Giants Won by 14 Pts,8
-3018,L,,2022-12-08,28,HAR,50,8,HYD,33,,Haryana Steelers Won by 17 Pts,8
+id,result,date,teama_id,teama_short_name,teama_score,teamb_id,teamb_short_name,teamb_score,post_match_position,match_result,team_id
+2894,L,07/10/22,3,JAI,32,30,UP,34,,UP Yoddhas Won by 2 Pts,3
+2898,W,09/10/22,3,JAI,35,6,PAT,30,,Jaipur Pink Panthers Won by 5 Pts,3
+2908,W,14/10/22,28,HAR,31,3,JAI,44,,Jaipur Pink Panthers Won by 13 Pts,3
+2910,W,15/10/22,3,JAI,25,31,GUJ,18,,Jaipur Pink Panthers Won by 7 Pts,3
+2917,W,18/10/22,4,KOL,24,3,JAI,39,,Jaipur Pink Panthers Won by 15 Pts,3
+2925,W,22/10/22,3,JAI,51,8,HYD,27,,Jaipur Pink Panthers Won by 24 Pts,3
+2929,L,25/10/22,7,PUNE,32,3,JAI,24,,Puneri Paltan Won by 8 Pts,3
+2933,L,28/10/22,29,CHE,38,3,JAI,27,,Tamil Thalaivas Won by 11 Pts,3
+2939,L,30/10/22,3,JAI,31,1,BLR,37,,Bengaluru Bulls Won by 6 Pts,3
+2948,W,04/11/22,2,DEL,40,3,JAI,45,,Jaipur Pink Panthers Won by 5 Pts,3
+2955,W,07/11/22,5,MUM,39,3,JAI,42,,Jaipur Pink Panthers Won by 3 Pts,3
+2963,L,11/11/22,6,PAT,37,3,JAI,30,,Patna Pirates Won by 7 Pts,3
+2966,W,12/11/22,3,JAI,57,2,DEL,32,,Jaipur Pink Panthers Won by 25 Pts,3
+2971,W,15/11/22,3,JAI,32,5,MUM,22,,Jaipur Pink Panthers Won by 10 Pts,3
+2978,W,19/11/22,30,UP,29,3,JAI,42,,Jaipur Pink Panthers Won by 13 Pts,3
+2987,L,23/11/22,3,JAI,32,7,PUNE,39,,Puneri Paltan Won by 7 Pts,3
+2990,W,25/11/22,3,JAI,41,29,CHE,26,,Jaipur Pink Panthers Won by 15 Pts,3
+2998,W,28/11/22,8,HYD,28,3,JAI,48,,Jaipur Pink Panthers Won by 20 Pts,3
+3001,W,30/11/22,1,BLR,25,3,JAI,45,,Jaipur Pink Panthers Won by 20 Pts,3
+3008,W,03/12/22,3,JAI,57,4,KOL,31,,Jaipur Pink Panthers Won by 26 Pts,3
+3012,W,05/12/22,3,JAI,44,28,HAR,30,,Jaipur Pink Panthers Won by 14 Pts,3
+3019,,09/12/22,31,GUJ,51,3,JAI,51,,,3
+3026,W,15/12/22,3,JAI,49,1,BLR,29,,Jaipur Pink Panthers Won by 20 Pts,3
+3028,W,17/12/22,3,JAI,33,7,PUNE,29,,Jaipur Pink Panthers Won by 4 Pts,3
+2895,,08/10/22,6,PAT,34,7,PUNE,34,,,7
+2900,L,09/10/22,7,PUNE,39,1,BLR,41,,Bengaluru Bulls Won by 2 Pts,7
+2909,L,14/10/22,31,GUJ,47,7,PUNE,37,,Gujarat Giants Won by 10 Pts,7
+2913,W,16/10/22,7,PUNE,30,5,MUM,28,,Puneri Paltan Won by 2 Pts,7
+2918,W,18/10/22,8,HYD,25,7,PUNE,26,,Puneri Paltan Won by 1 Pts,7
+2922,W,21/10/22,7,PUNE,27,4,KOL,25,,Puneri Paltan Won by 2 Pts,7
+2929,W,25/10/22,7,PUNE,32,3,JAI,24,,Puneri Paltan Won by 8 Pts,7
+2934,,28/10/22,28,HAR,27,7,PUNE,27,,,7
+2943,W,01/11/22,7,PUNE,43,2,DEL,38,,Puneri Paltan Won by 5 Pts,7
+2949,W,04/11/22,30,UP,31,7,PUNE,40,,Puneri Paltan Won by 9 Pts,7
+2954,L,06/11/22,7,PUNE,34,29,CHE,35,,Tamil Thalaivas Won by 1 Pts,7
+2960,W,09/11/22,29,CHE,34,7,PUNE,35,,Puneri Paltan Won by 1 Pts,7
+2962,L,11/11/22,5,MUM,34,7,PUNE,33,,U Mumba Won by 1 Pts,7
+2969,W,14/11/22,4,KOL,27,7,PUNE,43,,Puneri Paltan Won by 16 Pts,7
+2975,W,18/11/22,7,PUNE,41,28,HAR,28,,Puneri Paltan Won by 13 Pts,7
+2982,W,20/11/22,1,BLR,33,7,PUNE,35,,Puneri Paltan Won by 2 Pts,7
+2987,W,23/11/22,3,JAI,32,7,PUNE,39,,Puneri Paltan Won by 7 Pts,7
+2993,W,26/11/22,7,PUNE,38,8,HYD,25,,Puneri Paltan Won by 13 Pts,7
+2999,L,29/11/22,7,PUNE,39,31,GUJ,51,,Gujarat Giants Won by 12 Pts,7
+3006,W,03/12/22,2,DEL,44,7,PUNE,47,,Puneri Paltan Won by 3 Pts,7
+3011,W,05/12/22,7,PUNE,44,6,PAT,30,,Puneri Paltan Won by 14 Pts,7
+3020,L,09/12/22,7,PUNE,41,30,UP,45,,UP Yoddhas Won by 4 Pts,7
+3027,W,15/12/22,7,PUNE,39,29,CHE,37,,Puneri Paltan Won by 2 Pts,7
+3028,L,17/12/22,3,JAI,33,7,PUNE,29,,Jaipur Pink Panthers Won by 4 Pts,7
+2893,W,07/10/22,1,BLR,34,8,HYD,29,,Bengaluru Bulls Won by 5 Pts,1
+2900,W,09/10/22,7,PUNE,39,1,BLR,41,,Bengaluru Bulls Won by 2 Pts,1
+2905,L,12/10/22,1,BLR,33,4,KOL,42,,Bengal Warriorz Won by 9 Pts,1
+2914,L,16/10/22,30,UP,44,1,BLR,37,,UP Yoddhas Won by 7 Pts,1
+2920,W,19/10/22,1,BLR,45,29,CHE,28,,Bengaluru Bulls Won by 17 Pts,1
+2924,W,22/10/22,5,MUM,32,1,BLR,42,,Bengaluru Bulls Won by 10 Pts,1
+2927,,23/10/22,1,BLR,31,6,PAT,31,,,1
+2936,W,29/10/22,1,BLR,47,2,DEL,43,,Bengaluru Bulls Won by 4 Pts,1
+2939,W,30/10/22,3,JAI,31,1,BLR,37,,Bengaluru Bulls Won by 6 Pts,1
+2944,L,01/11/22,28,HAR,29,1,BLR,27,,Haryana Steelers Won by 2 Pts,1
+2953,L,06/11/22,1,BLR,44,31,GUJ,46,,Gujarat Giants Won by 2 Pts,1
+2959,W,09/11/22,1,BLR,36,28,HAR,33,,Bengaluru Bulls Won by 3 Pts,1
+2968,W,13/11/22,29,CHE,34,1,BLR,40,,Bengaluru Bulls Won by 6 Pts,1
+2972,W,15/11/22,8,HYD,38,1,BLR,49,,Bengaluru Bulls Won by 11 Pts,1
+2977,W,18/11/22,31,GUJ,38,1,BLR,45,,Bengaluru Bulls Won by 7 Pts,1
+2982,L,20/11/22,1,BLR,33,7,PUNE,35,,Puneri Paltan Won by 2 Pts,1
+2988,L,23/11/22,4,KOL,41,1,BLR,38,,Bengal Warriorz Won by 3 Pts,1
+2996,W,27/11/22,2,DEL,49,1,BLR,52,,Bengaluru Bulls Won by 3 Pts,1
+3001,L,30/11/22,1,BLR,25,3,JAI,45,,Jaipur Pink Panthers Won by 20 Pts,1
+3010,W,04/12/22,1,BLR,38,30,UP,35,,Bengaluru Bulls Won by 3 Pts,1
+3015,W,07/12/22,6,PAT,44,1,BLR,57,,Bengaluru Bulls Won by 13 Pts,1
+3021,L,10/12/22,1,BLR,30,5,MUM,36,,U Mumba Won by 6 Pts,1
+3024,W,13/12/22,1,BLR,56,2,DEL,24,,Bengaluru Bulls Won by 32 Pts,1
+3026,L,15/12/22,3,JAI,49,1,BLR,29,,Jaipur Pink Panthers Won by 20 Pts,1
+2894,W,07/10/22,3,JAI,32,30,UP,34,,UP Yoddhas Won by 2 Pts,30
+2901,L,10/10/22,5,MUM,30,30,UP,23,,U Mumba Won by 7 Pts,30
+2906,L,12/10/22,30,UP,42,2,DEL,44,,Dabang Delhi K.C. Won by 2 Pts,30
+2914,W,16/10/22,30,UP,44,1,BLR,37,,UP Yoddhas Won by 7 Pts,30
+2919,L,19/10/22,31,GUJ,51,30,UP,45,,Gujarat Giants Won by 6 Pts,30
+2928,W,23/10/22,30,UP,41,29,CHE,24,,UP Yoddhas Won by 17 Pts,30
+2935,L,28/10/22,6,PAT,34,30,UP,29,,Patna Pirates Won by 5 Pts,30
+2942,W,31/10/22,30,UP,43,8,HYD,24,,UP Yoddhas Won by 19 Pts,30
+2949,L,04/11/22,30,UP,31,7,PUNE,40,,Puneri Paltan Won by 9 Pts,30
+2952,,05/11/22,28,HAR,36,30,UP,36,,,30
+2957,,08/11/22,4,KOL,41,30,UP,41,,,30
+2961,W,11/11/22,30,UP,40,28,HAR,34,,UP Yoddhas Won by 6 Pts,30
+2965,W,12/11/22,8,HYD,30,30,UP,41,,UP Yoddhas Won by 11 Pts,30
+2974,W,16/11/22,2,DEL,31,30,UP,50,,UP Yoddhas Won by 19 Pts,30
+2978,L,19/11/22,30,UP,29,3,JAI,42,,Jaipur Pink Panthers Won by 13 Pts,30
+2984,W,21/11/22,30,UP,35,31,GUJ,31,,UP Yoddhas Won by 4 Pts,30
+2994,W,26/11/22,30,UP,35,6,PAT,33,,UP Yoddhas Won by 2 Pts,30
+2997,W,28/11/22,30,UP,33,4,KOL,32,,UP Yoddhas Won by 1 Pts,30
+3003,W,02/12/22,30,UP,38,5,MUM,28,,UP Yoddhas Won by 10 Pts,30
+3010,L,04/12/22,1,BLR,38,30,UP,35,,Bengaluru Bulls Won by 3 Pts,30
+3016,L,07/12/22,29,CHE,43,30,UP,28,,Tamil Thalaivas Won by 15 Pts,30
+3020,W,09/12/22,7,PUNE,41,30,UP,45,,UP Yoddhas Won by 4 Pts,30
+3025,L,13/12/22,30,UP,36,29,CHE,36,,Tamil Thalaivas Won by 0 Pts,30
+2896,,08/10/22,31,GUJ,31,29,CHE,31,,,29
+2903,L,11/10/22,28,HAR,27,29,CHE,22,,Haryana Steelers Won by 5 Pts,29
+2907,L,14/10/22,29,CHE,32,5,MUM,39,,U Mumba Won by 7 Pts,29
+2915,W,17/10/22,29,CHE,33,6,PAT,32,,Tamil Thalaivas Won by 1 Pts,29
+2920,L,19/10/22,1,BLR,45,29,CHE,28,,Bengaluru Bulls Won by 17 Pts,29
+2928,L,23/10/22,30,UP,41,29,CHE,24,,UP Yoddhas Won by 17 Pts,29
+2933,W,28/10/22,29,CHE,38,3,JAI,27,,Tamil Thalaivas Won by 11 Pts,29
+2940,W,30/10/22,29,CHE,49,2,DEL,39,,Tamil Thalaivas Won by 10 Pts,29
+2946,,02/11/22,4,KOL,41,29,CHE,41,,,29
+2951,W,05/11/22,29,CHE,39,8,HYD,31,,Tamil Thalaivas Won by 8 Pts,29
+2954,W,06/11/22,7,PUNE,34,29,CHE,35,,Tamil Thalaivas Won by 1 Pts,29
+2960,L,09/11/22,29,CHE,34,7,PUNE,35,,Puneri Paltan Won by 1 Pts,29
+2968,L,13/11/22,29,CHE,34,1,BLR,40,,Bengaluru Bulls Won by 6 Pts,29
+2973,,16/11/22,6,PAT,33,29,CHE,33,,,29
+2983,W,21/11/22,29,CHE,35,4,KOL,30,,Tamil Thalaivas Won by 5 Pts,29
+2985,W,22/11/22,5,MUM,20,29,CHE,34,,Tamil Thalaivas Won by 14 Pts,29
+2990,L,25/11/22,3,JAI,41,29,CHE,26,,Jaipur Pink Panthers Won by 15 Pts,29
+2995,W,27/11/22,29,CHE,42,31,GUJ,39,,Tamil Thalaivas Won by 3 Pts,29
+3002,,30/11/22,2,DEL,37,29,CHE,37,,,29
+3007,W,03/12/22,8,HYD,24,29,CHE,52,,Tamil Thalaivas Won by 28 Pts,29
+3016,W,07/12/22,29,CHE,43,30,UP,28,,Tamil Thalaivas Won by 15 Pts,29
+3022,L,10/12/22,29,CHE,38,28,HAR,61,,Haryana Steelers Won by 23 Pts,29
+3025,W,13/12/22,30,UP,36,29,CHE,36,,Tamil Thalaivas Won by 0 Pts,29
+3027,L,15/12/22,7,PUNE,39,29,CHE,37,,Puneri Paltan Won by 2 Pts,29
+2892,W,07/10/22,2,DEL,41,5,MUM,27,,Dabang Delhi K.C. Won by 14 Pts,2
+2902,W,10/10/22,2,DEL,53,31,GUJ,33,,Dabang Delhi K.C. Won by 20 Pts,2
+2906,W,12/10/22,30,UP,42,2,DEL,44,,Dabang Delhi K.C. Won by 2 Pts,2
+2911,W,15/10/22,8,HYD,26,2,DEL,46,,Dabang Delhi K.C. Won by 20 Pts,2
+2916,W,17/10/22,2,DEL,38,28,HAR,36,,Dabang Delhi K.C. Won by 2 Pts,2
+2923,L,21/10/22,6,PAT,37,2,DEL,33,,Patna Pirates Won by 4 Pts,2
+2932,L,26/10/22,2,DEL,30,4,KOL,35,,Bengal Warriorz Won by 5 Pts,2
+2936,L,29/10/22,1,BLR,47,2,DEL,43,,Bengaluru Bulls Won by 4 Pts,2
+2940,L,30/10/22,29,CHE,49,2,DEL,39,,Tamil Thalaivas Won by 10 Pts,2
+2943,L,01/11/22,7,PUNE,43,2,DEL,38,,Puneri Paltan Won by 5 Pts,2
+2948,L,04/11/22,2,DEL,40,3,JAI,45,,Jaipur Pink Panthers Won by 5 Pts,2
+2958,W,08/11/22,2,DEL,40,8,HYD,33,,Dabang Delhi K.C. Won by 7 Pts,2
+2966,L,12/11/22,3,JAI,57,2,DEL,32,,Jaipur Pink Panthers Won by 25 Pts,2
+2974,L,16/11/22,2,DEL,31,30,UP,50,,UP Yoddhas Won by 19 Pts,2
+2980,W,19/11/22,2,DEL,30,6,PAT,27,,Dabang Delhi K.C. Won by 3 Pts,2
+2981,W,20/11/22,28,HAR,30,2,DEL,42,,Dabang Delhi K.C. Won by 12 Pts,2
+2989,W,25/11/22,31,GUJ,47,2,DEL,50,,Dabang Delhi K.C. Won by 3 Pts,2
+2996,L,27/11/22,2,DEL,49,1,BLR,52,,Bengaluru Bulls Won by 3 Pts,2
+3002,,30/11/22,2,DEL,37,29,CHE,37,,,2
+3006,L,03/12/22,2,DEL,44,7,PUNE,47,,Puneri Paltan Won by 3 Pts,2
+3013,W,06/12/22,5,MUM,24,2,DEL,41,,Dabang Delhi K.C. Won by 17 Pts,2
+3017,,08/12/22,4,KOL,46,2,DEL,46,,,2
+3024,L,13/12/22,1,BLR,56,2,DEL,24,,Bengaluru Bulls Won by 32 Pts,2
+2897,W,08/10/22,4,KOL,33,28,HAR,41,,Haryana Steelers Won by 8 Pts,28
+2903,W,11/10/22,28,HAR,27,29,CHE,22,,Haryana Steelers Won by 5 Pts,28
+2908,L,14/10/22,28,HAR,31,3,JAI,44,,Jaipur Pink Panthers Won by 13 Pts,28
+2916,L,17/10/22,2,DEL,38,28,HAR,36,,Dabang Delhi K.C. Won by 2 Pts,28
+2921,L,21/10/22,5,MUM,32,28,HAR,31,,U Mumba Won by 1 Pts,28
+2926,L,22/10/22,28,HAR,38,31,GUJ,42,,Gujarat Giants Won by 4 Pts,28
+2930,W,25/10/22,8,HYD,24,28,HAR,43,,Haryana Steelers Won by 19 Pts,28
+2934,,28/10/22,28,HAR,27,7,PUNE,27,,,28
+2944,W,01/11/22,28,HAR,29,1,BLR,27,,Haryana Steelers Won by 2 Pts,28
+2952,,05/11/22,28,HAR,36,30,UP,36,,,28
+2956,L,07/11/22,6,PAT,41,28,HAR,32,,Patna Pirates Won by 9 Pts,28
+2959,L,09/11/22,1,BLR,36,28,HAR,33,,Bengaluru Bulls Won by 3 Pts,28
+2961,L,11/11/22,30,UP,40,28,HAR,34,,UP Yoddhas Won by 6 Pts,28
+2970,W,14/11/22,31,GUJ,32,28,HAR,33,,Haryana Steelers Won by 1 Pts,28
+2975,L,18/11/22,7,PUNE,41,28,HAR,28,,Puneri Paltan Won by 13 Pts,28
+2981,L,20/11/22,28,HAR,30,2,DEL,42,,Dabang Delhi K.C. Won by 12 Pts,28
+2991,W,25/11/22,28,HAR,33,6,PAT,23,,Haryana Steelers Won by 10 Pts,28
+3000,W,29/11/22,28,HAR,35,5,MUM,33,,Haryana Steelers Won by 2 Pts,28
+3005,W,02/12/22,28,HAR,32,4,KOL,26,,Haryana Steelers Won by 6 Pts,28
+3012,L,05/12/22,3,JAI,44,28,HAR,30,,Jaipur Pink Panthers Won by 14 Pts,28
+3018,W,08/12/22,28,HAR,50,8,HYD,33,,Haryana Steelers Won by 17 Pts,28
+3022,W,10/12/22,29,CHE,38,28,HAR,61,,Haryana Steelers Won by 23 Pts,28
+2896,,08/10/22,31,GUJ,31,29,CHE,31,,,31
+2902,L,10/10/22,2,DEL,53,31,GUJ,33,,Dabang Delhi K.C. Won by 20 Pts,31
+2909,W,14/10/22,31,GUJ,47,7,PUNE,37,,Gujarat Giants Won by 10 Pts,31
+2910,L,15/10/22,3,JAI,25,31,GUJ,18,,Jaipur Pink Panthers Won by 7 Pts,31
+2919,W,19/10/22,31,GUJ,51,30,UP,45,,Gujarat Giants Won by 6 Pts,31
+2926,W,22/10/22,28,HAR,38,31,GUJ,42,,Gujarat Giants Won by 4 Pts,31
+2931,L,26/10/22,31,GUJ,29,5,MUM,37,,U Mumba Won by 8 Pts,31
+2937,W,29/10/22,8,HYD,19,31,GUJ,30,,Gujarat Giants Won by 11 Pts,31
+2941,L,31/10/22,31,GUJ,28,6,PAT,34,,Patna Pirates Won by 6 Pts,31
+2950,L,05/11/22,31,GUJ,40,4,KOL,45,,Bengal Warriorz Won by 5 Pts,31
+2953,W,06/11/22,1,BLR,44,31,GUJ,46,,Gujarat Giants Won by 2 Pts,31
+2964,L,12/11/22,4,KOL,46,31,GUJ,27,,Bengal Warriorz Won by 19 Pts,31
+2970,L,14/11/22,31,GUJ,32,28,HAR,33,,Haryana Steelers Won by 1 Pts,31
+2977,L,18/11/22,31,GUJ,38,1,BLR,45,,Bengaluru Bulls Won by 7 Pts,31
+2984,L,21/11/22,30,UP,35,31,GUJ,31,,UP Yoddhas Won by 4 Pts,31
+2989,L,25/11/22,31,GUJ,47,2,DEL,50,,Dabang Delhi K.C. Won by 3 Pts,31
+2995,L,27/11/22,29,CHE,42,31,GUJ,39,,Tamil Thalaivas Won by 3 Pts,31
+2999,W,29/11/22,7,PUNE,39,31,GUJ,51,,Gujarat Giants Won by 12 Pts,31
+3004,W,02/12/22,6,PAT,34,31,GUJ,40,,Gujarat Giants Won by 6 Pts,31
+3009,W,04/12/22,5,MUM,36,31,GUJ,38,,Gujarat Giants Won by 2 Pts,31
+3014,W,06/12/22,31,GUJ,44,8,HYD,30,,Gujarat Giants Won by 14 Pts,31
+3019,,09/12/22,31,GUJ,51,3,JAI,51,,,31
+2892,L,07/10/22,2,DEL,41,5,MUM,27,,Dabang Delhi K.C. Won by 14 Pts,5
+2901,W,10/10/22,5,MUM,30,30,UP,23,,U Mumba Won by 7 Pts,5
+2907,W,14/10/22,29,CHE,32,5,MUM,39,,U Mumba Won by 7 Pts,5
+2913,L,16/10/22,7,PUNE,30,5,MUM,28,,Puneri Paltan Won by 2 Pts,5
+2921,W,21/10/22,5,MUM,32,28,HAR,31,,U Mumba Won by 1 Pts,5
+2924,L,22/10/22,5,MUM,32,1,BLR,42,,Bengaluru Bulls Won by 10 Pts,5
+2931,W,26/10/22,31,GUJ,29,5,MUM,37,,U Mumba Won by 8 Pts,5
+2938,W,29/10/22,4,KOL,25,5,MUM,36,,U Mumba Won by 11 Pts,5
+2945,W,02/11/22,5,MUM,40,8,HYD,37,,U Mumba Won by 3 Pts,5
+2947,L,04/11/22,6,PAT,34,5,MUM,31,,Patna Pirates Won by 3 Pts,5
+2955,L,07/11/22,5,MUM,39,3,JAI,42,,Jaipur Pink Panthers Won by 3 Pts,5
+2962,W,11/11/22,5,MUM,34,7,PUNE,33,,U Mumba Won by 1 Pts,5
+2967,W,13/11/22,5,MUM,36,6,PAT,23,,U Mumba Won by 13 Pts,5
+2971,L,15/11/22,3,JAI,32,5,MUM,22,,Jaipur Pink Panthers Won by 10 Pts,5
+2979,L,19/11/22,8,HYD,32,5,MUM,26,,Telugu Titans Won by 6 Pts,5
+2985,L,22/11/22,5,MUM,20,29,CHE,34,,Tamil Thalaivas Won by 14 Pts,5
+2992,W,26/11/22,5,MUM,49,4,KOL,41,,U Mumba Won by 8 Pts,5
+3000,L,29/11/22,28,HAR,35,5,MUM,33,,Haryana Steelers Won by 2 Pts,5
+3003,L,02/12/22,30,UP,38,5,MUM,28,,UP Yoddhas Won by 10 Pts,5
+3009,L,04/12/22,5,MUM,36,31,GUJ,38,,Gujarat Giants Won by 2 Pts,5
+3013,L,06/12/22,5,MUM,24,2,DEL,41,,Dabang Delhi K.C. Won by 17 Pts,5
+3021,W,10/12/22,1,BLR,30,5,MUM,36,,U Mumba Won by 6 Pts,5
+2895,,08/10/22,6,PAT,34,7,PUNE,34,,,6
+2898,L,09/10/22,3,JAI,35,6,PAT,30,,Jaipur Pink Panthers Won by 5 Pts,6
+2904,L,11/10/22,6,PAT,21,8,HYD,30,,Telugu Titans Won by 9 Pts,6
+2912,L,15/10/22,4,KOL,54,6,PAT,26,,Bengal Warriorz Won by 28 Pts,6
+2915,L,17/10/22,29,CHE,33,6,PAT,32,,Tamil Thalaivas Won by 1 Pts,6
+2923,W,21/10/22,6,PAT,37,2,DEL,33,,Patna Pirates Won by 4 Pts,6
+2927,,23/10/22,1,BLR,31,6,PAT,31,,,6
+2935,W,28/10/22,6,PAT,34,30,UP,29,,Patna Pirates Won by 5 Pts,6
+2941,W,31/10/22,31,GUJ,28,6,PAT,34,,Patna Pirates Won by 6 Pts,6
+2947,W,04/11/22,6,PAT,34,5,MUM,31,,Patna Pirates Won by 3 Pts,6
+2956,W,07/11/22,6,PAT,41,28,HAR,32,,Patna Pirates Won by 9 Pts,6
+2963,W,11/11/22,6,PAT,37,3,JAI,30,,Patna Pirates Won by 7 Pts,6
+2967,L,13/11/22,5,MUM,36,6,PAT,23,,U Mumba Won by 13 Pts,6
+2973,,16/11/22,6,PAT,33,29,CHE,33,,,6
+2980,L,19/11/22,2,DEL,30,6,PAT,27,,Dabang Delhi K.C. Won by 3 Pts,6
+2986,W,22/11/22,8,HYD,35,6,PAT,36,,Patna Pirates Won by 1 Pts,6
+2991,L,25/11/22,28,HAR,33,6,PAT,23,,Haryana Steelers Won by 10 Pts,6
+2994,L,26/11/22,30,UP,35,6,PAT,33,,UP Yoddhas Won by 2 Pts,6
+3004,L,02/12/22,6,PAT,34,31,GUJ,40,,Gujarat Giants Won by 6 Pts,6
+3011,L,05/12/22,7,PUNE,44,6,PAT,30,,Puneri Paltan Won by 14 Pts,6
+3015,L,07/12/22,6,PAT,44,1,BLR,57,,Bengaluru Bulls Won by 13 Pts,6
+3023,W,10/12/22,6,PAT,49,4,KOL,38,,Patna Pirates Won by 11 Pts,6
+2897,L,08/10/22,4,KOL,33,28,HAR,41,,Haryana Steelers Won by 8 Pts,4
+2899,W,09/10/22,8,HYD,25,4,KOL,45,,Bengal Warriorz Won by 20 Pts,4
+2905,W,12/10/22,1,BLR,33,4,KOL,42,,Bengal Warriorz Won by 9 Pts,4
+2912,W,15/10/22,4,KOL,54,6,PAT,26,,Bengal Warriorz Won by 28 Pts,4
+2917,L,18/10/22,4,KOL,24,3,JAI,39,,Jaipur Pink Panthers Won by 15 Pts,4
+2922,L,21/10/22,7,PUNE,27,4,KOL,25,,Puneri Paltan Won by 2 Pts,4
+2932,W,26/10/22,2,DEL,30,4,KOL,35,,Bengal Warriorz Won by 5 Pts,4
+2938,L,29/10/22,4,KOL,25,5,MUM,36,,U Mumba Won by 11 Pts,4
+2946,,02/11/22,4,KOL,41,29,CHE,41,,,4
+2950,W,05/11/22,31,GUJ,40,4,KOL,45,,Bengal Warriorz Won by 5 Pts,4
+2957,,08/11/22,4,KOL,41,30,UP,41,,,4
+2964,W,12/11/22,4,KOL,46,31,GUJ,27,,Bengal Warriorz Won by 19 Pts,4
+2969,L,14/11/22,4,KOL,27,7,PUNE,43,,Puneri Paltan Won by 16 Pts,4
+2976,W,18/11/22,4,KOL,36,8,HYD,28,,Bengal Warriorz Won by 8 Pts,4
+2983,L,21/11/22,29,CHE,35,4,KOL,30,,Tamil Thalaivas Won by 5 Pts,4
+2988,W,23/11/22,4,KOL,41,1,BLR,38,,Bengal Warriorz Won by 3 Pts,4
+2992,L,26/11/22,5,MUM,49,4,KOL,41,,U Mumba Won by 8 Pts,4
+2997,L,28/11/22,30,UP,33,4,KOL,32,,UP Yoddhas Won by 1 Pts,4
+3005,L,02/12/22,28,HAR,32,4,KOL,26,,Haryana Steelers Won by 6 Pts,4
+3008,L,03/12/22,3,JAI,57,4,KOL,31,,Jaipur Pink Panthers Won by 26 Pts,4
+3017,,08/12/22,4,KOL,46,2,DEL,46,,,4
+3023,L,10/12/22,6,PAT,49,4,KOL,38,,Patna Pirates Won by 11 Pts,4
+2893,L,07/10/22,1,BLR,34,8,HYD,29,,Bengaluru Bulls Won by 5 Pts,8
+2899,L,09/10/22,8,HYD,25,4,KOL,45,,Bengal Warriorz Won by 20 Pts,8
+2904,W,11/10/22,6,PAT,21,8,HYD,30,,Telugu Titans Won by 9 Pts,8
+2911,L,15/10/22,8,HYD,26,2,DEL,46,,Dabang Delhi K.C. Won by 20 Pts,8
+2918,L,18/10/22,8,HYD,25,7,PUNE,26,,Puneri Paltan Won by 1 Pts,8
+2925,L,22/10/22,3,JAI,51,8,HYD,27,,Jaipur Pink Panthers Won by 24 Pts,8
+2930,L,25/10/22,8,HYD,24,28,HAR,43,,Haryana Steelers Won by 19 Pts,8
+2937,L,29/10/22,8,HYD,19,31,GUJ,30,,Gujarat Giants Won by 11 Pts,8
+2942,L,31/10/22,30,UP,43,8,HYD,24,,UP Yoddhas Won by 19 Pts,8
+2945,L,02/11/22,5,MUM,40,8,HYD,37,,U Mumba Won by 3 Pts,8
+2951,L,05/11/22,29,CHE,39,8,HYD,31,,Tamil Thalaivas Won by 8 Pts,8
+2958,L,08/11/22,2,DEL,40,8,HYD,33,,Dabang Delhi K.C. Won by 7 Pts,8
+2965,L,12/11/22,8,HYD,30,30,UP,41,,UP Yoddhas Won by 11 Pts,8
+2972,L,15/11/22,8,HYD,38,1,BLR,49,,Bengaluru Bulls Won by 11 Pts,8
+2976,L,18/11/22,4,KOL,36,8,HYD,28,,Bengal Warriorz Won by 8 Pts,8
+2979,W,19/11/22,8,HYD,32,5,MUM,26,,Telugu Titans Won by 6 Pts,8
+2986,L,22/11/22,8,HYD,35,6,PAT,36,,Patna Pirates Won by 1 Pts,8
+2993,L,26/11/22,7,PUNE,38,8,HYD,25,,Puneri Paltan Won by 13 Pts,8
+2998,L,28/11/22,8,HYD,28,3,JAI,48,,Jaipur Pink Panthers Won by 20 Pts,8
+3007,L,03/12/22,8,HYD,24,29,CHE,52,,Tamil Thalaivas Won by 28 Pts,8
+3014,L,06/12/22,31,GUJ,44,8,HYD,30,,Gujarat Giants Won by 14 Pts,8
+3018,L,08/12/22,28,HAR,50,8,HYD,33,,Haryana Steelers Won by 17 Pts,8
