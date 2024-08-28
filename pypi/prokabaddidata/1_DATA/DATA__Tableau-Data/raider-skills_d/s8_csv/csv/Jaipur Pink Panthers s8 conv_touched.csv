@@ -1,0 +1,45 @@
+Counter Action Skill,Successful Raids,,
+Release,59,,
+Struggle,34,,
+Out Turn,19,,
+In Turn,10,,
+Jump,5,,
+Create Gap,5,,
+Dubki,2,,
+,,,
+Raider Success rate,,,
+Raider Name,Total Raids,Successful Raids,
+Arjun Deshwal,421,226,54%
+Deepak Hooda,281,105,37%
+Nitin Rawal,47,4,9%
+Naveen,45,9,20%
+Sachin Narwal,30,13,43%
+Brijendra Singh Chaudhary,29,13,45%
+Amit Nagar,18,5,28%
+Ashok,6,2,33%
+Amirhossein Maleki,5,4,80%
+Amin Nosrati,5,0,0%
+Vishal Lather,2,0,0%
+Sushil Gulia,2,0,0%
+Shaul Kumar,2,0,0%
+Deepak Rajendar Singh,1,0,0%
+,,,
+Attacking Skill,Successful Raids,,
+Hand Touch,51,,
+Running Hand Touch,49,,
+Defender self out (lobby shirt pull),14,,
+Toe Touch,23,,
+Side Kick,14,,
+Running Kick,2,,
+Leg Thrust,2,,
+Reverse Kick,1,,
+,,,
+Defensive Skill,Unsuccessful Raids,,
+Ankle Hold,40,,
+Thigh Hold,33,,
+Push,30,,
+Block,22,,
+Dive,17,,
+Body Hold,14,,
+Self-out,11,,
+Chain_def,10,,
