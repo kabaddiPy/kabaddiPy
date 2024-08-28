@@ -7,8 +7,3 @@ Jump,11,12,10,12,8,23,11,17,14,13,11,11
 Create Gap,11,8,14,12,11,14,4,5,10,12,6,9
 In Turn,3,4,7,12,15,10,15,14,11,10,4,5
 Dubki,3,6,9,5,4,10,1,7,5,9,3,4
-Defender self out(lobby),,,1,,,,,,,,,
-Defender self out(lobby s..),,,,,,,,,0,,,
-Running Kick,,,,,,,,,1,,,
-Hand touch,,,,,,,,,1,,,
-Defender selfout(lobby sh..),,,,,,,,,1,,,
