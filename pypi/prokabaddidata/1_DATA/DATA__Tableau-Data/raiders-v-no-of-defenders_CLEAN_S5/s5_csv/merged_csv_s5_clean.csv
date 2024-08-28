@@ -1,0 +1,670 @@
+season,team_name,Raider Name,Number of Defenders,Total Raids,% of Raids,Empty,Successful,Unsuccessful
+PKL-05,Bengal Warriors,Anil Kumar,7,1,100%,,,100.00%
+PKL-05,Bengal Warriors,Bhupender Singh,3,4,5%,75.00%,25.00%,
+PKL-05,Bengal Warriors,Bhupender Singh,4,8,10%,87.50%,,12.50%
+PKL-05,Bengal Warriors,Bhupender Singh,5,22,27%,63.60%,13.60%,22.70%
+PKL-05,Bengal Warriors,Bhupender Singh,6,12,14%,50.00%,41.70%,8.30%
+PKL-05,Bengal Warriors,Bhupender Singh,7,37,45%,48.60%,18.90%,32.40%
+PKL-05,Bengal Warriors,Deepak Narwal,1,1,1%,,100.00%,
+PKL-05,Bengal Warriors,Deepak Narwal,2,4,2%,,75.00%,25.00%
+PKL-05,Bengal Warriors,Deepak Narwal,3,11,6%,36.40%,45.50%,18.20%
+PKL-05,Bengal Warriors,Deepak Narwal,4,19,10%,31.60%,36.80%,31.60%
+PKL-05,Bengal Warriors,Deepak Narwal,5,42,22%,57.10%,14.30%,28.60%
+PKL-05,Bengal Warriors,Deepak Narwal,6,39,21%,30.80%,41.00%,28.20%
+PKL-05,Bengal Warriors,Deepak Narwal,7,71,38%,36.60%,49.30%,14.10%
+PKL-05,Bengal Warriors,Jang Kun Lee,1,1,0%,,100.00%,
+PKL-05,Bengal Warriors,Jang Kun Lee,2,9,4%,22.20%,66.70%,11.10%
+PKL-05,Bengal Warriors,Jang Kun Lee,3,7,3%,28.60%,28.60%,42.90%
+PKL-05,Bengal Warriors,Jang Kun Lee,4,14,7%,50.00%,35.70%,14.30%
+PKL-05,Bengal Warriors,Jang Kun Lee,5,32,15%,50.00%,18.80%,31.30%
+PKL-05,Bengal Warriors,Jang Kun Lee,6,44,21%,43.20%,45.50%,11.40%
+PKL-05,Bengal Warriors,Jang Kun Lee,7,105,50%,37.10%,40.00%,22.90%
+PKL-05,Bengal Warriors,Kuldeep,4,1,33%,100.00%,,
+PKL-05,Bengal Warriors,Kuldeep,5,2,67%,,,100.00%
+PKL-05,Bengal Warriors,Maninder Singh,1,4,1%,,100.00%,
+PKL-05,Bengal Warriors,Maninder Singh,2,26,7%,7.70%,80.80%,11.50%
+PKL-05,Bengal Warriors,Maninder Singh,3,20,5%,40.00%,45.00%,15.00%
+PKL-05,Bengal Warriors,Maninder Singh,4,29,8%,55.20%,34.50%,10.30%
+PKL-05,Bengal Warriors,Maninder Singh,5,51,14%,60.80%,15.70%,23.50%
+PKL-05,Bengal Warriors,Maninder Singh,6,89,24%,31.50%,43.80%,24.70%
+PKL-05,Bengal Warriors,Maninder Singh,7,148,40%,37.80%,46.60%,15.50%
+PKL-05,Bengal Warriors,Rahul Kumar,3,1,100%,100.00%,,
+PKL-05,Bengal Warriors,Ran Singh,1,1,4%,,100.00%,
+PKL-05,Bengal Warriors,Ran Singh,2,1,4%,,100.00%,
+PKL-05,Bengal Warriors,Ran Singh,4,2,7%,100.00%,,
+PKL-05,Bengal Warriors,Ran Singh,5,1,4%,100.00%,,
+PKL-05,Bengal Warriors,Ran Singh,6,5,19%,40.00%,40.00%,20.00%
+PKL-05,Bengal Warriors,Ran Singh,7,17,63%,41.20%,35.30%,23.50%
+PKL-05,Bengal Warriors,Ravindra Ramesh Kumawat,3,1,14%,,,100.00%
+PKL-05,Bengal Warriors,Ravindra Ramesh Kumawat,4,1,14%,,,100.00%
+PKL-05,Bengal Warriors,Ravindra Ramesh Kumawat,5,3,43%,66.70%,33.30%,
+PKL-05,Bengal Warriors,Ravindra Ramesh Kumawat,7,2,29%,,50.00%,50.00%
+PKL-05,Bengal Warriors,Shrikant Tewthia,6,2,40%,50.00%,,50.00%
+PKL-05,Bengal Warriors,Shrikant Tewthia,7,3,60%,,66.70%,33.30%
+PKL-05,Bengal Warriors,Surjeet Singh,3,1,2%,100.00%,,
+PKL-05,Bengal Warriors,Surjeet Singh,4,3,6%,100.00%,,
+PKL-05,Bengal Warriors,Surjeet Singh,5,10,19%,100.00%,,
+PKL-05,Bengal Warriors,Surjeet Singh,6,13,25%,92.30%,7.70%,
+PKL-05,Bengal Warriors,Surjeet Singh,7,25,48%,88.00%,8.00%,4.00%
+PKL-05,Bengal Warriors,Vinod Kumar,3,6,5%,100.00%,,
+PKL-05,Bengal Warriors,Vinod Kumar,4,16,13%,25.00%,37.50%,37.50%
+PKL-05,Bengal Warriors,Vinod Kumar,5,48,39%,56.30%,25.00%,18.80%
+PKL-05,Bengal Warriors,Vinod Kumar,6,24,20%,58.30%,12.50%,29.20%
+PKL-05,Bengal Warriors,Vinod Kumar,7,29,24%,44.80%,24.10%,31.00%
+PKL-05,Bengal Warriors,Virender,4,1,9%,,,100.00%
+PKL-05,Bengal Warriors,Virender,5,4,36%,25.00%,25.00%,50.00%
+PKL-05,Bengal Warriors,Virender,6,2,18%,50.00%,50.00%,
+PKL-05,Bengal Warriors,Virender,7,4,36%,,25.00%,75.00%
+PKL-05,Dabang Delhi,Abolfazl Maghsodlou,2,6,3%,33.30%,50.00%,16.70%
+PKL-05,Dabang Delhi,Abolfazl Maghsodlou,3,11,5%,54.50%,36.40%,9.10%
+PKL-05,Dabang Delhi,Abolfazl Maghsodlou,4,21,9%,52.40%,19.00%,28.60%
+PKL-05,Dabang Delhi,Abolfazl Maghsodlou,5,46,20%,56.50%,26.10%,17.40%
+PKL-05,Dabang Delhi,Abolfazl Maghsodlou,6,56,24%,41.10%,37.50%,21.40%
+PKL-05,Dabang Delhi,Abolfazl Maghsodlou,7,90,39%,38.90%,40.00%,21.10%
+PKL-05,Dabang Delhi,Anand Patil,3,4,4%,25.00%,,75.00%
+PKL-05,Dabang Delhi,Anand Patil,4,13,13%,53.80%,,46.20%
+PKL-05,Dabang Delhi,Anand Patil,5,22,22%,54.50%,18.20%,27.30%
+PKL-05,Dabang Delhi,Anand Patil,6,20,20%,45.00%,30.00%,25.00%
+PKL-05,Dabang Delhi,Anand Patil,7,43,42%,39.50%,34.90%,25.60%
+PKL-05,Dabang Delhi,Meraj Sheykh,1,2,1%,,100.00%,
+PKL-05,Dabang Delhi,Meraj Sheykh,2,17,6%,11.80%,52.90%,35.30%
+PKL-05,Dabang Delhi,Meraj Sheykh,3,23,8%,39.10%,43.50%,17.40%
+PKL-05,Dabang Delhi,Meraj Sheykh,4,32,11%,43.80%,34.40%,21.90%
+PKL-05,Dabang Delhi,Meraj Sheykh,5,46,16%,60.90%,23.90%,15.20%
+PKL-05,Dabang Delhi,Meraj Sheykh,6,59,20%,55.90%,27.10%,16.90%
+PKL-05,Dabang Delhi,Meraj Sheykh,7,113,39%,67.30%,17.70%,15.00%
+PKL-05,Dabang Delhi,Nilesh Shinde,5,3,21%,100.00%,,
+PKL-05,Dabang Delhi,Nilesh Shinde,6,3,21%,33.30%,33.30%,33.30%
+PKL-05,Dabang Delhi,Nilesh Shinde,7,8,57%,75.00%,12.50%,12.50%
+PKL-05,Dabang Delhi,R. Sriram,2,1,1%,,100.00%,
+PKL-05,Dabang Delhi,R. Sriram,3,7,9%,42.90%,28.60%,28.60%
+PKL-05,Dabang Delhi,R. Sriram,4,8,10%,50.00%,25.00%,25.00%
+PKL-05,Dabang Delhi,R. Sriram,5,10,13%,10.00%,20.00%,70.00%
+PKL-05,Dabang Delhi,R. Sriram,6,15,19%,40.00%,26.70%,33.30%
+PKL-05,Dabang Delhi,R. Sriram,7,38,48%,34.20%,47.40%,18.40%
+PKL-05,Dabang Delhi,Ravi Dalal,4,1,4%,100.00%,,
+PKL-05,Dabang Delhi,Ravi Dalal,5,7,25%,85.70%,14.30%,
+PKL-05,Dabang Delhi,Ravi Dalal,6,6,21%,66.70%,,33.30%
+PKL-05,Dabang Delhi,Ravi Dalal,7,14,50%,64.30%,21.40%,14.30%
+PKL-05,Dabang Delhi,Rohit Baliyan,3,7,4%,85.70%,,14.30%
+PKL-05,Dabang Delhi,Rohit Baliyan,4,9,5%,55.60%,33.30%,11.10%
+PKL-05,Dabang Delhi,Rohit Baliyan,5,24,15%,70.80%,8.30%,20.80%
+PKL-05,Dabang Delhi,Rohit Baliyan,6,55,33%,25.50%,49.10%,25.50%
+PKL-05,Dabang Delhi,Rohit Baliyan,7,70,42%,48.60%,32.90%,18.60%
+PKL-05,Dabang Delhi,Rupesh Tomar,5,1,14%,100.00%,,
+PKL-05,Dabang Delhi,Rupesh Tomar,7,6,86%,100.00%,,
+PKL-05,Dabang Delhi,Satpal,5,1,14%,100.00%,,
+PKL-05,Dabang Delhi,Satpal,7,6,86%,33.30%,,66.70%
+PKL-05,Dabang Delhi,Shubham Ashok Palkar,4,1,4%,,,100.00%
+PKL-05,Dabang Delhi,Shubham Ashok Palkar,5,5,21%,80.00%,,20.00%
+PKL-05,Dabang Delhi,Shubham Ashok Palkar,6,5,21%,20.00%,60.00%,20.00%
+PKL-05,Dabang Delhi,Shubham Ashok Palkar,7,13,54%,38.50%,23.10%,38.50%
+PKL-05,Dabang Delhi,Sunil,3,1,50%,100.00%,,
+PKL-05,Dabang Delhi,Sunil,7,1,50%,,,100.00%
+PKL-05,Dabang Delhi,Suresu Kumar,1,1,8%,100.00%,,
+PKL-05,Dabang Delhi,Suresu Kumar,5,4,33%,75.00%,,25.00%
+PKL-05,Dabang Delhi,Suresu Kumar,6,2,17%,50.00%,50.00%,
+PKL-05,Dabang Delhi,Suresu Kumar,7,5,42%,40.00%,20.00%,40.00%
+PKL-05,Dabang Delhi,Vipin Malik,6,2,67%,,,100.00%
+PKL-05,Dabang Delhi,Vipin Malik,7,1,33%,,,100.00%
+PKL-05,Dabang Delhi,Vishal,4,1,14%,100.00%,,
+PKL-05,Dabang Delhi,Vishal,5,2,29%,50.00%,50.00%,
+PKL-05,Dabang Delhi,Vishal,7,4,57%,25.00%,,75.00%
+PKL-05,Dabang Delhi,Yatharth,7,1,100%,100.00%,,
+PKL-05,Gujarat Fortunegiants,Abozar Mighani,5,2,33%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,7,4,67%,75.00%,,25.00%
+PKL-05,Gujarat Fortunegiants,Amit Rathi,5,1,33%,,,100.00%
+PKL-05,Gujarat Fortunegiants,,6,2,67%,100.00%,,
+PKL-05,Gujarat Fortunegiants,Chandran Ranjit,2,10,8%,30.00%,70.00%,
+PKL-05,Gujarat Fortunegiants,,3,20,16%,45.00%,25.00%,30.00%
+PKL-05,Gujarat Fortunegiants,,4,13,11%,38.50%,46.20%,15.40%
+PKL-05,Gujarat Fortunegiants,,5,36,30%,47.20%,19.40%,33.30%
+PKL-05,Gujarat Fortunegiants,,6,19,16%,36.80%,47.40%,15.80%
+PKL-05,Gujarat Fortunegiants,,7,24,20%,41.70%,41.70%,16.70%
+PKL-05,Gujarat Fortunegiants,Fazel Atrachali,3,1,9%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,4,4,36%,50.00%,,50.00%
+PKL-05,Gujarat Fortunegiants,,5,3,27%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,7,3,27%,100.00%,,
+PKL-05,Gujarat Fortunegiants,Mahendra Rajput,1,2,2%,,100.00%,
+PKL-05,Gujarat Fortunegiants,,2,3,3%,33.30%,33.30%,33.30%
+PKL-05,Gujarat Fortunegiants,,3,10,9%,50.00%,40.00%,10.00%
+PKL-05,Gujarat Fortunegiants,,4,13,12%,76.90%,15.40%,7.70%
+PKL-05,Gujarat Fortunegiants,,5,23,21%,43.50%,26.10%,30.40%
+PKL-05,Gujarat Fortunegiants,,6,21,19%,38.10%,47.60%,14.30%
+PKL-05,Gujarat Fortunegiants,,7,37,34%,21.60%,51.40%,27.00%
+PKL-05,Gujarat Fortunegiants,Mahipal Narwal,6,1,100%,100.00%,,
+PKL-05,Gujarat Fortunegiants,Manoj Kumar,4,1,50%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,7,1,50%,100.00%,,
+PKL-05,Gujarat Fortunegiants,Pawan Sehrawat,2,3,13%,33.30%,33.30%,33.30%
+PKL-05,Gujarat Fortunegiants,,3,4,17%,50.00%,25.00%,25.00%
+PKL-05,Gujarat Fortunegiants,,4,4,17%,25.00%,25.00%,50.00%
+PKL-05,Gujarat Fortunegiants,,5,4,17%,25.00%,25.00%,50.00%
+PKL-05,Gujarat Fortunegiants,,6,3,13%,,,100.00%
+PKL-05,Gujarat Fortunegiants,,7,6,25%,16.70%,16.70%,66.70%
+PKL-05,Gujarat Fortunegiants,Rakesh Narwal,1,1,2%,,100.00%,
+PKL-05,Gujarat Fortunegiants,,2,4,7%,50.00%,50.00%,
+PKL-05,Gujarat Fortunegiants,,3,4,7%,50.00%,25.00%,25.00%
+PKL-05,Gujarat Fortunegiants,,4,14,25%,78.60%,14.30%,7.10%
+PKL-05,Gujarat Fortunegiants,,5,8,14%,75.00%,12.50%,12.50%
+PKL-05,Gujarat Fortunegiants,,6,12,21%,58.30%,25.00%,16.70%
+PKL-05,Gujarat Fortunegiants,,7,13,23%,38.50%,38.50%,23.10%
+PKL-05,Gujarat Fortunegiants,Rohit Gulia,2,9,6%,11.10%,44.40%,44.40%
+PKL-05,Gujarat Fortunegiants,,3,19,12%,47.40%,36.80%,15.80%
+PKL-05,Gujarat Fortunegiants,,4,23,14%,52.20%,4.30%,43.50%
+PKL-05,Gujarat Fortunegiants,,5,44,28%,63.60%,11.40%,25.00%
+PKL-05,Gujarat Fortunegiants,,6,29,18%,69.00%,17.20%,13.80%
+PKL-05,Gujarat Fortunegiants,,7,36,23%,61.10%,30.60%,8.30%
+PKL-05,Gujarat Fortunegiants,Sachin,2,9,3%,11.10%,55.60%,33.30%
+PKL-05,Gujarat Fortunegiants,,3,30,10%,40.00%,40.00%,20.00%
+PKL-05,Gujarat Fortunegiants,,4,40,14%,22.50%,32.50%,45.00%
+PKL-05,Gujarat Fortunegiants,Sachin,5,68,23%,41.20%,38.20%,20.60%
+PKL-05,Gujarat Fortunegiants,,6,67,23%,26.90%,52.20%,20.90%
+PKL-05,Gujarat Fortunegiants,,7,81,27%,27.20%,53.10%,19.80%
+PKL-05,Gujarat Fortunegiants,Sukesh Hegde,1,7,3%,,100.00%,
+PKL-05,Gujarat Fortunegiants,,2,6,3%,33.30%,50.00%,16.70%
+PKL-05,Gujarat Fortunegiants,,3,23,10%,73.90%,17.40%,8.70%
+PKL-05,Gujarat Fortunegiants,,4,31,13%,80.60%,6.50%,12.90%
+PKL-05,Gujarat Fortunegiants,,5,50,21%,78.00%,8.00%,14.00%
+PKL-05,Gujarat Fortunegiants,,6,50,21%,54.00%,38.00%,8.00%
+PKL-05,Gujarat Fortunegiants,,7,68,29%,54.40%,29.40%,16.20%
+PKL-05,Gujarat Fortunegiants,Sunil Kumar,1,1,3%,,100.00%,
+PKL-05,Gujarat Fortunegiants,,3,1,3%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,4,1,3%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,5,6,19%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,6,7,23%,100.00%,,
+PKL-05,Gujarat Fortunegiants,,7,15,48%,93.30%,,6.70%
+PKL-05,Haryana Steelers,Ashish Chhokar,3,4,13%,25.00%,25.00%,50.00%
+PKL-05,Haryana Steelers,Ashish Chhokar,4,7,22%,14.30%,42.90%,42.90%
+PKL-05,Haryana Steelers,Ashish Chhokar,5,10,31%,70.00%,10.00%,20.00%
+PKL-05,Haryana Steelers,Ashish Chhokar,6,5,16%,80.00%,20.00%,
+PKL-05,Haryana Steelers,Ashish Chhokar,7,6,19%,83.30%,,16.70%
+PKL-05,Haryana Steelers,David Mosambayi,2,2,33%,50.00%,,50.00%
+PKL-05,Haryana Steelers,David Mosambayi,4,2,33%,50.00%,50.00%,
+PKL-05,Haryana Steelers,David Mosambayi,5,1,17%,100.00%,,
+PKL-05,Haryana Steelers,David Mosambayi,6,1,17%,,100.00%,
+PKL-05,Haryana Steelers,Deepak Kumar,3,1,6%,100.00%,,
+PKL-05,Haryana Steelers,Deepak Kumar,4,3,18%,33.30%,,66.70%
+PKL-05,Haryana Steelers,Deepak Kumar,5,4,24%,25.00%,25.00%,50.00%
+PKL-05,Haryana Steelers,Deepak Kumar,6,5,29%,40.00%,40.00%,20.00%
+PKL-05,Haryana Steelers,Deepak Kumar,7,4,24%,100.00%,,
+PKL-05,Haryana Steelers,Deepak Kumar Dahiya,1,1,1%,,100.00%,
+PKL-05,Haryana Steelers,Deepak Kumar Dahiya,2,5,3%,20.00%,40.00%,40.00%
+PKL-05,Haryana Steelers,Deepak Kumar Dahiya,3,17,9%,76.50%,11.80%,11.80%
+PKL-05,Haryana Steelers,Deepak Kumar Dahiya,4,19,10%,84.20%,15.80%,
+PKL-05,Haryana Steelers,Deepak Kumar Dahiya,5,36,18%,63.90%,16.70%,19.40%
+PKL-05,Haryana Steelers,Deepak Kumar Dahiya,6,46,23%,39.10%,39.10%,21.70%
+PKL-05,Haryana Steelers,Deepak Kumar Dahiya,7,72,37%,36.10%,41.70%,22.20%
+PKL-05,Haryana Steelers,Khomsan Thongkham,5,1,50%,,,100.00%
+PKL-05,Haryana Steelers,Khomsan Thongkham,7,1,50%,,,100.00%
+PKL-05,Haryana Steelers,Kuldeep Singh,7,1,100%,,,100.00%
+PKL-05,Haryana Steelers,Mayur Shivtarkar,2,1,4%,,100.00%,
+PKL-05,Haryana Steelers,Mayur Shivtarkar,3,1,4%,,100.00%,
+PKL-05,Haryana Steelers,Mayur Shivtarkar,4,5,20%,,40.00%,60.00%
+PKL-05,Haryana Steelers,Mayur Shivtarkar,5,6,24%,33.30%,,66.70%
+PKL-05,Haryana Steelers,Mayur Shivtarkar,6,5,20%,100.00%,,
+PKL-05,Haryana Steelers,Mayur Shivtarkar,7,7,28%,14.30%,28.60%,57.10%
+PKL-05,Haryana Steelers,Mohit Chhillar,4,2,22%,100.00%,,
+PKL-05,Haryana Steelers,Mohit Chhillar,6,1,11%,100.00%,,
+PKL-05,Haryana Steelers,Mohit Chhillar,7,6,67%,66.70%,16.70%,16.70%
+PKL-05,Haryana Steelers,Neeraj Kumar,7,1,100%,,,100.00%
+PKL-05,Haryana Steelers,Parmod Narwal,2,1,8%,,,100.00%
+PKL-05,Haryana Steelers,Parmod Narwal,3,1,8%,100.00%,,
+PKL-05,Haryana Steelers,Parmod Narwal,5,4,33%,50.00%,,50.00%
+PKL-05,Haryana Steelers,Parmod Narwal,6,2,17%,100.00%,,
+PKL-05,Haryana Steelers,Parmod Narwal,7,4,33%,100.00%,,
+PKL-05,Haryana Steelers,Prashanth Kumar Rai,1,1,1%,,100.00%,
+PKL-05,Haryana Steelers,Prashanth Kumar Rai,2,5,3%,20.00%,60.00%,20.00%
+PKL-05,Haryana Steelers,Prashanth Kumar Rai,3,13,9%,61.50%,38.50%,
+PKL-05,Haryana Steelers,Prashanth Kumar Rai,4,12,8%,50.00%,25.00%,25.00%
+PKL-05,Haryana Steelers,Prashanth Kumar Rai,5,27,18%,55.60%,29.60%,14.80%
+PKL-05,Haryana Steelers,Prashanth Kumar Rai,6,34,23%,35.30%,52.90%,11.80%
+PKL-05,Haryana Steelers,Prashanth Kumar Rai,7,57,38%,31.60%,43.90%,24.60%
+PKL-05,Haryana Steelers,Rakesh Singh Kumar,6,1,33%,100.00%,,
+PKL-05,Haryana Steelers,Rakesh Singh Kumar,7,2,67%,100.00%,,
+PKL-05,Haryana Steelers,Surender Nada,3,2,9%,50.00%,,50.00%
+PKL-05,Haryana Steelers,Surender Nada,4,1,5%,100.00%,,
+PKL-05,Haryana Steelers,Surender Nada,5,6,27%,83.30%,,16.70%
+PKL-05,Haryana Steelers,Surender Nada,6,3,14%,66.70%,33.30%,
+PKL-05,Haryana Steelers,Surender Nada,7,10,45%,90.00%,10.00%,
+PKL-05,Haryana Steelers,Surjeet Singh,3,3,2%,66.70%,,33.30%
+PKL-05,Haryana Steelers,Surjeet Singh,4,6,4%,66.70%,16.70%,16.70%
+PKL-05,Haryana Steelers,Surjeet Singh,5,19,13%,100.00%,,
+PKL-05,Haryana Steelers,Surjeet Singh,6,48,33%,41.70%,35.40%,22.90%
+PKL-05,Haryana Steelers,Surjeet Singh,7,70,48%,25.70%,41.40%,32.90%
+PKL-05,Haryana Steelers,Vikas,5,1,50%,100.00%,,
+PKL-05,Haryana Steelers,Vikas,7,1,50%,,,100.00%
+PKL-05,Haryana Steelers,Vikash Khandola,2,5,4%,40.00%,20.00%,40.00%
+PKL-05,Haryana Steelers,Vikash Khandola,3,13,10%,23.10%,38.50%,38.50%
+PKL-05,Haryana Steelers,Vikash Khandola,4,19,14%,47.40%,31.60%,21.10%
+PKL-05,Haryana Steelers,Vikash Khandola,5,37,27%,45.90%,29.70%,24.30%
+PKL-05,Haryana Steelers,Vikash Khandola,6,19,14%,47.40%,36.80%,15.80%
+PKL-05,Haryana Steelers,Vikash Khandola,7,43,32%,51.20%,34.90%,14.00%
+PKL-05,Haryana Steelers,Wazir Singh,1,3,1%,,100.00%,
+PKL-05,Haryana Steelers,Wazir Singh,2,13,5%,,92.30%,7.70%
+PKL-05,Haryana Steelers,Wazir Singh,3,20,7%,65.00%,20.00%,15.00%
+PKL-05,Haryana Steelers,Wazir Singh,4,28,10%,75.00%,10.70%,14.30%
+PKL-05,Haryana Steelers,Wazir Singh,5,52,19%,61.50%,25.00%,13.50%
+PKL-05,Haryana Steelers,Wazir Singh,6,60,22%,53.30%,26.70%,20.00%
+PKL-05,Haryana Steelers,Wazir Singh,7,95,35%,43.20%,41.10%,15.80%
+PKL-05,Jaipur Pink Panthers,Abhishek N,7,2,100%,50.00%,,50.00%
+PKL-05,Jaipur Pink Panthers,Ajit Singh,4,7,12%,57.10%,28.60%,14.30%
+PKL-05,Jaipur Pink Panthers,Ajit Singh,5,16,28%,75.00%,18.80%,6.30%
+PKL-05,Jaipur Pink Panthers,Ajit Singh,6,11,19%,45.50%,36.40%,18.20%
+PKL-05,Jaipur Pink Panthers,Ajit Singh,7,23,40%,47.80%,34.80%,17.40%
+PKL-05,Jaipur Pink Panthers,Jasvir Singh,1,2,1%,,100.00%,
+PKL-05,Jaipur Pink Panthers,Jasvir Singh,2,16,8%,6.30%,68.80%,25.00%
+PKL-05,Jaipur Pink Panthers,Jasvir Singh,3,18,9%,44.40%,38.90%,16.70%
+PKL-05,Jaipur Pink Panthers,Jasvir Singh,4,32,15%,53.10%,28.10%,18.80%
+PKL-05,Jaipur Pink Panthers,Jasvir Singh,5,36,17%,69.40%,11.10%,19.40%
+PKL-05,Jaipur Pink Panthers,Jasvir Singh,6,39,19%,41.00%,25.60%,33.30%
+PKL-05,Jaipur Pink Panthers,Jasvir Singh,7,67,32%,55.20%,19.40%,25.40%
+PKL-05,Jaipur Pink Panthers,Kamal Kishor,4,3,33%,33.30%,,66.70%
+PKL-05,Jaipur Pink Panthers,Kamal Kishor,5,2,22%,,,100.00%
+PKL-05,Jaipur Pink Panthers,Kamal Kishor,7,4,44%,,,100.00%
+PKL-05,Jaipur Pink Panthers,Manjeet Chhillar,3,1,3%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Manjeet Chhillar,4,3,10%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Manjeet Chhillar,6,8,28%,50.00%,12.50%,37.50%
+PKL-05,Jaipur Pink Panthers,Manjeet Chhillar,7,17,59%,47.10%,17.60%,35.30%
+PKL-05,Jaipur Pink Panthers,Navneet Gautam,4,1,50%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Navneet Gautam,5,1,50%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Nitin Rawal,2,4,3%,,50.00%,50.00%
+PKL-05,Jaipur Pink Panthers,Nitin Rawal,3,17,11%,41.20%,35.30%,23.50%
+PKL-05,Jaipur Pink Panthers,Nitin Rawal,4,19,13%,36.80%,42.10%,21.10%
+PKL-05,Jaipur Pink Panthers,Nitin Rawal,5,25,17%,68.00%,12.00%,20.00%
+PKL-05,Jaipur Pink Panthers,Nitin Rawal,6,23,16%,47.80%,34.80%,17.40%
+PKL-05,Jaipur Pink Panthers,Nitin Rawal,7,60,41%,48.30%,36.70%,15.00%
+PKL-05,Jaipur Pink Panthers,Pawan Kumar,2,5,2%,,80.00%,20.00%
+PKL-05,Jaipur Pink Panthers,Pawan Kumar,3,12,4%,41.70%,41.70%,16.70%
+PKL-05,Jaipur Pink Panthers,Pawan Kumar,4,21,7%,47.60%,14.30%,38.10%
+PKL-05,Jaipur Pink Panthers,Pawan Kumar,5,37,13%,70.30%,10.80%,18.90%
+PKL-05,Jaipur Pink Panthers,Pawan Kumar,6,82,29%,31.70%,39.00%,29.30%
+PKL-05,Jaipur Pink Panthers,Pawan Kumar,7,127,45%,40.20%,38.60%,21.30%
+PKL-05,Jaipur Pink Panthers,Rahul Choudhary,3,2,12%,50.00%,50.00%,
+PKL-05,Jaipur Pink Panthers,Rahul Choudhary,5,3,18%,33.30%,33.30%,33.30%
+PKL-05,Jaipur Pink Panthers,Rahul Choudhary,6,6,35%,16.70%,16.70%,66.70%
+PKL-05,Jaipur Pink Panthers,Rahul Choudhary,7,6,35%,33.30%,33.30%,33.30%
+PKL-05,Jaipur Pink Panthers,Selvamani K,4,2,14%,50.00%,,50.00%
+PKL-05,Jaipur Pink Panthers,Selvamani K,5,1,7%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Selvamani K,6,4,29%,,25.00%,75.00%
+PKL-05,Jaipur Pink Panthers,Selvamani K,7,7,50%,42.90%,28.60%,28.60%
+PKL-05,Jaipur Pink Panthers,Sidharth,3,1,3%,,100.00%,
+PKL-05,Jaipur Pink Panthers,Sidharth,4,7,22%,57.10%,14.30%,28.60%
+PKL-05,Jaipur Pink Panthers,Sidharth,5,10,31%,80.00%,,20.00%
+PKL-05,Jaipur Pink Panthers,Sidharth,6,1,3%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Sidharth,7,13,41%,69.20%,7.70%,23.10%
+PKL-05,Jaipur Pink Panthers,Sunil Siddhgavali,6,1,50%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Sunil Siddhgavali,7,1,50%,100.00%,,
+PKL-05,Jaipur Pink Panthers,Tushar Patil,2,2,1%,,50.00%,50.00%
+PKL-05,Jaipur Pink Panthers,Tushar Patil,3,8,5%,12.50%,50.00%,37.50%
+PKL-05,Jaipur Pink Panthers,Tushar Patil,4,19,12%,47.40%,21.10%,31.60%
+PKL-05,Jaipur Pink Panthers,Tushar Patil,5,54,35%,42.60%,24.10%,33.30%
+PKL-05,Jaipur Pink Panthers,Tushar Patil,6,25,16%,24.00%,44.00%,32.00%
+PKL-05,Jaipur Pink Panthers,Tushar Patil,7,48,31%,41.70%,43.80%,14.60%
+PKL-05,Patna Pirates,Jaideep,5,2,40%,100.00%,,
+PKL-05,Patna Pirates,Jaideep,6,1,20%,100.00%,,
+PKL-05,Patna Pirates,Jaideep,7,2,40%,100.00%,,
+PKL-05,Patna Pirates,Jawahar Dagar,5,2,9%,50.00%,50.00%,
+PKL-05,Patna Pirates,Jawahar Dagar,6,3,13%,,,100.00%
+PKL-05,Patna Pirates,Jawahar Dagar,7,18,78%,77.80%,11.10%,11.10%
+PKL-05,Patna Pirates,Manish,7,2,100%,,,100.00%
+PKL-05,Patna Pirates,Monu Goyat,1,1,0%,,100.00%,
+PKL-05,Patna Pirates,Monu Goyat,2,1,0%,,,100.00%
+PKL-05,Patna Pirates,Monu Goyat,3,15,4%,33.30%,40.00%,26.70%
+PKL-05,Patna Pirates,Monu Goyat,4,40,11%,37.50%,50.00%,12.50%
+PKL-05,Patna Pirates,Monu Goyat,5,75,21%,44.00%,34.70%,21.30%
+PKL-05,Patna Pirates,Monu Goyat,6,76,21%,26.30%,50.00%,23.70%
+PKL-05,Patna Pirates,Monu Goyat,7,157,43%,34.40%,43.90%,21.70%
+PKL-05,Patna Pirates,Pardeep Narwal,1,10,2%,,100.00%,
+PKL-05,Patna Pirates,Pardeep Narwal,2,54,9%,,94.40%,5.60%
+PKL-05,Patna Pirates,Pardeep Narwal,3,59,10%,32.20%,57.60%,10.20%
+PKL-05,Patna Pirates,Pardeep Narwal,4,72,12%,45.80%,34.70%,19.40%
+PKL-05,Patna Pirates,Pardeep Narwal,5,71,12%,59.20%,23.90%,16.90%
+PKL-05,Patna Pirates,Pardeep Narwal,6,119,20%,31.10%,46.20%,22.70%
+PKL-05,Patna Pirates,Pardeep Narwal,7,201,34%,31.80%,42.80%,25.40%
+PKL-05,Patna Pirates,Satish,6,1,100%,100.00%,,
+PKL-05,Patna Pirates,Vijay,3,3,4%,66.70%,33.30%,
+PKL-05,Patna Pirates,Vijay,4,2,2%,100.00%,,
+PKL-05,Patna Pirates,Vijay,5,9,11%,88.90%,11.10%,
+PKL-05,Patna Pirates,Vijay,6,21,25%,57.10%,19.00%,23.80%
+PKL-05,Patna Pirates,Vijay,7,48,58%,66.70%,25.00%,8.30%
+PKL-05,Patna Pirates,Vikas Jaglan,3,2,8%,100.00%,,
+PKL-05,Patna Pirates,Vikas Jaglan,4,1,4%,,,100.00%
+PKL-05,Patna Pirates,Vikas Jaglan,5,2,8%,100.00%,,
+PKL-05,Patna Pirates,Vikas Jaglan,6,3,12%,33.30%,,66.70%
+PKL-05,Patna Pirates,Vikas Jaglan,7,17,68%,35.30%,47.10%,17.60%
+PKL-05,Patna Pirates,Vinod Kumar,3,1,1%,100.00%,,
+PKL-05,Patna Pirates,Vinod Kumar,4,2,3%,50.00%,,50.00%
+PKL-05,Patna Pirates,Vinod Kumar,5,7,9%,42.90%,28.60%,28.60%
+PKL-05,Patna Pirates,Vinod Kumar,6,21,28%,57.10%,19.00%,23.80%
+PKL-05,Patna Pirates,Vinod Kumar,7,44,59%,38.60%,31.80%,29.50%
+PKL-05,Patna Pirates,Vishal Mane,6,1,100%,100.00%,,
+PKL-05,Patna Pirates,Vishnu Uthaman,5,2,29%,50.00%,,50.00%
+PKL-05,Patna Pirates,Vishnu Uthaman,6,4,57%,50.00%,,50.00%
+PKL-05,Patna Pirates,Vishnu Uthaman,7,1,14%,,,100.00%
+PKL-05,Puneri Paltan,Akshay Jadhav,4,2,5%,50.00%,,50.00%
+PKL-05,Puneri Paltan,Akshay Jadhav,5,18,46%,66.70%,5.60%,27.80%
+PKL-05,Puneri Paltan,Akshay Jadhav,6,5,13%,40.00%,40.00%,20.00%
+PKL-05,Puneri Paltan,Akshay Jadhav,7,14,36%,42.90%,42.90%,14.30%
+PKL-05,Puneri Paltan,Deepak Hooda,1,9,3%,,100.00%,
+PKL-05,Puneri Paltan,Deepak Hooda,2,11,3%,9.10%,63.60%,27.30%
+PKL-05,Puneri Paltan,Deepak Hooda,3,32,9%,40.60%,34.40%,25.00%
+PKL-05,Puneri Paltan,Deepak Hooda,4,55,15%,50.90%,25.50%,23.60%
+PKL-05,Puneri Paltan,Deepak Hooda,5,64,18%,62.50%,20.30%,17.20%
+PKL-05,Puneri Paltan,Deepak Hooda,6,87,24%,41.40%,37.90%,20.70%
+PKL-05,Puneri Paltan,Deepak Hooda,7,102,28%,33.30%,44.10%,22.50%
+PKL-05,Puneri Paltan,Dharmaraj Cheralathan,3,2,13%,100.00%,,
+PKL-05,Puneri Paltan,Dharmaraj Cheralathan,4,1,7%,100.00%,,
+PKL-05,Puneri Paltan,Dharmaraj Cheralathan,5,2,13%,100.00%,,
+PKL-05,Puneri Paltan,Dharmaraj Cheralathan,6,3,20%,100.00%,,
+PKL-05,Puneri Paltan,Dharmaraj Cheralathan,7,7,47%,100.00%,,
+PKL-05,Puneri Paltan,Girish Maruti Ernak,3,2,11%,100.00%,,
+PKL-05,Puneri Paltan,Girish Maruti Ernak,4,2,11%,100.00%,,
+PKL-05,Puneri Paltan,Girish Maruti Ernak,5,2,11%,100.00%,,
+PKL-05,Puneri Paltan,Girish Maruti Ernak,6,3,17%,100.00%,,
+PKL-05,Puneri Paltan,Girish Maruti Ernak,7,9,50%,66.70%,11.10%,22.20%
+PKL-05,Puneri Paltan,Monu,3,5,6%,60.00%,40.00%,
+PKL-05,Puneri Paltan,Monu,4,11,14%,81.80%,,18.20%
+PKL-05,Puneri Paltan,Monu,5,22,29%,54.50%,18.20%,27.30%
+PKL-05,Puneri Paltan,Monu,6,8,10%,37.50%,25.00%,37.50%
+PKL-05,Puneri Paltan,Monu,7,31,40%,58.10%,25.80%,16.10%
+PKL-05,Puneri Paltan,More G B,3,2,4%,100.00%,,
+PKL-05,Puneri Paltan,More G B,4,10,22%,50.00%,20.00%,30.00%
+PKL-05,Puneri Paltan,More G B,5,10,22%,40.00%,20.00%,40.00%
+PKL-05,Puneri Paltan,More G B,6,15,33%,13.30%,46.70%,40.00%
+PKL-05,Puneri Paltan,More G B,7,8,18%,50.00%,25.00%,25.00%
+PKL-05,Puneri Paltan,Rajesh Mondal,1,3,1%,,100.00%,
+PKL-05,Puneri Paltan,Rajesh Mondal,2,6,2%,16.70%,66.70%,16.70%
+PKL-05,Puneri Paltan,Rajesh Mondal,3,21,8%,38.10%,33.30%,28.60%
+PKL-05,Puneri Paltan,Rajesh Mondal,4,39,14%,53.80%,20.50%,25.60%
+PKL-05,Puneri Paltan,Rajesh Mondal,5,73,27%,53.40%,19.20%,27.40%
+PKL-05,Puneri Paltan,Rajesh Mondal,6,44,16%,27.30%,50.00%,22.70%
+PKL-05,Puneri Paltan,Rajesh Mondal,7,83,31%,47.00%,25.30%,27.70%
+PKL-05,Puneri Paltan,Ravi Kumar,7,2,100%,100.00%,,
+PKL-05,Puneri Paltan,Rinku Narwal,4,1,13%,100.00%,,
+PKL-05,Puneri Paltan,Rinku Narwal,5,1,13%,100.00%,,
+PKL-05,Puneri Paltan,Rinku Narwal,7,6,75%,83.30%,16.70%,
+PKL-05,Puneri Paltan,Rohit Kumar Choudary,2,3,7%,100.00%,,
+PKL-05,Puneri Paltan,Rohit Kumar Choudary,4,7,15%,42.90%,14.30%,42.90%
+PKL-05,Puneri Paltan,Rohit Kumar Choudary,5,11,24%,54.50%,27.30%,18.20%
+PKL-05,Puneri Paltan,Rohit Kumar Choudary,6,5,11%,60.00%,20.00%,20.00%
+PKL-05,Puneri Paltan,Rohit Kumar Choudary,7,20,43%,45.00%,25.00%,30.00%
+PKL-05,Puneri Paltan,Sandeep Narwal,1,1,1%,,100.00%,
+PKL-05,Puneri Paltan,Sandeep Narwal,2,16,14%,31.30%,62.50%,6.30%
+PKL-05,Puneri Paltan,Sandeep Narwal,3,29,25%,65.50%,27.60%,6.90%
+PKL-05,Puneri Paltan,Sandeep Narwal,4,15,13%,80.00%,6.70%,13.30%
+PKL-05,Puneri Paltan,Sandeep Narwal,5,13,11%,92.30%,,7.70%
+PKL-05,Puneri Paltan,Sandeep Narwal,6,17,15%,64.70%,29.40%,5.90%
+PKL-05,Puneri Paltan,Sandeep Narwal,7,26,22%,76.90%,19.20%,3.80%
+PKL-05,Puneri Paltan,Suresh Kumar,4,1,3%,100.00%,,
+PKL-05,Puneri Paltan,Suresh Kumar,5,1,3%,100.00%,,
+PKL-05,Puneri Paltan,Suresh Kumar,6,12,34%,33.30%,41.70%,25.00%
+PKL-05,Puneri Paltan,Suresh Kumar,7,21,60%,38.10%,33.30%,28.60%
+PKL-05,Puneri Paltan,Umesh Mhatre,4,1,9%,,,100.00%
+PKL-05,Puneri Paltan,Umesh Mhatre,5,3,27%,33.30%,,66.70%
+PKL-05,Puneri Paltan,Umesh Mhatre,6,2,18%,50.00%,50.00%,
+PKL-05,Puneri Paltan,Umesh Mhatre,7,5,45%,40.00%,,60.00%
+PKL-05,Tamil Thailaivas,Ajay Thakur,1,5,1%,,100.00%,
+PKL-05,Tamil Thailaivas,Ajay Thakur,2,22,6%,9.10%,81.80%,9.10%
+PKL-05,Tamil Thailaivas,Ajay Thakur,3,33,8%,42.40%,24.20%,33.30%
+PKL-05,Tamil Thailaivas,Ajay Thakur,4,43,11%,46.50%,25.60%,27.90%
+PKL-05,Tamil Thailaivas,Ajay Thakur,5,56,14%,55.40%,28.60%,16.10%
+PKL-05,Tamil Thailaivas,Ajay Thakur,6,102,26%,35.30%,48.00%,16.70%
+PKL-05,Tamil Thailaivas,Ajay Thakur,7,139,35%,25.90%,56.80%,17.30%
+PKL-05,Tamil Thailaivas,Amit Hooda,4,1,14%,100.00%,,
+PKL-05,Tamil Thailaivas,Amit Hooda,6,1,14%,,,100.00%
+PKL-05,Tamil Thailaivas,Amit Hooda,7,5,71%,100.00%,,
+PKL-05,Tamil Thailaivas,Anil Kumar,4,1,25%,100.00%,,
+PKL-05,Tamil Thailaivas,Anil Kumar,6,2,50%,100.00%,,
+PKL-05,Tamil Thailaivas,Anil Kumar,7,1,25%,100.00%,,
+PKL-05,Tamil Thailaivas,Bhavani Rajput,4,1,10%,100.00%,,
+PKL-05,Tamil Thailaivas,Bhavani Rajput,7,9,90%,33.30%,22.20%,44.40%
+PKL-05,Tamil Thailaivas,C. Arun,4,1,6%,100.00%,,
+PKL-05,Tamil Thailaivas,C. Arun,5,9,56%,100.00%,,
+PKL-05,Tamil Thailaivas,C. Arun,6,2,13%,100.00%,,
+PKL-05,Tamil Thailaivas,C. Arun,7,4,25%,75.00%,,25.00%
+PKL-05,Tamil Thailaivas,D. Pradap,3,1,2%,100.00%,,
+PKL-05,Tamil Thailaivas,D. Pradap,4,5,10%,80.00%,,20.00%
+PKL-05,Tamil Thailaivas,D. Pradap,5,12,24%,100.00%,,
+PKL-05,Tamil Thailaivas,D. Pradap,6,9,18%,77.80%,22.20%,
+PKL-05,Tamil Thailaivas,D. Pradap,7,22,45%,54.50%,18.20%,27.30%
+PKL-05,Tamil Thailaivas,Darshan J.,7,3,100%,66.70%,,33.30%
+PKL-05,Tamil Thailaivas,Dong Geon Lee,2,1,1%,,100.00%,
+PKL-05,Tamil Thailaivas,Dong Geon Lee,3,4,6%,,75.00%,25.00%
+PKL-05,Tamil Thailaivas,Dong Geon Lee,4,11,16%,36.40%,18.20%,45.50%
+PKL-05,Tamil Thailaivas,Dong Geon Lee,5,20,29%,40.00%,30.00%,30.00%
+PKL-05,Tamil Thailaivas,Dong Geon Lee,6,6,9%,16.70%,66.70%,16.70%
+PKL-05,Tamil Thailaivas,Dong Geon Lee,7,26,38%,38.50%,34.60%,26.90%
+PKL-05,Tamil Thailaivas,K. Prapanjan,2,3,1%,,100.00%,
+PKL-05,Tamil Thailaivas,K. Prapanjan,3,21,7%,57.10%,9.50%,33.30%
+PKL-05,Tamil Thailaivas,K. Prapanjan,4,36,12%,38.90%,30.60%,30.60%
+PKL-05,Tamil Thailaivas,K. Prapanjan,5,66,22%,51.50%,24.20%,24.20%
+PKL-05,Tamil Thailaivas,K. Prapanjan,6,56,18%,37.50%,42.90%,19.60%
+PKL-05,Tamil Thailaivas,K. Prapanjan,7,124,41%,41.10%,39.50%,19.40%
+PKL-05,Tamil Thailaivas,M. Thivakaran,3,5,14%,80.00%,20.00%,
+PKL-05,Tamil Thailaivas,M. Thivakaran,4,3,8%,66.70%,,33.30%
+PKL-05,Tamil Thailaivas,M. Thivakaran,5,9,25%,44.40%,11.10%,44.40%
+PKL-05,Tamil Thailaivas,M. Thivakaran,6,8,22%,50.00%,37.50%,12.50%
+PKL-05,Tamil Thailaivas,M. Thivakaran,7,11,31%,9.10%,54.50%,36.40%
+PKL-05,Tamil Thailaivas,Muruthu M,7,1,100%,,,100.00%
+PKL-05,Tamil Thailaivas,Sanket Chavan,7,1,100%,100.00%,,
+PKL-05,Tamil Thailaivas,Sujit Maharana,3,1,20%,100.00%,,
+PKL-05,Tamil Thailaivas,Sujit Maharana,5,1,20%,,,100.00%
+PKL-05,Tamil Thailaivas,Sujit Maharana,7,3,60%,66.70%,,33.30%
+PKL-05,Tamil Thailaivas,Vijay Kumar,5,1,33%,100.00%,,
+PKL-05,Tamil Thailaivas,Vijay Kumar,6,1,33%,100.00%,,
+PKL-05,Tamil Thailaivas,Vijay Kumar,7,1,33%,,,100.00%
+PKL-05,Tamil Thailaivas,Vijin Thangadurai,7,2,100%,50.00%,,50.00%
+PKL-05,Tamil Thailaivas,Vineet Kumar,1,1,1%,,100.00%,
+PKL-05,Tamil Thailaivas,Vineet Kumar,3,2,2%,50.00%,50.00%,
+PKL-05,Tamil Thailaivas,Vineet Kumar,4,16,15%,81.30%,6.30%,12.50%
+PKL-05,Tamil Thailaivas,Vineet Kumar,5,27,26%,85.20%,3.70%,11.10%
+PKL-05,Tamil Thailaivas,Vineet Kumar,6,20,19%,80.00%,10.00%,10.00%
+PKL-05,Tamil Thailaivas,Vineet Kumar,7,38,37%,55.30%,26.30%,18.40%
+PKL-05,Telugu Titans,Elangeshwaran R,4,2,9%,50.00%,,50.00%
+PKL-05,Telugu Titans,Elangeshwaran R,5,3,13%,66.70%,33.30%,
+PKL-05,Telugu Titans,Elangeshwaran R,6,3,13%,66.70%,,33.30%
+PKL-05,Telugu Titans,Elangeshwaran R,7,15,65%,26.70%,40.00%,33.30%
+PKL-05,Telugu Titans,Farhad Milaghardan,4,1,6%,,,100.00%
+PKL-05,Telugu Titans,Farhad Milaghardan,5,2,11%,50.00%,,50.00%
+PKL-05,Telugu Titans,Farhad Milaghardan,6,3,17%,33.30%,66.70%,
+PKL-05,Telugu Titans,Farhad Milaghardan,7,12,67%,33.30%,25.00%,41.70%
+PKL-05,Telugu Titans,Mohsen Maghsoudlou,3,3,4%,,33.30%,66.70%
+PKL-05,Telugu Titans,Mohsen Maghsoudlou,4,10,12%,40.00%,40.00%,20.00%
+PKL-05,Telugu Titans,Mohsen Maghsoudlou,5,29,35%,51.70%,24.10%,24.10%
+PKL-05,Telugu Titans,Mohsen Maghsoudlou,6,13,16%,30.80%,38.50%,30.80%
+PKL-05,Telugu Titans,Mohsen Maghsoudlou,7,28,34%,46.40%,35.70%,17.90%
+PKL-05,Telugu Titans,Munish,5,1,25%,,,100.00%
+PKL-05,Telugu Titans,Munish,6,1,25%,100.00%,,
+PKL-05,Telugu Titans,Munish,7,2,50%,,,100.00%
+PKL-05,Telugu Titans,Nilesh Salunke,2,6,2%,,100.00%,
+PKL-05,Telugu Titans,Nilesh Salunke,3,11,4%,36.40%,45.50%,18.20%
+PKL-05,Telugu Titans,Nilesh Salunke,4,22,9%,77.30%,13.60%,9.10%
+PKL-05,Telugu Titans,Nilesh Salunke,5,48,19%,62.50%,16.70%,20.80%
+PKL-05,Telugu Titans,Nilesh Salunke,6,53,21%,45.30%,43.40%,11.30%
+PKL-05,Telugu Titans,Nilesh Salunke,7,107,43%,48.60%,32.70%,18.70%
+PKL-05,Telugu Titans,Rahul Chaudhari,1,6,1%,,100.00%,
+PKL-05,Telugu Titans,Rahul Chaudhari,2,24,6%,12.50%,75.00%,12.50%
+PKL-05,Telugu Titans,Rahul Chaudhari,3,25,6%,36.00%,40.00%,24.00%
+PKL-05,Telugu Titans,Rahul Chaudhari,4,49,12%,44.90%,26.50%,28.60%
+PKL-05,Telugu Titans,Rahul Chaudhari,5,67,16%,56.70%,14.90%,28.40%
+PKL-05,Telugu Titans,Rahul Chaudhari,6,97,24%,39.20%,51.50%,9.30%
+PKL-05,Telugu Titans,Rahul Chaudhari,7,144,35%,42.40%,38.90%,18.80%
+PKL-05,Telugu Titans,Rakesh Kumar,3,1,2%,100.00%,,
+PKL-05,Telugu Titans,Rakesh Kumar,4,6,14%,100.00%,,
+PKL-05,Telugu Titans,Rakesh Kumar,5,7,16%,100.00%,,
+PKL-05,Telugu Titans,Rakesh Kumar,6,9,21%,66.70%,22.20%,11.10%
+PKL-05,Telugu Titans,Rakesh Kumar,7,20,47%,65.00%,25.00%,10.00%
+PKL-05,Telugu Titans,Rakshith,2,1,5%,,100.00%,
+PKL-05,Telugu Titans,Rakshith,3,2,9%,,100.00%,
+PKL-05,Telugu Titans,Rakshith,4,3,14%,33.30%,33.30%,33.30%
+PKL-05,Telugu Titans,Rakshith,5,5,23%,60.00%,20.00%,20.00%
+PKL-05,Telugu Titans,Rakshith,6,2,9%,50.00%,50.00%,
+PKL-05,Telugu Titans,Rakshith,7,9,41%,11.10%,55.60%,33.30%
+PKL-05,Telugu Titans,Vikas,3,1,1%,100.00%,,
+PKL-05,Telugu Titans,Vikas,4,3,3%,33.30%,33.30%,33.30%
+PKL-05,Telugu Titans,Vikas,5,19,22%,26.30%,5.30%,68.40%
+PKL-05,Telugu Titans,Vikas,6,26,30%,46.20%,46.20%,7.70%
+PKL-05,Telugu Titans,Vikas,7,37,43%,40.50%,32.40%,27.00%
+PKL-05,Telugu Titans,Vikrant,5,1,20%,,,100.00%
+PKL-05,Telugu Titans,Vikrant,6,2,40%,,50.00%,50.00%
+PKL-05,Telugu Titans,Vikrant,7,2,40%,50.00%,,50.00%
+PKL-05,Telugu Titans,Vinoth Kumar,4,2,9%,100.00%,,
+PKL-05,Telugu Titans,Vinoth Kumar,5,6,26%,83.30%,,16.70%
+PKL-05,Telugu Titans,Vinoth Kumar,6,9,39%,55.60%,22.20%,22.20%
+PKL-05,Telugu Titans,Vinoth Kumar,7,6,26%,33.30%,50.00%,16.70%
+PKL-05,Telugu Titans,Vishal Bhardwaj,6,2,40%,50.00%,,50.00%
+PKL-05,Telugu Titans,Vishal Bhardwaj,7,3,60%,100.00%,,
+PKL-05,U Mumba,Anup Kumar,1,2,1%,,100.00%,
+PKL-05,U Mumba,Anup Kumar,2,13,5%,7.70%,84.60%,7.70%
+PKL-05,U Mumba,Anup Kumar,3,12,4%,50.00%,25.00%,25.00%
+PKL-05,U Mumba,Anup Kumar,4,23,8%,78.30%,8.70%,13.00%
+PKL-05,U Mumba,Anup Kumar,5,44,16%,95.50%,2.30%,2.30%
+PKL-05,U Mumba,Anup Kumar,6,41,15%,46.30%,31.70%,22.00%
+PKL-05,U Mumba,Anup Kumar,7,146,52%,45.20%,36.30%,18.50%
+PKL-05,U Mumba,Darshan Kadian,2,1,1%,,100.00%,
+PKL-05,U Mumba,Darshan Kadian,3,5,7%,40.00%,20.00%,40.00%
+PKL-05,U Mumba,Darshan Kadian,4,11,15%,18.20%,36.40%,45.50%
+PKL-05,U Mumba,Darshan Kadian,5,20,28%,45.00%,20.00%,35.00%
+PKL-05,U Mumba,Darshan Kadian,6,9,13%,44.40%,33.30%,22.20%
+PKL-05,U Mumba,Darshan Kadian,7,26,36%,15.40%,46.20%,38.50%
+PKL-05,U Mumba,Deepak Yadav,6,1,50%,100.00%,,
+PKL-05,U Mumba,Deepak Yadav,7,1,50%,,,100.00%
+PKL-05,U Mumba,Dong Ju Hong,7,1,100%,,,100.00%
+PKL-05,U Mumba,Kashiling Adake,1,2,1%,,100.00%,
+PKL-05,U Mumba,Kashiling Adake,2,2,1%,,100.00%,
+PKL-05,U Mumba,Kashiling Adake,3,11,5%,18.20%,72.70%,9.10%
+PKL-05,U Mumba,Kashiling Adake,4,20,9%,45.00%,30.00%,25.00%
+PKL-05,U Mumba,Kashiling Adake,5,39,17%,56.40%,25.60%,17.90%
+PKL-05,U Mumba,Kashiling Adake,6,53,24%,34.00%,39.60%,26.40%
+PKL-05,U Mumba,Kashiling Adake,7,96,43%,39.60%,36.50%,24.00%
+PKL-05,U Mumba,Kuldeep Singh,4,4,10%,25.00%,,75.00%
+PKL-05,U Mumba,Kuldeep Singh,5,5,12%,100.00%,,
+PKL-05,U Mumba,Kuldeep Singh,6,12,29%,58.30%,25.00%,16.70%
+PKL-05,U Mumba,Kuldeep Singh,7,20,49%,40.00%,20.00%,40.00%
+PKL-05,U Mumba,Mohan Raman G,4,1,11%,,100.00%,
+PKL-05,U Mumba,Mohan Raman G,5,2,22%,,50.00%,50.00%
+PKL-05,U Mumba,Mohan Raman G,6,1,11%,,,100.00%
+PKL-05,U Mumba,Mohan Raman G,7,5,56%,20.00%,40.00%,40.00%
+PKL-05,U Mumba,Nitin Madane,3,1,2%,100.00%,,
+PKL-05,U Mumba,Nitin Madane,4,3,6%,33.30%,,66.70%
+PKL-05,U Mumba,Nitin Madane,5,14,27%,35.70%,21.40%,42.90%
+PKL-05,U Mumba,Nitin Madane,6,9,18%,33.30%,44.40%,22.20%
+PKL-05,U Mumba,Nitin Madane,7,24,47%,54.20%,20.80%,25.00%
+PKL-05,U Mumba,Shabeer Bappu,1,1,1%,,100.00%,
+PKL-05,U Mumba,Shabeer Bappu,2,4,4%,25.00%,75.00%,
+PKL-05,U Mumba,Shabeer Bappu,3,6,6%,66.70%,16.70%,16.70%
+PKL-05,U Mumba,Shabeer Bappu,4,13,12%,38.50%,23.10%,38.50%
+PKL-05,U Mumba,Shabeer Bappu,5,20,19%,85.00%,5.00%,10.00%
+PKL-05,U Mumba,Shabeer Bappu,6,26,24%,53.80%,30.80%,15.40%
+PKL-05,U Mumba,Shabeer Bappu,7,38,35%,36.80%,39.50%,23.70%
+PKL-05,U Mumba,Shrikant Jadhav,2,1,1%,,100.00%,
+PKL-05,U Mumba,Shrikant Jadhav,3,3,2%,66.70%,33.30%,
+PKL-05,U Mumba,Shrikant Jadhav,4,15,9%,33.30%,13.30%,53.30%
+PKL-05,U Mumba,Shrikant Jadhav,5,28,16%,53.60%,14.30%,32.10%
+PKL-05,U Mumba,Shrikant Jadhav,6,46,27%,19.60%,56.50%,23.90%
+PKL-05,U Mumba,Shrikant Jadhav,7,77,45%,31.20%,49.40%,19.50%
+PKL-05,U Mumba,Surinder Singh,7,3,100%,100.00%,,
+PKL-05,U Mumba,Yong Joo Ok,6,2,100%,50.00%,50.00%,
+PKL-05,UP Yoddha,Ajvender Singh,5,1,100%,100.00%,,
+PKL-05,UP Yoddha,Gulveer Singh,5,1,13%,,,100.00%
+PKL-05,UP Yoddha,Gulveer Singh,6,2,25%,,,100.00%
+PKL-05,UP Yoddha,Gulveer Singh,7,5,63%,,20.00%,80.00%
+PKL-05,UP Yoddha,Hadi Tajik,5,1,8%,,,100.00%
+PKL-05,UP Yoddha,Hadi Tajik,6,1,8%,,,100.00%
+PKL-05,UP Yoddha,Hadi Tajik,7,10,83%,30.00%,20.00%,50.00%
+PKL-05,UP Yoddha,Jeeva Kumar,4,1,50%,100.00%,,
+PKL-05,UP Yoddha,Jeeva Kumar,6,1,50%,100.00%,,
+PKL-05,UP Yoddha,Mahesh Goud,2,1,1%,,,100.00%
+PKL-05,UP Yoddha,Mahesh Goud,3,1,1%,,,100.00%
+PKL-05,UP Yoddha,Mahesh Goud,4,13,14%,7.70%,46.20%,46.20%
+PKL-05,UP Yoddha,Mahesh Goud,5,20,22%,60.00%,15.00%,25.00%
+PKL-05,UP Yoddha,Mahesh Goud,6,17,19%,41.20%,52.90%,5.90%
+PKL-05,UP Yoddha,Mahesh Goud,7,38,42%,34.20%,34.20%,31.60%
+PKL-05,UP Yoddha,Nitesh Kumar,4,1,50%,100.00%,,
+PKL-05,UP Yoddha,Nitesh Kumar,6,1,50%,100.00%,,
+PKL-05,UP Yoddha,Nitin Tomar,1,2,1%,,100.00%,
+PKL-05,UP Yoddha,Nitin Tomar,2,19,6%,10.50%,78.90%,10.50%
+PKL-05,UP Yoddha,Nitin Tomar,3,27,8%,48.10%,40.70%,11.10%
+PKL-05,UP Yoddha,Nitin Tomar,4,42,13%,47.60%,31.00%,21.40%
+PKL-05,UP Yoddha,Nitin Tomar,5,50,15%,72.00%,14.00%,14.00%
+PKL-05,UP Yoddha,Nitin Tomar,6,60,18%,40.00%,45.00%,15.00%
+PKL-05,UP Yoddha,Nitin Tomar,7,127,39%,39.40%,48.80%,11.80%
+PKL-05,UP Yoddha,Pankaj,6,3,50%,33.30%,,66.70%
+PKL-05,UP Yoddha,Pankaj,7,3,50%,66.70%,,33.30%
+PKL-05,UP Yoddha,Rajesh Narwal,1,1,1%,,100.00%,
+PKL-05,UP Yoddha,Rajesh Narwal,3,1,1%,100.00%,,
+PKL-05,UP Yoddha,Rajesh Narwal,4,11,14%,100.00%,,
+PKL-05,UP Yoddha,Rajesh Narwal,5,17,21%,100.00%,,
+PKL-05,UP Yoddha,Rajesh Narwal,6,22,28%,77.30%,4.50%,18.20%
+PKL-05,UP Yoddha,Rajesh Narwal,7,28,35%,53.60%,17.90%,28.60%
+PKL-05,UP Yoddha,Rishank Devadiga,1,1,0%,,100.00%,
+PKL-05,UP Yoddha,Rishank Devadiga,2,9,3%,11.10%,66.70%,22.20%
+PKL-05,UP Yoddha,Rishank Devadiga,3,19,6%,42.10%,42.10%,15.80%
+PKL-05,UP Yoddha,Rishank Devadiga,4,41,13%,39.00%,19.50%,41.50%
+PKL-05,UP Yoddha,Rishank Devadiga,5,79,26%,54.40%,16.50%,29.10%
+PKL-05,UP Yoddha,Rishank Devadiga,6,68,22%,20.60%,57.40%,22.10%
+PKL-05,UP Yoddha,Rishank Devadiga,7,88,29%,23.90%,60.20%,15.90%
+PKL-05,UP Yoddha,Rohit Kumar,7,2,100%,,50.00%,50.00%
+PKL-05,UP Yoddha,Sagar Krishna,6,3,30%,100.00%,,
+PKL-05,UP Yoddha,Sagar Krishna,7,7,70%,71.40%,14.30%,14.30%
+PKL-05,UP Yoddha,Sanoj Kumar,5,1,50%,,100.00%,
+PKL-05,UP Yoddha,Sanoj Kumar,7,1,50%,,100.00%,
+PKL-05,UP Yoddha,Santhosh B.S,4,3,17%,33.30%,,66.70%
+PKL-05,UP Yoddha,Santhosh B.S,5,4,22%,50.00%,,50.00%
+PKL-05,UP Yoddha,Santhosh B.S,6,2,11%,100.00%,,
+PKL-05,UP Yoddha,Santhosh B.S,7,9,50%,66.70%,11.10%,22.20%
+PKL-05,UP Yoddha,Sulieman Kabir,5,2,67%,50.00%,,50.00%
+PKL-05,UP Yoddha,Sulieman Kabir,7,1,33%,,,100.00%
+PKL-05,UP Yoddha,Sunil,4,1,33%,100.00%,,
+PKL-05,UP Yoddha,Sunil,5,1,33%,,,100.00%
+PKL-05,UP Yoddha,Sunil,7,1,33%,,,100.00%
+PKL-05,UP Yoddha,Surender Singh,3,4,3%,50.00%,25.00%,25.00%
+PKL-05,UP Yoddha,Surender Singh,4,11,8%,45.50%,36.40%,18.20%
+PKL-05,UP Yoddha,Surender Singh,5,24,18%,41.70%,8.30%,50.00%
+PKL-05,UP Yoddha,Surender Singh,6,27,21%,44.40%,25.90%,29.60%
+PKL-05,UP Yoddha,Surender Singh,7,65,50%,30.80%,50.80%,18.50%
+PKL-05,Bengaluru Bulls,Ajay Kumar,3,10,4%,100.00%,,
+PKL-05,Bengaluru Bulls,Ajay Kumar,4,26,10%,57.70%,23.10%,19.20%
+PKL-05,Bengaluru Bulls,Ajay Kumar,5,47,18%,66.00%,6.40%,27.70%
+PKL-05,Bengaluru Bulls,Ajay Kumar,6,59,23%,23.70%,52.50%,23.70%
+PKL-05,Bengaluru Bulls,Ajay Kumar,7,115,45%,49.60%,27.80%,22.60%
+PKL-05,Bengaluru Bulls,Ashish Kumar,3,4,6%,25.00%,25.00%,50.00%
+PKL-05,Bengaluru Bulls,Ashish Kumar,4,9,13%,55.60%,11.10%,33.30%
+PKL-05,Bengaluru Bulls,Ashish Kumar,5,18,26%,50.00%,33.30%,16.70%
+PKL-05,Bengaluru Bulls,Ashish Kumar,6,13,19%,38.50%,30.80%,30.80%
+PKL-05,Bengaluru Bulls,Ashish Kumar,7,26,37%,57.70%,23.10%,19.20%
+PKL-05,Bengaluru Bulls,Gurvinder Singh,3,2,5%,100.00%,,
+PKL-05,Bengaluru Bulls,Gurvinder Singh,4,3,8%,100.00%,,
+PKL-05,Bengaluru Bulls,Gurvinder Singh,5,6,16%,66.70%,,33.30%
+PKL-05,Bengaluru Bulls,Gurvinder Singh,6,8,22%,37.50%,37.50%,25.00%
+PKL-05,Bengaluru Bulls,Gurvinder Singh,7,18,49%,38.90%,38.90%,22.20%
+PKL-05,Bengaluru Bulls,Harish Naik,3,1,2%,,100.00%,
+PKL-05,Bengaluru Bulls,Harish Naik,4,8,15%,62.50%,12.50%,25.00%
+PKL-05,Bengaluru Bulls,Harish Naik,5,10,19%,40.00%,30.00%,30.00%
+PKL-05,Bengaluru Bulls,Harish Naik,6,17,32%,23.50%,41.20%,35.30%
+PKL-05,Bengaluru Bulls,Harish Naik,7,17,32%,11.80%,52.90%,35.30%
+PKL-05,Bengaluru Bulls,Mahender Singh,7,2,100%,50.00%,50.00%,
+PKL-05,Bengaluru Bulls,Preetam Chhillar,3,3,10%,100.00%,,
+PKL-05,Bengaluru Bulls,Preetam Chhillar,5,6,21%,100.00%,,
+PKL-05,Bengaluru Bulls,Preetam Chhillar,6,9,31%,88.90%,11.10%,
+PKL-05,Bengaluru Bulls,Preetam Chhillar,7,11,38%,100.00%,,
+PKL-05,Bengaluru Bulls,Ravinder Pahal,5,1,17%,100.00%,,
+PKL-05,Bengaluru Bulls,Ravinder Pahal,7,5,83%,60.00%,20.00%,20.00%
+PKL-05,Bengaluru Bulls,Rohit,6,1,20%,,,100.00%
+PKL-05,Bengaluru Bulls,Rohit,7,4,80%,,75.00%,25.00%
+PKL-05,Bengaluru Bulls,Rohit Kumar,1,6,1%,,100.00%,
+PKL-05,Bengaluru Bulls,Rohit Kumar,2,27,6%,,85.20%,14.80%
+PKL-05,Bengaluru Bulls,Rohit Kumar,3,43,10%,23.30%,53.50%,23.30%
+PKL-05,Bengaluru Bulls,Rohit Kumar,4,51,12%,37.30%,37.30%,25.50%
+PKL-05,Bengaluru Bulls,Rohit Kumar,5,54,13%,57.40%,16.70%,25.90%
+PKL-05,Bengaluru Bulls,Rohit Kumar,6,95,23%,30.50%,48.40%,21.10%
+PKL-05,Bengaluru Bulls,Rohit Kumar,7,142,34%,35.90%,49.30%,14.80%
+PKL-05,Bengaluru Bulls,Sachin Kumar,5,4,57%,75.00%,,25.00%
+PKL-05,Bengaluru Bulls,Sachin Kumar,7,3,43%,66.70%,,33.30%
+PKL-05,Bengaluru Bulls,Sumit Singh,5,1,20%,100.00%,,
+PKL-05,Bengaluru Bulls,Sumit Singh,7,4,80%,50.00%,,50.00%
+PKL-05,Bengaluru Bulls,Sunil Jaipal,3,4,7%,75.00%,,25.00%
+PKL-05,Bengaluru Bulls,Sunil Jaipal,4,9,17%,77.80%,11.10%,11.10%
+PKL-05,Bengaluru Bulls,Sunil Jaipal,5,12,22%,50.00%,33.30%,16.70%
+PKL-05,Bengaluru Bulls,Sunil Jaipal,6,7,13%,71.40%,28.60%,
+PKL-05,Bengaluru Bulls,Sunil Jaipal,7,22,41%,63.60%,27.30%,9.10%
