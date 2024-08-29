@@ -41,6 +41,7 @@ class KabaddiAnalyzer:
         team_data = self.df[self.df['team_name'] == team_name]
         x = team_data[['season', 'team-total-points_value', 'team-raid-points_value', 'team-tackle-points_value']]
         return x
+    
     def best_raiding_team(self, season: int) -> pd.DataFrame:
         """Identify the best raiding team in a given season."""
         return self.top_n_teams_by_stat('team-raid-points', season, n=1)
@@ -94,7 +95,13 @@ class KabaddiAnalyzer:
             ['team_name', 'team-total-points_value', 'team-total-points-conceded_value', 'excitement_score']].head(1)
 
 # Usage example:
-analyzer = KabaddiAnalyzer(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\teams\seasons_1_to_4_final.csv")
+# analyzer = KabaddiAnalyzer(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\teams\seasons_1_to_4_final.csv")
+# analyzer = KabaddiAnalyzer(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\DATA\DATA__prokabaddi_dot_com\teams\seasons_1_to_4_final.csv")
+
+analyzer = KabaddiAnalyzer("../1_DATA/DATA__ProKabaddi-Data/teams/seasons_1_to_4_final.csv")
+# analyzer = KabaddiAnalyzer("../1_DATA/DATA__ProKabaddi-Data/teams/seasons_5_plus_and_all_rounded.csv")
+
+
 print(analyzer.get_team_stats('Patna Pirates', 2))
 # print(analyzer.compare_teams('Bengaluru Bulls', 'Patna Pirates', 2))
 print(analyzer.top_n_teams_by_stat('team-tackle-points',4))
