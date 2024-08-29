@@ -42,11 +42,13 @@ class KabaddiDataAPI:
         # not_pkl.sort()
         print(not_pkl)
 
-    def get_match_data(self, season: str, match_id: str) -> tuple[DataFrame, DataFrame, DataFrame, DataFrame]:
+    def get_match_data(self, season: str, match_id: str, play_by_play=True) -> tuple[
+                                                                DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
         """
         Get the full data for a specific match.
 
         Args:
+            play_by_play: returns play by play data.
             season (str): The season year.
             match_id (str): The match ID.
 
@@ -57,14 +59,97 @@ class KabaddiDataAPI:
         try:
             with open(file_path, 'r') as file:
                 temp = json.load(file)
-            match_detail_df = pd.DataFrame([temp.get("match_detail", {})])
-            teams_df = pd.DataFrame(temp.get("teams", {}).get("team", []))
-            events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
+
+            match_detail = temp.get("match_detail", {})
+
+            # Flatten nested dictionaries
+            flattened_match_detail = {}
+            for key, value in match_detail.items():
+                if isinstance(value, dict):
+                    for subkey, subvalue in value.items():
+                        flattened_match_detail[f"{key}_{subkey}"] = subvalue
+                elif isinstance(value, list):
+                    if key == "player_of_the_match":
+                        flattened_match_detail[f"{key}_id"] = value[0].get("id") if value else None
+                        flattened_match_detail[f"{key}_value"] = value[0].get("value") if value else None
+                    else:
+                        flattened_match_detail[key] = json.dumps(value)
+                else:
+                    flattened_match_detail[key] = value
+
+            match_detail_df = pd.DataFrame([flattened_match_detail])
+            #teams_df = pd.DataFrame(temp.get("teams", {}).get("team", []))
+
+            if play_by_play:
+                events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
             zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
 
-            return match_detail_df, teams_df, events_df, zones_df
-        except:
-            print(f"Could not load {file_path}")
+            teams_data = temp.get("teams", {}).get("team", [])
+            if len(teams_data) != 2:
+                raise ValueError("Expected data for exactly two teams")
+
+            def process_squad(squad_data):
+                processed_squad = []
+                for player in squad_data:
+                    player_dict = {
+                        'id': player['id'],
+                        'name': player['name'],
+                        'short_name': player.get('short_name', ''),
+                        'skill': player.get('skill', ''),
+                        'role': player.get('role', ''),
+                        'red_card': player.get('red_card', False),
+                        'yellow_card': player.get('yellow_card', False),
+                        'green_card': player.get('green_card', False),
+                        'red_card_count': player.get('red_card_count', 0),
+                        'yellow_card_count': player.get('yellow_card_count', 0),
+                        'green_card_count': player.get('green_card_count', 0),
+                        'jersey': player.get('jersey', ''),
+                        'played': player.get('played', False),
+                        'captain': player.get('captain', False),
+                        'on_court': player.get('on_court', False),
+                        'starter': player.get('starter', False),
+                        'top_raider': player.get('top_raider', False),
+                        'top_defender': player.get('top_defender', False),
+                        'total_points': player.get('points', {}).get('total', 0),
+                        'raid_points': player.get('points', {}).get('raid_points', {}).get('total', 0),
+                        'tackle_points': player.get('points', {}).get('tackle_points', {}).get('total', 0),
+                        'raids_total': player.get('raids', {}).get('total', 0),
+                        'raids_successful': player.get('raids', {}).get('successful', 0),
+                        'tackles_total': player.get('tackles', {}).get('total', 0),
+                        'tackles_successful': player.get('tackles', {}).get('successful', 0),
+                    }
+                    # Flatten strong and weak zones
+                    for zone_type in ['strong_zones', 'weak_zones']:
+                        for zone in player.get(zone_type, {}).get(zone_type.rstrip('s'), []):
+                            player_dict[f"{zone_type}_zone_{zone['zone_id']}"] = zone['points']
+
+                    processed_squad.append(player_dict)
+                return processed_squad
+
+            team1_df = pd.DataFrame(process_squad(teams_data[0].get('squad', [])))
+            team2_df = pd.DataFrame(process_squad(teams_data[1].get('squad', [])))
+
+            # Add team information to each DataFrame
+            for team_df, team_data in zip([team1_df, team2_df], teams_data):
+                team_df['team_id'] = team_data['id']
+                team_df['team_name'] = team_data['name']
+                team_df['team_score'] = team_data['score']
+                team_df['team_short_name'] = team_data['short_name']
+
+            # Create a summary teams_df
+            teams_df = pd.DataFrame(teams_data)
+
+            return match_detail_df.T, teams_df, events_df, zones_df, team1_df, team2_df
+
+        except Exception as e:
+            print(f"Error loading data from {file_path}: {str(e)}")
+            return None, None, None, None, None, None
+
+        #
+        #     return match_detail_df.T, teams_df, events_df, zones_df
+        # except:
+        #     print(f"Could not load {file_path}")
+
 
     def get_match_events(self, season: str, match_id: str) -> List[Dict[str, Any]]:
         """
@@ -260,7 +345,6 @@ class KabaddiDataAPI:
         season_path = os.path.join(self.base_path, "Match_Data", season)
         return [file.split('.')[0] for file in os.listdir(season_path) if file.endswith('.json')]
 
-
     def get_team_names(self, season: str, match_id: str) -> List[str]:
         """
         Get the names of the two teams playing in a specific match.
@@ -371,7 +455,6 @@ class KabaddiDataAPI:
 
         return performance
 
-
     def search_matches_by_date(self, date: datetime) -> List[Dict[str, Any]]:
         """
         Search for matches played on a specific date across all seasons.
@@ -400,7 +483,7 @@ class KabaddiDataAPI:
         return matches
 
 # Example usage:
-api = KabaddiDataAPI(r"../1_DATA/DATA__kaggle_match")
+api = KabaddiDataAPI(r"../1_DATA/DATA__MatchWise-Data")
 
 # match_events = 
 seasons = api.get_available_seasons()
@@ -409,9 +492,25 @@ matches = api.get_matches_for_season("2019")
 #print(matches)
 
 
-# Func1
-match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019','1690')
+# # Func1
+# match_detail_df, teams_df, events_df , zones_df = api.get_match_data('2019','1690')
+# print(teams_df)
+
+match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('2019', '1690')
+
+
 print(events_df)
+print("\n\n")
+print(events_df.columns.tolist())
+print("\n\n")
+print(events_df.iloc[9].dropna())
+print("\n\n")
+#print(teams_df[['id', 'name', 'score', 'short_name', 'stats', 'state_of_play']])
+print(teams_df)
+print(zones_df)
+# print((len(teams_df['state_of_play'].iloc[0])))
+# print(((teams_df['stats'])))
+#print(team1_df[['name','jersey']])
 # Func2
 # events_df = api.get_match_events('2019', '1690')
 
