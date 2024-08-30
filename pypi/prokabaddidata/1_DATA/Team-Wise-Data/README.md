@@ -7,7 +7,6 @@ i.e. data that has been collected on a team-wise basis at a Macro Level.
 
 
 ```
-total 72
 Defender_Skills_TeamWise
 Raider-Skills_TeamWise
 seasons_1_to_4_final.csv
