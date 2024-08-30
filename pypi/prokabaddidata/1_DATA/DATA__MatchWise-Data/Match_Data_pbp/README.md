@@ -1,2 +1,4 @@
-TODO: [ ] Run a script to sort by Seasons!
+TODO: 
+
+- [ ] Run a script to sort by Seasons!
 
