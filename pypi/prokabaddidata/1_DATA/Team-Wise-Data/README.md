@@ -153,25 +153,25 @@ Contains team performance data for the first four seasons of Pro Kabaddi League.
 
 Each row represents a team's performance in a specific season.
 
-2. seasons_5_plus_and_all_rounded.csv:
+
 
 ```
 season, team_id, team_name, matches_played, 
 
-team-average-raid-points_{rank, value, per-match}, 
-team-avg-points-scored_{rank, value, per-match},, 
-team-all-outs-conceded_{rank, value, per-match},, 
-team-super-raid_{rank, value, per-match},, 
-team-dod-raid-points_{rank, value, per-match},, 
-team-super-tackles_{rank, value, per-match},, 
-team-raid-points_{rank, value, per-match},, 
-team-successful-raids_{rank, value, per-match},, 
-team-total-points-conceded_{rank, value, per-match},, 
-team-tackle-points_{rank, value, per-match},, 
-team-total-points_{rank, value, per-match},, 
-team-all-outs-inflicted_{rank, value, per-match},, 
-team-average-tackle-points_{rank, value, per-match},, 
-team-successful-tackles_{rank, value, per-match},, 
+1  team-average-raid-points_{rank, value, per-match}, 
+2  team-avg-points-scored_{rank, value, per-match},, 
+3  team-all-outs-conceded_{rank, value, per-match},, 
+4  team-super-raid_{rank, value, per-match},, 
+5  team-dod-raid-points_{rank, value, per-match},, 
+6  team-super-tackles_{rank, value, per-match},, 
+7  team-raid-points_{rank, value, per-match},, 
+8  team-successful-raids_{rank, value, per-match},, 
+9  team-total-points-conceded_{rank, value, per-match},, 
+10  team-tackle-points_{rank, value, per-match},, 
+11  team-total-points_{rank, value, per-match},, 
+12  team-all-outs-inflicted_{rank, value, per-match},, 
+13  team-average-tackle-points_{rank, value, per-match},, 
+14  team-successful-tackles_{rank, value, per-match},, 
 ```
 
 
@@ -186,29 +186,28 @@ Column names for seasons_5_plus_and_all_rounded.csv:
 ```
 season, team_id, team_name, matches_played, 
 
-team-average-raid-points_{rank, value, per-match}
-team-avg-points-scored_{rank, value, per-match}
-team-all-outs-conceded_{rank, value, per-match}
-team-successful-tackle-percent_{rank, value, per-match}
-team-super-raid_{rank, value, per-match}
-team-raid_{rank, value, per-match}
-team-successful-raid-percent_{rank, value, per-match}
-team-dod-raid-points_{rank, value, per-match}
-team-super-tackles_{rank, value, per-match}
+1  team-average-raid-points_{rank, value, per-match}
+2  team-avg-points-scored_{rank, value, per-match}
+3  team-all-outs-conceded_{rank, value, per-match}
+4  team-successful-tackle-percent_{rank, value, per-match}
+5  team-super-raid_{rank, value, per-match}
+6  team-raid_{rank, value, per-match}
+7  team-successful-raid-percent_{rank, value, per-match}
+8  team-dod-raid-points_{rank, value, per-match}
+9  team-super-tackles_{rank, value, per-match}
 
-Total touch points_{value, per-match}, 
-Total bonus points_{value, per-match}, 
+10  Total touch points_{value, per-match}, 
+11  Total bonus points_{value, per-match}, 
 
-team-raid-points_{rank, value, per-match}
-team-successful-raids_{rank, value, per-match}
-team-total-points-conceded_{rank, value, per-match}
-team-tackle-points_{rank, value, per-match}
-team-total-points_{rank, value, per-match}
-team-successful-tackles-per-match_{rank, value, per-match}
-team-all-outs-inflicted_{rank, value, per-match}
-team-average-tackle-points_{rank, value, per-match}
-team-successful-tackles_{rank, value, per-match}
-
+12  team-raid-points_{rank, value, per-match}
+13  team-successful-raids_{rank, value, per-match}
+14  team-total-points-conceded_{rank, value, per-match}
+15  team-tackle-points_{rank, value, per-match}
+16  team-total-points_{rank, value, per-match}
+17  team-successful-tackles-per-match_{rank, value, per-match}
+18  team-all-outs-inflicted_{rank, value, per-match}
+19  team-average-tackle-points_{rank, value, per-match}
+20  team-successful-tackles_{rank, value, per-match}
 ```
 
 
