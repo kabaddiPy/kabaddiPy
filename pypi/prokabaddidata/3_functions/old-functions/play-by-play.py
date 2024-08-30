@@ -11,6 +11,8 @@ class KabaddiDataAPI:
     def __init__(self, base_path: str):
         self.base_path = base_path
 
+    
+
     def internal_match_data(self, season: str, match_id: str) -> pd.DataFrame:
         """
         Get the full data for a specific match.
@@ -41,6 +43,54 @@ class KabaddiDataAPI:
                 not_pkl.append(f'{j}')
         # not_pkl.sort()
         print(not_pkl)
+
+
+    def get_available_seasons(self) -> List[str]:
+        """
+        Get a list of available seasons (years) in the dataset.
+
+        Returns:
+            List[str]: A list of season years.
+        """
+        return [folder for folder in os.listdir(os.path.join(self.base_path, "Match_Data"))
+                if os.path.isdir(os.path.join(self.base_path, "Match_Data", folder))]
+
+    def get_matches_for_season(self, season: str) -> List[str]:
+        """
+        Get a list of match IDs for a specific season.
+
+        Args:
+            season (str): The season year.
+
+        Returns:
+            List[str]: A list of match IDs.
+        """
+        season_path = os.path.join(self.base_path, "Match_Data", season)
+        return [file.split('.')[0] for file in os.listdir(season_path) if file.endswith('.json')]
+
+
+
+    # CAN BE A PARAM TO GET_MATCH_DATA FOR SPECIFIC TYPES OF EVENTS
+    
+    def get_raid_events(self, season: str, match_id: str) -> List[Dict[str, Any]]:
+        """
+        Get all raid events for a specific match.
+
+        Args:
+            season (str): The season year.
+            match_id (str): The match ID.
+
+        Returns:
+            List[Dict[str, Any]]: A list of all raid events in the match.
+        """
+        events = self.get_match_events(season, match_id)
+        return [event for event in events if event[event] in ['Successful Raid', 'Unsuccessful Raid', 'Empty Raid']]
+
+
+
+
+
+
 
     def get_match_data(self, season: str, match_id: str, play_by_play=True) -> tuple[
                                                                 DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
@@ -167,19 +217,7 @@ class KabaddiDataAPI:
         df = pd.DataFrame(data)  # .T transposes the DataFrame
         return df
 
-    def get_raid_events(self, season: str, match_id: str) -> List[Dict[str, Any]]:
-        """
-        Get all raid events for a specific match.
 
-        Args:
-            season (str): The season year.
-            match_id (str): The match ID.
-
-        Returns:
-            List[Dict[str, Any]]: A list of all raid events in the match.
-        """
-        events = self.get_match_events(season, match_id)
-        return [event for event in events if event[event] in ['Successful Raid', 'Unsuccessful Raid', 'Empty Raid']]
 
     def get_player_raid_stats(self, season: str, match_id: str, raider_id: int) -> Dict[str, Any]:
         """
@@ -322,28 +360,6 @@ class KabaddiDataAPI:
 
         return summary
 
-    def get_available_seasons(self) -> List[str]:
-        """
-        Get a list of available seasons (years) in the dataset.
-
-        Returns:
-            List[str]: A list of season years.
-        """
-        return [folder for folder in os.listdir(os.path.join(self.base_path, "Match_Data"))
-                if os.path.isdir(os.path.join(self.base_path, "Match_Data", folder))]
-
-    def get_matches_for_season(self, season: str) -> List[str]:
-        """
-        Get a list of match IDs for a specific season.
-
-        Args:
-            season (str): The season year.
-
-        Returns:
-            List[str]: A list of match IDs.
-        """
-        season_path = os.path.join(self.base_path, "Match_Data", season)
-        return [file.split('.')[0] for file in os.listdir(season_path) if file.endswith('.json')]
 
     def get_team_names(self, season: str, match_id: str) -> List[str]:
         """
@@ -499,7 +515,7 @@ matches = api.get_matches_for_season("2019")
 match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('2019', '1690')
 
 
-print(events_df)
+print(match_detail_df)
 print("\n\n")
 print(events_df.columns.tolist())
 print("\n\n")

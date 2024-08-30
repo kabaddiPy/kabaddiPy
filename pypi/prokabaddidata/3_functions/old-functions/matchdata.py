@@ -215,10 +215,15 @@ class KabaddiMatchAnalyzer:
         }
 
 # Usage example:
-analyzer = KabaddiMatchAnalyzer(r"..\DATA\DATA__prokabaddi_dot_com\matchesoverview\merged_match_overview.csv")
+# analyzer = KabaddiMatchAnalyzer(r"..\DATA\DATA__prokabaddi_dot_com\matchesoverview\merged_match_overview.csv")
+analyzer = KabaddiMatchAnalyzer(r"../1_DATA/DATA__ProKabaddi-Data/Matches-Overview/merged_match_overview.csv")
 
-match_details = analyzer.get_match_details(1815)  # Using game_id instead of Match_No
-print(match_details)
+
+
+
+
+# match_details = analyzer.get_match_details(1815)  # Using game_id instead of Match_No
+# print(match_details)
 
 # team_performance = analyzer.get_team_performance('Puneri Paltan')
 # print(team_performance)
@@ -232,8 +237,8 @@ print(match_details)
 # season_timeline = analyzer.get_season_timeline(9)
 # print(season_timeline)
 #
-# head_to_head = analyzer.get_team_head_to_head('Puneri Paltan', 'U Mumba')
-# print(head_to_head)
+head_to_head = analyzer.get_team_head_to_head('Puneri Paltan', 'U Mumba')
+print(head_to_head)
 #
 # player_performance = analyzer.get_player_performance('Rahul Chaudhari')
 # print(player_performance)
