@@ -18,19 +18,21 @@ z_archive
 
 ### Defender_Skills_TeamWise
 
-Contains a file `aggregated_defender_skills_teamwise.csv` which has the following data:
+Contains a file `ALL_Defensive_Skills_Merged.csv` which has the following data:
 
 For all seasons post season 5:
 
 Each team (mostly) have the following:
 
-1. A count of the skills used to carry out `successful tackles`.
+- Type 1
 
-If a tackle was unsuccesful i.e. the raider managed to escape to the other side:
+  1. A count of the skills used to carry out `successful tackles`.
 
-2. A count of the skill employed by the raider on the defenders that led to an unsuccesful tackle by the defenders. (termed `raider-skill`)
+- Type(2) If a tackle was unsuccesful i.e. the raider managed to escape to the other side:
 
-3. A count of the "`counter-action-skill`" i.e. the tactic employed by the raider to escape the tackle attempt by the defending team.
+  2. A count of the skill employed by the raider on the defenders that led to an unsuccesful tackle by the defenders. (termed `raider-skill`)
+  
+  3. A count of the "`counter-action-skill`" i.e. the tactic employed by the raider to escape the tackle attempt by the defending team.
 
 
 
