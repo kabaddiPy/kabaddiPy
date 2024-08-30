@@ -483,7 +483,7 @@ class KabaddiDataAPI:
         return matches
 
 # Example usage:
-api = KabaddiDataAPI(r"../1_DATA/DATA__MatchWise-Data")
+api = KabaddiDataAPI(r"../../1_DATA/DATA__MatchWise-Data")
 
 # match_events = 
 seasons = api.get_available_seasons()
