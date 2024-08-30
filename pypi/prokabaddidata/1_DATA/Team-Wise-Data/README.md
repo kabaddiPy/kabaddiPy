@@ -1,6 +1,4 @@
-
-
-This contains **Team-Wise** data
+# This contains **Team-Wise** data
 
 
 i.e. data that has been collected on a team-wise basis at a Macro Level.
@@ -12,7 +10,6 @@ Raider-Skills_TeamWise
 seasons_1_to_4_final.csv
 seasons_5_plus_and_all_rounded.csv
 standings_json
-z_archive
 ```
 
 
@@ -159,19 +156,19 @@ Each row represents a team's performance in a specific season.
 season, team_id, team_name, matches_played, 
 
 1  team-average-raid-points_{rank, value, per-match}, 
-2  team-avg-points-scored_{rank, value, per-match},, 
-3  team-all-outs-conceded_{rank, value, per-match},, 
-4  team-super-raid_{rank, value, per-match},, 
-5  team-dod-raid-points_{rank, value, per-match},, 
-6  team-super-tackles_{rank, value, per-match},, 
-7  team-raid-points_{rank, value, per-match},, 
-8  team-successful-raids_{rank, value, per-match},, 
-9  team-total-points-conceded_{rank, value, per-match},, 
-10  team-tackle-points_{rank, value, per-match},, 
-11  team-total-points_{rank, value, per-match},, 
-12  team-all-outs-inflicted_{rank, value, per-match},, 
-13  team-average-tackle-points_{rank, value, per-match},, 
-14  team-successful-tackles_{rank, value, per-match},, 
+2  team-avg-points-scored_{rank, value, per-match}, 
+3  team-all-outs-conceded_{rank, value, per-match}, 
+4  team-super-raid_{rank, value, per-match}, 
+5  team-dod-raid-points_{rank, value, per-match}, 
+6  team-super-tackles_{rank, value, per-match}, 
+7  team-raid-points_{rank, value, per-match}, 
+8  team-successful-raids_{rank, value, per-match}, 
+9  team-total-points-conceded_{rank, value, per-match}, 
+10  team-tackle-points_{rank, value, per-match}, 
+11  team-total-points_{rank, value, per-match}, 
+12  team-all-outs-inflicted_{rank, value, per-match}, 
+13  team-average-tackle-points_{rank, value, per-match}, 
+14  team-successful-tackles_{rank, value, per-match}, 
 ```
 
 
@@ -257,16 +254,16 @@ Each team dictionary in the "team" list contains detailed information about the 
 
 Each match result dictionary contains:
 
-- "id": Match ID
-- "result": Result of the match for the current team (e.g., "W" for win, "L" for loss, "T" for tie)
-- "prev_position": Previous position before this match (Not useful.) [❌]
-- "date": Date of the match
-- "teama_id": ID of team A
-- "teama_short_name": Short name of team A
-- "teama_score": Score of team A
-- "teamb_id": ID of team B
-- "teamb_short_name": Short name of team B
-- "teamb_score": Score of team B
-- "post_match_position": Position after this match (Not useful.) [❌]
-- "match_result": Description of the match result (e.g., "U Mumba Won by 7 Pts")
+- "`id`": Match ID
+- "`result`": Result of the match for the current team (e.g., "W" for win, "L" for loss, "T" for tie)
+- "`prev_position`": Previous position before this match (Not useful.) [❌]
+- "`date`": Date of the match
+- "`teama_id`": ID of team A
+- "`teama_short_name`": Short name of team A
+- "`teama_score`": Score of team A
+- "`teamb_id`": ID of team B
+- "`teamb_short_name`": Short name of team B
+- "`teamb_score`": Score of team B
+- "`post_match_position`": Position after this match (Not useful.) [❌]
+- "`match_result`": Description of the match result (e.g., "U Mumba Won by 7 Pts")
 
