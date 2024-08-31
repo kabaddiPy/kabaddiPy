@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 
-def get_pkl_standings(season=None, team_id=None, matches=True):
+def get_pkl_standings(season=None, team_id=None, matches=False):
     if season is None:
         season=10
     team_info_list = []
@@ -14,7 +14,6 @@ def get_pkl_standings(season=None, team_id=None, matches=True):
         data = json.load(f)
 
     standings = data['standings']
-    print("hello")
     for group in standings['groups']:
         for team in group['teams']['team']:
             if team_id is None or int(team['team_id']) == team_id:
@@ -58,6 +57,9 @@ def get_pkl_standings(season=None, team_id=None, matches=True):
     team_info_df = pd.DataFrame(team_info_list)
     if matches_list:
         matches_df = pd.DataFrame(matches_list)
+        matches_df = matches_df[(matches_df['result'].isin(['W', 'T'])) | (matches_df['result'].isnull())]
+        matches_df = matches_df.sort_values(by='date', ascending=True)
+        matches_df = matches_df.set_index('match_id').rename_axis('match id')
         return team_info_df, matches_df
     else:
         return team_info_df
@@ -108,21 +110,5 @@ def get_team_info(team_id, season='overall'):
 
 if __name__ == '__main__':
 
-    # team_info, _, matches = get_team_info(4, 5, simple=False)  # For Bengal Warriors (team_id: 4) in season 5
-    # print(matches)
-    #print(matches)
-    # team = get_pkl_standings(matches=False)
-    # print(team)
-    #print(matches)
-
-    # team_info, standings, matches = get_team_info(team_id=1,season=9)
-    # print(matches)
-    test_team_id = 1  # Replace with a valid team_id
-
-    # Test for a specific season (1-4)
-    csv_data, standings_data, matches_data = get_team_info(test_team_id)
-    print(csv_data)
-    #print("Season 3 data:", csv_data.shape if csv_data is not None else "No data")
-    #greetings = analyze_team(4, 5, simple=False)
-    #print(greetings)
-
+    standings, matches = get_pkl_standings(matches=True)
+    print(matches)
