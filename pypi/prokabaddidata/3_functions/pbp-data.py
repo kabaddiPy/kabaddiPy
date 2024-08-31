@@ -181,3 +181,4 @@ match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_mat
 df2 = team1_df
 print(df2)
 print(df2.columns)
+print(api.get_match_events('Season_Pro Kabaddi League Season 7, 2019','1687').columns)

@@ -59,11 +59,11 @@ print(match_detail_df)
 0      1690      Match 6             11             52  7/22/2019  ...  League           7  Choice of court :Right        9  Gachibowli Indoor Stadium, Hyderabad
 
 [1 rows x 27 columns]
-'''27 columns include ['match_id', 'match_number', 'clock_minutes', 'clock_seconds', 'date', 'start_time', 'matchtime_iso', 'gmtoffset', 'result_outcome',
+27 columns include ['match_id', 'match_number', 'clock_minutes', 'clock_seconds', 'date', 'start_time', 'matchtime_iso', 'gmtoffset', 'result_outcome',
 'result_value', 'result_winning_method', 'result_winning_team', 'result_winning_team_id', 'player_of_the_match_id','player_of_the_match_value', 'series_id',
 'series_name', 'series_short_name', 'series_parent_series_id', 'series_parent_series_name', 'status_id', 'status', 'stage','toss_winner', 'toss_selection',
 'venue_id', 'venue_name'],
-'''
+
 
 print(teams_df)
 #returns comparison of two teams in the match
@@ -90,11 +90,11 @@ print(events_df)
 91        92         Empty Raid         3          Pawan Kumar Empty Raid      156.0  ...  [24, 34]         []      NaN        NaN             NaN
 
 [92 rows x 29 columns]
-'''29 columns include: ['event_no', 'event', 'event_id', 'event_text', 'raider_id', 'raiding_team_id', 'defender_id', 'defending_team_id', 'raid_points',
+29 columns include: ['event_no', 'event', 'event_id', 'event_text', 'raider_id', 'raiding_team_id', 'defender_id', 'defending_team_id', 'raid_points',
 'raid_touch_points','raid_bonus_points', 'raid_technical_points', 'raid_all_out_points', 'defending_capture_points','defending_bonus_points',
 'defending_technical_points','defending_all_out_points', 'defending_points', 'super_raid','super_tackle', 'clock', 'status_id', 'do_or_die', 'review',
 'score','defenders','team_id', 'player_id', 'substituted_by']
-'''
+
 
 print(zones_df)
 #all the zones in the match
@@ -144,20 +144,36 @@ print(team2_df)
 ```
 
 
-# Get match events for a specific match
+## Get match events for a specific match
+```python
 match_id = '60'
+season = '1'
 match_events = api.get_match_events(season, match_id)
 print(f"Events in match {match_id}:")
 print(match_events)
-
-# Get full match data
-match_id = '1'
-match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data(season, match_id)
-
-print("Match details:")
-print(match_detail_df)
-
-print("\nTeam 2 data:")
-print(team2_df)
 ```
+Output : 
+```python
+    event_no              event  event_id                        event_text  raider_id  raiding_team_id  ...     score  defenders  reason  player_id  team_id  substituted_by
+0          1         Empty Raid         3            Rohit Kumar Empty Raid      326.0              1.0  ...    [0, 0]         []     NaN        NaN      NaN             NaN 
+1          2    Successful Raid         1  Sachin Tanwar raids successfully      757.0             31.0  ...    [0, 1]      [318]     NaN        NaN      NaN             NaN 
+2          3         Empty Raid         3            Rohit Kumar Empty Raid      326.0              1.0  ...    [0, 1]         []     NaN        NaN      NaN             NaN 
+3          4         Empty Raid         3            Rohit Gulia Empty Raid      686.0             31.0  ...    [0, 1]         []     NaN        NaN      NaN             NaN 
+4          5  Unsuccessful Raid         2     Sumit Singh Unsuccessful Raid      363.0              1.0  ...    [0, 2]      [772]     NaN        NaN      NaN             NaN 
+..       ...                ...       ...                               ...        ...              ...  ...       ...        ...     ...        ...      ...             ... 
+85        86  Unsuccessful Raid         2     Vinod Kumar Unsuccessful Raid      764.0             31.0  ...  [23, 42]         []     NaN        NaN      NaN             NaN 
+86        87    Successful Raid         1    Rohit Kumar raids successfully      326.0              1.0  ...  [24, 42]      [357]     NaN        NaN      NaN             NaN 
+87        88         Empty Raid         3                More GB Empty Raid      772.0             31.0  ...  [24, 42]         []     NaN        NaN      NaN             NaN 
+88        89         Empty Raid         3         Mahender Singh Empty Raid      769.0              1.0  ...  [24, 42]         []     NaN        NaN      NaN             NaN 
+89        90         Empty Raid         3                More GB Empty Raid      772.0             31.0  ...  [24, 42]         []     NaN        NaN      NaN             NaN 
+
+[90 rows x 30 columns]
+30 columns include: ['event_no', 'event', 'event_id', 'event_text', 'raider_id', 'raiding_team_id', 'defender_id', 'defending_team_id', 'raid_points','raid_touch_points',
+                     'raid_bonus_points', 'raid_technical_points','raid_all_out_points', 'defending_capture_points','defending_bonus_points', 'defending_technical_points',
+                     'defending_all_out_points', 'defending_points', 'super_raid', 'super_tackle', 'clock', 'status_id', 'do_or_die', 'review', 'score','defenders',
+                     'reason', 'player_id', 'team_id', 'substituted_by']
+
+```
+
+
 
