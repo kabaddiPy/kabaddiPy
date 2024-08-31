@@ -126,21 +126,3 @@ if __name__ == '__main__':
     #greetings = analyze_team(4, 5, simple=False)
     #print(greetings)
 
-'''if not simple:
-        csv_file_path = Path(f"../1_DATA/DATA__ProKabaddi-Data/Team-Wise-Data/teams/seasons_5_plus_and_all_rounded.csv")
-        df = pd.read_csv(csv_file_path)
-
-        # Filter the dataframe for the s
-        team_info = df[(df['team_id'] == team_id) & (df['season'] == season)]
-
-        if team_info.empty:
-            return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()  # Return empty dataframes if team not found
-
-        # Separate rank headers
-        rank_columns = [col for col in team_info.columns if col.endswith('_rank')]
-        rank_df = team_info[rank_columns]
-
-        # Remove rank columns from team_info
-        team_info = team_info.drop(columns=rank_columns)
-
-        return team_info, pd.DataFrame,rank_df'''

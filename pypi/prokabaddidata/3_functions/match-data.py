@@ -4,7 +4,8 @@ import pandas as pd
 
 
 # Function to load JSON files from a directory
-def load_json_files(folder_path):
+def load_json_files():
+    folder_path = "../1_DATA/MatchWise-Data/Matches-Overview"
     json_files = []
     for file_name in os.listdir(folder_path):
         if file_name.endswith('.json'):
@@ -14,8 +15,9 @@ def load_json_files(folder_path):
 
 
 # Function to query match overview
-def get_match_overview(folder_path, match_id, season):
-    json_files = load_json_files(folder_path)
+def get_match_overview(match_id, season):
+    folder_path = "../1_DATA/MatchWise-Data/Matches-Overview"
+    json_files = load_json_files()
 
     # Filtering based on season and match_id
     match_details = None
@@ -63,18 +65,14 @@ def get_match_overview(folder_path, match_id, season):
         return None, None
 
 
-# Example Usage
-# folder_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\1_DATA\MatchWise-Data\Matches-Overview"
+if __name__ == "__main__":
+    match_id = "60"
+    season = "Pro Kabaddi League Season 1, 2014"
 
-folder_path = "../1_DATA/MatchWise-Data/Matches-Overview"
+    general_df, participants_df = get_match_overview(match_id, season)
 
-match_id = "60"
-season = "Pro Kabaddi League Season 1, 2014"
+    print("General Details:")
+    print(general_df)
 
-general_df, participants_df = get_match_overview(folder_path, match_id, season)
-
-print("General Details:")
-print(general_df)
-
-print("\nParticipants:")
-print(participants_df)
+    print("\nParticipants:")
+    print(participants_df)

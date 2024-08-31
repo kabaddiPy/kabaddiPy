@@ -1,4 +1,4 @@
-season,team_name,player-id-pkdc,Raider Name,Number of Defenders,Total Raids,% of Raids,Empty,Successful,Unsuccessful
+season,team_name,player-id,Raider Name,Number of Defenders,Total Raids,% of Raids,Empty,Successful,Unsuccessful
 PKL-06,Haryana Steelers,644,Anand Tomar,5,2,10%,100.00%,,
 PKL-06,Haryana Steelers,644,Anand Tomar,6,3,15%,,33.30%,66.70%
 PKL-06,Haryana Steelers,644,Anand Tomar,7,15,75%,20.00%,40.00%,40.00%

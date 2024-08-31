@@ -133,20 +133,17 @@ class KabaddiDataAPI:
                 player_dict = {
                     'id': player['id'],
                     'name': player['name'],
-                    'short_name': player.get('short_name', ''),
-                    'skill': player.get('skill', ''),
-                    'role': player.get('role', ''),
+                    'jersey': player.get('jersey', ''),
+                    'played': player.get('played', False),
+                    'captain': player.get('captain', False),
+                    'on_court': player.get('on_court', False),
+                    'starter': player.get('starter', False),
                     'red_card': player.get('red_card', False),
                     'yellow_card': player.get('yellow_card', False),
                     'green_card': player.get('green_card', False),
                     'red_card_count': player.get('red_card_count', 0),
                     'yellow_card_count': player.get('yellow_card_count', 0),
                     'green_card_count': player.get('green_card_count', 0),
-                    'jersey': player.get('jersey', ''),
-                    'played': player.get('played', False),
-                    'captain': player.get('captain', False),
-                    'on_court': player.get('on_court', False),
-                    'starter': player.get('starter', False),
                     'top_raider': player.get('top_raider', False),
                     'top_defender': player.get('top_defender', False),
                     'total_points': player.get('points', {}).get('total', 0),
@@ -174,11 +171,13 @@ class KabaddiDataAPI:
 
         return team1_df, team2_df
 
-api = KabaddiDataAPI(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\1_DATA\MatchWise-Data\Organised_MatchData_pbp")
+api = KabaddiDataAPI(r"..\1_DATA\MatchWise-Data\Organised_MatchData_pbp")
 #
 # seasons = api.get_available_seasons() #works
 # matches = api.get_matches_for_season("Season_Pro Kabaddi League Season 1, 2014") #works
 # match_events = api.get_match_events('Season_Pro Kabaddi League Season 1, 2014', '60') #works
 
-match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('Season_Pro Kabaddi League Season 1, 2014', '1')
-print(team2_df)
+match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('Season_Pro Kabaddi League Season 7, 2019', '1690')
+df2 = team1_df
+print(df2)
+print(df2.columns)
