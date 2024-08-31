@@ -1,153 +1,51 @@
+# Match_Dat
 
-# Matches Data
+## Match Data pbp
 
+The match data is structured into several main sections:
 
-## Match_Data_pbp
+#### 1. match_detail
+- **Basic Info**: `match_id`, `match_number`, `clock` (minutes, seconds), `date`, `start_time`, `matchtime_iso`, `gmtoffset`
+- **Result**: 
+  - `outcome`, `value`, `winning_method`, `winning_team`, `winning_team_id`
+- **Player of the Match**: `id`, `value`
+- **Series Info**: 
+  - `id`, `name`, `short_name`, `parent_series_id`, `parent_series_name`
+- **Status**: `status_id`, `status`, `stage`
+- **Toss**: `winner`, `selection`
+- **Venue**: `id`, `name`
 
+#### 2. teams
+- `home_team_id`, `home_team_name`
+- **Team Array**:
+  - `id`, `name`, `score`, `short_name`
+  - **Squad** (array of players):
+    - Basic: `id`, `name`, `short_name`, `skill`, `role`
+    - Cards: `red_card`, `yellow_card`, `green_card`, `*_card_count`
+    - Status: `jersey`, `played`, `captain`, `on_court`, `starter`, `top_raider`
+    - Points: `total`, `raid_points`, `tackle_points`
+    - Performance: `raids`, `tackles`, `strong_zones`, `weak_zones`
 
-# Match Data Structure
+#### 3. stats (for each team)
+- **Points**: `total`, `all_out`, `extras`, `declare`, `raid_points`, `tackle_points`
+- **Raids**: `total`, `super_raids`, `successful`, `unsuccessful`, `Empty`
+- **Tackles**: `total`, `super_tackles`, `successful`, `unsuccessful`
+- `all_outs`, `declare`
 
-## 1. match_detail
-   - match_id
-   - match_number
-   - clock (minutes, seconds)
-   - date
-   - start_time
-   - matchtime_iso
-   - gmtoffset
-   - result
-     - outcome
-     - value
-     - winning_method
-     - winning_team
-     - winning_team_id
-   - player_of_the_match (id, value)
-   - series
-     - id
-     - name
-     - short_name
-     - parent_series_id
-     - parent_series_name
-   - status_id
-   - status
-   - stage
-   - toss (winner, selection)
-   - venue (id, name)
+#### 4. state_of_play (for each team)
+- `is_raiding_now`, `players_on_court`
+- **Players Array**: `id`, `is_raiding_now`, `on_court`
 
-## 2. teams
-   - home_team_id
-   - home_team_name
-   - team (array)
-     - id
-     - name
-     - score
-     - short_name
-     - squad (array of players)
-       - id
-       - name
-       - short_name
-       - skill
-       - role
-       - red_card
-       - yellow_card
-       - green_card
-       - red_card_count
-       - yellow_card_count
-       - green_card_count
-       - jersey
-       - played
-       - captain
-       - on_court
-       - starter
-       - top_raider
-       - points
-         - total
-         - raid_points (total, touch, raid_bonus)
-         - tackle_points (total, capture, capture_bonus)
-       - raids
-         - total
-         - super_raids
-         - successful
-         - unsuccessful
-         - Empty
-       - tackles
-         - total
-         - super_tackles
-         - successful
-         - unsuccessful
-       - strong_zones
-         - strong_zone (array of zone_id and points)
-       - weak_zones
-         - weak_zone (array of zone_id and points)
-       - top_defender
+#### 5. events (array of match events)
+- Event Info: `event_no`, `event`, `event_id`, `event_text`
+- Player Info: `raider_id`, `raiding_team_id`, `defender_id`, `defending_team_id`
+- Points: `raid_points`, `raid_touch_points`, `raid_bonus_points`, `raid_technical_points`, `raid_all_out_points`, `defending_capture_points`, `defending_bonus_points`, `defending_technical_points`, `defending_all_out_points`, `defending_points`
+- Special: `super_raid`, `super_tackle`, `clock`, `status_id`, `do_or_die`
+- Review: `review_taken`, `team_id`, `outcome`, `reason`
+- `score`, `defenders` (array)
 
-## 3. stats (for each team)
-   - points
-     - total
-     - all_out
-     - extras
-     - declare
-     - raid_points (total, touch, raid_bonus)
-     - tackle_points (total, capture, capture_bonus)
-   - raids
-     - total
-     - super_raids
-     - successful
-     - unsuccessful
-     - Empty
-   - tackles
-     - total
-     - super_tackles
-     - successful
-     - unsuccessful
-   - all_outs
-   - declare
-
-## 4. state_of_play (for each team)
-   - is_raiding_now
-   - players_on_court
-   - players (array)
-     - id
-     - is_raiding_now
-     - on_court
-
-## 5. events (array of match events)
-   - event_no
-   - event
-   - event_id
-   - event_text
-   - raider_id (if applicable)
-   - raiding_team_id (if applicable)
-   - defender_id (if applicable)
-   - defending_team_id (if applicable)
-   - raid_points
-   - raid_touch_points
-   - raid_bonus_points
-   - raid_technical_points
-   - raid_all_out_points
-   - defending_capture_points
-   - defending_bonus_points
-   - defending_technical_points
-   - defending_all_out_points
-   - defending_points
-   - super_raid
-   - super_tackle
-   - clock
-   - status_id
-   - do_or_die
-   - review
-     - review_taken
-     - team_id
-     - outcome (id, outcome_value)
-     - reason (id, reason_value)
-   - score
-   - defenders (array)
-
-## 6. zones
-   - zone (array)
-     - id
-     - name
-
+#### 6. zones
+- **Zone Array**: `id`, `name`
 
 
 
