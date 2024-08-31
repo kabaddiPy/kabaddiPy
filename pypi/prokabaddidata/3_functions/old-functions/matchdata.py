@@ -216,7 +216,7 @@ class KabaddiMatchAnalyzer:
 
 # Usage example:
 # analyzer = KabaddiMatchAnalyzer(r"..\DATA\DATA__prokabaddi_dot_com\matchesoverview\merged_match_overview.csv")
-analyzer = KabaddiMatchAnalyzer(r"../1_DATA/DATA__ProKabaddi-Data/Matches-Overview/merged_match_overview.csv")
+analyzer = KabaddiMatchAnalyzer(r"../1_DATA/MatchWise-Data/")
 
 
 
