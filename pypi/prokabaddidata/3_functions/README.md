@@ -26,7 +26,7 @@ The file demonstrates how to use the `get_match_overview` function:
 ```python
 general_df, participants_df = get_match_overview("../1_DATA/MatchWise-Data/ Matches-Overview", 
                                                 "60", 
-"Pro Kabaddi League Season 1, 2014")
+                                                "Pro Kabaddi League Season 1, 2014")
 
 print("General Details:")
 print(general_df)
