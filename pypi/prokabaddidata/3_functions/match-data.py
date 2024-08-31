@@ -64,7 +64,10 @@ def get_match_overview(folder_path, match_id, season):
 
 
 # Example Usage
-folder_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\1_DATA\MatchWise-Data\Matches-Overview"
+# folder_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\1_DATA\MatchWise-Data\Matches-Overview"
+
+folder_path = "../1_DATA/MatchWise-Data/Matches-Overview"
+
 match_id = "60"
 season = "Pro Kabaddi League Season 1, 2014"
 
