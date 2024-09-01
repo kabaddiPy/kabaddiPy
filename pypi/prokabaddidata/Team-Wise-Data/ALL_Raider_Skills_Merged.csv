@@ -1,0 +1,99 @@
+﻿Season,Skill Type,Skill Name,Bengal Warriors (4),Bengaluru Bulls (1),Dabang Delhi (2),Gujarat Giants (31),Haryana Steelers (28),Jaipur Pink Panthers (3),Patna Pirates (6),Puneri Paltan (7),Tamil Thalaivas (29),Telugu Titans (8),U Mumba (5),U.P. Yoddha (30)
+Season6,Counter Action Skill,Release,104,86,99,118,75,97,97,48,49,64,109,96
+Season6,Counter Action Skill,Struggle,25,27,18,27,25,17,21,21,17,14,36,25
+Season6,Counter Action Skill,Out Turn,14,35,29,35,24,17,30,26,19,22,19,14
+Season6,Counter Action Skill,Jump,9,19,14,12,8,3,6,13,17,5,8,7
+Season6,Counter Action Skill,In Turn,6,7,10,2,7,2,6,5,9,5,6,7
+Season6,Counter Action Skill,Create Gap,4,,,4,6,1,1,1,9,3,1,3
+Season6,Counter Action Skill,Dubki,0,9,5,5,1,1,10,2,3,3,4,2
+Season6,Attacking Skill,Running Hand Touch,57,97,69,75,58,73,95,34,91,37,33,59
+Season6,Attacking Skill,Hand Touch,29,62,36,45,41,35,43,27,56,32,34,33
+Season6,Attacking Skill,Leg Thrust,24,11,15,11,27,11,30,12,14,4,24,22
+Season6,Attacking Skill,Toe Touch,23,12,23,19,23,18,13,19,10,9,19,12
+Season6,Attacking Skill,Defender self out,16,10,19,19,13,7,13,15,6,9,8,11
+Season6,Attacking Skill,Reverse Kick,9,15,21,7,9,9,4,6,7,12,16,6
+Season6,Attacking Skill,Side Kick,6,2,7,0,2,8,3,5,3,7,17,6
+Season6,Attacking Skill,Running Kick,1,1,3,2,0,,3,4,,6,16,
+Season6,Defensive Skill,Dive,44,44,43,61,46,41,49,52,28,39,33,51
+Season6,Defensive Skill,Block,33,37,41,30,45,57,39,52,41,49,23,54
+Season6,Defensive Skill,Ankle Hold,37,30,26,39,33,29,38,31,37,34,35,48
+Season6,Defensive Skill,Thigh Hold,33,38,28,38,39,34,42,32,24,32,39,32
+Season6,Defensive Skill,Push,20,22,27,28,30,24,15,18,28,23,28,27
+Season6,Defensive Skill,Body Hold,8,15,24,17,19,15,20,21,24,19,10,18
+Season6,Defensive Skill,Self-out,11,11,24,26,10,12,8,11,16,24,13,10
+Season6,Defensive Skill,Follow,1,2,1,1,,,,1,2,2,2,1
+Season6,Defensive Skill,Chain_def,,,,3,2,,,2,1,,,2
+Season7,Counter Action Skill,Release,124,121,93,85,108,87,96,84,70,79,75,100
+Season7,Counter Action Skill,Out Turn,34,29,30,29,29,21,20,29,32,18,29,27
+Season7,Counter Action Skill,Struggle,32,25,27,25,25,19,19,14,14,30,30,26
+Season7,Counter Action Skill,Jump,6,18,20,11,10,4,13,10,9,5,12,6
+Season7,Counter Action Skill,Dubki,6,10,7,2,2,3,12,5,0,2,3,4
+Season7,Counter Action Skill,In Turn,5,4,4,2,0,1,5,4,3,4,5,5
+Season7,Counter Action Skill,Create Gap,5,4,5,4,2,4,2,3,1,4,7,1
+Season7,Attacking Skill,Running Hand Touch,84,68,61,41,58,53,53,55,74,29,67,40
+Season7,Attacking Skill,Hand Touch,26,30,49,21,34,35,31,32,35,19,36,24
+Season7,Attacking Skill,Toe Touch,18,10,22,14,19,10,29,12,11,31,16,20
+Season7,Attacking Skill,Defender self out,9,10,12,9,8,6,10,11,7,8,6,9
+Season7,Attacking Skill,Defender self out (lobby shirt pull),4,6,3,0,2,1,1,,,3,2,5
+Season7,Attacking Skill,Running Kick,5,3,6,2,0,,5,3,2,23,5,2
+Season7,Attacking Skill,Leg Thrust,4,,,2,1,,,,4,1,3,2
+Season7,Attacking Skill,Reverse Kick,3,8,10,6,18,3,10,3,5,11,1,7
+Season7,Attacking Skill,Side Kick,1,10,6,9,12,2,1,8,1,11,9,4
+Season7,Defensive Skill,Block,43,63,40,38,46,46,44,55,40,49,34,34
+Season7,Defensive Skill,Thigh Hold,39,62,33,53,35,54,47,60,48,53,31,43
+Season7,Defensive Skill,Dive,31,48,54,59,55,56,40,45,55,46,49,66
+Season7,Defensive Skill,Ankle Hold,26,30,22,31,26,18,29,32,24,34,45,24
+Season7,Defensive Skill,Push,17,27,19,31,15,19,16,19,30,17,25,26
+Season7,Defensive Skill,Body Hold,14,19,13,9,13,10,9,6,12,14,8,10
+Season7,Defensive Skill,Self-out,10,14,15,14,16,14,13,17,27,10,21,13
+Season7,Defensive Skill,Chain_def,9,3,7,4,6,6,10,9,3,5,3,8
+Season7,Defensive Skill,Follow,,,,1,3,,,,,,1,2
+Season7,Defensive Skill,Raider self out,,,,,,,,,,,,
+Season8,Counter Action Skill,Release,86,82,90,80,63,59,75,61,61,63,55,88
+Season8,Counter Action Skill,Struggle,47,61,31,41,40,34,43,32,32,47,34,59
+Season8,Counter Action Skill,Out Turn,21,24,20,16,13,19,18,23,12,15,18,17
+Season8,Counter Action Skill,Jump,10,29,21,11,20,5,14,20,8,7,27,19
+Season8,Counter Action Skill,Create Gap,11,9,5,7,8,5,8,4,9,12,3,12
+Season8,Counter Action Skill,In Turn,4,4,2,8,1,10,5,1,1,2,6,1
+Season8,Counter Action Skill,Dubki,0,1,6,5,3,2,4,5,1,0,5,8
+Season8,Attacking Skill,Running Hand Touch,47,58,38,30,55,49,67,67,71,27,76,44
+Season8,Attacking Skill,Hand Touch,22,35,52,17,28,51,36,47,35,17,33,31
+Season8,Attacking Skill,Defender self out (lobby shirt pull),8,15,14,8,10,14,4,14,12,8,10,12
+Season8,Attacking Skill,Toe Touch,7,8,15,13,18,23,22,15,5,17,8,14
+Season8,Attacking Skill,Side Kick,5,14,15,22,7,14,7,5,4,20,3,14
+Season8,Attacking Skill,Reverse Kick,1,5,7,11,3,1,13,5,3,11,3,2
+Season8,Attacking Skill,Running Kick,,5,1,5,6,2,,5,5,7,,5
+Season8,Attacking Skill,Leg Thrust,2,,,,5,2,1,,2,1,1,5
+Season8,Defensive Skill,Thigh Hold,51,62,38,46,53,33,43,35,53,51,43,59
+Season8,Defensive Skill,Ankle Hold,52,50,35,37,47,40,39,37,41,56,31,42
+Season8,Defensive Skill,Block,30,40,34,41,31,22,34,22,30,37,44,51
+Season8,Defensive Skill,Dive,20,43,46,28,30,17,37,42,40,35,34,33
+Season8,Defensive Skill,Push,21,28,24,21,17,30,22,14,27,34,31,19
+Season8,Defensive Skill,Chain_def,10,17,14,15,11,10,6,10,15,11,16,12
+Season8,Defensive Skill,Body Hold,12,16,8,14,17,14,8,7,13,16,12,16
+Season8,Defensive Skill,Self-out,8,14,9,16,12,11,14,20,16,11,11,14
+Season8,Defensive Skill,Follow,,,,0,0,,,,0,,1,
+Season9,Counter Action Skill,Release,83,75,72,75,72,92,75,85,64,54,69,66
+Season9,Counter Action Skill,Struggle,66,44,65,64,47,24,45,53,44,39,28,55
+Season9,Counter Action Skill,Out Turn,14,18,14,18,13,13,11,12,18,12,15,17
+Season9,Counter Action Skill,Create Gap,10,9,15,10,10,11,1,17,4,12,11,8
+Season9,Counter Action Skill,Jump,7,16,14,18,15,7,13,17,10,8,14,14
+Season9,Counter Action Skill,In Turn,6,5,14,11,9,16,7,16,5,6,8,8
+Season9,Counter Action Skill,Dubki,1,1,7,10,4,1,4,6,11,2,4,15
+Season9,Counter Action Skill,Push,,2,,,,,,,,,,
+Season9,Attacking Skill,Running Hand Touch,39,100,77,68,64,84,70,66,54,45,44,52
+Season9,Attacking Skill,Hand Touch,37,56,29,31,34,74,30,50,47,17,29,42
+Season9,Attacking Skill,Defender self out (lobby shirt pull),20,29,19,20,18,22,18,14,15,12,14,18
+Season9,Attacking Skill,Side Kick,14,5,13,18,15,5,9,20,8,23,9,9
+Season9,Attacking Skill,Toe Touch,16,9,17,11,15,17,19,32,21,23,8,18
+Season9,Attacking Skill,Reverse Kick,3,1,11,12,2,5,0,8,,11,4,2
+Season9,Attacking Skill,Running Kick,2,1,1,6,6,2,1,11,1,4,6,4
+Season9,Defensive Skill,Thigh Hold,55,43,48,53,57,53,43,49,55,61,52,45
+Season9,Defensive Skill,Block,48,58,35,26,44,30,37,36,33,47,30,48
+Season9,Defensive Skill,Ankle Hold,34,35,31,40,38,51,33,24,41,59,53,38
+Season9,Defensive Skill,Dive,28,18,32,21,21,12,25,21,19,26,24,18
+Season9,Defensive Skill,Chain_def,22,18,18,22,20,13,14,8,11,16,13,16
+Season9,Defensive Skill,Push,16,31,31,23,17,14,22,31,26,23,46,20
+Season9,Defensive Skill,Body Hold,16,8,16,13,28,11,15,13,10,23,11,16
+Season9,Defensive Skill,Self-out,15,14,10,11,16,18,7,18,12,7,9,12
+Season9,Defensive Skill,Follow,1,2,0,0,,1,1,0,,0,0,0
