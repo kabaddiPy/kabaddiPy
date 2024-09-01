@@ -2,6 +2,17 @@
 
 
 
+
+Make this an organised README with all the types of functions.
+
+
+
+
+
+
+
+
+
 ## Match Data Functions
 
 This file contains functions for loading and querying Pro Kabaddi League match data.
