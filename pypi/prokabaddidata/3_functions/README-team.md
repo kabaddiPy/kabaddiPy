@@ -74,10 +74,39 @@ A tuple of three elements:
 
 #### Example Usage:
 ```python
-# Get overall information for team with ID 1
-team_info, standings, matches = get_team_info(1)
-
-# Get information for team with ID 4 in season 5
-team_info, standings, matches = get_team_info(4, 5)
+['season', 'team_id', 'team_name', 'matches_played',
+       'team-average-raid-points_rank', 'team-avg-points-scored_rank',
+       'team-all-outs-conceded_rank', 'team-successful-tackle-percent_rank',
+       'team-super-raid_rank', 'team-raid_rank',
+       'team-successful-raid-percent_rank', 'team-dod-raid-points_rank',
+       'team-super-tackles_rank', 'team-raid-points_rank',
+       'team-successful-raids_rank', 'team-total-points-conceded_rank',
+       'team-tackle-points_rank', 'team-total-points_rank',
+       'team-successful-tackles-per-match_rank',
+       'team-all-outs-inflicted_rank', 'team-average-tackle-points_rank',
+       'team-successful-tackles_rank', 'team-average-raid-points_value',
+       'team-avg-points-scored_value', 'team-all-outs-conceded_value',
+       'team-successful-tackle-percent_value', 'team-super-raid_value',
+       'team-raid_value', 'team-successful-raid-percent_value',
+       'team-dod-raid-points_value', 'team-super-tackles_value',
+       'Total touch points', 'Total bonus points', 'team-raid-points_value',
+       'team-successful-raids_value', 'team-total-points-conceded_value',
+       'team-tackle-points_value', 'team-total-points_value',
+       'team-successful-tackles-per-match_value',
+       'team-all-outs-inflicted_value', 'team-average-tackle-points_value',
+       'team-successful-tackles_value', 'team-average-raid-points_per-match',
+       'team-avg-points-scored_per-match', 'team-all-outs-conceded_per-match',
+       'team-successful-tackle-percent_per-match', 'team-super-raid_per-match',
+       'team-raid_per-match', 'team-successful-raid-percent_per-match',
+       'team-dod-raid-points_per-match', 'team-super-tackles_per-match',
+       'team-total-touch-points-ext_per-match',
+       'team-total-bonus--points-ext_per-match', 'team-raid-points_per-match',
+       'team-successful-raids_per-match',
+       'team-total-points-conceded_per-match', 'team-tackle-points_per-match',
+       'team-total-points_per-match',
+       'team-successful-tackles-per-match_per-match',
+       'team-all-outs-inflicted_per-match',
+       'team-average-tackle-points_per-match',
+       'team-successful-tackles_per-match']
 ```
 
