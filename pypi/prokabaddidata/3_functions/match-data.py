@@ -57,7 +57,7 @@ def get_match_overview(match_id, season):
                     'team_id': team_id,
                     'player_name': player['name'],
                     'player_id': player['id'],
-                    'player_value': player['value'],
+                    'player_points': player['value'],
                     'player_type': player['type']
                 }
                 participants_data.append(player_data)
