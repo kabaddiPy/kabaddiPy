@@ -14,7 +14,6 @@ def load_json_files():
     return json_files
 
 
-# Function to query match overview
 def get_match_overview(match_id, season):
     folder_path = "../1_DATA/MatchWise-Data/Matches-Overview"
     json_files = load_json_files()
@@ -31,13 +30,19 @@ def get_match_overview(match_id, season):
     if match_details:
         # General Details DataFrame
         general_details = {
+            'match_id': match_details['game_id'],
+            'event_name': match_details['event_name'],
             'tour_name': match_details['tour_name'],
-            'series_id': match_details['series_id'],
+            'result_code': match_details['result_code'],
+            'season_id': match_details['series_id'],
             'start_date': match_details['start_date'],
             'end_date': match_details['end_date'],
             'venue_name': match_details['venue_name'],
+            'venue_id': match_details['venue_id'],
             'event_status': match_details['event_status'],
-            'winning_margin': match_details['winning_margin']
+            'event_sub_status': match_details['event_sub_status'],
+            'winning_margin': match_details['winning_margin'],
+            'event_stage': match_details['event_stage'],
         }
         general_df = pd.DataFrame([general_details])
 

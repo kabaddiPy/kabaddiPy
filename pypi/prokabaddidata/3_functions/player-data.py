@@ -110,7 +110,7 @@ import pandas as pd
 def get_player_info(player_id, season=None):
     file_path = r"../1_DATA/Player-Wise-Data/all_seasons_player_stats_rounded.csv"
     df = pd.read_csv(file_path)
-
+    print(df.info())
     def to_numeric_or_nan(x):
         try:
             return pd.to_numeric(x)
@@ -152,3 +152,5 @@ if __name__ == "__main__":
     player_id = 10
     result = get_player_info(player_id)  # Returns latest season
     print(result)
+    # top_players = get_top_ranked_players()
+    # print(top_players)
