@@ -74,39 +74,29 @@ A tuple of three elements:
 
 #### Example Usage:
 ```python
-['season', 'team_id', 'team_name', 'matches_played',
-       'team-average-raid-points_rank', 'team-avg-points-scored_rank',
-       'team-all-outs-conceded_rank', 'team-successful-tackle-percent_rank',
-       'team-super-raid_rank', 'team-raid_rank',
-       'team-successful-raid-percent_rank', 'team-dod-raid-points_rank',
-       'team-super-tackles_rank', 'team-raid-points_rank',
-       'team-successful-raids_rank', 'team-total-points-conceded_rank',
-       'team-tackle-points_rank', 'team-total-points_rank',
-       'team-successful-tackles-per-match_rank',
-       'team-all-outs-inflicted_rank', 'team-average-tackle-points_rank',
-       'team-successful-tackles_rank', 'team-average-raid-points_value',
-       'team-avg-points-scored_value', 'team-all-outs-conceded_value',
-       'team-successful-tackle-percent_value', 'team-super-raid_value',
-       'team-raid_value', 'team-successful-raid-percent_value',
-       'team-dod-raid-points_value', 'team-super-tackles_value',
-       'Total touch points', 'Total bonus points', 'team-raid-points_value',
-       'team-successful-raids_value', 'team-total-points-conceded_value',
-       'team-tackle-points_value', 'team-total-points_value',
-       'team-successful-tackles-per-match_value',
-       'team-all-outs-inflicted_value', 'team-average-tackle-points_value',
-       'team-successful-tackles_value', 'team-average-raid-points_per-match',
-       'team-avg-points-scored_per-match', 'team-all-outs-conceded_per-match',
-       'team-successful-tackle-percent_per-match', 'team-super-raid_per-match',
-       'team-raid_per-match', 'team-successful-raid-percent_per-match',
-       'team-dod-raid-points_per-match', 'team-super-tackles_per-match',
-       'team-total-touch-points-ext_per-match',
-       'team-total-bonus--points-ext_per-match', 'team-raid-points_per-match',
-       'team-successful-raids_per-match',
-       'team-total-points-conceded_per-match', 'team-tackle-points_per-match',
-       'team-total-points_per-match',
-       'team-successful-tackles-per-match_per-match',
-       'team-all-outs-inflicted_per-match',
-       'team-average-tackle-points_per-match',
-       'team-successful-tackles_per-match']
+  season  team_id        team_name  ...  team-all-outs-inflicted_per-match  team-average-tackle-points_per-match  team-successful-tackles_per-match
+0    all        4  Bengal Warriors  ...                              1.169                                 0.046                              8.318
+1      5        4  Bengal Warriors  ...                              1.125                                 0.335                              7.542
+2      8        4  Bengal Warriors  ...                              1.227                                 0.368                              7.545
+3      6        4  Bengal Warriors  ...                              1.000                                 0.378                              8.087
+4      7        4  Bengal Warriors  ...                              1.708                                 0.398                              9.042
+5      9        4  Bengal Warriors  ...                              1.364                                 0.442                              9.273
+6     10        4  Bengal Warriors  ...                              1.409                                 0.421                              8.727
+
+[7 rows x 62 columns]
+  Group  Season        Team_Name  Team_Id team_short_name League_position Matches_played Wins Lost Tied Draws No Result League_points Score_diff  Qualified
+0            10  Bengal Warriorz        4          Bengal               7             22    9   11    2     0         0            55        -43      False
+         Group  Team_Id        date result opponent  team_score  opponent_score                   match_result
+match id
+3034                  4  2023-12-04      W      BLR          32              30   Bengal Warriorz Won by 2 Pts
+3044                  4  2023-12-10      W      CHE          48              38  Bengal Warriorz Won by 10 Pts
+3048                  4  2023-12-12      W      PAT          60              42  Bengal Warriorz Won by 18 Pts
+3092                  4  2024-01-09      W      HYD          46              26  Bengal Warriorz Won by 20 Pts
+3098                  4  2024-01-13      W       UP          42              37   Bengal Warriorz Won by 5 Pts
+3101                  4  2024-01-15      W      BLR          35              29   Bengal Warriorz Won by 6 Pts
+3128                  4  2024-02-02      W      DEL          45              38   Bengal Warriorz Won by 7 Pts
+3142                  4  2024-02-10      W      HYD          55              35  Bengal Warriorz Won by 20 Pts
+3146                  4  2024-02-12      W      MUM          46              34  Bengal Warriorz Won by 12 Pts
+
 ```
 
