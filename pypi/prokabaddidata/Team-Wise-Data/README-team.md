@@ -48,7 +48,7 @@ print(df_standings)
 # Displaying the Matches DataFrame
 print("Matches DataFrame:")
 print(df_matches)
-
+```
 
 ### Sample Output:
 
