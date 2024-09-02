@@ -5,24 +5,30 @@ import pandas as pd
 
 # Function to load JSON files from a directory
 def load_json_files():
-    folder_path = "../1_DATA/MatchWise-Data/Matches-Overview"
+    folder_path ="."
     json_files = []
+    
     for file_name in os.listdir(folder_path):
         if file_name.endswith('.json'):
             with open(os.path.join(folder_path, file_name)) as f:
                 json_files.append(json.load(f))
+        
+    
     return json_files
 
 
 def get_match_overview(match_id, season):
-    folder_path = "../1_DATA/MatchWise-Data/Matches-Overview"
+    folder_path = "."
     json_files = load_json_files()
 
     # Filtering based on season and match_id
     match_details = None
     for data in json_files:
+        print(data['matches'][0]['tour_name'])
         if data['matches'][0]['tour_name'] == season:
+            
             for match in data['matches']:
+                print(match['game_id'])
                 if match['game_id'] == match_id:
                     match_details = match
                     break
@@ -44,6 +50,7 @@ def get_match_overview(match_id, season):
             'winning_margin': match_details['winning_margin'],
             'event_stage': match_details['event_stage'],
         }
+
         general_df = pd.DataFrame([general_details])
 
         # Participants DataFrame
@@ -71,8 +78,8 @@ def get_match_overview(match_id, season):
 
 
 if __name__ == "__main__":
-    match_id = "60"
-    season = "Pro Kabaddi League Season 1, 2014"
+    match_id = "183"
+    season = "Pro Kabaddi League Season 4, 2016"
 
     general_df, participants_df = get_match_overview(match_id, season)
 

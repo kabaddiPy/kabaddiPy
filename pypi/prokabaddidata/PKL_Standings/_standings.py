@@ -2,9 +2,9 @@ import json
 from pathlib import Path
 import pandas as pd
 
-
-
-def create_team_info(team, season, group_name):
+def create_team_info(self, team, season, group_name):
+    """Create a dictionary with team information for a given season and group."""
+    
     return {
         'Group': group_name,
         'Season': season,
@@ -23,7 +23,7 @@ def create_team_info(team, season, group_name):
         'Qualified': team['is_qualified'],
     }
 
-def create_matches_list(team, group_name):
+def create_matches_list(self, team, group_name):
     matches = []
     for match in team['match_result']['match']:
         match_info = {
@@ -42,7 +42,7 @@ def create_matches_list(team, group_name):
         matches.append(match_info)
     return matches
 
-def process_matches(matches_list):
+def process_matches(self, matches_list):
     matches_df = pd.DataFrame(matches_list)
     matches_df = matches_df[(matches_df['result'].isin(['W', 'T'])) | (matches_df['result'].isnull())]
     matches_df = matches_df.sort_values(by='date', ascending=True)
@@ -50,13 +50,14 @@ def process_matches(matches_list):
     return matches_df
 
 
-def get_pkl_standings(season=None, team_id=None, matches=False):
+def get_pkl_standings(self, season=None, team_id=None, matches=False):
+    
     if season is None:
         season = 10
     
 
     #TODO: have to fix this...
-    file_path = Path(f"/Users/annimukh/Documents/acode/_CMUAPI/ProKabaddi_API/pypi/prokabaddidata/PKL_Standings/json_s{season}.json")
+    file_path = Path(f"./PKL_Standings/pkl_standings_s{season}.json")
 
     with open(file_path, 'r') as f:
         data = json.load(f)
@@ -81,13 +82,13 @@ def get_pkl_standings(season=None, team_id=None, matches=False):
     if matches:
         matches_df = process_matches(matches_list)
         return team_info_df, matches_df
+    
     else:
         return team_info_df
 
 
+
 if __name__ == "__main__":
-
-
 
     t,m = get_pkl_standings("8", matches=True)
     
