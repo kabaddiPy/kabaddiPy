@@ -10,13 +10,12 @@ import glob
 
 
 class KabaddiDataAPI:
-    
-    # for a season - display the standings
 
+    # for a season - display the standings
 
     def create_team_info(self, team, season, group_name):
         """Create a dictionary with team information for a given season and group."""
-        
+
         return {
             'Group': group_name,
             'Season': season,
@@ -38,7 +37,6 @@ class KabaddiDataAPI:
     def create_matches_list(self, team, group_name):
         matches = []
         for match in team['match_result']['match']:
-            
             match_info = {
                 'Group': group_name,
                 'match_id': match['id'],
@@ -53,7 +51,7 @@ class KabaddiDataAPI:
                 'match_result': match['match_result']
             }
 
-            print(match_info)   
+            print(match_info)
             matches.append(match_info)
         return matches
 
@@ -64,12 +62,10 @@ class KabaddiDataAPI:
         matches_df = matches_df.set_index('match_id').rename_axis('match id')
         return matches_df
 
-
     def get_pkl_standings(self, season=None, qualified=False, team_id=None, matches=False):
-        
+
         if season is None:
             season = 10
-        
 
         file_path = Path(f"./PKL_Standings/pkl_standings_s{season}.json")
 
@@ -78,15 +74,14 @@ class KabaddiDataAPI:
 
         standings = data['standings']
 
-        team_standings_info_list, qualified_teams_info_df, matches_list,  = [], [], []
+        team_standings_info_list, qualified_teams_info_df, matches_list, = [], [], []
 
         season_name = standings['series_name']
         champion_team_id = standings['champion_id']
 
-
         if len(standings['groups']) == 0:
             return pd.DataFrame()
-    
+
         if len(standings['groups']) == 1:
 
             group = standings['groups'][0]
@@ -94,10 +89,10 @@ class KabaddiDataAPI:
                 group_name = group['name']
             else:
                 group_name = 'Main'
-            
+
             for team in group['teams']['team']:
                 if team_id is None or int(team['team_id']) == team_id:
-                    team_standings_info =  {
+                    team_standings_info = {
                         'Group': group_name,
                         'Season': season,
                         'Team_Id': team['team_id'],
@@ -113,11 +108,11 @@ class KabaddiDataAPI:
                         'League_points': team['points'],
                         'Score_diff': team['score_diff'],
                         'Qualified': team['is_qualified'],
-                        }
-                    
+                    }
+
                     if qualified and team['is_qualified']:
                         qualified_teams_info_df.append(team_standings_info)
-                    
+
                     team_standings_info_list.append(team_standings_info)
 
                     if matches:
@@ -131,10 +126,10 @@ class KabaddiDataAPI:
                     group_name = group['name']
                 else:
                     group_name = 'Main'
-                
+
                 for team in group['teams']['team']:
                     if team_id is None or int(team['team_id']) == team_id:
-                        team_info =  {
+                        team_info = {
                             'Group': group_name,
                             'Season': season,
                             'Team_Id': team['team_id'],
@@ -150,11 +145,11 @@ class KabaddiDataAPI:
                             'League_points': team['points'],
                             'Score_diff': team['score_diff'],
                             'Qualified': team['is_qualified'],
-                            }
-                        
+                        }
+
                         if qualified and team['is_qualified']:
                             qualified_teams_info_df.append(team_info)
-                        
+
                         team_standings_info_list.append(team_info)
 
                         if matches:
@@ -169,21 +164,19 @@ class KabaddiDataAPI:
         if matches:
             matches_df = self.process_matches(matches_list)
             return team_info_df, matches_df
-        
+
         else:
             return team_info_df
 
-
-
     def match_data(self, season="all"):
         matches_list = []
-        
+
         # Determine the file(s) to load based on the season input
         if season == "all":
             files = glob.glob('./Matches-Overview/S*_PKL_MatchData.json')
         else:
             files = [f'./Matches-Overview/S{season}_PKL_MatchData.json']
-        
+
         for file in files:
             with open(file) as f:
                 data = json.load(f)
@@ -212,54 +205,76 @@ class KabaddiDataAPI:
         # Display the DataFrame
         return df
 
+    def get_team_info(self, team_id, season='overall'):
 
+        if season != 'overall':
+            season = int(season)
+        df = pd.read_csv("../prokabaddidata/Team-Wise-Data/PKL_AggregatedTeamStats.csv")
 
+        df['team_id'] = pd.to_numeric(df['team_id'], errors='coerce')
+        df['season'] = pd.to_numeric(df['season'], errors='coerce')
+
+        team_id = int(team_id)
+
+        if season == 'overall':
+            all_row = df[(df['team_id'] == team_id) & (df['season'] == 'all')]
+            other_rows = df[(df['team_id'] == team_id) & (df['season'] != 'all')]
+            filtered_df = pd.concat([all_row, other_rows]).reset_index(drop=True)
+        else:
+            filtered_df = df[(df['team_id'] == team_id) & (df['season'] == season)]
+
+        if filtered_df.empty:
+            print(f"No data found in CSV for team_id {team_id} in season {season}")
+            return None, None, None, None, None
+        if season == 'overall':
+            standings_df, matches_df = self.get_pkl_standings(season=10, team_id=team_id, matches=True)
+        else:
+            standings_df, matches_df = self.get_pkl_standings(season, team_id=team_id, matches=True)
+        standings_df = None
+        matches_df = None
+        # Separate the columns based on the suffixes
+        rank_columns = [col for col in filtered_df.columns if col.endswith('_rank')]
+        value_columns = [col for col in filtered_df.columns if col.endswith('_value')]
+        per_match_columns = [col for col in filtered_df.columns if col.endswith('_per-match')]
+
+        df_rank = filtered_df[['season', 'team_id', 'team_name'] + rank_columns]
+        df_value = filtered_df[['season', 'team_id', 'team_name'] + value_columns]
+        df_per_match = filtered_df[['season', 'team_id', 'team_name'] + per_match_columns]
+
+        return df_rank, df_value, df_per_match, standings_df, matches_df
 # Usage example
 if __name__ == "__main__":
-
     api = KabaddiDataAPI()
-
-    x = api.get_pkl_standings(season=6, qualified=False)
-    print(x)
-    # print("-"*100)
+    df_rank, df_value, df_per_match, df2, df3 = api.get_team_info(team_id='4',season='5')
+    print(df_rank)
+    # x = api.get_pkl_standings(season=6, qualified=False)
+    # print(x)
+    # # print("-"*100)
+    # # print(y)
+    #
+    # print("-" * 100, "test--", "-" * 100)
+    #
+    # x, y = api.get_pkl_standings(season=1, qualified=True)
+    # print(x)
+    # print("-" * 100)
     # print(y)
+    #
+    # print("-" * 100)
 
-    print("-"*100, "test--", "-"*100)
+    # print(x.to_latex())
 
-    x,y = api.get_pkl_standings(season=1, qualified=True)
-    print(x)
-    print("-"*100)
-    print(y)
-
-    print("-"*100)
-
-    print(x.to_latex())
-
- 
     # print(m)
-
-    
-
 
     # df = api.match_data(season=4)
     # print(df)
 
-
-
-
-
-
     # for a season -> display all the match ids for that season along with some basic info about the match (matches overview)
     # for a given match-id -> get play-by-play data
-
-    
 
     # for a given team in a given season return aggregated stats for that team
     # for a given team in a season, return the defender skills and raider skills for that team
 
     # return all matches played by that team
 
-
     # get team roster with player-ids
     # for a given player-id return aggregated stats about that player
-    
