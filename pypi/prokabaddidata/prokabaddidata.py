@@ -477,14 +477,14 @@ class KabaddiDataAPI:
         file_rvd = Path(r"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
         rvd_df = pd.read_csv(file_rvd)
 
-        raid_file = "./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv"
-        raid_df = pd.read_csv(raid_file)
-
         defend_file = "./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv"
         defend_df = pd.read_csv(defend_file)
 
         raider_file = "./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv"
         raider_df = pd.read_csv(raider_file)
+
+        player_starts = "./Player-Wise-Data/Player_Team_Lineup_merged.csv"
+        player_starts_df = pd.read_csv(player_starts)
 
         def to_numeric_or_nan(x):
             try:
@@ -505,9 +505,13 @@ class KabaddiDataAPI:
         defend_df['player_id'] = defend_df['player_id'].fillna(-1)
         defend_df['player_id'] = defend_df['player_id'].astype(np.int64)
 
-        raider_df['player_id'] = raider_df['player_id_copy_backup'].apply(to_numeric_or_nan)
+        raider_df['player_id'] = raider_df['player-id-clean'].apply(to_numeric_or_nan)
         raider_df['player_id'] = raider_df['player_id'].fillna(-1)
         raider_df['player_id'] = raider_df['player_id'].astype(np.int64)
+
+        player_starts_df['player_id'] = player_starts_df['player_id_clean'].apply(to_numeric_or_nan)
+        player_starts_df['player_id'] = player_starts_df['player_id'].fillna(-1)
+        player_starts_df['player_id'] = player_starts_df['player_id'].astype(np.int64)
 
         # If season is not specified, use the latest season
         if season is None:
@@ -516,88 +520,67 @@ class KabaddiDataAPI:
         # Player aggregated stats
         player_stats_df = df[(df['player_id'] == player_id) & (df['season'] == season)]
 
+        if player_stats_df.empty:
+            print(f"No data for player {player_id} for season {season} |  AGGREGATED")
+
+        player_starts_df = player_starts_df[(player_starts_df['player_id'] == player_id) & (player_starts_df['season_num'] == season)]
+        if player_starts_df.empty:
+            print(f"No data for player {player_id} for season {season} |  STARTS")
+
         # Raiders v defenders
         rvd_data = rvd_df[rvd_df['player-id'] == player_id]
-
         if rvd_data.empty:
             print(f"No data for raiders v no of defenders for {player_id}")
         
         rvd_extracted_df = rvd_data[rvd_data['season'].str.extract(r'(\d+)')[0].astype(int) == season]
+        if rvd_extracted_df.empty:
+            print(f"No data for raiders v no of defenders for {player_id} for season {season}")
+
 
         defend_extracted_df = defend_df[(defend_df['player_id'] == player_id) & (defend_df['season'] == season)]
+        if defend_extracted_df.empty:
+            print(f"No data for defenders for {player_id} for season {season}")
         
         raider_extracted_df = raider_df[(raider_df['player_id'] == player_id) & (raider_df['season'] == season)]
-
-        if player_stats_df.empty:
-            print(f"Data not available for player_id {player_id} for season {season}")
-
-        if rvd_extracted_df.empty:
-            print(f"Raiders vs defenders data not available for player_id {player_id} for season {season}")
-        if defend_extracted_df.empty:
-            print(f"successful defender rate not available for player_id {player_id} for season {season}")
-
-        return player_stats_df, rvd_extracted_df, defend_extracted_df
+        if raider_extracted_df.empty:
+            print(f"No data for raiders for {player_id} for season {season}")
+        
+        player_stats_df_rank = player_stats_df[["season", "player_id", "player_name", "player_matches_played", "player_position_id", "player_position_name", "team_id", "team_full_name", "player-super-tackles_rank", "player-raid-points_rank", "player-super-raids_rank", "player-high-5s_rank", "player-tackle-points_rank", "player-avg-tackle-points_rank", "player-dod-raid-points_rank", "player-total-points_rank", "player-successful-tackles_rank", "player-successful-raids_rank", "super-10s_rank" ]].copy()
+                                                
+        player_stats_df_value = player_stats_df[["season", "player_id", "player_name", "player_matches_played", "player_position_id", "player_position_name", "team_id", "team_full_name", "player-super-tackles_value", "player-raid-points_value", "player-super-raids_value", "player-high-5s_value", "player-tackle-points_value", "player-avg-tackle-points_value", "player-dod-raid-points_value", "player-total-points_value", "player-successful-tackles_value", "player-successful-raids_value", "super-10s_value"]].copy()
+                                    
+        player_stats_df_per_match = player_stats_df[["season", "player_id", "player_name", "player_matches_played", "player_position_id", "player_position_name", "team_id", "team_full_name", "player-super-tackles_points_per_match", "player-raid-points_points_per_match", "player-super-raids_points_per_match", "high-5s_points_per_match", "player-tackle-points_points_per_match", "player-dod-raid-points_points_per_match", "player-total-points_points_per_match", "player-successful-tackles_points_per_match", "player-successful-raids_points_per_match", "super-10s_points_per_match"]].copy()
 
 
-    # def get_available_seasons(self) -> List[str]:
-    #     """
-    #     Get a list of available seasons in the dataset.
-
-    #     Returns:
-    #         List[str]: A list of season names.
-    #     """
-    #     return [folder for folder in os.listdir(self.base_path)
-    #             if os.path.isdir(os.path.join(self.base_path, folder))]
+        if not defend_extracted_df.empty:
+            defend_data = defend_extracted_df.iloc[0]
+            player_stats_df_value['Total Tackles'] = defend_data.get('Total Tackles', np.nan)
+            player_stats_df_value['Successful Tackles'] = defend_data.get('Successful Tackles', np.nan)
+            player_stats_df_value['Defender Success Rate'] = defend_data.get('Defender Success rate', np.nan)
 
 
+        if not raider_extracted_df.empty:
+            raider_data = raider_extracted_df.iloc[0]
+            player_stats_df_value['Total Raids'] = raider_data.get('Total Raids', np.nan)
+            player_stats_df_value['Successful Raids'] = raider_data.get('Successful Raids', np.nan)
+            player_stats_df_value['Raider Success Rate'] = raider_data.get('Raider Success Rate', np.nan)
 
-    # def get_match_data(self, season: str, match_id: str) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
-    #     """
-    #     Get the full data for a specific match.
-    #
-    #     Args:
-    #         season (str): The season name.
-    #         match_id (str): The match ID.
-    #
-    #     Returns:
-    #         Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
-    #         A tuple containing match detail, teams, events, zones, team1, and team2 DataFrames.
-    #     """
-    #     season_path = os.path.join(self.base_path, season)
-    #     file_name = next((f for f in os.listdir(season_path) if f.endswith(f'_ID_{match_id}.json')), None)
-    #
-    #     if not file_name:
-    #         raise FileNotFoundError(f"No match file found for season {season} and match ID {match_id}")
-    #
-    #     file_path = os.path.join(season_path, file_name)
-    #
-    #     try:
-    #         with open(file_path, 'r') as file:
-    #             temp = json.load(file)
-    #             match_detail = temp.get("match_detail", {})
-    #             match_detail = match_detail.get("match_detail",{})
-    #         flattened_match_detail = self._flatten_match_detail(match_detail)
-    #         match_detail_df = pd.DataFrame([flattened_match_detail])
-    #
-    #         events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
-    #         zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
-    #
-    #         teams_data = temp.get("teams", {}).get("team", [])
-    #         if len(teams_data) != 2:
-    #             raise ValueError("Expected data for exactly two teams")
-    #
-    #         team1_df, team2_df = self._process_team_data(teams_data)
-    #         teams_df = pd.DataFrame(teams_data)
-    #
-    #         return match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df
-    #
-    #     except Exception as e:
-    #         print(f"Error loading data from {file_path}: {str(e)}")
-    #         return None, None, None, None, None, None
+        if not player_starts_df.empty:
+            player_starts_data = player_starts_df.iloc[0]
+            player_stats_df_value['Total Played'] = player_starts_data.get('Total Played', np.nan)
+            player_stats_df_value['Total Starts'] = player_starts_data.get('Total Starts', np.nan)
+
+        rvd_extracted_df = rvd_extracted_df[['Season_Number', 'Team Name',
+                                            'player-id', 'Raider Name', 'Number of Defenders', 'Total Raids',
+                                            'Percentage of Raids', 'Empty Raids Percentage',
+                                            'Successful Raids Percentage']]
+        
+        
+
+        return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T, rvd_extracted_df.T
 
 
-    def load_match_details(self, season: str, match_id: str) -> Tuple[
-        DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
+    def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
         """
         Get the full data for a specific match.
 
@@ -609,7 +592,16 @@ class KabaddiDataAPI:
             Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
             A tuple containing match detail, teams, events, zones, team1, and team2 DataFrames.
         """
-        season_path = os.path.join(self.base_path, season)
+
+        # print(f"Loading match details for season {season} and match ID {match_id}")
+
+        for dir in os.listdir(self.base_path):
+            if f"Season_PKL_Season_{season}" in dir:
+                season_path = os.path.join(self.base_path, dir)
+                break
+        else:
+            raise ValueError(f"No season data found for season {season}")
+        
         file_name = next((f for f in os.listdir(season_path) if f.endswith(f'_ID_{match_id}.json')), None)
 
         if not file_name:
@@ -627,6 +619,10 @@ class KabaddiDataAPI:
 
             match_detail = temp.get("match_detail", {})
             flattened_match_detail = self._flatten_match_detail(match_detail)
+            # print(f"Flattened match detail: {flattened_match_detail}")
+            # print(f"Flattened match detail columns: {flattened_match_detail.keys()}")
+            # print("-"*100)
+            # print(f"Match detail: {match_detail}")
             match_detail_df = pd.DataFrame([flattened_match_detail])
 
             events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
@@ -647,7 +643,7 @@ class KabaddiDataAPI:
             return None, None, None, None, None, None
 
     
-    def load_pbp_data(self, season: str, match_id: str) -> DataFrame:
+    def load_pbp_data(self, season, match_id) -> DataFrame:
         """
         Get all events for a specific match.
 
@@ -756,9 +752,9 @@ if __name__ == "__main__":
     api = KabaddiDataAPI()
 
 
-    print("get standings")
-    # x = api.get_pkl_standings(season=10)
-    # print(x)
+    # print("get standings")
+    # # x = api.get_pkl_standings(season=10)
+    # # print(x)
 
 
     qualified_df , all_standings_df = api.get_pkl_standings_matches(season=9, qualified=True)
@@ -766,9 +762,9 @@ if __name__ == "__main__":
     print(qualified_df)
     print()
 
-    print("all_standings_df")
-    print(all_standings_df)
-    print(len(all_standings_df))
+    # print("all_standings_df")
+    # print(all_standings_df)
+    # print(len(all_standings_df))
 
     print("season_matches")
     matches = api.get_season_matches(season=6)
@@ -776,7 +772,7 @@ if __name__ == "__main__":
     # print(len(x))
 
 
-    print("-"*100)
+    # print("-"*100)
     print("team_info")
 
     df_rank_, df_value_, df_per_match_, filtered_team_raider_skills_, filtered_team_defender_skills_ = api.get_team_info(season=6,team_id=29)
@@ -819,7 +815,7 @@ if __name__ == "__main__":
     # team-total-points-conceded_value
 
 
-    print("get_team_matches")
+    print("get_team_matches\n\n")
 
     df = api.get_team_matches(season=9, team_id=3)
     print(df)
@@ -828,9 +824,67 @@ if __name__ == "__main__":
 
     print("build build_team_roster")
 
-    df = api.build_team_roster(season=10, team_id='28')
+    df = api.build_team_roster(season=9, team_id='3')
     print("-"*100)
     print(df)
+
+    ## df.to_csv("team_roster.csv")
+
+
+    print("build get_player_info")
+
+    _player_stats_df_rank, _player_stats_df_value, _player_stats_df_per_match, _rvd_extracted_df = api.get_player_info(player_id=660, season=9)
+    print("-"*100)
+    print(_player_stats_df_rank)
+    print("-"*100)
+    print(_player_stats_df_value)
+    print("-"*100)
+    print(_player_stats_df_per_match)
+    print("-"*100)
+    print(_rvd_extracted_df)
+
+
+    print("load_match_details-------\n\n\n")
+    _match_detail_df, _teams_df, _events_df, _zones_df, _team1_df, _team2_df = api.load_match_details(season='9', match_id='2895')
+    print("-"*100)
+    print(_match_detail_df)
+    print("-"*100)
+    print(_teams_df)
+    print("-"*100)
+    print(_events_df)
+    print("-"*100)
+    print(_zones_df)
+    print("-"*100)
+    print(_team1_df)
+    print("-"*100)
+    print(_team2_df)
+
+
+    print("load_pbp_data")
+    _pbp_df = api.load_pbp_data(season=9, match_id='2895')
+    print("-"*100)
+    print(_pbp_df)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     # print(api.get_available_seasons())

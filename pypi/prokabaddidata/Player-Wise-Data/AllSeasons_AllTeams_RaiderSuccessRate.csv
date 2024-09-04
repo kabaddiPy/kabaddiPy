@@ -1,841 +1,841 @@
-"Unique_ID","team_id","team","season","player-id","Raider Name","Total Raids","Successful Raids","Raider Success Rate","","",""
-"team_id_7|5|Deepak Hooda","7","Puneri Paltan","5","#N/A","Deepak Hooda","360","132","37%","","1","Bengaluru Bulls"
-"team_id_7|5|Rajesh Mondal","7","Puneri Paltan","5","#N/A","Rajesh Mondal","269","79","29%","","2","Dabang Delhi"
-"team_id_7|5|Sandeep Narwal","7","Puneri Paltan","5","#N/A","Sandeep Narwal","117","30","26%","","3","Jaipur Pink Panthers"
-"team_id_7|5|Monu","7","Puneri Paltan","5","#N/A","Monu","77","16","21%","","4","Bengal Warriors"
-"team_id_7|5|Rohit Kumar Choudary","7","Puneri Paltan","5","#N/A","Rohit Kumar Choudary","46","10","22%","","5","U Mumba"
-"team_id_7|5|More G B","7","Puneri Paltan","5","#N/A","More G B","45","13","29%","","6","Patna Pirates"
-"team_id_7|5|Akshay Jadhav","7","Puneri Paltan","5","#N/A","Akshay Jadhav","39","9","23%","","7","Puneri Paltan"
-"team_id_7|5|Suresh Kumar","7","Puneri Paltan","5","#N/A","Suresh Kumar","35","12","34%","","8","Telugu Titans"
-"team_id_7|5|Girish Maruti Ernak","7","Puneri Paltan","5","#N/A","Girish Maruti Ernak","18","1","6%","","28","Haryana Steelers"
-"team_id_7|5|Dharmaraj Cheralathan","7","Puneri Paltan","5","#N/A","Dharmaraj Cheralathan","15","0","0%","","29","Tamil Thalaivas"
-"team_id_7|5|Umesh Mhatre","7","Puneri Paltan","5","#N/A","Umesh Mhatre","11","1","9%","","30","U.P. Yoddha"
-"team_id_7|5|Rinku Narwal","7","Puneri Paltan","5","#N/A","Rinku Narwal","8","1","13%","","31","Gujarat Giants"
-"team_id_7|5|Ravi Kumar","7","Puneri Paltan","5","#N/A","Ravi Kumar","2","0","0%","","",""
-"team_id_29|5|Ajay Thakur","29","Tamil Thalaivas","5","#N/A","Ajay Thakur","400","186","47%","","",""
-"team_id_29|5|K. Prapanjan","29","Tamil Thalaivas","5","#N/A","K. Prapanjan","306","105","34%","","",""
-"team_id_29|5|Vineet Kumar","29","Tamil Thalaivas","5","#N/A","Vineet Kumar","104","16","15%","","",""
-"team_id_29|5|Dong Geon Lee","29","Tamil Thalaivas","5","#N/A","Dong Geon Lee","68","25","37%","","",""
-"team_id_29|5|D. Pradap","29","Tamil Thalaivas","5","#N/A","D. Pradap","49","6","12%","","",""
-"team_id_29|5|M. Thivakaran","29","Tamil Thalaivas","5","#N/A","M. Thivakaran","36","11","31%","","",""
-"team_id_29|5|C. Arun","29","Tamil Thalaivas","5","#N/A","C. Arun","16","0","0%","","",""
-"team_id_29|5|Bhavani Rajput","29","Tamil Thalaivas","5","#N/A","Bhavani Rajput","10","2","20%","","",""
-"team_id_29|5|Amit Hooda","29","Tamil Thalaivas","5","#N/A","Amit Hooda","7","0","0%","","",""
-"team_id_29|5|Sujit Maharana","29","Tamil Thalaivas","5","#N/A","Sujit Maharana","5","0","0%","","",""
-"team_id_29|5|Anil Kumar","29","Tamil Thalaivas","5","#N/A","Anil Kumar","4","0","0%","","",""
-"team_id_29|5|Vijay Kumar","29","Tamil Thalaivas","5","#N/A","Vijay Kumar","3","0","0%","","",""
-"team_id_29|5|Darshan J.","29","Tamil Thalaivas","5","#N/A","Darshan J.","3","0","0%","","",""
-"team_id_29|5|Vijin Thangadurai","29","Tamil Thalaivas","5","#N/A","Vijin Thangadurai","2","0","0%","","",""
-"team_id_29|5|Sanket Chavan","29","Tamil Thalaivas","5","#N/A","Sanket Chavan","1","0","0%","","",""
-"team_id_29|5|Muruthu M","29","Tamil Thalaivas","5","#N/A","Muruthu M","1","0","0%","","",""
-"team_id_2|5|Meraj Sheykh","2","Dabang Delhi","5","#N/A","Meraj Sheykh","292","79","27%","","",""
-"team_id_2|5|Abolfazl Maghsodlou","2","Dabang Delhi","5","#N/A","Abolfazl Maghsodlou","230","80","35%","","",""
-"team_id_2|5|Rohit Baliyan","2","Dabang Delhi","5","#N/A","Rohit Baliyan","165","55","33%","","",""
-"team_id_2|5|Anand Patil","2","Dabang Delhi","5","#N/A","Anand Patil","102","25","25%","","",""
-"team_id_2|5|R. Sriram","2","Dabang Delhi","5","#N/A","R. Sriram","79","29","37%","","",""
-"team_id_2|5|Ravi Dalal","2","Dabang Delhi","5","#N/A","Ravi Dalal","28","4","14%","","",""
-"team_id_2|5|Shubham Ashok Palkar","2","Dabang Delhi","5","#N/A","Shubham Ashok Palkar","24","6","25%","","",""
-"team_id_2|5|Nilesh Shinde","2","Dabang Delhi","5","#N/A","Nilesh Shinde","14","2","14%","","",""
-"team_id_2|5|Suresu Kumar","2","Dabang Delhi","5","#N/A","Suresu Kumar","12","2","17%","","",""
-"team_id_2|5|Vishal","2","Dabang Delhi","5","#N/A","Vishal","7","1","14%","","",""
-"team_id_2|5|Satpal","2","Dabang Delhi","5","#N/A","Satpal","7","0","0%","","",""
-"team_id_2|5|Rupesh Tomar","2","Dabang Delhi","5","#N/A","Rupesh Tomar","7","0","0%","","",""
-"team_id_2|5|Vipin Malik","2","Dabang Delhi","5","#N/A","Vipin Malik","3","0","0%","","",""
-"team_id_2|5|Sunil","2","Dabang Delhi","5","#N/A","Sunil","2","0","0%","","",""
-"team_id_2|5|Yatharth","2","Dabang Delhi","5","#N/A","Yatharth","1","0","0%","","",""
-"team_id_28|5|Wazir Singh","28","Haryana Steeler","5","#N/A","Wazir Singh","271","90","33%","","",""
-"team_id_28|5|Deepak Kumar Dahiya","28","Haryana Steeler","5","#N/A","Deepak Kumar Dahiya","196","62","32%","","",""
-"team_id_28|5|Prashanth Kumar Rai","28","Haryana Steeler","5","#N/A","Prashanth Kumar Rai","149","63","42%","","",""
-"team_id_28|5|Surjeet Singh","28","Haryana Steeler","5","#N/A","Surjeet Singh","146","47","32%","","",""
-"team_id_28|5|Vikash Khandola","28","Haryana Steeler","5","#N/A","Vikash Khandola","136","45","33%","","",""
-"team_id_28|5|Ashish Chhokar","28","Haryana Steeler","5","#N/A","Ashish Chhokar","32","6","19%","","",""
-"team_id_28|5|Mayur Shivtarkar","28","Haryana Steeler","5","#N/A","Mayur Shivtarkar","25","6","24%","","",""
-"team_id_28|5|Surender Nada","28","Haryana Steeler","5","#N/A","Surender Nada","22","2","9%","","",""
-"team_id_28|5|Deepak Kumar","28","Haryana Steeler","5","#N/A","Deepak Kumar","17","3","18%","","",""
-"team_id_28|5|Parmod Narwal","28","Haryana Steeler","5","#N/A","Parmod Narwal","12","0","0%","","",""
-"team_id_28|5|Mohit Chhillar","28","Haryana Steeler","5","#N/A","Mohit Chhillar","9","1","11%","","",""
-"team_id_28|5|David Mosambayi","28","Haryana Steeler","5","#N/A","David Mosambayi","6","2","33%","","",""
-"team_id_28|5|Rakesh Singh Kumar","28","Haryana Steeler","5","#N/A","Rakesh Singh Kumar","3","0","0%","","",""
-"team_id_28|5|Vikas","28","Haryana Steeler","5","#N/A","Vikas","2","0","0%","","",""
-"team_id_28|5|Khomsan Thongkham","28","Haryana Steeler","5","#N/A","Khomsan Thongkham","2","0","0%","","",""
-"team_id_28|5|Neeraj Kumar","28","Haryana Steeler","5","#N/A","Neeraj Kumar","1","0","0%","","",""
-"team_id_28|5|Kuldeep Singh","28","Haryana Steeler","5","#N/A","Kuldeep Singh","1","0","0%","","",""
-"team_id_8|5|Rahul Chaudhari","8","Telugu Titans","5","#N/A","Rahul Chaudhari","412","163","40%","","",""
-"team_id_8|5|Nilesh Salunke","8","Telugu Titans","5","#N/A","Nilesh Salunke","247","80","32%","","",""
-"team_id_8|5|Vikas","8","Telugu Titans","5","#N/A","Vikas","86","26","30%","","",""
-"team_id_8|5|Mohsen Maghsoudlou","8","Telugu Titans","5","#N/A","Mohsen Maghsoudlou","83","27","33%","","",""
-"team_id_8|5|Rakesh Kumar","8","Telugu Titans","5","#N/A","Rakesh Kumar","43","7","16%","","",""
-"team_id_8|5|Vinoth Kumar","8","Telugu Titans","5","#N/A","Vinoth Kumar","23","5","22%","","",""
-"team_id_8|5|Elangeshwaran R","8","Telugu Titans","5","#N/A","Elangeshwaran R","23","7","30%","","",""
-"team_id_8|5|Rakshith","8","Telugu Titans","5","#N/A","Rakshith","22","11","50%","","",""
-"team_id_8|5|Farhad Milaghardan","8","Telugu Titans","5","#N/A","Farhad Milaghardan","18","5","28%","","",""
-"team_id_8|5|Vishal Bhardwaj","8","Telugu Titans","5","#N/A","Vishal Bhardwaj","5","0","0%","","",""
-"team_id_8|5|Vikrant","8","Telugu Titans","5","#N/A","Vikrant","5","1","20%","","",""
-"team_id_8|5|Munish","8","Telugu Titans","5","#N/A","Munish","4","0","0%","","",""
-"team_id_3|5|Pawan Kumar","3","Jaipur Pink Panthers","5","#N/A","Pawan Kumar","284","97","34%","","",""
-"team_id_3|5|Jasvir Singh","3","Jaipur Pink Panthers","5","#N/A","Jasvir Singh","210","56","27%","","",""
-"team_id_3|5|Tushar Patil","3","Jaipur Pink Panthers","5","#N/A","Tushar Patil","156","54","35%","","",""
-"team_id_3|5|Nitin Rawal","3","Jaipur Pink Panthers","5","#N/A","Nitin Rawal","148","49","33%","","",""
-"team_id_3|5|Ajit Singh","3","Jaipur Pink Panthers","5","#N/A","Ajit Singh","57","17","30%","","",""
-"team_id_3|5|Sidharth","3","Jaipur Pink Panthers","5","#N/A","Sidharth","32","3","9%","","",""
-"team_id_3|5|Manjeet Chhillar","3","Jaipur Pink Panthers","5","#N/A","Manjeet Chhillar","29","4","14%","","",""
-"team_id_3|5|Rahul Choudhary","3","Jaipur Pink Panthers","5","#N/A","Rahul Choudhary","17","5","29%","","",""
-"team_id_3|5|Selvamani K","3","Jaipur Pink Panthers","5","#N/A","Selvamani K","14","3","21%","","",""
-"team_id_3|5|Kamal Kishor","3","Jaipur Pink Panthers","5","#N/A","Kamal Kishor","9","0","0%","","",""
-"team_id_3|5|Sunil Siddhgavali","3","Jaipur Pink Panthers","5","#N/A","Sunil Siddhgavali","2","0","0%","","",""
-"team_id_3|5|Navneet Gautam","3","Jaipur Pink Panthers","5","#N/A","Navneet Gautam","2","0","0%","","",""
-"team_id_3|5|Abhishek N","3","Jaipur Pink Panthers","5","#N/A","Abhishek N","2","0","0%","","",""
-"team_id_31|5|Sachin","31","Gujarat Fortunegiants","5","#N/A","Sachin","295","134","45%","","",""
-"team_id_31|5|Sukesh Hegde","31","Gujarat Fortunegiants","5","#N/A","Sukesh Hegde","235","59","25%","","",""
-"team_id_31|5|Rohit Gulia","31","Gujarat Fortunegiants","5","#N/A","Rohit Gulia","160","33","21%","","",""
-"team_id_31|5|Chandran Ranjit","31","Gujarat Fortunegiants","5","#N/A","Chandran Ranjit","122","44","36%","","",""
-"team_id_31|5|Mahendra Rajput","31","Gujarat Fortunegiants","5","#N/A","Mahendra Rajput","109","44","40%","","",""
-"team_id_31|5|Rakesh Narwal","31","Gujarat Fortunegiants","5","#N/A","Rakesh Narwal","56","15","27%","","",""
-"team_id_31|5|Sunil Kumar","31","Gujarat Fortunegiants","5","#N/A","Sunil Kumar","31","1","3%","","",""
-"team_id_31|5|Pawan Sehrawat","31","Gujarat Fortunegiants","5","#N/A","Pawan Sehrawat","24","5","21%","","",""
-"team_id_31|5|Fazel Atrachali","31","Gujarat Fortunegiants","5","#N/A","Fazel Atrachali","11","0","0%","","",""
-"team_id_31|5|Abozar Mighani","31","Gujarat Fortunegiants","5","#N/A","Abozar Mighani","6","0","0%","","",""
-"team_id_31|5|Amit Rathi","31","Gujarat Fortunegiants","5","#N/A","Amit Rathi","3","0","0%","","",""
-"team_id_31|5|Manoj Kumar","31","Gujarat Fortunegiants","5","#N/A","Manoj Kumar","2","0","0%","","",""
-"team_id_31|5|Mahipal Narwal","31","Gujarat Fortunegiants","5","#N/A","Mahipal Narwal","1","0","0%","","",""
-"team_id_30|5|Nitin Tomar","30","UP Yoddha","5","#N/A","Nitin Tomar","327","137","42%","","",""
-"team_id_30|5|Rishank Devadiga","30","UP Yoddha","5","#N/A","Rishank Devadiga","305","128","42%","","",""
-"team_id_30|5|Surender Singh","30","UP Yoddha","5","#N/A","Surender Singh","131","47","36%","","",""
-"team_id_30|5|Mahesh Goud","30","UP Yoddha","5","#N/A","Mahesh Goud","90","31","34%","","",""
-"team_id_30|5|Rajesh Narwal","30","UP Yoddha","5","#N/A","Rajesh Narwal","80","7","9%","","",""
-"team_id_30|5|Santhosh B.S","30","UP Yoddha","5","#N/A","Santhosh B.S","18","1","6%","","",""
-"team_id_30|5|Hadi Tajik","30","UP Yoddha","5","#N/A","Hadi Tajik","12","2","17%","","",""
-"team_id_30|5|Sagar Krishna","30","UP Yoddha","5","#N/A","Sagar Krishna","10","1","10%","","",""
-"team_id_30|5|Gulveer Singh","30","UP Yoddha","5","#N/A","Gulveer Singh","8","1","13%","","",""
-"team_id_30|5|Pankaj","30","UP Yoddha","5","#N/A","Pankaj","6","0","0%","","",""
-"team_id_30|5|Sunil","30","UP Yoddha","5","#N/A","Sunil","3","0","0%","","",""
-"team_id_30|5|Sulieman Kabir","30","UP Yoddha","5","#N/A","Sulieman Kabir","3","0","0%","","",""
-"team_id_30|5|Sanoj Kumar","30","UP Yoddha","5","#N/A","Sanoj Kumar","2","2","100%","","",""
-"team_id_30|5|Rohit Kumar","30","UP Yoddha","5","#N/A","Rohit Kumar","2","1","50%","","",""
-"team_id_30|5|Nitesh Kumar","30","UP Yoddha","5","#N/A","Nitesh Kumar","2","0","0%","","",""
-"team_id_30|5|Jeeva Kumar","30","UP Yoddha","5","#N/A","Jeeva Kumar","2","0","0%","","",""
-"team_id_30|5|Ajvender Singh","30","UP Yoddha","5","#N/A","Ajvender Singh","1","0","0%","","",""
-"team_id_1|5|Rohit Kumar","1","Bengaluru Bulls","5","#N/A","Rohit Kumar","418","196","47%","","",""
-"team_id_1|5|Ajay Kumar","1","Bengaluru Bulls","5","#N/A","Ajay Kumar","257","72","28%","","",""
-"team_id_1|5|Ashish Kumar","1","Bengaluru Bulls","5","#N/A","Ashish Kumar","70","18","26%","","",""
-"team_id_1|5|Sunil Jaipal","1","Bengaluru Bulls","5","#N/A","Sunil Jaipal","54","13","24%","","",""
-"team_id_1|5|Harish Naik","1","Bengaluru Bulls","5","#N/A","Harish Naik","53","21","40%","","",""
-"team_id_1|5|Gurvinder Singh","1","Bengaluru Bulls","5","#N/A","Gurvinder Singh","37","10","27%","","",""
-"team_id_1|5|Preetam Chhillar","1","Bengaluru Bulls","5","#N/A","Preetam Chhillar","29","1","3%","","",""
-"team_id_1|5|Sachin Kumar","1","Bengaluru Bulls","5","#N/A","Sachin Kumar","7","0","0%","","",""
-"team_id_1|5|Ravinder Pahal","1","Bengaluru Bulls","5","#N/A","Ravinder Pahal","6","1","17%","","",""
-"team_id_1|5|Sumit Singh","1","Bengaluru Bulls","5","#N/A","Sumit Singh","5","0","0%","","",""
-"team_id_1|5|Rohit","1","Bengaluru Bulls","5","#N/A","Rohit","5","3","60%","","",""
-"team_id_1|5|Mahender Singh","1","Bengaluru Bulls","5","#N/A","Mahender Singh","2","1","50%","","",""
-"team_id_4|5|Maninder Singh","4","Bengal Warriors","5","#N/A","Maninder Singh","367","160","44%","","",""
-"team_id_4|5|Jang Kun Lee","4","Bengal Warriors","5","#N/A","Jang Kun Lee","212","82","39%","","",""
-"team_id_4|5|Deepak Narwal","4","Bengal Warriors","5","#N/A","Deepak Narwal","187","73","39%","","",""
-"team_id_4|5|Vinod Kumar","4","Bengal Warriors","5","#N/A","Vinod Kumar","123","28","23%","","",""
-"team_id_4|5|Bhupender Singh","4","Bengal Warriors","5","#N/A","Bhupender Singh","83","16","19%","","",""
-"team_id_4|5|Surjeet Singh","4","Bengal Warriors","5","#N/A","Surjeet Singh","52","3","6%","","",""
-"team_id_4|5|Ran Singh","4","Bengal Warriors","5","#N/A","Ran Singh","27","10","37%","","",""
-"team_id_4|5|Virender","4","Bengal Warriors","5","#N/A","Virender","11","3","27%","","",""
-"team_id_4|5|Ravindra Ramesh Kumaw..","4","Bengal Warriors","5","#N/A","Ravindra Ramesh Kumaw..","7","2","29%","","",""
-"team_id_4|5|Shrikant Tewthia","4","Bengal Warriors","5","#N/A","Shrikant Tewthia","5","2","40%","","",""
-"team_id_4|5|Kuldeep","4","Bengal Warriors","5","#N/A","Kuldeep","3","0","0%","","",""
-"team_id_4|5|Rahul Kumar","4","Bengal Warriors","5","#N/A","Rahul Kumar","1","0","0%","","",""
-"team_id_4|5|Anil Kumar","4","Bengal Warriors","5","#N/A","Anil Kumar","1","0","0%","","",""
-"team_id_6|5|Pardeep Narwal","6","Patna Pirates","5","#N/A","Pardeep Narwal","586","278","47%","","",""
-"team_id_6|5|Monu Goyat","6","Patna Pirates","5","#N/A","Monu Goyat","365","160","44%","","",""
-"team_id_6|5|Vijay","6","Patna Pirates","5","#N/A","Vijay","83","18","22%","","",""
-"team_id_6|5|Vinod Kumar","6","Patna Pirates","5","#N/A","Vinod Kumar","75","20","27%","","",""
-"team_id_6|5|Vikas Jaglan","6","Patna Pirates","5","#N/A","Vikas Jaglan","25","8","32%","","",""
-"team_id_6|5|Jawahar Dagar","6","Patna Pirates","5","#N/A","Jawahar Dagar","23","3","13%","","",""
-"team_id_6|5|Vishnu Uthaman","6","Patna Pirates","5","#N/A","Vishnu Uthaman","7","0","0%","","",""
-"team_id_6|5|Jaideep","6","Patna Pirates","5","#N/A","Jaideep","5","0","0%","","",""
-"team_id_6|5|Manish","6","Patna Pirates","5","#N/A","Manish","2","0","0%","","",""
-"team_id_6|5|Vishal Mane","6","Patna Pirates","5","#N/A","Vishal Mane","1","0","0%","","",""
-"team_id_6|5|Satish","6","Patna Pirates","5","#N/A","Satish","1","0","0%","","",""
-"team_id_5|5|Anup Kumar","5","U Mumba","5","#N/A","Anup Kumar","281","85","30%","","",""
-"team_id_5|5|Kashiling Adake","5","U Mumba","5","#N/A","Kashiling Adake","223","84","38%","","",""
-"team_id_5|5|Shrikant Jadhav","5","U Mumba","5","#N/A","Shrikant Jadhav","170","72","42%","","",""
-"team_id_5|5|Shabeer Bappu","5","U Mumba","5","#N/A","Shabeer Bappu","108","32","30%","","",""
-"team_id_5|5|Darshan Kadian","5","U Mumba","5","#N/A","Darshan Kadian","72","25","35%","","",""
-"team_id_5|5|Nitin Madane","5","U Mumba","5","#N/A","Nitin Madane","51","12","24%","","",""
-"team_id_5|5|Kuldeep Singh","5","U Mumba","5","#N/A","Kuldeep Singh","41","7","17%","","",""
-"team_id_5|5|Mohan Raman G","5","U Mumba","5","#N/A","Mohan Raman G","9","4","44%","","",""
-"team_id_5|5|Surinder Singh","5","U Mumba","5","#N/A","Surinder Singh","3","0","0%","","",""
-"team_id_5|5|Yong Joo Ok","5","U Mumba","5","#N/A","Yong Joo Ok","2","1","50%","","",""
-"team_id_5|5|Deepak Yadav","5","U Mumba","5","#N/A","Deepak Yadav","2","0","0%","","",""
-"team_id_5|5|Dong Ju Hong","5","U Mumba","5","#N/A","Dong Ju Hong","1","0","0%","","",""
-"team_id_6|6|Pardeep Narwal","6","Patna Pirates","6","#N/A","Pardeep Narwal","391","192","49%","","",""
-"team_id_6|6|Manjeet","6","Patna Pirates","6","#N/A","Manjeet","189","78","41%","","",""
-"team_id_6|6|Deepak Narwal","6","Patna Pirates","6","#N/A","Deepak Narwal","140","58","41%","","",""
-"team_id_6|6|Vijay","6","Patna Pirates","6","#N/A","Vijay","111","50","45%","","",""
-"team_id_6|6|Vikas Jaglan","6","Patna Pirates","6","#N/A","Vikas Jaglan","42","13","31%","","",""
-"team_id_6|6|Tushar Patil","6","Patna Pirates","6","#N/A","Tushar Patil","38","13","34%","","",""
-"team_id_6|6|Jaideep","6","Patna Pirates","6","#N/A","Jaideep","8","0","0%","","",""
-"team_id_6|6|Jawahar Dagar","6","Patna Pirates","6","#N/A","Jawahar Dagar","5","1","20%","","",""
-"team_id_6|6|Vikas Kale","6","Patna Pirates","6","#N/A","Vikas Kale","4","0","0%","","",""
-"team_id_6|6|Vijay Kumar","6","Patna Pirates","6","#N/A","Vijay Kumar","2","1","50%","","",""
-"team_id_6|6|Tae Deok Eom","6","Patna Pirates","6","#N/A","Tae Deok Eom","2","0","0%","","",""
-"team_id_6|6|Surender Singh","6","Patna Pirates","6","#N/A","Surender Singh","1","0","0%","","",""
-"team_id_6|6|Kuldeep Singh","6","Patna Pirates","6","#N/A","Kuldeep Singh","1","0","0%","","",""
-"team_id_1|6|Pawan Sehrawat","1","Bengaluru Bulls","6","#N/A","Pawan Sehrawat","375","214","57%","","",""
-"team_id_1|6|Rohit Kumar","1","Bengaluru Bulls","6","#N/A","Rohit Kumar","341","134","39%","","",""
-"team_id_1|6|Kashiling Adake","1","Bengaluru Bulls","6","#N/A","Kashiling Adake","164","51","31%","","",""
-"team_id_1|6|Harish Naik","1","Bengaluru Bulls","6","#N/A","Harish Naik","29","14","48%","","",""
-"team_id_1|6|Sumit Singh","1","Bengaluru Bulls","6","#N/A","Sumit Singh","27","7","26%","","",""
-"team_id_1|6|Ashish Kumar","1","Bengaluru Bulls","6","#N/A","Ashish Kumar","27","3","11%","","",""
-"team_id_1|6|Anand V","1","Bengaluru Bulls","6","#N/A","Anand V","15","3","20%","","",""
-"team_id_1|6|Mahesh Maruti Magdum","1","Bengaluru Bulls","6","#N/A","Mahesh Maruti Magdum","12","5","42%","","",""
-"team_id_1|6|Mahender Singh","1","Bengaluru Bulls","6","#N/A","Mahender Singh","10","0","0%","","",""
-"team_id_1|6|Sandeep","1","Bengaluru Bulls","6","#N/A","Sandeep","2","0","0%","","",""
-"team_id_1|6|Ankit","1","Bengaluru Bulls","6","#N/A","Ankit","2","0","0%","","",""
-"team_id_1|6|Gyung Tae Kim","1","Bengaluru Bulls","6","#N/A","Gyung Tae Kim","1","0","0%","","",""
-"team_id_4|6|Maninder Singh","4","Bengal Warriors","6","#N/A","Maninder Singh","377","163","43%","","",""
-"team_id_4|6|Jang Kun Lee","4","Bengal Warriors","6","#N/A","Jang Kun Lee","171","63","37%","","",""
-"team_id_4|6|Mahesh Goud","4","Bengal Warriors","6","#N/A","Mahesh Goud","92","27","29%","","",""
-"team_id_4|6|Ravindra Ramesh Kumaw..","4","Bengal Warriors","6","#N/A","Ravindra Ramesh Kumaw..","91","30","33%","","",""
-"team_id_4|6|Ran Singh","4","Bengal Warriors","6","#N/A","Ran Singh","72","23","32%","","",""
-"team_id_4|6|Surjeet Singh","4","Bengal Warriors","6","#N/A","Surjeet Singh","54","2","4%","","",""
-"team_id_4|6|Amit Nagar","4","Bengal Warriors","6","#N/A","Amit Nagar","36","15","42%","","",""
-"team_id_4|6|Bhupender Singh","4","Bengal Warriors","6","#N/A","Bhupender Singh","20","6","30%","","",""
-"team_id_4|6|Rakesh Narwal","4","Bengal Warriors","6","#N/A","Rakesh Narwal","16","5","31%","","",""
-"team_id_4|6|Mithin Kumar","4","Bengal Warriors","6","#N/A","Mithin Kumar","10","2","20%","","",""
-"team_id_4|6|Shrikant Tewthia","4","Bengal Warriors","6","#N/A","Shrikant Tewthia","9","2","22%","","",""
-"team_id_4|6|Amit Kumar","4","Bengal Warriors","6","#N/A","Amit Kumar","7","1","14%","","",""
-"team_id_4|6|Amaresh Mondal","4","Bengal Warriors","6","#N/A","Amaresh Mondal","3","0","0%","","",""
-"team_id_4|6|Vijin Thangadurai","4","Bengal Warriors","6","#N/A","Vijin Thangadurai","2","0","0%","","",""
-"team_id_4|6|Baldev Singh","4","Bengal Warriors","6","#N/A","Baldev Singh","1","0","0%","","",""
-"team_id_4|6|Ashish Chhokar","4","Bengal Warriors","6","#N/A","Ashish Chhokar","1","0","0%","","",""
-"team_id_4|6|Adarsh T","4","Bengal Warriors","6","#N/A","Adarsh T","1","1","100%","","",""
-"team_id_30|6|Shrikant Jadhav","30","UP Yoddha","6","#N/A","Shrikant Jadhav","332","112","34%","","",""
-"team_id_30|6|Rishank Devadiga","30","UP Yoddha","6","#N/A","Rishank Devadiga","262","84","32%","","",""
-"team_id_30|6|Prashanth Kumar Rai","30","UP Yoddha","6","#N/A","Prashanth Kumar Rai","262","115","44%","","",""
-"team_id_30|6|Sachin Kumar","30","UP Yoddha","6","#N/A","Sachin Kumar","89","21","24%","","",""
-"team_id_30|6|Azad Singh","30","UP Yoddha","6","#N/A","Azad Singh","48","14","29%","","",""
-"team_id_30|6|Rohit Kumar Choudary","30","UP Yoddha","6","#N/A","Rohit Kumar Choudary","22","2","9%","","",""
-"team_id_30|6|Bhanu Tomar","30","UP Yoddha","6","#N/A","Bhanu Tomar","22","6","27%","","",""
-"team_id_30|6|Vishav Chaudhary","30","UP Yoddha","6","#N/A","Vishav Chaudhary","11","1","9%","","",""
-"team_id_30|6|Sagar Krishna","30","UP Yoddha","6","#N/A","Sagar Krishna","9","0","0%","","",""
-"team_id_30|6|Nitesh Kumar","30","UP Yoddha","6","#N/A","Nitesh Kumar","6","0","0%","","",""
-"team_id_30|6|Md Masud Karim","30","UP Yoddha","6","#N/A","Md Masud Karim","3","2","67%","","",""
-"team_id_30|6|MD.Masud Karim","30","UP Yoddha","6","#N/A","MD.Masud Karim","1","0","0%","","",""
-"team_id_30|6|Jeeva Kumar","30","UP Yoddha","6","#N/A","Jeeva Kumar","1","0","0%","","",""
-"team_id_31|6|Sachin","31","Gujarat Fortunegiants","6","#N/A","Sachin","366","166","45%","","",""
-"team_id_31|6|K. Prapanjan","31","Gujarat Fortunegiants","6","#N/A","K. Prapanjan","255","97","38%","","",""
-"team_id_31|6|Rohit Gulia","31","Gujarat Fortunegiants","6","#N/A","Rohit Gulia","152","50","33%","","",""
-"team_id_31|6|Ajay Kumar","31","Gujarat Fortunegiants","6","#N/A","Ajay Kumar","88","26","30%","","",""
-"team_id_31|6|Mahendra Rajput","31","Gujarat Fortunegiants","6","#N/A","Mahendra Rajput","66","19","29%","","",""
-"team_id_31|6|Dong Geon Lee","31","Gujarat Fortunegiants","6","#N/A","Dong Geon Lee","65","23","35%","","",""
-"team_id_31|6|Sunil Kumar","31","Gujarat Fortunegiants","6","#N/A","Sunil Kumar","30","0","0%","","",""
-"team_id_31|6|Shubham Ashok Palkar","31","Gujarat Fortunegiants","6","#N/A","Shubham Ashok Palkar","13","2","15%","","",""
-"team_id_31|6|Hadi Oshtorak","31","Gujarat Fortunegiants","6","#N/A","Hadi Oshtorak","11","4","36%","","",""
-"team_id_31|6|Lalit Chaudhary","31","Gujarat Fortunegiants","6","#N/A","Lalit Chaudhary","7","1","14%","","",""
-"team_id_31|6|Dharmender","31","Gujarat Fortunegiants","6","#N/A","Dharmender","6","2","33%","","",""
-"team_id_31|6|Sachin V.","31","Gujarat Fortunegiants","6","#N/A","Sachin V.","5","2","40%","","",""
-"team_id_31|6|Anil","31","Gujarat Fortunegiants","6","#N/A","Anil","4","0","0%","","",""
-"team_id_31|6|Ruturaj Shivaji Koravi","31","Gujarat Fortunegiants","6","#N/A","Ruturaj Shivaji Koravi","3","0","0%","","",""
-"team_id_31|6|Parvesh Bhainswal","31","Gujarat Fortunegiants","6","#N/A","Parvesh Bhainswal","1","0","0%","","",""
-"team_id_5|6|Siddharth Sirish Desai","5","U Mumba","6","#N/A","Siddharth Sirish Desai","321","174","54%","","",""
-"team_id_5|6|Rohit Baliyan","5","U Mumba","6","#N/A","Rohit Baliyan","188","82","44%","","",""
-"team_id_5|6|Darshan Kadian","5","U Mumba","6","#N/A","Darshan Kadian","141","40","28%","","",""
-"team_id_5|6|Abhishek Singh","5","U Mumba","6","#N/A","Abhishek Singh","117","38","32%","","",""
-"team_id_5|6|Abolfazl Maghsodloumah..","5","U Mumba","6","#N/A","Abolfazl Maghsodloumah..","77","19","25%","","",""
-"team_id_5|6|Vinod Kumar","5","U Mumba","6","#N/A","Vinod Kumar","68","15","22%","","",""
-"team_id_5|6|Dharmaraj Cheralathan","5","U Mumba","6","#N/A","Dharmaraj Cheralathan","22","0","0%","","",""
-"team_id_5|6|Fazel Atrachali","5","U Mumba","6","#N/A","Fazel Atrachali","14","0","0%","","",""
-"team_id_5|6|Arjun Deshwal","5","U Mumba","6","#N/A","Arjun Deshwal","11","3","27%","","",""
-"team_id_5|6|Gaurav Kumar","5","U Mumba","6","#N/A","Gaurav Kumar","10","2","20%","","",""
-"team_id_5|6|R. Sriram","5","U Mumba","6","#N/A","R. Sriram","4","0","0%","","",""
-"team_id_5|6|Surender Singh","5","U Mumba","6","#N/A","Surender Singh","3","0","0%","","",""
-"team_id_5|6|Anil","5","U Mumba","6","#N/A","Anil","2","0","0%","","",""
-"team_id_28|6|Vikash Khandola","28","Haryana Steeler","6","#N/A","Vikash Khandola","347","141","41%","","",""
-"team_id_28|6|Monu Goyat","28","Haryana Steeler","6","#N/A","Monu Goyat","301","131","44%","","",""
-"team_id_28|6|Naveen","28","Haryana Steeler","6","#N/A","Naveen","193","75","39%","","",""
-"team_id_28|6|Mayur Shivtarkar","28","Haryana Steeler","6","#N/A","Mayur Shivtarkar","36","1","3%","","",""
-"team_id_28|6|Anand Surendra Tomar","28","Haryana Steeler","6","#N/A","Anand Surendra Tomar","20","7","35%","","",""
-"team_id_28|6|Wazir Singh","28","Haryana Steeler","6","#N/A","Wazir Singh","10","2","20%","","",""
-"team_id_28|6|Prateek","28","Haryana Steeler","6","#N/A","Prateek","8","1","13%","","",""
-"team_id_28|6|Parveen","28","Haryana Steeler","6","#N/A","Parveen","7","1","14%","","",""
-"team_id_28|6|Bhuvneshwar Gaur","28","Haryana Steeler","6","#N/A","Bhuvneshwar Gaur","7","3","43%","","",""
-"team_id_28|6|Arun Kumar HN","28","Haryana Steeler","6","#N/A","Arun Kumar HN","5","1","20%","","",""
-"team_id_28|6|Sunil","28","Haryana Steeler","6","#N/A","Sunil","3","0","0%","","",""
-"team_id_28|6|Sachin Shingade","28","Haryana Steeler","6","#N/A","Sachin Shingade","2","0","0%","","",""
-"team_id_28|6|Kuldeep Singh","28","Haryana Steeler","6","#N/A","Kuldeep Singh","2","0","0%","","",""
-"team_id_29|6|Ajay Thakur","29","Tamil Thalaivas","6","#N/A","Ajay Thakur","388","180","46%","","",""
-"team_id_29|6|Sukesh Hegde","29","Tamil Thalaivas","6","#N/A","Sukesh Hegde","176","50","28%","","",""
-"team_id_29|6|Jasvir Singh","29","Tamil Thalaivas","6","#N/A","Jasvir Singh","117","34","29%","","",""
-"team_id_29|6|Athul MS","29","Tamil Thalaivas","6","#N/A","Athul MS","105","46","44%","","",""
-"team_id_29|6|Surjeet Singh","29","Tamil Thalaivas","6","#N/A","Surjeet Singh","45","10","22%","","",""
-"team_id_29|6|Manjeet Chhillar","29","Tamil Thalaivas","6","#N/A","Manjeet Chhillar","29","5","17%","","",""
-"team_id_29|6|D. Pradap","29","Tamil Thalaivas","6","#N/A","D. Pradap","17","5","29%","","",""
-"team_id_29|6|Anand","29","Tamil Thalaivas","6","#N/A","Anand","17","7","41%","","",""
-"team_id_29|6|Vimal Raj V","29","Tamil Thalaivas","6","#N/A","Vimal Raj V","10","2","20%","","",""
-"team_id_29|6|Victor Obiero","29","Tamil Thalaivas","6","#N/A","Victor Obiero","7","4","57%","","",""
-"team_id_29|6|K. Jayaseelan","29","Tamil Thalaivas","6","#N/A","K. Jayaseelan","3","0","0%","","",""
-"team_id_29|6|C. Arun","29","Tamil Thalaivas","6","#N/A","C. Arun","3","0","0%","","",""
-"team_id_29|6|Anil Kumar","29","Tamil Thalaivas","6","#N/A","Anil Kumar","3","0","0%","","",""
-"team_id_29|6|Sunil","29","Tamil Thalaivas","6","#N/A","Sunil","2","0","0%","","",""
-"team_id_29|6|Amit Hooda","29","Tamil Thalaivas","6","#N/A","Amit Hooda","2","0","0%","","",""
-"team_id_29|6|Darshan J.","29","Tamil Thalaivas","6","#N/A","Darshan J.","1","0","0%","","",""
-"team_id_2|6|Chandran Ranjit","2","Dabang Delhi","6","#N/A","Chandran Ranjit","316","133","42%","","",""
-"team_id_2|6|Naveen Kumar","2","Dabang Delhi","6","#N/A","Naveen Kumar","307","147","48%","","",""
-"team_id_2|6|Meraj Sheykh","2","Dabang Delhi","6","#N/A","Meraj Sheykh","213","72","34%","","",""
-"team_id_2|6|Pawan Kumar","2","Dabang Delhi","6","#N/A","Pawan Kumar","90","36","40%","","",""
-"team_id_2|6|Shabeer Bappu","2","Dabang Delhi","6","#N/A","Shabeer Bappu","26","6","23%","","",""
-"team_id_2|6|Rajesh Narwal","2","Dabang Delhi","6","#N/A","Rajesh Narwal","20","5","25%","","",""
-"team_id_2|6|Yogesh Hooda","2","Dabang Delhi","6","#N/A","Yogesh Hooda","13","1","8%","","",""
-"team_id_2|6|Vishal","2","Dabang Delhi","6","#N/A","Vishal","6","1","17%","","",""
-"team_id_2|6|Aman Kadian","2","Dabang Delhi","6","#N/A","Aman Kadian","3","0","0%","","",""
-"team_id_2|6|Satpal","2","Dabang Delhi","6","#N/A","Satpal","2","0","0%","","",""
-"team_id_2|6|Sumit Kumar","2","Dabang Delhi","6","#N/A","Sumit Kumar","1","0","0%","","",""
-"team_id_7|6|Nitin Tomar","7","Puneri Paltan","6","#N/A","Nitin Tomar","192","90","47%","","",""
-"team_id_7|6|More G B","7","Puneri Paltan","6","#N/A","More G B","173","60","35%","","",""
-"team_id_7|6|Monu","7","Puneri Paltan","6","#N/A","Monu","123","39","32%","","",""
-"team_id_7|6|Akshay Jadhav","7","Puneri Paltan","6","#N/A","Akshay Jadhav","108","26","24%","","",""
-"team_id_7|6|Deepak Kumar Dahiya","7","Puneri Paltan","6","#N/A","Deepak Kumar Dahiya","88","26","30%","","",""
-"team_id_7|6|Sandeep Narwal","7","Puneri Paltan","6","#N/A","Sandeep Narwal","86","17","20%","","",""
-"team_id_7|6|Rajesh Mondal","7","Puneri Paltan","6","#N/A","Rajesh Mondal","75","13","17%","","",""
-"team_id_7|6|Parvesh","7","Puneri Paltan","6","#N/A","Parvesh","30","5","17%","","",""
-"team_id_7|6|Amit Kumar","7","Puneri Paltan","6","#N/A","Amit Kumar","29","5","17%","","",""
-"team_id_7|6|Shubham Shinde","7","Puneri Paltan","6","#N/A","Shubham Shinde","11","0","0%","","",""
-"team_id_7|6|Sandeep","7","Puneri Paltan","6","#N/A","Sandeep","9","4","44%","","",""
-"team_id_7|6|Girish Maruti Ernak","7","Puneri Paltan","6","#N/A","Girish Maruti Ernak","8","0","0%","","",""
-"team_id_7|6|Rinku Narwal","7","Puneri Paltan","6","#N/A","Rinku Narwal","7","1","14%","","",""
-"team_id_7|6|Ravi Kumar","7","Puneri Paltan","6","#N/A","Ravi Kumar","1","0","0%","","",""
-"team_id_8|6|Rahul Chaudhari","8","Telugu Titans","6","#N/A","Rahul Chaudhari","350","139","40%","","",""
-"team_id_8|6|Nilesh Salunke","8","Telugu Titans","6","#N/A","Nilesh Salunke","201","61","30%","","",""
-"team_id_8|6|Mohsen Maghsoudlou","8","Telugu Titans","6","#N/A","Mohsen Maghsoudlou","111","26","23%","","",""
-"team_id_8|6|Farhad Milaghardan","8","Telugu Titans","6","#N/A","Farhad Milaghardan","61","17","28%","","",""
-"team_id_8|6|Vishal Bhardwaj","8","Telugu Titans","6","#N/A","Vishal Bhardwaj","40","0","0%","","",""
-"team_id_8|6|Rakshith","8","Telugu Titans","6","#N/A","Rakshith","39","12","31%","","",""
-"team_id_8|6|Kamal Singh","8","Telugu Titans","6","#N/A","Kamal Singh","35","7","20%","","",""
-"team_id_8|6|Rajnish","8","Telugu Titans","6","#N/A","Rajnish","26","8","31%","","",""
-"team_id_8|6|Abozar Mighani","8","Telugu Titans","6","#N/A","Abozar Mighani","26","0","0%","","",""
-"team_id_8|6|Armaan","8","Telugu Titans","6","#N/A","Armaan","23","10","43%","","",""
-"team_id_8|6|C Manoj Kumar","8","Telugu Titans","6","#N/A","C Manoj Kumar","21","7","33%","","",""
-"team_id_8|6|Anil Kumar","8","Telugu Titans","6","#N/A","Anil Kumar","9","0","0%","","",""
-"team_id_8|6|Anuj Kumar","8","Telugu Titans","6","#N/A","Anuj Kumar","5","1","20%","","",""
-"team_id_8|6|Krushna Madane","8","Telugu Titans","6","#N/A","Krushna Madane","3","1","33%","","",""
-"team_id_8|6|Ankit Beniwal","8","Telugu Titans","6","#N/A","Ankit Beniwal","3","0","0%","","",""
-"team_id_3|6|Deepak Hooda","3","Jaipur Pink Panthers","6","#N/A","Deepak Hooda","367","164","45%","","",""
-"team_id_3|6|Ajinkya Ashok Pawar","3","Jaipur Pink Panthers","6","#N/A","Ajinkya Ashok Pawar","163","59","36%","","",""
-"team_id_3|6|Anup Kumar","3","Jaipur Pink Panthers","6","#N/A","Anup Kumar","127","30","24%","","",""
-"team_id_3|6|Selvamani K","3","Jaipur Pink Panthers","6","#N/A","Selvamani K","82","27","33%","","",""
-"team_id_3|6|Nitin Rawal","3","Jaipur Pink Panthers","6","#N/A","Nitin Rawal","57","20","35%","","",""
-"team_id_3|6|Anand Patil","3","Jaipur Pink Panthers","6","#N/A","Anand Patil","52","9","17%","","",""
-"team_id_3|6|Amit Kumar","3","Jaipur Pink Panthers","6","#N/A","Amit Kumar","35","10","29%","","",""
-"team_id_3|6|Ajit Singh","3","Jaipur Pink Panthers","6","#N/A","Ajit Singh","19","7","37%","","",""
-"team_id_3|6|Sunil Siddhgavali","3","Jaipur Pink Panthers","6","#N/A","Sunil Siddhgavali","15","4","27%","","",""
-"team_id_3|6|Lokesh Kaushik","3","Jaipur Pink Panthers","6","#N/A","Lokesh Kaushik","11","2","18%","","",""
-"team_id_3|6|Gangadhari Mallesh","3","Jaipur Pink Panthers","6","#N/A","Gangadhari Mallesh","9","1","11%","","",""
-"team_id_3|6|David Mosambayi","3","Jaipur Pink Panthers","6","#N/A","David Mosambayi","6","1","17%","","",""
-"team_id_3|6|Mohit Chhillar","3","Jaipur Pink Panthers","6","#N/A","Mohit Chhillar","4","0","0%","","",""
-"team_id_3|6|Santhapanaselvam","3","Jaipur Pink Panthers","6","#N/A","Santhapanaselvam","1","0","0%","","",""
-"team_id_3|6|Sandeep Dhull","3","Jaipur Pink Panthers","6","#N/A","Sandeep Dhull","1","0","0%","","",""
-"team_id_28|7|Vikash Khandola","28","Haryana Steeler","7","#N/A","Vikash Khandola","384","152","40%","","",""
-"team_id_28|7|Vinay","28","Haryana Steeler","7","#N/A","Vinay","230","90","39%","","",""
-"team_id_28|7|Prashanth Kumar Rai","28","Haryana Steeler","7","#N/A","Prashanth Kumar Rai","135","71","53%","","",""
-"team_id_28|7|Naveen","28","Haryana Steeler","7","#N/A","Naveen","130","50","38%","","",""
-"team_id_28|7|Selvamani K","28","Haryana Steeler","7","#N/A","Selvamani K","36","7","19%","","",""
-"team_id_28|7|Dharmaraj Cheralathan","28","Haryana Steeler","7","#N/A","Dharmaraj Cheralathan","18","1","6%","","",""
-"team_id_28|7|Ravi Kumar","28","Haryana Steeler","7","#N/A","Ravi Kumar","11","0","0%","","",""
-"team_id_28|7|Vikas Chhillar","28","Haryana Steeler","7","#N/A","Vikas Chhillar","6","3","50%","","",""
-"team_id_28|7|Phonchoo Tin","28","Haryana Steeler","7","#N/A","Phonchoo Tin","5","1","20%","","",""
-"team_id_28|7|Arun Kumar HN","28","Haryana Steeler","7","#N/A","Arun Kumar HN","5","1","20%","","",""
-"team_id_28|7|Vikas Kale","28","Haryana Steeler","7","#N/A","Vikas Kale","4","0","0%","","",""
-"team_id_28|7|Vikram Kandola","28","Haryana Steeler","7","#N/A","Vikram Kandola","1","0","0%","","",""
-"team_id_28|7|Chand Singh","28","Haryana Steeler","7","#N/A","Chand Singh","1","1","100%","","",""
-"team_id_5|7|Abhishek Singh","5","U Mumba","7","#N/A","Abhishek Singh","332","144","43%","","",""
-"team_id_5|7|Arjun Deshwal","5","U Mumba","7","#N/A","Arjun Deshwal","191","82","43%","","",""
-"team_id_5|7|Rohit Baliyan","5","U Mumba","7","#N/A","Rohit Baliyan","150","37","25%","","",""
-"team_id_5|7|Athul MS","5","U Mumba","7","#N/A","Athul MS","125","40","32%","","",""
-"team_id_5|7|Sandeep Narwal","5","U Mumba","7","#N/A","Sandeep Narwal","67","16","24%","","",""
-"team_id_5|7|Dong Geon Lee","5","U Mumba","7","#N/A","Dong Geon Lee","46","15","33%","","",""
-"team_id_5|7|Ajinkya Rohidas Kapre","5","U Mumba","7","#N/A","Ajinkya Rohidas Kapre","26","10","38%","","",""
-"team_id_5|7|Fazel Atrachali","5","U Mumba","7","#N/A","Fazel Atrachali","15","1","7%","","",""
-"team_id_5|7|Navneet","5","U Mumba","7","#N/A","Navneet","8","3","38%","","",""
-"team_id_5|7|Surender Singh","5","U Mumba","7","#N/A","Surender Singh","7","1","14%","","",""
-"team_id_5|7|Vinoth Kumar","5","U Mumba","7","#N/A","Vinoth Kumar","4","0","0%","","",""
-"team_id_5|7|Rajaguru Subramanian","5","U Mumba","7","#N/A","Rajaguru Subramanian","2","0","0%","","",""
-"team_id_5|7|Anil","5","U Mumba","7","#N/A","Anil","1","1","100%","","",""
-"team_id_2|7|Naveen Kumar","2","Dabang Delhi","7","#N/A","Naveen Kumar","472","261","55%","","",""
-"team_id_2|7|Chandran Ranjit","2","Dabang Delhi","7","#N/A","Chandran Ranjit","262","91","35%","","",""
-"team_id_2|7|Vijay","2","Dabang Delhi","7","#N/A","Vijay","107","38","36%","","",""
-"team_id_2|7|Meraj Sheykh","2","Dabang Delhi","7","#N/A","Meraj Sheykh","90","31","34%","","",""
-"team_id_2|7|Neeraj Narwal","2","Dabang Delhi","7","#N/A","Neeraj Narwal","19","5","26%","","",""
-"team_id_2|7|Aman Kadian","2","Dabang Delhi","7","#N/A","Aman Kadian","11","3","27%","","",""
-"team_id_2|7|Anil Kumar","2","Dabang Delhi","7","#N/A","Anil Kumar","6","1","17%","","",""
-"team_id_2|7|Sumit Kumar","2","Dabang Delhi","7","#N/A","Sumit Kumar","3","0","0%","","",""
-"team_id_2|7|Sombir","2","Dabang Delhi","7","#N/A","Sombir","3","1","33%","","",""
-"team_id_2|7|Balram","2","Dabang Delhi","7","#N/A","Balram","3","1","33%","","",""
-"team_id_2|7|Vishal Mane","2","Dabang Delhi","7","#N/A","Vishal Mane","2","0","0%","","",""
-"team_id_2|7|Saeid GhaÔ¨Äari","2","Dabang Delhi","7","#N/A","Saeid GhaÔ¨Äari","1","0","0%","","",""
-"team_id_2|7|Ravinder Pahal","2","Dabang Delhi","7","#N/A","Ravinder Pahal","1","0","0%","","",""
-"team_id_29|7|Rahul Chaudhari","29","Tamil Thalaivas","7","#N/A","Rahul Chaudhari","325","112","34%","","",""
-"team_id_29|7|V. Ajith Kumar","29","Tamil Thalaivas","7","#N/A","V. Ajith Kumar","217","102","47%","","",""
-"team_id_29|7|Ajay Thakur","29","Tamil Thalaivas","7","#N/A","Ajay Thakur","171","50","29%","","",""
-"team_id_29|7|Shabeer Bappu","29","Tamil Thalaivas","7","#N/A","Shabeer Bappu","93","17","18%","","",""
-"team_id_29|7|Vineet Kumar","29","Tamil Thalaivas","7","#N/A","Vineet Kumar","21","4","19%","","",""
-"team_id_29|7|Manjeet Chhillar","29","Tamil Thalaivas","7","#N/A","Manjeet Chhillar","19","0","0%","","",""
-"team_id_29|7|Victor Obiero","29","Tamil Thalaivas","7","#N/A","Victor Obiero","17","8","47%","","",""
-"team_id_29|7|Ran Singh","29","Tamil Thalaivas","7","#N/A","Ran Singh","17","7","41%","","",""
-"team_id_29|7|Anand","29","Tamil Thalaivas","7","#N/A","Anand","13","3","23%","","",""
-"team_id_29|7|Yashwant Bishnoi","29","Tamil Thalaivas","7","#N/A","Yashwant Bishnoi","9","2","22%","","",""
-"team_id_29|7|Himanshu","29","Tamil Thalaivas","7","#N/A","Himanshu","7","2","29%","","",""
-"team_id_29|7|Hemant Chauhan","29","Tamil Thalaivas","7","#N/A","Hemant Chauhan","6","1","17%","","",""
-"team_id_29|7|Mohit Chhillar","29","Tamil Thalaivas","7","#N/A","Mohit Chhillar","2","0","0%","","",""
-"team_id_29|7|Sagar","29","Tamil Thalaivas","7","#N/A","Sagar","1","0","0%","","",""
-"team_id_29|7|Milad Sheibak","29","Tamil Thalaivas","7","#N/A","Milad Sheibak","1","0","0%","","",""
-"team_id_7|7|Manjeet","7","Puneri Paltan","7","#N/A","Manjeet","270","108","40%","","",""
-"team_id_7|7|Pankaj Mohite","7","Puneri Paltan","7","#N/A","Pankaj Mohite","207","88","43%","","",""
-"team_id_7|7|Nitin Tomar","7","Puneri Paltan","7","#N/A","Nitin Tomar","142","60","42%","","",""
-"team_id_7|7|Amit Kumar","7","Puneri Paltan","7","#N/A","Amit Kumar","103","24","23%","","",""
-"team_id_7|7|Pawan Kumar","7","Puneri Paltan","7","#N/A","Pawan Kumar","59","19","32%","","",""
-"team_id_7|7|Sushant Sail","7","Puneri Paltan","7","#N/A","Sushant Sail","50","15","30%","","",""
-"team_id_7|7|Darshan Kadian","7","Puneri Paltan","7","#N/A","Darshan Kadian","32","5","16%","","",""
-"team_id_7|7|Surjeet Singh","7","Puneri Paltan","7","#N/A","Surjeet Singh","18","1","6%","","",""
-"team_id_7|7|Emad Sedaghatnia","7","Puneri Paltan","7","#N/A","Emad Sedaghatnia","17","8","47%","","",""
-"team_id_7|7|Shubham Shinde","7","Puneri Paltan","7","#N/A","Shubham Shinde","8","1","13%","","",""
-"team_id_7|7|R. Sriram","7","Puneri Paltan","7","#N/A","R. Sriram","6","0","0%","","",""
-"team_id_7|7|Hadi Tajik","7","Puneri Paltan","7","#N/A","Hadi Tajik","6","1","17%","","",""
-"team_id_7|7|Sandeep","7","Puneri Paltan","7","#N/A","Sandeep","1","0","0%","","",""
-"team_id_7|7|Sagar Krishna","7","Puneri Paltan","7","#N/A","Sagar Krishna","1","0","0%","","",""
-"team_id_7|7|Jadhav Balasaheb Shahaji","7","Puneri Paltan","7","#N/A","Jadhav Balasaheb Shahaji","1","0","0%","","",""
-"team_id_7|7|Girish Maruti Ernak","7","Puneri Paltan","7","#N/A","Girish Maruti Ernak","1","0","0%","","",""
-"team_id_3|7|Deepak Hooda","3","Jaipur Pink Panthers","7","#N/A","Deepak Hooda","304","115","38%","","",""
-"team_id_3|7|Deepak Narwal","3","Jaipur Pink Panthers","7","#N/A","Deepak Narwal","182","62","34%","","",""
-"team_id_3|7|Nilesh Salunke","3","Jaipur Pink Panthers","7","#N/A","Nilesh Salunke","154","52","34%","","",""
-"team_id_3|7|Nitin Rawal","3","Jaipur Pink Panthers","7","#N/A","Nitin Rawal","98","23","23%","","",""
-"team_id_3|7|Ajinkya Ashok Pawar","3","Jaipur Pink Panthers","7","#N/A","Ajinkya Ashok Pawar","68","17","25%","","",""
-"team_id_3|7|Sushil Gulia","3","Jaipur Pink Panthers","7","#N/A","Sushil Gulia","47","12","26%","","",""
-"team_id_3|7|Sachin Narwal","3","Jaipur Pink Panthers","7","#N/A","Sachin Narwal","36","8","22%","","",""
-"team_id_3|7|Guman Singh","3","Jaipur Pink Panthers","7","#N/A","Guman Singh","10","3","30%","","",""
-"team_id_3|7|Lokesh Kaushik","3","Jaipur Pink Panthers","7","#N/A","Lokesh Kaushik","8","3","38%","","",""
-"team_id_3|7|Amit Hooda","3","Jaipur Pink Panthers","7","#N/A","Amit Hooda","6","0","0%","","",""
-"team_id_3|7|Sandeep Dhull","3","Jaipur Pink Panthers","7","#N/A","Sandeep Dhull","3","0","0%","","",""
-"team_id_3|7|Sunil Siddhgavali","3","Jaipur Pink Panthers","7","#N/A","Sunil Siddhgavali","2","0","0%","","",""
-"team_id_3|7|Vishal","3","Jaipur Pink Panthers","7","#N/A","Vishal","1","0","0%","","",""
-"team_id_3|7|Milinda Chathuranga","3","Jaipur Pink Panthers","7","#N/A","Milinda Chathuranga","1","0","0%","","",""
-"team_id_4|7|Maninder Singh","4","Bengal Warriors","7","#N/A","Maninder Singh","318","172","54%","","",""
-"team_id_4|7|Mohammad Esmaeil Nabi..","4","Bengal Warriors","7","#N/A","Mohammad Esmaeil Nabi..","232","80","34%","","",""
-"team_id_4|7|K. Prapanjan","4","Bengal Warriors","7","#N/A","K. Prapanjan","205","77","38%","","",""
-"team_id_4|7|Sukesh Hegde","4","Bengal Warriors","7","#N/A","Sukesh Hegde","142","44","31%","","",""
-"team_id_4|7|Rakesh Narwal","4","Bengal Warriors","7","#N/A","Rakesh Narwal","27","13","48%","","",""
-"team_id_4|7|Sourabh Tanaji Patil","4","Bengal Warriors","7","#N/A","Sourabh Tanaji Patil","26","15","58%","","",""
-"team_id_4|7|Ravindra Ramesh Kumaw..","4","Bengal Warriors","7","#N/A","Ravindra Ramesh Kumaw..","17","6","35%","","",""
-"team_id_4|7|Mohammad Taghi Paein ..","4","Bengal Warriors","7","#N/A","Mohammad Taghi Paein ..","11","4","36%","","",""
-"team_id_4|7|Baldev Singh","4","Bengal Warriors","7","#N/A","Baldev Singh","7","1","14%","","",""
-"team_id_4|7|Avinash A. R.","4","Bengal Warriors","7","#N/A","Avinash A. R.","4","2","50%","","",""
-"team_id_4|7|Rinku Narwal","4","Bengal Warriors","7","#N/A","Rinku Narwal","3","0","0%","","",""
-"team_id_4|7|Sunil Manik Dubile","4","Bengal Warriors","7","#N/A","Sunil Manik Dubile","2","0","0%","","",""
-"team_id_6|7|Pardeep Narwal","6","Patna Pirates","7","#N/A","Pardeep Narwal","453","243","54%","","",""
-"team_id_6|7|Jang Kun Lee","6","Patna Pirates","7","#N/A","Jang Kun Lee","138","49","36%","","",""
-"team_id_6|7|Mohammad Esmaeil Mag..","6","Patna Pirates","7","#N/A","Mohammad Esmaeil Mag..","129","31","24%","","",""
-"team_id_6|7|Monu","6","Patna Pirates","7","#N/A","Monu","66","9","14%","","",""
-"team_id_6|7|Vikas Jaglan","6","Patna Pirates","7","#N/A","Vikas Jaglan","58","7","12%","","",""
-"team_id_6|7|Hadi Oshtorak","6","Patna Pirates","7","#N/A","Hadi Oshtorak","42","5","12%","","",""
-"team_id_6|7|Ashish","6","Patna Pirates","7","#N/A","Ashish","16","3","19%","","",""
-"team_id_6|7|Purna Singh","6","Patna Pirates","7","#N/A","Purna Singh","15","4","27%","","",""
-"team_id_6|7|Amit Kumar","6","Patna Pirates","7","#N/A","Amit Kumar","8","3","38%","","",""
-"team_id_6|7|Neeraj Kumar","6","Patna Pirates","7","#N/A","Neeraj Kumar","4","0","0%","","",""
-"team_id_6|7|Naveen","6","Patna Pirates","7","#N/A","Naveen","3","0","0%","","",""
-"team_id_6|7|Jawahar Dagar","6","Patna Pirates","7","#N/A","Jawahar Dagar","1","0","0%","","",""
-"team_id_31|7|Rohit Gulia","31","Gujarat Fortunegiants","7","#N/A","Rohit Gulia","315","109","35%","","",""
-"team_id_31|7|Sachin","31","Gujarat Fortunegiants","7","#N/A","Sachin","207","69","33%","","",""
-"team_id_31|7|More G B","31","Gujarat Fortunegiants","7","#N/A","More G B","161","49","30%","","",""
-"team_id_31|7|Sonu Jaglan","31","Gujarat Fortunegiants","7","#N/A","Sonu Jaglan","137","56","41%","","",""
-"team_id_31|7|Vinod Kumar","31","Gujarat Fortunegiants","7","#N/A","Vinod Kumar","25","6","24%","","",""
-"team_id_31|7|Sunil Kumar","31","Gujarat Fortunegiants","7","#N/A","Sunil Kumar","13","1","8%","","",""
-"team_id_31|7|Lalit Chaudhary","31","Gujarat Fortunegiants","7","#N/A","Lalit Chaudhary","13","3","23%","","",""
-"team_id_31|7|Harmanjit Singh","31","Gujarat Fortunegiants","7","#N/A","Harmanjit Singh","13","6","46%","","",""
-"team_id_31|7|Abolfazl Maghsodloumah..","31","Gujarat Fortunegiants","7","#N/A","Abolfazl Maghsodloumah..","10","3","30%","","",""
-"team_id_31|7|Gurvinder Singh","31","Gujarat Fortunegiants","7","#N/A","Gurvinder Singh","7","3","43%","","",""
-"team_id_31|7|Ruturaj Shivaji Koravi","31","Gujarat Fortunegiants","7","#N/A","Ruturaj Shivaji Koravi","3","0","0%","","",""
-"team_id_31|7|Pankaj","31","Gujarat Fortunegiants","7","#N/A","Pankaj","2","0","0%","","",""
-"team_id_8|7|Siddharth Sirish Desai","8","Telugu Titans","7","#N/A","Siddharth Sirish Desai","331","180","54%","","",""
-"team_id_8|7|Rakesh Gowda","8","Telugu Titans","7","#N/A","Rakesh Gowda","114","41","36%","","",""
-"team_id_8|7|Suraj Desai","8","Telugu Titans","7","#N/A","Suraj Desai","103","36","35%","","",""
-"team_id_8|7|Farhad Milaghardan","8","Telugu Titans","7","#N/A","Farhad Milaghardan","102","38","37%","","",""
-"team_id_8|7|Rajnish","8","Telugu Titans","7","#N/A","Rajnish","98","35","36%","","",""
-"team_id_8|7|Amit Kumar","8","Telugu Titans","7","#N/A","Amit Kumar","47","2","4%","","",""
-"team_id_8|7|Armaan","8","Telugu Titans","7","#N/A","Armaan","32","7","22%","","",""
-"team_id_8|7|Ankit Beniwal","8","Telugu Titans","7","#N/A","Ankit Beniwal","26","10","38%","","",""
-"team_id_8|7|Vishal Bhardwaj","8","Telugu Titans","7","#N/A","Vishal Bhardwaj","16","0","0%","","",""
-"team_id_8|7|Palle Mallikarjun","8","Telugu Titans","7","#N/A","Palle Mallikarjun","15","5","33%","","",""
-"team_id_8|7|Krushna Madane","8","Telugu Titans","7","#N/A","Krushna Madane","12","0","0%","","",""
-"team_id_8|7|Kamal Singh","8","Telugu Titans","7","#N/A","Kamal Singh","8","0","0%","","",""
-"team_id_8|7|Abozar Mighani","8","Telugu Titans","7","#N/A","Abozar Mighani","6","0","0%","","",""
-"team_id_8|7|C. Arun","8","Telugu Titans","7","#N/A","C. Arun","4","1","25%","","",""
-"team_id_8|7|Mula Siva Ganesh Reddy","8","Telugu Titans","7","#N/A","Mula Siva Ganesh Reddy","2","0","0%","","",""
-"team_id_1|7|Pawan Sehrawat","1","Bengaluru Bulls","7","#N/A","Pawan Sehrawat","461","267","58%","","",""
-"team_id_1|7|Rohit Kumar","1","Bengaluru Bulls","7","#N/A","Rohit Kumar","248","75","30%","","",""
-"team_id_1|7|Sumit Singh","1","Bengaluru Bulls","7","#N/A","Sumit Singh","142","46","32%","","",""
-"team_id_1|7|Banty","1","Bengaluru Bulls","7","#N/A","Banty","70","17","24%","","",""
-"team_id_1|7|Mohit Sehrawat","1","Bengaluru Bulls","7","#N/A","Mohit Sehrawat","46","4","9%","","",""
-"team_id_1|7|Ankit","1","Bengaluru Bulls","7","#N/A","Ankit","14","1","7%","","",""
-"team_id_1|7|Ashish Kumar","1","Bengaluru Bulls","7","#N/A","Ashish Kumar","12","0","0%","","",""
-"team_id_1|7|Mahender Singh","1","Bengaluru Bulls","7","#N/A","Mahender Singh","9","0","0%","","",""
-"team_id_1|7|Vijay Kumar","1","Bengaluru Bulls","7","#N/A","Vijay Kumar","4","0","0%","","",""
-"team_id_1|7|Ajay","1","Bengaluru Bulls","7","#N/A","Ajay","4","1","25%","","",""
-"team_id_1|7|Saurabh Nandal","1","Bengaluru Bulls","7","#N/A","Saurabh Nandal","1","1","100%","","",""
-"team_id_1|7|Amit Sheoran","1","Bengaluru Bulls","7","#N/A","Amit Sheoran","1","0","0%","","",""
-"team_id_30|7|Shrikant Jadhav","30","UP Yoddha","7","#N/A","Shrikant Jadhav","294","113","38%","","",""
-"team_id_30|7|Rishank Devadiga","30","UP Yoddha","7","#N/A","Rishank Devadiga","194","65","34%","","",""
-"team_id_30|7|Surender Gill","30","UP Yoddha","7","#N/A","Surender Gill","189","58","31%","","",""
-"team_id_30|7|Monu Goyat","30","UP Yoddha","7","#N/A","Monu Goyat","151","58","38%","","",""
-"team_id_30|7|Surender Singh","30","UP Yoddha","7","#N/A","Surender Singh","37","12","32%","","",""
-"team_id_30|7|Mohsen Maghsoudlou","30","UP Yoddha","7","#N/A","Mohsen Maghsoudlou","33","5","15%","","",""
-"team_id_30|7|Azad Singh","30","UP Yoddha","7","#N/A","Azad Singh","26","5","19%","","",""
-"team_id_30|7|Sachin Kumar","30","UP Yoddha","7","#N/A","Sachin Kumar","19","3","16%","","",""
-"team_id_30|7|Amit","30","UP Yoddha","7","#N/A","Amit","14","1","7%","","",""
-"team_id_30|7|Ankush","30","UP Yoddha","7","#N/A","Ankush","13","6","46%","","",""
-"team_id_30|7|Sumit","30","UP Yoddha","7","#N/A","Sumit","8","2","25%","","",""
-"team_id_30|7|Nitesh Kumar","30","UP Yoddha","7","#N/A","Nitesh Kumar","2","0","0%","","",""
-"team_id_30|7|Ashu Singh","30","UP Yoddha","7","#N/A","Ashu Singh","1","0","0%","","",""
-"team_id_5|8|Abhishek Singh","5","U Mumba","8","#N/A","Abhishek Singh","363","149","41%","","",""
-"team_id_5|8|V. Ajith Kumar","5","U Mumba","8","#N/A","V. Ajith Kumar","291","130","45%","","",""
-"team_id_5|8|Shivam","5","U Mumba","8","#N/A","Shivam","57","26","46%","","",""
-"team_id_5|8|Ajinkya Kapre","5","U Mumba","8","#N/A","Ajinkya Kapre","46","12","26%","","",""
-"team_id_5|8|Mohsen Maghsoudlou","5","U Mumba","8","#N/A","Mohsen Maghsoudlou","44","10","23%","","",""
-"team_id_5|8|Rahul Rana","5","U Mumba","8","#N/A","Rahul Rana","20","5","25%","","",""
-"team_id_5|8|Jashandeep Singh","5","U Mumba","8","#N/A","Jashandeep Singh","12","2","17%","","",""
-"team_id_5|8|Fazel Atrachali","5","U Mumba","8","#N/A","Fazel Atrachali","12","0","0%","","",""
-"team_id_5|8|Ashish Kumar","5","U Mumba","8","#N/A","Ashish Kumar","11","2","18%","","",""
-"team_id_5|8|Prathap S","5","U Mumba","8","#N/A","Prathap S","8","2","25%","","",""
-"team_id_5|8|Kamlesh","5","U Mumba","8","#N/A","Kamlesh","7","1","14%","","",""
-"team_id_5|8|Rinku Hc","5","U Mumba","8","#N/A","Rinku Hc","2","0","0%","","",""
-"team_id_5|8|Sunil Siddhgavali","5","U Mumba","8","#N/A","Sunil Siddhgavali","1","0","0%","","",""
-"team_id_5|8|Harendra Kumar","5","U Mumba","8","#N/A","Harendra Kumar","1","0","0%","","",""
-"team_id_5|8|Ajeet","5","U Mumba","8","#N/A","Ajeet","1","0","0%","","",""
-"team_id_3|8|Arjun Deshwal","3","Jaipur Pink Panthers","8","#N/A","Arjun Deshwal","421","226","54%","","",""
-"team_id_3|8|Deepak Hooda","3","Jaipur Pink Panthers","8","#N/A","Deepak Hooda","281","105","37%","","",""
-"team_id_3|8|Nitin Rawal","3","Jaipur Pink Panthers","8","#N/A","Nitin Rawal","47","4","9%","","",""
-"team_id_3|8|Naveen","3","Jaipur Pink Panthers","8","#N/A","Naveen","45","9","20%","","",""
-"team_id_3|8|Sachin Narwal","3","Jaipur Pink Panthers","8","#N/A","Sachin Narwal","30","13","43%","","",""
-"team_id_3|8|Brijendra Singh Chaudhary","3","Jaipur Pink Panthers","8","#N/A","Brijendra Singh Chaudhary","29","13","45%","","",""
-"team_id_3|8|Amit Nagar","3","Jaipur Pink Panthers","8","#N/A","Amit Nagar","18","5","28%","","",""
-"team_id_3|8|Ashok","3","Jaipur Pink Panthers","8","#N/A","Ashok","6","2","33%","","",""
-"team_id_3|8|Amirhossein Maleki","3","Jaipur Pink Panthers","8","#N/A","Amirhossein Maleki","5","4","80%","","",""
-"team_id_3|8|Amin Nosrati","3","Jaipur Pink Panthers","8","#N/A","Amin Nosrati","5","0","0%","","",""
-"team_id_3|8|Vishal Lather","3","Jaipur Pink Panthers","8","#N/A","Vishal Lather","2","0","0%","","",""
-"team_id_3|8|Sushil Gulia","3","Jaipur Pink Panthers","8","#N/A","Sushil Gulia","2","0","0%","","",""
-"team_id_3|8|Shaul Kumar","3","Jaipur Pink Panthers","8","#N/A","Shaul Kumar","2","0","0%","","",""
-"team_id_3|8|Deepak Rajendar Singh","3","Jaipur Pink Panthers","8","#N/A","Deepak Rajendar Singh","1","0","0%","","",""
-"team_id_30|8|Surender Gill","30","UP Yoddha","8","#N/A","Surender Gill","355","143","40%","","",""
-"team_id_30|8|Pardeep Narwal","30","UP Yoddha","8","#N/A","Pardeep Narwal","349","144","41%","","",""
-"team_id_30|8|Shrikant Jadhav","30","UP Yoddha","8","#N/A","Shrikant Jadhav","190","73","38%","","",""
-"team_id_30|8|Rohit Tomar","30","UP Yoddha","8","#N/A","Rohit Tomar","36","16","44%","","",""
-"team_id_30|8|Ankit","30","UP Yoddha","8","#N/A","Ankit","23","5","22%","","",""
-"team_id_30|8|Ashu Singh","30","UP Yoddha","8","#N/A","Ashu Singh","22","2","9%","","",""
-"team_id_30|8|Mohammad Taghi","30","UP Yoddha","8","#N/A","Mohammad Taghi","18","5","28%","","",""
-"team_id_30|8|Sahil","30","UP Yoddha","8","#N/A","Sahil","8","3","38%","","",""
-"team_id_30|8|Aman Hooda","30","UP Yoddha","8","#N/A","Aman Hooda","6","0","0%","","",""
-"team_id_30|8|Ankush","30","UP Yoddha","8","#N/A","Ankush","3","0","0%","","",""
-"team_id_30|8|Sumit","30","UP Yoddha","8","#N/A","Sumit","2","0","0%","","",""
-"team_id_30|8|Shubham Kumar","30","UP Yoddha","8","#N/A","Shubham Kumar","1","0","0%","","",""
-"team_id_30|8|Nitesh Kumar","30","UP Yoddha","8","#N/A","Nitesh Kumar","1","0","0%","","",""
-"team_id_2|8|Naveen Kumar","2","Dabang Delhi","8","#N/A","Naveen Kumar","338","186","55%","","",""
-"team_id_2|8|Vijay Jaglan","2","Dabang Delhi","8","#N/A","Vijay Jaglan","285","121","42%","","",""
-"team_id_2|8|Ashu Malik","2","Dabang Delhi","8","#N/A","Ashu Malik","138","41","30%","","",""
-"team_id_2|8|Neeraj Narwal","2","Dabang Delhi","8","#N/A","Neeraj Narwal","97","33","34%","","",""
-"team_id_2|8|Sandeep Narwal","2","Dabang Delhi","8","#N/A","Sandeep Narwal","68","18","26%","","",""
-"team_id_2|8|Manjeet","2","Dabang Delhi","8","#N/A","Manjeet","17","6","35%","","",""
-"team_id_2|8|Ajay Thakur","2","Dabang Delhi","8","#N/A","Ajay Thakur","13","3","23%","","",""
-"team_id_2|8|Manjeet Chhillar","2","Dabang Delhi","8","#N/A","Manjeet Chhillar","5","1","20%","","",""
-"team_id_2|8|Sushant Sail","2","Dabang Delhi","8","#N/A","Sushant Sail","4","1","25%","","",""
-"team_id_2|8|Nitin Panwar","2","Dabang Delhi","8","#N/A","Nitin Panwar","4","2","50%","","",""
-"team_id_2|8|Balram","2","Dabang Delhi","8","#N/A","Balram","4","0","0%","","",""
-"team_id_2|8|Joginder Narwal","2","Dabang Delhi","8","#N/A","Joginder Narwal","1","0","0%","","",""
-"team_id_7|8|Asalam Inamdar","7","Puneri Paltan","8","#N/A","Asalam Inamdar","355","140","39%","","",""
-"team_id_7|8|Mohit Goyat","7","Puneri Paltan","8","#N/A","Mohit Goyat","305","139","46%","","",""
-"team_id_7|8|Nitin Tomar","7","Puneri Paltan","8","#N/A","Nitin Tomar","103","37","36%","","",""
-"team_id_7|8|Pankaj Mohite","7","Puneri Paltan","8","#N/A","Pankaj Mohite","64","17","27%","","",""
-"team_id_7|8|Rahul Chaudhari","7","Puneri Paltan","8","#N/A","Rahul Chaudhari","35","10","29%","","",""
-"team_id_7|8|Vishwas S","7","Puneri Paltan","8","#N/A","Vishwas S","26","10","38%","","",""
-"team_id_7|8|Shubham Shelke","7","Puneri Paltan","8","#N/A","Shubham Shelke","15","2","13%","","",""
-"team_id_7|8|Pawan Kumar","7","Puneri Paltan","8","#N/A","Pawan Kumar","12","3","25%","","",""
-"team_id_7|8|Akash Shinde","7","Puneri Paltan","8","#N/A","Akash Shinde","11","9","82%","","",""
-"team_id_7|8|Abinesh Nadarajan","7","Puneri Paltan","8","#N/A","Abinesh Nadarajan","9","2","22%","","",""
-"team_id_7|8|Vishal Bhardwaj","7","Puneri Paltan","8","#N/A","Vishal Bhardwaj","5","0","0%","","",""
-"team_id_7|8|Victor Obiero","7","Puneri Paltan","8","#N/A","Victor Obiero","1","0","0%","","",""
-"team_id_7|8|Sombir","7","Puneri Paltan","8","#N/A","Sombir","1","0","0%","","",""
-"team_id_7|8|Sanket Sawant","7","Puneri Paltan","8","#N/A","Sanket Sawant","1","0","0%","","",""
-"team_id_7|8|Karamvir","7","Puneri Paltan","8","#N/A","Karamvir","1","0","0%","","",""
-"team_id_7|8|Baldev Singh","7","Puneri Paltan","8","#N/A","Baldev Singh","1","0","0%","","",""
-"team_id_31|8|Rakesh Sungroya","31","Gujarat Fortunegiants","8","#N/A","Rakesh Sungroya","297","118","40%","","",""
-"team_id_31|8|Ajay Kumar","31","Gujarat Fortunegiants","8","#N/A","Ajay Kumar","163","61","37%","","",""
-"team_id_31|8|Pardeep Kumar","31","Gujarat Fortunegiants","8","#N/A","Pardeep Kumar","148","55","37%","","",""
-"team_id_31|8|Rakesh Narwal","31","Gujarat Fortunegiants","8","#N/A","Rakesh Narwal","147","57","39%","","",""
-"team_id_31|8|Mahendra Rajput","31","Gujarat Fortunegiants","8","#N/A","Mahendra Rajput","119","47","39%","","",""
-"team_id_31|8|Rathan K","31","Gujarat Fortunegiants","8","#N/A","Rathan K","21","3","14%","","",""
-"team_id_31|8|Hadi Oshtorak","31","Gujarat Fortunegiants","8","#N/A","Hadi Oshtorak","16","3","19%","","",""
-"team_id_31|8|Sunil Kumar","31","Gujarat Fortunegiants","8","#N/A","Sunil Kumar","15","1","7%","","",""
-"team_id_31|8|Bhuvneshwar Gaur","31","Gujarat Fortunegiants","8","#N/A","Bhuvneshwar Gaur","5","2","40%","","",""
-"team_id_31|8|Sonu Singh","31","Gujarat Fortunegiants","8","#N/A","Sonu Singh","4","0","0%","","",""
-"team_id_31|8|Maninder Singh","31","Gujarat Fortunegiants","8","#N/A","Maninder Singh","4","1","25%","","",""
-"team_id_31|8|Harmanjit Singh","31","Gujarat Fortunegiants","8","#N/A","Harmanjit Singh","1","0","0%","","",""
-"team_id_31|8|Girish Maruti Ernak","31","Gujarat Fortunegiants","8","#N/A","Girish Maruti Ernak","1","0","0%","","",""
-"team_id_6|8|Sachin Tanwar","6","Patna Pirates","8","#N/A","Sachin Tanwar","381","144","38%","","",""
-"team_id_6|8|Guman Singh","6","Patna Pirates","8","#N/A","Guman Singh","200","76","38%","","",""
-"team_id_6|8|Monu Goyat","6","Patna Pirates","8","#N/A","Monu Goyat","165","62","38%","","",""
-"team_id_6|8|Prashanth Kumar Rai","6","Patna Pirates","8","#N/A","Prashanth Kumar Rai","163","73","45%","","",""
-"team_id_6|8|Monu Sandhu","6","Patna Pirates","8","#N/A","Monu Sandhu","31","9","29%","","",""
-"team_id_6|8|Shadloui Chianeh","6","Patna Pirates","8","#N/A","Shadloui Chianeh","21","5","24%","","",""
-"team_id_6|8|Mohit","6","Patna Pirates","8","#N/A","Mohit","14","3","21%","","",""
-"team_id_6|8|Selvamani K","6","Patna Pirates","8","#N/A","Selvamani K","10","4","40%","","",""
-"team_id_6|8|Neeraj Kumar","6","Patna Pirates","8","#N/A","Neeraj Kumar","9","0","0%","","",""
-"team_id_6|8|Daniel Omondi Odhiambo","6","Patna Pirates","8","#N/A","Daniel Omondi Odhiambo","7","2","29%","","",""
-"team_id_6|8|Shubham Shinde","6","Patna Pirates","8","#N/A","Shubham Shinde","6","1","17%","","",""
-"team_id_6|8|Rohit","6","Patna Pirates","8","#N/A","Rohit","5","1","20%","","",""
-"team_id_6|8|C Sajin","6","Patna Pirates","8","#N/A","C Sajin","1","0","0%","","",""
-"team_id_6|8|Balaji D","6","Patna Pirates","8","#N/A","Balaji D","1","0","0%","","",""
-"team_id_4|8|Maninder Singh","4","Bengal Warriors","8","#N/A","Maninder Singh","401","197","49%","","",""
-"team_id_4|8|Esmaeil Nabibakhsh","4","Bengal Warriors","8","#N/A","Esmaeil Nabibakhsh","185","67","36%","","",""
-"team_id_4|8|Sukesh Hegde","4","Bengal Warriors","8","#N/A","Sukesh Hegde","128","43","34%","","",""
-"team_id_4|8|Akash Pikalmunde","4","Bengal Warriors","8","#N/A","Akash Pikalmunde","39","12","31%","","",""
-"team_id_4|8|Manoj Gowda","4","Bengal Warriors","8","#N/A","Manoj Gowda","37","10","27%","","",""
-"team_id_4|8|Rohit","4","Bengal Warriors","8","#N/A","Rohit","36","12","33%","","",""
-"team_id_4|8|Ravindra Kumawat","4","Bengal Warriors","8","#N/A","Ravindra Kumawat","33","7","21%","","",""
-"team_id_4|8|Anand V","4","Bengal Warriors","8","#N/A","Anand V","12","2","17%","","",""
-"team_id_4|8|Ran Singh","4","Bengal Warriors","8","#N/A","Ran Singh","9","2","22%","","",""
-"team_id_4|8|Rishank Devadiga","4","Bengal Warriors","8","#N/A","Rishank Devadiga","8","1","13%","","",""
-"team_id_4|8|Rinku Narwal","4","Bengal Warriors","8","#N/A","Rinku Narwal","1","0","0%","","",""
-"team_id_4|8|Parveen Satpal","4","Bengal Warriors","8","#N/A","Parveen Satpal","1","0","0%","","",""
-"team_id_4|8|Amit Nirwal","4","Bengal Warriors","8","#N/A","Amit Nirwal","1","0","0%","","",""
-"team_id_4|8|Abozar Mohajermighani","4","Bengal Warriors","8","#N/A","Abozar Mohajermighani","1","0","0%","","",""
-"team_id_29|8|Manjeet","29","Tamil Thalaivas","8","#N/A","Manjeet","325","136","42%","","",""
-"team_id_29|8|Ajinkya Pawar","29","Tamil Thalaivas","8","#N/A","Ajinkya Pawar","213","83","39%","","",""
-"team_id_29|8|Bhavani Rajput","29","Tamil Thalaivas","8","#N/A","Bhavani Rajput","111","33","30%","","",""
-"team_id_29|8|Himanshu","29","Tamil Thalaivas","8","#N/A","Himanshu","78","30","38%","","",""
-"team_id_29|8|Athul MS","29","Tamil Thalaivas","8","#N/A","Athul MS","73","21","29%","","",""
-"team_id_29|8|K Prapanjan","29","Tamil Thalaivas","8","#N/A","K Prapanjan","59","17","29%","","",""
-"team_id_29|8|Himanshu Singh","29","Tamil Thalaivas","8","#N/A","Himanshu Singh","23","5","22%","","",""
-"team_id_29|8|Surjeet Singh","29","Tamil Thalaivas","8","#N/A","Surjeet Singh","18","1","6%","","",""
-"team_id_29|8|Sandaruwan Asiri","29","Tamil Thalaivas","8","#N/A","Sandaruwan Asiri","8","1","13%","","",""
-"team_id_29|8|Mohit","29","Tamil Thalaivas","8","#N/A","Mohit","7","0","0%","","",""
-"team_id_29|8|Anwar Saheed Baba","29","Tamil Thalaivas","8","#N/A","Anwar Saheed Baba","2","0","0%","","",""
-"team_id_29|8|Sagar Krishna","29","Tamil Thalaivas","8","#N/A","Sagar Krishna","1","0","0%","","",""
-"team_id_29|8|Sagar","29","Tamil Thalaivas","8","#N/A","Sagar","1","0","0%","","",""
-"team_id_28|8|Vikash Kandola","28","Haryana Steeler","8","#N/A","Vikash Kandola","356","147","41%","","",""
-"team_id_28|8|Meetu","28","Haryana Steeler","8","#N/A","Meetu","192","67","35%","","",""
-"team_id_28|8|Rohit Gulia","28","Haryana Steeler","8","#N/A","Rohit Gulia","113","43","38%","","",""
-"team_id_28|8|Ashish","28","Haryana Steeler","8","#N/A","Ashish","102","43","42%","","",""
-"team_id_28|8|Vinay","28","Haryana Steeler","8","#N/A","Vinay","96","48","50%","","",""
-"team_id_28|8|Jaideep","28","Haryana Steeler","8","#N/A","Jaideep","14","0","0%","","",""
-"team_id_28|8|Surender Nada","28","Haryana Steeler","8","#N/A","Surender Nada","12","2","17%","","",""
-"team_id_28|8|Mohammad Esmaeil","28","Haryana Steeler","8","#N/A","Mohammad Esmaeil","6","1","17%","","",""
-"team_id_28|8|Rajesh Narwal","28","Haryana Steeler","8","#N/A","Rajesh Narwal","4","0","0%","","",""
-"team_id_28|8|Vijay Kumar","28","Haryana Steeler","8","#N/A","Vijay Kumar","1","1","100%","","",""
-"team_id_28|8|Ravi Kumar","28","Haryana Steeler","8","#N/A","Ravi Kumar","1","0","0%","","",""
-"team_id_28|8|Ajay Ghanghas","28","Haryana Steeler","8","#N/A","Ajay Ghanghas","1","0","0%","","",""
-"team_id_8|8|Ankit Beniwal","8","Telugu Titans","8","#N/A","Ankit Beniwal","238","87","37%","","",""
-"team_id_8|8|Rajnish","8","Telugu Titans","8","#N/A","Rajnish","190","86","45%","","",""
-"team_id_8|8|Adarsh T","8","Telugu Titans","8","#N/A","Adarsh T","147","55","37%","","",""
-"team_id_8|8|Galla Raju","8","Telugu Titans","8","#N/A","Galla Raju","92","31","34%","","",""
-"team_id_8|8|Rakesh Gowda","8","Telugu Titans","8","#N/A","Rakesh Gowda","83","28","34%","","",""
-"team_id_8|8|Siddharth Desai","8","Telugu Titans","8","#N/A","Siddharth Desai","49","22","45%","","",""
-"team_id_8|8|Rohit Kumar","8","Telugu Titans","8","#N/A","Rohit Kumar","49","12","24%","","",""
-"team_id_8|8|Surinder Singh","8","Telugu Titans","8","#N/A","Surinder Singh","15","0","0%","","",""
-"team_id_8|8|Muhammed Shihas S","8","Telugu Titans","8","#N/A","Muhammed Shihas S","12","1","8%","","",""
-"team_id_8|8|Prince D","8","Telugu Titans","8","#N/A","Prince D","10","2","20%","","",""
-"team_id_8|8|Hyunsu Park","8","Telugu Titans","8","#N/A","Hyunsu Park","6","2","33%","","",""
-"team_id_8|8|Amit Chauhan","8","Telugu Titans","8","#N/A","Amit Chauhan","5","0","0%","","",""
-"team_id_8|8|Sandeep Kandola","8","Telugu Titans","8","#N/A","Sandeep Kandola","3","0","0%","","",""
-"team_id_8|8|Ruturaj Koravi","8","Telugu Titans","8","#N/A","Ruturaj Koravi","3","0","0%","","",""
-"team_id_8|8|Akash Choudhary","8","Telugu Titans","8","#N/A","Akash Choudhary","3","0","0%","","",""
-"team_id_8|8|C. Arun","8","Telugu Titans","8","#N/A","C. Arun","2","0","0%","","",""
-"team_id_1|8|Pawan Sehrawat","1","Bengaluru Bulls","8","#N/A","Pawan Sehrawat","478","250","52%","","",""
-"team_id_1|8|Bharat Naresh","1","Bengaluru Bulls","8","#N/A","Bharat Naresh","196","98","50%","","",""
-"team_id_1|8|Chandran Ranjit","1","Bengaluru Bulls","8","#N/A","Chandran Ranjit","185","61","33%","","",""
-"team_id_1|8|Deepak Narwal","1","Bengaluru Bulls","8","#N/A","Deepak Narwal","45","12","27%","","",""
-"team_id_1|8|More GB","1","Bengaluru Bulls","8","#N/A","More GB","40","3","8%","","",""
-"team_id_1|8|Dong Geon Lee","1","Bengaluru Bulls","8","#N/A","Dong Geon Lee","14","6","43%","","",""
-"team_id_1|8|Mahender Singh","1","Bengaluru Bulls","8","#N/A","Mahender Singh","12","0","0%","","",""
-"team_id_1|8|Mohit Sehrawat","1","Bengaluru Bulls","8","#N/A","Mohit Sehrawat","11","0","0%","","",""
-"team_id_1|8|Abolfazl Maghsodloumah..","1","Bengaluru Bulls","8","#N/A","Abolfazl Maghsodloumah..","6","2","33%","","",""
-"team_id_1|8|Aman","1","Bengaluru Bulls","8","#N/A","Aman","3","1","33%","","",""
-"team_id_1|8|Saurabh Nandal","1","Bengaluru Bulls","8","#N/A","Saurabh Nandal","2","0","0%","","",""
-"team_id_3|9|Arjun Deshwal","3","Jaipur Pink Panthers","9","#N/A","Arjun Deshwal","449","241","54%","","",""
-"team_id_3|9|Ajith V Kumar","3","Jaipur Pink Panthers","9","#N/A","Ajith V Kumar","182","72","40%","","",""
-"team_id_3|9|Rahul Chaudhari","3","Jaipur Pink Panthers","9","#N/A","Rahul Chaudhari","180","58","32%","","",""
-"team_id_3|9|Bhavani Rajput","3","Jaipur Pink Panthers","9","#N/A","Bhavani Rajput","77","28","36%","","",""
-"team_id_3|9|Sunil Kumar","3","Jaipur Pink Panthers","9","#N/A","Sunil Kumar","29","1","3%","","",""
-"team_id_3|9|V Ajith Kumar","3","Jaipur Pink Panthers","9","#N/A","V Ajith Kumar","17","5","29%","","",""
-"team_id_3|9|Devank","3","Jaipur Pink Panthers","9","#N/A","Devank","11","2","18%","","",""
-"team_id_3|9|Navneet","3","Jaipur Pink Panthers","9","#N/A","Navneet","10","4","40%","","",""
-"team_id_3|9|Sahul Kumar","3","Jaipur Pink Panthers","9","#N/A","Sahul Kumar","8","1","13%","","",""
-"team_id_3|9|Nitin Panwar (JP)","3","Jaipur Pink Panthers","9","#N/A","Nitin Panwar (JP)","6","0","0%","","",""
-"team_id_3|9|Nitin Panwar","3","Jaipur Pink Panthers","9","#N/A","Nitin Panwar","4","3","75%","","",""
-"team_id_3|9|Rahul Gorakh Dhanawade","3","Jaipur Pink Panthers","9","#N/A","Rahul Gorakh Dhanawade","1","0","0%","","",""
-"team_id_3|9|Lucky Sharma","3","Jaipur Pink Panthers","9","#N/A","Lucky Sharma","1","0","0%","","",""
-"team_id_28|9|Meetu Mahender","28","Haryana Steeler","9","#N/A","Meetu Mahender","318","116","36%","","",""
-"team_id_28|9|Manjeet Dahiya","28","Haryana Steeler","9","#N/A","Manjeet Dahiya","185","81","44%","","",""
-"team_id_28|9|Rakesh Narwal","28","Haryana Steeler","9","#N/A","Rakesh Narwal","110","33","30%","","",""
-"team_id_28|9|Manjeet","28","Haryana Steeler","9","#N/A","Manjeet","89","39","44%","","",""
-"team_id_28|9|K Prapanjan","28","Haryana Steeler","9","#N/A","K Prapanjan","66","30","45%","","",""
-"team_id_28|9|Vinay Tevatia","28","Haryana Steeler","9","#N/A","Vinay Tevatia","35","15","43%","","",""
-"team_id_28|9|Nitin Rawal","28","Haryana Steeler","9","#N/A","Nitin Rawal","29","4","14%","","",""
-"team_id_28|9|Sushil","28","Haryana Steeler","9","#N/A","Sushil","27","17","63%","","",""
-"team_id_28|9|Manish Gulia","28","Haryana Steeler","9","#N/A","Manish Gulia","20","9","45%","","",""
-"team_id_28|9|Vinay","28","Haryana Steeler","9","#N/A","Vinay","18","6","33%","","",""
-"team_id_28|9|Lovepreet Singh","28","Haryana Steeler","9","#N/A","Lovepreet Singh","15","6","40%","","",""
-"team_id_28|9|Jaideep Dahiya","28","Haryana Steeler","9","#N/A","Jaideep Dahiya","4","1","25%","","",""
-"team_id_28|9|Mohit Nandal","28","Haryana Steeler","9","#N/A","Mohit Nandal","1","0","0%","","",""
-"team_id_28|9|Mohit","28","Haryana Steeler","9","#N/A","Mohit","1","0","0%","","",""
-"team_id_28|9|Joginder Singh Narwal","28","Haryana Steeler","9","#N/A","Joginder Singh Narwal","1","0","0%","","",""
-"team_id_28|9|Harsh","28","Haryana Steeler","9","#N/A","Harsh","1","0","0%","","",""
-"team_id_28|9|Amirhossein Bastami","28","Haryana Steeler","9","#N/A","Amirhossein Bastami","1","0","0%","","",""
-"team_id_29|9|Narender","29","Tamil Thalaivas","9","#N/A","Narender","371","184","50%","","",""
-"team_id_29|9|Ajinkya Ashok Pawar","29","Tamil Thalaivas","9","#N/A","Ajinkya Ashok Pawar","282","90","32%","","",""
-"team_id_29|9|Himanshu","29","Tamil Thalaivas","9","#N/A","Himanshu","138","27","20%","","",""
-"team_id_29|9|Himanshu Singh","29","Tamil Thalaivas","9","#N/A","Himanshu Singh","95","27","28%","","",""
-"team_id_29|9|Visvanath V","29","Tamil Thalaivas","9","#N/A","Visvanath V","34","10","29%","","",""
-"team_id_29|9|Sachin Nehra","29","Tamil Thalaivas","9","#N/A","Sachin Nehra","26","9","35%","","",""
-"team_id_29|9|Narender","29","Tamil Thalaivas","9","#N/A","Narender","11","6","55%","","",""
-"team_id_29|9|Himanshu Narwal","29","Tamil Thalaivas","9","#N/A","Himanshu Narwal","10","4","40%","","",""
-"team_id_29|9|Mohit","29","Tamil Thalaivas","9","#N/A","Mohit","9","2","22%","","",""
-"team_id_29|9|Sachin","29","Tamil Thalaivas","9","#N/A","Sachin","5","1","20%","","",""
-"team_id_29|9|Mohit Jakhar","29","Tamil Thalaivas","9","#N/A","Mohit Jakhar","4","0","0%","","",""
-"team_id_29|9|K Abhimanyu","29","Tamil Thalaivas","9","#N/A","K Abhimanyu","3","1","33%","","",""
-"team_id_29|9|Pawan Sehrawat","29","Tamil Thalaivas","9","#N/A","Pawan Sehrawat","2","1","50%","","",""
-"team_id_29|9|Md. Arif Rabbani","29","Tamil Thalaivas","9","#N/A","Md. Arif Rabbani","2","0","0%","","",""
-"team_id_29|9|Aashish","29","Tamil Thalaivas","9","#N/A","Aashish","2","1","50%","","",""
-"team_id_2|9|Naveen Kumar","2","Dabang Delhi","9","#N/A","Naveen Kumar","439","223","51%","","",""
-"team_id_2|9|Ashu Malik","2","Dabang Delhi","9","#N/A","Ashu Malik","277","109","39%","","",""
-"team_id_2|9|Vijay Jaglan","2","Dabang Delhi","9","#N/A","Vijay Jaglan","114","53","46%","","",""
-"team_id_2|9|Manjeet","2","Dabang Delhi","9","#N/A","Manjeet","105","41","39%","","",""
-"team_id_2|9|Ashish Narwal","2","Dabang Delhi","9","#N/A","Ashish Narwal","20","6","30%","","",""
-"team_id_2|9|Vishal Lather","2","Dabang Delhi","9","#N/A","Vishal Lather","6","0","0%","","",""
-"team_id_2|9|Vijay","2","Dabang Delhi","9","#N/A","Vijay","6","1","17%","","",""
-"team_id_2|9|Tejas Maruti Patil","2","Dabang Delhi","9","#N/A","Tejas Maruti Patil","4","1","25%","","",""
-"team_id_2|9|Ravi Kumar","2","Dabang Delhi","9","#N/A","Ravi Kumar","2","0","0%","","",""
-"team_id_2|9|Vishal","2","Dabang Delhi","9","#N/A","Vishal","1","0","0%","","",""
-"team_id_7|9|Aslam Mustafa Inamdar","7","Puneri Paltan","9","#N/A","Aslam Mustafa Inamdar","268","118","44%","","",""
-"team_id_7|9|Mohit Goyat","7","Puneri Paltan","9","#N/A","Mohit Goyat","257","100","39%","","",""
-"team_id_7|9|Akash Santosh Shinde","7","Puneri Paltan","9","#N/A","Akash Santosh Shinde","195","101","52%","","",""
-"team_id_7|9|Pankaj Mohite","7","Puneri Paltan","9","#N/A","Pankaj Mohite","110","48","44%","","",""
-"team_id_7|9|Mohammad Esmaeil Nabi..","7","Puneri Paltan","9","#N/A","Mohammad Esmaeil Nabi..","62","11","18%","","",""
-"team_id_7|9|Akash Shinde","7","Puneri Paltan","9","#N/A","Akash Shinde","27","6","22%","","",""
-"team_id_7|9|Aditya Tushar Shinde","7","Puneri Paltan","9","#N/A","Aditya Tushar Shinde","23","10","43%","","",""
-"team_id_7|9|Saurabh","7","Puneri Paltan","9","#N/A","Saurabh","16","7","44%","","",""
-"team_id_7|9|Mohammad Nabibakhsh","7","Puneri Paltan","9","#N/A","Mohammad Nabibakhsh","14","4","29%","","",""
-"team_id_7|9|Aditya Shinde","7","Puneri Paltan","9","#N/A","Aditya Shinde","7","3","43%","","",""
-"team_id_7|9|Gaurav Khatri","7","Puneri Paltan","9","#N/A","Gaurav Khatri","6","1","17%","","",""
-"team_id_7|9|D Mahindraprasad","7","Puneri Paltan","9","#N/A","D Mahindraprasad","6","1","17%","","",""
-"team_id_7|9|Fazel Atrachali","7","Puneri Paltan","9","#N/A","Fazel Atrachali","4","0","0%","","",""
-"team_id_7|9|Rakesh Bhalle Ram","7","Puneri Paltan","9","#N/A","Rakesh Bhalle Ram","3","0","0%","","",""
-"team_id_7|9|Govind Gurjar","7","Puneri Paltan","9","#N/A","Govind Gurjar","3","1","33%","","",""
-"team_id_7|9|Abinesh Nadarajan","7","Puneri Paltan","9","#N/A","Abinesh Nadarajan","2","0","0%","","",""
-"team_id_7|9|Sanket Sawant","7","Puneri Paltan","9","#N/A","Sanket Sawant","1","0","0%","","",""
-"team_id_7|9|Badal Taqdir Singh","7","Puneri Paltan","9","#N/A","Badal Taqdir Singh","1","0","0%","","",""
-"team_id_7|9|Ajinkya Ashok Pawar","7","Puneri Paltan","9","#N/A","Ajinkya Ashok Pawar","1","0","0%","","",""
-"team_id_5|9|Guman Singh","5","U Mumba","9","#N/A","Guman Singh","279","107","38%","","",""
-"team_id_5|9|Ashish (Bubla)","5","U Mumba","9","#N/A","Ashish (Bubla)","195","63","32%","","",""
-"team_id_5|9|Jai Bhagwan","5","U Mumba","9","#N/A","Jai Bhagwan","163","52","32%","","",""
-"team_id_5|9|Heidarali Ekrami","5","U Mumba","9","#N/A","Heidarali Ekrami","64","21","33%","","",""
-"team_id_5|9|Ashish","5","U Mumba","9","#N/A","Ashish","64","20","31%","","",""
-"team_id_5|9|Pranay Vinay Rane","5","U Mumba","9","#N/A","Pranay Vinay Rane","47","20","43%","","",""
-"team_id_5|9|Shivam","5","U Mumba","9","#N/A","Shivam","26","8","31%","","",""
-"team_id_5|9|Rahul Sethpal","5","U Mumba","9","#N/A","Rahul Sethpal","26","1","4%","","",""
-"team_id_5|9|Rinku H C","5","U Mumba","9","#N/A","Rinku H C","16","0","0%","","",""
-"team_id_5|9|Ankush","5","U Mumba","9","#N/A","Ankush","12","0","0%","","",""
-"team_id_5|9|Surinder Singh","5","U Mumba","9","#N/A","Surinder Singh","8","0","0%","","",""
-"team_id_5|9|Shivansh Thakur","5","U Mumba","9","#N/A","Shivansh Thakur","6","0","0%","","",""
-"team_id_5|9|Kamlesh","5","U Mumba","9","#N/A","Kamlesh","6","2","33%","","",""
-"team_id_5|9|Harendra Kumar","5","U Mumba","9","#N/A","Harendra Kumar","6","0","0%","","",""
-"team_id_5|9|Rupesh","5","U Mumba","9","#N/A","Rupesh","2","0","0%","","",""
-"team_id_5|9|Vishal Mane","5","U Mumba","9","#N/A","Vishal Mane","1","0","0%","","",""
-"team_id_5|9|Sachin","5","U Mumba","9","#N/A","Sachin","1","0","0%","","",""
-"team_id_6|9|Rohit Gulia","6","Patna Pirates","9","#N/A","Rohit Gulia","293","122","42%","","",""
-"team_id_6|9|Sachin Tanwar","6","Patna Pirates","9","#N/A","Sachin Tanwar","272","109","40%","","",""
-"team_id_6|9|Sachin","6","Patna Pirates","9","#N/A","Sachin","105","41","39%","","",""
-"team_id_6|9|Monu Sandhu","6","Patna Pirates","9","#N/A","Monu Sandhu","96","12","13%","","",""
-"team_id_6|9|Anuj Kumar","6","Patna Pirates","9","#N/A","Anuj Kumar","37","7","19%","","",""
-"team_id_6|9|Ranjit Venkatramana Naik","6","Patna Pirates","9","#N/A","Ranjit Venkatramana Naik","33","14","42%","","",""
-"team_id_6|9|Anand Surendra Tomar","6","Patna Pirates","9","#N/A","Anand Surendra Tomar","24","14","58%","","",""
-"team_id_6|9|Vishwas S","6","Patna Pirates","9","#N/A","Vishwas S","21","6","29%","","",""
-"team_id_6|9|Shadloui Chianeh","6","Patna Pirates","9","#N/A","Shadloui Chianeh","20","4","20%","","",""
-"team_id_6|9|Abdul Insamam S","6","Patna Pirates","9","#N/A","Abdul Insamam S","18","5","28%","","",""
-"team_id_6|9|Daniel Omondi Odhiambo","6","Patna Pirates","9","#N/A","Daniel Omondi Odhiambo","16","9","56%","","",""
-"team_id_6|9|Neeraj Kumar","6","Patna Pirates","9","#N/A","Neeraj Kumar","12","0","0%","","",""
-"team_id_6|9|Sunil","6","Patna Pirates","9","#N/A","Sunil","2","0","0%","","",""
-"team_id_6|9|Sukesh Hegde","6","Patna Pirates","9","#N/A","Sukesh Hegde","2","0","0%","","",""
-"team_id_6|9|Naveen Sharma","6","Patna Pirates","9","#N/A","Naveen Sharma","1","0","0%","","",""
-"team_id_6|9|Manish","6","Patna Pirates","9","#N/A","Manish","1","0","0%","","",""
-"team_id_1|9|Bharat Naresh","1","Bengaluru Bulls","9","#N/A","Bharat Naresh","361","211","58%","","",""
-"team_id_1|9|Vikash Kandola","1","Bengaluru Bulls","9","#N/A","Vikash Kandola","306","106","35%","","",""
-"team_id_1|9|Neeraj Narwal","1","Bengaluru Bulls","9","#N/A","Neeraj Narwal","193","61","32%","","",""
-"team_id_1|9|Sachin Narwal","1","Bengaluru Bulls","9","#N/A","Sachin Narwal","60","27","45%","","",""
-"team_id_1|9|Vikash Khandola","1","Bengaluru Bulls","9","#N/A","Vikash Khandola","18","10","56%","","",""
-"team_id_1|9|Bharat","1","Bengaluru Bulls","9","#N/A","Bharat","18","12","67%","","",""
-"team_id_1|9|Mahender Singh","1","Bengaluru Bulls","9","#N/A","Mahender Singh","12","0","0%","","",""
-"team_id_1|9|Harmanjit Singh","1","Bengaluru Bulls","9","#N/A","Harmanjit Singh","10","0","0%","","",""
-"team_id_1|9|More G B","1","Bengaluru Bulls","9","#N/A","More G B","5","0","0%","","",""
-"team_id_1|9|Saurabh Nandal","1","Bengaluru Bulls","9","#N/A","Saurabh Nandal","2","2","100%","","",""
-"team_id_4|9|Maninder Singh","4","Bengal Warriors","9","#N/A","Maninder Singh","363","186","51%","","",""
-"team_id_4|9|Shrikant Jadhav","4","Bengal Warriors","9","#N/A","Shrikant Jadhav","250","99","40%","","",""
-"team_id_4|9|Deepak Hooda","4","Bengal Warriors","9","#N/A","Deepak Hooda","124","40","32%","","",""
-"team_id_4|9|Manoj Gowda","4","Bengal Warriors","9","#N/A","Manoj Gowda","56","20","36%","","",""
-"team_id_4|9|Ajinkya Kapre","4","Bengal Warriors","9","#N/A","Ajinkya Kapre","30","6","20%","","",""
-"team_id_4|9|Aslam Thambi","4","Bengal Warriors","9","#N/A","Aslam Thambi","18","4","22%","","",""
-"team_id_4|9|R Guhan","4","Bengal Warriors","9","#N/A","R Guhan","14","7","50%","","",""
-"team_id_4|9|Akash Pikalmunde","4","Bengal Warriors","9","#N/A","Akash Pikalmunde","14","6","43%","","",""
-"team_id_4|9|Suyog Gaikar","4","Bengal Warriors","9","#N/A","Suyog Gaikar","11","3","27%","","",""
-"team_id_4|9|Parshant Kumar","4","Bengal Warriors","9","#N/A","Parshant Kumar","11","2","18%","","",""
-"team_id_4|9|Rohit","4","Bengal Warriors","9","#N/A","Rohit","9","5","56%","","",""
-"team_id_4|9|Shubham Shinde","4","Bengal Warriors","9","#N/A","Shubham Shinde","8","0","0%","","",""
-"team_id_4|9|Ashish Kumar","4","Bengal Warriors","9","#N/A","Ashish Kumar","8","0","0%","","",""
-"team_id_4|9|Surender Nada","4","Bengal Warriors","9","#N/A","Surender Nada","5","0","0%","","",""
-"team_id_4|9|Vinod Kumar","4","Bengal Warriors","9","#N/A","Vinod Kumar","2","0","0%","","",""
-"team_id_4|9|Vaibhav Garje","4","Bengal Warriors","9","#N/A","Vaibhav Garje","1","0","0%","","",""
-"team_id_30|9|Pardeep Narwal","30","UP Yoddha","9","#N/A","Pardeep Narwal","355","162","46%","","",""
-"team_id_30|9|Surender Gill","30","UP Yoddha","9","#N/A","Surender Gill","206","101","49%","","",""
-"team_id_30|9|Rohit Tomar","30","UP Yoddha","9","#N/A","Rohit Tomar","166","57","34%","","",""
-"team_id_30|9|Anil Kumar","30","UP Yoddha","9","#N/A","Anil Kumar","38","11","29%","","",""
-"team_id_30|9|Sandeep Narwal","30","UP Yoddha","9","#N/A","Sandeep Narwal","35","8","23%","","",""
-"team_id_30|9|Durgesh Kumar","30","UP Yoddha","9","#N/A","Durgesh Kumar","29","7","24%","","",""
-"team_id_30|9|Mahipal","30","UP Yoddha","9","#N/A","Mahipal","26","8","31%","","",""
-"team_id_30|9|Ashu Singh","30","UP Yoddha","9","#N/A","Ashu Singh","14","0","0%","","",""
-"team_id_30|9|Nitin Tomar","30","UP Yoddha","9","#N/A","Nitin Tomar","11","2","18%","","",""
-"team_id_30|9|James Kamweti","30","UP Yoddha","9","#N/A","James Kamweti","10","3","30%","","",""
-"team_id_30|9|Aman Hooda","30","UP Yoddha","9","#N/A","Aman Hooda","10","4","40%","","",""
-"team_id_30|9|Sumit","30","UP Yoddha","9","#N/A","Sumit","7","1","14%","","",""
-"team_id_30|9|Gulveer Singh","30","UP Yoddha","9","#N/A","Gulveer Singh","7","0","0%","","",""
-"team_id_30|9|Rathan K","30","UP Yoddha","9","#N/A","Rathan K","6","2","33%","","",""
-"team_id_30|9|Nitin Panwar","30","UP Yoddha","9","#N/A","Nitin Panwar","3","1","33%","","",""
-"team_id_30|9|Jaideep","30","UP Yoddha","9","#N/A","Jaideep","2","0","0%","","",""
-"team_id_30|9|Nehal B Sawal Desai","30","UP Yoddha","9","#N/A","Nehal B Sawal Desai","1","0","0%","","",""
-"team_id_30|9|Gurdeep","30","UP Yoddha","9","#N/A","Gurdeep","1","0","0%","","",""
-"team_id_30|9|Babu M","30","UP Yoddha","9","#N/A","Babu M","1","0","0%","","",""
-"team_id_31|9|Rakesh Sangroya","31","Gujarat Fortunegiants","9","#N/A","Rakesh Sangroya","271","111","41%","","",""
-"team_id_31|9|Parteek Dhaiya","31","Gujarat Fortunegiants","9","#N/A","Parteek Dhaiya","240","126","53%","","",""
-"team_id_31|9|Chandran Ranjit","31","Gujarat Fortunegiants","9","#N/A","Chandran Ranjit","162","75","46%","","",""
-"team_id_31|9|Sonu","31","Gujarat Fortunegiants","9","#N/A","Sonu","80","30","38%","","",""
-"team_id_31|9|Mahendra Ganesh Rajput","31","Gujarat Fortunegiants","9","#N/A","Mahendra Ganesh Rajput","67","39","58%","","",""
-"team_id_31|9|Dong Geon Lee","31","Gujarat Fortunegiants","9","#N/A","Dong Geon Lee","65","30","46%","","",""
-"team_id_31|9|Shankar Bhimraj Gadai","31","Gujarat Fortunegiants","9","#N/A","Shankar Bhimraj Gadai","11","4","36%","","",""
-"team_id_31|9|Purna Singh","31","Gujarat Fortunegiants","9","#N/A","Purna Singh","8","1","13%","","",""
-"team_id_31|9|Prashanth Kumar Rai","31","Gujarat Fortunegiants","9","#N/A","Prashanth Kumar Rai","7","2","29%","","",""
-"team_id_31|9|Arkam Shaikh","31","Gujarat Fortunegiants","9","#N/A","Arkam Shaikh","7","1","14%","","",""
-"team_id_31|9|Rinku Narwal","31","Gujarat Fortunegiants","9","#N/A","Rinku Narwal","5","0","0%","","",""
-"team_id_31|9|Pardeep Kumar","31","Gujarat Fortunegiants","9","#N/A","Pardeep Kumar","5","0","0%","","",""
-"team_id_31|9|Rohit Kumar","31","Gujarat Fortunegiants","9","#N/A","Rohit Kumar","4","1","25%","","",""
-"team_id_31|9|Rohan Singh","31","Gujarat Fortunegiants","9","#N/A","Rohan Singh","1","0","0%","","",""
-"team_id_31|9|Mohammad Ghorbani","31","Gujarat Fortunegiants","9","#N/A","Mohammad Ghorbani","1","0","0%","","",""
-"team_id_31|9|Gaurav Chhikara","31","Gujarat Fortunegiants","9","#N/A","Gaurav Chhikara","1","0","0%","","",""
-"team_id_8|9|Siddharth Sirish Desai","8","Telugu Titans","9","#N/A","Siddharth Sirish Desai","224","114","51%","","",""
-"team_id_8|9|Abhishek Singh","8","Telugu Titans","9","#N/A","Abhishek Singh","188","50","27%","","",""
-"team_id_8|9|Mohsen Maghsoudlou Jaf..","8","Telugu Titans","9","#N/A","Mohsen Maghsoudlou Jaf..","111","20","18%","","",""
-"team_id_8|9|Adarsh T","8","Telugu Titans","9","#N/A","Adarsh T","99","30","30%","","",""
-"team_id_8|9|Vinay","8","Telugu Titans","9","#N/A","Vinay","95","28","29%","","",""
-"team_id_8|9|Monu Goyat","8","Telugu Titans","9","#N/A","Monu Goyat","84","22","26%","","",""
-"team_id_8|9|K Hanumanthu","8","Telugu Titans","9","#N/A","K Hanumanthu","57","21","37%","","",""
-"team_id_8|9|Rajnish","8","Telugu Titans","9","#N/A","Rajnish","23","8","35%","","",""
-"team_id_8|9|Vijay Kumar","8","Telugu Titans","9","#N/A","Vijay Kumar","15","1","7%","","",""
-"team_id_8|9|Surjeet Singh","8","Telugu Titans","9","#N/A","Surjeet Singh","11","1","9%","","",""
-"team_id_8|9|Vishal Bhardwaj","8","Telugu Titans","9","#N/A","Vishal Bhardwaj","10","0","0%","","",""
-"team_id_8|9|Prince D","8","Telugu Titans","9","#N/A","Prince D","7","0","0%","","",""
-"team_id_8|9|Parvesh Bhainswal","8","Telugu Titans","9","#N/A","Parvesh Bhainswal","7","0","0%","","",""
-"team_id_8|9|Ankit","8","Telugu Titans","9","#N/A","Ankit","3","2","67%","","",""
-"team_id_8|9|Mohit Pahal","8","Telugu Titans","9","#N/A","Mohit Pahal","2","0","0%","","",""
-"team_id_8|9|Palla Ramakrishna","8","Telugu Titans","9","#N/A","Palla Ramakrishna","1","0","0%","","",""
-"team_id_8|9|Nitin","8","Telugu Titans","9","#N/A","Nitin","1","0","0%","","",""
-"team_id_8|9|Muhammed Shihas S","8","Telugu Titans","9","#N/A","Muhammed Shihas S","1","0","0%","","",""
+Unique_ID,team_id,team,season,player-id,player-id-clean,Raider Name,Total Raids,Successful Raids,Raider Success Rate,,,
+team_id_7|Season5|Deepak Hooda,7,Puneri Paltan,5,41,41,Deepak Hooda,360,13200%,37%,,1,Bengaluru Bulls
+team_id_7|Season5|Rajesh Mondal,7,Puneri Paltan,5,85,85,Rajesh Mondal,269,7900%,29%,,2,Dabang Delhi
+team_id_7|Season5|Sandeep Narwal,7,Puneri Paltan,5,142,142,Sandeep Narwal,117,3000%,26%,,3,Jaipur Pink Panthers
+team_id_7|Season5|Monu,7,Puneri Paltan,5,3082,3082,Monu,77,1600%,21%,,4,Bengal Warriors
+team_id_7|Season5|Rohit Kumar Choudary,7,Puneri Paltan,5,217,217,Rohit Kumar Choudary,46,1000%,22%,,5,U Mumba
+team_id_7|Season5|More G B,7,Puneri Paltan,5,772,772,More G B,45,1300%,29%,,6,Patna Pirates
+team_id_7|Season5|Akshay Jadhav,7,Puneri Paltan,5,365,365,Akshay Jadhav,39,900%,23%,,7,Puneri Paltan
+team_id_7|Season5|Suresh Kumar,7,Puneri Paltan,5,771,771,Suresh Kumar,35,1200%,34%,,8,Telugu Titans
+team_id_7|Season5|Girish Maruti Ernak,7,Puneri Paltan,5,161,161,Girish Maruti Ernak,18,100%,6%,,28,Haryana Steelers
+team_id_7|Season5|Dharmaraj Cheralathan,7,Puneri Paltan,5,42,42,Dharmaraj Cheralathan,15,0%,0%,,29,Tamil Thalaivas
+team_id_7|Season5|Umesh Mhatre,7,Puneri Paltan,5,272,272,Umesh Mhatre,11,100%,9%,,30,U.P. Yoddha
+team_id_7|Season5|Rinku Narwal,7,Puneri Paltan,5,3084,3084,Rinku Narwal,8,100%,13%,,31,Gujarat Giants
+team_id_7|Season5|Ravi Kumar,7,Puneri Paltan,5,240,240,Ravi Kumar,2,0%,0%,,,
+team_id_29|Season5|Ajay Thakur,29,Tamil Thalaivas,5,26,26,Ajay Thakur,400,18600%,47%,,,
+team_id_29|Season5|K. Prapanjan,29,Tamil Thalaivas,5,219,219,K. Prapanjan,306,10500%,34%,,,
+team_id_29|Season5|Vineet Kumar,29,Tamil Thalaivas,5,#N/A,-1,Vineet Kumar,104,1600%,15%,,,
+team_id_29|Season5|Dong Geon Lee,29,Tamil Thalaivas,5,522,522,Dong Geon Lee,68,2500%,37%,,,
+team_id_29|Season5|D. Pradap,29,Tamil Thalaivas,5,3085,3085,D. Pradap,49,600%,12%,,,
+team_id_29|Season5|M. Thivakaran,29,Tamil Thalaivas,5,696,696,M. Thivakaran,36,1100%,31%,,,
+team_id_29|Season5|C. Arun,29,Tamil Thalaivas,5,191,191,C. Arun,16,0%,0%,,,
+team_id_29|Season5|Bhavani Rajput,29,Tamil Thalaivas,5,660,660,Bhavani Rajput,10,200%,20%,,,
+team_id_29|Season5|Amit Hooda,29,Tamil Thalaivas,5,212,212,Amit Hooda,7,0%,0%,,,
+team_id_29|Season5|Sujit Maharana,29,Tamil Thalaivas,5,#N/A,-1,Sujit Maharana,5,0%,0%,,,
+team_id_29|Season5|Anil Kumar,29,Tamil Thalaivas,5,386,386,Anil Kumar,4,0%,0%,,,
+team_id_29|Season5|Vijay Kumar,29,Tamil Thalaivas,5,768,768,Vijay Kumar,3,0%,0%,,,
+team_id_29|Season5|Darshan J.,29,Tamil Thalaivas,5,724,724,Darshan J.,3,0%,0%,,,
+team_id_29|Season5|Vijin Thangadurai,29,Tamil Thalaivas,5,185,185,Vijin Thangadurai,2,0%,0%,,,
+team_id_29|Season5|Sanket Chavan,29,Tamil Thalaivas,5,360,360,Sanket Chavan,1,0%,0%,,,
+team_id_29|Season5|Muruthu M,29,Tamil Thalaivas,5,776,776,Muruthu M,1,0%,0%,,,
+team_id_2|Season5|Meraj Sheykh,2,Dabang Delhi,5,251,251,Meraj Sheykh,292,7900%,27%,,,
+team_id_2|Season5|Abolfazl Maghsodlou,2,Dabang Delhi,5,#N/A,-1,Abolfazl Maghsodlou,230,8000%,35%,,,
+team_id_2|Season5|Rohit Baliyan,2,Dabang Delhi,5,261,261,Rohit Baliyan,165,5500%,33%,,,
+team_id_2|Season5|Anand Patil,2,Dabang Delhi,5,576,576,Anand Patil,102,2500%,25%,,,
+team_id_2|Season5|R. Sriram,2,Dabang Delhi,5,718,718,R. Sriram,79,2900%,37%,,,
+team_id_2|Season5|Ravi Dalal,2,Dabang Delhi,5,92,92,Ravi Dalal,28,400%,14%,,,
+team_id_2|Season5|Shubham Ashok Palkar,2,Dabang Delhi,5,#N/A,-1,Shubham Ashok Palkar,24,600%,25%,,,
+team_id_2|Season5|Nilesh Shinde,2,Dabang Delhi,5,73,73,Nilesh Shinde,14,200%,14%,,,
+team_id_2|Season5|Suresu Kumar,2,Dabang Delhi,5,173,173,Suresu Kumar,12,200%,17%,,,
+team_id_2|Season5|Vishal,2,Dabang Delhi,5,3159,3159,Vishal,7,100%,14%,,,
+team_id_2|Season5|Satpal,2,Dabang Delhi,5,773,773,Satpal,7,0%,0%,,,
+team_id_2|Season5|Rupesh Tomar,2,Dabang Delhi,5,97,97,Rupesh Tomar,7,0%,0%,,,
+team_id_2|Season5|Vipin Malik,2,Dabang Delhi,5,#N/A,-1,Vipin Malik,3,0%,0%,,,
+team_id_2|Season5|Sunil,2,Dabang Delhi,5,207,207,Sunil,2,0%,0%,,,
+team_id_2|Season5|Yatharth,2,Dabang Delhi,5,736,736,Yatharth,1,0%,0%,,,
+team_id_28|Season5|Wazir Singh,28,Haryana Steeler,5,124,124,Wazir Singh,271,9000%,33%,,,
+team_id_28|Season5|Deepak Kumar Dahiya,28,Haryana Steeler,5,174,174,Deepak Kumar Dahiya,196,6200%,32%,,,
+team_id_28|Season5|Prashanth Kumar Rai,28,Haryana Steeler,5,155,155,Prashanth Kumar Rai,149,6300%,42%,,,
+team_id_28|Season5|Surjeet Singh,28,Haryana Steeler,5,119,119,Surjeet Singh,146,4700%,32%,,,
+team_id_28|Season5|Vikash Khandola,28,Haryana Steeler,5,#N/A,-1,Vikash Khandola,136,4500%,33%,,,
+team_id_28|Season5|Ashish Chhokar,28,Haryana Steeler,5,195,195,Ashish Chhokar,32,600%,19%,,,
+team_id_28|Season5|Mayur Shivtarkar,28,Haryana Steeler,5,3045,3045,Mayur Shivtarkar,25,600%,24%,,,
+team_id_28|Season5|Surender Nada,28,Haryana Steeler,5,146,146,Surender Nada,22,200%,9%,,,
+team_id_28|Season5|Deepak Kumar,28,Haryana Steeler,5,275,275,Deepak Kumar,17,300%,18%,,,
+team_id_28|Season5|Parmod Narwal,28,Haryana Steeler,5,150,150,Parmod Narwal,12,0%,0%,,,
+team_id_28|Season5|Mohit Chhillar,28,Haryana Steeler,5,71,71,Mohit Chhillar,9,100%,11%,,,
+team_id_28|Season5|David Mosambayi,28,Haryana Steeler,5,266,266,David Mosambayi,6,200%,33%,,,
+team_id_28|Season5|Rakesh Singh Kumar,28,Haryana Steeler,5,158,158,Rakesh Singh Kumar,3,0%,0%,,,
+team_id_28|Season5|Vikas,28,Haryana Steeler,5,734,734,Vikas,2,0%,0%,,,
+team_id_28|Season5|Khomsan Thongkham,28,Haryana Steeler,5,#N/A,-1,Khomsan Thongkham,2,0%,0%,,,
+team_id_28|Season5|Neeraj Kumar,28,Haryana Steeler,5,637,637,Neeraj Kumar,1,0%,0%,,,
+team_id_28|Season5|Kuldeep Singh,28,Haryana Steeler,5,732,732,Kuldeep Singh,1,0%,0%,,,
+team_id_8|Season5|Rahul Chaudhari,8,Telugu Titans,5,81,81,Rahul Chaudhari,412,16300%,40%,,,
+team_id_8|Season5|Nilesh Salunke,8,Telugu Titans,5,293,293,Nilesh Salunke,247,8000%,32%,,,
+team_id_8|Season5|Vikas,8,Telugu Titans,5,#N/A,-1,Vikas,86,2600%,30%,,,
+team_id_8|Season5|Mohsen Maghsoudlou,8,Telugu Titans,5,567,567,Mohsen Maghsoudlou,83,2700%,33%,,,
+team_id_8|Season5|Rakesh Kumar,8,Telugu Titans,5,88,88,Rakesh Kumar,43,700%,16%,,,
+team_id_8|Season5|Vinoth Kumar,8,Telugu Titans,5,172,172,Vinoth Kumar,23,500%,22%,,,
+team_id_8|Season5|Elangeshwaran R,8,Telugu Titans,5,667,667,Elangeshwaran R,23,700%,30%,,,
+team_id_8|Season5|Rakshith,8,Telugu Titans,5,3090,3090,Rakshith,22,1100%,50%,,,
+team_id_8|Season5|Farhad Milaghardan,8,Telugu Titans,5,482,482,Farhad Milaghardan,18,500%,28%,,,
+team_id_8|Season5|Vishal Bhardwaj,8,Telugu Titans,5,3083,3083,Vishal Bhardwaj,5,0%,0%,,,
+team_id_8|Season5|Vikrant,8,Telugu Titans,5,746,746,Vikrant,5,100%,20%,,,
+team_id_8|Season5|Munish,8,Telugu Titans,5,774,774,Munish,4,0%,0%,,,
+team_id_3|Season5|Pawan Kumar,3,Jaipur Pink Panthers,5,#N/A,-1,Pawan Kumar,284,9700%,34%,,,
+team_id_3|Season5|Jasvir Singh,3,Jaipur Pink Panthers,5,52,52,Jasvir Singh,210,5600%,27%,,,
+team_id_3|Season5|Tushar Patil,3,Jaipur Pink Panthers,5,242,242,Tushar Patil,156,5400%,35%,,,
+team_id_3|Season5|Nitin Rawal,3,Jaipur Pink Panthers,5,3065,3065,Nitin Rawal,148,4900%,33%,,,
+team_id_3|Season5|Ajit Singh,3,Jaipur Pink Panthers,5,3056,3056,Ajit Singh,57,1700%,30%,,,
+team_id_3|Season5|Sidharth,3,Jaipur Pink Panthers,5,611,611,Sidharth,32,300%,9%,,,
+team_id_3|Season5|Manjeet Chhillar,3,Jaipur Pink Panthers,5,69,69,Manjeet Chhillar,29,400%,14%,,,
+team_id_3|Season5|Rahul Choudhary,3,Jaipur Pink Panthers,5,738,738,Rahul Choudhary,17,500%,29%,,,
+team_id_3|Season5|Selvamani K,3,Jaipur Pink Panthers,5,264,264,Selvamani K,14,300%,21%,,,
+team_id_3|Season5|Kamal Kishor,3,Jaipur Pink Panthers,5,#N/A,-1,Kamal Kishor,9,0%,0%,,,
+team_id_3|Season5|Sunil Siddhgavali,3,Jaipur Pink Panthers,5,613,613,Sunil Siddhgavali,2,0%,0%,,,
+team_id_3|Season5|Navneet Gautam,3,Jaipur Pink Panthers,5,#N/A,-1,Navneet Gautam,2,0%,0%,,,
+team_id_3|Season5|Abhishek N,3,Jaipur Pink Panthers,5,#N/A,-1,Abhishek N,2,0%,0%,,,
+team_id_31|Season5|Sachin,31,Gujarat Fortunegiants,5,757,757,Sachin,295,13400%,45%,,,
+team_id_31|Season5|Sukesh Hegde,31,Gujarat Fortunegiants,5,111,111,Sukesh Hegde,235,5900%,25%,,,
+team_id_31|Season5|Rohit Gulia,31,Gujarat Fortunegiants,5,3023,3023,Rohit Gulia,160,3300%,21%,,,
+team_id_31|Season5|Chandran Ranjit,31,Gujarat Fortunegiants,5,36,36,Chandran Ranjit,122,4400%,36%,,,
+team_id_31|Season5|Mahendra Rajput,31,Gujarat Fortunegiants,5,163,163,Mahendra Rajput,109,4400%,40%,,,
+team_id_31|Season5|Rakesh Narwal,31,Gujarat Fortunegiants,5,204,204,Rakesh Narwal,56,1500%,27%,,,
+team_id_31|Season5|Sunil Kumar,31,Gujarat Fortunegiants,5,368,368,Sunil Kumar,31,100%,3%,,,
+team_id_31|Season5|Pawan Sehrawat,31,Gujarat Fortunegiants,5,318,318,Pawan Sehrawat,24,500%,21%,,,
+team_id_31|Season5|Fazel Atrachali,31,Gujarat Fortunegiants,5,259,259,Fazel Atrachali,11,0%,0%,,,
+team_id_31|Season5|Abozar Mighani,31,Gujarat Fortunegiants,5,489,489,Abozar Mighani,6,0%,0%,,,
+team_id_31|Season5|Amit Rathi,31,Gujarat Fortunegiants,5,#N/A,-1,Amit Rathi,3,0%,0%,,,
+team_id_31|Season5|Manoj Kumar,31,Gujarat Fortunegiants,5,70,70,Manoj Kumar,2,0%,0%,,,
+team_id_31|Season5|Mahipal Narwal,31,Gujarat Fortunegiants,5,#N/A,-1,Mahipal Narwal,1,0%,0%,,,
+team_id_30|Season5|Nitin Tomar,30,UP Yoddha,5,320,320,Nitin Tomar,327,13700%,42%,,,
+team_id_30|Season5|Rishank Devadiga,30,UP Yoddha,5,94,94,Rishank Devadiga,305,12800%,42%,,,
+team_id_30|Season5|Surender Singh,30,UP Yoddha,5,234,234,Surender Singh,131,4700%,36%,,,
+team_id_30|Season5|Mahesh Goud,30,UP Yoddha,5,66,66,Mahesh Goud,90,3100%,34%,,,
+team_id_30|Season5|Rajesh Narwal,30,UP Yoddha,5,86,86,Rajesh Narwal,80,700%,9%,,,
+team_id_30|Season5|Santhosh B.S,30,UP Yoddha,5,#N/A,-1,Santhosh B.S,18,100%,6%,,,
+team_id_30|Season5|Hadi Tajik,30,UP Yoddha,5,301,301,Hadi Tajik,12,200%,17%,,,
+team_id_30|Season5|Sagar Krishna,30,UP Yoddha,5,347,347,Sagar Krishna,10,100%,10%,,,
+team_id_30|Season5|Gulveer Singh,30,UP Yoddha,5,647,647,Gulveer Singh,8,100%,13%,,,
+team_id_30|Season5|Pankaj,30,UP Yoddha,5,3089,3089,Pankaj,6,0%,0%,,,
+team_id_30|Season5|Sunil,30,UP Yoddha,5,#N/A,-1,Sunil,3,0%,0%,,,
+team_id_30|Season5|Sulieman Kabir,30,UP Yoddha,5,#N/A,-1,Sulieman Kabir,3,0%,0%,,,
+team_id_30|Season5|Sanoj Kumar,30,UP Yoddha,5,640,640,Sanoj Kumar,2,200%,100%,,,
+team_id_30|Season5|Rohit Kumar,30,UP Yoddha,5,712,712,Rohit Kumar,2,100%,50%,,,
+team_id_30|Season5|Nitesh Kumar,30,UP Yoddha,5,3088,3088,Nitesh Kumar,2,0%,0%,,,
+team_id_30|Season5|Jeeva Kumar,30,UP Yoddha,5,54,54,Jeeva Kumar,2,0%,0%,,,
+team_id_30|Season5|Ajvender Singh,30,UP Yoddha,5,705,705,Ajvender Singh,1,0%,0%,,,
+team_id_1|Season5|Rohit Kumar,1,Bengaluru Bulls,5,326,326,Rohit Kumar,418,19600%,47%,,,
+team_id_1|Season5|Ajay Kumar,1,Bengaluru Bulls,5,389,389,Ajay Kumar,257,7200%,28%,,,
+team_id_1|Season5|Ashish Kumar,1,Bengaluru Bulls,5,#N/A,-1,Ashish Kumar,70,1800%,26%,,,
+team_id_1|Season5|Sunil Jaipal,1,Bengaluru Bulls,5,141,141,Sunil Jaipal,54,1300%,24%,,,
+team_id_1|Season5|Harish Naik,1,Bengaluru Bulls,5,3091,3091,Harish Naik,53,2100%,40%,,,
+team_id_1|Season5|Gurvinder Singh,1,Bengaluru Bulls,5,46,46,Gurvinder Singh,37,1000%,27%,,,
+team_id_1|Season5|Preetam Chhillar,1,Bengaluru Bulls,5,167,167,Preetam Chhillar,29,100%,3%,,,
+team_id_1|Season5|Sachin Kumar,1,Bengaluru Bulls,5,218,218,Sachin Kumar,7,0%,0%,,,
+team_id_1|Season5|Ravinder Pahal,1,Bengaluru Bulls,5,157,157,Ravinder Pahal,6,100%,17%,,,
+team_id_1|Season5|Sumit Singh,1,Bengaluru Bulls,5,#N/A,-1,Sumit Singh,5,0%,0%,,,
+team_id_1|Season5|Rohit,1,Bengaluru Bulls,5,3066,3066,Rohit,5,300%,60%,,,
+team_id_1|Season5|Mahender Singh,1,Bengaluru Bulls,5,769,769,Mahender Singh,2,100%,50%,,,
+team_id_4|Season5|Maninder Singh,4,Bengal Warriors,5,143,143,Maninder Singh,367,16000%,44%,,,
+team_id_4|Season5|Jang Kun Lee,4,Bengal Warriors,5,12,12,Jang Kun Lee,212,8200%,39%,,,
+team_id_4|Season5|Deepak Narwal,4,Bengal Warriors,5,211,211,Deepak Narwal,187,7300%,39%,,,
+team_id_4|Season5|Vinod Kumar,4,Bengal Warriors,5,387,387,Vinod Kumar,123,2800%,23%,,,
+team_id_4|Season5|Bhupender Singh,4,Bengal Warriors,5,34,34,Bhupender Singh,83,1600%,19%,,,
+team_id_4|Season5|Surjeet Singh,4,Bengal Warriors,5,322,322,Surjeet Singh,52,300%,6%,,,
+team_id_4|Season5|Ran Singh,4,Bengal Warriors,5,160,160,Ran Singh,27,1000%,37%,,,
+team_id_4|Season5|Virender,4,Bengal Warriors,5,#N/A,-1,Virender,11,300%,27%,,,
+team_id_4|Season5|Ravindra Ramesh Kumaw..,4,Bengal Warriors,5,#N/A,-1,Ravindra Ramesh Kumaw..,7,200%,29%,,,
+team_id_4|Season5|Shrikant Tewthia,4,Bengal Warriors,5,107,107,Shrikant Tewthia,5,200%,40%,,,
+team_id_4|Season5|Kuldeep,4,Bengal Warriors,5,#N/A,-1,Kuldeep,3,0%,0%,,,
+team_id_4|Season5|Rahul Kumar,4,Bengal Warriors,5,288,288,Rahul Kumar,1,0%,0%,,,
+team_id_4|Season5|Anil Kumar,4,Bengal Warriors,5,765,765,Anil Kumar,1,0%,0%,,,
+team_id_6|Season5|Pardeep Narwal,6,Patna Pirates,5,197,197,Pardeep Narwal,586,27800%,47%,,,
+team_id_6|Season5|Monu Goyat,6,Patna Pirates,5,388,388,Monu Goyat,365,16000%,44%,,,
+team_id_6|Season5|Vijay,6,Patna Pirates,5,#N/A,-1,Vijay,83,1800%,22%,,,
+team_id_6|Season5|Vinod Kumar,6,Patna Pirates,5,764,764,Vinod Kumar,75,2000%,27%,,,
+team_id_6|Season5|Vikas Jaglan,6,Patna Pirates,5,#N/A,-1,Vikas Jaglan,25,800%,32%,,,
+team_id_6|Season5|Jawahar Dagar,6,Patna Pirates,5,#N/A,-1,Jawahar Dagar,23,300%,13%,,,
+team_id_6|Season5|Vishnu Uthaman,6,Patna Pirates,5,580,580,Vishnu Uthaman,7,0%,0%,,,
+team_id_6|Season5|Jaideep,6,Patna Pirates,5,579,579,Jaideep,5,0%,0%,,,
+team_id_6|Season5|Manish,6,Patna Pirates,5,728,728,Manish,2,0%,0%,,,
+team_id_6|Season5|Vishal Mane,6,Patna Pirates,5,123,123,Vishal Mane,1,0%,0%,,,
+team_id_6|Season5|Satish,6,Patna Pirates,5,790,790,Satish,1,0%,0%,,,
+team_id_5|Season5|Anup Kumar,5,U Mumba,5,29,29,Anup Kumar,281,8500%,30%,,,
+team_id_5|Season5|Kashiling Adake,5,U Mumba,5,58,58,Kashiling Adake,223,8400%,38%,,,
+team_id_5|Season5|Shrikant Jadhav,5,U Mumba,5,106,106,Shrikant Jadhav,170,7200%,42%,,,
+team_id_5|Season5|Shabeer Bappu,5,U Mumba,5,105,105,Shabeer Bappu,108,3200%,30%,,,
+team_id_5|Season5|Darshan Kadian,5,U Mumba,5,324,324,Darshan Kadian,72,2500%,35%,,,
+team_id_5|Season5|Nitin Madane,5,U Mumba,5,75,75,Nitin Madane,51,1200%,24%,,,
+team_id_5|Season5|Kuldeep Singh,5,U Mumba,5,252,252,Kuldeep Singh,41,700%,17%,,,
+team_id_5|Season5|Mohan Raman G,5,U Mumba,5,689,689,Mohan Raman G,9,400%,44%,,,
+team_id_5|Season5|Surinder Singh,5,U Mumba,5,3086,3086,Surinder Singh,3,0%,0%,,,
+team_id_5|Season5|Yong Joo Ok,5,U Mumba,5,513,513,Yong Joo Ok,2,100%,50%,,,
+team_id_5|Season5|Deepak Yadav,5,U Mumba,5,694,694,Deepak Yadav,2,0%,0%,,,
+team_id_5|Season5|Dong Ju Hong,5,U Mumba,5,11,11,Dong Ju Hong,1,0%,0%,,,
+team_id_6|Season6|Pardeep Narwal,6,Patna Pirates,6,197,197,Pardeep Narwal,391,19200%,49%,,,
+team_id_6|Season6|Manjeet,6,Patna Pirates,6,763,763,Manjeet,189,7800%,41%,,,
+team_id_6|Season6|Deepak Narwal,6,Patna Pirates,6,211,211,Deepak Narwal,140,5800%,41%,,,
+team_id_6|Season6|Vijay,6,Patna Pirates,6,3081,3081,Vijay,111,5000%,45%,,,
+team_id_6|Season6|Vikas Jaglan,6,Patna Pirates,6,#N/A,-1,Vikas Jaglan,42,1300%,31%,,,
+team_id_6|Season6|Tushar Patil,6,Patna Pirates,6,242,242,Tushar Patil,38,1300%,34%,,,
+team_id_6|Season6|Jaideep,6,Patna Pirates,6,579,579,Jaideep,8,0%,0%,,,
+team_id_6|Season6|Jawahar Dagar,6,Patna Pirates,6,390,390,Jawahar Dagar,5,100%,20%,,,
+team_id_6|Season6|Vikas Kale,6,Patna Pirates,6,179,179,Vikas Kale,4,0%,0%,,,
+team_id_6|Season6|Vijay Kumar,6,Patna Pirates,6,768,768,Vijay Kumar,2,100%,50%,,,
+team_id_6|Season6|Tae Deok Eom,6,Patna Pirates,6,#N/A,-1,Tae Deok Eom,2,0%,0%,,,
+team_id_6|Season6|Surender Singh,6,Patna Pirates,6,#N/A,-1,Surender Singh,1,0%,0%,,,
+team_id_6|Season6|Kuldeep Singh,6,Patna Pirates,6,252,252,Kuldeep Singh,1,0%,0%,,,
+team_id_1|Season6|Pawan Sehrawat,1,Bengaluru Bulls,6,318,318,Pawan Sehrawat,375,21400%,57%,,,
+team_id_1|Season6|Rohit Kumar,1,Bengaluru Bulls,6,326,326,Rohit Kumar,341,13400%,39%,,,
+team_id_1|Season6|Kashiling Adake,1,Bengaluru Bulls,6,58,58,Kashiling Adake,164,5100%,31%,,,
+team_id_1|Season6|Harish Naik,1,Bengaluru Bulls,6,3091,3091,Harish Naik,29,1400%,48%,,,
+team_id_1|Season6|Sumit Singh,1,Bengaluru Bulls,6,3104,3104,Sumit Singh,27,700%,26%,,,
+team_id_1|Season6|Ashish Kumar,1,Bengaluru Bulls,6,202,202,Ashish Kumar,27,300%,11%,,,
+team_id_1|Season6|Anand V,1,Bengaluru Bulls,6,2021,2021,Anand V,15,300%,20%,,,
+team_id_1|Season6|Mahesh Maruti Magdum,1,Bengaluru Bulls,6,#N/A,-1,Mahesh Maruti Magdum,12,500%,42%,,,
+team_id_1|Season6|Mahender Singh,1,Bengaluru Bulls,6,769,769,Mahender Singh,10,0%,0%,,,
+team_id_1|Season6|Sandeep,1,Bengaluru Bulls,6,299,299,Sandeep,2,0%,0%,,,
+team_id_1|Season6|Ankit,1,Bengaluru Bulls,6,3099,3099,Ankit,2,0%,0%,,,
+team_id_1|Season6|Gyung Tae Kim,1,Bengaluru Bulls,6,#N/A,-1,Gyung Tae Kim,1,0%,0%,,,
+team_id_4|Season6|Maninder Singh,4,Bengal Warriors,6,143,143,Maninder Singh,377,16300%,43%,,,
+team_id_4|Season6|Jang Kun Lee,4,Bengal Warriors,6,#N/A,-1,Jang Kun Lee,171,6300%,37%,,,
+team_id_4|Season6|Mahesh Goud,4,Bengal Warriors,6,66,66,Mahesh Goud,92,2700%,29%,,,
+team_id_4|Season6|Ravindra Ramesh Kumaw..,4,Bengal Warriors,6,#N/A,-1,Ravindra Ramesh Kumaw..,91,3000%,33%,,,
+team_id_4|Season6|Ran Singh,4,Bengal Warriors,6,160,160,Ran Singh,72,2300%,32%,,,
+team_id_4|Season6|Surjeet Singh,4,Bengal Warriors,6,322,322,Surjeet Singh,54,200%,4%,,,
+team_id_4|Season6|Amit Nagar,4,Bengal Warriors,6,371,371,Amit Nagar,36,1500%,42%,,,
+team_id_4|Season6|Bhupender Singh,4,Bengal Warriors,6,34,34,Bhupender Singh,20,600%,30%,,,
+team_id_4|Season6|Rakesh Narwal,4,Bengal Warriors,6,204,204,Rakesh Narwal,16,500%,31%,,,
+team_id_4|Season6|Mithin Kumar,4,Bengal Warriors,6,2302,2302,Mithin Kumar,10,200%,20%,,,
+team_id_4|Season6|Shrikant Tewthia,4,Bengal Warriors,6,107,107,Shrikant Tewthia,9,200%,22%,,,
+team_id_4|Season6|Amit Kumar,4,Bengal Warriors,6,267,267,Amit Kumar,7,100%,14%,,,
+team_id_4|Season6|Amaresh Mondal,4,Bengal Warriors,6,#N/A,-1,Amaresh Mondal,3,0%,0%,,,
+team_id_4|Season6|Vijin Thangadurai,4,Bengal Warriors,6,185,185,Vijin Thangadurai,2,0%,0%,,,
+team_id_4|Season6|Baldev Singh,4,Bengal Warriors,6,621,621,Baldev Singh,1,0%,0%,,,
+team_id_4|Season6|Ashish Chhokar,4,Bengal Warriors,6,#N/A,-1,Ashish Chhokar,1,0%,0%,,,
+team_id_4|Season6|Adarsh T,4,Bengal Warriors,6,3095,3095,Adarsh T,1,100%,100%,,,
+team_id_30|Season6|Shrikant Jadhav,30,UP Yoddha,6,106,106,Shrikant Jadhav,332,11200%,34%,,,
+team_id_30|Season6|Rishank Devadiga,30,UP Yoddha,6,94,94,Rishank Devadiga,262,8400%,32%,,,
+team_id_30|Season6|Prashanth Kumar Rai,30,UP Yoddha,6,#N/A,-1,Prashanth Kumar Rai,262,11500%,44%,,,
+team_id_30|Season6|Sachin Kumar,30,UP Yoddha,6,218,218,Sachin Kumar,89,2100%,24%,,,
+team_id_30|Season6|Azad Singh,30,UP Yoddha,6,2316,2316,Azad Singh,48,1400%,29%,,,
+team_id_30|Season6|Rohit Kumar Choudary,30,UP Yoddha,6,#N/A,-1,Rohit Kumar Choudary,22,200%,9%,,,
+team_id_30|Season6|Bhanu Tomar,30,UP Yoddha,6,2278,2278,Bhanu Tomar,22,600%,27%,,,
+team_id_30|Season6|Vishav Chaudhary,30,UP Yoddha,6,698,698,Vishav Chaudhary,11,100%,9%,,,
+team_id_30|Season6|Sagar Krishna,30,UP Yoddha,6,#N/A,-1,Sagar Krishna,9,0%,0%,,,
+team_id_30|Season6|Nitesh Kumar,30,UP Yoddha,6,3088,3088,Nitesh Kumar,6,0%,0%,,,
+team_id_30|Season6|Md Masud Karim,30,UP Yoddha,6,2262,2262,Md Masud Karim,3,200%,67%,,,
+team_id_30|Season6|MD.Masud Karim,30,UP Yoddha,6,#N/A,-1,MD.Masud Karim,1,0%,0%,,,
+team_id_30|Season6|Jeeva Kumar,30,UP Yoddha,6,54,54,Jeeva Kumar,1,0%,0%,,,
+team_id_31|Season6|Sachin,31,Gujarat Fortunegiants,6,757,757,Sachin,366,16600%,45%,,,
+team_id_31|Season6|K. Prapanjan,31,Gujarat Fortunegiants,6,#N/A,-1,K. Prapanjan,255,9700%,38%,,,
+team_id_31|Season6|Rohit Gulia,31,Gujarat Fortunegiants,6,3023,3023,Rohit Gulia,152,5000%,33%,,,
+team_id_31|Season6|Ajay Kumar,31,Gujarat Fortunegiants,6,389,389,Ajay Kumar,88,2600%,30%,,,
+team_id_31|Season6|Mahendra Rajput,31,Gujarat Fortunegiants,6,163,163,Mahendra Rajput,66,1900%,29%,,,
+team_id_31|Season6|Dong Geon Lee,31,Gujarat Fortunegiants,6,522,522,Dong Geon Lee,65,2300%,35%,,,
+team_id_31|Season6|Sunil Kumar,31,Gujarat Fortunegiants,6,368,368,Sunil Kumar,30,0%,0%,,,
+team_id_31|Season6|Shubham Ashok Palkar,31,Gujarat Fortunegiants,6,605,605,Shubham Ashok Palkar,13,200%,15%,,,
+team_id_31|Season6|Hadi Oshtorak,31,Gujarat Fortunegiants,6,249,249,Hadi Oshtorak,11,400%,36%,,,
+team_id_31|Season6|Lalit Chaudhary,31,Gujarat Fortunegiants,6,2306,2306,Lalit Chaudhary,7,100%,14%,,,
+team_id_31|Season6|Dharmender,31,Gujarat Fortunegiants,6,2314,2314,Dharmender,6,200%,33%,,,
+team_id_31|Season6|Sachin V.,31,Gujarat Fortunegiants,6,#N/A,-1,Sachin V.,5,200%,40%,,,
+team_id_31|Season6|Anil,31,Gujarat Fortunegiants,6,#N/A,-1,Anil,4,0%,0%,,,
+team_id_31|Season6|Ruturaj Shivaji Koravi,31,Gujarat Fortunegiants,6,#N/A,-1,Ruturaj Shivaji Koravi,3,0%,0%,,,
+team_id_31|Season6|Parvesh Bhainswal,31,Gujarat Fortunegiants,6,357,357,Parvesh Bhainswal,1,0%,0%,,,
+team_id_5|Season6|Siddharth Sirish Desai,5,U Mumba,6,#N/A,-1,Siddharth Sirish Desai,321,17400%,54%,,,
+team_id_5|Season6|Rohit Baliyan,5,U Mumba,6,261,261,Rohit Baliyan,188,8200%,44%,,,
+team_id_5|Season6|Darshan Kadian,5,U Mumba,6,#N/A,-1,Darshan Kadian,141,4000%,28%,,,
+team_id_5|Season6|Abhishek Singh,5,U Mumba,6,2028,2028,Abhishek Singh,117,3800%,32%,,,
+team_id_5|Season6|Abolfazl Maghsodloumah..,5,U Mumba,6,#N/A,-1,Abolfazl Maghsodloumah..,77,1900%,25%,,,
+team_id_5|Season6|Vinod Kumar,5,U Mumba,6,764,764,Vinod Kumar,68,1500%,22%,,,
+team_id_5|Season6|Dharmaraj Cheralathan,5,U Mumba,6,42,42,Dharmaraj Cheralathan,22,0%,0%,,,
+team_id_5|Season6|Fazel Atrachali,5,U Mumba,6,259,259,Fazel Atrachali,14,0%,0%,,,
+team_id_5|Season6|Arjun Deshwal,5,U Mumba,6,2024,2024,Arjun Deshwal,11,300%,27%,,,
+team_id_5|Season6|Gaurav Kumar,5,U Mumba,6,2313,2313,Gaurav Kumar,10,200%,20%,,,
+team_id_5|Season6|R. Sriram,5,U Mumba,6,#N/A,-1,R. Sriram,4,0%,0%,,,
+team_id_5|Season6|Surender Singh,5,U Mumba,6,#N/A,-1,Surender Singh,3,0%,0%,,,
+team_id_5|Season6|Anil,5,U Mumba,6,#N/A,-1,Anil,2,0%,0%,,,
+team_id_28|Season6|Vikash Khandola,28,Haryana Steeler,6,366,366,Vikash Khandola,347,14100%,41%,,,
+team_id_28|Season6|Monu Goyat,28,Haryana Steeler,6,388,388,Monu Goyat,301,13100%,44%,,,
+team_id_28|Season6|Naveen,28,Haryana Steeler,6,2357,2357,Naveen,193,7500%,39%,,,
+team_id_28|Season6|Mayur Shivtarkar,28,Haryana Steeler,6,3045,3045,Mayur Shivtarkar,36,100%,3%,,,
+team_id_28|Season6|Anand Surendra Tomar,28,Haryana Steeler,6,#N/A,-1,Anand Surendra Tomar,20,700%,35%,,,
+team_id_28|Season6|Wazir Singh,28,Haryana Steeler,6,124,124,Wazir Singh,10,200%,20%,,,
+team_id_28|Season6|Prateek,28,Haryana Steeler,6,608,608,Prateek,8,100%,13%,,,
+team_id_28|Season6|Parveen,28,Haryana Steeler,6,3100,3100,Parveen,7,100%,14%,,,
+team_id_28|Season6|Bhuvneshwar Gaur,28,Haryana Steeler,6,2315,2315,Bhuvneshwar Gaur,7,300%,43%,,,
+team_id_28|Season6|Arun Kumar HN,28,Haryana Steeler,6,#N/A,-1,Arun Kumar HN,5,100%,20%,,,
+team_id_28|Season6|Sunil,28,Haryana Steeler,6,3106,3106,Sunil,3,0%,0%,,,
+team_id_28|Season6|Sachin Shingade,28,Haryana Steeler,6,165,165,Sachin Shingade,2,0%,0%,,,
+team_id_28|Season6|Kuldeep Singh,28,Haryana Steeler,6,732,732,Kuldeep Singh,2,0%,0%,,,
+team_id_29|Season6|Ajay Thakur,29,Tamil Thalaivas,6,26,26,Ajay Thakur,388,18000%,46%,,,
+team_id_29|Season6|Sukesh Hegde,29,Tamil Thalaivas,6,111,111,Sukesh Hegde,176,5000%,28%,,,
+team_id_29|Season6|Jasvir Singh,29,Tamil Thalaivas,6,52,52,Jasvir Singh,117,3400%,29%,,,
+team_id_29|Season6|Athul MS,29,Tamil Thalaivas,6,#N/A,-1,Athul MS,105,4600%,44%,,,
+team_id_29|Season6|Surjeet Singh,29,Tamil Thalaivas,6,119,119,Surjeet Singh,45,1000%,22%,,,
+team_id_29|Season6|Manjeet Chhillar,29,Tamil Thalaivas,6,69,69,Manjeet Chhillar,29,500%,17%,,,
+team_id_29|Season6|D. Pradap,29,Tamil Thalaivas,6,#N/A,-1,D. Pradap,17,500%,29%,,,
+team_id_29|Season6|Anand,29,Tamil Thalaivas,6,2325,2325,Anand,17,700%,41%,,,
+team_id_29|Season6|Vimal Raj V,29,Tamil Thalaivas,6,2335,2335,Vimal Raj V,10,200%,20%,,,
+team_id_29|Season6|Victor Obiero,29,Tamil Thalaivas,6,#N/A,-1,Victor Obiero,7,400%,57%,,,
+team_id_29|Season6|K. Jayaseelan,29,Tamil Thalaivas,6,#N/A,-1,K. Jayaseelan,3,0%,0%,,,
+team_id_29|Season6|C. Arun,29,Tamil Thalaivas,6,#N/A,-1,C. Arun,3,0%,0%,,,
+team_id_29|Season6|Anil Kumar,29,Tamil Thalaivas,6,765,765,Anil Kumar,3,0%,0%,,,
+team_id_29|Season6|Sunil,29,Tamil Thalaivas,6,207,207,Sunil,2,0%,0%,,,
+team_id_29|Season6|Amit Hooda,29,Tamil Thalaivas,6,212,212,Amit Hooda,2,0%,0%,,,
+team_id_29|Season6|Darshan J.,29,Tamil Thalaivas,6,724,724,Darshan J.,1,0%,0%,,,
+team_id_2|Season6|Chandran Ranjit,2,Dabang Delhi,6,36,36,Chandran Ranjit,316,13300%,42%,,,
+team_id_2|Season6|Naveen Kumar,2,Dabang Delhi,6,2296,2296,Naveen Kumar,307,14700%,48%,,,
+team_id_2|Season6|Meraj Sheykh,2,Dabang Delhi,6,251,251,Meraj Sheykh,213,7200%,34%,,,
+team_id_2|Season6|Pawan Kumar,2,Dabang Delhi,6,156,156,Pawan Kumar,90,3600%,40%,,,
+team_id_2|Season6|Shabeer Bappu,2,Dabang Delhi,6,105,105,Shabeer Bappu,26,600%,23%,,,
+team_id_2|Season6|Rajesh Narwal,2,Dabang Delhi,6,86,86,Rajesh Narwal,20,500%,25%,,,
+team_id_2|Season6|Yogesh Hooda,2,Dabang Delhi,6,245,245,Yogesh Hooda,13,100%,8%,,,
+team_id_2|Season6|Vishal,2,Dabang Delhi,6,3159,3159,Vishal,6,100%,17%,,,
+team_id_2|Season6|Aman Kadian,2,Dabang Delhi,6,#N/A,-1,Aman Kadian,3,0%,0%,,,
+team_id_2|Season6|Satpal,2,Dabang Delhi,6,773,773,Satpal,2,0%,0%,,,
+team_id_2|Season6|Sumit Kumar,2,Dabang Delhi,6,#N/A,-1,Sumit Kumar,1,0%,0%,,,
+team_id_7|Season6|Nitin Tomar,7,Puneri Paltan,6,320,320,Nitin Tomar,192,9000%,47%,,,
+team_id_7|Season6|More G B,7,Puneri Paltan,6,772,772,More G B,173,6000%,35%,,,
+team_id_7|Season6|Monu,7,Puneri Paltan,6,3082,3082,Monu,123,3900%,32%,,,
+team_id_7|Season6|Akshay Jadhav,7,Puneri Paltan,6,365,365,Akshay Jadhav,108,2600%,24%,,,
+team_id_7|Season6|Deepak Kumar Dahiya,7,Puneri Paltan,6,#N/A,-1,Deepak Kumar Dahiya,88,2600%,30%,,,
+team_id_7|Season6|Sandeep Narwal,7,Puneri Paltan,6,142,142,Sandeep Narwal,86,1700%,20%,,,
+team_id_7|Season6|Rajesh Mondal,7,Puneri Paltan,6,85,85,Rajesh Mondal,75,1300%,17%,,,
+team_id_7|Season6|Parvesh,7,Puneri Paltan,6,786,786,Parvesh,30,500%,17%,,,
+team_id_7|Season6|Amit Kumar,7,Puneri Paltan,6,3110,3110,Amit Kumar,29,500%,17%,,,
+team_id_7|Season6|Shubham Shinde,7,Puneri Paltan,6,3103,3103,Shubham Shinde,11,0%,0%,,,
+team_id_7|Season6|Sandeep,7,Puneri Paltan,6,3102,3102,Sandeep,9,400%,44%,,,
+team_id_7|Season6|Girish Maruti Ernak,7,Puneri Paltan,6,161,161,Girish Maruti Ernak,8,0%,0%,,,
+team_id_7|Season6|Rinku Narwal,7,Puneri Paltan,6,3084,3084,Rinku Narwal,7,100%,14%,,,
+team_id_7|Season6|Ravi Kumar,7,Puneri Paltan,6,240,240,Ravi Kumar,1,0%,0%,,,
+team_id_8|Season6|Rahul Chaudhari,8,Telugu Titans,6,81,81,Rahul Chaudhari,350,13900%,40%,,,
+team_id_8|Season6|Nilesh Salunke,8,Telugu Titans,6,293,293,Nilesh Salunke,201,6100%,30%,,,
+team_id_8|Season6|Mohsen Maghsoudlou,8,Telugu Titans,6,567,567,Mohsen Maghsoudlou,111,2600%,23%,,,
+team_id_8|Season6|Farhad Milaghardan,8,Telugu Titans,6,482,482,Farhad Milaghardan,61,1700%,28%,,,
+team_id_8|Season6|Vishal Bhardwaj,8,Telugu Titans,6,#N/A,-1,Vishal Bhardwaj,40,0%,0%,,,
+team_id_8|Season6|Rakshith,8,Telugu Titans,6,3090,3090,Rakshith,39,1200%,31%,,,
+team_id_8|Season6|Kamal Singh,8,Telugu Titans,6,2307,2307,Kamal Singh,35,700%,20%,,,
+team_id_8|Season6|Rajnish,8,Telugu Titans,6,2290,2290,Rajnish,26,800%,31%,,,
+team_id_8|Season6|Abozar Mighani,8,Telugu Titans,6,489,489,Abozar Mighani,26,0%,0%,,,
+team_id_8|Season6|Armaan,8,Telugu Titans,6,2298,2298,Armaan,23,1000%,43%,,,
+team_id_8|Season6|C Manoj Kumar,8,Telugu Titans,6,2274,2274,C Manoj Kumar,21,700%,33%,,,
+team_id_8|Season6|Anil Kumar,8,Telugu Titans,6,311,311,Anil Kumar,9,0%,0%,,,
+team_id_8|Season6|Anuj Kumar,8,Telugu Titans,6,2336,2336,Anuj Kumar,5,100%,20%,,,
+team_id_8|Season6|Krushna Madane,8,Telugu Titans,6,274,274,Krushna Madane,3,100%,33%,,,
+team_id_8|Season6|Ankit Beniwal,8,Telugu Titans,6,#N/A,-1,Ankit Beniwal,3,0%,0%,,,
+team_id_3|Season6|Deepak Hooda,3,Jaipur Pink Panthers,6,41,41,Deepak Hooda,367,16400%,45%,,,
+team_id_3|Season6|Ajinkya Ashok Pawar,3,Jaipur Pink Panthers,6,3097,3097,Ajinkya Ashok Pawar,163,5900%,36%,,,
+team_id_3|Season6|Anup Kumar,3,Jaipur Pink Panthers,6,29,29,Anup Kumar,127,3000%,24%,,,
+team_id_3|Season6|Selvamani K,3,Jaipur Pink Panthers,6,264,264,Selvamani K,82,2700%,33%,,,
+team_id_3|Season6|Nitin Rawal,3,Jaipur Pink Panthers,6,3065,3065,Nitin Rawal,57,2000%,35%,,,
+team_id_3|Season6|Anand Patil,3,Jaipur Pink Panthers,6,576,576,Anand Patil,52,900%,17%,,,
+team_id_3|Season6|Amit Kumar,3,Jaipur Pink Panthers,6,3133,3133,Amit Kumar,35,1000%,29%,,,
+team_id_3|Season6|Ajit Singh,3,Jaipur Pink Panthers,6,3056,3056,Ajit Singh,19,700%,37%,,,
+team_id_3|Season6|Sunil Siddhgavali,3,Jaipur Pink Panthers,6,613,613,Sunil Siddhgavali,15,400%,27%,,,
+team_id_3|Season6|Lokesh Kaushik,3,Jaipur Pink Panthers,6,599,599,Lokesh Kaushik,11,200%,18%,,,
+team_id_3|Season6|Gangadhari Mallesh,3,Jaipur Pink Panthers,6,44,44,Gangadhari Mallesh,9,100%,11%,,,
+team_id_3|Season6|David Mosambayi,3,Jaipur Pink Panthers,6,266,266,David Mosambayi,6,100%,17%,,,
+team_id_3|Season6|Mohit Chhillar,3,Jaipur Pink Panthers,6,71,71,Mohit Chhillar,4,0%,0%,,,
+team_id_3|Season6|Santhapanaselvam,3,Jaipur Pink Panthers,6,3076,3076,Santhapanaselvam,1,0%,0%,,,
+team_id_3|Season6|Sandeep Dhull,3,Jaipur Pink Panthers,6,290,290,Sandeep Dhull,1,0%,0%,,,
+team_id_28|Season7|Vikash Khandola,28,Haryana Steeler,7,366,366,Vikash Khandola,384,15200%,40%,,,
+team_id_28|Season7|Vinay,28,Haryana Steeler,7,3054,3054,Vinay,230,9000%,39%,,,
+team_id_28|Season7|Prashanth Kumar Rai,28,Haryana Steeler,7,#N/A,-1,Prashanth Kumar Rai,135,7100%,53%,,,
+team_id_28|Season7|Naveen,28,Haryana Steeler,7,2357,2357,Naveen,130,5000%,38%,,,
+team_id_28|Season7|Selvamani K,28,Haryana Steeler,7,264,264,Selvamani K,36,700%,19%,,,
+team_id_28|Season7|Dharmaraj Cheralathan,28,Haryana Steeler,7,42,42,Dharmaraj Cheralathan,18,100%,6%,,,
+team_id_28|Season7|Ravi Kumar,28,Haryana Steeler,7,240,240,Ravi Kumar,11,0%,0%,,,
+team_id_28|Season7|Vikas Chhillar,28,Haryana Steeler,7,3229,3229,Vikas Chhillar,6,300%,50%,,,
+team_id_28|Season7|Phonchoo Tin,28,Haryana Steeler,7,335,335,Phonchoo Tin,5,100%,20%,,,
+team_id_28|Season7|Arun Kumar HN,28,Haryana Steeler,7,#N/A,-1,Arun Kumar HN,5,100%,20%,,,
+team_id_28|Season7|Vikas Kale,28,Haryana Steeler,7,179,179,Vikas Kale,4,0%,0%,,,
+team_id_28|Season7|Vikram Kandola,28,Haryana Steeler,7,#N/A,-1,Vikram Kandola,1,0%,0%,,,
+team_id_28|Season7|Chand Singh,28,Haryana Steeler,7,3221,3221,Chand Singh,1,100%,100%,,,
+team_id_5|Season7|Abhishek Singh,5,U Mumba,7,2028,2028,Abhishek Singh,332,14400%,43%,,,
+team_id_5|Season7|Arjun Deshwal,5,U Mumba,7,2024,2024,Arjun Deshwal,191,8200%,43%,,,
+team_id_5|Season7|Rohit Baliyan,5,U Mumba,7,261,261,Rohit Baliyan,150,3700%,25%,,,
+team_id_5|Season7|Athul MS,5,U Mumba,7,#N/A,-1,Athul MS,125,4000%,32%,,,
+team_id_5|Season7|Sandeep Narwal,5,U Mumba,7,142,142,Sandeep Narwal,67,1600%,24%,,,
+team_id_5|Season7|Dong Geon Lee,5,U Mumba,7,522,522,Dong Geon Lee,46,1500%,33%,,,
+team_id_5|Season7|Ajinkya Rohidas Kapre,5,U Mumba,7,#N/A,-1,Ajinkya Rohidas Kapre,26,1000%,38%,,,
+team_id_5|Season7|Fazel Atrachali,5,U Mumba,7,259,259,Fazel Atrachali,15,100%,7%,,,
+team_id_5|Season7|Navneet,5,U Mumba,7,3238,3238,Navneet,8,300%,38%,,,
+team_id_5|Season7|Surender Singh,5,U Mumba,7,#N/A,-1,Surender Singh,7,100%,14%,,,
+team_id_5|Season7|Vinoth Kumar,5,U Mumba,7,#N/A,-1,Vinoth Kumar,4,0%,0%,,,
+team_id_5|Season7|Rajaguru Subramanian,5,U Mumba,7,84,84,Rajaguru Subramanian,2,0%,0%,,,
+team_id_5|Season7|Anil,5,U Mumba,7,2345,2345,Anil,1,100%,100%,,,
+team_id_2|Season7|Naveen Kumar,2,Dabang Delhi,7,2296,2296,Naveen Kumar,472,26100%,55%,,,
+team_id_2|Season7|Chandran Ranjit,2,Dabang Delhi,7,36,36,Chandran Ranjit,262,9100%,35%,,,
+team_id_2|Season7|Vijay,2,Dabang Delhi,7,3081,3081,Vijay,107,3800%,36%,,,
+team_id_2|Season7|Meraj Sheykh,2,Dabang Delhi,7,251,251,Meraj Sheykh,90,3100%,34%,,,
+team_id_2|Season7|Neeraj Narwal,2,Dabang Delhi,7,3038,3038,Neeraj Narwal,19,500%,26%,,,
+team_id_2|Season7|Aman Kadian,2,Dabang Delhi,7,3098,3098,Aman Kadian,11,300%,27%,,,
+team_id_2|Season7|Anil Kumar,2,Dabang Delhi,7,311,311,Anil Kumar,6,100%,17%,,,
+team_id_2|Season7|Sumit Kumar,2,Dabang Delhi,7,#N/A,-1,Sumit Kumar,3,0%,0%,,,
+team_id_2|Season7|Sombir,2,Dabang Delhi,7,3000,3000,Sombir,3,100%,33%,,,
+team_id_2|Season7|Balram,2,Dabang Delhi,7,3222,3222,Balram,3,100%,33%,,,
+team_id_2|Season7|Vishal Mane,2,Dabang Delhi,7,123,123,Vishal Mane,2,0%,0%,,,
+team_id_2|Season7|Saeid Ghaﬀari,2,Dabang Delhi,7,#N/A,-1,Saeid Ghaﬀari,1,0%,0%,,,
+team_id_2|Season7|Ravinder Pahal,2,Dabang Delhi,7,157,157,Ravinder Pahal,1,0%,0%,,,
+team_id_29|Season7|Rahul Chaudhari,29,Tamil Thalaivas,7,81,81,Rahul Chaudhari,325,11200%,34%,,,
+team_id_29|Season7|V. Ajith Kumar,29,Tamil Thalaivas,7,#N/A,-1,V. Ajith Kumar,217,10200%,47%,,,
+team_id_29|Season7|Ajay Thakur,29,Tamil Thalaivas,7,26,26,Ajay Thakur,171,5000%,29%,,,
+team_id_29|Season7|Shabeer Bappu,29,Tamil Thalaivas,7,105,105,Shabeer Bappu,93,1700%,18%,,,
+team_id_29|Season7|Vineet Kumar,29,Tamil Thalaivas,7,#N/A,-1,Vineet Kumar,21,400%,19%,,,
+team_id_29|Season7|Manjeet Chhillar,29,Tamil Thalaivas,7,69,69,Manjeet Chhillar,19,0%,0%,,,
+team_id_29|Season7|Victor Obiero,29,Tamil Thalaivas,7,#N/A,-1,Victor Obiero,17,800%,47%,,,
+team_id_29|Season7|Ran Singh,29,Tamil Thalaivas,7,160,160,Ran Singh,17,700%,41%,,,
+team_id_29|Season7|Anand,29,Tamil Thalaivas,7,2325,2325,Anand,13,300%,23%,,,
+team_id_29|Season7|Yashwant Bishnoi,29,Tamil Thalaivas,7,2282,2282,Yashwant Bishnoi,9,200%,22%,,,
+team_id_29|Season7|Himanshu,29,Tamil Thalaivas,7,3161,3161,Himanshu,7,200%,29%,,,
+team_id_29|Season7|Hemant Chauhan,29,Tamil Thalaivas,7,3073,3073,Hemant Chauhan,6,100%,17%,,,
+team_id_29|Season7|Mohit Chhillar,29,Tamil Thalaivas,7,71,71,Mohit Chhillar,2,0%,0%,,,
+team_id_29|Season7|Sagar,29,Tamil Thalaivas,7,3236,3236,Sagar,1,0%,0%,,,
+team_id_29|Season7|Milad Sheibak,29,Tamil Thalaivas,7,#N/A,-1,Milad Sheibak,1,0%,0%,,,
+team_id_7|Season7|Manjeet,7,Puneri Paltan,7,763,763,Manjeet,270,10800%,40%,,,
+team_id_7|Season7|Pankaj Mohite,7,Puneri Paltan,7,3233,3233,Pankaj Mohite,207,8800%,43%,,,
+team_id_7|Season7|Nitin Tomar,7,Puneri Paltan,7,320,320,Nitin Tomar,142,6000%,42%,,,
+team_id_7|Season7|Amit Kumar,7,Puneri Paltan,7,3110,3110,Amit Kumar,103,2400%,23%,,,
+team_id_7|Season7|Pawan Kumar,7,Puneri Paltan,7,156,156,Pawan Kumar,59,1900%,32%,,,
+team_id_7|Season7|Sushant Sail,7,Puneri Paltan,7,3235,3235,Sushant Sail,50,1500%,30%,,,
+team_id_7|Season7|Darshan Kadian,7,Puneri Paltan,7,#N/A,-1,Darshan Kadian,32,500%,16%,,,
+team_id_7|Season7|Surjeet Singh,7,Puneri Paltan,7,322,322,Surjeet Singh,18,100%,6%,,,
+team_id_7|Season7|Emad Sedaghatnia,7,Puneri Paltan,7,3179,3179,Emad Sedaghatnia,17,800%,47%,,,
+team_id_7|Season7|Shubham Shinde,7,Puneri Paltan,7,3103,3103,Shubham Shinde,8,100%,13%,,,
+team_id_7|Season7|R. Sriram,7,Puneri Paltan,7,#N/A,-1,R. Sriram,6,0%,0%,,,
+team_id_7|Season7|Hadi Tajik,7,Puneri Paltan,7,301,301,Hadi Tajik,6,100%,17%,,,
+team_id_7|Season7|Sandeep,7,Puneri Paltan,7,3102,3102,Sandeep,1,0%,0%,,,
+team_id_7|Season7|Sagar Krishna,7,Puneri Paltan,7,#N/A,-1,Sagar Krishna,1,0%,0%,,,
+team_id_7|Season7|Jadhav Balasaheb Shahaji,7,Puneri Paltan,7,#N/A,-1,Jadhav Balasaheb Shahaji,1,0%,0%,,,
+team_id_7|Season7|Girish Maruti Ernak,7,Puneri Paltan,7,161,161,Girish Maruti Ernak,1,0%,0%,,,
+team_id_3|Season7|Deepak Hooda,3,Jaipur Pink Panthers,7,41,41,Deepak Hooda,304,11500%,38%,,,
+team_id_3|Season7|Deepak Narwal,3,Jaipur Pink Panthers,7,211,211,Deepak Narwal,182,6200%,34%,,,
+team_id_3|Season7|Nilesh Salunke,3,Jaipur Pink Panthers,7,293,293,Nilesh Salunke,154,5200%,34%,,,
+team_id_3|Season7|Nitin Rawal,3,Jaipur Pink Panthers,7,3065,3065,Nitin Rawal,98,2300%,23%,,,
+team_id_3|Season7|Ajinkya Ashok Pawar,3,Jaipur Pink Panthers,7,3097,3097,Ajinkya Ashok Pawar,68,1700%,25%,,,
+team_id_3|Season7|Sushil Gulia,3,Jaipur Pink Panthers,7,3052,3052,Sushil Gulia,47,1200%,26%,,,
+team_id_3|Season7|Sachin Narwal,3,Jaipur Pink Panthers,7,3154,3154,Sachin Narwal,36,800%,22%,,,
+team_id_3|Season7|Guman Singh,3,Jaipur Pink Panthers,7,3032,3032,Guman Singh,10,300%,30%,,,
+team_id_3|Season7|Lokesh Kaushik,3,Jaipur Pink Panthers,7,599,599,Lokesh Kaushik,8,300%,38%,,,
+team_id_3|Season7|Amit Hooda,3,Jaipur Pink Panthers,7,212,212,Amit Hooda,6,0%,0%,,,
+team_id_3|Season7|Sandeep Dhull,3,Jaipur Pink Panthers,7,290,290,Sandeep Dhull,3,0%,0%,,,
+team_id_3|Season7|Sunil Siddhgavali,3,Jaipur Pink Panthers,7,613,613,Sunil Siddhgavali,2,0%,0%,,,
+team_id_3|Season7|Vishal,3,Jaipur Pink Panthers,7,3159,3159,Vishal,1,0%,0%,,,
+team_id_3|Season7|Milinda Chathuranga,3,Jaipur Pink Panthers,7,#N/A,-1,Milinda Chathuranga,1,0%,0%,,,
+team_id_4|Season7|Maninder Singh,4,Bengal Warriors,7,143,143,Maninder Singh,318,17200%,54%,,,
+team_id_4|Season7|Mohammad Esmaeil Nabi..,4,Bengal Warriors,7,#N/A,-1,Mohammad Esmaeil Nabi..,232,8000%,34%,,,
+team_id_4|Season7|K. Prapanjan,4,Bengal Warriors,7,#N/A,-1,K. Prapanjan,205,7700%,38%,,,
+team_id_4|Season7|Sukesh Hegde,4,Bengal Warriors,7,111,111,Sukesh Hegde,142,4400%,31%,,,
+team_id_4|Season7|Rakesh Narwal,4,Bengal Warriors,7,204,204,Rakesh Narwal,27,1300%,48%,,,
+team_id_4|Season7|Sourabh Tanaji Patil,4,Bengal Warriors,7,#N/A,-1,Sourabh Tanaji Patil,26,1500%,58%,,,
+team_id_4|Season7|Ravindra Ramesh Kumaw..,4,Bengal Warriors,7,#N/A,-1,Ravindra Ramesh Kumaw..,17,600%,35%,,,
+team_id_4|Season7|Mohammad Taghi Paein ..,4,Bengal Warriors,7,#N/A,-1,Mohammad Taghi Paein ..,11,400%,36%,,,
+team_id_4|Season7|Baldev Singh,4,Bengal Warriors,7,621,621,Baldev Singh,7,100%,14%,,,
+team_id_4|Season7|Avinash A. R.,4,Bengal Warriors,7,#N/A,-1,Avinash A. R.,4,200%,50%,,,
+team_id_4|Season7|Rinku Narwal,4,Bengal Warriors,7,3084,3084,Rinku Narwal,3,0%,0%,,,
+team_id_4|Season7|Sunil Manik Dubile,4,Bengal Warriors,7,#N/A,-1,Sunil Manik Dubile,2,0%,0%,,,
+team_id_6|Season7|Pardeep Narwal,6,Patna Pirates,7,197,197,Pardeep Narwal,453,24300%,54%,,,
+team_id_6|Season7|Jang Kun Lee,6,Patna Pirates,7,#N/A,-1,Jang Kun Lee,138,4900%,36%,,,
+team_id_6|Season7|Mohammad Esmaeil Mag..,6,Patna Pirates,7,#N/A,-1,Mohammad Esmaeil Mag..,129,3100%,24%,,,
+team_id_6|Season7|Monu,6,Patna Pirates,7,3082,3082,Monu,66,900%,14%,,,
+team_id_6|Season7|Vikas Jaglan,6,Patna Pirates,7,#N/A,-1,Vikas Jaglan,58,700%,12%,,,
+team_id_6|Season7|Hadi Oshtorak,6,Patna Pirates,7,249,249,Hadi Oshtorak,42,500%,12%,,,
+team_id_6|Season7|Ashish,6,Patna Pirates,7,3028,3028,Ashish,16,300%,19%,,,
+team_id_6|Season7|Purna Singh,6,Patna Pirates,7,3075,3075,Purna Singh,15,400%,27%,,,
+team_id_6|Season7|Amit Kumar,6,Patna Pirates,7,#N/A,-1,Amit Kumar,8,300%,38%,,,
+team_id_6|Season7|Neeraj Kumar,6,Patna Pirates,7,3107,3107,Neeraj Kumar,4,0%,0%,,,
+team_id_6|Season7|Naveen,6,Patna Pirates,7,#N/A,-1,Naveen,3,0%,0%,,,
+team_id_6|Season7|Jawahar Dagar,6,Patna Pirates,7,390,390,Jawahar Dagar,1,0%,0%,,,
+team_id_31|Season7|Rohit Gulia,31,Gujarat Fortunegiants,7,3023,3023,Rohit Gulia,315,10900%,35%,,,
+team_id_31|Season7|Sachin,31,Gujarat Fortunegiants,7,757,757,Sachin,207,6900%,33%,,,
+team_id_31|Season7|More G B,31,Gujarat Fortunegiants,7,772,772,More G B,161,4900%,30%,,,
+team_id_31|Season7|Sonu Jaglan,31,Gujarat Fortunegiants,7,#N/A,-1,Sonu Jaglan,137,5600%,41%,,,
+team_id_31|Season7|Vinod Kumar,31,Gujarat Fortunegiants,7,764,764,Vinod Kumar,25,600%,24%,,,
+team_id_31|Season7|Sunil Kumar,31,Gujarat Fortunegiants,7,368,368,Sunil Kumar,13,100%,8%,,,
+team_id_31|Season7|Lalit Chaudhary,31,Gujarat Fortunegiants,7,2306,2306,Lalit Chaudhary,13,300%,23%,,,
+team_id_31|Season7|Harmanjit Singh,31,Gujarat Fortunegiants,7,3225,3225,Harmanjit Singh,13,600%,46%,,,
+team_id_31|Season7|Abolfazl Maghsodloumah..,31,Gujarat Fortunegiants,7,#N/A,-1,Abolfazl Maghsodloumah..,10,300%,30%,,,
+team_id_31|Season7|Gurvinder Singh,31,Gujarat Fortunegiants,7,46,46,Gurvinder Singh,7,300%,43%,,,
+team_id_31|Season7|Ruturaj Shivaji Koravi,31,Gujarat Fortunegiants,7,#N/A,-1,Ruturaj Shivaji Koravi,3,0%,0%,,,
+team_id_31|Season7|Pankaj,31,Gujarat Fortunegiants,7,3089,3089,Pankaj,2,0%,0%,,,
+team_id_8|Season7|Siddharth Sirish Desai,8,Telugu Titans,7,#N/A,-1,Siddharth Sirish Desai,331,18000%,54%,,,
+team_id_8|Season7|Rakesh Gowda,8,Telugu Titans,7,3046,3046,Rakesh Gowda,114,4100%,36%,,,
+team_id_8|Season7|Suraj Desai,8,Telugu Titans,7,3058,3058,Suraj Desai,103,3600%,35%,,,
+team_id_8|Season7|Farhad Milaghardan,8,Telugu Titans,7,482,482,Farhad Milaghardan,102,3800%,37%,,,
+team_id_8|Season7|Rajnish,8,Telugu Titans,7,2290,2290,Rajnish,98,3500%,36%,,,
+team_id_8|Season7|Amit Kumar,8,Telugu Titans,7,267,267,Amit Kumar,47,200%,4%,,,
+team_id_8|Season7|Armaan,8,Telugu Titans,7,2298,2298,Armaan,32,700%,22%,,,
+team_id_8|Season7|Ankit Beniwal,8,Telugu Titans,7,2322,2322,Ankit Beniwal,26,1000%,38%,,,
+team_id_8|Season7|Vishal Bhardwaj,8,Telugu Titans,7,#N/A,-1,Vishal Bhardwaj,16,0%,0%,,,
+team_id_8|Season7|Palle Mallikarjun,8,Telugu Titans,7,3062,3062,Palle Mallikarjun,15,500%,33%,,,
+team_id_8|Season7|Krushna Madane,8,Telugu Titans,7,274,274,Krushna Madane,12,0%,0%,,,
+team_id_8|Season7|Kamal Singh,8,Telugu Titans,7,2307,2307,Kamal Singh,8,0%,0%,,,
+team_id_8|Season7|Abozar Mighani,8,Telugu Titans,7,489,489,Abozar Mighani,6,0%,0%,,,
+team_id_8|Season7|C. Arun,8,Telugu Titans,7,#N/A,-1,C. Arun,4,100%,25%,,,
+team_id_8|Season7|Mula Siva Ganesh Reddy,8,Telugu Titans,7,#N/A,-1,Mula Siva Ganesh Reddy,2,0%,0%,,,
+team_id_1|Season7|Pawan Sehrawat,1,Bengaluru Bulls,7,#N/A,-1,Pawan Sehrawat,461,26700%,58%,,,
+team_id_1|Season7|Rohit Kumar,1,Bengaluru Bulls,7,326,326,Rohit Kumar,248,7500%,30%,,,
+team_id_1|Season7|Sumit Singh,1,Bengaluru Bulls,7,3104,3104,Sumit Singh,142,4600%,32%,,,
+team_id_1|Season7|Banty,1,Bengaluru Bulls,7,3029,3029,Banty,70,1700%,24%,,,
+team_id_1|Season7|Mohit Sehrawat,1,Bengaluru Bulls,7,3019,3019,Mohit Sehrawat,46,400%,9%,,,
+team_id_1|Season7|Ankit,1,Bengaluru Bulls,7,3099,3099,Ankit,14,100%,7%,,,
+team_id_1|Season7|Ashish Kumar,1,Bengaluru Bulls,7,202,202,Ashish Kumar,12,0%,0%,,,
+team_id_1|Season7|Mahender Singh,1,Bengaluru Bulls,7,769,769,Mahender Singh,9,0%,0%,,,
+team_id_1|Season7|Vijay Kumar,1,Bengaluru Bulls,7,768,768,Vijay Kumar,4,0%,0%,,,
+team_id_1|Season7|Ajay,1,Bengaluru Bulls,7,3096,3096,Ajay,4,100%,25%,,,
+team_id_1|Season7|Saurabh Nandal,1,Bengaluru Bulls,7,3228,3228,Saurabh Nandal,1,100%,100%,,,
+team_id_1|Season7|Amit Sheoran,1,Bengaluru Bulls,7,3115,3115,Amit Sheoran,1,0%,0%,,,
+team_id_30|Season7|Shrikant Jadhav,30,UP Yoddha,7,106,106,Shrikant Jadhav,294,11300%,38%,,,
+team_id_30|Season7|Rishank Devadiga,30,UP Yoddha,7,94,94,Rishank Devadiga,194,6500%,34%,,,
+team_id_30|Season7|Surender Gill,30,UP Yoddha,7,3241,3241,Surender Gill,189,5800%,31%,,,
+team_id_30|Season7|Monu Goyat,30,UP Yoddha,7,388,388,Monu Goyat,151,5800%,38%,,,
+team_id_30|Season7|Surender Singh,30,UP Yoddha,7,234,234,Surender Singh,37,1200%,32%,,,
+team_id_30|Season7|Mohsen Maghsoudlou,30,UP Yoddha,7,567,567,Mohsen Maghsoudlou,33,500%,15%,,,
+team_id_30|Season7|Azad Singh,30,UP Yoddha,7,2316,2316,Azad Singh,26,500%,19%,,,
+team_id_30|Season7|Sachin Kumar,30,UP Yoddha,7,218,218,Sachin Kumar,19,300%,16%,,,
+team_id_30|Season7|Amit,30,UP Yoddha,7,3126,3126,Amit,14,100%,7%,,,
+team_id_30|Season7|Ankush,30,UP Yoddha,7,3027,3027,Ankush,13,600%,46%,,,
+team_id_30|Season7|Sumit,30,UP Yoddha,7,3240,3240,Sumit,8,200%,25%,,,
+team_id_30|Season7|Nitesh Kumar,30,UP Yoddha,7,3088,3088,Nitesh Kumar,2,0%,0%,,,
+team_id_30|Season7|Ashu Singh,30,UP Yoddha,7,3239,3239,Ashu Singh,1,0%,0%,,,
+team_id_5|Season8|Abhishek Singh,5,U Mumba,8,2028,2028,Abhishek Singh,363,14900%,41%,,,
+team_id_5|Season8|V. Ajith Kumar,5,U Mumba,8,#N/A,-1,V. Ajith Kumar,291,13000%,45%,,,
+team_id_5|Season8|Shivam,5,U Mumba,8,4970,4970,Shivam,57,2600%,46%,,,
+team_id_5|Season8|Ajinkya Kapre,5,U Mumba,8,2025,2025,Ajinkya Kapre,46,1200%,26%,,,
+team_id_5|Season8|Mohsen Maghsoudlou,5,U Mumba,8,567,567,Mohsen Maghsoudlou,44,1000%,23%,,,
+team_id_5|Season8|Rahul Rana,5,U Mumba,8,#N/A,-1,Rahul Rana,20,500%,25%,,,
+team_id_5|Season8|Jashandeep Singh,5,U Mumba,8,3059,3059,Jashandeep Singh,12,200%,17%,,,
+team_id_5|Season8|Fazel Atrachali,5,U Mumba,8,259,259,Fazel Atrachali,12,0%,0%,,,
+team_id_5|Season8|Ashish Kumar,5,U Mumba,8,#N/A,-1,Ashish Kumar,11,200%,18%,,,
+team_id_5|Season8|Prathap S,5,U Mumba,8,3473,3473,Prathap S,8,200%,25%,,,
+team_id_5|Season8|Kamlesh,5,U Mumba,8,4968,4968,Kamlesh,7,100%,14%,,,
+team_id_5|Season8|Rinku Hc,5,U Mumba,8,#N/A,-1,Rinku Hc,2,0%,0%,,,
+team_id_5|Season8|Sunil Siddhgavali,5,U Mumba,8,613,613,Sunil Siddhgavali,1,0%,0%,,,
+team_id_5|Season8|Harendra Kumar,5,U Mumba,8,3138,3138,Harendra Kumar,1,0%,0%,,,
+team_id_5|Season8|Ajeet,5,U Mumba,8,3111,3111,Ajeet,1,0%,0%,,,
+team_id_3|Season8|Arjun Deshwal,3,Jaipur Pink Panthers,8,2024,2024,Arjun Deshwal,421,22600%,54%,,,
+team_id_3|Season8|Deepak Hooda,3,Jaipur Pink Panthers,8,41,41,Deepak Hooda,281,10500%,37%,,,
+team_id_3|Season8|Nitin Rawal,3,Jaipur Pink Panthers,8,3065,3065,Nitin Rawal,47,400%,9%,,,
+team_id_3|Season8|Naveen,3,Jaipur Pink Panthers,8,2357,2357,Naveen,45,900%,20%,,,
+team_id_3|Season8|Sachin Narwal,3,Jaipur Pink Panthers,8,3154,3154,Sachin Narwal,30,1300%,43%,,,
+team_id_3|Season8|Brijendra Singh Chaudhary,3,Jaipur Pink Panthers,8,3070,3070,Brijendra Singh Chaudhary,29,1300%,45%,,,
+team_id_3|Season8|Amit Nagar,3,Jaipur Pink Panthers,8,371,371,Amit Nagar,18,500%,28%,,,
+team_id_3|Season8|Ashok,3,Jaipur Pink Panthers,8,3715,3715,Ashok,6,200%,33%,,,
+team_id_3|Season8|Amirhossein Maleki,3,Jaipur Pink Panthers,8,#N/A,-1,Amirhossein Maleki,5,400%,80%,,,
+team_id_3|Season8|Amin Nosrati,3,Jaipur Pink Panthers,8,#N/A,-1,Amin Nosrati,5,0%,0%,,,
+team_id_3|Season8|Vishal Lather,3,Jaipur Pink Panthers,8,#N/A,-1,Vishal Lather,2,0%,0%,,,
+team_id_3|Season8|Sushil Gulia,3,Jaipur Pink Panthers,8,#N/A,-1,Sushil Gulia,2,0%,0%,,,
+team_id_3|Season8|Shaul Kumar,3,Jaipur Pink Panthers,8,#N/A,-1,Shaul Kumar,2,0%,0%,,,
+team_id_3|Season8|Deepak Rajendar Singh,3,Jaipur Pink Panthers,8,#N/A,-1,Deepak Rajendar Singh,1,0%,0%,,,
+team_id_30|Season8|Surender Gill,30,UP Yoddha,8,3241,3241,Surender Gill,355,14300%,40%,,,
+team_id_30|Season8|Pardeep Narwal,30,UP Yoddha,8,197,197,Pardeep Narwal,349,14400%,41%,,,
+team_id_30|Season8|Shrikant Jadhav,30,UP Yoddha,8,106,106,Shrikant Jadhav,190,7300%,38%,,,
+team_id_30|Season8|Rohit Tomar,30,UP Yoddha,8,4222,4222,Rohit Tomar,36,1600%,44%,,,
+team_id_30|Season8|Ankit,30,UP Yoddha,8,4801,4801,Ankit,23,500%,22%,,,
+team_id_30|Season8|Ashu Singh,30,UP Yoddha,8,3239,3239,Ashu Singh,22,200%,9%,,,
+team_id_30|Season8|Mohammad Taghi,30,UP Yoddha,8,#N/A,-1,Mohammad Taghi,18,500%,28%,,,
+team_id_30|Season8|Sahil,30,UP Yoddha,8,3594,3594,Sahil,8,300%,38%,,,
+team_id_30|Season8|Aman Hooda,30,UP Yoddha,8,#N/A,-1,Aman Hooda,6,0%,0%,,,
+team_id_30|Season8|Ankush,30,UP Yoddha,8,3027,3027,Ankush,3,0%,0%,,,
+team_id_30|Season8|Sumit,30,UP Yoddha,8,3240,3240,Sumit,2,0%,0%,,,
+team_id_30|Season8|Shubham Kumar,30,UP Yoddha,8,4228,4228,Shubham Kumar,1,0%,0%,,,
+team_id_30|Season8|Nitesh Kumar,30,UP Yoddha,8,3088,3088,Nitesh Kumar,1,0%,0%,,,
+team_id_2|Season8|Naveen Kumar,2,Dabang Delhi,8,2296,2296,Naveen Kumar,338,18600%,55%,,,
+team_id_2|Season8|Vijay Jaglan,2,Dabang Delhi,8,#N/A,-1,Vijay Jaglan,285,12100%,42%,,,
+team_id_2|Season8|Ashu Malik,2,Dabang Delhi,8,4947,4947,Ashu Malik,138,4100%,30%,,,
+team_id_2|Season8|Neeraj Narwal,2,Dabang Delhi,8,3038,3038,Neeraj Narwal,97,3300%,34%,,,
+team_id_2|Season8|Sandeep Narwal,2,Dabang Delhi,8,142,142,Sandeep Narwal,68,1800%,26%,,,
+team_id_2|Season8|Manjeet,2,Dabang Delhi,8,3965,3965,Manjeet,17,600%,35%,,,
+team_id_2|Season8|Ajay Thakur,2,Dabang Delhi,8,26,26,Ajay Thakur,13,300%,23%,,,
+team_id_2|Season8|Manjeet Chhillar,2,Dabang Delhi,8,69,69,Manjeet Chhillar,5,100%,20%,,,
+team_id_2|Season8|Sushant Sail,2,Dabang Delhi,8,3235,3235,Sushant Sail,4,100%,25%,,,
+team_id_2|Season8|Nitin Panwar,2,Dabang Delhi,8,3152,3152,Nitin Panwar,4,200%,50%,,,
+team_id_2|Season8|Balram,2,Dabang Delhi,8,3222,3222,Balram,4,0%,0%,,,
+team_id_2|Season8|Joginder Narwal,2,Dabang Delhi,8,194,194,Joginder Narwal,1,0%,0%,,,
+team_id_7|Season8|Asalam Inamdar,7,Puneri Paltan,8,#N/A,-1,Asalam Inamdar,355,14000%,39%,,,
+team_id_7|Season8|Mohit Goyat,7,Puneri Paltan,8,4022,4022,Mohit Goyat,305,13900%,46%,,,
+team_id_7|Season8|Nitin Tomar,7,Puneri Paltan,8,320,320,Nitin Tomar,103,3700%,36%,,,
+team_id_7|Season8|Pankaj Mohite,7,Puneri Paltan,8,3233,3233,Pankaj Mohite,64,1700%,27%,,,
+team_id_7|Season8|Rahul Chaudhari,7,Puneri Paltan,8,81,81,Rahul Chaudhari,35,1000%,29%,,,
+team_id_7|Season8|Vishwas S,7,Puneri Paltan,8,4757,4757,Vishwas S,26,1000%,38%,,,
+team_id_7|Season8|Shubham Shelke,7,Puneri Paltan,8,4961,4961,Shubham Shelke,15,200%,13%,,,
+team_id_7|Season8|Pawan Kumar,7,Puneri Paltan,8,#N/A,-1,Pawan Kumar,12,300%,25%,,,
+team_id_7|Season8|Akash Shinde,7,Puneri Paltan,8,4959,4959,Akash Shinde,11,900%,82%,,,
+team_id_7|Season8|Abinesh Nadarajan,7,Puneri Paltan,8,4192,4192,Abinesh Nadarajan,9,200%,22%,,,
+team_id_7|Season8|Vishal Bhardwaj,7,Puneri Paltan,8,3083,3083,Vishal Bhardwaj,5,0%,0%,,,
+team_id_7|Season8|Victor Obiero,7,Puneri Paltan,8,#N/A,-1,Victor Obiero,1,0%,0%,,,
+team_id_7|Season8|Sombir,7,Puneri Paltan,8,3000,3000,Sombir,1,0%,0%,,,
+team_id_7|Season8|Sanket Sawant,7,Puneri Paltan,8,3234,3234,Sanket Sawant,1,0%,0%,,,
+team_id_7|Season8|Karamvir,7,Puneri Paltan,8,3162,3162,Karamvir,1,0%,0%,,,
+team_id_7|Season8|Baldev Singh,7,Puneri Paltan,8,621,621,Baldev Singh,1,0%,0%,,,
+team_id_31|Season8|Rakesh Sungroya,31,Gujarat Fortunegiants,8,#N/A,-1,Rakesh Sungroya,297,11800%,40%,,,
+team_id_31|Season8|Ajay Kumar,31,Gujarat Fortunegiants,8,389,389,Ajay Kumar,163,6100%,37%,,,
+team_id_31|Season8|Pardeep Kumar,31,Gujarat Fortunegiants,8,4939,4939,Pardeep Kumar,148,5500%,37%,,,
+team_id_31|Season8|Rakesh Narwal,31,Gujarat Fortunegiants,8,204,204,Rakesh Narwal,147,5700%,39%,,,
+team_id_31|Season8|Mahendra Rajput,31,Gujarat Fortunegiants,8,163,163,Mahendra Rajput,119,4700%,39%,,,
+team_id_31|Season8|Rathan K,31,Gujarat Fortunegiants,8,3472,3472,Rathan K,21,300%,14%,,,
+team_id_31|Season8|Hadi Oshtorak,31,Gujarat Fortunegiants,8,249,249,Hadi Oshtorak,16,300%,19%,,,
+team_id_31|Season8|Sunil Kumar,31,Gujarat Fortunegiants,8,368,368,Sunil Kumar,15,100%,7%,,,
+team_id_31|Season8|Bhuvneshwar Gaur,31,Gujarat Fortunegiants,8,2315,2315,Bhuvneshwar Gaur,5,200%,40%,,,
+team_id_31|Season8|Sonu Singh,31,Gujarat Fortunegiants,8,#N/A,-1,Sonu Singh,4,0%,0%,,,
+team_id_31|Season8|Maninder Singh,31,Gujarat Fortunegiants,8,743,743,Maninder Singh,4,100%,25%,,,
+team_id_31|Season8|Harmanjit Singh,31,Gujarat Fortunegiants,8,#N/A,-1,Harmanjit Singh,1,0%,0%,,,
+team_id_31|Season8|Girish Maruti Ernak,31,Gujarat Fortunegiants,8,161,161,Girish Maruti Ernak,1,0%,0%,,,
+team_id_6|Season8|Sachin Tanwar,6,Patna Pirates,8,#N/A,-1,Sachin Tanwar,381,14400%,38%,,,
+team_id_6|Season8|Guman Singh,6,Patna Pirates,8,3032,3032,Guman Singh,200,7600%,38%,,,
+team_id_6|Season8|Monu Goyat,6,Patna Pirates,8,388,388,Monu Goyat,165,6200%,38%,,,
+team_id_6|Season8|Prashanth Kumar Rai,6,Patna Pirates,8,155,155,Prashanth Kumar Rai,163,7300%,45%,,,
+team_id_6|Season8|Monu Sandhu,6,Patna Pirates,8,#N/A,-1,Monu Sandhu,31,900%,29%,,,
+team_id_6|Season8|Shadloui Chianeh,6,Patna Pirates,8,#N/A,-1,Shadloui Chianeh,21,500%,24%,,,
+team_id_6|Season8|Mohit,6,Patna Pirates,8,3036,3036,Mohit,14,300%,21%,,,
+team_id_6|Season8|Selvamani K,6,Patna Pirates,8,264,264,Selvamani K,10,400%,40%,,,
+team_id_6|Season8|Neeraj Kumar,6,Patna Pirates,8,3107,3107,Neeraj Kumar,9,0%,0%,,,
+team_id_6|Season8|Daniel Omondi Odhiambo,6,Patna Pirates,8,#N/A,-1,Daniel Omondi Odhiambo,7,200%,29%,,,
+team_id_6|Season8|Shubham Shinde,6,Patna Pirates,8,3103,3103,Shubham Shinde,6,100%,17%,,,
+team_id_6|Season8|Rohit,6,Patna Pirates,8,4958,4958,Rohit,5,100%,20%,,,
+team_id_6|Season8|C Sajin,6,Patna Pirates,8,#N/A,-1,C Sajin,1,0%,0%,,,
+team_id_6|Season8|Balaji D,6,Patna Pirates,8,4978,4978,Balaji D,1,0%,0%,,,
+team_id_4|Season8|Maninder Singh,4,Bengal Warriors,8,143,143,Maninder Singh,401,19700%,49%,,,
+team_id_4|Season8|Esmaeil Nabibakhsh,4,Bengal Warriors,8,#N/A,-1,Esmaeil Nabibakhsh,185,6700%,36%,,,
+team_id_4|Season8|Sukesh Hegde,4,Bengal Warriors,8,111,111,Sukesh Hegde,128,4300%,34%,,,
+team_id_4|Season8|Akash Pikalmunde,4,Bengal Warriors,8,4675,4675,Akash Pikalmunde,39,1200%,31%,,,
+team_id_4|Season8|Manoj Gowda,4,Bengal Warriors,8,3151,3151,Manoj Gowda,37,1000%,27%,,,
+team_id_4|Season8|Rohit,4,Bengal Warriors,8,4723,4723,Rohit,36,1200%,33%,,,
+team_id_4|Season8|Ravindra Kumawat,4,Bengal Warriors,8,#N/A,-1,Ravindra Kumawat,33,700%,21%,,,
+team_id_4|Season8|Anand V,4,Bengal Warriors,8,2021,2021,Anand V,12,200%,17%,,,
+team_id_4|Season8|Ran Singh,4,Bengal Warriors,8,160,160,Ran Singh,9,200%,22%,,,
+team_id_4|Season8|Rishank Devadiga,4,Bengal Warriors,8,94,94,Rishank Devadiga,8,100%,13%,,,
+team_id_4|Season8|Rinku Narwal,4,Bengal Warriors,8,3084,3084,Rinku Narwal,1,0%,0%,,,
+team_id_4|Season8|Parveen Satpal,4,Bengal Warriors,8,3100,3100,Parveen Satpal,1,0%,0%,,,
+team_id_4|Season8|Amit Nirwal,4,Bengal Warriors,8,3126,3126,Amit Nirwal,1,0%,0%,,,
+team_id_4|Season8|Abozar Mohajermighani,4,Bengal Warriors,8,#N/A,-1,Abozar Mohajermighani,1,0%,0%,,,
+team_id_29|Season8|Manjeet,29,Tamil Thalaivas,8,763,763,Manjeet,325,13600%,42%,,,
+team_id_29|Season8|Ajinkya Pawar,29,Tamil Thalaivas,8,3097,3097,Ajinkya Pawar,213,8300%,39%,,,
+team_id_29|Season8|Bhavani Rajput,29,Tamil Thalaivas,8,660,660,Bhavani Rajput,111,3300%,30%,,,
+team_id_29|Season8|Himanshu,29,Tamil Thalaivas,8,3161,3161,Himanshu,78,3000%,38%,,,
+team_id_29|Season8|Athul MS,29,Tamil Thalaivas,8,376,376,Athul MS,73,2100%,29%,,,
+team_id_29|Season8|K Prapanjan,29,Tamil Thalaivas,8,#N/A,-1,K Prapanjan,59,1700%,29%,,,
+team_id_29|Season8|Himanshu Singh,29,Tamil Thalaivas,8,4963,4963,Himanshu Singh,23,500%,22%,,,
+team_id_29|Season8|Surjeet Singh,29,Tamil Thalaivas,8,322,322,Surjeet Singh,18,100%,6%,,,
+team_id_29|Season8|Sandaruwan Asiri,29,Tamil Thalaivas,8,#N/A,-1,Sandaruwan Asiri,8,100%,13%,,,
+team_id_29|Season8|Mohit,29,Tamil Thalaivas,8,4964,4964,Mohit,7,0%,0%,,,
+team_id_29|Season8|Anwar Saheed Baba,29,Tamil Thalaivas,8,#N/A,-1,Anwar Saheed Baba,2,0%,0%,,,
+team_id_29|Season8|Sagar Krishna,29,Tamil Thalaivas,8,347,347,Sagar Krishna,1,0%,0%,,,
+team_id_29|Season8|Sagar,29,Tamil Thalaivas,8,3236,3236,Sagar,1,0%,0%,,,
+team_id_28|Season8|Vikash Kandola,28,Haryana Steeler,8,366,366,Vikash Kandola,356,14700%,41%,,,
+team_id_28|Season8|Meetu,28,Haryana Steeler,8,4183,4183,Meetu,192,6700%,35%,,,
+team_id_28|Season8|Rohit Gulia,28,Haryana Steeler,8,3023,3023,Rohit Gulia,113,4300%,38%,,,
+team_id_28|Season8|Ashish,28,Haryana Steeler,8,3028,3028,Ashish,102,4300%,42%,,,
+team_id_28|Season8|Vinay,28,Haryana Steeler,8,3054,3054,Vinay,96,4800%,50%,,,
+team_id_28|Season8|Jaideep,28,Haryana Steeler,8,4184,4184,Jaideep,14,0%,0%,,,
+team_id_28|Season8|Surender Nada,28,Haryana Steeler,8,146,146,Surender Nada,12,200%,17%,,,
+team_id_28|Season8|Mohammad Esmaeil,28,Haryana Steeler,8,#N/A,-1,Mohammad Esmaeil,6,100%,17%,,,
+team_id_28|Season8|Rajesh Narwal,28,Haryana Steeler,8,86,86,Rajesh Narwal,4,0%,0%,,,
+team_id_28|Season8|Vijay Kumar,28,Haryana Steeler,8,768,768,Vijay Kumar,1,100%,100%,,,
+team_id_28|Season8|Ravi Kumar,28,Haryana Steeler,8,240,240,Ravi Kumar,1,0%,0%,,,
+team_id_28|Season8|Ajay Ghanghas,28,Haryana Steeler,8,#N/A,-1,Ajay Ghanghas,1,0%,0%,,,
+team_id_8|Season8|Ankit Beniwal,8,Telugu Titans,8,2322,2322,Ankit Beniwal,238,8700%,37%,,,
+team_id_8|Season8|Rajnish,8,Telugu Titans,8,2290,2290,Rajnish,190,8600%,45%,,,
+team_id_8|Season8|Adarsh T,8,Telugu Titans,8,3095,3095,Adarsh T,147,5500%,37%,,,
+team_id_8|Season8|Galla Raju,8,Telugu Titans,8,3031,3031,Galla Raju,92,3100%,34%,,,
+team_id_8|Season8|Rakesh Gowda,8,Telugu Titans,8,3046,3046,Rakesh Gowda,83,2800%,34%,,,
+team_id_8|Season8|Siddharth Desai,8,Telugu Titans,8,2026,2026,Siddharth Desai,49,2200%,45%,,,
+team_id_8|Season8|Rohit Kumar,8,Telugu Titans,8,326,326,Rohit Kumar,49,1200%,24%,,,
+team_id_8|Season8|Surinder Singh,8,Telugu Titans,8,3086,3086,Surinder Singh,15,0%,0%,,,
+team_id_8|Season8|Muhammed Shihas S,8,Telugu Titans,8,#N/A,-1,Muhammed Shihas S,12,100%,8%,,,
+team_id_8|Season8|Prince D,8,Telugu Titans,8,3969,3969,Prince D,10,200%,20%,,,
+team_id_8|Season8|Hyunsu Park,8,Telugu Titans,8,4932,4932,Hyunsu Park,6,200%,33%,,,
+team_id_8|Season8|Amit Chauhan,8,Telugu Titans,8,#N/A,-1,Amit Chauhan,5,0%,0%,,,
+team_id_8|Season8|Sandeep Kandola,8,Telugu Titans,8,248,248,Sandeep Kandola,3,0%,0%,,,
+team_id_8|Season8|Ruturaj Koravi,8,Telugu Titans,8,2023,2023,Ruturaj Koravi,3,0%,0%,,,
+team_id_8|Season8|Akash Choudhary,8,Telugu Titans,8,3004,3004,Akash Choudhary,3,0%,0%,,,
+team_id_8|Season8|C. Arun,8,Telugu Titans,8,191,191,C. Arun,2,0%,0%,,,
+team_id_1|Season8|Pawan Sehrawat,1,Bengaluru Bulls,8,318,318,Pawan Sehrawat,478,25000%,52%,,,
+team_id_1|Season8|Bharat Naresh,1,Bengaluru Bulls,8,#N/A,-1,Bharat Naresh,196,9800%,50%,,,
+team_id_1|Season8|Chandran Ranjit,1,Bengaluru Bulls,8,36,36,Chandran Ranjit,185,6100%,33%,,,
+team_id_1|Season8|Deepak Narwal,1,Bengaluru Bulls,8,211,211,Deepak Narwal,45,1200%,27%,,,
+team_id_1|Season8|More GB,1,Bengaluru Bulls,8,#N/A,-1,More GB,40,300%,8%,,,
+team_id_1|Season8|Dong Geon Lee,1,Bengaluru Bulls,8,522,522,Dong Geon Lee,14,600%,43%,,,
+team_id_1|Season8|Mahender Singh,1,Bengaluru Bulls,8,769,769,Mahender Singh,12,0%,0%,,,
+team_id_1|Season8|Mohit Sehrawat,1,Bengaluru Bulls,8,3019,3019,Mohit Sehrawat,11,0%,0%,,,
+team_id_1|Season8|Abolfazl Maghsodloumah..,1,Bengaluru Bulls,8,#N/A,-1,Abolfazl Maghsodloumah..,6,200%,33%,,,
+team_id_1|Season8|Aman,1,Bengaluru Bulls,8,4972,4972,Aman,3,100%,33%,,,
+team_id_1|Season8|Saurabh Nandal,1,Bengaluru Bulls,8,3228,3228,Saurabh Nandal,2,0%,0%,,,
+team_id_3|Season9|Arjun Deshwal,3,Jaipur Pink Panthers,9,2024,2024,Arjun Deshwal,449,24100%,54%,,,
+team_id_3|Season9|Ajith V Kumar,3,Jaipur Pink Panthers,9,#N/A,-1,Ajith V Kumar,182,7200%,40%,,,
+team_id_3|Season9|Rahul Chaudhari,3,Jaipur Pink Panthers,9,81,81,Rahul Chaudhari,180,5800%,32%,,,
+team_id_3|Season9|Bhavani Rajput,3,Jaipur Pink Panthers,9,660,660,Bhavani Rajput,77,2800%,36%,,,
+team_id_3|Season9|Sunil Kumar,3,Jaipur Pink Panthers,9,368,368,Sunil Kumar,29,100%,3%,,,
+team_id_3|Season9|V Ajith Kumar,3,Jaipur Pink Panthers,9,3053,3053,V Ajith Kumar,17,500%,29%,,,
+team_id_3|Season9|Devank,3,Jaipur Pink Panthers,9,5106,5106,Devank,11,200%,18%,,,
+team_id_3|Season9|Navneet,3,Jaipur Pink Panthers,9,3238,3238,Navneet,10,400%,40%,,,
+team_id_3|Season9|Sahul Kumar,3,Jaipur Pink Panthers,9,4769,4769,Sahul Kumar,8,100%,13%,,,
+team_id_3|Season9|Nitin Panwar (JP),3,Jaipur Pink Panthers,9,#N/A,-1,Nitin Panwar (JP),6,0%,0%,,,
+team_id_3|Season9|Nitin Panwar,3,Jaipur Pink Panthers,9,3152,3152,Nitin Panwar,4,300%,75%,,,
+team_id_3|Season9|Rahul Gorakh Dhanawade,3,Jaipur Pink Panthers,9,#N/A,-1,Rahul Gorakh Dhanawade,1,0%,0%,,,
+team_id_3|Season9|Lucky Sharma,3,Jaipur Pink Panthers,9,5042,5042,Lucky Sharma,1,0%,0%,,,
+team_id_28|Season9|Meetu Mahender,28,Haryana Steeler,9,#N/A,-1,Meetu Mahender,318,11600%,36%,,,
+team_id_28|Season9|Manjeet Dahiya,28,Haryana Steeler,9,#N/A,-1,Manjeet Dahiya,185,8100%,44%,,,
+team_id_28|Season9|Rakesh Narwal,28,Haryana Steeler,9,204,204,Rakesh Narwal,110,3300%,30%,,,
+team_id_28|Season9|Manjeet,28,Haryana Steeler,9,763,763,Manjeet,89,3900%,44%,,,
+team_id_28|Season9|K Prapanjan,28,Haryana Steeler,9,#N/A,-1,K Prapanjan,66,3000%,45%,,,
+team_id_28|Season9|Vinay Tevatia,28,Haryana Steeler,9,#N/A,-1,Vinay Tevatia,35,1500%,43%,,,
+team_id_28|Season9|Nitin Rawal,28,Haryana Steeler,9,3065,3065,Nitin Rawal,29,400%,14%,,,
+team_id_28|Season9|Sushil,28,Haryana Steeler,9,4179,4179,Sushil,27,1700%,63%,,,
+team_id_28|Season9|Manish Gulia,28,Haryana Steeler,9,5055,5055,Manish Gulia,20,900%,45%,,,
+team_id_28|Season9|Vinay,28,Haryana Steeler,9,3054,3054,Vinay,18,600%,33%,,,
+team_id_28|Season9|Lovepreet Singh,28,Haryana Steeler,9,4157,4157,Lovepreet Singh,15,600%,40%,,,
+team_id_28|Season9|Jaideep Dahiya,28,Haryana Steeler,9,4184,4184,Jaideep Dahiya,4,100%,25%,,,
+team_id_28|Season9|Mohit Nandal,28,Haryana Steeler,9,4954,4954,Mohit Nandal,1,0%,0%,,,
+team_id_28|Season9|Mohit,28,Haryana Steeler,9,#N/A,-1,Mohit,1,0%,0%,,,
+team_id_28|Season9|Joginder Singh Narwal,28,Haryana Steeler,9,#N/A,-1,Joginder Singh Narwal,1,0%,0%,,,
+team_id_28|Season9|Harsh,28,Haryana Steeler,9,5103,5103,Harsh,1,0%,0%,,,
+team_id_28|Season9|Amirhossein Bastami,28,Haryana Steeler,9,4928,4928,Amirhossein Bastami,1,0%,0%,,,
+team_id_29|Season9|Narender,29,Tamil Thalaivas,9,5093,5093,Narender,371,18400%,50%,,,
+team_id_29|Season9|Ajinkya Ashok Pawar,29,Tamil Thalaivas,9,#N/A,-1,Ajinkya Ashok Pawar,282,9000%,32%,,,
+team_id_29|Season9|Himanshu,29,Tamil Thalaivas,9,3161,3161,Himanshu,138,2700%,20%,,,
+team_id_29|Season9|Himanshu Singh,29,Tamil Thalaivas,9,4963,4963,Himanshu Singh,95,2700%,28%,,,
+team_id_29|Season9|Visvanath V,29,Tamil Thalaivas,9,5046,5046,Visvanath V,34,1000%,29%,,,
+team_id_29|Season9|Sachin Nehra,29,Tamil Thalaivas,9,#N/A,-1,Sachin Nehra,26,900%,35%,,,
+team_id_29|Season9|Narender,29,Tamil Thalaivas,9,5093,5093,Narender,11,600%,55%,,,
+team_id_29|Season9|Himanshu Narwal,29,Tamil Thalaivas,9,3970,3970,Himanshu Narwal,10,400%,40%,,,
+team_id_29|Season9|Mohit,29,Tamil Thalaivas,9,4964,4964,Mohit,9,200%,22%,,,
+team_id_29|Season9|Sachin,29,Tamil Thalaivas,9,5130,5130,Sachin,5,100%,20%,,,
+team_id_29|Season9|Mohit Jakhar,29,Tamil Thalaivas,9,#N/A,-1,Mohit Jakhar,4,0%,0%,,,
+team_id_29|Season9|K Abhimanyu,29,Tamil Thalaivas,9,#N/A,-1,K Abhimanyu,3,100%,33%,,,
+team_id_29|Season9|Pawan Sehrawat,29,Tamil Thalaivas,9,318,318,Pawan Sehrawat,2,100%,50%,,,
+team_id_29|Season9|Md. Arif Rabbani,29,Tamil Thalaivas,9,5003,5003,Md. Arif Rabbani,2,0%,0%,,,
+team_id_29|Season9|Aashish,29,Tamil Thalaivas,9,4962,4962,Aashish,2,100%,50%,,,
+team_id_2|Season9|Naveen Kumar,2,Dabang Delhi,9,2296,2296,Naveen Kumar,439,22300%,51%,,,
+team_id_2|Season9|Ashu Malik,2,Dabang Delhi,9,4947,4947,Ashu Malik,277,10900%,39%,,,
+team_id_2|Season9|Vijay Jaglan,2,Dabang Delhi,9,#N/A,-1,Vijay Jaglan,114,5300%,46%,,,
+team_id_2|Season9|Manjeet,2,Dabang Delhi,9,3965,3965,Manjeet,105,4100%,39%,,,
+team_id_2|Season9|Ashish Narwal,2,Dabang Delhi,9,5100,5100,Ashish Narwal,20,600%,30%,,,
+team_id_2|Season9|Vishal Lather,2,Dabang Delhi,9,#N/A,-1,Vishal Lather,6,0%,0%,,,
+team_id_2|Season9|Vijay,2,Dabang Delhi,9,#N/A,-1,Vijay,6,100%,17%,,,
+team_id_2|Season9|Tejas Maruti Patil,2,Dabang Delhi,9,#N/A,-1,Tejas Maruti Patil,4,100%,25%,,,
+team_id_2|Season9|Ravi Kumar,2,Dabang Delhi,9,240,240,Ravi Kumar,2,0%,0%,,,
+team_id_2|Season9|Vishal,2,Dabang Delhi,9,3159,3159,Vishal,1,0%,0%,,,
+team_id_7|Season9|Aslam Mustafa Inamdar,7,Puneri Paltan,9,#N/A,-1,Aslam Mustafa Inamdar,268,11800%,44%,,,
+team_id_7|Season9|Mohit Goyat,7,Puneri Paltan,9,4022,4022,Mohit Goyat,257,10000%,39%,,,
+team_id_7|Season9|Akash Santosh Shinde,7,Puneri Paltan,9,#N/A,-1,Akash Santosh Shinde,195,10100%,52%,,,
+team_id_7|Season9|Pankaj Mohite,7,Puneri Paltan,9,3233,3233,Pankaj Mohite,110,4800%,44%,,,
+team_id_7|Season9|Mohammad Esmaeil Nabi..,7,Puneri Paltan,9,#N/A,-1,Mohammad Esmaeil Nabi..,62,1100%,18%,,,
+team_id_7|Season9|Akash Shinde,7,Puneri Paltan,9,4959,4959,Akash Shinde,27,600%,22%,,,
+team_id_7|Season9|Aditya Tushar Shinde,7,Puneri Paltan,9,#N/A,-1,Aditya Tushar Shinde,23,1000%,43%,,,
+team_id_7|Season9|Saurabh,7,Puneri Paltan,9,5129,5129,Saurabh,16,700%,44%,,,
+team_id_7|Season9|Mohammad Nabibakhsh,7,Puneri Paltan,9,3176,3176,Mohammad Nabibakhsh,14,400%,29%,,,
+team_id_7|Season9|Aditya Shinde,7,Puneri Paltan,9,5116,5116,Aditya Shinde,7,300%,43%,,,
+team_id_7|Season9|Gaurav Khatri,7,Puneri Paltan,9,5128,5128,Gaurav Khatri,6,100%,17%,,,
+team_id_7|Season9|D Mahindraprasad,7,Puneri Paltan,9,4141,4141,D Mahindraprasad,6,100%,17%,,,
+team_id_7|Season9|Fazel Atrachali,7,Puneri Paltan,9,259,259,Fazel Atrachali,4,0%,0%,,,
+team_id_7|Season9|Rakesh Bhalle Ram,7,Puneri Paltan,9,#N/A,-1,Rakesh Bhalle Ram,3,0%,0%,,,
+team_id_7|Season9|Govind Gurjar,7,Puneri Paltan,9,4917,4917,Govind Gurjar,3,100%,33%,,,
+team_id_7|Season9|Abinesh Nadarajan,7,Puneri Paltan,9,4192,4192,Abinesh Nadarajan,2,0%,0%,,,
+team_id_7|Season9|Sanket Sawant,7,Puneri Paltan,9,3234,3234,Sanket Sawant,1,0%,0%,,,
+team_id_7|Season9|Badal Taqdir Singh,7,Puneri Paltan,9,#N/A,-1,Badal Taqdir Singh,1,0%,0%,,,
+team_id_7|Season9|Ajinkya Ashok Pawar,7,Puneri Paltan,9,#N/A,-1,Ajinkya Ashok Pawar,1,0%,0%,,,
+team_id_5|Season9|Guman Singh,5,U Mumba,9,3032,3032,Guman Singh,279,10700%,38%,,,
+team_id_5|Season9|Ashish (Bubla),5,U Mumba,9,#N/A,-1,Ashish (Bubla),195,6300%,32%,,,
+team_id_5|Season9|Jai Bhagwan,5,U Mumba,9,5002,5002,Jai Bhagwan,163,5200%,32%,,,
+team_id_5|Season9|Heidarali Ekrami,5,U Mumba,9,5018,5018,Heidarali Ekrami,64,2100%,33%,,,
+team_id_5|Season9|Ashish,5,U Mumba,9,3028,3028,Ashish,64,2000%,31%,,,
+team_id_5|Season9|Pranay Vinay Rane,5,U Mumba,9,#N/A,-1,Pranay Vinay Rane,47,2000%,43%,,,
+team_id_5|Season9|Shivam,5,U Mumba,9,4970,4970,Shivam,26,800%,31%,,,
+team_id_5|Season9|Rahul Sethpal,5,U Mumba,9,4186,4186,Rahul Sethpal,26,100%,4%,,,
+team_id_5|Season9|Rinku H C,5,U Mumba,9,#N/A,-1,Rinku H C,16,0%,0%,,,
+team_id_5|Season9|Ankush,5,U Mumba,9,#N/A,-1,Ankush,12,0%,0%,,,
+team_id_5|Season9|Surinder Singh,5,U Mumba,9,3086,3086,Surinder Singh,8,0%,0%,,,
+team_id_5|Season9|Shivansh Thakur,5,U Mumba,9,4032,4032,Shivansh Thakur,6,0%,0%,,,
+team_id_5|Season9|Kamlesh,5,U Mumba,9,4968,4968,Kamlesh,6,200%,33%,,,
+team_id_5|Season9|Harendra Kumar,5,U Mumba,9,3138,3138,Harendra Kumar,6,0%,0%,,,
+team_id_5|Season9|Rupesh,5,U Mumba,9,#N/A,-1,Rupesh,2,0%,0%,,,
+team_id_5|Season9|Vishal Mane,5,U Mumba,9,123,123,Vishal Mane,1,0%,0%,,,
+team_id_5|Season9|Sachin,5,U Mumba,9,#N/A,-1,Sachin,1,0%,0%,,,
+team_id_6|Season9|Rohit Gulia,6,Patna Pirates,9,3023,3023,Rohit Gulia,293,12200%,42%,,,
+team_id_6|Season9|Sachin Tanwar,6,Patna Pirates,9,#N/A,-1,Sachin Tanwar,272,10900%,40%,,,
+team_id_6|Season9|Sachin,6,Patna Pirates,9,757,757,Sachin,105,4100%,39%,,,
+team_id_6|Season9|Monu Sandhu,6,Patna Pirates,9,#N/A,-1,Monu Sandhu,96,1200%,13%,,,
+team_id_6|Season9|Anuj Kumar,6,Patna Pirates,9,5107,5107,Anuj Kumar,37,700%,19%,,,
+team_id_6|Season9|Ranjit Venkatramana Naik,6,Patna Pirates,9,#N/A,-1,Ranjit Venkatramana Naik,33,1400%,42%,,,
+team_id_6|Season9|Anand Surendra Tomar,6,Patna Pirates,9,#N/A,-1,Anand Surendra Tomar,24,1400%,58%,,,
+team_id_6|Season9|Vishwas S,6,Patna Pirates,9,4757,4757,Vishwas S,21,600%,29%,,,
+team_id_6|Season9|Shadloui Chianeh,6,Patna Pirates,9,#N/A,-1,Shadloui Chianeh,20,400%,20%,,,
+team_id_6|Season9|Abdul Insamam S,6,Patna Pirates,9,#N/A,-1,Abdul Insamam S,18,500%,28%,,,
+team_id_6|Season9|Daniel Omondi Odhiambo,6,Patna Pirates,9,#N/A,-1,Daniel Omondi Odhiambo,16,900%,56%,,,
+team_id_6|Season9|Neeraj Kumar,6,Patna Pirates,9,3107,3107,Neeraj Kumar,12,0%,0%,,,
+team_id_6|Season9|Sunil,6,Patna Pirates,9,3106,3106,Sunil,2,0%,0%,,,
+team_id_6|Season9|Sukesh Hegde,6,Patna Pirates,9,#N/A,-1,Sukesh Hegde,2,0%,0%,,,
+team_id_6|Season9|Naveen Sharma,6,Patna Pirates,9,5090,5090,Naveen Sharma,1,0%,0%,,,
+team_id_6|Season9|Manish,6,Patna Pirates,9,4957,4957,Manish,1,0%,0%,,,
+team_id_1|Season9|Bharat Naresh,1,Bengaluru Bulls,9,#N/A,-1,Bharat Naresh,361,21100%,58%,,,
+team_id_1|Season9|Vikash Kandola,1,Bengaluru Bulls,9,366,366,Vikash Kandola,306,10600%,35%,,,
+team_id_1|Season9|Neeraj Narwal,1,Bengaluru Bulls,9,3038,3038,Neeraj Narwal,193,6100%,32%,,,
+team_id_1|Season9|Sachin Narwal,1,Bengaluru Bulls,9,3154,3154,Sachin Narwal,60,2700%,45%,,,
+team_id_1|Season9|Vikash Khandola,1,Bengaluru Bulls,9,#N/A,-1,Vikash Khandola,18,1000%,56%,,,
+team_id_1|Season9|Bharat,1,Bengaluru Bulls,9,4944,4944,Bharat,18,1200%,67%,,,
+team_id_1|Season9|Mahender Singh,1,Bengaluru Bulls,9,769,769,Mahender Singh,12,0%,0%,,,
+team_id_1|Season9|Harmanjit Singh,1,Bengaluru Bulls,9,3225,3225,Harmanjit Singh,10,0%,0%,,,
+team_id_1|Season9|More G B,1,Bengaluru Bulls,9,772,772,More G B,5,0%,0%,,,
+team_id_1|Season9|Saurabh Nandal,1,Bengaluru Bulls,9,3228,3228,Saurabh Nandal,2,200%,100%,,,
+team_id_4|Season9|Maninder Singh,4,Bengal Warriors,9,143,143,Maninder Singh,363,18600%,51%,,,
+team_id_4|Season9|Shrikant Jadhav,4,Bengal Warriors,9,106,106,Shrikant Jadhav,250,9900%,40%,,,
+team_id_4|Season9|Deepak Hooda,4,Bengal Warriors,9,41,41,Deepak Hooda,124,4000%,32%,,,
+team_id_4|Season9|Manoj Gowda,4,Bengal Warriors,9,3151,3151,Manoj Gowda,56,2000%,36%,,,
+team_id_4|Season9|Ajinkya Kapre,4,Bengal Warriors,9,2025,2025,Ajinkya Kapre,30,600%,20%,,,
+team_id_4|Season9|Aslam Thambi,4,Bengal Warriors,9,4935,4935,Aslam Thambi,18,400%,22%,,,
+team_id_4|Season9|R Guhan,4,Bengal Warriors,9,5120,5120,R Guhan,14,700%,50%,,,
+team_id_4|Season9|Akash Pikalmunde,4,Bengal Warriors,9,4675,4675,Akash Pikalmunde,14,600%,43%,,,
+team_id_4|Season9|Suyog Gaikar,4,Bengal Warriors,9,5115,5115,Suyog Gaikar,11,300%,27%,,,
+team_id_4|Season9|Parshant Kumar,4,Bengal Warriors,9,5097,5097,Parshant Kumar,11,200%,18%,,,
+team_id_4|Season9|Rohit,4,Bengal Warriors,9,4723,4723,Rohit,9,500%,56%,,,
+team_id_4|Season9|Shubham Shinde,4,Bengal Warriors,9,3103,3103,Shubham Shinde,8,0%,0%,,,
+team_id_4|Season9|Ashish Kumar,4,Bengal Warriors,9,#N/A,-1,Ashish Kumar,8,0%,0%,,,
+team_id_4|Season9|Surender Nada,4,Bengal Warriors,9,146,146,Surender Nada,5,0%,0%,,,
+team_id_4|Season9|Vinod Kumar,4,Bengal Warriors,9,764,764,Vinod Kumar,2,0%,0%,,,
+team_id_4|Season9|Vaibhav Garje,4,Bengal Warriors,9,5114,5114,Vaibhav Garje,1,0%,0%,,,
+team_id_30|Season9|Pardeep Narwal,30,UP Yoddha,9,197,197,Pardeep Narwal,355,16200%,46%,,,
+team_id_30|Season9|Surender Gill,30,UP Yoddha,9,3241,3241,Surender Gill,206,10100%,49%,,,
+team_id_30|Season9|Rohit Tomar,30,UP Yoddha,9,4222,4222,Rohit Tomar,166,5700%,34%,,,
+team_id_30|Season9|Anil Kumar,30,UP Yoddha,9,5121,5121,Anil Kumar,38,1100%,29%,,,
+team_id_30|Season9|Sandeep Narwal,30,UP Yoddha,9,142,142,Sandeep Narwal,35,800%,23%,,,
+team_id_30|Season9|Durgesh Kumar,30,UP Yoddha,9,3973,3973,Durgesh Kumar,29,700%,24%,,,
+team_id_30|Season9|Mahipal,30,UP Yoddha,9,5118,5118,Mahipal,26,800%,31%,,,
+team_id_30|Season9|Ashu Singh,30,UP Yoddha,9,3239,3239,Ashu Singh,14,0%,0%,,,
+team_id_30|Season9|Nitin Tomar,30,UP Yoddha,9,320,320,Nitin Tomar,11,200%,18%,,,
+team_id_30|Season9|James Kamweti,30,UP Yoddha,9,4933,4933,James Kamweti,10,300%,30%,,,
+team_id_30|Season9|Aman Hooda,30,UP Yoddha,9,#N/A,-1,Aman Hooda,10,400%,40%,,,
+team_id_30|Season9|Sumit,30,UP Yoddha,9,3240,3240,Sumit,7,100%,14%,,,
+team_id_30|Season9|Gulveer Singh,30,UP Yoddha,9,647,647,Gulveer Singh,7,0%,0%,,,
+team_id_30|Season9|Rathan K,30,UP Yoddha,9,3472,3472,Rathan K,6,200%,33%,,,
+team_id_30|Season9|Nitin Panwar,30,UP Yoddha,9,3039,3039,Nitin Panwar,3,100%,33%,,,
+team_id_30|Season9|Jaideep,30,UP Yoddha,9,#N/A,-1,Jaideep,2,0%,0%,,,
+team_id_30|Season9|Nehal B Sawal Desai,30,UP Yoddha,9,#N/A,-1,Nehal B Sawal Desai,1,0%,0%,,,
+team_id_30|Season9|Gurdeep,30,UP Yoddha,9,2041,2041,Gurdeep,1,0%,0%,,,
+team_id_30|Season9|Babu M,30,UP Yoddha,9,726,726,Babu M,1,0%,0%,,,
+team_id_31|Season9|Rakesh Sangroya,31,Gujarat Fortunegiants,9,#N/A,-1,Rakesh Sangroya,271,11100%,41%,,,
+team_id_31|Season9|Parteek Dhaiya,31,Gujarat Fortunegiants,9,#N/A,-1,Parteek Dhaiya,240,12600%,53%,,,
+team_id_31|Season9|Chandran Ranjit,31,Gujarat Fortunegiants,9,36,36,Chandran Ranjit,162,7500%,46%,,,
+team_id_31|Season9|Sonu,31,Gujarat Fortunegiants,9,3128,3128,Sonu,80,3000%,38%,,,
+team_id_31|Season9|Mahendra Ganesh Rajput,31,Gujarat Fortunegiants,9,#N/A,-1,Mahendra Ganesh Rajput,67,3900%,58%,,,
+team_id_31|Season9|Dong Geon Lee,31,Gujarat Fortunegiants,9,522,522,Dong Geon Lee,65,3000%,46%,,,
+team_id_31|Season9|Shankar Bhimraj Gadai,31,Gujarat Fortunegiants,9,#N/A,-1,Shankar Bhimraj Gadai,11,400%,36%,,,
+team_id_31|Season9|Purna Singh,31,Gujarat Fortunegiants,9,3075,3075,Purna Singh,8,100%,13%,,,
+team_id_31|Season9|Prashanth Kumar Rai,31,Gujarat Fortunegiants,9,155,155,Prashanth Kumar Rai,7,200%,29%,,,
+team_id_31|Season9|Arkam Shaikh,31,Gujarat Fortunegiants,9,2297,2297,Arkam Shaikh,7,100%,14%,,,
+team_id_31|Season9|Rinku Narwal,31,Gujarat Fortunegiants,9,3084,3084,Rinku Narwal,5,0%,0%,,,
+team_id_31|Season9|Pardeep Kumar,31,Gujarat Fortunegiants,9,4939,4939,Pardeep Kumar,5,0%,0%,,,
+team_id_31|Season9|Rohit Kumar,31,Gujarat Fortunegiants,9,326,326,Rohit Kumar,4,100%,25%,,,
+team_id_31|Season9|Rohan Singh,31,Gujarat Fortunegiants,9,#N/A,-1,Rohan Singh,1,0%,0%,,,
+team_id_31|Season9|Mohammad Ghorbani,31,Gujarat Fortunegiants,9,5019,5019,Mohammad Ghorbani,1,0%,0%,,,
+team_id_31|Season9|Gaurav Chhikara,31,Gujarat Fortunegiants,9,#N/A,-1,Gaurav Chhikara,1,0%,0%,,,
+team_id_8|Season9|Siddharth Sirish Desai,8,Telugu Titans,9,#N/A,-1,Siddharth Sirish Desai,224,11400%,51%,,,
+team_id_8|Season9|Abhishek Singh,8,Telugu Titans,9,2028,2028,Abhishek Singh,188,5000%,27%,,,
+team_id_8|Season9|Mohsen Maghsoudlou Jaf..,8,Telugu Titans,9,#N/A,-1,Mohsen Maghsoudlou Jaf..,111,2000%,18%,,,
+team_id_8|Season9|Adarsh T,8,Telugu Titans,9,3095,3095,Adarsh T,99,3000%,30%,,,
+team_id_8|Season9|Vinay,8,Telugu Titans,9,5095,5095,Vinay,95,2800%,29%,,,
+team_id_8|Season9|Monu Goyat,8,Telugu Titans,9,388,388,Monu Goyat,84,2200%,26%,,,
+team_id_8|Season9|K Hanumanthu,8,Telugu Titans,9,4795,4795,K Hanumanthu,57,2100%,37%,,,
+team_id_8|Season9|Rajnish,8,Telugu Titans,9,2290,2290,Rajnish,23,800%,35%,,,
+team_id_8|Season9|Vijay Kumar,8,Telugu Titans,9,768,768,Vijay Kumar,15,100%,7%,,,
+team_id_8|Season9|Surjeet Singh,8,Telugu Titans,9,322,322,Surjeet Singh,11,100%,9%,,,
+team_id_8|Season9|Vishal Bhardwaj,8,Telugu Titans,9,3083,3083,Vishal Bhardwaj,10,0%,0%,,,
+team_id_8|Season9|Prince D,8,Telugu Titans,9,3969,3969,Prince D,7,0%,0%,,,
+team_id_8|Season9|Parvesh Bhainswal,8,Telugu Titans,9,357,357,Parvesh Bhainswal,7,0%,0%,,,
+team_id_8|Season9|Ankit,8,Telugu Titans,9,3227,3227,Ankit,3,200%,67%,,,
+team_id_8|Season9|Mohit Pahal,8,Telugu Titans,9,5109,5109,Mohit Pahal,2,0%,0%,,,
+team_id_8|Season9|Palla Ramakrishna,8,Telugu Titans,9,4967,4967,Palla Ramakrishna,1,0%,0%,,,
+team_id_8|Season9|Nitin,8,Telugu Titans,9,5111,5111,Nitin,1,0%,0%,,,
+team_id_8|Season9|Muhammed Shihas S,8,Telugu Titans,9,#N/A,-1,Muhammed Shihas S,1,0%,0%,,,
