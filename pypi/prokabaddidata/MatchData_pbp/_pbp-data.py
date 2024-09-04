@@ -5,7 +5,7 @@ from typing import List, Dict, Any, Tuple
 from pandas import DataFrame
 
 
-class KabaddiDataAPI:
+class KabaddiAPI:
     def __init__(self, base_path: str):
         self.base_path = base_path
 
@@ -32,6 +32,49 @@ class KabaddiDataAPI:
         season_path = os.path.join(self.base_path, season)
         return [file.split('_ID_')[1].split('.')[0] for file in os.listdir(season_path) if file.endswith('.json')]
 
+    # def get_match_data(self, season: str, match_id: str) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
+    #     """
+    #     Get the full data for a specific match.
+    #
+    #     Args:
+    #         season (str): The season name.
+    #         match_id (str): The match ID.
+    #
+    #     Returns:
+    #         Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
+    #         A tuple containing match detail, teams, events, zones, team1, and team2 DataFrames.
+    #     """
+    #     season_path = os.path.join(self.base_path, season)
+    #     file_name = next((f for f in os.listdir(season_path) if f.endswith(f'_ID_{match_id}.json')), None)
+    #
+    #     if not file_name:
+    #         raise FileNotFoundError(f"No match file found for season {season} and match ID {match_id}")
+    #
+    #     file_path = os.path.join(season_path, file_name)
+    #
+    #     try:
+    #         with open(file_path, 'r') as file:
+    #             temp = json.load(file)
+    #             match_detail = temp.get("match_detail", {})
+    #             match_detail = match_detail.get("match_detail",{})
+    #         flattened_match_detail = self._flatten_match_detail(match_detail)
+    #         match_detail_df = pd.DataFrame([flattened_match_detail])
+    #
+    #         events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
+    #         zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
+    #
+    #         teams_data = temp.get("teams", {}).get("team", [])
+    #         if len(teams_data) != 2:
+    #             raise ValueError("Expected data for exactly two teams")
+    #
+    #         team1_df, team2_df = self._process_team_data(teams_data)
+    #         teams_df = pd.DataFrame(teams_data)
+    #
+    #         return match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df
+    #
+    #     except Exception as e:
+    #         print(f"Error loading data from {file_path}: {str(e)}")
+    #         return None, None, None, None, None, None
     def get_match_data(self, season: str, match_id: str) -> Tuple[
         DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
         """
@@ -57,6 +100,10 @@ class KabaddiDataAPI:
             with open(file_path, 'r') as file:
                 temp = json.load(file)
 
+            # Check if the data is nested under 'gameData'
+            if 'gameData' in temp:
+                temp = temp['gameData']
+
             match_detail = temp.get("match_detail", {})
             flattened_match_detail = self._flatten_match_detail(match_detail)
             match_detail_df = pd.DataFrame([flattened_match_detail])
@@ -76,7 +123,6 @@ class KabaddiDataAPI:
         except Exception as e:
             print(f"Error loading data from {file_path}: {str(e)}")
             return None, None, None, None, None, None
-
     def get_match_events(self, season: str, match_id: str) -> DataFrame:
         """
         Get all events for a specific match.
@@ -171,16 +217,16 @@ class KabaddiDataAPI:
 
         return team1_df, team2_df
 
-api = KabaddiDataAPI(r"..\1_DATA\MatchWise-Data\Organised_MatchData_pbp")
+# api = KabaddiDataAPI("../MatchData_pbp")
+# #
+# # seasons = api.get_available_seasons() #works
+# # matches = api.get_matches_for_season("Season_Pro Kabaddi League Season 1, 2014") #works
+# # match_events = api.get_match_events('Season_Pro Kabaddi League Season 1, 2014', '60') #works
 #
-# seasons = api.get_available_seasons() #works
-# matches = api.get_matches_for_season("Season_Pro Kabaddi League Season 1, 2014") #works
-# match_events = api.get_match_events('Season_Pro Kabaddi League Season 1, 2014', '60') #works
-
-match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('Season_Pro Kabaddi League Season 7, 2019', '1690')
-
-
-df2 = team1_df
-print(df2)
-print(df2.columns)
-print(api.get_match_events('Season_Pro Kabaddi League Season 7, 2019','1687').columns)
+# match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('Season_PKL_Season_4_2016', '194')
+#
+#
+# df2 = team1_df
+# print(df2)
+# print(df2.columns)
+# print(api.get_match_events('Season_PKL_Season_5_2017','300'))
