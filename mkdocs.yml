@@ -1,7 +1,9 @@
 site_name: ProKabaddi-API Documentation
 nav:
-  - Home: index.md
-  - About: about.md
+  - Home: index_hello.md
+  - Team: about.md
+  - Player: index_playerfns.md
+  - Future Work: index_plannedfeats.md
 
 theme: 
   name: mkdocs
@@ -11,3 +13,4 @@ theme:
   
   extra:
     version: 1.0
+
