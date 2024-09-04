@@ -1,0 +1,356 @@
+{
+                            "id": 2318,
+                            "name": "Arun Kumar HN",
+                            "short_name": "",
+                            "skill": "",
+                            "role": "",
+                            "red_card": false,
+                            "yellow_card": false,
+                            "green_card": false,
+                            "jersey": 11,
+                            "played": true,
+                            "captain": false,
+                            "on_court": false,
+                            "starter": false,
+                            "top_raider": false,
+                            "points": {
+                                "total": 2,
+                                "raid_points": {
+                                    "total": 2,
+                                    "touch": 0,
+                                    "raid_bonus": 2
+                                },
+                                "tackle_points": {
+                                    "total": 0,
+                                    "capture": 0,
+                                    "capture_bonus": 0
+                                }
+                            },
+                            "raids": {
+                                "total": 3,
+                                "successful": 1,
+                                "unsuccessful": 2,
+                                "Empty": 0,
+                                "super_raids": 0
+                            },
+                            "tackles": {
+                                "total": 0,
+                                "successful": 0,
+                                "unsuccessful": 0,
+                                "super_tackles": 0
+                            },
+                            "strong_zones": {
+                                "strong_zone": [
+                                    {
+                                        "points": 0,
+                                        "zone_id": 1
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 2
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 3
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 4
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 5
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 6
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 7
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 8
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 9
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 10
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 11
+                                    }
+                                ]
+                            },
+                            "weak_zones": {
+                                "weak_zone": [
+                                    {
+                                        "points": 0,
+                                        "zone_id": 1
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 2
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 3
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 4
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 5
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 6
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 7
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 8
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 9
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 10
+                                    },
+                                    {
+                                        "points": 0,
+                                        "zone_id": 11
+                                    }
+                                ]
+                            },
+                            "top_defender": false,
+                            "green_card_count": 0,
+                            "yellow_card_count": 0,
+                            "red_card_count": 0,
+                            "events": [
+                                {
+                                    "event_no": 42,
+                                    "event_half": 2,
+                                    "event": "Substitution",
+                                    "event_id": 38,
+                                    "event_text": "Arun Kumar comes in for Parveen ",
+                                    "player_id": 3100,
+                                    "substituted_by": 2318,
+                                    "team_id": 28,
+                                    "clock": "02:44",
+                                    "status_id": 0,
+                                    "score": null,
+                                    "seq_no": 0
+                                },
+                                {
+                                    "event_no": 44,
+                                    "event_half": 2,
+                                    "event": "Substitution",
+                                    "event_id": 39,
+                                    "event_text": "Arun Kumar comes in for Parveen ",
+                                    "player_id": 3100,
+                                    "substituted_by": 2318,
+                                    "team_id": 28,
+                                    "clock": "03:53",
+                                    "status_id": 0,
+                                    "score": null,
+                                    "seq_no": 0
+                                },
+                                {
+                                    "event_no": 47,
+                                    "event_half": 2,
+                                    "event": "Successful Raid",
+                                    "event_id": 42,
+                                    "event_text": "Arun Kumar raids successfully",
+                                    "raider_id": 2318,
+                                    "raiding_team_id": 28,
+                                    "defender_id": null,
+                                    "defending_team_id": 2,
+                                    "raid_points": 1,
+                                    "raid_touch_points": 0,
+                                    "raid_bonus_points": 1,
+                                    "raid_technical_points": 0,
+                                    "raid_all_out_points": 0,
+                                    "defending_capture_points": 0,
+                                    "defending_bonus_points": 0,
+                                    "defending_technical_points": 0,
+                                    "defending_all_out_points": 0,
+                                    "super_raid": false,
+                                    "super_tackle": false,
+                                    "do_or_die": false,
+                                    "super_ten": false,
+                                    "high_five": false,
+                                    "review": {
+                                        "review_taken": false,
+                                        "team_id": 0,
+                                        "outcome": null,
+                                        "reason": null
+                                    },
+                                    "defending_points": 0,
+                                    "clock": "17:09",
+                                    "status_id": 0,
+                                    "score": [
+                                        21,
+                                        8
+                                    ],
+                                    "seq_no": 42,
+                                    "defenders": []
+                                },
+                                {
+                                    "event_no": 49,
+                                    "event_half": 2,
+                                    "event": "Unsuccessful Raid",
+                                    "event_id": 44,
+                                    "event_text": "Arun Kumar unsuccessful raid",
+                                    "raider_id": 2318,
+                                    "raiding_team_id": 28,
+                                    "defender_id": 3178,
+                                    "defending_team_id": 2,
+                                    "raid_points": 1,
+                                    "raid_touch_points": 0,
+                                    "raid_bonus_points": 1,
+                                    "raid_technical_points": 0,
+                                    "raid_all_out_points": 0,
+                                    "defending_capture_points": 0,
+                                    "defending_bonus_points": 0,
+                                    "defending_technical_points": 0,
+                                    "defending_all_out_points": 2,
+                                    "super_raid": false,
+                                    "super_tackle": false,
+                                    "do_or_die": false,
+                                    "super_ten": false,
+                                    "high_five": false,
+                                    "review": {
+                                        "review_taken": false,
+                                        "team_id": 0,
+                                        "outcome": null,
+                                        "reason": null
+                                    },
+                                    "defending_points": 0,
+                                    "clock": "16:03",
+                                    "status_id": 0,
+                                    "score": [
+                                        23,
+                                        11
+                                    ],
+                                    "seq_no": 44,
+                                    "defenders": [
+                                        3178
+                                    ]
+                                },
+                                {
+                                    "event_no": 53,
+                                    "event_half": 2,
+                                    "event": "Unsuccessful Raid",
+                                    "event_id": 48,
+                                    "event_text": "Arun Kumar unsuccessful raid",
+                                    "raider_id": 2318,
+                                    "raiding_team_id": 28,
+                                    "defender_id": 3178,
+                                    "defending_team_id": 2,
+                                    "raid_points": 0,
+                                    "raid_touch_points": 0,
+                                    "raid_bonus_points": 0,
+                                    "raid_technical_points": 0,
+                                    "raid_all_out_points": 0,
+                                    "defending_capture_points": 0,
+                                    "defending_bonus_points": 0,
+                                    "defending_technical_points": 0,
+                                    "defending_all_out_points": 0,
+                                    "super_raid": false,
+                                    "super_tackle": false,
+                                    "do_or_die": false,
+                                    "super_ten": false,
+                                    "high_five": false,
+                                    "review": {
+                                        "review_taken": false,
+                                        "team_id": 0,
+                                        "outcome": null,
+                                        "reason": null
+                                    },
+                                    "defending_points": 0,
+                                    "clock": "13:56",
+                                    "status_id": 0,
+                                    "score": [
+                                        24,
+                                        13
+                                    ],
+                                    "seq_no": 48,
+                                    "defenders": [
+                                        3178
+                                    ]
+                                },
+                                {
+                                    "event_no": 61,
+                                    "event_half": 2,
+                                    "event": "Substitution",
+                                    "event_id": 55,
+                                    "event_text": "Parveen  comes in for Arun Kumar",
+                                    "player_id": 2318,
+                                    "substituted_by": 3100,
+                                    "team_id": 28,
+                                    "clock": "13:14",
+                                    "status_id": 0,
+                                    "score": null,
+                                    "seq_no": 0,
+                                    "substitute_time": 27
+                                }
+                            ],
+                            "substitute": [
+                                {
+                                    "event_no": 42,
+                                    "event_half": 2,
+                                    "event": "Substitution",
+                                    "event_id": 38,
+                                    "event_text": "Arun Kumar comes in for Parveen ",
+                                    "player_id": 3100,
+                                    "substituted_by": 2318,
+                                    "team_id": 28,
+                                    "clock": "02:44",
+                                    "status_id": 0,
+                                    "score": null,
+                                    "seq_no": 0
+                                },
+                                {
+                                    "event_no": 44,
+                                    "event_half": 2,
+                                    "event": "Substitution",
+                                    "event_id": 39,
+                                    "event_text": "Arun Kumar comes in for Parveen ",
+                                    "player_id": 3100,
+                                    "substituted_by": 2318,
+                                    "team_id": 28,
+                                    "clock": "03:53",
+                                    "status_id": 0,
+                                    "score": null,
+                                    "seq_no": 0
+                                },
+                                {
+                                    "event_no": 61,
+                                    "event_half": 2,
+                                    "event": "Substitution",
+                                    "event_id": 55,
+                                    "event_text": "Parveen  comes in for Arun Kumar",
+                                    "player_id": 2318,
+                                    "substituted_by": 3100,
+                                    "team_id": 28,
+                                    "clock": "13:14",
+                                    "status_id": 0,
+                                    "score": null,
+                                    "seq_no": 0,
+                                    "substitute_time": 27
+                                }
+                            ]
+                        },

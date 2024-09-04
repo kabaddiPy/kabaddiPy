@@ -1,6 +1,21 @@
 ## Functions to Query Data
 
 
+1.⁠ `⁠get_standings`()
+
+2.⁠ `⁠⁠get_season_matches`()
+
+3.⁠ `⁠get_team_stats`()
+
+4.⁠ `⁠⁠get_team_roster`()
+   1. `get_player_info`()
+   
+5.⁠ `⁠⁠get_team_matches`()
+   1. `⁠⁠get_play_by_play`()
+
+
+
+
 We have the following types of data
 
 1. Match-Wise Data
