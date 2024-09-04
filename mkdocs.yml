@@ -1,0 +1,13 @@
+site_name: ProKabaddi-API Documentation
+nav:
+  - Home: index.md
+  - About: about.md
+
+theme: 
+  name: mkdocs
+  locale: en
+  use_directory_urls: false
+  user_color_mode_toggle: true
+  
+  extra:
+    version: 1.0
