@@ -7,7 +7,7 @@ from pandas import DataFrame
 
 class KabaddiAPI:
     def __init__(self, base_path: str):
-        self.base_path = base_path
+        self.base_path = "../MatchData_pbp"
 
     def get_available_seasons(self) -> List[str]:
         """
