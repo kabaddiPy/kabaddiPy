@@ -46,9 +46,11 @@ def aggregate_player_data(directory_path, player_id):
 
                         for zone in player['strong_zones']['strong_zone']:
                             strong_zones[zone['zone_id']] += zone['points']
+                            # print(strong_zones)
 
                         for zone in player['weak_zones']['weak_zone']:
                             weak_zones[zone['zone_id']] += zone['points']
+
 
     return player_data, strong_zones, weak_zones
 
@@ -230,49 +232,6 @@ def plot_point_progression(file_path):
     # team2_id = 2
     events = data['gameData']['events']['event']
 
-    # Initialize lists to store the progression of points and time
-    team1_points = [0]
-    team2_points = [0]
-    time_stamps = ['00:00']
-    team1_points = [0]
-    team2_points = [0]
-    prev_team1_points = 0
-    prev_team2_points = 0
-
-    # for event in events:
-    #     if team1_id is None:
-    #         team1_id = event['raiding_team_id']
-    #     if team2_id is None:
-    #         team2_id = event['defending_team_id']
-    #
-    #     if 'raiding_team_id' in event:
-    #         if event['raiding_team_id'] == team1_id:
-    #             team1_points.append(event['score'][0])
-    #             team2_points.append(event['score'][1])
-    #         else:
-    #             team1_points.append(event['score'][1])
-    #             team2_points.append(event['score'][0])
-    #     else:
-    #         team1_points.append(prev_team1_points)
-    #         team2_points.append(prev_team2_points)
-    #
-    #     prev_team1_points = team1_points[-1]
-    #     prev_team2_points = team2_points[-1]
-    #
-    # x = range(len(team1_points))
-    # plt.figure(figsize=(12, 6))
-    # plt.plot(x, team1_points, label=f'Team {team1_id}')
-    # plt.plot(x, team2_points, label=f'Team {team2_id}')
-    # plt.xlabel('Event')
-    # plt.ylabel('Points')
-    # plt.title('Team Point Progression')
-    # plt.legend()
-    # plt.show()
-    team1_points = [0]
-    team2_points = [0]
-    prev_team1_points = 0
-    prev_team2_points = 0
-
     team1_id = None
     team2_id = None
     team1_total_points = [0]
@@ -315,15 +274,17 @@ def plot_point_progression(file_path):
     plt.legend()
     plt.show()
 # Usage
-#directory_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\other-data\old_data\Season_PKL_Season_5_2017"
-directory_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\Season_PKL_Season_5_2017"
-player_id = 143  # Example: Deepak Hooda
+if __name__=="__main__":
 
-# plot_player_zones(directory_path,player_id,zone_type='strong')
-# plot_player_zones(directory_path,player_id,zone_type='weak')
-# player_data, strong_zones, weak_zones = aggregate_player_data(directory_path, player_id)
-# print(strong_zones)
-# plot_team_zones(directory_path, 4, zone_type='weak')
-# plot_team_zones(directory_path, 4, zone_type='weak')
-print("ghello")
-plot_point_progression(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\Season_PKL_Season_5_2017\7_Match_7_ID_292.json")
+    #directory_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\other-data\old_data\Season_PKL_Season_5_2017"
+    directory_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\Season_PKL_Season_5_2017"
+    player_id = 143  # Example: Deepak Hooda
+
+    plot_player_zones(directory_path,player_id,zone_type='strong')
+    plot_player_zones(directory_path,player_id,zone_type='weak')
+    # player_data, strong_zones, weak_zones = aggregate_player_data(directory_path, player_id)
+    # print(strong_zones)
+    plot_team_zones(directory_path, 4, zone_type='strong')
+    plot_team_zones(directory_path, 4, zone_type='weak')
+
+    plot_point_progression(r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\Season_PKL_Season_5_2017\32_Match_32_ID_317.json")
