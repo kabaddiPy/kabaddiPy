@@ -21,147 +21,51 @@ class KabaddiDataAPI:
         self.base_path = "./MatchData_pbp"
     # for a season - display the standings
 
-    def internal_create_matches_list(self, team, group_name):
-        matches = []
-        for match in team['match_result']['match']:
-            match_info = {
-                'Group': group_name,
-                'match_id': match['id'],
-                'date': match['date'],
-                'teama_id': match['teama_id'],
-                'result': match['result'],
-                'teama_short_name': match['teama_short_name'],
-                'teama_score': match['teama_score'],
-                'teamb_id': match['teamb_id'],
-                'teamb_short_name': match['teamb_short_name'],
-                'teamb_score': match['teamb_score'],
-                'match_result': match['match_result']
-            }
-
-            print(match_info)
-            matches.append(match_info)
-        return matches
-
-    def internal_process_matches(self, matches_list):
-        matches_df = pd.DataFrame(matches_list)
-        matches_df = matches_df[(matches_df['result'].isin(['W', 'T'])) | (matches_df['result'].isnull())]
-        matches_df = matches_df.sort_values(by='date', ascending=True)
-        matches_df = matches_df.set_index('match_id').rename_axis('match id')
-        return matches_df
-
-
-
-
-
-    # DEPRECIATED
-    def get_pkl_standings_matches(self, season=None, qualified=False, team_id=None, matches=False):
-
-        if season is None:
-            season = 10
-
-        file_path = Path(f"./PKL_Standings/pkl_standings_s{season}.json")
-
-        with open(file_path, 'r') as f:
-            data = json.load(f)
-
-        standings = data['standings']
-
-        team_standings_info_list, qualified_teams_info_df, matches_list, = [], [], []
-
-        season_name = standings['series_name']
-        champion_team_id = standings['champion_id']
-
-        if len(standings['groups']) == 0:
-            return pd.DataFrame()
-
-        if len(standings['groups']) == 1:
-
-            group = standings['groups'][0]
-            if 'name' in group and group['name'] != "":
-                group_name = group['name']
-            else:
-                group_name = 'Main'
-
-            for team in group['teams']['team']:
-                if team_id is None or int(team['team_id']) == team_id:
-                    team_standings_info = {
-                        'Group': group_name,
-                        'Season': season,
-                        'Team_Id': team['team_id'],
-                        'Team_Name': team['team_name'],
-                        # 'team_short_name': team['team_short_name'],
-                        'League_position': team['position'],
-                        'Matches_played': team['played'],
-                        'Wins': team['wins'],
-                        'Lost': team['lost'],
-                        'Tied': team['tied'],
-                        'Draws': team['draws'],
-                        'No Result': team['noresult'],
-                        'League_points': team['points'],
-                        'Score_diff': team['score_diff'],
-                        'Qualified': team['is_qualified'],
-                    }
-
-                    if qualified and team['is_qualified']:
-                        qualified_teams_info_df.append(team_standings_info)
-
-                    team_standings_info_list.append(team_standings_info)
-
-                    if matches:
-                        matches_list.extend(self.internal_create_matches_list(team, group_name))
-
-        else:
-
-            for group in standings['groups']:
-
-                if 'name' in group and group['name'] != "":
-                    group_name = group['name']
-                else:
-                    group_name = 'Main'
-
-                for team in group['teams']['team']:
-                    if team_id is None or int(team['team_id']) == team_id:
-                        team_info = {
-                            'Group': group_name,
-                            'Season': season,
-                            'Team_Id': team['team_id'],
-                            'Team_Name': team['team_name'],
-                            # 'team_short_name': team['team_short_name'],
-                            'League_position': team['position'],
-                            'Matches_played': team['played'],
-                            'Wins': team['wins'],
-                            'Lost': team['lost'],
-                            'Tied': team['tied'],
-                            'Draws': team['draws'],
-                            'No Result': team['noresult'],
-                            'League_points': team['points'],
-                            'Score_diff': team['score_diff'],
-                            'Qualified': team['is_qualified'],
-                        }
-
-                        if qualified and team['is_qualified']:
-                            qualified_teams_info_df.append(team_info)
-
-                        team_standings_info_list.append(team_info)
-
-                        if matches:
-                            matches_list.extend(self.internal_create_matches_list(team, group_name))
-
-        team_info_df = pd.DataFrame(team_standings_info_list)
-
-        if qualified:
-            qualified_teams_df = pd.DataFrame(qualified_teams_info_df)
-            return qualified_teams_df, team_info_df
-
-        if matches:
-            matches_df = self.internal_process_matches(matches_list)
-            return team_info_df, matches_df
-
-        else:
-            return team_info_df
-
-
     def get_pkl_standings(self, season=None, qualified=False, team_id=None):
+        """
+        Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
+
+        Parameters:
+        -----------
+        season : int, optional
+            The season number for which to retrieve standings. Defaults to 10 if not specified.
+        qualified : bool, optional
+            If True, returns an additional DataFrame with only qualified teams. Defaults to False.
+        team_id : int, optional
+            If specified, returns standings for only this team. Defaults to None (all teams).
+
+        Returns:
+        --------
+        pandas.DataFrame or tuple of pandas.DataFrame
+            If qualified is False:
+                Returns a DataFrame containing standings for all teams.
+            If qualified is True:
+                Returns a tuple of two DataFrames:
+                (qualified_teams_standings, all_teams_standings)
+
+        The DataFrame(s) include the following columns:
+        - Group: The group name (if applicable)
+        - Season: The season number
+        - Team_Id: Unique identifier for the team
+        - Team_Name: Name of the team
+        - League_position: Current position in the league
+        - Matches_played: Number of matches played
+        - Wins, Lost, Tied, Draws: Match outcomes
+        - No Result: Number of matches with no result
+        - League_points: Total points in the league
+        - Score_diff: Score difference
+        - Qualified: Boolean indicating if the team qualified
+
+        Raises:
+        -------
+        FileNotFoundError: If the standings file for the specified season is not found.
+        JSONDecodeError: If there's an issue parsing the JSON file.
+
+        Note:
+        -----
+        If the standings data for the specified season is empty, an empty DataFrame is returned.
+        """
+    # ... (rest of the function implementation remains the same)
         
         if season is None:
             season = 10
@@ -658,6 +562,7 @@ class KabaddiDataAPI:
         return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T, rvd_extracted_df.T
 
 
+
     def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
         """
         Get the full data for a specific match.
@@ -762,6 +667,7 @@ class KabaddiDataAPI:
                 flattened[key] = value
         return flattened
 
+
     def _process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
         """
         Process team data into DataFrames.
@@ -835,7 +741,7 @@ if __name__ == "__main__":
     # # print(x)
 
 
-    qualified_df , all_standings_df = api.get_pkl_standings_matches(season=9, qualified=True)
+    qualified_df , all_standings_df = api.get_pkl_standings(season=9, qualified=True)
     print("qualified_df")
     print(qualified_df)
     print()

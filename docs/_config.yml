@@ -12,6 +12,7 @@ aux_links:
 
 nav_enabled: true
 
+logo: "/assets/kabaddi_api_logo.png"
 
 search_enabled: true
 search:
