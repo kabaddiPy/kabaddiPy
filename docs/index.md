@@ -11,7 +11,11 @@ has_children: false
 
 This documentation covers the main functions of the `KabaddiDataAggregator` class that return useful data for Kabaddi statistics and information.
 
-**Note**: This documentation is actively being developed alongwith the API.
+
+{: .warning }
+> This documentation is actively being developed alongwith the API.
+
+
 
 ## Table of Contents
 
