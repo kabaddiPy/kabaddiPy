@@ -13,7 +13,10 @@ aux_links:
 nav_enabled: true
 
 #logo: "/assets/kabaddi_api_logo.png"
-favicon_ico: "/assets/favicon.ico"
+#favicon_ico: "/assets/favicon.ico"
+favicon_ico: "/assets/images/favicon.ico"
+
+
 
 
 search_enabled: true
