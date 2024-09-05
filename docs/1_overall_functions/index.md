@@ -18,11 +18,11 @@ Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
  
 #### Parameters:
 
-`season` : int, optional
+- `season` : int, optional
     The season number for which to retrieve standings. Defaults to 10 if not specified.
-`qualified` : bool, optional
+- `qualified` : bool, optional
     If True, returns an additional DataFrame with only qualified teams. Defaults to False.
-`team_id` : int, optional
+- `team_id` : int, optional
     If specified, returns standings for only this team. Defaults to None (all teams).
 
 #### Returns:
@@ -34,22 +34,24 @@ pandas.DataFrame or tuple of pandas.DataFrame
         Returns a tuple of two DataFrames:
         (qualified_teams_standings, all_teams_standings)
 
+
 The DataFrame(s) include the following columns:
-- Group: The group name (if applicable)
-- Season: The season number
-- Team_Id: Unique identifier for the team
-- Team_Name: Name of the team
-- League_position: Current position in the league
-- Matches_played: Number of matches played
-- Wins, Lost, Tied, Draws: Match outcomes
-- No Result: Number of matches with no result
-- League_points: Total points in the league
-- Score_diff: Score difference
-- Qualified: Boolean indicating if the team qualified
-- 
+- **Group**: The group name (if applicable)
+- **Season**: The season number
+- **Team_Id**: Unique identifier for the team
+- **Team_Name**: Name of the team
+- **League_position**: Current position in the league
+- **Matches_played**: Number of matches played
+- **Wins**, **Lost**, **Tied**, **Draws**: Match outcomes
+- **No Result**: Number of matches with no result
+- **League_points**: Total points in the league
+- **Score_diff**: Score difference
+- **Qualified**: Boolean indicating if the team qualified
+
+
 
 #### Note:
------
+
 If the standings data for the specified season is empty, an empty DataFrame is returned.
 
 
