@@ -644,11 +644,109 @@ class KabaddiDataAPI:
 
         return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T, rvd_extracted_df.T
 
-    def get_detailed_player_info(self, player_id, season=None):
 
-        # iterate over all the matches in the season and
+    def get_detailed_player_info(self, player_id, season):
+        """
+        Extract detailed player statistics from all matches in a given season.
 
-        pass
+        Args:
+        player_id (int): The ID of the player.
+        season (int): The season number.
+
+        Returns:
+        pandas.DataFrame: A DataFrame containing detailed player statistics for each match.
+        """
+        player_id = int(player_id)
+        season = int(season)
+        
+        base_path = "./MatchData_pbp"
+        season_folder = next((folder for folder in os.listdir(base_path) if f"Season_{season}" in folder), None)
+        if not season_folder:
+            print(f"No data found for season {season}")
+            return pd.DataFrame()
+
+        season_path = os.path.join(base_path, season_folder)
+        print(f"Processing data from: {season_path}")
+        
+        player_stats = []
+        
+        for filename in os.listdir(season_path):
+            if filename.endswith(".json"):
+                file_path = os.path.join(season_path, filename)
+                
+                try:
+                    with open(file_path, 'r') as file:
+                        match_data = json.load(file)
+                    
+                    # Handle different JSON structures
+                    if "gameData" in match_data:
+                        match_data = match_data["gameData"]
+                    
+                    match_id = match_data["match_detail"]["match_id"]
+                    match_date = match_data["match_detail"]["date"]
+                    
+                    for team in match_data["teams"]["team"]:
+                        for player in team["squad"]:
+                            if int(player["id"]) == player_id:
+                                try:
+                                    opponent_team = next(t for t in match_data["teams"]["team"] if t["id"] != team["id"])
+                                except StopIteration:
+                                    print(f"Warning: Could not find opponent team in match {match_id}")
+                                    continue
+
+                                player_match_stats = {
+                                    "match_id": match_id,
+                                    "date": match_date,
+                                    "team_name": team["name"],
+                                    "team_score": team["score"],
+                                    "opponent_name": opponent_team["name"],
+                                    "opponent_score": opponent_team["score"],
+                                    "played": player.get("played", False),
+                                    "starter": player.get("starter", False),
+                                    "on_court": player.get("on_court", False),
+                                    "captain": player.get("captain", False),
+                                    "total_points": player["points"]["total"],
+                                    "raid_points": player["points"]["raid_points"]["total"],
+                                    "tackle_points": player["points"]["tackle_points"]["total"],
+                                    "raids_total": player["raids"]["total"],
+                                    "raids_successful": player["raids"]["successful"],
+                                    "raids_unsuccessful": player["raids"].get("unsuccessful", 0),
+                                    "raids_empty": player["raids"].get("Empty", 0),
+                                    "super_raids": player["raids"].get("super_raids", 0),
+                                    "tackles_total": player["tackles"]["total"],
+                                    "tackles_successful": player["tackles"]["successful"],
+                                    "tackles_unsuccessful": player["tackles"].get("unsuccessful", 0),
+                                    "super_tackles": player["tackles"].get("super_tackles", 0),
+                                    "green_card_count": player.get("green_card_count", 0),
+                                    "yellow_card_count": player.get("yellow_card_count", 0),
+                                    "red_card_count": player.get("red_card_count", 0),
+                                    "top_raider": player.get("top_raider", False),
+                                    "top_defender": player.get("top_defender", False),
+                                }
+                                
+                                # Extract substitution data
+                                substitutions = player.get("substitute", [])
+                                player_match_stats["substitutions"] = len(substitutions)
+                                if substitutions:
+                                    player_match_stats["first_substitution_time"] = substitutions[0].get("substitute_time")
+                                
+                                player_stats.append(player_match_stats)
+                                break
+                except Exception as e:
+                    print(f"Error processing file {file_path}: {str(e)}")
+        
+        df = pd.DataFrame(player_stats)
+        
+        # Calculate additional statistics
+        if not df.empty:
+            df["matches_played"] = len(df)
+            df["matches_started"] = df["starter"].sum()
+            df["average_points_full_season"] = df["total_points"].mean()
+            df["total_substitutions_full_season"] = df["substitutions"].sum()
+        else:
+            print(f"No data found for player {player_id} in season {season}")
+        
+        return df
 
 
     def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
@@ -665,11 +763,11 @@ class KabaddiDataAPI:
         Returns:
             Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]: A tuple containing:
                 - match_detail_df: DataFrame with overall match details.
-                - teams_df: DataFrame with information about both teams.
                 - events_df: DataFrame with all events that occurred during the match.
                 - zones_df: DataFrame with information about different zones on the court.
                 - team1_df: DataFrame with detailed information about the first team.
                 - team2_df: DataFrame with detailed information about the second team.
+                - breakdown_df: DataFrame with breakdown data of the game.
 
         Raises:
             ValueError: If no season data is found or if data for exactly two teams is not present.
@@ -698,7 +796,10 @@ class KabaddiDataAPI:
 
         try:
             with open(file_path, 'r') as file:
+                # print(f"Processing file: {file_path}")
                 temp = json.load(file)
+                # print(f"File loaded successfully: {file_path}")
+                temp2 = temp.copy()
 
             # Check if the data is nested under 'gameData'
             if 'gameData' in temp:
@@ -708,22 +809,153 @@ class KabaddiDataAPI:
             flattened_match_detail = self.internal_flatten_match_detail(match_detail)
             match_detail_df = pd.DataFrame([flattened_match_detail])
 
-            events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
-            zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
+            match_detail_df = match_detail_df.drop(columns=["series_short_name", "series_parent_series_id", "status_id", "series_name", "result_outcome"])
 
             teams_data = temp.get("teams", {}).get("team", [])
 
             if len(teams_data) != 2:
                 raise ValueError("Expected data for exactly two teams")
 
-            team1_df, team2_df = self._process_team_data(teams_data)
-            teams_df = pd.DataFrame(teams_data)
+            team1_df, team2_df = self.internal_process_team_data(teams_data)
+            
+            events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
+            zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
 
-            return match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df
+            
+
+            
+
+
+            breakdown_data = temp2.get("breakdownData", {})
+            # print(f"Breakdown data: {breakdown_data}")
+
+            # print(breakdown_data)
+
+            if season == 4 or not breakdown_data:
+                breakdown_df = pd.DataFrame()
+            
+            else:
+                
+                teams_data = temp2.get("gameData", "").get("teams", "").get("team", "")
+                # print(f"Teams data: {teams_data}")
+                # print(teams_data[:100])
+
+                team_name=[]
+                for t in teams_data:
+                    # print(f"Team Name: {t.get('name', '')}, Team ID: {t.get('id', '')}")
+                    team_name.append((t.get("name", ""), t.get("id", "")))
+                
+                # print(team_name)
+                
+                breakdown_list = []
+                # print("hi")
+                for team_id, team_data in breakdown_data.items():
+                    
+                    # print(f"Team ID: {team_id}, Team Data: {team_data}")
+                    # print("hi2")
+                    # print("hi3")
+                    # print(int(team_name[0][1]))
+                    # print(int(team_id))
+
+                    if int(team_id) == int(team_name[0][1]):
+                        # print("hi4")
+                        # print(f"Team Name: {team_name[0][0]}")
+                        team_name_json = team_name[0][0]
+                        # print(team_name_json)
+                        # print(f"Team Name: {team_name}")
+                    else:
+                        team_name_json = team_name[1][0]
+                        # print(team_name_json)
+                    
+                    # print(f"\n---\n-\n\nnn\Team Name: {team_name}")
+                    team_breakdown = {
+                        'team_id': team_id,
+                        'team_name': team_name_json,
+                        'raids_total': team_data['raids']['total'],
+                        'raids_successful': team_data['raids']['successful'],
+                        'raids_unsuccessful': team_data['raids']['unsuccessful'],
+                        'raids_empty': team_data['raids']['Empty'],
+                        'tackles_total': team_data['tackles']['total'],
+                        'tackles_successful': team_data['tackles']['successful'],
+                        'tackles_unsuccessful': team_data['tackles']['unsuccessful'],
+                        'points_total': team_data['points']['total'],
+                        'points_raid': team_data['points']['raid_points']['total'],
+                        'points_tackle': team_data['points']['tackle_points']['total'],
+                        'points_all_out': team_data['points']['all_out'],
+                        'points_extras': team_data['points']['extras'],
+                        'raid_success_rate': team_data.get('raid_success_rate', None),
+                        'tackle_success_rate': team_data.get('tackle_success_rate', None),
+                        'longest_streak': team_data.get('longest_streak', None),
+                        'streak_percent': team_data.get('streak_percent', None),
+                    }
+                    breakdown_list.append(team_breakdown)
+                breakdown_df = pd.DataFrame(breakdown_list)
+
+            return match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df
 
         except Exception as e:
             print(f"Error loading data from {file_path}: {str(e)}")
             return None, None, None, None, None, None
+
+
+
+    def internal_process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
+        """
+        Process team data into DataFrames.
+
+        Args:
+            teams_data (List[Dict[str, Any]]): List containing data for both teams.
+
+        Returns:
+            Tuple[DataFrame, DataFrame]: DataFrames for team1 and team2.
+        """
+
+        def process_squad(squad_data):
+            processed_squad = []
+            for player in squad_data:
+                player_dict = {
+                    'id': player['id'],
+                    'name': player['name'],
+                    'jersey': player.get('jersey', ''),
+                    'played': player.get('played', False),
+                    'captain': player.get('captain', False),
+                    'on_court': player.get('on_court', False),
+                    'starter': player.get('starter', False),
+                    'red_card': player.get('red_card', False),
+                    'yellow_card': player.get('yellow_card', False),
+                    'green_card': player.get('green_card', False),
+                    'red_card_count': player.get('red_card_count', 0),
+                    'yellow_card_count': player.get('yellow_card_count', 0),
+                    'green_card_count': player.get('green_card_count', 0),
+                    'top_raider': player.get('top_raider', False),
+                    'top_defender': player.get('top_defender', False),
+                    'total_points': player.get('points', {}).get('total', 0),
+                    'raid_points': player.get('points', {}).get('raid_points', {}).get('total', 0),
+                    'tackle_points': player.get('points', {}).get('tackle_points', {}).get('total', 0),
+                    'raids_total': player.get('raids', {}).get('total', 0),
+                    'raids_successful': player.get('raids', {}).get('successful', 0),
+                    'tackles_total': player.get('tackles', {}).get('total', 0),
+                    'tackles_successful': player.get('tackles', {}).get('successful', 0),
+                }
+                for zone_type in ['strong_zones', 'weak_zones']:
+                    for zone in player.get(zone_type, {}).get(zone_type.rstrip('s'), []):
+                        player_dict[f"{zone_type}_zone_{zone['zone_id']}"] = zone['points']
+                processed_squad.append(player_dict)
+            return processed_squad
+
+        team_dfs = []
+        for team_data in teams_data:
+            squad_df = pd.DataFrame(process_squad(team_data.get('squad', [])))
+            team_df = pd.DataFrame({
+                'team_id': [team_data['id']],
+                'team_name': [team_data['name']],
+                'team_score': [team_data['score']],
+            })
+            team_df = pd.concat([team_df, squad_df], axis=1)
+            team_dfs.append(team_df)
+
+        return tuple(team_dfs)
+
 
     
     def load_pbp(self, season, match_id) -> DataFrame:
@@ -776,277 +1008,269 @@ class KabaddiDataAPI:
         return flattened
 
 
-    def internal_process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
-        """
-        Process team data into DataFrames.
-
-        Args:
-            teams_data (List[Dict[str, Any]]): List containing data for both teams.
-
-        Returns:
-            Tuple[DataFrame, DataFrame]: DataFrames for team1 and team2.
-        """
-
-        def process_squad(squad_data):
-            processed_squad = []
-            for player in squad_data:
-                player_dict = {
-                    'id': player['id'],
-                    'name': player['name'],
-                    'jersey': player.get('jersey', ''),
-                    'played': player.get('played', False),
-                    'captain': player.get('captain', False),
-                    'on_court': player.get('on_court', False),
-                    'starter': player.get('starter', False),
-                    'red_card': player.get('red_card', False),
-                    'yellow_card': player.get('yellow_card', False),
-                    'green_card': player.get('green_card', False),
-                    'red_card_count': player.get('red_card_count', 0),
-                    'yellow_card_count': player.get('yellow_card_count', 0),
-                    'green_card_count': player.get('green_card_count', 0),
-                    'top_raider': player.get('top_raider', False),
-                    'top_defender': player.get('top_defender', False),
-                    'total_points': player.get('points', {}).get('total', 0),
-                    'raid_points': player.get('points', {}).get('raid_points', {}).get('total', 0),
-                    'tackle_points': player.get('points', {}).get('tackle_points', {}).get('total', 0),
-                    'raids_total': player.get('raids', {}).get('total', 0),
-                    'raids_successful': player.get('raids', {}).get('successful', 0),
-                    'tackles_total': player.get('tackles', {}).get('total', 0),
-                    'tackles_successful': player.get('tackles', {}).get('successful', 0),
-                }
-                for zone_type in ['strong_zones', 'weak_zones']:
-                    for zone in player.get(zone_type, {}).get(zone_type.rstrip('s'), []):
-                        player_dict[f"{zone_type}_zone_{zone['zone_id']}"] = zone['points']
-                processed_squad.append(player_dict)
-            return processed_squad
-
-        team1_df = pd.DataFrame(process_squad(teams_data[0].get('squad', [])))
-        team2_df = pd.DataFrame(process_squad(teams_data[1].get('squad', [])))
-
-        for team_df, team_data in zip([team1_df, team2_df], teams_data):
-            team_df['team_id'] = team_data['id']
-            team_df['team_name'] = team_data['name']
-            team_df['team_score'] = team_data['score']
-            team_df['team_short_name'] = team_data['short_name']
-
-        return team1_df, team2_df
-
-
 
 if __name__ == "__main__":
     
     
     api = KabaddiDataAPI()
 
-    # ACTUAL TESTING ------------------------------------------------------------------------
 
-    print("1. Testing get_pkl_standings".center(150,"-"))
-    qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
-    print("Qualified teams:")
-    print(qualified_df)
-    print("\nAll standings:")
-    print(all_standings_df)
+    print("Testing get_detailed_player_info".center(100, "-"))
+    player_id = 94
+    season = 6
+    
+    detailed_info = api.get_detailed_player_info(player_id, season)
 
-    print("\n2. Testing get_season_matches".center(150,"-"))
-    season_matches = api.get_season_matches(season=6)
-    print(season_matches.head())
+    print(detailed_info)
+    detailed_info.to_csv("detailed_info.csv")
+    
+    # if detailed_info is not None and not detailed_info.empty:
+    #     print(f"Detailed info for player {player_id} in season {season}:")
+    #     print(detailed_info)
+        
+    #     print("\nSummary statistics:")
+    #     print(f"Matches played: {detailed_info['matches_played'].iloc[0]}")
+    #     print(f"Matches started: {detailed_info['matches_started'].iloc[0]}")
+    #     print(f"Average points: {detailed_info['average_points'].iloc[0]:.2f}")
+    #     print(f"Total substitutions: {detailed_info['total_substitutions'].iloc[0]}")
+        
+    #     print("\nFirst few rows of detailed match data:")
+    #     print(detailed_info.head())
+    # else:
+    #     print(f"No data found for player {player_id} in season {season}")
 
-    print("\n3. Testing get_team_info".center(150,"-"))
-    df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
-    print("Team Rank:")
-    print(df_rank)
-    print("\nTeam Value:")
-    print(df_value)
-    print("\nTeam Per Match:")
-    print(df_per_match)
-    print("\nTeam Raider Skills:")
-    print(filtered_team_raider_skills)
-    print("\nTeam Defender Skills:")
-    print(filtered_team_defender_skills)
+    match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=10, match_id='3125')
 
-    print("\n4. Testing get_team_matches".center(150,"-"))
-    team_matches = api.get_team_matches(season=9, team_id=3)
-    print(team_matches.head())
+    # print("Match Detail Data:")
+    # print(match_detail_df.T)
 
-    print("\n5. Testing build_team_roster".center(150,"-"))
-    team_roster = api.build_team_roster(season=9, team_id=3)
-    print(team_roster)
+    # print("\n\nEvents Data:")
+    # print(events_df)
 
-    print("\n6. Testing get_player_info".center(150,"-"))
-    player_stats_df_rank, player_stats_df_value, player_stats_df_per_match, rvd_extracted_df = api.get_player_info(player_id=660, season=9)
-    print("Player Rank:")
-    print(player_stats_df_rank)
-    print("\nPlayer Value:")
-    print(player_stats_df_value)
-    print("\nPlayer Per Match:")
-    print(player_stats_df_per_match)
-    print("\nPlayer RVD:")
-    print(rvd_extracted_df)
+    # print("\n\nZones Data:")
+    # print(zones_df)
 
-    print("\n7. Testing load_match_details".center(150,"-"))
-    match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.load_match_details(season=9, match_id='2895')
-    print("Match Detail:")
-    print(match_detail_df)
-    print("\nTeams:")
-    print(teams_df)
-    print("\nEvents (first 5 rows):")
-    if not events_df:
-        print("No events data found for this match")
-    else:
-        print(events_df.head())
-    print("\nZones:")
-    print(zones_df)
-    print("\nTeam 1 (first 5 rows):")
-    if not team1_df:
-        print("No team 1 data found for this match")
-    else:
-        print(team1_df.head())
-    print("\nTeam 2 (first 5 rows):")
-    if not team2_df:
-        print("No team 2 data found for this match")
-    else:
-        print(team2_df.head())
+    # print("\n\nTeam 1 Data:")
+    # print(team1_df.T)
 
-    print("\n8. Testing load_pbp".center(150,"-"))
-    pbp_df = api.load_pbp(season=9, match_id='2895')
-    print("Play-by-Play Data (first 5 rows):")
-    if not pbp_df:
-        print("No play-by-play data found for this match")
-    else:
-        print(pbp_df.head())
+    # print("\n\nTeam 2 Data:")
+    # print(team2_df.T)
 
-    # END OF ACTUAL TESTING ------------------------------------------------------------------------
-
-
-    # MY OLD TESTING ------------------------------------------------------------------------
-    print("=="*100)
-    print("=="*100)
-    print("MY OLD TESTING".center(150,"-"))
-    print("=="*100)
-    print("=="*100)
-
-    # matches = api.get_season_matches(season=10)
-    # result = matches[(matches['League_Stage'] == 'Semi Final')]
-    # print(result)
-
-    # df = api.load_pbp(season=10, match_id=3164)
-    # # df.to_csv("pbp.csv")
-    # print(df.tail())
+    print("\n\nBreakdown Data:")
+    print(breakdown_df.T)
 
 
 
-    # print("get standings")
-    # # x = api.get_pkl_standings(season=10)
-    # # print(x)
 
+    # # ACTUAL TESTING ------------------------------------------------------------------------
 
-    qualified_df , all_standings_df = api.get_pkl_standings(season=9, qualified=True)
-    print("qualified_df")
-    print(qualified_df)
-    print()
-
-    # print("all_standings_df")
+    # print("1. Testing get_pkl_standings".center(150,"-"))
+    # qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    # print("Qualified teams:")
+    # print(qualified_df)
+    # print("\nAll standings:")
     # print(all_standings_df)
-    # print(len(all_standings_df))
 
-    print("season_matches")
-    matches = api.get_season_matches(season=6)
-    print(matches)
-    # print(len(x))
+    # print("\n2. Testing get_season_matches".center(150,"-"))
+    # season_matches = api.get_season_matches(season=6)
+    # print(season_matches.head())
+
+    # print("\n3. Testing get_team_info".center(150,"-"))
+    # df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
+    # print("Team Rank:")
+    # print(df_rank)
+    # print("\nTeam Value:")
+    # print(df_value)
+    # print("\nTeam Per Match:")
+    # print(df_per_match)
+    # print("\nTeam Raider Skills:")
+    # print(filtered_team_raider_skills)
+    # print("\nTeam Defender Skills:")
+    # print(filtered_team_defender_skills)
+
+    # print("\n4. Testing get_team_matches".center(150,"-"))
+    # team_matches = api.get_team_matches(season=9, team_id=3)
+    # print(team_matches.head())
+
+    # print("\n5. Testing build_team_roster".center(150,"-"))
+    # team_roster = api.build_team_roster(season=9, team_id=3)
+    # print(team_roster)
+
+    # print("\n6. Testing get_player_info".center(150,"-"))
+    # player_stats_df_rank, player_stats_df_value, player_stats_df_per_match, rvd_extracted_df = api.get_player_info(player_id=660, season=9)
+    # print("Player Rank:")
+    # print(player_stats_df_rank)
+    # print("\nPlayer Value:")
+    # print(player_stats_df_value)
+    # print("\nPlayer Per Match:")
+    # print(player_stats_df_per_match)
+    # print("\nPlayer RVD:")
+    # print(rvd_extracted_df)
+
+    # print("\n7. Testing load_match_details".center(150,"-"))
+    # match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=9, match_id='2895')
+    # print("Match Detail:")
+    # print(match_detail_df)
+    # print("\nEvents (first 5 rows):")
+    # if not events_df:
+    #     print("No events data found for this match")
+    # else:
+    #     print(events_df.head())
+    # print("\nZones:")
+    # print(zones_df)
+    # print("\nTeam 1 (first 5 rows):")
+    # if not team1_df:
+    #     print("No team 1 data found for this match")
+    # else:
+    #     print(team1_df.head())
+    # print("\nTeam 2 (first 5 rows):")
+    # if not team2_df:
+    #     print("No team 2 data found for this match")
+    # else:
+    #     print(team2_df.head())
+    # print("\nBreakdown Data:")
+    # print(breakdown_df)
+
+    # print("\n8. Testing load_pbp".center(150,"-"))
+    # pbp_df = api.load_pbp(season=9, match_id='2895')
+    # print("Play-by-Play Data (first 5 rows):")
+    # if not pbp_df:
+    #     print("No play-by-play data found for this match")
+    # else:
+    #     print(pbp_df.head())
+
+    # # END OF ACTUAL TESTING ------------------------------------------------------------------------
 
 
+    # # MY OLD TESTING ------------------------------------------------------------------------
+    # print("=="*100)
+    # print("=="*100)
+    # print("MY OLD TESTING".center(150,"-"))
+    # print("=="*100)
+    # print("=="*100)
+
+    # # matches = api.get_season_matches(season=10)
+    # # result = matches[(matches['League_Stage'] == 'Semi Final')]
+    # # print(result)
+
+    # # df = api.load_pbp(season=10, match_id=3164)
+    # # # df.to_csv("pbp.csv")
+    # # print(df.tail())
+
+
+
+    # # print("get standings")
+    # # # x = api.get_pkl_standings(season=10)
+    # # # print(x)
+
+
+    # qualified_df , all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    # print("qualified_df")
+    # print(qualified_df)
+    # print()
+
+    # # print("all_standings_df")
+    # # print(all_standings_df)
+    # # print(len(all_standings_df))
+
+    # print("season_matches")
+    # matches = api.get_season_matches(season=6)
+    # print(matches)
+    # # print(len(x))
+
+
+    # # print("-"*100)
+    # print("team_info")
+
+    # df_rank_, df_value_, df_per_match_, filtered_team_raider_skills_, filtered_team_defender_skills_ = api.get_team_info(season=6,team_id=29)
+
+    # print("Rank DFs")
+    # print(df_rank_)
     # print("-"*100)
-    print("team_info")
+    # print("Value DFs")
+    # print(df_value_)
+    # print("-"*100)
+    # print("Per Match DFs")
+    # print(df_per_match_)
+    # print("-"*100)
+    # print("Raider Skills")
+    # print(filtered_team_raider_skills_)
+    # print("-"*100)
+    # print("Defender Skills")
+    # print(filtered_team_defender_skills_)
 
-    df_rank_, df_value_, df_per_match_, filtered_team_raider_skills_, filtered_team_defender_skills_ = api.get_team_info(season=6,team_id=29)
-
-    print("Rank DFs")
-    print(df_rank_)
-    print("-"*100)
-    print("Value DFs")
-    print(df_value_)
-    print("-"*100)
-    print("Per Match DFs")
-    print(df_per_match_)
-    print("-"*100)
-    print("Raider Skills")
-    print(filtered_team_raider_skills_)
-    print("-"*100)
-    print("Defender Skills")
-    print(filtered_team_defender_skills_)
-
-    #TODO: Fix the order of the columns in the output
-    # team-successful-tackle-percent_value
-    # team-super-tackles_value
-    # team-tackle-points_value
-    # team-successful-tackles-per-match_value
-    # team-average-tackle-points_value
-    # team-successful-tackles_value
-    # Total_touch_points_value
-    # Total_bonus_points_value
-    # team-raid-points_value
-    # team-average-raid-points_value
-    # team-successful-raids_value
-    # team-super-raid_value
-    # team-raid_value
-    # team-successful-raid-percent_value
-    # team-dod-raid-points_value
-    # team-total-points_value
-    # team-all-outs-conceded_value
-    # team-all-outs-inflicted_value
-    # team-avg-points-scored_value
-    # team-total-points-conceded_value
+    # #TODO: Fix the order of the columns in the output
+    # # team-successful-tackle-percent_value
+    # # team-super-tackles_value
+    # # team-tackle-points_value
+    # # team-successful-tackles-per-match_value
+    # # team-average-tackle-points_value
+    # # team-successful-tackles_value
+    # # Total_touch_points_value
+    # # Total_bonus_points_value
+    # # team-raid-points_value
+    # # team-average-raid-points_value
+    # # team-successful-raids_value
+    # # team-super-raid_value
+    # # team-raid_value
+    # # team-successful-raid-percent_value
+    # # team-dod-raid-points_value
+    # # team-total-points_value
+    # # team-all-outs-conceded_value
+    # # team-all-outs-inflicted_value
+    # # team-avg-points-scored_value
+    # # team-total-points-conceded_value
 
 
-    print("get_team_matches\n\n")
+    # print("get_team_matches\n\n")
 
-    df = api.get_team_matches(season=9, team_id=3)
-    print(df)
+    # df = api.get_team_matches(season=9, team_id=3)
+    # print(df)
 
 
 
-    print("build build_team_roster")
+    # print("build build_team_roster")
 
-    df = api.build_team_roster(season=9, team_id='3')
-    print("-"*100)
-    print(df)
+    # df = api.build_team_roster(season=9, team_id='3')
+    # print("-"*100)
+    # print(df)
 
-    ## df.to_csv("team_roster.csv")
-
-
-    print("build get_player_info")
-
-    _player_stats_df_rank, _player_stats_df_value, _player_stats_df_per_match, _rvd_extracted_df = api.get_player_info(player_id=660, season=9)
-    print("-"*100)
-    print(_player_stats_df_rank)
-    print("-"*100)
-    print(_player_stats_df_value)
-    print("-"*100)
-    print(_player_stats_df_per_match)
-    print("-"*100)
-    print(_rvd_extracted_df)
+    # ## df.to_csv("team_roster.csv")
 
 
-    print("load_match_details-------\n\n\n")
-    _match_detail_df, _teams_df, _events_df, _zones_df, _team1_df, _team2_df = api.load_match_details(season='9', match_id='2895')
-    print("-"*100)
-    print(_match_detail_df)
-    print("-"*100)
-    print(_teams_df)
-    print("-"*100)
-    print(_events_df)
-    print("-"*100)
-    print(_zones_df)
-    print("-"*100)
-    print(_team1_df)
-    print("-"*100)
-    print(_team2_df)
+    # print("build get_player_info")
+
+    # _player_stats_df_rank, _player_stats_df_value, _player_stats_df_per_match, _rvd_extracted_df = api.get_player_info(player_id=660, season=9)
+    # print("-"*100)
+    # print(_player_stats_df_rank)
+    # print("-"*100)
+    # print(_player_stats_df_value)
+    # print("-"*100)
+    # print(_player_stats_df_per_match)
+    # print("-"*100)
+    # print(_rvd_extracted_df)
 
 
-    print("load_pbp")
-    _pbp_df = api.load_pbp(season=9, match_id='2895')
-    print("-"*100)
-    print(_pbp_df)
+    # print("load_match_details-------\n\n\n")
+    # _match_detail_df, _events_df, _zones_df, _team1_df, _team2_df, _breakdown_df = api.load_match_details(season='9', match_id='2895')
+    # print("-"*100)
+    # print(_match_detail_df)
+    # print("-"*100)
+    # print(_events_df)
+    # print("-"*100)
+    # print(_zones_df)
+    # print("-"*100)
+    # print(_team1_df)
+    # print("-"*100)
+    # print(_team2_df)
+    # print("-"*100)
+    # print(_breakdown_df)
+
+
+    # print("load_pbp")
+    # _pbp_df = api.load_pbp(season=9, match_id='2895')
+    # print("-"*100)
+    # print(_pbp_df)
 
 
 
@@ -1103,30 +1327,3 @@ if __name__ == "__main__":
     # print(x)
     # # print("-"*100)
     # # print(y)
-    ###########################################
-    # print("-" * 100, "test--", "-" * 100)
-    #
-    # x, y = api.get_pkl_standings(season=1, qualified=True)
-    # print(x)
-    # print("-" * 100)
-    # print(y)
-    #
-    # print("-" * 100)
-
-    # print(x.to_latex())
-
-    # print(m)
-
-    # df = api.match_data(season=4)
-    # print(df)
-
-    # for a season -> display all the match ids for that season along with some basic info about the match (matches overview)
-    # for a given match-id -> get play-by-play data
-
-    # for a given team in a given season return aggregated stats for that team
-    # for a given team in a season, return the defender skills and raider skills for that team
-
-    # return all matches played by that team
-
-    # get team roster with player-ids
-    # for a given player-id return aggregated stats about that player

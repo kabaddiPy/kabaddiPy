@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 from matplotlib.patches import Patch
 from setuptools.command.rotate import rotate
+from matplotlib.lines import Line2D
 
 
 def load_json_data(file_path):
@@ -188,7 +189,7 @@ def plot_player_zones_improved(player_id, season, zone_type='strong'):
     # Line Labels
     label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 10, 'fontweight': 'bold'}
 
-    ax.text((court_width / 2), court_length + 0.1, 'Mid Line', **label_style)
+    ax.text(7*(court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
     ax.text(7*(court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
     ax.text(7*(court_width / 8), 1, 'Bonus Line', **label_style)
 
@@ -304,8 +305,8 @@ def internal_aggregate_team_data(directory_path, team_id):
 def plot_team_zones(team_id, season, zone_type='strong'):
     season_directories = {
         1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
-        4: "Season_PKL_Season_4_2016",
-        5: "Season_PKL_Season_5_2017", 6: "Season_PKL_Season_6_2018", 7: "Season_PKL_Season_7_2019",
+        4: "Season_PKL_Season_4_2016", 5: "Season_PKL_Season_5_2017", 6: "Season_PKL_Season_6_2018",
+        7: "Season_PKL_Season_7_2019",
     }
     if season not in season_directories:
         raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
@@ -318,65 +319,95 @@ def plot_team_zones(team_id, season, zone_type='strong'):
         print(f"Team with ID {team_id} not found in any match data.")
         return
 
-    fig, ax = plt.subplots(figsize=(15, 12))
+    fig, ax = plt.subplots(figsize=(12, 8))
     court_width, court_length = 13, 10
 
-    court_color = '#4169E1'  # Royal Blue
-    lobby_color = '#B22222'  # Firebrick Red
+    # Custom color schemes
+    court_color = '#E6F3FF'  # Light blue for court
+    lobby_color = '#FFE6E6'  # Light red for lobby
+    line_color = '#333333'  # Dark gray for lines
 
     # Draw court (main play area)
-    ax.add_patch(Rectangle((1, 0), court_width - 2, court_length / 2, fill=True, color=court_color))
+    ax.add_patch(Rectangle((1, 0), court_width - 2, court_length, fill=True, color=court_color, ec=line_color, lw=2))
 
     # Draw lobbies
-    ax.add_patch(Rectangle((0, 0), 1, court_length / 2, fill=True, color=lobby_color))
-    ax.add_patch(Rectangle((court_width - 1, 0), 1, court_length / 2, fill=True, color=lobby_color))
+    ax.add_patch(Rectangle((0, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
+    ax.add_patch(Rectangle((court_width - 1, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
 
     # Draw lines
-    line_color = 'white'
-    ax.axhline(y=court_length / 2, color=line_color, linewidth=2)
-    ax.axhline(y=3.75, color=line_color, linewidth=2)
-    ax.axhline(y=1, color=line_color, linewidth=2)
+    ax.axhline(y=court_length, color=line_color, linewidth=3)
+    ax.axhline(y=(1.6 * court_length / 4), color=line_color, linewidth=2)
+    ax.axhline(y=1.3, color=line_color, linewidth=2)
 
-    ax.text(court_width / 2, court_length / 2, 'Mid Line', ha='center', va='center', color='black', fontsize=14)
-    ax.text(court_width / 2, 3.75, 'Baulk Line', ha='center', va='bottom', color='black', fontsize=14)
-    ax.text(court_width / 2, 1, 'Bonus Line', ha='center', va='bottom', color='black', fontsize=14)
-    ax.text(0.5, (court_length / 4) - 0.2, 'Left Lobby', ha='center', va='center', color='black', fontsize=14)
-    ax.text(court_width - 0.5, (court_length / 4) - 0.2, 'Right Lobby', ha='center', va='center', color='black',
-            fontsize=14)
+    # Line Labels
+    label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 10, 'fontweight': 'bold'}
 
-    # Plot player position (center of the court for simplicity)
-    player_x, player_y = court_width / 2, (court_length / 2) - 2.5
-    ax.add_patch(Circle((player_x, player_y), 0.25, fill=True, color='yellow'))
-    # ax.text(player_x, player_y + 0.1, str(player_data['jersey']), ha='center', va='center', color='black', fontsize=14)
-    ax.text(player_x + 0.01, player_y - 0.1, 'Jersey', ha='center', va='center', color='black', fontsize=12)
+    ax.text(7*(court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
+    ax.text(7*(court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
+    ax.text(7*(court_width / 8), 1, 'Bonus Line', **label_style)
+    
+    ax.text(0.5, court_length / 2, 'Left Lobby', **label_style, rotation=90)
+    ax.text(court_width - 0.5, court_length / 2, 'Right Lobby', **label_style, rotation=90)
 
     # Plot heat map of selected zone type
     zones = strong_zones if zone_type == 'strong' else weak_zones
     max_points = max(zones.values())
-    non_zero_values = filter(lambda x: x > 0, zones.values())
-    min_points = min(non_zero_values, default=1)
+    non_zero_values = [v for v in zones.values() if v > 0]
+    min_points = min(non_zero_values) if non_zero_values else 1
 
+    # Custom color maps with increased contrast
+    if zone_type == 'strong':
+        colors = ['#E6FFE6', '#66FF66', '#00CC00', '#006400']
+    else:
+        colors = ['#FFE6E6', '#FF9999', '#FF3333', '#8B0000']
+    n_bins = 100
+    cmap = LinearSegmentedColormap.from_list('custom', colors, N=n_bins)
+
+    # Plot zones
     for zone_id, points in zones.items():
         if points > 0:
-            zone_x, zone_y = get_zone_coordinates(zone_id, court_width, court_length / 2)
-            color = 'green' if zone_type == 'strong' else 'red'
-            intensity = points / max_points
-            if zone_type == 'weak':
-                intensity = min_points / points
+            zone_x, zone_y = get_zone_coordinates(zone_id, court_width, court_length)
+            intensity = (points - min_points) / (max_points - min_points)
+            color = cmap(intensity)
 
-            ax.add_patch(Rectangle((zone_x - 0.5, zone_y), 1, 0.5, fill=True, alpha=intensity, color=color))
-            ax.text(zone_x, zone_y + 0.2, str(points), ha='center', va='center', color='white', fontsize=14)
+            if zone_id in [1, 2]:  # Lobby zones
+                if zone_id == 1:  # Left lobby
+                    wedge = Wedge((1, court_length / 2), 0.9, 90, 270, color=color, alpha=0.7, ec=line_color, lw=1,
+                                    zorder=5)
+                else:  # Right lobby
+                    wedge = Wedge((court_width - 1, court_length / 2), 0.9, 270, 90, color=color, alpha=0.7,
+                                    ec=line_color, lw=1, zorder=5)
+                ax.add_patch(wedge)
+            else:  # Inner court zones
+                circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
+                ax.add_patch(circle)
+
+            ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='white', fontsize=10,
+                    fontweight='bold', zorder=6)
 
     # Set title
-    # plt.title(f"{player_data['name']} - Season {zone_type.capitalize()} Zones", fontsize=16, pad=20)
+    team_id_map = {
+        4: 'Bengal Warriors', 1: 'Bengaluru Bulls', 2: 'Dabang Delhi', 31: 'Gujarat Giants',
+        28: 'Haryana Steelers', 6: 'Patna Pirates', 7: 'Puneri Paltan', 29: 'Tamil Thalaivas',
+        5: 'U Mumba', 30: 'U.P. Yoddha', 3: "Jaipur Pink Panthers"
+    }
+    team_name = team_id_map.get(int(team_id), f"Team {team_id}")
+    plt.title(f"{team_name} - Season {season} {zone_type.capitalize()} Zones", fontsize=14, fontweight='bold', pad=20)
 
     # Set axis limits and remove ticks
     ax.set_xlim(0, court_width)
-    ax.set_ylim(0, court_length / 2)
+    ax.set_ylim(0, court_length)
     ax.set_xticks([])
     ax.set_yticks([])
 
+    # Add a color bar
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin=min_points, vmax=max_points))
+    sm.set_array([])
+    cbar = plt.colorbar(sm, ax=ax, pad=0.1)
+    cbar.set_label('Points', rotation=270, labelpad=15)
+
     plt.tight_layout()
+    # plt.savefig(f"team_{team_id}_season_{season}_zones_{zone_type}.png", bbox_inches='tight', pad_inches=0, dpi=400)
     plt.show()
 
 
@@ -471,21 +502,21 @@ def plot_point_progression(season, match_id):
     ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
 
     # Add team names to the legend
+   # Create custom legend elements
     legend_elements = [
         Patch(facecolor=team1_color, edgecolor=team1_color, label=f'{team_id_map[int(team1_id)]} (Team {team1_id})'),
         Patch(facecolor=team2_color, edgecolor=team2_color, label=f'{team_id_map[int(team2_id)]} (Team {team2_id})'),
+        Line2D([0], [0], color='gray', linestyle='--', label='Raid events'),
+        Patch(facecolor='yellow', edgecolor='none', alpha=0.5, label='Significant point difference')
     ]
-    ax.legend(handles=legend_elements, loc='upper left', fontsize=10)
+
+    # Add the legend to the plot
+    ax.legend(handles=legend_elements, loc='upper left', fontsize=10, title='Legend', title_fontsize=12)
 
     # Add final scores
     final_score_text = f"Final Score: {team_id_map[int(team1_id)]} {team1_total_points[-1]} - {team2_total_points[-1]} {team_id_map[int(team2_id)]}"
     ax.text(0.5, -0.1, final_score_text, ha='center', va='center', transform=ax.transAxes, fontsize=12,
             fontweight='bold')
-
-    # Add explanation for dotted lines
-    ax.text(0.98, 0.02, 'Dotted vertical lines indicate raid events', 
-            ha='right', va='bottom', transform=ax.transAxes, fontsize=10, 
-            fontstyle='italic', bbox=dict(facecolor='white', alpha=0.7, edgecolor='none'))
 
     # Threshold part to highlight significant score differences
     max_diff = max(abs(np.array(team1_total_points) - np.array(team2_total_points)))
@@ -501,21 +532,21 @@ def plot_point_progression(season, match_id):
                         arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0'))
             significant_diffs.append(abs(diff))
 
+
     # Add explanation for yellow labels
     if significant_diffs:
         ax.text(0.98, 0.06, f'Yellow labels show point differences ≥ {threshold:.0f}\n'
-                             f'(95% of max difference: {max_diff})',
-                ha='right', va='bottom', transform=ax.transAxes, fontsize=10,
-                fontstyle='italic', bbox=dict(facecolor='white', alpha=0.7, edgecolor='none'))
+                            f'(95% of max difference: {max_diff})',
+                ha='right', va='bottom', transform=ax.transAxes, fontsize=11.5,
+                fontstyle='italic', bbox=dict(facecolor='white', alpha=0.5, edgecolor='black'))
 
     plt.tight_layout()
     
     # Remove the grid
     ax.grid(False)
-    # plt.savefig("match_3163.png", bbox_inches='tight', pad_inches=0, dpi=400)
+    plt.savefig(f"match_{match_id}.png", bbox_inches='tight', pad_inches=0, dpi=400)
     
     plt.show()
-
 
 
 def plot_player_zones_grid(player_ids, season, zone_type='strong', max_cols=4):
@@ -577,12 +608,15 @@ if __name__ == "__main__":
     # plot_team_zones(5,season=5, zone_type='strong')
     # plot_team_zones(5,season=5, zone_type='weak')
 
+
+
     plot_player_zones_improved(player_id, season=5, zone_type='strong')
     plot_player_zones_improved(player_id, season=5, zone_type='weak')
     # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
     # print(strong_zones)
-    plot_team_zones(5, season=5, zone_type='strong')
-    plot_team_zones(5, season=5, zone_type='weak')
+
+    plot_team_zones(team_id=4, season=5, zone_type='strong')
+    plot_team_zones(team_id=4, season=5, zone_type='weak')
 
     # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
     plot_point_progression(season=10, match_id=3163)
