@@ -275,7 +275,7 @@ class KabaddiDataAPI:
         # Convert the list of dictionaries into a DataFrame
         df = pd.DataFrame(matches_list)
 
-        df.to_csv("matches_data.csv")
+        # df.to_csv("matches_data.csv")
 
         # Display the DataFrame
         return df
