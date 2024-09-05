@@ -27,3 +27,4 @@ pro_kabaddi_data.egg-info/PKG-INFO
 pro_kabaddi_data.egg-info/dependency_links.txt
 kabaddi-api/__pycache__/kabaddi_data.cpython-310.pyc
 kabaddi-api/__pycache__/kabaddi_data.cpython-310.pyc
+pypi/prokabaddidata/MatchData_pbp/__pycache__/

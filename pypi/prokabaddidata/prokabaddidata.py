@@ -649,6 +649,11 @@ class KabaddiDataAPI:
 
         return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T, rvd_extracted_df.T
 
+    def get_detailed_player_info(self, player_id, season=None):
+
+        # iterate over all the matches in the season and
+
+        pass
 
 
     def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
@@ -704,7 +709,7 @@ class KabaddiDataAPI:
             return None, None, None, None, None, None
 
     
-    def load_pbp_data(self, season, match_id) -> DataFrame:
+    def load_pbp(self, season, match_id) -> DataFrame:
         """
         Get all events for a specific match.
 
@@ -812,6 +817,16 @@ class KabaddiDataAPI:
 # # Usage example
 if __name__ == "__main__":
     api = KabaddiDataAPI()
+
+
+    # matches = api.get_season_matches(season=10)
+    # result = matches[(matches['League_Stage'] == 'Semi Final')]
+    # print(result)
+
+    # df = api.load_pbp(season=10, match_id=3164)
+    # # df.to_csv("pbp.csv")
+    # print(df.tail())
+
 
 
     # print("get standings")
@@ -922,8 +937,8 @@ if __name__ == "__main__":
     print(_team2_df)
 
 
-    print("load_pbp_data")
-    _pbp_df = api.load_pbp_data(season=9, match_id='2895')
+    print("load_pbp")
+    _pbp_df = api.load_pbp(season=9, match_id='2895')
     print("-"*100)
     print(_pbp_df)
 
