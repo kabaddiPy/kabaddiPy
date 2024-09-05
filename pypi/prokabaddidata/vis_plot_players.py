@@ -1,3 +1,5 @@
+from math import ceil
+
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Rectangle, Circle
@@ -134,7 +136,16 @@ def plot_player_zones(directory_path, player_id, zone_type='strong'):
     plt.show()
 
 
-def plot_player_zones_improved(directory_path, player_id, zone_type='strong'):
+def plot_player_zones_improved(player_id, season, zone_type='strong'):
+    season_directories = {
+        1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016", 4: "Season_PKL_Season_4_2016",
+        5: "Season_PKL_Season_5_2017", 6: "Season_PKL_Season_6_2018", 7: "Season_PKL_Season_7_2019",
+    }
+    if season not in season_directories:
+        raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
+
+    directory_path = f"./MatchData_pbp/{season_directories[season]}"
+
     player_data, strong_zones, weak_zones = aggregate_player_data(directory_path, player_id)
 
     if not player_data:
@@ -171,7 +182,7 @@ def plot_player_zones_improved(directory_path, player_id, zone_type='strong'):
 
     # Plot player position
     player_x, player_y = court_width / 2, court_length / 2
-    jersey_circle = Circle((player_x, player_y), 0.5, fill=True, color='#FFD700', edgecolor=line_color, linewidth=2, zorder=10)
+    jersey_circle = Circle((player_x, player_y), 0.5, fill=True, facecolor='#FFD700', edgecolor=line_color, linewidth=2, zorder=10)
     ax.add_patch(jersey_circle)
     ax.text(player_x, player_y, str(player_data['jersey']), ha='center', va='center', color=line_color, fontsize=14, fontweight='bold', zorder=11)
 
@@ -263,7 +274,17 @@ def aggregate_team_data(directory_path, team_id):
     return team_data, strong_zones, weak_zones
 
 
-def plot_team_zones(directory_path, team_id, zone_type='strong'):
+def plot_team_zones(team_id, season, zone_type='strong'):
+    season_directories = {
+        1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
+        4: "Season_PKL_Season_4_2016",
+        5: "Season_PKL_Season_5_2017", 6: "Season_PKL_Season_6_2018", 7: "Season_PKL_Season_7_2019",
+    }
+    if season not in season_directories:
+        raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
+
+    directory_path = f"./MatchData_pbp/{season_directories[season]}"
+
     team_data, strong_zones, weak_zones = aggregate_team_data(directory_path, team_id)
     team_id = str(team_id)
     if not team_data:
@@ -386,18 +407,39 @@ def plot_point_progression(file_path):
     plt.title('Team Point Progression')
     plt.legend()
     plt.show()
-# Usage
+
+
+def create_player_zone_subplots(df, season):
+    num_players = len(df)
+    num_cols = 2  # You can adjust this for different layouts
+    num_rows = ceil(num_players / num_cols)
+
+    fig = plt.figure(figsize=(15 * num_cols, 10 * num_rows))  # Adjust size as needed
+
+    for i, (index, player) in enumerate(df.iterrows(), 1):
+        plt.subplot(num_rows, num_cols, i)
+
+        # Call the plot_player_zones_improved function
+        plot_player_zones_improved(player_id=player['Player ID'], season=season, zone_type='strong')
+
+        # Add player name and total points to the subplot title
+        plt.title(f"{player['Name']} - Total Points: {player['Total Points']}", fontsize=16, fontweight='bold', pad=20)
+
+    plt.tight_layout()
+    plt.show()
+
+
 if __name__=="__main__":
 
     #directory_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\other-data\old_data\Season_PKL_Season_5_2017"
     directory_path = r"./MatchData_pbp/Season_PKL_Season_5_2017"
     player_id = 143  # Example: Deepak Hooda
 
-    plot_player_zones_improved(directory_path,player_id,zone_type='strong')
-    plot_player_zones_improved(directory_path,player_id,zone_type='weak')
+    plot_player_zones_improved(player_id,season=5,zone_type='strong')
+    # plot_player_zones_improved(directory_path,player_id,zone_type='weak')
     # player_data, strong_zones, weak_zones = aggregate_player_data(directory_path, player_id)
     # print(strong_zones)
-    plot_team_zones(directory_path, 4, zone_type='strong')
-    plot_team_zones(directory_path, 4, zone_type='weak')
+    plot_team_zones(5,season=5, zone_type='strong')
+    plot_team_zones(5,season=5, zone_type='weak')
 
-    plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json")
+    # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json")
