@@ -533,11 +533,6 @@ class KabaddiDataAPI:
         -------
         FileNotFoundError: If any of the required data files are not found.
         ValueError: If there are issues with data type conversions.
-
-        Example:
-        --------
-        >>> api = KabaddiDataAPI()
-        >>> rank_df, value_df, per_match_df, rvd_df = api.get_player_info(player_id=660, season=9)
         """
 
         player_id = int(player_id)
@@ -657,7 +652,33 @@ class KabaddiDataAPI:
 
 
     def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
-        
+        """
+        Load and process match details for a specific season and match ID.
+
+        This function retrieves the match data from a JSON file, processes it, and returns
+        various aspects of the match as separate DataFrames.
+
+        Args:
+            season (int): The season number.
+            match_id (str): The unique identifier for the match.
+
+        Returns:
+            Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]: A tuple containing:
+                - match_detail_df: DataFrame with overall match details.
+                - teams_df: DataFrame with information about both teams.
+                - events_df: DataFrame with all events that occurred during the match.
+                - zones_df: DataFrame with information about different zones on the court.
+                - team1_df: DataFrame with detailed information about the first team.
+                - team2_df: DataFrame with detailed information about the second team.
+
+        Raises:
+            ValueError: If no season data is found or if data for exactly two teams is not present.
+            FileNotFoundError: If no match file is found for the given season and match ID.
+
+        Note:
+            If an error occurs during data loading or processing, the function will print an error
+            message and return None for all DataFrames.
+        """
 
         # print(f"Loading match details for season {season} and match ID {match_id}")
 
@@ -684,11 +705,7 @@ class KabaddiDataAPI:
                 temp = temp['gameData']
 
             match_detail = temp.get("match_detail", {})
-            flattened_match_detail = self._flatten_match_detail(match_detail)
-            # print(f"Flattened match detail: {flattened_match_detail}")
-            # print(f"Flattened match detail columns: {flattened_match_detail.keys()}")
-            # print("-"*100)
-            # print(f"Match detail: {match_detail}")
+            flattened_match_detail = self.internal_flatten_match_detail(match_detail)
             match_detail_df = pd.DataFrame([flattened_match_detail])
 
             events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
@@ -711,20 +728,28 @@ class KabaddiDataAPI:
     
     def load_pbp(self, season, match_id) -> DataFrame:
         """
-        Get all events for a specific match.
+        Load the play-by-play (PBP) data for a specific match in a given season.
+
+        This function calls the load_match_details method and extracts the events DataFrame,
+        which contains the play-by-play data for the specified match.
 
         Args:
-            season (str): The season name.
-            match_id (str): The match ID.
+            season (int): The season number.
+            match_id (str): The unique identifier for the match.
 
         Returns:
-            DataFrame: A DataFrame containing all events in the match.
+            DataFrame: A DataFrame containing the play-by-play events of the match.
+                       Returns None if there was an error loading the match details.
+
+        Note:
+            This function relies on the load_match_details method to retrieve the full match data.
+            It only returns the events DataFrame, discarding other match information.
         """
         _, _, events_df, _, _, _ = self.load_match_details(season, match_id)
         return events_df
 
 
-    def _flatten_match_detail(self, match_detail: Dict[str, Any]) -> Dict[str, Any]:
+    def internal_flatten_match_detail(self, match_detail: Dict[str, Any]) -> Dict[str, Any]:
         """
         Flatten nested dictionaries in match detail.
 
@@ -751,7 +776,7 @@ class KabaddiDataAPI:
         return flattened
 
 
-    def _process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
+    def internal_process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
         """
         Process team data into DataFrames.
 
@@ -808,16 +833,97 @@ class KabaddiDataAPI:
 
 
 
-
-
-
-
-
-
-# # Usage example
 if __name__ == "__main__":
+    
+    
     api = KabaddiDataAPI()
 
+    # ACTUAL TESTING ------------------------------------------------------------------------
+
+    print("1. Testing get_pkl_standings".center(150,"-"))
+    qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    print("Qualified teams:")
+    print(qualified_df)
+    print("\nAll standings:")
+    print(all_standings_df)
+
+    print("\n2. Testing get_season_matches".center(150,"-"))
+    season_matches = api.get_season_matches(season=6)
+    print(season_matches.head())
+
+    print("\n3. Testing get_team_info".center(150,"-"))
+    df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
+    print("Team Rank:")
+    print(df_rank)
+    print("\nTeam Value:")
+    print(df_value)
+    print("\nTeam Per Match:")
+    print(df_per_match)
+    print("\nTeam Raider Skills:")
+    print(filtered_team_raider_skills)
+    print("\nTeam Defender Skills:")
+    print(filtered_team_defender_skills)
+
+    print("\n4. Testing get_team_matches".center(150,"-"))
+    team_matches = api.get_team_matches(season=9, team_id=3)
+    print(team_matches.head())
+
+    print("\n5. Testing build_team_roster".center(150,"-"))
+    team_roster = api.build_team_roster(season=9, team_id=3)
+    print(team_roster)
+
+    print("\n6. Testing get_player_info".center(150,"-"))
+    player_stats_df_rank, player_stats_df_value, player_stats_df_per_match, rvd_extracted_df = api.get_player_info(player_id=660, season=9)
+    print("Player Rank:")
+    print(player_stats_df_rank)
+    print("\nPlayer Value:")
+    print(player_stats_df_value)
+    print("\nPlayer Per Match:")
+    print(player_stats_df_per_match)
+    print("\nPlayer RVD:")
+    print(rvd_extracted_df)
+
+    print("\n7. Testing load_match_details".center(150,"-"))
+    match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.load_match_details(season=9, match_id='2895')
+    print("Match Detail:")
+    print(match_detail_df)
+    print("\nTeams:")
+    print(teams_df)
+    print("\nEvents (first 5 rows):")
+    if not events_df:
+        print("No events data found for this match")
+    else:
+        print(events_df.head())
+    print("\nZones:")
+    print(zones_df)
+    print("\nTeam 1 (first 5 rows):")
+    if not team1_df:
+        print("No team 1 data found for this match")
+    else:
+        print(team1_df.head())
+    print("\nTeam 2 (first 5 rows):")
+    if not team2_df:
+        print("No team 2 data found for this match")
+    else:
+        print(team2_df.head())
+
+    print("\n8. Testing load_pbp".center(150,"-"))
+    pbp_df = api.load_pbp(season=9, match_id='2895')
+    print("Play-by-Play Data (first 5 rows):")
+    if not pbp_df:
+        print("No play-by-play data found for this match")
+    else:
+        print(pbp_df.head())
+
+    # END OF ACTUAL TESTING ------------------------------------------------------------------------
+
+
+    # MY OLD TESTING ------------------------------------------------------------------------
+    print("=="*100)
+    print("=="*100)
+    print("MY OLD TESTING".center(150,"-"))
+    print("=="*100)
+    print("=="*100)
 
     # matches = api.get_season_matches(season=10)
     # result = matches[(matches['League_Stage'] == 'Semi Final')]
