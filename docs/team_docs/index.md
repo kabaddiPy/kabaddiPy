@@ -32,7 +32,7 @@ Retrieves the names of all teams in the Pro Kabaddi League.
 
 ### Usage
 
-```python
+```
 aggregator = KabaddiDataAggregator()
 team_names = aggregator.get_all_team_names()
 ```
@@ -41,7 +41,9 @@ team_names = aggregator.get_all_team_names()
 
 - `List[str]`: A list of team names.
 
+
 ---
+
 
 ## get_all_team_url
 

@@ -1,5 +1,5 @@
-title: ProKabaddi API Documentation
-description: A comprehensive description of all the endpoints for the API.
+title: kabaddiPy
+description: A comprehensive description of all the functions provided by the API.
 theme: just-the-docs
 
 baseurl: "/docs"
@@ -12,7 +12,9 @@ aux_links:
 
 nav_enabled: true
 
-logo: "/assets/kabaddi_api_logo.png"
+#logo: "/assets/kabaddi_api_logo.png"
+favicon_ico: "/assets/favicon.ico"
+
 
 search_enabled: true
 search:
@@ -53,12 +55,10 @@ back_to_top_text: "Back to top"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
-
-# For copy button on code
 enable_copy_code_button: true
 
 
-# permalink: pretty
+permalink: pretty
 
 nav_external_links:
   - title: ProKabaddi Official Website

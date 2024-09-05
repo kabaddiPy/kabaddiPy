@@ -1,7 +1,7 @@
 ---
-title: ProKabaddi API Docs
+title: Home
 layout: default
-has_toc: false
+has_toc: true
 nav_order: 1
 has_children: false
 ---
@@ -9,23 +9,12 @@ has_children: false
 
 # Prokabaddi API
 
-This documentation covers the main functions of the `KabaddiDataAggregator` class that return useful data for Kabaddi statistics and information.
+This documentation covers the main functions of the `KabaddiDataAPI` class that return useful data for Kabaddi statistics and information.
 
-
-{: .warning }
+{: .note }
 > This documentation is actively being developed alongwith the API.
 
 
-
-## Table of Contents
-
-- [Prokabaddi API](#prokabaddi-api)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [load\_data](#load_data)
-    - [Usage](#usage)
-    - [Parameters](#parameters)
-    - [Returns](#returns)
 
 ---
 
@@ -33,28 +22,46 @@ This documentation covers the main functions of the `KabaddiDataAggregator` clas
 Use the following command to install.
 
 ```shell
-pip install pro_kabaddi_data
+pip install kabaddiPy
 ```
 
 ---
-## load_data
 
-Loads files into pandas DataFrames based on provided boolean parameters.
+We have split our functions into 3 categories:
 
-### Usage
+## Overall Functions
+  ### 1. `get_pkl_standings`(season=None, qualified=False, team_id=None)
+  
+  ### 2. `get_season_matches`(season="all")
 
-```python
-data_loader = KabaddiDataAggregator()
-player_df, team_df, members_df = data_loader.load_data(TeamDetails=False, TeamMembers=False, PlayerDetails=True)
-```
-### Parameters
-- `TeamDetails` (bool): Loads the details of every team. Default is `False`.
-- `TeamMembers` (bool): Loads the members of all teams for the recent season. Default is `False`.
-- `PlayerDetails` (bool): Loads all individual attributes of players. Default is `True`.
+## Team-Wise Functions
+  
+  ### 3. `get_team_info`(team_id, season='overall')
 
-### Returns
-- `tuple`: A tuple containing the loaded DataFrames in the order (player_details_df, team_details_df, team_members_df).
+  ### 4. `get_team_matches`(season, team_id)
 
----
+  ### 5. `build_team_roster`(team_id, season)
+
+## Player-Information
+  
+  ### 6. `get_player_info`(player_id, season=None)
+
+
+## Detailed Granular Match-Details (Play-by-Play)
+  
+  ### 7. `load_match_details`(season, match_id)
+
+  ### 8. `load_pbp_data`(season, match_id)
+
+
+## Visualisation Functions
+  
+  ### 9. `plot_point_progression`(file_path)
+
+  ### 10. `plot_team_zones`(directory_path, team_id, zone_type='strong')
+
+  ### 11. `plot_player_zones`(directory_path, player_id, zone_type='strong')
+
+  ### 12. `plot_player_zones_grid`(x,y,z)
 
 
