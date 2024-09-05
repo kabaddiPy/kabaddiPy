@@ -3,30 +3,25 @@ title: Player Functions
 layout: default
 has_toc: true
 has_children: false
-nav_order: 3
+nav_order: 4
 ---
+
 # Player Functions
 
 
 ## Table of Contents
 - [Player Functions](#player-functions)
   - [Table of Contents](#table-of-contents)
-  - [get\_stats\_from\_player\_profile](#get_stats_from_player_profile)
     - [Usage](#usage)
     - [Parameters](#parameters)
     - [Returns](#returns)
+  - [get\_player\_details](#get_player_details)
   - [player\_performance](#player_performance)
     - [Usage](#usage-1)
     - [Returns](#returns-1)
-  - [get\_all\_player\_team\_url](#get_all_player_team_url)
+  - [player\_performance](#player_performance-1)
     - [Usage](#usage-2)
     - [Returns](#returns-2)
-  - [get\_players\_team\_info\_and\_profile\_url](#get_players_team_info_and_profile_url)
-    - [Usage](#usage-3)
-    - [Returns](#returns-3)
-  - [player\_performance](#player_performance-1)
-    - [Usage](#usage-4)
-    - [Returns](#returns-4)
 
 
 ### Usage

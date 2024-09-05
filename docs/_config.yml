@@ -65,8 +65,9 @@ enable_copy_code_button: true
 nav_external_links:
   - title: ProKabaddi Official Website
     url: https://www.prokabaddi.com/stats
-  - title: Kabaddi Adda
-    url: https://www.kabaddiadda.com/players
+    
+  # - title: Kabaddi Adda
+  #   url: https://www.kabaddiadda.com/players
 
 
 footer_content: "Distributed by an <a href=\"https://github.com/kabaddiPy/kabaddiPy/tree/main?tab=GPL-2.0-1-ov-file\">GPL license.</a>"
