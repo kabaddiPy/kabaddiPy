@@ -225,7 +225,7 @@ class KabaddiDataAPI:
         return df
 
 
-    def get_team_info(self, team_id, season='overall'):
+    def get_team_info(self, team_id=None, season='overall'):
         """
         Retrieve team information for a specific team and season.
 
@@ -267,22 +267,31 @@ class KabaddiDataAPI:
         df_team_aggregated_stats = pd.read_csv("./Team-Wise-Data/PKL_AggregatedTeamStats.csv")
         df_team_raider_skills = pd.read_csv("./Team-Wise-Data/ALL_Raider_Skills_Merged.csv")
         df_team_defender_skills = pd.read_csv("./Team-Wise-Data/ALL_Defensive_Skills_Merged.csv")
-
-        team_id = int(team_id)
+        
+        if team_id:
+            team_id = int(team_id)
+        else:
+            team_id=None
 
         def find_team_column(dataframe, team_id):
             for col in dataframe.columns:
                 if f"({team_id})" in col:
                     return col
             return None
-        team_column_team_raider_skills = find_team_column(df_team_raider_skills, team_id)
-        team_column_team_defender_skills = find_team_column(df_team_defender_skills, team_id)
+        
+        if team_id:
+            team_column_team_raider_skills = find_team_column(df_team_raider_skills, team_id)
+            team_column_team_defender_skills = find_team_column(df_team_defender_skills, team_id)
+        else:
+            team_column_team_raider_skills = -1
+            team_column_team_defender_skills = -1
         
         
 
         if season == 'overall':
-
-            filtered_team_aggregated_stats = df_team_aggregated_stats[df_team_aggregated_stats['team_id'] == team_id]
+            
+            if team_id:
+                filtered_team_aggregated_stats = df_team_aggregated_stats[df_team_aggregated_stats['team_id'] == team_id]
             
             rows_overall = filtered_team_aggregated_stats[filtered_team_aggregated_stats['season'] == 'all']
             other_rows = filtered_team_aggregated_stats[filtered_team_aggregated_stats['season'] != 'all']
@@ -298,18 +307,33 @@ class KabaddiDataAPI:
             df_team_aggregated_stats['season'] = pd.to_numeric(df_team_aggregated_stats['season'], errors='coerce')
             
             filtered_team_aggregated_stats = df_team_aggregated_stats[df_team_aggregated_stats['season'] == season]
-            filtered_team_aggregated_stats = filtered_team_aggregated_stats[filtered_team_aggregated_stats['team_id'] == team_id]
+            
+            if team_id:
+                filtered_team_aggregated_stats = filtered_team_aggregated_stats[filtered_team_aggregated_stats['team_id'] == team_id]
 
             if team_column_team_raider_skills:            
                 filtered_team_raider_skills = df_team_raider_skills[df_team_raider_skills['Season'] == season]
-                filtered_team_raider_skills = filtered_team_raider_skills[['Season','Skill Type','Skill Name',team_column_team_raider_skills]].reset_index(drop=True)
+                
+                if team_column_team_raider_skills == -1:
+                    cols = filtered_team_raider_skills.columns.tolist()
+                    filtered_team_raider_skills = filtered_team_raider_skills[[cols]].reset_index(drop=True)
+
+                else:
+                    filtered_team_raider_skills = filtered_team_raider_skills[['Season','Skill Type','Skill Name',team_column_team_raider_skills]].reset_index(drop=True)
             else:
                 filtered_team_raider_skills = None
 
 
             if team_column_team_defender_skills:
                 filtered_team_defender_skills = df_team_defender_skills[df_team_defender_skills['Season'] == season]
-                filtered_team_defender_skills = filtered_team_defender_skills[['Season','Skill Type','Skill Name',team_column_team_defender_skills]].reset_index(drop=True)
+                
+                if team_column_team_raider_skills == -1:
+                    cols = filtered_team_defender_skills.columns.tolist()
+                    filtered_team_defender_skills = filtered_team_defender_skills[[cols]].reset_index(drop=True)
+
+                else:
+                    filtered_team_defender_skills = filtered_team_defender_skills[['Season','Skill Type','Skill Name',team_column_team_raider_skills]].reset_index(drop=True)
+
             else:
                 filtered_team_defender_skills = None
 
@@ -336,6 +360,17 @@ class KabaddiDataAPI:
         else:
             return df_rank.T, df_value.T, df_per_match.T, filtered_team_raider_skills, filtered_team_defender_skills
             
+
+
+    def get_team_ids(self, season):
+        
+        return pd.DataFrame(self.get_pkl_standings(season=season)[['Team_Id', 'Team_Name']].to_dict(orient='records'))
+
+    
+        
+        
+
+        
 
 
     def get_team_matches(self, season, team_id :str):
@@ -666,7 +701,7 @@ class KabaddiDataAPI:
             return pd.DataFrame()
 
         season_path = os.path.join(base_path, season_folder)
-        print(f"Processing data from: {season_path}")
+        # print(f"Processing data from: {season_path}")
         
         player_stats = []
         
@@ -736,6 +771,7 @@ class KabaddiDataAPI:
                     print(f"Error processing file {file_path}: {str(e)}")
         
         df = pd.DataFrame(player_stats)
+
         
         # Calculate additional statistics
         if not df.empty:
@@ -745,6 +781,11 @@ class KabaddiDataAPI:
             df["total_substitutions_full_season"] = df["substitutions"].sum()
         else:
             print(f"No data found for player {player_id} in season {season}")
+
+        # if sort_date_asc:
+        #     df = df.sort_values(['date'], ascending=True)
+        # elif not sort_date_asc:
+        #     df = df.sort_values(['date'], ascending=False)
         
         return df
 

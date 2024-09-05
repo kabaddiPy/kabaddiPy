@@ -621,6 +621,6 @@ if __name__ == "__main__":
     # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
     plot_point_progression(season=10, match_id=3163)
 
-    column_list = [143, 3176, 219, 621, 3084, 111]
+    column_list = [143, 12, 211, 322, 160]
     plot_player_zones_grid(column_list, season=5, zone_type='strong', max_cols=2)
 
