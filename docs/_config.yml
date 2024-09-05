@@ -7,8 +7,7 @@ baseurl: "/docs"
 url: https://github.com/kabaddiPy/kabaddiPy
 
 aux_links:
-  API Repository: https://github.com/abhineetraj1/prokabaddiAPI/tree/main
-
+  API Repository: https://github.com/kabaddiPy/kabaddiPy
 
 nav_enabled: true
 

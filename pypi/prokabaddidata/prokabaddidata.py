@@ -367,11 +367,6 @@ class KabaddiDataAPI:
         return pd.DataFrame(self.get_pkl_standings(season=season)[['Team_Id', 'Team_Name']].to_dict(orient='records'))
 
     
-        
-        
-
-        
-
 
     def get_team_matches(self, season, team_id :str):
         """
@@ -939,7 +934,6 @@ class KabaddiDataAPI:
             return None, None, None, None, None, None
 
 
-
     def internal_process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
         """
         Process team data into DataFrames.
@@ -996,7 +990,6 @@ class KabaddiDataAPI:
             team_dfs.append(team_df)
 
         return tuple(team_dfs)
-
 
     
     def load_pbp(self, season, match_id) -> DataFrame:
@@ -1056,14 +1049,16 @@ if __name__ == "__main__":
     api = KabaddiDataAPI()
 
 
-    print("Testing get_detailed_player_info".center(100, "-"))
-    player_id = 94
-    season = 6
-    
-    detailed_info = api.get_detailed_player_info(player_id, season)
 
-    print(detailed_info)
-    detailed_info.to_csv("detailed_info.csv")
+
+    # print("Testing get_detailed_player_info".center(100, "-"))
+    # player_id = 94
+    # season = 6
+    
+    # detailed_info = api.get_detailed_player_info(player_id, season)
+
+    # print(detailed_info)
+    # detailed_info.to_csv("detailed_info.csv")
     
     # if detailed_info is not None and not detailed_info.empty:
     #     print(f"Detailed info for player {player_id} in season {season}:")
@@ -1080,7 +1075,7 @@ if __name__ == "__main__":
     # else:
     #     print(f"No data found for player {player_id} in season {season}")
 
-    match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=10, match_id='3125')
+    # match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=10, match_id='3125')
 
     # print("Match Detail Data:")
     # print(match_detail_df.T)
@@ -1097,20 +1092,20 @@ if __name__ == "__main__":
     # print("\n\nTeam 2 Data:")
     # print(team2_df.T)
 
-    print("\n\nBreakdown Data:")
-    print(breakdown_df.T)
+    # print("\n\nBreakdown Data:")
+    # print(breakdown_df.T)
 
 
 
 
     # # ACTUAL TESTING ------------------------------------------------------------------------
 
-    # print("1. Testing get_pkl_standings".center(150,"-"))
-    # qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
-    # print("Qualified teams:")
-    # print(qualified_df)
-    # print("\nAll standings:")
-    # print(all_standings_df)
+    print("1. Testing get_pkl_standings".center(150,"-"))
+    qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    print("Qualified teams:")
+    print(qualified_df)
+    print("\nAll standings:")
+    print(all_standings_df)
 
     # print("\n2. Testing get_season_matches".center(150,"-"))
     # season_matches = api.get_season_matches(season=6)
