@@ -282,6 +282,28 @@ class KabaddiDataAPI:
 
 
     def get_team_info(self, team_id, season='overall'):
+        """
+            Retrieve comprehensive information for a specific team in a given season or overall.
+
+            Parameters:
+            team_id : int
+                The unique identifier for the team.
+            season : str or int, optional
+                The season for which to retrieve team information.
+                Use 'overall' for aggregated stats across all seasons (default),
+
+            Returns:
+            tuple of pandas.DataFrame or None
+                A tuple containing five elements:
+                1. df_rank: Team's rankings in various categories
+                2. df_value: Team's raw statistic values
+                3. df_per_match: Team's per-match statistics
+                4. filtered_team_raider_skills: Team's raider skill statistics (None for 'overall')
+                5. filtered_team_defender_skills: Team's defender skill statistics (None for 'overall')
+
+                Returns (None, None, None, None, None) if no data is found for the specified team and season.
+    """
+
 
         if season != 'overall':
             season = int(season)
@@ -361,9 +383,20 @@ class KabaddiDataAPI:
 
 
     def get_team_matches(self, season, team_id :str):
+        """
+            Retrieve all matches for a specific team in a given season.
 
-        # pass
+            Parameters:
+            season : int
+                The season number for which to retrieve matches.
+            team_id : str
+                The unique identifier for the team, as a string.
 
+            Returns:
+            pandas.DataFrame
+                A DataFrame containing all matches in the specified season where the given team
+                participated, either as team 1 or team 2.
+        """
         df = self.get_season_matches(season=season)
 
         team_id = str(team_id)
@@ -404,6 +437,34 @@ class KabaddiDataAPI:
     
 
     def build_team_roster(self, team_id, season):
+        """
+            Build a roster for a specific team in a given season.
+
+            Parameters:
+            team_id : int
+                The unique identifier for the team.
+            season : int
+                The season number for which to build the roster.
+
+            Returns:
+            pandas.DataFrame
+                A DataFrame containing the roster information with the following columns:
+                - Player ID
+                - Name
+                - Jersey Number
+                - Captain Count
+                - Played Count
+                - Green Card Count
+                - Yellow Card Count
+                - Red Card Count
+                - Starter Count
+                - Top Raider Count
+                - Top Defender Count
+                - Total Points
+                - Team ID
+                - Team Name
+                - Total Matches in Season
+"""
         roster = {}
         team_id = int(team_id)
         team_name = ""
@@ -470,6 +531,23 @@ class KabaddiDataAPI:
 
 
     def get_player_info(self, player_id, season=None):
+        """
+            Retrieve comprehensive information for a specific player in a given season.
+
+            Parameters:
+            player_id : int
+                The unique identifier for the player.
+            season : int, optional
+                The season number for which to retrieve player information. Uses the latest available season by default.
+
+            Returns:
+            tuple of pandas.DataFrame
+                A tuple containing four DataFrames:
+                1. player_stats_df_rank: Player's rankings in various categories
+                2. player_stats_df_value: Player's raw statistic values
+                3. player_stats_df_per_match: Player's per-match statistics
+                4. rvd_extracted_df: Player's performance against different numbers of defenders
+"""
         player_id = int(player_id)
         file_path = "./Player-Wise-Data/all_seasons_player_stats_rounded.csv"
         df = pd.read_csv(file_path)
