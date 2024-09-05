@@ -141,7 +141,7 @@ def plot_player_zones_improved(directory_path, player_id, zone_type='strong'):
         print(f"Player with ID {player_id} not found in any match data.")
         return
 
-    fig, ax = plt.subplots(figsize=(15, 10))
+    fig, ax = plt.subplots(figsize=(12, 8))
     court_width, court_length = 13, 10
 
     # Custom color schemes
@@ -162,18 +162,18 @@ def plot_player_zones_improved(directory_path, player_id, zone_type='strong'):
     ax.axhline(y=1, color=line_color, linewidth=2)
 
     # Line Labels
-    label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 12, 'fontweight': 'bold'}
+    label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 10, 'fontweight': 'bold'}
     ax.text(court_width / 2, court_length + 0.2, 'Mid Line', **label_style)
     ax.text(court_width / 2, 3 * court_length / 4 + 0.2, 'Baulk Line', **label_style)
-    ax.text(court_width / 2, 1.2, 'Bonus Line', **label_style)
+    ax.text(court_width / 2, 0.8, 'Bonus Line', **label_style)
     ax.text(0.5, court_length / 2, 'Left\nLobby', **label_style)
     ax.text(court_width - 0.5, court_length / 2, 'Right\nLobby', **label_style)
 
     # Plot player position
     player_x, player_y = court_width / 2, court_length / 2
-    jersey_circle = Circle((player_x, player_y), 0.6, fill=True, color='#FFD700', edgecolor=line_color, linewidth=2, zorder=10)
+    jersey_circle = Circle((player_x, player_y), 0.5, fill=True, color='#FFD700', edgecolor=line_color, linewidth=2, zorder=10)
     ax.add_patch(jersey_circle)
-    ax.text(player_x, player_y, str(player_data['jersey']), ha='center', va='center', color=line_color, fontsize=16, fontweight='bold', zorder=11)
+    ax.text(player_x, player_y, str(player_data['jersey']), ha='center', va='center', color=line_color, fontsize=14, fontweight='bold', zorder=11)
 
     # Plot heat map of selected zone type
     zones = strong_zones if zone_type == 'strong' else weak_zones
@@ -181,11 +181,11 @@ def plot_player_zones_improved(directory_path, player_id, zone_type='strong'):
     non_zero_values = [v for v in zones.values() if v > 0]
     min_points = min(non_zero_values) if non_zero_values else 1
 
-    # Custom color maps
+    # Custom color maps with increased contrast
     if zone_type == 'strong':
-        colors = ['#E6FFE6', '#66FF66', '#00CC00', '#008000']
+        colors = ['#E6FFE6', '#66FF66', '#00CC00', '#006400']
     else:
-        colors = ['#FFE6E6', '#FF9999', '#FF3333', '#CC0000']
+        colors = ['#FFE6E6', '#FF9999', '#FF3333', '#8B0000']
     n_bins = 100
     cmap = LinearSegmentedColormap.from_list('custom', colors, N=n_bins)
 
@@ -198,18 +198,18 @@ def plot_player_zones_improved(directory_path, player_id, zone_type='strong'):
             
             if zone_id in [1, 2]:  # Lobby zones
                 if zone_id == 1:  # Left lobby
-                    wedge = Wedge((1, court_length / 2), 1.2, 90, 270, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
+                    wedge = Wedge((1, court_length / 2), 0.9, 90, 270, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
                 else:  # Right lobby
-                    wedge = Wedge((court_width - 1, court_length / 2), 1.2, 270, 90, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
+                    wedge = Wedge((court_width - 1, court_length / 2), 0.9, 270, 90, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
                 ax.add_patch(wedge)
             else:  # Inner court zones
-                circle = Circle((zone_x, zone_y), 1.2, fill=True, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
+                circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
                 ax.add_patch(circle)
             
-            ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='white', fontsize=12, fontweight='bold', zorder=6)
+            ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='white', fontsize=10, fontweight='bold', zorder=6)
 
     # Set title
-    plt.title(f"{player_data['name']} - Season {zone_type.capitalize()} Zones", fontsize=18, fontweight='bold', pad=20)
+    plt.title(f"{player_data['name']} - Season {zone_type.capitalize()} Zones", fontsize=16, fontweight='bold', pad=20)
 
     # Set axis limits and remove ticks
     ax.set_xlim(0, court_width)
