@@ -227,39 +227,39 @@ class KabaddiDataAPI:
 
     def get_team_info(self, team_id, season='overall'):
         """
-            Retrieve team information for a specific team and season.
+        Retrieve team information for a specific team and season.
 
-            This function fetches aggregated statistics, raider skills, and defender skills
-            for a given team in a specified season or across all seasons.
+        This function fetches aggregated statistics, raider skills, and defender skills
+        for a given team in a specified season or across all seasons.
 
-            Parameters:
-            -----------
-            team_id : int
-                The unique identifier for the team.
-            season : str or int, optional
-                The season for which to retrieve data. Can be:
-                - 'overall' (default): Retrieves data across all seasons.
-                - int: A specific season number.
+        Parameters:
+        -----------
+        team_id : int
+            The unique identifier for the team.
+        season : str or int, optional
+            The season for which to retrieve data. Can be:
+            - 'overall' (default): Retrieves data across all seasons.
+            - int: A specific season number.
 
-            Returns:
-            --------
-            tuple
-                A tuple containing five elements:
-                1. df_rank (DataFrame): Team rankings in various categories.
-                2. df_value (DataFrame): Raw statistic values for the team.
-                3. df_per_match (DataFrame): Per-match statistics for the team.
-                4. filtered_team_raider_skills (DataFrame or None): Raider skills data for the team.
-                5. filtered_team_defender_skills (DataFrame or None): Defender skills data for the team.
+        Returns:
+        --------
+        tuple
+            A tuple containing five elements:
+            1. df_rank (DataFrame): Team rankings in various categories.
+            2. df_value (DataFrame): Raw statistic values for the team.
+            3. df_per_match (DataFrame): Per-match statistics for the team.
+            4. filtered_team_raider_skills (DataFrame or None): Raider skills data for the team.
+            5. filtered_team_defender_skills (DataFrame or None): Defender skills data for the team.
 
-            Notes:
-            ------
-            - If season is 'overall', raider and defender skills data are not returned (set to None).
-            - For a specific season, all DataFrames are transposed for easier reading.
-            - If no data is found for the specified team and season, all return values will be None.
+        Notes:
+        ------
+        - If season is 'overall', raider and defender skills data are not returned (set to None).
+        - For a specific season, all DataFrames are transposed for easier reading.
+        - If no data is found for the specified team and season, all return values will be None.
 
-            Raises:
-            -------
-            ValueError: If the input types are incorrect or if the season is invalid.
+        Raises:
+        -------
+        ValueError: If the input types are incorrect or if the season is invalid.
         """
         if season != 'overall':
             season = int(season)
@@ -383,6 +383,51 @@ class KabaddiDataAPI:
 
 
     def build_team_roster(self, team_id, season):
+        """
+        Build a roster for a specific team in a given season.
+
+        This function aggregates player data across all matches for the specified team and season,
+        creating a comprehensive roster with various statistics for each player.
+
+        Parameters:
+        -----------
+        team_id : int
+            The unique identifier for the team.
+        season : int
+            The season number for which to build the roster.
+
+        Returns:
+        --------
+        pandas.DataFrame
+            A DataFrame containing the team roster with the following columns:
+            - Player ID: Unique identifier for the player
+            - Name: Player's name
+            - Jersey Number: Player's jersey number
+            - Captain Count: Number of times the player was captain
+            - Played Count: Number of matches played
+            - Green Card Count: Number of green cards received
+            - Yellow Card Count: Number of yellow cards received
+            - Red Card Count: Number of red cards received
+            - Starter Count: Number of times the player started a match
+            - Top Raider Count: Number of times the player was top raider
+            - Top Defender Count: Number of times the player was top defender
+            - Total Points: Total points scored by the player
+            - Team ID: The team's unique identifier
+            - Team Name: The team's name
+            - Total Matches in Season: Total number of matches played by the team in the season
+
+        Notes:
+        ------
+        - The function reads match data from JSON files in the './MatchData_pbp' directory.
+        - If no data is found for the specified season, an empty DataFrame is returned.
+        - The function aggregates data across all matches, updating player statistics cumulatively.
+
+        Raises:
+        -------
+        FileNotFoundError: If the directory for the specified season is not found.
+        JSONDecodeError: If there's an issue parsing the JSON files.
+        """
+    # ... (rest of the function implementation remains the same)
         
         roster = {}
         team_id = int(team_id)
@@ -451,22 +496,50 @@ class KabaddiDataAPI:
 
     def get_player_info(self, player_id, season=None):
         """
-            Retrieve comprehensive information for a specific player in a given season.
+        Retrieve comprehensive player information for a specific season.
 
-            Parameters:
-            player_id : int
-                The unique identifier for the player.
-            season : int, optional
-                The season number for which to retrieve player information. Uses the latest available season by default.
+        This function aggregates data from multiple sources to provide a detailed
+        overview of a player's performance in a given season.
 
-            Returns:
-            tuple of pandas.DataFrame
-                A tuple containing four DataFrames:
-                1. player_stats_df_rank: Player's rankings in various categories
-                2. player_stats_df_value: Player's raw statistic values
-                3. player_stats_df_per_match: Player's per-match statistics
-                4. rvd_extracted_df: Player's performance against different numbers of defenders
-"""
+        Parameters:
+        -----------
+        player_id : int
+            The unique identifier for the player.
+        season : int, optional
+            The season number for which to retrieve data. If not specified,
+            the latest season available in the data will be used.
+
+        Returns:
+        --------
+        tuple
+            A tuple containing four pandas DataFrames:
+            1. player_stats_df_rank (DataFrame): Player's ranking statistics.
+            2. player_stats_df_value (DataFrame): Player's value statistics.
+            3. player_stats_df_per_match (DataFrame): Player's per-match statistics.
+            4. rvd_extracted_df (DataFrame): Raider vs. Defender statistics.
+
+        Each DataFrame is transposed (T) for easier reading.
+
+        Notes:
+        ------
+        - The function aggregates data from various CSV files containing player statistics,
+        raider vs. defender data, defender success rates, raider success rates, and lineup information.
+        - If data is not available for the specified player or season in any of the source files,
+        appropriate warning messages will be printed.
+        - The function handles data type conversions and missing value imputations to ensure
+        consistent processing across different data sources.
+
+        Raises:
+        -------
+        FileNotFoundError: If any of the required data files are not found.
+        ValueError: If there are issues with data type conversions.
+
+        Example:
+        --------
+        >>> api = KabaddiDataAPI()
+        >>> rank_df, value_df, per_match_df, rvd_df = api.get_player_info(player_id=660, season=9)
+        """
+
         player_id = int(player_id)
         file_path = "./Player-Wise-Data/all_seasons_player_stats_rounded.csv"
         df = pd.read_csv(file_path)
@@ -579,17 +652,7 @@ class KabaddiDataAPI:
 
 
     def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
-        """
-        Get the full data for a specific match.
-
-        Args:
-            season (str): The season name.
-            match_id (str): The match ID.
-
-        Returns:
-            Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
-            A tuple containing match detail, teams, events, zones, team1, and team2 DataFrames.
-        """
+        
 
         # print(f"Loading match details for season {season} and match ID {match_id}")
 

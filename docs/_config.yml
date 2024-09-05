@@ -58,7 +58,7 @@ aux_links_new_tab: true
 enable_copy_code_button: true
 
 
-permalink: pretty
+#permalink: pretty
 
 nav_external_links:
   - title: ProKabaddi Official Website
@@ -92,7 +92,7 @@ callouts:
     color: red
 
 
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
+#kramdown:
+#  syntax_highlighter_opts:
+#    block:
+#      line_numbers: true
