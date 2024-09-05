@@ -122,6 +122,46 @@ class KabaddiDataAPI:
 
 
     def get_season_matches(self, season="all"):
+        """
+        Retrieve match data for a specific season or all seasons.
+
+        This function loads match data from JSON files and returns it as a pandas DataFrame.
+
+        Parameters:
+        -----------
+        season : str or int, optional
+            The season number for which to retrieve match data. 
+            Use "all" to retrieve data for all seasons (default).
+            If a specific season is desired, provide the season number as a string or integer.
+
+        Returns:
+        --------
+        pandas.DataFrame
+            A DataFrame containing match details with the following columns:
+            - Season: The season number
+            - Match_ID: Unique identifier for the match
+            - Match_Name: Name of the match event
+            - League_Stage: Stage of the league (e.g., group stage, playoffs)
+            - Year: Year of the match
+            - Venue: Location where the match was played
+            - Match_Outcome: Outcome of the match
+            - Start_Date: Start date and time of the match
+            - End_Date: End date and time of the match
+            - Result: Result code of the match
+            - Winning Margin: Margin of victory
+            - team_score_1: Score of the first team
+            - team_score_2: Score of the second team
+            - team_name_1: Name of the first team
+            - team_id_1: ID of the first team
+            - team_name_2: Name of the second team
+            - team_id_2: ID of the second team
+
+        Notes:
+        ------
+        - The function reads data from JSON files located in the './Matches-Overview/' directory.
+        - For "all" seasons, it sorts the files based on the season number extracted from the filename.
+        - Each row in the returned DataFrame represents a single match.
+        """
         
         matches_list = []
 
@@ -187,28 +227,40 @@ class KabaddiDataAPI:
 
     def get_team_info(self, team_id, season='overall'):
         """
-            Retrieve comprehensive information for a specific team in a given season or overall.
+            Retrieve team information for a specific team and season.
+
+            This function fetches aggregated statistics, raider skills, and defender skills
+            for a given team in a specified season or across all seasons.
 
             Parameters:
+            -----------
             team_id : int
                 The unique identifier for the team.
             season : str or int, optional
-                The season for which to retrieve team information.
-                Use 'overall' for aggregated stats across all seasons (default),
+                The season for which to retrieve data. Can be:
+                - 'overall' (default): Retrieves data across all seasons.
+                - int: A specific season number.
 
             Returns:
-            tuple of pandas.DataFrame or None
+            --------
+            tuple
                 A tuple containing five elements:
-                1. df_rank: Team's rankings in various categories
-                2. df_value: Team's raw statistic values
-                3. df_per_match: Team's per-match statistics
-                4. filtered_team_raider_skills: Team's raider skill statistics (None for 'overall')
-                5. filtered_team_defender_skills: Team's defender skill statistics (None for 'overall')
+                1. df_rank (DataFrame): Team rankings in various categories.
+                2. df_value (DataFrame): Raw statistic values for the team.
+                3. df_per_match (DataFrame): Per-match statistics for the team.
+                4. filtered_team_raider_skills (DataFrame or None): Raider skills data for the team.
+                5. filtered_team_defender_skills (DataFrame or None): Defender skills data for the team.
 
-                Returns (None, None, None, None, None) if no data is found for the specified team and season.
-    """
+            Notes:
+            ------
+            - If season is 'overall', raider and defender skills data are not returned (set to None).
+            - For a specific season, all DataFrames are transposed for easier reading.
+            - If no data is found for the specified team and season, all return values will be None.
 
-
+            Raises:
+            -------
+            ValueError: If the input types are incorrect or if the season is invalid.
+        """
         if season != 'overall':
             season = int(season)
         
@@ -288,87 +340,50 @@ class KabaddiDataAPI:
 
     def get_team_matches(self, season, team_id :str):
         """
-            Retrieve all matches for a specific team in a given season.
+        Retrieve all matches for a specific team in a given season.
 
-            Parameters:
-            season : int
-                The season number for which to retrieve matches.
-            team_id : str
-                The unique identifier for the team, as a string.
+        This function filters the season's matches to return only those involving the specified team.
 
-            Returns:
-            pandas.DataFrame
-                A DataFrame containing all matches in the specified season where the given team
-                participated, either as team 1 or team 2.
-        """
-        df = self.get_season_matches(season=season)
+        Parameters:
+        -----------
+        season : int or str
+            The season number for which to retrieve matches.
+        team_id : str
+            The unique identifier for the team.
+
+        Returns:
+        --------
+        pandas.DataFrame
+            A DataFrame containing match details for the specified team, including:
+            - Match_ID: Unique identifier for the match
+            - Match_Name: Name of the match event
+            - Start_Date: Start date and time of the match
+            - Venue: Location where the match was played
+            - team_name_1, team_id_1: Name and ID of the first team
+            - team_name_2, team_id_2: Name and ID of the second team
+            - team_score_1, team_score_2: Scores of both teams
+            - And other relevant match information
+
+        Notes:
+        ------
+        - The function internally calls `get_season_matches` to fetch all matches for the season.
+        - Matches are filtered to include only those where the specified team_id appears as either team_id_1 or team_id_2.
+
+        Raises:
+        -------
+        ValueError: If the season or team_id is invalid or not found in the data.
+    """
+
+        season_matches = self.get_season_matches(season=season)
 
         team_id = str(team_id)
-        df = df[(df['team_id_1'] == team_id) | (df['team_id_2'] == team_id)]
+        team_season_matches = season_matches[(season_matches['team_id_1'] == team_id) | (season_matches['team_id_2'] == team_id)]
 
+        return team_season_matches
 
-        # print(df.columns)
-        return df
-
-        # matches_list = []
-
-        # # Determine the file(s) to load based on the season input
-        # if season == "all":
-        #     files = glob.glob('./Matches-Overview/S*_PKL_MatchData.json')
-        # else:
-        #     files = [f'./Matches-Overview/S{season}_PKL_MatchData.json']
-
-        # for file in files:
-        #     with open(file) as f:
-        #         data = json.load(f)
-
-        #     # Loop over each match in the file
-        #     for match in data['matches']:
-        #         if match['participants'][0]['id']==team_id or  match['participants'][1]['id']==team_id:
-        #             match_details = {
-        #                 "Match Name": match['event_name'],
-        #                 'Match ID': match['game_id'],
-        #                 "Tour Name": match['tour_name'],
-        #                 "Venue": match['venue_name'],
-        #                 'Match_Outcome': match['event_sub_status'],
-        #                 "Date": match['start_date'],
-        #                 "Result": match['event_sub_status'],
-        #                 "Winning Margin": match['winning_margin']
-        #             }
-        #             matches_list.append(match_details)
-        #     df = pd.DataFrame(matches_list)
-        #     return df
-    
 
     def build_team_roster(self, team_id, season):
-        """
-            Build a roster for a specific team in a given season.
-
-            Parameters:
-            team_id : int
-                The unique identifier for the team.
-            season : int
-                The season number for which to build the roster.
-
-            Returns:
-            pandas.DataFrame
-                A DataFrame containing the roster information with the following columns:
-                - Player ID
-                - Name
-                - Jersey Number
-                - Captain Count
-                - Played Count
-                - Green Card Count
-                - Yellow Card Count
-                - Red Card Count
-                - Starter Count
-                - Top Raider Count
-                - Top Defender Count
-                - Total Points
-                - Team ID
-                - Team Name
-                - Total Matches in Season
-"""
+        
         roster = {}
         team_id = int(team_id)
         team_name = ""
