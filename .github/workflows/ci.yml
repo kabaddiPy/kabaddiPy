@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - 'docs/**'
+  pull_request:
+    paths:
+      - 'docs/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+          cache-version: 0
+          working-directory: '${{ github.workspace }}/docs'
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+      - name: List built files
+        run: ls -R _site
