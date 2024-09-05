@@ -320,11 +320,6 @@ def plot_team_zones(directory_path, team_id, zone_type='strong'):
     plt.show()
 
 
-# def load_json_data(file_path):
-#     with open(file_path, 'r') as file:
-#         return json.load(file)
-
-
 
 def plot_point_progression(file_path):
     # Load the JSON data

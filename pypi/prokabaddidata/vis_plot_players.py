@@ -1,42 +1,18 @@
 from math import ceil
-
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.patches import Rectangle, Circle
 import json
 import os
-import matplotlib.pyplot as plt
-from matplotlib.patches import Circle
-from matplotlib import cm
-import numpy as np
-import matplotlib.pyplot as plt
-import numpy as np
 from matplotlib.patches import Rectangle, Circle, Wedge
 from matplotlib.colors import LinearSegmentedColormap
 from matplotlib import cm
-
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+from matplotlib.patches import Patch
+import numpy as np
 
 
 def load_json_data(file_path):
     with open(file_path, 'r') as file:
         return json.loads(file.read())
-
-
-# def get_zone_coordinates(zone_id, court_width, court_length):
-#     zones = {
-#         1: (0.5, court_length / 2),  # Left Lobby
-#         2: (court_width - 0.5, court_length / 2),  # Right Lobby
-#         3: (court_width / 4, court_length - 0.5),  # Midline Left
-#         4: (court_width / 2, court_length - 0.5),  # Midline Centre
-#         5: (3 * court_width / 4, court_length - 0.5),  # Midline Right
-#         6: (court_width / 4, (3 * court_length / 4) - 0.5),  # Baulk Left
-#         7: (court_width / 2, (3 * court_length / 4) - 0.5),  # Baulk Centre
-#         8: (3 * court_width / 4, (3 * court_length / 4) - 0.5),  # Baulk Right
-#         9: (court_width / 4, 0.5),  # Bonus Left
-#         10: (court_width / 2, 0.5),  # Bonus Centre
-#         11: (3 * court_width / 4, 0.5),  # Bonus Right
-#     }
-#     return zones.get(zone_id, (court_width / 2, court_length / 2))
 
 
 def aggregate_player_data(directory_path, player_id):
@@ -353,60 +329,104 @@ def plot_team_zones(team_id, season, zone_type='strong'):
     plt.show()
 
 
-# def load_json_data(file_path):
-#     with open(file_path, 'r') as file:
-#         return json.load(file)
-
 def plot_point_progression(file_path):
     # Load the JSON data
     data = load_json_data(file_path)
-    teams = data['gameData']['teams']
-
-    # team1_id = 31
-    # team2_id = 2
+    teams = data['gameData'].get('teams', [])
     events = data['gameData']['events']['event']
 
     team1_id = None
     team2_id = None
     team1_total_points = [0]
     team2_total_points = [0]
+    raid_events = []
 
-    for event in events:
+    for i, event in enumerate(events):
         if team1_id is None:
             team1_id = event['raiding_team_id']
         if team2_id is None:
             team2_id = event['defending_team_id']
+
         if 'raid_points' in event:
-            if event['raid_points'] > 0:
-                if event['raiding_team_id'] == team1_id:
-                    team1_total_points.append(team1_total_points[-1] + event['raid_points'])
-                    team2_total_points.append(team2_total_points[-1] + event['defending_points'])
-                else:
-                    team1_total_points.append(team1_total_points[-1] + event['defending_points'])
-                    team2_total_points.append(team2_total_points[-1] + event['raid_points'])
-            elif event['defending_points'] > 0:
-                if event['defending_team_id'] == team1_id:
-                    team1_total_points.append(team1_total_points[-1] + event['defending_points'])
-                    team2_total_points.append(team2_total_points[-1] + event['raid_points'])
-                else:
-                    team1_total_points.append(team1_total_points[-1] + event['raid_points'])
-                    team2_total_points.append(team2_total_points[-1] + event['defending_points'])
+            if event['raid_points'] > 0 or event['defending_points'] > 0:
+                raid_events.append(i)
+
+            if event['raiding_team_id'] == team1_id:
+                team1_total_points.append(team1_total_points[-1] + event['raid_points'])
+                team2_total_points.append(team2_total_points[-1] + event['defending_points'])
             else:
-                team1_total_points.append(team1_total_points[-1])
-                team2_total_points.append(team2_total_points[-1])
+                team1_total_points.append(team1_total_points[-1] + event['defending_points'])
+                team2_total_points.append(team2_total_points[-1] + event['raid_points'])
         else:
             team1_total_points.append(team1_total_points[-1])
             team2_total_points.append(team2_total_points[-1])
 
+    # Create the plot
+    fig, ax = plt.subplots(figsize=(15, 8))
     x = range(len(team1_total_points))
-    plt.figure(figsize=(12, 6))
-    plt.plot(x, team1_total_points, label=f'Team {team1_id}')
-    plt.plot(x, team2_total_points, label=f'Team {team2_id}')
-    plt.xlabel('Event')
-    plt.ylabel('Total Points')
-    plt.title('Team Point Progression')
-    plt.legend()
+
+    # Plot the lines with gradients
+    team1_color = '#FF9999'
+    team2_color = '#66B2FF'
+
+    ax.plot(x, team1_total_points, label=f'Team {team1_id}', color=team1_color, linewidth=2.5)
+    ax.plot(x, team2_total_points, label=f'Team {team2_id}', color=team2_color, linewidth=2.5)
+
+    # Fill the area under the curves
+    ax.fill_between(x, team1_total_points, alpha=0.3, color=team1_color)
+    ax.fill_between(x, team2_total_points, alpha=0.3, color=team2_color)
+
+    # Highlight raid events
+    for raid in raid_events:
+        ax.axvline(x=raid, color='gray', alpha=0.3, linestyle='--')
+
+    # Customize the plot
+    ax.set_xlabel('Events', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Total Points', fontsize=12, fontweight='bold')
+    ax.set_title('Kabaddi Match Point Progression', fontsize=16, fontweight='bold')
+
+    # Add a grid
+    ax.grid(True, linestyle='--', alpha=0.7)
+
+    # Customize tick labels
+    ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+    ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+
+    # Add team names to the legend
+    team1_name = get_team_name(teams, team1_id)
+    team2_name = get_team_name(teams, team2_id)
+    legend_elements = [
+        Patch(facecolor=team1_color, edgecolor=team1_color, label=f'{team1_name} (Team {team1_id})'),
+        Patch(facecolor=team2_color, edgecolor=team2_color, label=f'{team2_name} (Team {team2_id})')
+    ]
+    ax.legend(handles=legend_elements, loc='upper left', fontsize=10)
+
+    # Add final scores
+    final_score_text = f"Final Score: {team1_name} {team1_total_points[-1]} - {team2_total_points[-1]} {team2_name}"
+    ax.text(0.5, -0.1, final_score_text, ha='center', va='center', transform=ax.transAxes, fontsize=12,
+            fontweight='bold')
+
+    # Add annotations for significant point differences
+    max_diff = max(abs(np.array(team1_total_points) - np.array(team2_total_points)))
+    threshold = max_diff * 0.9
+    for i in range(1, len(team1_total_points)):
+        diff = team1_total_points[i] - team2_total_points[i]
+        if abs(diff) >= threshold:
+            ax.annotate(f"Δ{abs(diff)}", (i, max(team1_total_points[i], team2_total_points[i])),
+                        xytext=(0, 10), textcoords='offset points', ha='center', va='bottom',
+                        bbox=dict(boxstyle='round,pad=0.5', fc='yellow', alpha=0.5),
+                        arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0'))
+
+    plt.tight_layout()
     plt.show()
+
+
+def get_team_name(teams, team_id):
+    """Helper function to get team name safely."""
+    for team in teams:
+        if isinstance(team, dict) and team.get('id') == team_id:
+            return team.get('name', f'Team {team_id}')
+    return f'Team {team_id}'
 
 
 def create_player_zone_subplots(df, season):
@@ -431,15 +451,14 @@ def create_player_zone_subplots(df, season):
 
 if __name__=="__main__":
 
-    #directory_path = r"C:\Users\KIIT\Documents\ProKabaddi_API\pypi\prokabaddidata\MatchData_pbp\other-data\old_data\Season_PKL_Season_5_2017"
     directory_path = r"./MatchData_pbp/Season_PKL_Season_5_2017"
     player_id = 143  # Example: Deepak Hooda
 
     plot_player_zones_improved(player_id,season=5,zone_type='strong')
-    # plot_player_zones_improved(directory_path,player_id,zone_type='weak')
-    # player_data, strong_zones, weak_zones = aggregate_player_data(directory_path, player_id)
-    # print(strong_zones)
+    plot_player_zones_improved(player_id, season=5, zone_type='weak')
+    player_data, strong_zones, weak_zones = aggregate_player_data(directory_path, player_id)
+    print(strong_zones)
     plot_team_zones(5,season=5, zone_type='strong')
     plot_team_zones(5,season=5, zone_type='weak')
 
-    # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json")
+    plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json")
