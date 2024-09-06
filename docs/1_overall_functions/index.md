@@ -6,6 +6,12 @@ has_children: false
 nav_order: 2
 ---
 
+#### Table of contents
+
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 
 # Get PKL Standings 
