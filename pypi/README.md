@@ -25,14 +25,10 @@ Deployed here: https://pypi.org/project/kabaddiPy/
 </div>
 
 
-For more complicated examples, including how to visualize the data, check out the [examples](https://github.com/kabaddiPy/kabaddiPy/tree/main/examples) directory.
-
-
-
-
 ## Usage
 
-Here's a quick minimal example of how to get started with the Kabaddi Data Aggregator:
+Here's a quick minimal example of how to get started with the `kabaddiPy` package:
+
 
 ```python
 import kabaddiPy
@@ -47,6 +43,7 @@ print(team_roster)
 
 For more detailed usage instructions and API documentation, please refer to our [documentation page](https://kabaddipy.github.io/kabaddiPy/).
 
+For more complicated examples, check out the [examples](https://github.com/kabaddiPy/kabaddiPy/tree/main/examples) directory.
 
 
 ## Features
