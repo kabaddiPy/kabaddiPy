@@ -121,7 +121,6 @@ def internal_plot_player_zones_grid(player_id, season, zone_type='strong', fig=N
     # plt.show()
     return fig, ax
 
-
 def internal_aggregate_player_data(directory_path, player_id):
     player_data = None
     strong_zones = {i: 0 for i in range(1, 12)}
@@ -147,7 +146,6 @@ def internal_aggregate_player_data(directory_path, player_id):
                             weak_zones[zone['zone_id']] += zone['points']
 
     return player_data, strong_zones, weak_zones
-
 
 def plot_player_zones_improved(player_id, season, zone_type='strong'):
     season_directories = {
