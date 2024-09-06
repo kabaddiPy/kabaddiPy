@@ -25,6 +25,10 @@ Deployed here: https://pypi.org/project/kabaddiPy/
 </div>
 
 
+For more complicated examples, including how to visualize the data, check out the [examples](https://github.com/kabaddiPy/kabaddiPy/tree/main/examples) directory.
+
+
+
 
 ## Usage
 
