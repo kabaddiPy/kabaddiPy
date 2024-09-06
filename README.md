@@ -17,12 +17,15 @@ pip install kabaddiPy
 Deployed here: https://pypi.org/project/kabaddiPy/
 
 
-## Function Overview
+## Quick Function Overview
 
 
 <div align=center">
 <img width="800" alt="Function Overview" src="https://github.com/user-attachments/assets/b1ceed1a-48d9-409c-8f6b-b188eaaf9733" >
 </div>
+
+
+
 
 
 
@@ -109,6 +112,7 @@ If you have any questions, feel free to reach out to [Aniruddha Mukherjee](mailt
 
 <p align="center">
   Made with ❤️ for Kabaddi enthusiasts and data analysts
+
+  Please ⭐️ this repository if you found it helpful! Your support is greatly appreciated. :)
 </p>
 
-Please star this repository if you found it helpful! Your support is greatly appreciated.
