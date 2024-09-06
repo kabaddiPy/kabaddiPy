@@ -1490,11 +1490,16 @@ class PKL:
 
     def plot_point_progression(self, season, match_id):
         # file_path = resource_filename(__name__,"./MatchData_pbp/")
-        file_path = importlib_resources.files('kabaddiPy').joinpath("./MatchData_pbp")
 
-        for dir in os.listdir(file_path):
+        # print("----------------dafsdafsdfsdf-----------")
+        file_path = importlib_resources.files('kabaddiPy').joinpath("./MatchData_pbp/")
+        # print("----------------")
+        # print(file_path)
+        # print("----------------")
+
+        for dir in os.listdir(str(file_path)):
             if f"Season_{season}" in dir:
-                file_path = file_path + dir + "/"
+                file_path = str(file_path) + "/" + dir + "/"
                 break
 
         for match in os.listdir(file_path):
@@ -1504,38 +1509,116 @@ class PKL:
         # print(file_path)
 
         data = self.internal_load_json_data(file_path)
-        teams = data['gameData'].get('teams', [])
-        events = data['gameData']['events']['event']
+
+        if data['gameData']:
+            data=data['gameData']
+
+        home_team_id = int(data.get('teams',[]).get('home_team_id'))
+
+        teams = data.get('teams', []).get("team", [])
+
+        # print(teams)
+
+        team_pts_dict = {}
+
+        for t in teams:
+            team_pts_dict[int(t.get('id'))] = [0]
+
+        
+
+        # print("^^^^^^^^^^^^")
+
+
+        events = data['events']['event']
 
         team1_id = None
         team2_id = None
-        team1_total_points = [0]  # Starting from 0 for Team 1
-        team2_total_points = [0]  # Starting from 0 for Team 2
+        # team1_total_points = [0]  # Starting from 0 for Team 1
+        # team2_total_points = [0]  # Starting from 0 for Team 2
         raid_events = []
+        keys_ = list(team_pts_dict.keys())
 
         for i, event in enumerate(events):
-            if team1_id is None:
-                team1_id = event['raiding_team_id']
-            if team2_id is None:
-                team2_id = event['defending_team_id']
+            # if team1_id is None:
+            #     team1_id = event['raiding_team_id']
+            # if team2_id is None:
+            #     team2_id = event['defending_team_id']
 
-            if 'raid_points' in event:
-                if event['raid_points'] > 0 or event['defending_points'] > 0:
-                    raid_events.append(i)
+            if int(event['event_id']) == 1:
 
-                if event['raiding_team_id'] == team1_id:
-                    team1_total_points.append(team1_total_points[-1] + event['raid_points'])
-                    team2_total_points.append(team2_total_points[-1] + event['defending_points'])
+                raid_events.append(i)
+                # print("*&*&*&*&*&*&*&*&*&*&")
+                # print(f"event['event_no']: {event['event_no']}")
+                # print(f"event['event_id']: {event['event_id']}")
+                # print(f"event['event_text']: {event['event_text']}")
+                # print(f"event['score']: {event['score']}")
+
+
+
+
+            # print()
+            # print(f"event['event_no']: {event['event_no']}")
+            # print(f"event['event_id']: {event['event_id']}")
+            # print(f"event['event_text']: {event['event_text']}")
+            if event['score'] is not None:
+                # print(f"event['score']: {event['score']}")
+                pass
+            
+            # print("key: ", keys_[0], "value: ", team_pts_dict[keys_[0]])
+            # print("key: ", keys_[1], "value: ", team_pts_dict[keys_[1]])
+            # print("--------------------------------\n")
+
+            if "raiding_team_id" in event:
+                # print(f"event['raiding_team_id']: {event['raiding_team_id']}")
+                # print(f"event['defending_team_id']: {event['defending_team_id']}")
+                # print(f"home_team_id: {home_team_id}")
+
+                if int(event['raiding_team_id']) == home_team_id:
+                    team_pts_dict[int(event['raiding_team_id'])].append(event['score'][0])
+                    team_pts_dict[int(event['defending_team_id'])].append(event['score'][1])
+
                 else:
-                    team1_total_points.append(team1_total_points[-1] + event['defending_points'])
-                    team2_total_points.append(team2_total_points[-1] + event['raid_points'])
+                    team_pts_dict[int(event['defending_team_id'])].append(event['score'][0])
+                    team_pts_dict[int(event['raiding_team_id'])].append(event['score'][1])
+            
             else:
-                team1_total_points.append(team1_total_points[-1])
-                team2_total_points.append(team2_total_points[-1])
+                # print("no raiding_team_id, so subs or other")
+                team_pts_dict[keys_[0]].append(team_pts_dict[keys_[0]][-1])
+                team_pts_dict[keys_[1]].append(team_pts_dict[keys_[1]][-1])
+
+
+
+            # if 'raid_points' in event: # to-remove-subs
+
+            #     print("raid-points-in-event")
+            #     print(f"event raid points: {event['raid_points']}", f"event defending points: {event['defending_points']}")
+
+
+            #     if event['raid_points'] > 0 or event['defending_points'] > 0:
+            #         raid_events.append(i)
+
+            #         # print(len(team_pts_dict[int(event['raiding_team_id'])]))
+            #         # print(team_pts_dict[int(event['raiding_team_id'])][-1])
+                    
+            #         print(f"event['raid_points']: {event['raid_points']}")
+            #         team_pts_dict[int(event['raiding_team_id'])].append(team_pts_dict[int(event['raiding_team_id'])][-1] + event['raid_points'])
+                    
+            #         team_pts_dict[int(event['defending_team_id'])].append(team_pts_dict[int(event['defending_team_id'])][-1] + event['defending_points'])
+                
+            #     else:
+            #         team_pts_dict[int(event['raiding_team_id'])].append(team_pts_dict[int(event['raiding_team_id'])][-1])
+                    
+            #         team_pts_dict[int(event['defending_team_id'])].append(team_pts_dict[int(event['defending_team_id'])][-1])
+
+            # else:
+
+            #     team_pts_dict[keys_[0]].append(team_pts_dict[keys_[0]][-1])
+            #     team_pts_dict[keys_[1]].append(team_pts_dict[keys_[1]][-1])
 
         # Create the plot
         fig, ax = plt.subplots(figsize=(15, 8))
-        x = range(len(team1_total_points))
+        x = range(len(team_pts_dict[keys_[0]])-1)
+        # _ = x.pop(0)
 
         # Plot the lines with gradients
         team1_color = '#FF9999'
@@ -1555,12 +1638,44 @@ class PKL:
             3: "Jaipur Pink Panthers"
         }
 
-        ax.plot(x, team1_total_points, label=f'Team {team_id_map[int(team1_id)]}', color=team1_color, linewidth=2.5)
-        ax.plot(x, team2_total_points, label=f'Team {team_id_map[int(team2_id)]}', color=team2_color, linewidth=2.5)
+        
+
+        team1_total_points = team_pts_dict[keys_[0]]
+        team2_total_points = team_pts_dict[keys_[1]]
+
+        
+
+        # print(len(team1_total_points))
+        # print(len(team2_total_points))
+        # print(len(events))
+        # print(len(x))
+
+
+
+        # print(sum(team1_total_points))
+        # print(sum(team2_total_points))
+        # print("-------")
+        # print(len(x))
+        # print("-------")
+        # print(team1_total_points.pop())
+
+        team1_total_points_plt = team1_total_points[:-1]
+        # print(len(team1_total_points))
+        # print(len(team1_total_points_plt))
+
+
+        # print(team2_total_points)
+        team2_total_points_plt = team2_total_points[:-1]
+        # print(len(team2_total_points))
+        # print(len(team2_total_points_plt))
+        # print("--------")
+
+        ax.plot(x, team1_total_points_plt, label=f'Team {team_id_map[int(keys_[0])]}', color=team1_color, linewidth=2.5)
+        ax.plot(x, team2_total_points_plt, label=f'Team {team_id_map[int(keys_[1])]}', color=team2_color, linewidth=2.5)
 
         # Fill the area under the curves
-        ax.fill_between(x, team1_total_points, alpha=0.3, color=team1_color)
-        ax.fill_between(x, team2_total_points, alpha=0.3, color=team2_color)
+        ax.fill_between(x, team1_total_points_plt, alpha=0.3, color=team1_color)
+        ax.fill_between(x, team2_total_points_plt, alpha=0.3, color=team2_color)
 
         # Highlight raid events
         for raid in raid_events:
@@ -1585,8 +1700,8 @@ class PKL:
         # Add team names to the legend
     # Create custom legend elements
         legend_elements = [
-            Patch(facecolor=team1_color, edgecolor=team1_color, label=f'{team_id_map[int(team1_id)]} (Team {team1_id})'),
-            Patch(facecolor=team2_color, edgecolor=team2_color, label=f'{team_id_map[int(team2_id)]} (Team {team2_id})'),
+            Patch(facecolor=team1_color, edgecolor=team1_color, label=f'{team_id_map[int(keys_[0])]} (Team {keys_[0]})'),
+            Patch(facecolor=team2_color, edgecolor=team2_color, label=f'{team_id_map[int(keys_[1])]} (Team {keys_[1]})'),
             Line2D([0], [0], color='gray', linestyle='--', label='Raid events'),
             Patch(facecolor='yellow', edgecolor='none', alpha=0.5, label='Significant point difference')
         ]
@@ -1594,8 +1709,27 @@ class PKL:
         # Add the legend to the plot
         ax.legend(handles=legend_elements, loc='upper left', fontsize=10, title='Legend', title_fontsize=12)
 
+        team1_flag = 0
+        team2_flag = 0
         # Add final scores
-        final_score_text = f"Final Score: {team_id_map[int(team1_id)]} {team1_total_points[-1]} - {team2_total_points[-1]} {team_id_map[int(team2_id)]}"
+        if team1_total_points[-1] >= team1_total_points_plt[-1]:
+            team1_flag = 1
+        if team2_total_points[-1] >= team2_total_points_plt[-1]:
+            team2_flag = 1
+
+        # print(f"team1_flag: {team1_flag}")
+        # print(f"team2_flag: {team2_flag}")
+
+        # if team1_flag == 1 and team2_flag == 1:
+        #     final_score_text = f"Final Score: {team_id_map[int(keys_[0])]} {team1_total_points[-1]} - {team2_total_points[-1]} {team_id_map[int(keys_[1])]}"
+        # elif team1_flag ==1 and team2_flag == 0:
+        #     final_score_text = f"Final Score: {team_id_map[int(keys_[0])]} {team1_total_points[-1]} - {team2_total_points_plt[-1]} {team_id_map[int(keys_[1])]}"
+        # elif team1_flag ==0 and team2_flag == 1:
+        #     final_score_text = f"Final Score: {team_id_map[int(keys_[0])]} {team1_total_points_plt[-1]} - {team2_total_points[-1]} {team_id_map[int(keys_[1])]}"
+        # else:
+        #     final_score_text = f"Final Score: {team_id_map[int(keys_[0])]} {team1_total_points_plt[-1]} - {team2_total_points_plt[-1]} {team_id_map[int(keys_[1])]}"
+
+        final_score_text = f"Final Score: {team_id_map[int(keys_[0])]} {max(team1_total_points)} - {max(team2_total_points)} {team_id_map[int(keys_[1])]}"
         ax.text(0.5, -0.1, final_score_text, ha='center', va='center', transform=ax.transAxes, fontsize=13,
                 fontweight='bold')
 
@@ -1604,7 +1738,7 @@ class PKL:
         threshold = max_diff * 0.95  # Highlight differences that are 95% of the maximum difference
 
         significant_diffs = []
-        for i in range(1, len(team1_total_points)):
+        for i in range(1, len(team1_total_points)-1):
             diff = team1_total_points[i] - team2_total_points[i]
             if abs(diff) >= threshold:
                 ax.annotate(f"Δ{abs(diff)}", (i, max(team1_total_points[i], team2_total_points[i])),
@@ -1672,12 +1806,7 @@ class PKL:
         # Adjust layout to prevent clipping of titles
         plt.tight_layout()
 
-        # The code is commented out using the `#` symbol in Python. It appears to be a line of code
-        # that is meant to save a plot generated by matplotlib using the `plt.savefig()` function. The
-        # filename for the saved plot is likely dynamically generated based on the `season` variable.
-        # The `bbox_inches='tight'` parameter ensures that the saved plot does not have extra
-        # whitespace around it, the `pad_inches=0` parameter sets the padding to 0, and the `dpi=400`
-        # parameter sets the resolution of the saved plot to 400 dots per inch.
+
         # plt.savefig(f"player_zones_grid_season_{season}.png", bbox_inches='tight', pad_inches=0, dpi=400)
 
 
@@ -1693,18 +1822,19 @@ if __name__ == "__main__":
     pkl = PKL()
 
 
+    # pkl.plot_point_progression(season=10, match_id=3163)
 
     # print(pkl.get_season_matches())
 
     # print("1. Testing get_pkl_standings".center(100, "-"))
-    # qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    # qualified_df, all_standings_df = pkl.get_standings(season=9, qualified=True)
     # print("Qualified teams:")
     # print(qualified_df)
     # print("\nAll standings:")
     # print(all_standings_df)
 
     # print("\n2. Testing get_season_matches".center(100, "-"))
-    # season_matches = api.get_season_matches(season=6)
+    # season_matches = pkl.get_season_matches(season=6)
     # print(season_matches.head())
 
     # print("\n3. Testing get_team_info".center(100, "-"))
