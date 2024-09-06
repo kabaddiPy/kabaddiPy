@@ -39,9 +39,10 @@ requires-python = ">=3.7"
 "Docs" = "https://kabaddipy.github.io/kabaddiPy/"
 "Source Code" = "https://github.com/kabaddiPy/kabaddiPy"
 
-[tool.setuptools]
-packages = ["find:"]
-include-package-data = true
 
 [tool.setuptools.package-data]
 "*" = ["*.json", "*.csv"]
+
+[tool.setuptools.packages.find]
+where = ["."]  # List of directories to search for packages
+include = ["kabaddiPy*"] 

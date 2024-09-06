@@ -2,3 +2,4 @@ pandas
 matplotlib
 seaborn
 jinja2
+importlib_resources
