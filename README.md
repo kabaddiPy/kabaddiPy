@@ -7,14 +7,14 @@ Kabaddi Data Aggregator is a Python module that provides tools for collecting an
 
 ## Installation 
 
-Please install the development version of `ProKabaddi_API` using pip:
+Please install the development version of `kabaddiPy` using pip:
 
 
 ```shell
-pip install pro_kabaddi_data
+pip install kabaddiPy
 ```
 
-Deployed here: https://pypi.org/project/pro-kabaddi-data/
+Deployed here: https://pypi.org/project/kabaddiPy/
 
 
 ## Usage
@@ -22,14 +22,12 @@ Deployed here: https://pypi.org/project/pro-kabaddi-data/
 Here's a quick minimal example of how to get started with the Kabaddi Data Aggregator:
 
 ```python
-from prokabaddidata import prokabaddidata
+import kabaddiPy
 
-# Initialize the aggregator
-api = kabaddiPy.KabaddiDataAPI()
 
 # Get all player information for a specific team
 players_info = api.get_team_matches(7, 4)
-
+g
 ```
 
 For more detailed usage instructions and API documentation, please refer to our [documentation page](https://github.com/kabaddiPy/kabaddiPy).

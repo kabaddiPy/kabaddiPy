@@ -139,7 +139,6 @@ class KabaddiDataAPI:
         return team_info_df
 
 
-
     def get_season_matches(self, season="all"):
         """
         Retrieve match data for a specific season or all seasons.
@@ -681,7 +680,7 @@ class KabaddiDataAPI:
         return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T, rvd_extracted_df.T
 
 
-    def get_detailed_player_info(self, player_id, season):
+    def get_matchwise_player_info(self, player_id, season):
         """
         Extract detailed player statistics from all matches in a given season.
 
@@ -1076,7 +1075,6 @@ class KabaddiDataAPI:
                                 weak_zones[zone['zone_id']] += zone['points']
 
         return player_data, strong_zones, weak_zones
-
 
 
     def internal_plot_player_zones_grid(self, player_id, season, zone_type='strong', fig=None, ax=None):
@@ -1684,8 +1682,8 @@ if __name__ == "__main__":
     # print("\nPlayer RVD:")
     # print(rvd_extracted_df)
 
-    # print("\n8. Testing get_detailed_player_info".center(100, "-"))
-    # detailed_player_info = api.get_detailed_player_info(player_id=197, season=9)
+    # print("\n8. Testing get_matchwise_player_info".center(100, "-"))
+    # detailed_player_info = api.get_matchwise_player_info(player_id=197, season=9)
     # print(detailed_player_info.head())
 
     # print("\n9. Testing load_match_details".center(100, "-"))
@@ -1765,11 +1763,11 @@ if __name__ == "__main__":
 
 
 
-    # print("Testing get_detailed_player_info".center(100, "-"))
+    # print("Testing get_matchwise_player_info".center(100, "-"))
     # player_id = 94
     # season = 6
     
-    # detailed_info = api.get_detailed_player_info(player_id, season)
+    # detailed_info = api.get_matchwise_player_info(player_id, season)
 
     # print(detailed_info)
     # detailed_info.to_csv("detailed_info.csv")

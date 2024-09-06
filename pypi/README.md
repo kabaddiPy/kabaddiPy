@@ -1,4 +1,4 @@
-| <img width="200" alt="kabaddi_api_logo" src="https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0"> | <h2>ProKabaddi API - Data collection and analysis tools for professional Kabaddi leagues</h3><p align="center"><a href="#features">Features</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#contributing">Contributing</a> • <a href="#license">License</a> • <a href="https://annimukherjee.github.io/ProKabaddi_API/">Documentation</a></p> |
+| <img width="200" alt="kabaddi_api_logo" src="https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0"> | <h2>kabaddiPy - Data collection and analysis tools for professional Kabaddi leagues</h3><p align="center"><a href="#features">Features</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#contributing">Contributing</a> • <a href="#license">License</a> • <a href="https://kabaddipy.github.io/kabaddiPy/">Documentation</a></p> |
 |:---:|:---|
 
 ---
@@ -11,10 +11,10 @@ Please install the development version of `ProKabaddi_API` using pip:
 
 
 ```shell
-pip install pro_kabaddi_data
+pip install kabaddiPy
 ```
 
-Deployed here: https://pypi.org/project/pro-kabaddi-data/
+Deployed here: https://pypi.org/project/kabaddiPy/
 
 
 ## Usage
@@ -22,17 +22,14 @@ Deployed here: https://pypi.org/project/pro-kabaddi-data/
 Here's a quick minimal example of how to get started with the Kabaddi Data Aggregator:
 
 ```python
-from prokabaddidata import prokabaddidata
-
-# Initialize the aggregator
-api = kabaddiPy.KabaddiDataAPI()
+import kabaddiPy
 
 # Get all player information for a specific team
-players_info = api.get_team_matches(7, 4)
+players_info = kabaddiPy.get_team_matches(7, 4)
 
 ```
 
-For more detailed usage instructions and API documentation, please refer to our [documentation page](https://github.com/kabaddiPy/kabaddiPy).
+For more detailed usage instructions and API documentation, please refer to our [documentation page](https://kabaddipy.github.io/kabaddiPy/).
 
 ## Features
 Here are our current features. New and better features are actively being developed!!
@@ -42,7 +39,7 @@ Here are our current features. New and better features are actively being develo
 ### Current season standings
 
 ```python
-standings = aggregator.team_season_standings(team=None, rank=None)
+standings = kabaddiPy.team_season_standings(team=None, rank=None)
 ```
 Return the current season rankings of all teams by default
 #### **Parameters**
@@ -51,14 +48,14 @@ Return the current season rankings of all teams by default
 
 ### Player Performance
 ```python
-stats = aggregator.player_performance("team="Bengal Warriors")
+stats = kabaddiPy.player_performance("team="Bengal Warriors")
 ```
 Returns career level player metrics. `team` should be specified.
 
 ### Loading Lifetime Data
 
 ```python
-player_df = aggregator.load_data(PlayerDetails=True, TeamDetails = False, TeamMembers = False)
+player_df = kabaddiPy.load_data(PlayerDetails=True, TeamDetails = False, TeamMembers = False)
 ```
 Defaults to loading lifetime player data for all teams.
 #### **Parameters**
