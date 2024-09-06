@@ -1100,12 +1100,12 @@ if __name__ == "__main__":
 
     # # ACTUAL TESTING ------------------------------------------------------------------------
 
-    print("1. Testing get_pkl_standings".center(150,"-"))
-    qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
-    print("Qualified teams:")
-    print(qualified_df)
-    print("\nAll standings:")
-    print(all_standings_df)
+    # print("1. Testing get_pkl_standings".center(150,"-"))
+    # qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    # print("Qualified teams:")
+    # print(qualified_df)
+    # print("\nAll standings:")
+    # print(all_standings_df)
 
     # print("\n2. Testing get_season_matches".center(150,"-"))
     # season_matches = api.get_season_matches(season=6)
@@ -1123,6 +1123,10 @@ if __name__ == "__main__":
     # print(filtered_team_raider_skills)
     # print("\nTeam Defender Skills:")
     # print(filtered_team_defender_skills)
+
+    team_ids = api.get_team_ids(season=5)
+    print("Team-IDs")
+    print(team_ids)
 
     # print("\n4. Testing get_team_matches".center(150,"-"))
     # team_matches = api.get_team_matches(season=9, team_id=3)

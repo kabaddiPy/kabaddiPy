@@ -11,7 +11,7 @@ nav_order: 2
 # Get PKL Standings 
 
 
-## `get_pkl_standings(season=None, qualified=False, team_id=None`
+## `get_pkl_standings(season=None, qualified=False, team_id=None)`
 
 
 Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
@@ -27,12 +27,12 @@ Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
 
 #### Returns:
 
-pandas.DataFrame or tuple of pandas.DataFrame
-    If qualified is False:
-        Returns a DataFrame containing standings for all teams.
-    If qualified is True:
-        Returns a tuple of two DataFrames:
-        (qualified_teams_standings, all_teams_standings)
+- pandas.DataFrame or tuple of pandas.DataFrame
+  - If qualified is False: 
+    - Returns a DataFrame containing standings for all teams.
+  - If qualified is True:
+    - Returns a tuple of two DataFrames:
+    (qualified_teams_standings, all_teams_standings)
 
 
 The DataFrame(s) include the following columns:
@@ -94,109 +94,66 @@ All standings:
 9   Main       9        6         Patna Pirates              10             22    8   11    3     0         0            54        -58      False
 10  Main       9        4       Bengal Warriorz              11             22    8   11    3     0         0            53        -12      False
 11  Main       9        8         Telugu Titans              12             22    2   20    0     0         0            15       -245      False
+```
+
+# Get PKL Matches
+
+## `get_season_matches(self, season="all")`
+
+Retrieve match data for a specific season or all seasons.
+
+This function loads match data from JSON files and returns it as a pandas DataFrame.
+
+#### Parameters
+
+- **season**: `str` or `int`, optional  
+  The season number for which to retrieve match data. Use `"all"` to retrieve data for all seasons (default). If a specific season is desired, provide the season number as a string or integer.
+
+#### Returns
+
+- **pandas.DataFrame**  
+  A DataFrame containing match details with the following columns:
+  - **Season**: The season number
+  - **Match_ID**: Unique identifier for the match
+  - **Match_Name**: Name of the match event
+  - **League_Stage**: Stage of the league (e.g., group stage, playoffs)
+  - **Year**: Year of the match
+  - **Venue**: Location where the match was played
+  - **Match_Outcome**: Outcome of the match
+  - **Start_Date**: Start date and time of the match
+  - **End_Date**: End date and time of the match
+  - **Result**: Result code of the match
+  - **Winning Margin**: Margin of victory
+  - **team_score_1**: Score of the first team
+  - **team_score_2**: Score of the second team
+  - **team_name_1**: Name of the first team
+  - **team_id_1**: ID of the first team
+  - **team_name_2**: Name of the second team
+  - **team_id_2**: ID of the second team
+
+#### Notes
+  - For `"all"` seasons, it sorts the files based on the season number extracted from the filename.
+  - Each row in the returned DataFrame represents a single match.
+
+
+### Example Usage
+
+```python
+    from kabaddiPy import KabaddiDataAPI as kabaddi
+
+    api = kabaddi()
+
+    season_matches = api.get_season_matches(season=6)
+    print(season_matches.head())
 
 ```
 
-    def get_season_matches(self, season="all"):
-        """
-        Retrieve match data for a specific season or all seasons.
-
-        This function loads match data from JSON files and returns it as a pandas DataFrame.
-
-        Parameters:
-        -----------
-        season : str or int, optional
-            The season number for which to retrieve match data. 
-            Use "all" to retrieve data for all seasons (default).
-            If a specific season is desired, provide the season number as a string or integer.
-
-        Returns:
-        --------
-        pandas.DataFrame
-            A DataFrame containing match details with the following columns:
-            - Season: The season number
-            - Match_ID: Unique identifier for the match
-            - Match_Name: Name of the match event
-            - League_Stage: Stage of the league (e.g., group stage, playoffs)
-            - Year: Year of the match
-            - Venue: Location where the match was played
-            - Match_Outcome: Outcome of the match
-            - Start_Date: Start date and time of the match
-            - End_Date: End date and time of the match
-            - Result: Result code of the match
-            - Winning Margin: Margin of victory
-            - team_score_1: Score of the first team
-            - team_score_2: Score of the second team
-            - team_name_1: Name of the first team
-            - team_id_1: ID of the first team
-            - team_name_2: Name of the second team
-            - team_id_2: ID of the second team
-
-        Notes:
-        ------
-        - The function reads data from JSON files located in the './Matches-Overview/' directory.
-        - For "all" seasons, it sorts the files based on the season number extracted from the filename.
-        - Each row in the returned DataFrame represents a single match.
-        """
-        
-        matches_list = []
-
-        # Determine the file(s) to load based on the season input
-        if season == "all":
-            files = glob.glob('./Matches-Overview/S*_PKL_MatchData.json')
-            # Sort the files based on the season number
-            files = sorted(files, key=lambda x: int(re.search(r'S(\d+)', x).group(1)))
-            print(files)
-
-        else:
-            files = [f'./Matches-Overview/S{season}_PKL_MatchData.json']
-
-        for file in files:
-            
-            with open(file) as f:
-                data = json.load(f)
-
-
-            for match in data['matches']:
-
-                team_name, team_id, team_score = [], [], []
-
-                for p in match['participants']:
-                    # print(p['name'])
-                    team_name.append(p['name'])
-                    team_id.append(p['id'])
-                    team_score.append(p['value'])
-
-
-                match_details = {
-                    "Season": match['tour_name'].split(",")[0].split(" ")[-1],
-                    'Match_ID': match['game_id'],
-                    "Match_Name": match['event_name'],
-                    "League_Stage": match['event_stage'],
-                    "Year": match['tour_name'].split(",")[1].strip(),
-                    "Venue": match['venue_name'].lower().title().strip(),
-                    'Match_Outcome': match['event_sub_status'],
-                    "Start_Date": match['start_date'],
-                    "End_Date": match['end_date'],
-                    "Result": match['result_code'],
-                    "Winning Margin": match['winning_margin'],
-                    'team_score_1': team_score[0],
-                    'team_score_2': team_score[1],
-                    'team_name_1': team_name[0],
-                    'team_id_1': team_id[0],
-                    'team_name_2': team_name[1],
-                    'team_id_2': team_id[1],
-                }
-
-                
-
-                matches_list.append(match_details)
-
-        # Convert the list of dictionaries into a DataFrame
-        df = pd.DataFrame(matches_list)
-
-        # df.to_csv("matches_data.csv")
-
-        # Display the DataFrame
-        return df
-
+Output:
+```
+  Season Match_ID Match_Name League_Stage  Year                                     Venue                  Match_Outcome              Start_Date                End_Date Result Winning Margin team_score_1 team_score_2        team_name_1 team_id_1       team_name_2 team_id_2
+0      6      625    Match 1       League  2018  Jawaharlal Nehru Indoor Stadium, Chennai  Tamil Thalaivas Won by 16 Pts  2018-10-07T20:00+05:30  2018-10-07T20:00+05:30      W             16           42           26    Tamil Thalaivas        29     Patna Pirates         6
+1      6      626    Match 2       League  2018  Jawaharlal Nehru Indoor Stadium, Chennai                                 2018-10-07T21:00+05:30  2018-10-07T21:00+05:30   Tied                          32           32      Puneri Paltan         7           U Mumba         5
+2      6      627    Match 3       League  2018  Jawaharlal Nehru Indoor Stadium, Chennai    Puneri Paltan Won by 12 Pts  2018-10-08T20:00+05:30  2018-10-08T20:00+05:30      W             12           34           22      Puneri Paltan         7  Haryana Steelers        28
+3      6      628    Match 4       League  2018  Jawaharlal Nehru Indoor Stadium, Chennai       U.P. Yoddha Won by 5 Pts  2018-10-08T21:00+05:30  2018-10-08T21:00+05:30      W              5           32           37    Tamil Thalaivas        29       U.P. Yoddha        30
+4      6      629    Match 5       League  2018  Jawaharlal Nehru Indoor Stadium, Chennai                                 2018-10-09T20:00+05:30  2018-10-09T20:00+05:30   Tied                          32           32  Dabang Delhi K.C.         2    Gujarat Giants        31
+```

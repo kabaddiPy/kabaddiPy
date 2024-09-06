@@ -9,6 +9,8 @@ has_children: false
 
 # Prokabaddi API
 
+
+
 This documentation covers the main functions of the `KabaddiDataAPI` class that return useful data for Kabaddi statistics and information.
 
 [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python Package that is designed to pull play-by-play data from the newest version of the [ProKabaddi League](https://www.prokabaddi.com/). In the past, there have been a next to no scrapers for the Kabaddi.
