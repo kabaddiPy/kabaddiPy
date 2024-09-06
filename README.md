@@ -25,17 +25,19 @@ Here's a quick minimal example of how to get started with the Kabaddi Data Aggre
 from prokabaddidata import prokabaddidata
 
 # Initialize the aggregator
-aggregator = prokabaddidata.KabaddiDataAggregator()
+api = prokabaddidata.KabaddiDataAPI()
 
 # Get all player information for a specific team
-players_info = aggregator.player_performance(team="Patna Pirates")
+players_info = api.get_team_matches(7, 4)
 
 ```
 
-For more detailed usage instructions and API documentation, please refer to our [documentation page](https://annimukherjee.github.io/ProKabaddi_API/).
+For more detailed usage instructions and API documentation, please refer to our [documentation page](https://github.com/kabaddiPy/kabaddiPy).
 
 ## Features
 Here are our current features. New and better features are actively being developed!!
+
+
 
 ### Current season standings
 
@@ -70,6 +72,8 @@ teamstats = aggregator.team_level_stats(season=None)
 ```
 Returns team-level stats by season. Defaults to latest season.
 
+
+
 ## Contributing
 
 We welcome contributions to the Kabaddi Data Aggregator project! If you'd like to contribute, please follow these steps:
@@ -82,10 +86,9 @@ We welcome contributions to the Kabaddi Data Aggregator project! If you'd like t
 6. Create a new Pull Request
 
 
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-2.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
