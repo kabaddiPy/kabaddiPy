@@ -19,8 +19,9 @@ Deployed here: https://pypi.org/project/kabaddiPy/
 
 ## Function Overview
 
+
 <div align=center">
-<img width="800" alt="Function Overview" src="https://github.com/user-attachments/assets/22e73ca7-3edb-4956-ac7d-91f2f018b1eb" >
+<img width="800" alt="Function Overview" src="https://github.com/user-attachments/assets/b1ceed1a-48d9-409c-8f6b-b188eaaf9733" >
 </div>
 
 
