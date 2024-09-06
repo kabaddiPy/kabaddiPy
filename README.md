@@ -17,6 +17,15 @@ pip install kabaddiPy
 Deployed here: https://pypi.org/project/kabaddiPy/
 
 
+## Function Overview
+
+<div align=center">
+<img width="800" alt="Function Overview" src="https://github.com/user-attachments/assets/22e73ca7-3edb-4956-ac7d-91f2f018b1eb" >
+</div>
+
+
+
+
 ## Usage
 
 Here's a quick minimal example of how to get started with the Kabaddi Data Aggregator:
@@ -27,7 +36,6 @@ import kabaddiPy
 
 # Get all player information for a specific team
 players_info = api.get_team_matches(7, 4)
-g
 ```
 
 For more detailed usage instructions and API documentation, please refer to our [documentation page](https://github.com/kabaddiPy/kabaddiPy).
@@ -77,10 +85,10 @@ Returns team-level stats by season. Defaults to latest season.
 We welcome contributions to the Kabaddi Data Aggregator project! If you'd like to contribute, please follow these steps:
 
 1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
+2. Create a new branch (`git checkout -b feature/<your-feature-name>`)
 3. Make your changes
 4. Commit your changes (`git commit -am 'Add some feature'`)
-5. Push to the branch (`git push origin feature/your-feature-name`)
+5. Push to the branch (`git push origin feature/<your-feature-name>`)
 6. Create a new Pull Request
 
 
@@ -94,7 +102,7 @@ This project is licensed under the GPL-2.0 License - see the [LICENSE](LICENSE) 
 
 ## Contact
 
-If you have any questions, feel free to reach out to [Aniruddha Mukherjee] at [mukh.aniruddha@gmail.com] or open an issue in the GitHub repository.
+If you have any questions, feel free to reach out to [Aniruddha Mukherjee](mailto:mukh.aniruddha@gmail.com) or [Bhaskar Lalwani](mailto:bhaskarlalwani2040@gmail.com) or open an issue in the GitHub repository.
 
 ---
 
