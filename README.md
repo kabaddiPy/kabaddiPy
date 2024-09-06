@@ -25,7 +25,7 @@ Here's a quick minimal example of how to get started with the Kabaddi Data Aggre
 from prokabaddidata import prokabaddidata
 
 # Initialize the aggregator
-api = prokabaddidata.KabaddiDataAPI()
+api = kabaddiPy.KabaddiDataAPI()
 
 # Get all player information for a specific team
 players_info = api.get_team_matches(7, 4)
