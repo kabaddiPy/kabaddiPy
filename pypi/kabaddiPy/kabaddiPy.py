@@ -3,6 +3,8 @@ import os
 from pathlib import Path
 from typing import List, Tuple, Dict, Any
 
+from pkg_resources import resource_filename
+
 import numpy as np
 import pandas as pd
 import json
@@ -33,7 +35,7 @@ from matplotlib.lines import Line2D
 
 class KabaddiDataAPI:
     def __init__(self):
-        self.base_path = "./MatchData_pbp"
+        self.base_path = resource_filename(__name__,"./MatchData_pbp")
     # for a season - display the standings
 
     def get_pkl_standings(self, season=None, qualified=False, team_id=None):
@@ -85,7 +87,8 @@ class KabaddiDataAPI:
         if season is None:
             season = 10
 
-        file_path = Path(f"./PKL_Standings/pkl_standings_s{season}.json")
+        file_path = resource_filename(__name__, f'PKL_Standings/pkl_standings_s{season}.json')
+
 
         with open(file_path, 'r') as f:
             data = json.load(f)
@@ -136,6 +139,7 @@ class KabaddiDataAPI:
         return team_info_df
 
 
+
     def get_season_matches(self, season="all"):
         """
         Retrieve match data for a specific season or all seasons.
@@ -173,8 +177,8 @@ class KabaddiDataAPI:
 
         Notes:
         ------
-        - The function reads data from JSON files located in the './Matches-Overview/' directory.
-        - For "all" seasons, it sorts the files based on the season number extracted from the filename.
+        - The function reads data from JSON files located in the 'Matches-Overview/' directory.
+        - For "all" seasons, it processes all available season files.
         - Each row in the returned DataFrame represents a single match.
         """
         
@@ -182,61 +186,55 @@ class KabaddiDataAPI:
 
         # Determine the file(s) to load based on the season input
         if season == "all":
-            files = glob.glob('./Matches-Overview/S*_PKL_MatchData.json')
-            # Sort the files based on the season number
-            files = sorted(files, key=lambda x: int(re.search(r'S(\d+)', x).group(1)))
-            print(files)
-
+            season_numbers = range(1, 11)  # Assuming seasons 1 to 10
         else:
-            files = [f'./Matches-Overview/S{season}_PKL_MatchData.json']
+            season_numbers = [int(season)]
 
-        for file in files:
+        for season_num in season_numbers:
+            file_path = resource_filename(__name__, f'Matches-Overview/S{season_num}_PKL_MatchData.json')
             
-            with open(file) as f:
-                data = json.load(f)
+            try:
+                with open(file_path) as f:
+                    data = json.load(f)
 
+                for match in data['matches']:
+                    team_name, team_id, team_score = [], [], []
 
-            for match in data['matches']:
+                    for p in match['participants']:
+                        team_name.append(p['name'])
+                        team_id.append(p['id'])
+                        team_score.append(p['value'])
 
-                team_name, team_id, team_score = [], [], []
+                    match_details = {
+                        "Season": match['tour_name'].split(",")[0].split(" ")[-1],
+                        'Match_ID': match['game_id'],
+                        "Match_Name": match['event_name'],
+                        "League_Stage": match['event_stage'],
+                        "Year": match['tour_name'].split(",")[1].strip(),
+                        "Venue": match['venue_name'].lower().title().strip(),
+                        'Match_Outcome': match['event_sub_status'],
+                        "Start_Date": match['start_date'],
+                        "End_Date": match['end_date'],
+                        "Result": match['result_code'],
+                        "Winning Margin": match['winning_margin'],
+                        'team_score_1': team_score[0],
+                        'team_score_2': team_score[1],
+                        'team_name_1': team_name[0],
+                        'team_id_1': team_id[0],
+                        'team_name_2': team_name[1],
+                        'team_id_2': team_id[1],
+                    }
 
-                for p in match['participants']:
-                    # print(p['name'])
-                    team_name.append(p['name'])
-                    team_id.append(p['id'])
-                    team_score.append(p['value'])
+                    matches_list.append(match_details)
 
-
-                match_details = {
-                    "Season": match['tour_name'].split(",")[0].split(" ")[-1],
-                    'Match_ID': match['game_id'],
-                    "Match_Name": match['event_name'],
-                    "League_Stage": match['event_stage'],
-                    "Year": match['tour_name'].split(",")[1].strip(),
-                    "Venue": match['venue_name'].lower().title().strip(),
-                    'Match_Outcome': match['event_sub_status'],
-                    "Start_Date": match['start_date'],
-                    "End_Date": match['end_date'],
-                    "Result": match['result_code'],
-                    "Winning Margin": match['winning_margin'],
-                    'team_score_1': team_score[0],
-                    'team_score_2': team_score[1],
-                    'team_name_1': team_name[0],
-                    'team_id_1': team_id[0],
-                    'team_name_2': team_name[1],
-                    'team_id_2': team_id[1],
-                }
-
-                
-
-                matches_list.append(match_details)
+            except FileNotFoundError:
+                if season != "all":
+                    print(f"No data file found for season {season_num}")
+                continue
 
         # Convert the list of dictionaries into a DataFrame
         df = pd.DataFrame(matches_list)
 
-        # df.to_csv("matches_data.csv")
-
-        # Display the DataFrame
         return df
 
 
@@ -279,9 +277,9 @@ class KabaddiDataAPI:
         if season != 'overall':
             season = int(season)
         
-        df_team_aggregated_stats = pd.read_csv("./Team-Wise-Data/PKL_AggregatedTeamStats.csv")
-        df_team_raider_skills = pd.read_csv("./Team-Wise-Data/ALL_Raider_Skills_Merged.csv")
-        df_team_defender_skills = pd.read_csv("./Team-Wise-Data/ALL_Defensive_Skills_Merged.csv")
+        df_team_aggregated_stats = pd.read_csv(resource_filename(__name__, "./Team-Wise-Data/PKL_AggregatedTeamStats.csv"))
+        df_team_raider_skills = pd.read_csv(resource_filename(__name__, "./Team-Wise-Data/ALL_Raider_Skills_Merged.csv"))
+        df_team_defender_skills = pd.read_csv(resource_filename(__name__,"./Team-Wise-Data/ALL_Defensive_Skills_Merged.csv"))
         
         if team_id:
             team_id = int(team_id)
@@ -471,9 +469,9 @@ class KabaddiDataAPI:
         team_name = ""
         total_matches = 0
 
-        for folder_name in os.listdir("./MatchData_pbp"):
+        for folder_name in os.listdir(resource_filename(__name__,"./MatchData_pbp")):
             if f"Season_{season}_" in folder_name:
-                directory_path = os.path.join("./MatchData_pbp", folder_name)
+                directory_path = os.path.join(resource_filename(__name__,"./MatchData_pbp"), folder_name)
                 break
         else:
             print(f"No data found for season {season}")
@@ -574,19 +572,19 @@ class KabaddiDataAPI:
         """
 
         player_id = int(player_id)
-        file_path = "./Player-Wise-Data/all_seasons_player_stats_rounded.csv"
+        file_path = resource_filename(__name__,"./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
         df = pd.read_csv(file_path)
 
-        file_rvd = Path(r"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
+        file_rvd = resource_filename(__name__,"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
         rvd_df = pd.read_csv(file_rvd)
 
-        defend_file = "./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv"
+        defend_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
         defend_df = pd.read_csv(defend_file)
 
-        raider_file = "./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv"
+        raider_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv")
         raider_df = pd.read_csv(raider_file)
 
-        player_starts = "./Player-Wise-Data/Player_Team_Lineup_merged.csv"
+        player_starts = resource_filename(__name__,"./Player-Wise-Data/Player_Team_Lineup_merged.csv")
         player_starts_df = pd.read_csv(player_starts)
 
         def to_numeric_or_nan(x):
@@ -697,7 +695,7 @@ class KabaddiDataAPI:
         player_id = int(player_id)
         season = int(season)
         
-        base_path = "./MatchData_pbp"
+        base_path = resource_filename(__name__,"./MatchData_pbp")
         season_folder = next((folder for folder in os.listdir(base_path) if f"Season_{season}_" in folder), None)
         if not season_folder:
             print(f"No data found for season {season}")
@@ -1090,7 +1088,7 @@ class KabaddiDataAPI:
         if season not in season_directories:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
-        directory_path = f"./MatchData_pbp/{season_directories[season]}"
+        directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
 
         player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
 
@@ -1195,7 +1193,7 @@ class KabaddiDataAPI:
         if season not in season_directories:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
-        directory_path = f"./MatchData_pbp/{season_directories[season]}"
+        directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
 
         player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
 
@@ -1348,7 +1346,7 @@ class KabaddiDataAPI:
         if season not in season_directories:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
-        directory_path = f"./MatchData_pbp/{season_directories[season]}"
+        directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
 
         team_data, strong_zones, weak_zones = self.internal_aggregate_team_data(directory_path, team_id)
         team_id = str(team_id)
@@ -1449,7 +1447,7 @@ class KabaddiDataAPI:
 
 
     def plot_point_progression(self, season, match_id):
-        file_path = "./MatchData_pbp/"
+        file_path = resource_filename(__name__,"./MatchData_pbp/")
 
         for dir in os.listdir(file_path):
             if f"Season_{season}" in dir:
@@ -1581,7 +1579,7 @@ class KabaddiDataAPI:
         
         # Remove the grid
         ax.grid(False)
-        plt.savefig(f"match_{match_id}.png", bbox_inches='tight', pad_inches=0, dpi=400)
+        # plt.savefig(f"match_{match_id}.png", bbox_inches='tight', pad_inches=0, dpi=400)
         
         plt.show()
 

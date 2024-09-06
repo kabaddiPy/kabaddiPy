@@ -1,1 +1,7 @@
 recursive-include kabaddiPy *.js *.csv
+include LICENSE
+include kabaddiPy/MatchData_pbp/**/*.json
+include kabaddiPy/Matches-Overview/*.json
+include kabaddiPy/PKL_Standings/*.json
+include kabaddiPy/Player-Wise-Data/*.csv
+include kabaddiPy/Team-Wise-Data/*.csv
