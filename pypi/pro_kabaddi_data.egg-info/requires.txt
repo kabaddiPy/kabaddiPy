@@ -1,3 +1,0 @@
-selenium
-pandas
-beautifulsoup4

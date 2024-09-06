@@ -1,1 +1,1 @@
-recursive-include prokabaddidata *.js *.csv
+recursive-include kabaddiPy *.js *.csv

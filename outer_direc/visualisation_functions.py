@@ -1,16 +1,4 @@
-import math
-import json
 
-from jinja2.filters import do_int
-from matplotlib.patches import Rectangle, Circle, Wedge
-from matplotlib.colors import LinearSegmentedColormap
-import os
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-from matplotlib.patches import Patch
-from setuptools.command.rotate import rotate
-from matplotlib.lines import Line2D
 
 
 def load_json_data(file_path):
