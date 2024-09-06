@@ -66,13 +66,13 @@ If the standings data for the specified season is empty, an empty DataFrame is r
 ```python
     from kabaddiPy import KabaddiDataAPI as kabaddi
 
-    api = kabaddi()
+api = kabaddi()
 
-    qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
-    print("Qualified teams:")
-    print(qualified_df)
-    print("\nAll standings:")
-    print(all_standings_df)
+qualified_df, all_standings_df = api.get_standings(season=9, qualified=True)
+print("Qualified teams:")
+print(qualified_df)
+print("\nAll standings:")
+print(all_standings_df)
 ```
 
 Output:

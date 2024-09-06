@@ -1,7 +1,7 @@
-from .kabaddiPy import KabaddiDataAPI
+from .kabaddiPy import PKL
 
 # Automatically instantiate KabaddiDataAPI and expose it as 'api'
-kabaddiPy = KabaddiDataAPI()
+pkl = PKL()
 
 # Optional: Expose KabaddiDataAPI class in case users still want to instantiate it manually
-__all__ = ['kabaddiPy', 'KabaddiDataAPI']
+__all__ = ['pkl', 'PKL']

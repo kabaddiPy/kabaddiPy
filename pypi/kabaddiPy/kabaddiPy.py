@@ -1,29 +1,12 @@
-import json
-import os
-from pathlib import Path
+import warnings
 from typing import List, Tuple, Dict, Any
 
-import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning, module="pkg_resources")
 
 
-import pkg_resources
-warnings.filterwarnings("ignore", category=DeprecationWarning, module="pkg_resources")
+import importlib.resources
+import importlib_resources
 
-from pkg_resources import resource_filename
-warnings.filterwarnings("ignore", category=DeprecationWarning, module="pkg_resources")
-
-
-
-import numpy as np
 import pandas as pd
-import json
-import pandas as pd
-
-import json
-import pandas as pd
-import glob
-import re
 
 from pandas import DataFrame
 from matplotlib import gridspec
@@ -31,7 +14,6 @@ from matplotlib import gridspec
 import math
 import json
 
-from jinja2.filters import do_int
 from matplotlib.patches import Rectangle, Circle, Wedge
 from matplotlib.colors import LinearSegmentedColormap
 import os
@@ -39,16 +21,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 from matplotlib.patches import Patch
-from setuptools.command.rotate import rotate
 from matplotlib.lines import Line2D
 
 
-class KabaddiDataAPI:
+class PKL:
     def __init__(self):
-        self.base_path = resource_filename(__name__,"./MatchData_pbp")
+        # self.base_path = resource_filename(__name__,"./MatchData_pbp")
+        self.base_path = importlib_resources.files('kabaddiPy').joinpath('MatchData_pbp')
     # for a season - display the standings
 
-    def get_pkl_standings(self, season=None, qualified=False, team_id=None):
+    def get_standings(self, season=None, qualified=False, team_id=None):
         """
         Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
 
@@ -97,7 +79,8 @@ class KabaddiDataAPI:
         if season is None:
             season = 10
 
-        file_path = resource_filename(__name__, f'PKL_Standings/pkl_standings_s{season}.json')
+        # file_path = resource_filename(__name__, f'PKL_Standings/pkl_standings_s{season}.json')
+        file_path = importlib_resources.files('kabaddiPy').joinpath(f'PKL_Standings/pkl_standings_s{season}.json')
 
 
         with open(file_path, 'r') as f:
@@ -200,7 +183,8 @@ class KabaddiDataAPI:
             season_numbers = [int(season)]
 
         for season_num in season_numbers:
-            file_path = resource_filename(__name__, f'Matches-Overview/S{season_num}_PKL_MatchData.json')
+            # file_path = resource_filename(__name__, f'Matches-Overview/S{season_num}_PKL_MatchData.json')
+            file_path = importlib_resources.files('kabaddiPy').joinpath(f'Matches-Overview/S{season_num}_PKL_MatchData.json')
             
             try:
                 with open(file_path) as f:
@@ -285,10 +269,14 @@ class KabaddiDataAPI:
         """
         if season != 'overall':
             season = int(season)
+
+        df_team_aggregated_stats_path = importlib_resources.files('kabaddiPy').joinpath("./Team-Wise-Data/PKL_AggregatedTeamStats.csv")
+        df_team_raider_skills_path = importlib_resources.files('kabaddiPy').joinpath("./Team-Wise-Data/ALL_Raider_Skills_Merged.csv")
+        df_team_defender_skills_path = importlib_resources.files('kabaddiPy').joinpath("./Team-Wise-Data/ALL_Defensive_Skills_Merged.csv")
         
-        df_team_aggregated_stats = pd.read_csv(resource_filename(__name__, "./Team-Wise-Data/PKL_AggregatedTeamStats.csv"))
-        df_team_raider_skills = pd.read_csv(resource_filename(__name__, "./Team-Wise-Data/ALL_Raider_Skills_Merged.csv"))
-        df_team_defender_skills = pd.read_csv(resource_filename(__name__,"./Team-Wise-Data/ALL_Defensive_Skills_Merged.csv"))
+        df_team_aggregated_stats = pd.read_csv(df_team_aggregated_stats_path)
+        df_team_raider_skills = pd.read_csv(df_team_raider_skills_path)
+        df_team_defender_skills = pd.read_csv(df_team_defender_skills_path)
         
         if team_id:
             team_id = int(team_id)
@@ -385,10 +373,10 @@ class KabaddiDataAPI:
 
     def get_team_ids(self, season):
         
-        return pd.DataFrame(self.get_pkl_standings(season=season)[['Team_Id', 'Team_Name']].to_dict(orient='records'))
+        return pd.DataFrame(self.get_standings(season=season)[['Team_Id', 'Team_Name']].to_dict(orient='records'))
 
     
-    def get_team_matches(self, season, team_id :str):
+    def get_team_matches(self, season, team_id):
         """
         Retrieve all matches for a specific team in a given season.
 
@@ -398,7 +386,7 @@ class KabaddiDataAPI:
         -----------
         season : int or str
             The season number for which to retrieve matches.
-        team_id : str
+        team_id
             The unique identifier for the team.
 
         Returns:
@@ -432,7 +420,7 @@ class KabaddiDataAPI:
         return team_season_matches
 
 
-    def build_team_roster(self, team_id, season):
+    def get_team_roster(self, team_id, season):
         """
         Build a roster for a specific team in a given season.
 
@@ -478,9 +466,12 @@ class KabaddiDataAPI:
         team_name = ""
         total_matches = 0
 
-        for folder_name in os.listdir(resource_filename(__name__,"./MatchData_pbp")):
+        base_pbp_path = importlib_resources.files('kabaddiPy').joinpath(f'./MatchData_pbp')
+
+        for folder_name in os.listdir(base_pbp_path):
+
             if f"Season_{season}_" in folder_name:
-                directory_path = os.path.join(resource_filename(__name__,"./MatchData_pbp"), folder_name)
+                directory_path = os.path.join(base_pbp_path, folder_name)
                 break
         else:
             print(f"No data found for season {season}")
@@ -576,16 +567,22 @@ class KabaddiDataAPI:
         """
 
         player_id = int(player_id)
-        file_path = resource_filename(__name__,"./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
+
+        file_path = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
+
+        # file_path = resource_filename(__name__,"./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
         df = pd.read_csv(file_path)
 
-        defend_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
+        # defend_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
+        defend_file = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
         defend_df = pd.read_csv(defend_file)
 
-        raider_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv")
+        # raider_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv")
+        raider_file = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv")
         raider_df = pd.read_csv(raider_file)
 
-        player_starts = resource_filename(__name__,"./Player-Wise-Data/Player_Team_Lineup_merged.csv")
+        # player_starts = resource_filename(__name__,"./Player-Wise-Data/Player_Team_Lineup_merged.csv")
+        player_starts = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/Player_Team_Lineup_merged.csv")
         player_starts_df = pd.read_csv(player_starts)
 
         def to_numeric_or_nan(x):
@@ -681,7 +678,9 @@ class KabaddiDataAPI:
         player_id = int(player_id)
         season = int(season)
         
-        base_path = resource_filename(__name__,"./MatchData_pbp")
+        # base_path = resource_filename(__name__,"./MatchData_pbp")
+        base_path = importlib_resources.files('kabaddiPy').joinpath("./MatchData_pbp")
+
         season_folder = next((folder for folder in os.listdir(base_path) if f"Season_{season}_" in folder), None)
         if not season_folder:
             print(f"No data found for season {season}")
@@ -787,7 +786,9 @@ class KabaddiDataAPI:
         Returns:
         """
 
-        file_rvd = resource_filename(__name__,"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
+        # file_rvd = resource_filename(__name__,"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
+
+        file_rvd = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
         rvd_df = pd.read_csv(file_rvd)
 
         def to_numeric_or_nan(x):
@@ -825,11 +826,6 @@ class KabaddiDataAPI:
 
         return rvd_extracted_df
             
-
-
-
-
-
 
     def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
         """
@@ -1129,7 +1125,8 @@ class KabaddiDataAPI:
         if season not in season_directories:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
-        directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
+        # directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
+        directory_path = importlib_resources.files('kabaddiPy').joinpath(f"./MatchData_pbp/{season_directories[season]}")
 
         player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
 
@@ -1223,7 +1220,7 @@ class KabaddiDataAPI:
 
         # plt.tight_layout()
         # plt.show()
-        return fig, ax
+        return fig, ax, player_data
 
    
     def plot_player_zones(self, player_id, season, zone_type='strong'):
@@ -1235,7 +1232,8 @@ class KabaddiDataAPI:
         if season not in season_directories:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
-        directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
+        # directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
+        directory_path = importlib_resources.files('kabaddiPy').joinpath(f"./MatchData_pbp/{season_directories[season]}")
 
         player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
 
@@ -1389,7 +1387,8 @@ class KabaddiDataAPI:
         if season not in season_directories:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
-        directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
+        # directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
+        directory_path = importlib_resources.files('kabaddiPy').joinpath(f"./MatchData_pbp/{season_directories[season]}")
 
         team_data, strong_zones, weak_zones = self.internal_aggregate_team_data(directory_path, team_id)
         team_id = str(team_id)
@@ -1489,9 +1488,9 @@ class KabaddiDataAPI:
         plt.show()
 
 
-
     def plot_point_progression(self, season, match_id):
-        file_path = resource_filename(__name__,"./MatchData_pbp/")
+        # file_path = resource_filename(__name__,"./MatchData_pbp/")
+        file_path = importlib_resources.files('kabaddiPy').joinpath("./MatchData_pbp")
 
         for dir in os.listdir(file_path):
             if f"Season_{season}" in dir:
@@ -1568,8 +1567,8 @@ class KabaddiDataAPI:
             ax.axvline(x=raid, color='gray', alpha=0.3, linestyle='--')
 
         # Customize the plot
-        ax.set_xlabel('Events', fontsize=12, fontweight='bold')
-        ax.set_ylabel('Total Points', fontsize=12, fontweight='bold')
+        ax.set_xlabel('Events', fontsize=14, fontweight='bold')
+        ax.set_ylabel('Total Points', fontsize=14, fontweight='bold')
         ax.set_title(f'Point Progression for Match {match_id}', fontsize=16, fontweight='bold')
 
         # Set axis limits to start at (0, 0)
@@ -1579,6 +1578,9 @@ class KabaddiDataAPI:
         # Customize tick labels
         ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
         ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+
+        # Increase font size for x-axis tick labels
+        ax.tick_params(axis='x', labelsize=13)
 
         # Add team names to the legend
     # Create custom legend elements
@@ -1594,7 +1596,7 @@ class KabaddiDataAPI:
 
         # Add final scores
         final_score_text = f"Final Score: {team_id_map[int(team1_id)]} {team1_total_points[-1]} - {team2_total_points[-1]} {team_id_map[int(team2_id)]}"
-        ax.text(0.5, -0.1, final_score_text, ha='center', va='center', transform=ax.transAxes, fontsize=12,
+        ax.text(0.5, -0.1, final_score_text, ha='center', va='center', transform=ax.transAxes, fontsize=13,
                 fontweight='bold')
 
         # Threshold part to highlight significant score differences
@@ -1663,17 +1665,24 @@ class KabaddiDataAPI:
 
         for i, player_id in enumerate(valid_plots):
             ax = fig.add_subplot(gs[i // cols, i % cols])
-            result = self.internal_plot_player_zones_grid(player_id, season, zone_type, fig=fig, ax=ax)
-            if result is not None:
-                ax.set_title(f"Player ID: {player_id}", fontsize=12)
+            f, ax, p_data = self.internal_plot_player_zones_grid(player_id, season, zone_type, fig=fig, ax=ax)
+            if ax is not None:
+                ax.set_title(f"{p_data['name']} (ID: {p_data['id']})", fontsize=12)
 
         # Adjust layout to prevent clipping of titles
         plt.tight_layout()
 
+        # The code is commented out using the `#` symbol in Python. It appears to be a line of code
+        # that is meant to save a plot generated by matplotlib using the `plt.savefig()` function. The
+        # filename for the saved plot is likely dynamically generated based on the `season` variable.
+        # The `bbox_inches='tight'` parameter ensures that the saved plot does not have extra
+        # whitespace around it, the `pad_inches=0` parameter sets the padding to 0, and the `dpi=400`
+        # parameter sets the resolution of the saved plot to 400 dots per inch.
         # plt.savefig(f"player_zones_grid_season_{season}.png", bbox_inches='tight', pad_inches=0, dpi=400)
 
 
         plt.show()
+    
 
 
 
@@ -1681,8 +1690,11 @@ class KabaddiDataAPI:
 if __name__ == "__main__":
     
     
-    api = KabaddiDataAPI()
+    pkl = PKL()
 
+
+
+    # print(pkl.get_season_matches())
 
     # print("1. Testing get_pkl_standings".center(100, "-"))
     # qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
@@ -1776,20 +1788,6 @@ if __name__ == "__main__":
     # print(df)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # player_id = 143  # Example: Deepak Hooda
 
     # plot_player_zones(player_id,season=5,zone_type='strong')
@@ -1801,16 +1799,16 @@ if __name__ == "__main__":
 
 
 
-    api.plot_player_zones(player_id=143, season=5, zone_type='strong')
-    api.plot_player_zones(player_id=143, season=5, zone_type='weak')
-    # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
-    # print(strong_zones)
+    # api.plot_player_zones(player_id=143, season=5, zone_type='strong')
+    # api.plot_player_zones(player_id=143, season=5, zone_type='weak')
+    # # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
+    # # print(strong_zones)
 
-    api.plot_team_zones(team_id=4, season=5, zone_type='strong')
-    api.plot_team_zones(team_id=4, season=5, zone_type='weak')
+    # api.plot_team_zones(team_id=4, season=5, zone_type='strong')
+    # api.plot_team_zones(team_id=4, season=5, zone_type='weak')
 
-    # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
-    api.plot_point_progression(season=10, match_id=3163)
+    # # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
+    # api.plot_point_progression(season=10, match_id=3163)
 
     # column_list = [143, 12, 211, 160]
     # api.plot_player_zones_grid(column_list, season=5, zone_type='strong', max_cols=2)
@@ -2077,25 +2075,6 @@ if __name__ == "__main__":
     # _pbp_df = api.load_pbp(season=9, match_id='2895')
     # print("-"*100)
     # print(_pbp_df)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -4,10 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kabaddiPy"
-version = "0.0.2"
+version = "0.0.3"
 description = "A Python module for aggregating Kabaddi data"
 readme = "README.md"
-authors = [{name = "Aniruddha Mukherjee", email = "mukh.aniruddha@gmail.com"}, {name = "Bhaskar Lalwani", email = "bhaskarlalwani2040@gmail.com"}]
+authors = [
+    {name = "Aniruddha Mukherjee", email = "mukh.aniruddha@gmail.com"},
+    {name = "Bhaskar Lalwani", email = "bhaskarlalwani2040@gmail.com"}
+]
 license = {file = "LICENSE"}
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -26,6 +29,7 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "jinja2",
+    "importlib_resources"
 ]
 requires-python = ">=3.7"
 
@@ -33,3 +37,11 @@ requires-python = ">=3.7"
 "Homepage" = "https://github.com/kabaddiPy/kabaddiPy"
 "Bug Tracker" = "https://github.com/kabaddiPy/kabaddiPy/issues"
 "Docs" = "https://kabaddipy.github.io/kabaddiPy/"
+"Source Code" = "https://github.com/kabaddiPy/kabaddiPy"
+
+[tool.setuptools]
+packages = ["find:"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.csv"]

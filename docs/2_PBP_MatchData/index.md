@@ -6,6 +6,12 @@ has_children: false
 nav_order: 5
 ---
 
+#### Table of contents
+
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 
 ## `load_match_details(season, match_id)`

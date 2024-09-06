@@ -9,7 +9,7 @@ has_children: false
 # `kabaddiPy`
 
 
-This documentation covers the main functions of the `KabaddiDataAPI` class that return useful data for Kabaddi statistics and information.
+This documentation covers the main functions of the `kabaddiPy` class that return useful data for Kabaddi statistics and information.
 
 [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python package that is designed to pull **play-by-play**, **team**, **player** and **standings** data from the newest version of the [ProKabaddi League](https://www.prokabaddi.com/) website. In the past, there have been next to no scrapers for the sport.
 
@@ -23,7 +23,7 @@ The lack of data and poor access to data have been the biggest barriers to entry
 
 
 
-This documentation covers the main functions of the `KabaddiDataAPI` class that return useful data for Kabaddi statistics and information. [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python Package that is designed to pull play-by-play data from the newest version of the [ProKabaddi League](https://www.prokabaddi.com/).
+This documentation covers the main functions of the `kabaddiPy` class that return useful data for Kabaddi statistics and information. [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python Package that is designed to pull play-by-play data from the newest version of the [ProKabaddi League](https://www.prokabaddi.com/).
 
 
 
@@ -58,7 +58,7 @@ We have split our functions into 3 categories:
 
 #### Overall Functions
   
-  1. `get_pkl_standings(season=None, qualified=False, team_id=None)`
+  1. `get_standings(season=None, qualified=False, team_id=None)`
   
   2. `get_season_matches(season="all")`
 
@@ -68,7 +68,7 @@ We have split our functions into 3 categories:
 
   4. `get_team_matches(season, team_id)`
 
-  5. `build_team_roster(team_id, season)`
+  5. `get_team_roster(team_id, season)`
 
 #### Player-Information
   
@@ -83,7 +83,7 @@ We have split our functions into 3 categories:
   
   8. `load_match_details(season, match_id)`
 
-  9. `load_pbp_data(season, match_id)`
+  9. `load_pbp(season, match_id)`
 
 
 #### Visualisation Functions
@@ -92,7 +92,7 @@ We have split our functions into 3 categories:
 
   11. `plot_team_zones(team_id, season, zone_type='strong')`
 
-  12. `plot_player_zones_improved(player_id, season, zone_type='strong')`
+  12. `plot_player_zones(player_id, season, zone_type='strong')`
 
   13. `plot_player_zones_grid(player_ids, season, zone_type='strong', max_cols=4)`
 
