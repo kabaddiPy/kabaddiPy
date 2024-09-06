@@ -17,7 +17,7 @@ This documentation covers the main functions of the `KabaddiDataAPI` class that 
     <img src='https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0' width="300px" />
 </div>
 
-With the first season of the league kicking off on January 1st, and games being broadcast on ESPN+, this package was created to allow access to play-by-play data to continue pushing women’s hockey analytics forward.
+With Season 11 of the Pro Kabaddi League set to begin on October 18, and the 2025 Kabaddi World Cup on the horizon, this package was developed to provide access to detailed play-by-play data, aiming to energize the catalyze the Kabaddi analytics community.
 
 The lack of data and poor access to data have been the biggest barrier to entry in kabaddi analytics, a barrier that this package intends to alleviate.
 

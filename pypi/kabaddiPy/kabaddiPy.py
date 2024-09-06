@@ -3,7 +3,17 @@ import os
 from pathlib import Path
 from typing import List, Tuple, Dict, Any
 
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning, module="pkg_resources")
+
+
+import pkg_resources
+warnings.filterwarnings("ignore", category=DeprecationWarning, module="pkg_resources")
+
 from pkg_resources import resource_filename
+warnings.filterwarnings("ignore", category=DeprecationWarning, module="pkg_resources")
+
+
 
 import numpy as np
 import pandas as pd
@@ -551,7 +561,6 @@ class KabaddiDataAPI:
             1. player_stats_df_rank (DataFrame): Player's ranking statistics.
             2. player_stats_df_value (DataFrame): Player's value statistics.
             3. player_stats_df_per_match (DataFrame): Player's per-match statistics.
-            4. rvd_extracted_df (DataFrame): Raider vs. Defender statistics.
 
         Each DataFrame is transposed (T) for easier reading.
 
@@ -564,18 +573,11 @@ class KabaddiDataAPI:
         - The function handles data type conversions and missing value imputations to ensure
         consistent processing across different data sources.
 
-        Raises:
-        -------
-        FileNotFoundError: If any of the required data files are not found.
-        ValueError: If there are issues with data type conversions.
         """
 
         player_id = int(player_id)
         file_path = resource_filename(__name__,"./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
         df = pd.read_csv(file_path)
-
-        file_rvd = resource_filename(__name__,"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
-        rvd_df = pd.read_csv(file_rvd)
 
         defend_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
         defend_df = pd.read_csv(defend_file)
@@ -596,9 +598,6 @@ class KabaddiDataAPI:
         df['player_id'] = df['player_id'].fillna(-1)
         df['player_id'] = df['player_id'].astype(np.int64)
 
-        rvd_df['player-id'] = rvd_df['player-id-pkdc-sanitised'].apply(to_numeric_or_nan)
-        rvd_df['player-id'] = rvd_df['player-id'].fillna(-1)
-        rvd_df['player-id'] = rvd_df['player-id'].astype(int)
 
 
         defend_df['player_id'] = defend_df['player_id_copy_backup'].apply(to_numeric_or_nan)
@@ -627,14 +626,6 @@ class KabaddiDataAPI:
         if player_starts_df.empty:
             print(f"No data for player {player_id} for season {season} |  STARTS")
 
-        # Raiders v defenders
-        rvd_data = rvd_df[rvd_df['player-id'] == player_id]
-        if rvd_data.empty:
-            print(f"No data for raiders v no of defenders for {player_id}")
-        
-        rvd_extracted_df = rvd_data[rvd_data['season'].str.extract(r'(\d+)')[0].astype(int) == season]
-        if rvd_extracted_df.empty:
-            print(f"No data for raiders v no of defenders for {player_id} for season {season}")
 
 
         defend_extracted_df = defend_df[(defend_df['player_id'] == player_id) & (defend_df['season'] == season)]
@@ -670,14 +661,10 @@ class KabaddiDataAPI:
             player_stats_df_value['Total Played'] = player_starts_data.get('Total Played', np.nan)
             player_stats_df_value['Total Starts'] = player_starts_data.get('Total Starts', np.nan)
 
-        rvd_extracted_df = rvd_extracted_df[['Season_Number', 'Team Name',
-                                            'player-id', 'Raider Name', 'Number of Defenders', 'Total Raids',
-                                            'Percentage of Raids', 'Empty Raids Percentage',
-                                            'Successful Raids Percentage']]
         
         
 
-        return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T, rvd_extracted_df.T
+        return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T
 
 
     def get_matchwise_player_info(self, player_id, season):
@@ -788,6 +775,60 @@ class KabaddiDataAPI:
         #     df = df.sort_values(['date'], ascending=False)
         
         return df
+
+    def get_player_rvd(self, player_id, season=None):
+        """
+        Get Raider vs. Defender (RVD) data for a specific player in a given season.
+
+        Args:
+            player_id (int): The ID of the player.
+            season (int): The season number.
+
+        Returns:
+        """
+
+        file_rvd = resource_filename(__name__,"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
+        rvd_df = pd.read_csv(file_rvd)
+
+        def to_numeric_or_nan(x):
+            try:
+                return pd.to_numeric(x)
+            except ValueError:
+                return np.nan
+            
+
+        rvd_df['player-id'] = rvd_df['player-id-pkdc-sanitised'].apply(to_numeric_or_nan)
+        rvd_df['player-id'] = rvd_df['player-id'].fillna(-1)
+        rvd_df['player-id'] = rvd_df['player-id'].astype(int)
+
+        if season is None:
+        # If no season is specified, return all rows for the player_id
+            rvd_data = rvd_df[rvd_df['player-id'] == player_id]
+        else:
+            # If season is specified, filter by both player_id and season
+            rvd_data = rvd_df[(rvd_df['player-id'] == player_id) & 
+                            (rvd_df['season'].str.extract(r'(\d+)')[0].astype(int) == season)]
+
+
+        if rvd_data.empty:
+            if season is None:
+                print(f"No data for raiders vs defenders for player {player_id}")
+            else:
+                print(f"No data for raiders vs defenders for player {player_id} for season {season}")
+            return pd.DataFrame()  # Return empty DataFrame if no data found
+
+
+        rvd_extracted_df = rvd_data[['Season_Number', 'Team Name', 'player-id', 'Raider Name', 
+                                    'Number of Defenders', 'Total Raids', 
+                                    'Percentage of Raids', 'Empty Raids Percentage', 
+                                    'Successful Raids Percentage']]
+
+        return rvd_extracted_df
+            
+
+
+
+
 
 
     def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
@@ -1046,9 +1087,11 @@ class KabaddiDataAPI:
                 flattened[key] = value
         return flattened
 
+
     def internal_load_json_data(self, file_path):
         with open(file_path, 'r') as file:
             return json.loads(file.read())
+
 
     def internal_aggregate_player_data(self, directory_path, player_id):
         player_data = None
@@ -1610,10 +1653,10 @@ class KabaddiDataAPI:
 
         # Increase figure size and adjust spacing
         fig = plt.figure(figsize=(7 * cols, 6 * rows))
-        fig.suptitle(f"Player Zone Plots - Season {season}", fontsize=16, y=1.02)
+        fig.suptitle(f"Player Zone Plots - Season {season}", fontsize=16)
 
         # Create grid with increased spacing
-        gs = gridspec.GridSpec(rows, cols, figure=fig, wspace=0.3, hspace=0.4)
+        gs = gridspec.GridSpec(rows, cols, figure=fig, wspace=0.1, hspace=0.2)
 
         for i, player_id in enumerate(valid_plots):
             ax = fig.add_subplot(gs[i // cols, i % cols])
@@ -1623,6 +1666,10 @@ class KabaddiDataAPI:
 
         # Adjust layout to prevent clipping of titles
         plt.tight_layout()
+
+        # plt.savefig(f"player_zones_grid_season_{season}.png", bbox_inches='tight', pad_inches=0, dpi=400)
+
+
         plt.show()
 
 
@@ -1716,10 +1763,14 @@ if __name__ == "__main__":
     # print("\n13. Testing plot_point_progression".center(100, "-"))
     # api.plot_point_progression(season=10, match_id=3163)
 
-    print("\n14. Testing plot_player_zones_grid".center(100, "-"))
-    api.plot_player_zones_grid([143, 12, 211, 322, 160], season=5, zone_type='strong', max_cols=2)
+    # print("\n14. Testing plot_player_zones_grid".center(100, "-"))
+    # # api.plot_player_zones_grid([143, 12, 211, 322, 160], season=5, zone_type='strong', max_cols=2)
+    # api.plot_player_zones_grid([143, 12, 211, 160], season=5, zone_type='strong', max_cols=2)
 
 
+
+    df = api.get_player_rvd(player_id=143, season=None)
+    print(df)
 
 
 
