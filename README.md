@@ -16,13 +16,6 @@ pip install pro_kabaddi_data
 
 Deployed here: https://pypi.org/project/pro-kabaddi-data/
 
-## Requirements
-
-- Python 3.7+
-- Selenium WebDriver
-- Firefox browser (for Selenium WebDriver)
-- BeautifulSoup4
-
 
 ## Usage
 
