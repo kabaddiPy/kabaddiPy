@@ -11,6 +11,29 @@ has_children: false
 
 This documentation covers the main functions of the `KabaddiDataAPI` class that return useful data for Kabaddi statistics and information.
 
+
+[`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python
+Package that is designed to pull play-by-play data from
+the newest version of the [ProKabaddi League](https://www.prokabaddi.com/). 
+In the past, there have been a next to no scrapers for the Kabaddi.
+
+With the first season of the league kicking off on January 1st, and
+games being broadcast on ESPN+, this package was created to allow access
+to play-by-play data to continue pushing women’s hockey analytics
+forward.
+
+The lack of data and poor access to data have been the
+biggest barrier to entry in kabaddi analytics, a barrier that
+this package intends to alleviate.
+
+<center>
+
+<img src='https://github-production-user-asset-6210df.s3.amazonaws.com/85307430/354763168-e074c4c2-18b3-4580-a9dd-1aa40f9495b0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240906%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240906T000835Z&X-Amz-Expires=300&X-Amz-Signature=b0107ce954e05cb6ec04bc6871afc2ae30260290f7fb99599baa22ef1e881936&X-Amz-SignedHeaders=host&actor_id=85307430&key_id=0&repo_id=836594456' width="70%" />
+
+</center>
+
+
+
 {: .note }
 > This documentation is actively being developed alongwith the API.
 

@@ -1,5 +1,5 @@
 ---
-title: Play-by-Play Data
+title: Plotting Functions
 layout: default
 has_toc: true
 has_children: false
