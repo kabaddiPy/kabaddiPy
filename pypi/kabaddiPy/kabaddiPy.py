@@ -1143,8 +1143,8 @@ class KabaddiDataAPI:
         court_width, court_length = 13, 10
 
         # Custom color schemes
-        court_color = '#E6F3FF'  # Light blue for court
-        lobby_color = '#FFE6E6'  # Light red for lobby
+        court_color = '#B0D0E0'  # Darker blue for court
+        lobby_color = '#FFB3B3'  # Darker red for lobby
         line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
@@ -1185,10 +1185,11 @@ class KabaddiDataAPI:
         min_points = min(non_zero_values) if non_zero_values else 1
 
         # Custom color maps with increased contrast
+        # Updated color maps with increased contrast
         if zone_type == 'strong':
-            colors = ['#E6FFE6', '#66FF66', '#00CC00', '#006400']
+            colors = ['#C2F0C2', '#66CC66', '#339933', '#006400']
         else:
-            colors = ['#FFE6E6', '#FF9999', '#FF3333', '#8B0000']
+            colors = ['#FFCCCC', '#FF8080', '#FF3333', '#CC0000']
         n_bins = 100
         cmap = LinearSegmentedColormap.from_list('custom', colors, N=n_bins)
 
@@ -1211,7 +1212,7 @@ class KabaddiDataAPI:
                     circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
                     ax.add_patch(circle)
 
-                ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='white', fontsize=10,
+                ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='black', fontsize=12,
                         fontweight='bold', zorder=6)
 
         # Set axis limits and remove ticks
@@ -1225,7 +1226,7 @@ class KabaddiDataAPI:
         return fig, ax
 
    
-    def plot_player_zones_improved(self, player_id, season, zone_type='strong'):
+    def plot_player_zones(self, player_id, season, zone_type='strong'):
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
             4: "Season_PKL_Season_4_2016",
@@ -1245,9 +1246,10 @@ class KabaddiDataAPI:
         fig, ax = plt.subplots(figsize=(12, 8))
         court_width, court_length = 13, 10
 
-        # Custom color schemes
-        court_color = '#E6F3FF'  # Light blue for court
-        lobby_color = '#FFE6E6'  # Light red for lobby
+
+        # Updated color schemes for better contrast
+        court_color = '#B0D0E0'  # Darker blue for court
+        lobby_color = '#FFB3B3'  # Darker red for lobby
         line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
@@ -1270,8 +1272,8 @@ class KabaddiDataAPI:
         ax.text(7*(court_width / 8), 1, 'Bonus Line', **label_style)
 
 
-        ax.text(0.5, court_length / 2, 'Left Lobby', **label_style, rotation=90)
-        ax.text(court_width - 0.5, court_length / 2, 'Right Lobby', **label_style, rotation=90)
+        ax.text(0.5, 3*(court_length / 4), 'Left Lobby', **label_style, rotation=90)
+        ax.text(court_width - 0.5, 3*(court_length / 4), 'Right Lobby', **label_style, rotation=90)
 
 
         # Plot player position
@@ -1289,13 +1291,13 @@ class KabaddiDataAPI:
         min_points = min(non_zero_values) if non_zero_values else 1
 
         # Custom color maps with increased contrast
+        # Updated color maps with increased contrast
         if zone_type == 'strong':
-            colors = ['#E6FFE6', '#66FF66', '#00CC00', '#006400']
+            colors = ['#C2F0C2', '#66CC66', '#339933', '#006400']
         else:
-            colors = ['#FFE6E6', '#FF9999', '#FF3333', '#8B0000']
-        n_bins = 25
+            colors = ['#FFCCCC', '#FF8080', '#FF3333', '#CC0000']
+        n_bins = 100
         cmap = LinearSegmentedColormap.from_list('custom', colors, N=n_bins)
-
         # Plot zones
         for zone_id, points in zones.items():
             if points > 0:
@@ -1398,9 +1400,9 @@ class KabaddiDataAPI:
         fig, ax = plt.subplots(figsize=(12, 8))
         court_width, court_length = 13, 10
 
-        # Custom color schemes
-        court_color = '#E6F3FF'  # Light blue for court
-        lobby_color = '#FFE6E6'  # Light red for lobby
+        # Updated color schemes for better contrast
+        court_color = '#B0D0E0'  # Darker blue for court
+        lobby_color = '#FFB3B3'  # Darker red for lobby
         line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
@@ -1416,14 +1418,14 @@ class KabaddiDataAPI:
         ax.axhline(y=1.3, color=line_color, linewidth=2)
 
         # Line Labels
-        label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 10, 'fontweight': 'bold'}
+        label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 11, 'fontweight': 'bold'}
 
         ax.text(7*(court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
         ax.text(7*(court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
         ax.text(7*(court_width / 8), 1, 'Bonus Line', **label_style)
         
-        ax.text(0.5, court_length / 2, 'Left Lobby', **label_style, rotation=90)
-        ax.text(court_width - 0.5, court_length / 2, 'Right Lobby', **label_style, rotation=90)
+        ax.text(0.5, 3*(court_length / 4), 'Left Lobby', **label_style, rotation=90)
+        ax.text(court_width - 0.5, 3*(court_length / 4), 'Right Lobby', **label_style, rotation=90)
 
         # Plot heat map of selected zone type
         zones = strong_zones if zone_type == 'strong' else weak_zones
@@ -1431,11 +1433,11 @@ class KabaddiDataAPI:
         non_zero_values = [v for v in zones.values() if v > 0]
         min_points = min(non_zero_values) if non_zero_values else 1
 
-        # Custom color maps with increased contrast
+        # Updated color maps with increased contrast
         if zone_type == 'strong':
-            colors = ['#E6FFE6', '#66FF66', '#00CC00', '#006400']
+            colors = ['#C2F0C2', '#66CC66', '#339933', '#006400']
         else:
-            colors = ['#FFE6E6', '#FF9999', '#FF3333', '#8B0000']
+            colors = ['#FFCCCC', '#FF8080', '#FF3333', '#CC0000']
         n_bins = 100
         cmap = LinearSegmentedColormap.from_list('custom', colors, N=n_bins)
 
@@ -1448,17 +1450,17 @@ class KabaddiDataAPI:
 
                 if zone_id in [1, 2]:  # Lobby zones
                     if zone_id == 1:  # Left lobby
-                        wedge = Wedge((1, court_length / 2), 0.9, 90, 270, color=color, alpha=0.7, ec=line_color, lw=1,
+                        wedge = Wedge((1, court_length / 2), 0.9, 90, 270, color=color, alpha=0.8, ec=line_color, lw=1,
                                         zorder=5)
                     else:  # Right lobby
-                        wedge = Wedge((court_width - 1, court_length / 2), 0.9, 270, 90, color=color, alpha=0.7,
+                        wedge = Wedge((court_width - 1, court_length / 2), 0.9, 270, 90, color=color, alpha=0.8,
                                         ec=line_color, lw=1, zorder=5)
                     ax.add_patch(wedge)
                 else:  # Inner court zones
-                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
+                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.8, ec=line_color, lw=1, zorder=5)
                     ax.add_patch(circle)
 
-                ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='white', fontsize=10,
+                ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='black', fontsize=12,
                         fontweight='bold', zorder=6)
 
         # Set title
@@ -1485,6 +1487,7 @@ class KabaddiDataAPI:
         plt.tight_layout()
         # plt.savefig(f"team_{team_id}_season_{season}_zones_{zone_type}.png", bbox_inches='tight', pad_inches=0, dpi=400)
         plt.show()
+
 
 
     def plot_point_progression(self, season, match_id):
@@ -1754,8 +1757,8 @@ if __name__ == "__main__":
     # print("Play-by-Play Data (first 5 rows):")
     # print(pbp_df.head() if pbp_df is not None else "No play-by-play data found")
 
-    # print("\n11. Testing plot_player_zones_improved".center(100, "-"))
-    # api.plot_player_zones_improved(player_id=143, season=5, zone_type='strong')
+    # print("\n11. Testing plot_player_zones".center(100, "-"))
+    # api.plot_player_zones(player_id=143, season=5, zone_type='strong')
 
     # print("\n12. Testing plot_team_zones".center(100, "-"))
     # api.plot_team_zones(team_id=4, season=5, zone_type='strong')
@@ -1769,8 +1772,8 @@ if __name__ == "__main__":
 
 
 
-    df = api.get_player_rvd(player_id=143, season=None)
-    print(df)
+    # df = api.get_player_rvd(player_id=143, season=None)
+    # print(df)
 
 
 
@@ -1789,8 +1792,8 @@ if __name__ == "__main__":
 
     # player_id = 143  # Example: Deepak Hooda
 
-    # plot_player_zones_improved(player_id,season=5,zone_type='strong')
-    # # plot_player_zones_improved(directory_path,player_id,zone_type='weak')
+    # plot_player_zones(player_id,season=5,zone_type='strong')
+    # # plot_player_zones(directory_path,player_id,zone_type='weak')
     # # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
     # # print(strong_zones)
     # plot_team_zones(5,season=5, zone_type='strong')
@@ -1798,18 +1801,18 @@ if __name__ == "__main__":
 
 
 
-    # api.plot_player_zones_improved(player_id, season=5, zone_type='strong')
-    # api.plot_player_zones_improved(player_id, season=5, zone_type='weak')
-    # # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
-    # # print(strong_zones)
+    api.plot_player_zones(player_id=143, season=5, zone_type='strong')
+    api.plot_player_zones(player_id=143, season=5, zone_type='weak')
+    # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
+    # print(strong_zones)
 
-    # api.plot_team_zones(team_id=4, season=5, zone_type='strong')
-    # api.plot_team_zones(team_id=4, season=5, zone_type='weak')
+    api.plot_team_zones(team_id=4, season=5, zone_type='strong')
+    api.plot_team_zones(team_id=4, season=5, zone_type='weak')
 
-    # # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
-    # api.plot_point_progression(season=10, match_id=3163)
+    # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
+    api.plot_point_progression(season=10, match_id=3163)
 
-    # column_list = [143, 12, 211, 322, 160]
+    # column_list = [143, 12, 211, 160]
     # api.plot_player_zones_grid(column_list, season=5, zone_type='strong', max_cols=2)
 
 
