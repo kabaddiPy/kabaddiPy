@@ -16,7 +16,7 @@ Retrieve team information for a specific team and season.
 This function fetches aggregated statistics, raider skills, and defender skills for a given team in a specified season or across all seasons.
 
 #### Parameters
-
+{: .no_toc }
 - **team_id**: `int`  
   The unique identifier for the team.
 
@@ -26,7 +26,7 @@ This function fetches aggregated statistics, raider skills, and defender skills 
   - `int`: A specific season number.
 
 #### Returns
-
+{: .no_toc }
 - **tuple**  
   A tuple containing five elements:
   1. `df_rank` (`DataFrame`): Team rankings in various categories.
@@ -36,13 +36,13 @@ This function fetches aggregated statistics, raider skills, and defender skills 
   5. `filtered_team_defender_skills` (`DataFrame` or `None`): Defender skills data for the team.
 
 #### Notes
-
+{: .no_toc }
 - If `season` is `'overall'`, raider and defender skills data are not returned (set to `None`).
 - For a specific season, all `DataFrames` are transposed for easier reading.
 - If no data is found for the specified team and season, all return values will be `None`.
 
 ### Example Usage
-
+{: .no_toc }
 ```python
     df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
     print("Team Rank:")
@@ -208,10 +208,10 @@ Retrieve team IDs and names for a specific season.
 This function returns a `DataFrame` containing team IDs and names for the given season.
 
 #### Parameters
-
+{: .no_toc }
 - **season**: `int` or `str`  
   The season number for which to retrieve team IDs and names.
-
+{: .no_toc }
 #### Returns
 
 - **pandas.DataFrame**  
@@ -229,7 +229,6 @@ This function returns a `DataFrame` containing team IDs and names for the given 
   team_ids = api.get_team_ids(season=5)
   print("Team-IDs")
   print(team_ids)
-
 ```
 
 
@@ -261,7 +260,7 @@ Retrieve all matches for a specific team in a given season.
 This function filters the season's matches to return only those involving the specified team.
 
 #### Parameters
-
+{: .no_toc }
 - **season**: `int` or `str`  
   The season number for which to retrieve matches.
 
@@ -269,7 +268,7 @@ This function filters the season's matches to return only those involving the sp
   The unique identifier for the team.
 
 #### Returns
-
+{: .no_toc }
 - **pandas.DataFrame**  
   A `DataFrame` containing match details for the specified team, including:
   - `Match_ID`: Unique identifier for the match
@@ -281,10 +280,6 @@ This function filters the season's matches to return only those involving the sp
   - `team_score_1`, `team_score_2`: Scores of both teams
   - And other relevant match information
 
-#### Notes
-
-- The function internally calls `get_season_matches` to fetch all matches for the season.
-- Matches are filtered to include only those where the specified `team_id` appears as either `team_id_1` or `team_id_2`.
 
 ```python
   Season Match_ID Match_Name League_Stage  Year  ... team_score_2           team_name_1 team_id_1           team_name_2 team_id_2
@@ -295,17 +290,20 @@ This function filters the season's matches to return only those involving the sp
 26     10     3055   Match 27       League  2023  ...           29         Patna Pirates         6  Jaipur Pink Panthers         3
 
 ```
+### Notes
+{: .no_toc }
+- The function internally calls `get_season_matches` to fetch all matches for the season.
+- Matches are filtered to include only those where the specified `team_id` appears as either `team_id_1` or `team_id_2`.
 
 ---
 
-### `build_team_roster`
+### `get_team_roster`
 
-Build a roster for a specific team in a given season.
+Gets the team roster for a specific team in a given season.
 
-This function aggregates player data across all matches for the specified team and season, creating a comprehensive roster with various statistics for each player.
 
 #### Parameters
-
+{: .no_toc }
 - **team_id**: `int`  
   The unique identifier for the team.
 
@@ -313,26 +311,37 @@ This function aggregates player data across all matches for the specified team a
   The season number for which to build the roster.
 
 #### Returns
+{: .no_toc }
 
-- **pandas.DataFrame**  
-  A `DataFrame` containing the team roster with the following columns:
-  - `Player ID`: Unique identifier for the player
-  - `Name`: Player's name
-  - `Jersey Number`: Player's jersey number
-  - `Captain Count`: Number of times the player was captain
-  - `Played Count`: Number of matches played
-  - `Green Card Count`: Number of green cards received
-  - `Yellow Card Count`: Number of yellow cards received
-  - `Red Card Count`: Number of red cards received
-  - `Starter Count`: Number of times the player started a match
-  - `Top Raider Count`: Number of times the player was top raider
-  - `Top Defender Count`: Number of times the player was top defender
-  - `Total Points`: Total points scored by the player
-  - `Team ID`: The team's unique identifier
-  - `Team Name`: The team's name
-  - `Total Matches in Season`: Total number of matches played by the team in the season
+A `DataFrame` containing the team roster for the specified season.
 
+#### Usage
+{: .no_toc }
+```python
+team_roster = pkl.get_team_roster(team_id=7,season=10)
+print(team_roster)
+Player ID	Name	                 Jersey  Captain Count	Played Count	Green Card Count	Yellow Card Count
+0	3233	Pankaj Mohite	         12	    0	22	1	0
+1	4031	Nitin R	                 55	    0	4	0	0
+2	5116	Aditya Shinde	         11	    0	12	0	0
+3	5108	Badal Singh	         32	    0	7	0	0
+4	5151	Dadaso Pujari	         7	    0	5	1	0
+5	5152	Tushar Dattaray Adhavade 18	0	6	0	0
+6	5256	Vahid RezaEimehr	 6	0	5	0	0
+7	4960	Aslam Mustafa Inamdar	 3	21	23	3	0
+8	4192	Abinesh Nadarajan        4	0	24	1	0
+9	3234	Sanket Sawant	         10	0	22	4	1
+10	4022	Mohit Goyat	         88	0	22	1	0
+11	4959	Akash Shinde	         33	0	13	0	0
+12	5128	Gaurav Khatri	         20	0	24	3	0
+13	4925	Mohammadreza Chiyaneh	 8	3	24	2	0
+14	5150	Vaibhav Kamble	         5	0	2	0	0
+15	5194	Hardeep	                 77	0	0	0	0
+16	5165	Ishwar	                 9	0	1	0	0
+17	5193	Ahmed Enamdar	         99	0	1	0	0
+```
 #### Notes
+{: .no_toc }
 
 - The function reads match data from JSON files in the `./MatchData_pbp` directory.
 - If no data is found for the specified season, an empty `DataFrame` is returned.
