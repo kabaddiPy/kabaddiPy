@@ -286,6 +286,15 @@ This function filters the season's matches to return only those involving the sp
 - The function internally calls `get_season_matches` to fetch all matches for the season.
 - Matches are filtered to include only those where the specified `team_id` appears as either `team_id_1` or `team_id_2`.
 
+```python
+  Season Match_ID Match_Name League_Stage  Year  ... team_score_2           team_name_1 team_id_1           team_name_2 team_id_2
+4      10     3033    Match 5       League  2023  ...           33         Puneri Paltan         7  Jaipur Pink Panthers         3
+9      10     3038   Match 10       League  2023  ...           28       Bengal Warriors         4  Jaipur Pink Panthers         3
+17     10     3046   Match 18       League  2023  ...           32  Jaipur Pink Panthers         3        Gujarat Giants        31
+21     10     3050   Match 22       League  2023  ...           30       Bengaluru Bulls         1  Jaipur Pink Panthers         3
+26     10     3055   Match 27       League  2023  ...           29         Patna Pirates         6  Jaipur Pink Panthers         3
+
+```
 
 ---
 
