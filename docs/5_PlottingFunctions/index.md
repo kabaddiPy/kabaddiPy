@@ -18,8 +18,8 @@ Visualize a player's strong or weak zones on the kabaddi court for a specific se
 
 ### Example Usage:
 ```python
-plot_player_zones_improved(player_id=143, season=5, zone_type='strong')
-plot_player_zones_improved(player_id=143, season=5, zone_type='weak')
+pkl.plot_player_zones(player_id=143, season=5, zone_type='strong')
+pkl.plot_player_zones(player_id=143, season=5, zone_type='weak')
 ```
 ![img.png](img.png)
 ![img_1.png](img_1.png)
@@ -41,9 +41,12 @@ Visualize a team's strong or weak zones on the kabaddi court for a specific seas
 
 ### Example Usage:
 ```python
-plot_team_zones(team_id=4, season=5, zone_type='strong')
+pkl.plot_team_zones(team_id=4, season=5, zone_type='strong')
 plot_team_zones(team_id=4, season=5, zone_type='weak')
 ```
+
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 
 Notes:
 - The function creates a heatmap that visualizes the team's zone performance across the court.
@@ -65,9 +68,9 @@ Plot the point progression for both teams throughout a specific match in a given
 
 ### Example Usage:
 ```python
-plot_point_progression(season=10, match_id=3163)
+plot_point_progression(season=10, match_id=3165)
 ```
-
+![img_4.png](img_4.png)
 Notes:
 - This function visualizes how the total points for each team progressed over the course of the match.
 - It highlights important raid events and significant point differences between teams.
