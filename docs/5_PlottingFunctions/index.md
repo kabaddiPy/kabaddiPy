@@ -7,7 +7,7 @@ nav_order: 6
 ---
 
 
-## `plot_player_zones_improved(player_id, season, zone_type='strong')`
+## `plot_player_zones(player_id, season, zone_type='strong')`
 
 Visualize a player's strong or weak zones on the kabaddi court for a specific season.
 
@@ -42,7 +42,7 @@ Visualize a team's strong or weak zones on the kabaddi court for a specific seas
 ### Example Usage:
 ```python
 pkl.plot_team_zones(team_id=4, season=5, zone_type='strong')
-plot_team_zones(team_id=4, season=5, zone_type='weak')
+pkl.plot_team_zones(team_id=4, season=5, zone_type='weak')
 ```
 
 ![img_2.png](img_2.png)
@@ -68,7 +68,7 @@ Plot the point progression for both teams throughout a specific match in a given
 
 ### Example Usage:
 ```python
-plot_point_progression(season=10, match_id=3165)
+pkl.plot_point_progression(season=10, match_id=3165)
 ```
 ![img_4.png](img_4.png)
 Notes:
@@ -90,9 +90,9 @@ Plot a grid of player zone heatmaps for multiple players in a specific season.
 
 ### Example Usage:
 ```python
-plot_player_zones_grid([143, 12, 211, 322, 160], season=5, zone_type='strong', max_cols=2)
+pkl.plot_player_zones_grid([143, 12, 211, 160,41,322], season=5, zone_type='strong', max_cols=2)```
 ```
-
+![img_7.png](img_7.png)
 
 Notes:
 - This function generates a grid of player zone heatmaps, allowing for side-by-side comparisons of multiple players.
