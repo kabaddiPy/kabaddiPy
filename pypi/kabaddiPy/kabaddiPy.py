@@ -1702,7 +1702,7 @@ class PKL:
         legend_elements = [
             Patch(facecolor=team1_color, edgecolor=team1_color, label=f'{team_id_map[int(keys_[0])]} (Team {keys_[0]})'),
             Patch(facecolor=team2_color, edgecolor=team2_color, label=f'{team_id_map[int(keys_[1])]} (Team {keys_[1]})'),
-            Line2D([0], [0], color='gray', linestyle='--', label='Raid events'),
+            Line2D([0], [0], color='gray', linestyle='--', label='Successful Raids'),
             Patch(facecolor='yellow', edgecolor='none', alpha=0.5, label='Significant point difference')
         ]
 
