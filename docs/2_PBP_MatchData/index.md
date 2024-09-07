@@ -18,18 +18,40 @@ nav_order: 5
 
 Load and process match details for a specific season and match ID.
 
-### Parameters:
+##### Parameters:
 - `season` (int): The season number.
 - `match_id` (str): The unique identifier for the match.
 
-### Returns:
-A tuple containing six pandas DataFrames:
-1. `match_detail_df`: DataFrame with overall match details.
-2. `events_df`: DataFrame with all events that occurred during the match.
-3. `zones_df`: DataFrame with information about different zones on the court.
-4. `team1_df`: DataFrame with detailed information about the first team.
-5. `team2_df`: DataFrame with detailed information about the second team.
-6. `breakdown_df`: DataFrame with breakdown data of the game.
+##### Returns:
+A tuple containing six DataFrames: `match_detail_df`, `events_df`, `zones_df`, `team1_df`, `team2_df` and `breakdown_df`
+
+##### Examples
+```python
+match_detail_df,events_df,zones_df,team1_df,team2_df,breakdown_df = pkl.load_match_details(season=9,
+                                                                                      match_id='2895')
+print(match_detail_df)
+ match_id match_number  clock_minutes  clock_seconds       date  start_time         matchtime_iso
+0      2895      Match 4             39             57  10/8/2022      19:30  2022-10-08T14:00:00Z
+#
+#...with 16 more columns: 'gmtoffset', 'result_value', 'result_winning_method', 'result_winning_team',
+#   'result_winning_team_id', 'player_of_the_match', 'series_id', 'series_parent_series_name', 'status', 
+#   'toss_winner', 'toss_selection', 'win_by_coin_toss_winner', 'venue_id', 'venue_name', 'stage',
+#   and 'group'. 
+
+print(events_df)
+event_no event_half	event	     event_id	event_text	                   raider_id	raiding_team_id
+1	    1	    Successful Raid	    1	Aslam Inamdar raids successfully	4960.0	7.0
+2	    1	    Empty Raid	            3	Sachin empty raid	                757.0	6.0
+3	    1	    Successful Raid	    1	Mohit Goyat raids successfully	        4022.0	7.0
+4	    1	    Successful Raid	    1	Vishwas S raids successfully	        4757.0	6.0
+5	    1	    Successful Raid	    1	Akash Shinde raids successfully	        4959.0	7.0
+6	    1	    Empty Raid	            3	Sachin empty raid	                757.0	6.0
+7	    1	    Empty Raid	            3	Mohit Goyat empty raid	                4022.0	7.0
+8	    1	    Unsuccessful Raid	    2	Vishwas S unsuccessful raid	        4757.0	6.0
+9	    1	    Unsuccessful Raid	    2	Aslam Inamdar unsuccessful raid	        4960.0	7.0
+10	    1	    Successful Raid	    1	Sachin raids successfully	         757.0	6.0
+```
+
 
 
 ### Notes:

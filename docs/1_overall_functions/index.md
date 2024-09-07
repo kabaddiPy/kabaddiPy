@@ -65,10 +65,6 @@ If the standings data for the specified season is empty, an empty DataFrame is r
 ### Example Usage
 
 ```python
-    import kabaddiPy
-
-    pkl = kabaddiPy.PKL()
-
     qualified_df, all_standings_df = pkl.get_standings(season=9, qualified=True)
     
     print("Qualified teams:")
@@ -153,10 +149,6 @@ This function loads match data from JSON files and returns it as a pandas DataFr
 ### Example Usage
 
 ```python
-    import kabaddiPy
-
-    pkl = kabaddiPy.PKL()
-
     season_matches = pkl.get_season_matches(season=6)
     print(season_matches.head())
 
