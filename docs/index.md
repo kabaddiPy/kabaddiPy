@@ -102,6 +102,57 @@ We have split our functions into 3 categories:
   14.  `get_team_ids(season)`
 
 
+#### Function Map
+
+The following diagram shows the functions and their relationships.
+
+```mermaid
+erDiagram
+    OverviewData {
+      string get_pkl_standings
+      string get_season_matches
+    }
+    
+    PlayerData {
+      pk playerid
+      string get_player_info
+      string get_matchwise_player_info
+      string get_player_rvd
+    }
+    
+    Play_By_Play {
+      pk matchid
+      string load_match_details
+      string load_pbp
+    }
+    
+    TeamData {
+      pk teamid
+      string get_team_info
+      string get_team_matches
+      string get_team_roster
+    }
+    
+    Visualisations {
+      string plot_player_zones
+      string plot_team_zones
+      string plot_point_progression
+      string plot_player_zones_grid
+    }
+    
+    OverviewData ||--o{ Play_By_Play : "get_season_matches()"
+    OverviewData ||--o{ TeamData : "get_pkl_standings()"
+    TeamData ||--o{ Play_By_Play : "get_team_matches()"
+    TeamData ||--o{ PlayerData : "get_team_roster()"
+    PlayerData ||--o| Visualisations : "plot_player_zones()"
+    Play_By_Play ||--o| Visualisations : "plot_point_progression()"
+    TeamData ||--o| Visualisations : "plot_team_zones()"
+    PlayerData ||--o| Visualisations : "plot_player_zones_grid()"
+```
+
+
+
+
 
 ### Citation
 
