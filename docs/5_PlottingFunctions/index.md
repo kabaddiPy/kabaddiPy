@@ -21,7 +21,8 @@ Visualize a player's strong or weak zones on the kabaddi court for a specific se
 plot_player_zones_improved(player_id=143, season=5, zone_type='strong')
 plot_player_zones_improved(player_id=143, season=5, zone_type='weak')
 ```
-
+![img.png](img.png)
+![img_1.png](img_1.png)
 Notes:
  - The function plots a heatmap of a player's strong or weak zones during a season on the kabaddi court.
  - Each zone's intensity reflects the player's performance in that zone.
