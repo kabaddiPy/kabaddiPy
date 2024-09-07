@@ -24,7 +24,7 @@ Overview
 Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
  
 ##### Parameters:
-
+{: .no_toc}
 - `season` : int, optional
     The season number for which to retrieve standings. Defaults to 10 if not specified.
 - `qualified` : bool, optional
@@ -33,37 +33,19 @@ Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
     If specified, returns standings for only this team. Defaults to None (all teams).
 
 ##### Returns:
+{: .no_toc}
 
-- pandas.DataFrame or tuple of pandas.DataFrame
-  - If qualified is False: 
-    - Returns a DataFrame containing standings for all teams.
-  - If qualified is True:
-    - Returns a tuple of two DataFrames:
-    (qualified_teams_standings, all_teams_standings)
-
-
-The DataFrame(s) include the following columns:
-- **Group**: The group name (if applicable)
-- **Season**: The season number
-- **Team_Id**: Unique identifier for the team
-- **Team_Name**: Name of the team
-- **League_position**: Current position in the league
-- **Matches_played**: Number of matches played
-- **Wins**, **Lost**, **Tied**, **Draws**: Match outcomes
-- **No Result**: Number of matches with no result
-- **League_points**: Total points in the league
-- **Score_diff**: Score difference
-- **Qualified**: Boolean indicating if the team qualified
-
+A DataFrame containing standings for all teams. If qualified is True, also returns qualified team standings in a dataframe.
 
 
 ##### Note:
+{: .no_toc}
 
 If the standings data for the specified season is empty, an empty DataFrame is returned.
 
 
 ### Example Usage
-
+{: .no_toc}
 ```python
     qualified_df, all_standings_df = pkl.get_standings(season=9, qualified=True)
     
@@ -114,40 +96,23 @@ Retrieve match data for a specific season or all seasons.
 This function loads match data from JSON files and returns it as a pandas DataFrame.
 
 ##### Parameters
-
+{: .no_toc}
 - **season**: `str` or `int`, optional  
   The season number for which to retrieve match data. Use `"all"` to retrieve data for all seasons (default). If a specific season is desired, provide the season number as a string or integer.
 
 
 ##### Returns
-
+{: .no_toc}
 - **pandas.DataFrame**  
-  A DataFrame containing match details with the following columns:
-  - **Season**: The season number
-  - **Match_ID**: Unique identifier for the match
-  - **Match_Name**: Name of the match event
-  - **League_Stage**: Stage of the league (e.g., group stage, playoffs)
-  - **Year**: Year of the match
-  - **Venue**: Location where the match was played
-  - **Match_Outcome**: Outcome of the match
-  - **Start_Date**: Start date and time of the match
-  - **End_Date**: End date and time of the match
-  - **Result**: Result code of the match
-  - **Winning Margin**: Margin of victory
-  - **team_score_1**: Score of the first team
-  - **team_score_2**: Score of the second team
-  - **team_name_1**: Name of the first team
-  - **team_id_1**: ID of the first team
-  - **team_name_2**: Name of the second team
-  - **team_id_2**: ID of the second team
-
+  A DataFrame containing match details with.
 ##### Notes
+{: .no_toc}
   - For `"all"` seasons, it sorts the files based on the season number extracted from the filename.
   - Each row in the returned DataFrame represents a single match.
 
 
 ### Example Usage
-
+{: .no_toc}
 ```python
     season_matches = pkl.get_season_matches(season=6)
     print(season_matches.head())

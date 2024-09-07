@@ -137,6 +137,7 @@ Load the play-by-play (PBP) data for a specific match in a given season.
 - `DataFrame`: A DataFrame containing the play-by-play events of the match. Returns `None` if the match was not found for a season.
 
 ### Usage
+{: .no_toc }
 
 ```python
 event_no event_half	 event	event_id	event_text	            raider_id	raiding_team_id
