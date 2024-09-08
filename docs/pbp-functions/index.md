@@ -9,11 +9,19 @@ nav_order: 5
 
 ### `load_match_details(season, match_id)`
 
+Match
+{: .label .label-green }
+
 Loads and processes detailed match information, including events, team performance, and zone breakdowns, returning six DataFrames with match metadata and statistics.
 
 ---
 
 ### `load_pbp(season, match_id)`
+
+Match
+{: .label .label-green }
+
+
 
 Retrieves the play-by-play (PBP) event data for a given match, detailing every event such as raids, tackles, and scores in a structured DataFrame.
 

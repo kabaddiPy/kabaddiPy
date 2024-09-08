@@ -9,7 +9,7 @@ nav_order: 7
 
 # Planned (Future) Features
 
-Here are some exciting features that our module will be incorporating by the next release, scheduled to be in the coming month.
+Here are some exciting features that our module will be incorporating by the next release, scheduled to be in the coming months.
 
 ### 1. Include international Kabaddi leagues
 - Include data for Kabaddi World Cup, British Kabaddi League and Kabaddi at Asian Games
