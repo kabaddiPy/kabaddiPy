@@ -10,13 +10,17 @@ nav_order: 4
 
 
 
-### [`get_player_info()`](/kabaddiPy/player-functions/get_player_info.html)
+## [`get_player_info()`](/kabaddiPy/player-functions/get_player_info.html)
+Player
+{: .label .label-red }
 
 Retrieves comprehensive player information across various categories such as ranks, values, and per-match statistics, returning three DataFrames that summarize the player's performance.
 
 ---
 
-### [`get_matchwise_player_info()`](/kabaddiPy/player-functions/get_matchwise_player_info.html)
+## [`get_matchwise_player_info()`](/kabaddiPy/player-functions/get_matchwise_player_info.html)
+Player
+{: .label .label-red }
 
 Extracts detailed player statistics for each match in a given season, providing match-by-match insights into player performance.
 

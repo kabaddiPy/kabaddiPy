@@ -53,102 +53,97 @@ You can view CSVs of historical play-by-play on the [`kabaddiPy`](https://github
 
 ---
 
+## Functions
 
-We have split our functions into 3 categories:
-
-#### Overall Functions
-  
-  1. `get_standings(season=None, qualified=False, team_id=None)`
-  
-  2. `get_season_matches(season="all")`
-
-#### Team-Wise Functions
-  
-  3. `get_team_info(team_id, season='overall')`
-
-  4. `get_team_matches(season, team_id)`
-
-  5. `get_team_roster(team_id, season)`
-
-#### Player-Information
-  
-  6. `get_player_info(player_id, season=None)`
-   
-  7. `get_matchwise_player_info(self, player_id, season)`
-   
-  8. `get_player_rvd(self, player_id, season=None)`
+Refer to the [function index](/kabaddiPy/function-index.html)
 
 
-#### Detailed Granular Match-Details (Play-by-Play)
-  
-  8. `load_match_details(season, match_id)`
 
-  9. `load_pbp(season, match_id)`
+[//]: # (#### Function Map)
 
+[//]: # ()
+[//]: # (The following diagram shows the functions and their relationships.)
 
-#### Visualisation Functions
-  
-  10. `plot_point_progression(season, match_id)`
+[//]: # (```mermaid)
 
-  11. `plot_team_zones(team_id, season, zone_type='strong')`
+[//]: # (  erDiagram)
 
-  12. `plot_player_zones(player_id, season, zone_type='strong')`
+[//]: # (      OverviewData {)
 
-  13. `plot_player_zones_grid(player_ids, season, zone_type='strong', max_cols=4)`
+[//]: # (        string get_pkl_standings)
 
+[//]: # (        string get_season_matches)
 
-#### Utility Function
+[//]: # (      })
 
-  14.  `get_team_ids(season)`
+[//]: # (      )
+[//]: # (      PlayerData {)
 
+[//]: # (        pk playerid)
 
-#### Function Map
+[//]: # (        string get_player_info)
 
-The following diagram shows the functions and their relationships.
+[//]: # (        string get_matchwise_player_info)
 
-```mermaid
-  erDiagram
-      OverviewData {
-        string get_pkl_standings
-        string get_season_matches
-      }
-      
-      PlayerData {
-        pk playerid
-        string get_player_info
-        string get_matchwise_player_info
-        string get_player_rvd
-      }
-      
-      Play_By_Play {
-        pk matchid
-        string load_match_details
-        string load_pbp
-      }
-      
-      TeamData {
-        pk teamid
-        string get_team_info
-        string get_team_matches
-        string get_team_roster
-      }
-      
-      Visualisations {
-        string plot_player_zones
-        string plot_team_zones
-        string plot_point_progression
-        string plot_player_zones_grid
-      }
-      
-      OverviewData ||--o{ Play_By_Play : "get_season_matches()"
-      OverviewData ||--o{ TeamData : "get_pkl_standings()"
-      TeamData ||--o{ Play_By_Play : "get_team_matches()"
-      TeamData ||--o{ PlayerData : "get_team_roster()"
-      PlayerData ||--o| Visualizations : "plot_player_zones()"
-      Play_By_Play ||--o| Visualizations : "plot_point_progression()"
-      TeamData ||--o| Visualizations : "plot_team_zones()"
-      PlayerData ||--o| Visualizations : "plot_player_zones_grid()"
-```
+[//]: # (        string get_player_rvd)
+
+[//]: # (      })
+
+[//]: # (      )
+[//]: # (      Play_By_Play {)
+
+[//]: # (        pk matchid)
+
+[//]: # (        string load_match_details)
+
+[//]: # (        string load_pbp)
+
+[//]: # (      })
+
+[//]: # (      )
+[//]: # (      TeamData {)
+
+[//]: # (        pk teamid)
+
+[//]: # (        string get_team_info)
+
+[//]: # (        string get_team_matches)
+
+[//]: # (        string get_team_roster)
+
+[//]: # (      })
+
+[//]: # (      )
+[//]: # (      Visualisations {)
+
+[//]: # (        string plot_player_zones)
+
+[//]: # (        string plot_team_zones)
+
+[//]: # (        string plot_point_progression)
+
+[//]: # (        string plot_player_zones_grid)
+
+[//]: # (      })
+
+[//]: # (      )
+[//]: # (      OverviewData ||--o{ Play_By_Play : "get_season_matches&#40;&#41;")
+
+[//]: # (      OverviewData ||--o{ TeamData : "get_pkl_standings&#40;&#41;")
+
+[//]: # (      TeamData ||--o{ Play_By_Play : "get_team_matches&#40;&#41;")
+
+[//]: # (      TeamData ||--o{ PlayerData : "get_team_roster&#40;&#41;")
+
+[//]: # (      PlayerData ||--o| Visualizations : "plot_player_zones&#40;&#41;")
+
+[//]: # (      Play_By_Play ||--o| Visualizations : "plot_point_progression&#40;&#41;")
+
+[//]: # (      TeamData ||--o| Visualizations : "plot_team_zones&#40;&#41;")
+
+[//]: # (      PlayerData ||--o| Visualizations : "plot_player_zones_grid&#40;&#41;")
+
+[//]: # (```)
 
 
 

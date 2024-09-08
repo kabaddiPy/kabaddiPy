@@ -7,14 +7,16 @@ nav_order: 3
 ---
 
 ## [`get_standings()`](/kabaddiPy/season-functions/get_standings.html) 
-Season {: .label .label-purple }
+Season
+{: .label .label-yellow }
 
 Retrieves Pro Kabaddi League standings for a specified season, with options to filter for qualified teams or a specific team.
 
 
 
 ## [`get_season_matches()`](/kabaddiPy/season-functions/get_season_matches.html)
-Season {: .label .label-purple }
+Season
+{: .label .label-yellow }
 
 Fetches match data for a specific PKL season or all seasons, returning detailed information about each match in a pandas DataFrame.
 
