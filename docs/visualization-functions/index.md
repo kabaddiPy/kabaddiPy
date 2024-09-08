@@ -10,7 +10,7 @@ nav_order: 6
 # Visualization Functions
 
 
-## `plot_player_zones(player_id, season, zone_type='strong')`
+## [`plot_player_zones()`](/kabaddiPy/visualization-functions/plot_player_zones.html)
 Visualization
 {: .label .label-purple }
 
@@ -18,7 +18,7 @@ Visualize a player's strong or weak zones on the kabaddi court for a specific se
 
 ---
 
-## `plot_team_zones(team_id, season, zone_type='strong')`
+## [`plot_team_zones()`](/kabaddiPy/visualization-functions/plot_team_zones.html)
 Visualization
 {: .label .label-purple }
 
@@ -26,7 +26,7 @@ Visualize a team's strong or weak zones on the kabaddi court for a specific seas
 
 ---
 
-## `plot_point_progression(season, match_id)`
+## [`plot_point_progression()`](/kabaddiPy/visualization-functions/plot_point_progression.html)
 Visualization
 {: .label .label-purple }
 
@@ -34,7 +34,7 @@ Plot the point progression for both teams throughout a specific match in a given
 
 ---
 
-## `plot_player_zones_grid(player_ids, season, zone_type='strong', max_cols=4)`
+## [`plot_player_zones_grid()`](/kabaddiPy/visualization-functions/plot_player_zones_grid.html)
 Visualization
 {: .label .label-purple }
 

@@ -9,6 +9,15 @@ nav_order: 2
 
 {: .fs-5 }
 
+[`load_match_details()`](/kabaddiPy/pbp-functions/load_match_details.html)
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Match Details**
+
+
+{: .fs-5 }
+
 [`load_pbp()`](/kabaddiPy/pbp-functions/load_pbp.html)
 
 
@@ -80,17 +89,6 @@ nav_order: 2
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get stats of raider vs number of defenders**
-
-
-{: .fs-5 }
-
-[`load_match_details()`](/kabaddiPy/pbp-functions/load_match_details.html)
-
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Match Details**
-
-
 
 
 {: .fs-5 }

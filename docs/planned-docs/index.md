@@ -25,7 +25,7 @@ Here are some exciting features that our module will be incorporating by the nex
 - Implement support for integrating video data from matches, allowing for visual data analysis and player tracking
 - Provide tools for syncing performance data with video footage to analyze player movements and tactics
 
-### 3. Advanced Statistical Correlations
+### 4. Advanced Statistical Correlations
 
 - Provide insights to help teams optimize their strategies and player selections
 - Implement hypothesis testing to validate traditional kabaddi strategies and beliefs
