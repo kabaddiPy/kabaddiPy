@@ -1,8 +1,6 @@
 import warnings
 from typing import List, Tuple, Dict, Any
 
-
-
 import importlib.resources
 import importlib_resources
 
@@ -28,6 +26,7 @@ class PKL:
     def __init__(self):
         # self.base_path = resource_filename(__name__,"./MatchData_pbp")
         self.base_path = importlib_resources.files('kabaddiPy').joinpath('MatchData_pbp')
+
     # for a season - display the standings
 
     def get_standings(self, season=None, qualified=False, team_id=None):
@@ -74,14 +73,13 @@ class PKL:
         -----
         If the standings data for the specified season is empty, an empty DataFrame is returned.
         """
-    # ... (rest of the function implementation remains the same)
-        
+        # ... (rest of the function implementation remains the same)
+
         if season is None:
             season = 10
 
         # file_path = resource_filename(__name__, f'PKL_Standings/pkl_standings_s{season}.json')
         file_path = importlib_resources.files('kabaddiPy').joinpath(f'PKL_Standings/pkl_standings_s{season}.json')
-
 
         with open(file_path, 'r') as f:
             data = json.load(f)
@@ -131,7 +129,6 @@ class PKL:
 
         return team_info_df
 
-
     def get_season_matches(self, season="all"):
         """
         Retrieve match data for a specific season or all seasons.
@@ -173,7 +170,7 @@ class PKL:
         - For "all" seasons, it processes all available season files.
         - Each row in the returned DataFrame represents a single match.
         """
-        
+
         matches_list = []
 
         # Determine the file(s) to load based on the season input
@@ -184,8 +181,9 @@ class PKL:
 
         for season_num in season_numbers:
             # file_path = resource_filename(__name__, f'Matches-Overview/S{season_num}_PKL_MatchData.json')
-            file_path = importlib_resources.files('kabaddiPy').joinpath(f'Matches-Overview/S{season_num}_PKL_MatchData.json')
-            
+            file_path = importlib_resources.files('kabaddiPy').joinpath(
+                f'Matches-Overview/S{season_num}_PKL_MatchData.json')
+
             try:
                 with open(file_path) as f:
                     data = json.load(f)
@@ -230,7 +228,6 @@ class PKL:
 
         return df
 
-
     def get_team_info(self, team_id=None, season='overall'):
         """
         Retrieve team information for a specific team and season.
@@ -270,39 +267,41 @@ class PKL:
         if season != 'overall':
             season = int(season)
 
-        df_team_aggregated_stats_path = importlib_resources.files('kabaddiPy').joinpath("./Team-Wise-Data/PKL_AggregatedTeamStats.csv")
-        df_team_raider_skills_path = importlib_resources.files('kabaddiPy').joinpath("./Team-Wise-Data/ALL_Raider_Skills_Merged.csv")
-        df_team_defender_skills_path = importlib_resources.files('kabaddiPy').joinpath("./Team-Wise-Data/ALL_Defensive_Skills_Merged.csv")
-        
+        df_team_aggregated_stats_path = importlib_resources.files('kabaddiPy').joinpath(
+            "./Team-Wise-Data/PKL_AggregatedTeamStats.csv")
+        df_team_raider_skills_path = importlib_resources.files('kabaddiPy').joinpath(
+            "./Team-Wise-Data/ALL_Raider_Skills_Merged.csv")
+        df_team_defender_skills_path = importlib_resources.files('kabaddiPy').joinpath(
+            "./Team-Wise-Data/ALL_Defensive_Skills_Merged.csv")
+
         df_team_aggregated_stats = pd.read_csv(df_team_aggregated_stats_path)
         df_team_raider_skills = pd.read_csv(df_team_raider_skills_path)
         df_team_defender_skills = pd.read_csv(df_team_defender_skills_path)
-        
+
         if team_id:
             team_id = int(team_id)
         else:
-            team_id=None
+            team_id = None
 
         def find_team_column(dataframe, team_id):
             for col in dataframe.columns:
                 if f"({team_id})" in col:
                     return col
             return None
-        
+
         if team_id:
             team_column_team_raider_skills = find_team_column(df_team_raider_skills, team_id)
             team_column_team_defender_skills = find_team_column(df_team_defender_skills, team_id)
         else:
             team_column_team_raider_skills = -1
             team_column_team_defender_skills = -1
-        
-        
 
         if season == 'overall':
-            
+
             if team_id:
-                filtered_team_aggregated_stats = df_team_aggregated_stats[df_team_aggregated_stats['team_id'] == team_id]
-            
+                filtered_team_aggregated_stats = df_team_aggregated_stats[
+                    df_team_aggregated_stats['team_id'] == team_id]
+
             rows_overall = filtered_team_aggregated_stats[filtered_team_aggregated_stats['season'] == 'all']
             other_rows = filtered_team_aggregated_stats[filtered_team_aggregated_stats['season'] != 'all']
 
@@ -310,39 +309,41 @@ class PKL:
             filtered_team_raider_skills = None
             filtered_team_defender_skills = None
 
-        
+
         else:
 
             df_team_aggregated_stats['team_id'] = pd.to_numeric(df_team_aggregated_stats['team_id'], errors='coerce')
             df_team_aggregated_stats['season'] = pd.to_numeric(df_team_aggregated_stats['season'], errors='coerce')
-            
-            filtered_team_aggregated_stats = df_team_aggregated_stats[df_team_aggregated_stats['season'] == season]
-            
-            if team_id:
-                filtered_team_aggregated_stats = filtered_team_aggregated_stats[filtered_team_aggregated_stats['team_id'] == team_id]
 
-            if team_column_team_raider_skills:            
+            filtered_team_aggregated_stats = df_team_aggregated_stats[df_team_aggregated_stats['season'] == season]
+
+            if team_id:
+                filtered_team_aggregated_stats = filtered_team_aggregated_stats[
+                    filtered_team_aggregated_stats['team_id'] == team_id]
+
+            if team_column_team_raider_skills:
                 filtered_team_raider_skills = df_team_raider_skills[df_team_raider_skills['Season'] == season]
-                
+
                 if team_column_team_raider_skills == -1:
                     cols = filtered_team_raider_skills.columns.tolist()
                     filtered_team_raider_skills = filtered_team_raider_skills[[cols]].reset_index(drop=True)
 
                 else:
-                    filtered_team_raider_skills = filtered_team_raider_skills[['Season','Skill Type','Skill Name',team_column_team_raider_skills]].reset_index(drop=True)
+                    filtered_team_raider_skills = filtered_team_raider_skills[
+                        ['Season', 'Skill Type', 'Skill Name', team_column_team_raider_skills]].reset_index(drop=True)
             else:
                 filtered_team_raider_skills = None
 
-
             if team_column_team_defender_skills:
                 filtered_team_defender_skills = df_team_defender_skills[df_team_defender_skills['Season'] == season]
-                
+
                 if team_column_team_raider_skills == -1:
                     cols = filtered_team_defender_skills.columns.tolist()
                     filtered_team_defender_skills = filtered_team_defender_skills[[cols]].reset_index(drop=True)
 
                 else:
-                    filtered_team_defender_skills = filtered_team_defender_skills[['Season','Skill Type','Skill Name',team_column_team_raider_skills]].reset_index(drop=True)
+                    filtered_team_defender_skills = filtered_team_defender_skills[
+                        ['Season', 'Skill Type', 'Skill Name', team_column_team_raider_skills]].reset_index(drop=True)
 
             else:
                 filtered_team_defender_skills = None
@@ -350,7 +351,6 @@ class PKL:
         if filtered_team_aggregated_stats.empty:
             print(f"No data found in CSV for team_id {team_id} in season {season}")
             return None, None, None, None, None
-        
 
         rank_columns = [col for col in filtered_team_aggregated_stats.columns if col.endswith('_rank')]
         value_columns = [col for col in filtered_team_aggregated_stats.columns if col.endswith('_value')]
@@ -360,22 +360,20 @@ class PKL:
         # print(f"len value cols: {len(value_columns)}")
         # print(f"len per match cols: {len(per_match_columns)}")
 
-        df_rank = filtered_team_aggregated_stats[['season', 'team_id', 'team_name' , 'matches_played'] + rank_columns]
-        df_value = filtered_team_aggregated_stats[['season', 'team_id', 'team_name' , 'matches_played'] + value_columns]
-        df_per_match = filtered_team_aggregated_stats[['season', 'team_id', 'team_name' , 'matches_played'] + per_match_columns]
-
+        df_rank = filtered_team_aggregated_stats[['season', 'team_id', 'team_name', 'matches_played'] + rank_columns]
+        df_value = filtered_team_aggregated_stats[['season', 'team_id', 'team_name', 'matches_played'] + value_columns]
+        df_per_match = filtered_team_aggregated_stats[
+            ['season', 'team_id', 'team_name', 'matches_played'] + per_match_columns]
 
         if season == 'overall':
             return df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills
         else:
             return df_rank.T, df_value.T, df_per_match.T, filtered_team_raider_skills, filtered_team_defender_skills
-            
 
     def get_team_ids(self, season):
-        
+
         return pd.DataFrame(self.get_standings(season=season)[['Team_Id', 'Team_Name']].to_dict(orient='records'))
 
-    
     def get_team_matches(self, season, team_id):
         """
         Retrieve all matches for a specific team in a given season.
@@ -415,10 +413,10 @@ class PKL:
         season_matches = self.get_season_matches(season=season)
 
         team_id = str(team_id)
-        team_season_matches = season_matches[(season_matches['team_id_1'] == team_id) | (season_matches['team_id_2'] == team_id)]
+        team_season_matches = season_matches[
+            (season_matches['team_id_1'] == team_id) | (season_matches['team_id_2'] == team_id)]
 
         return team_season_matches
-
 
     def get_team_roster(self, team_id, season):
         """
@@ -460,7 +458,7 @@ class PKL:
         - If no data is found for the specified season, an empty DataFrame is returned.
         - The function aggregates data across all matches, updating player statistics cumulatively.
         """
-        
+
         roster = {}
         team_id = int(team_id)
         team_name = ""
@@ -514,7 +512,7 @@ class PKL:
                                         'Team ID': team_id,
                                         'Team Name': team_name
                                     }
-                                
+
                                 roster[player_id]['Captain Count'] += int(player.get('captain', False))
                                 roster[player_id]['Played Count'] += int(player.get('played', False))
                                 roster[player_id]['Green Card Count'] += int(player.get('green_card', False))
@@ -528,7 +526,6 @@ class PKL:
         roster_df = pd.DataFrame(list(roster.values()))
         roster_df['Total Matches in Season'] = total_matches
         return roster_df
-
 
     def get_player_info(self, player_id, season=None):
         """
@@ -568,21 +565,25 @@ class PKL:
 
         player_id = int(player_id)
 
-        file_path = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
+        file_path = importlib_resources.files('kabaddiPy').joinpath(
+            "./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
 
         # file_path = resource_filename(__name__,"./Player-Wise-Data/all_seasons_player_stats_rounded.csv")
         df = pd.read_csv(file_path)
 
         # defend_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
-        defend_file = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
+        defend_file = importlib_resources.files('kabaddiPy').joinpath(
+            "./Player-Wise-Data/AllSeasons_AllTeams_DefenderSuccessRate.csv")
         defend_df = pd.read_csv(defend_file)
 
         # raider_file = resource_filename(__name__,"./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv")
-        raider_file = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv")
+        raider_file = importlib_resources.files('kabaddiPy').joinpath(
+            "./Player-Wise-Data/AllSeasons_AllTeams_RaiderSuccessRate.csv")
         raider_df = pd.read_csv(raider_file)
 
         # player_starts = resource_filename(__name__,"./Player-Wise-Data/Player_Team_Lineup_merged.csv")
-        player_starts = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/Player_Team_Lineup_merged.csv")
+        player_starts = importlib_resources.files('kabaddiPy').joinpath(
+            "./Player-Wise-Data/Player_Team_Lineup_merged.csv")
         player_starts_df = pd.read_csv(player_starts)
 
         def to_numeric_or_nan(x):
@@ -594,8 +595,6 @@ class PKL:
         df['player_id'] = df['player_id'].apply(to_numeric_or_nan)
         df['player_id'] = df['player_id'].fillna(-1)
         df['player_id'] = df['player_id'].astype(np.int64)
-
-
 
         defend_df['player_id'] = defend_df['player_id_copy_backup'].apply(to_numeric_or_nan)
         defend_df['player_id'] = defend_df['player_id'].fillna(-1)
@@ -619,33 +618,47 @@ class PKL:
         if player_stats_df.empty:
             print(f"No data for player {player_id} for season {season} |  AGGREGATED")
 
-        player_starts_df = player_starts_df[(player_starts_df['player_id'] == player_id) & (player_starts_df['season_num'] == season)]
+        player_starts_df = player_starts_df[
+            (player_starts_df['player_id'] == player_id) & (player_starts_df['season_num'] == season)]
         if player_starts_df.empty:
             print(f"No data for player {player_id} for season {season} |  STARTS")
-
-
 
         defend_extracted_df = defend_df[(defend_df['player_id'] == player_id) & (defend_df['season'] == season)]
         if defend_extracted_df.empty:
             print(f"No data for defenders for {player_id} for season {season}")
-        
+
         raider_extracted_df = raider_df[(raider_df['player_id'] == player_id) & (raider_df['season'] == season)]
         if raider_extracted_df.empty:
             print(f"No data for raiders for {player_id} for season {season}")
-        
-        player_stats_df_rank = player_stats_df[["season", "player_id", "player_name", "player_matches_played", "player_position_id", "player_position_name", "team_id", "team_full_name", "player-super-tackles_rank", "player-raid-points_rank", "player-super-raids_rank", "player-high-5s_rank", "player-tackle-points_rank", "player-avg-tackle-points_rank", "player-dod-raid-points_rank", "player-total-points_rank", "player-successful-tackles_rank", "player-successful-raids_rank", "super-10s_rank" ]].copy()
-                                                
-        player_stats_df_value = player_stats_df[["season", "player_id", "player_name", "player_matches_played", "player_position_id", "player_position_name", "team_id", "team_full_name", "player-super-tackles_value", "player-raid-points_value", "player-super-raids_value", "player-high-5s_value", "player-tackle-points_value", "player-avg-tackle-points_value", "player-dod-raid-points_value", "player-total-points_value", "player-successful-tackles_value", "player-successful-raids_value", "super-10s_value"]].copy()
-                                    
-        player_stats_df_per_match = player_stats_df[["season", "player_id", "player_name", "player_matches_played", "player_position_id", "player_position_name", "team_id", "team_full_name", "player-super-tackles_points_per_match", "player-raid-points_points_per_match", "player-super-raids_points_per_match", "high-5s_points_per_match", "player-tackle-points_points_per_match", "player-dod-raid-points_points_per_match", "player-total-points_points_per_match", "player-successful-tackles_points_per_match", "player-successful-raids_points_per_match", "super-10s_points_per_match"]].copy()
 
+        player_stats_df_rank = player_stats_df[
+            ["season", "player_id", "player_name", "player_matches_played", "player_position_id",
+             "player_position_name", "team_id", "team_full_name", "player-super-tackles_rank",
+             "player-raid-points_rank", "player-super-raids_rank", "player-high-5s_rank", "player-tackle-points_rank",
+             "player-avg-tackle-points_rank", "player-dod-raid-points_rank", "player-total-points_rank",
+             "player-successful-tackles_rank", "player-successful-raids_rank", "super-10s_rank"]].copy()
+
+        player_stats_df_value = player_stats_df[
+            ["season", "player_id", "player_name", "player_matches_played", "player_position_id",
+             "player_position_name", "team_id", "team_full_name", "player-super-tackles_value",
+             "player-raid-points_value", "player-super-raids_value", "player-high-5s_value",
+             "player-tackle-points_value", "player-avg-tackle-points_value", "player-dod-raid-points_value",
+             "player-total-points_value", "player-successful-tackles_value", "player-successful-raids_value",
+             "super-10s_value"]].copy()
+
+        player_stats_df_per_match = player_stats_df[
+            ["season", "player_id", "player_name", "player_matches_played", "player_position_id",
+             "player_position_name", "team_id", "team_full_name", "player-super-tackles_points_per_match",
+             "player-raid-points_points_per_match", "player-super-raids_points_per_match", "high-5s_points_per_match",
+             "player-tackle-points_points_per_match", "player-dod-raid-points_points_per_match",
+             "player-total-points_points_per_match", "player-successful-tackles_points_per_match",
+             "player-successful-raids_points_per_match", "super-10s_points_per_match"]].copy()
 
         if not defend_extracted_df.empty:
             defend_data = defend_extracted_df.iloc[0]
             player_stats_df_value['Total Tackles'] = defend_data.get('Total Tackles', np.nan)
             player_stats_df_value['Successful Tackles'] = defend_data.get('Successful Tackles', np.nan)
             player_stats_df_value['Defender Success Rate'] = defend_data.get('Defender Success rate', np.nan)
-
 
         if not raider_extracted_df.empty:
             raider_data = raider_extracted_df.iloc[0]
@@ -658,11 +671,7 @@ class PKL:
             player_stats_df_value['Total Played'] = player_starts_data.get('Total Played', np.nan)
             player_stats_df_value['Total Starts'] = player_starts_data.get('Total Starts', np.nan)
 
-        
-        
-
         return player_stats_df_rank.T, player_stats_df_value.T, player_stats_df_per_match.T
-
 
     def get_matchwise_player_info(self, player_id, season):
         """
@@ -677,7 +686,7 @@ class PKL:
         """
         player_id = int(player_id)
         season = int(season)
-        
+
         # base_path = resource_filename(__name__,"./MatchData_pbp")
         base_path = importlib_resources.files('kabaddiPy').joinpath("./MatchData_pbp")
 
@@ -688,29 +697,30 @@ class PKL:
 
         season_path = os.path.join(base_path, season_folder)
         # print(f"Processing data from: {season_path}")
-        
+
         player_stats = []
-        
+
         for filename in os.listdir(season_path):
             if filename.endswith(".json"):
                 file_path = os.path.join(season_path, filename)
-                
+
                 try:
                     with open(file_path, 'r') as file:
                         match_data = json.load(file)
-                    
+
                     # Handle different JSON structures
                     if "gameData" in match_data:
                         match_data = match_data["gameData"]
-                    
+
                     match_id = match_data["match_detail"]["match_id"]
                     match_date = match_data["match_detail"]["date"]
-                    
+
                     for team in match_data["teams"]["team"]:
                         for player in team["squad"]:
                             if int(player["id"]) == player_id:
                                 try:
-                                    opponent_team = next(t for t in match_data["teams"]["team"] if t["id"] != team["id"])
+                                    opponent_team = next(
+                                        t for t in match_data["teams"]["team"] if t["id"] != team["id"])
                                 except StopIteration:
                                     print(f"Warning: Could not find opponent team in match {match_id}")
                                     continue
@@ -744,21 +754,21 @@ class PKL:
                                     "top_raider": player.get("top_raider", False),
                                     "top_defender": player.get("top_defender", False),
                                 }
-                                
+
                                 # Extract substitution data
                                 substitutions = player.get("substitute", [])
                                 player_match_stats["substitutions"] = len(substitutions)
                                 if substitutions:
-                                    player_match_stats["first_substitution_time"] = substitutions[0].get("substitute_time")
-                                
+                                    player_match_stats["first_substitution_time"] = substitutions[0].get(
+                                        "substitute_time")
+
                                 player_stats.append(player_match_stats)
                                 break
                 except Exception as e:
                     print(f"Error processing file {file_path}: {str(e)}")
-        
+
         df = pd.DataFrame(player_stats)
 
-        
         # Calculate additional statistics
         if not df.empty:
             df["matches_played"] = len(df)
@@ -772,7 +782,7 @@ class PKL:
         #     df = df.sort_values(['date'], ascending=True)
         # elif not sort_date_asc:
         #     df = df.sort_values(['date'], ascending=False)
-        
+
         return df
 
     def get_player_rvd(self, player_id, season=None):
@@ -788,7 +798,8 @@ class PKL:
 
         # file_rvd = resource_filename(__name__,"./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
 
-        file_rvd = importlib_resources.files('kabaddiPy').joinpath("./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
+        file_rvd = importlib_resources.files('kabaddiPy').joinpath(
+            "./Player-Wise-Data/merged_raider_v_num_defenders_FINAL.csv")
         rvd_df = pd.read_csv(file_rvd)
 
         def to_numeric_or_nan(x):
@@ -796,20 +807,18 @@ class PKL:
                 return pd.to_numeric(x)
             except ValueError:
                 return np.nan
-            
 
         rvd_df['player-id'] = rvd_df['player-id-pkdc-sanitised'].apply(to_numeric_or_nan)
         rvd_df['player-id'] = rvd_df['player-id'].fillna(-1)
         rvd_df['player-id'] = rvd_df['player-id'].astype(int)
 
         if season is None:
-        # If no season is specified, return all rows for the player_id
+            # If no season is specified, return all rows for the player_id
             rvd_data = rvd_df[rvd_df['player-id'] == player_id]
         else:
             # If season is specified, filter by both player_id and season
-            rvd_data = rvd_df[(rvd_df['player-id'] == player_id) & 
-                            (rvd_df['season'].str.extract(r'(\d+)')[0].astype(int) == season)]
-
+            rvd_data = rvd_df[(rvd_df['player-id'] == player_id) &
+                              (rvd_df['season'].str.extract(r'(\d+)')[0].astype(int) == season)]
 
         if rvd_data.empty:
             if season is None:
@@ -818,16 +827,15 @@ class PKL:
                 print(f"No data for raiders vs defenders for player {player_id} for season {season}")
             return pd.DataFrame()  # Return empty DataFrame if no data found
 
-
-        rvd_extracted_df = rvd_data[['Season_Number', 'Team Name', 'player-id', 'Raider Name', 
-                                    'Number of Defenders', 'Total Raids', 
-                                    'Percentage of Raids', 'Empty Raids Percentage', 
-                                    'Successful Raids Percentage']]
+        rvd_extracted_df = rvd_data[['Season_Number', 'Team Name', 'player-id', 'Raider Name',
+                                     'Number of Defenders', 'Total Raids',
+                                     'Percentage of Raids', 'Empty Raids Percentage',
+                                     'Successful Raids Percentage']]
 
         return rvd_extracted_df
-            
 
-    def load_match_details(self, season, match_id) -> Tuple[DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
+    def load_match_details(self, season, match_id) -> Tuple[
+        DataFrame, DataFrame, DataFrame, DataFrame, DataFrame, DataFrame]:
         """
         Load and process match details for a specific season and match ID.
 
@@ -864,7 +872,7 @@ class PKL:
                 break
         else:
             raise ValueError(f"No season data found for season {season}")
-        
+
         file_name = next((f for f in os.listdir(season_path) if f.endswith(f'_ID_{match_id}.json')), None)
 
         if not file_name:
@@ -887,7 +895,8 @@ class PKL:
             flattened_match_detail = self.internal_flatten_match_detail(match_detail)
             match_detail_df = pd.DataFrame([flattened_match_detail])
 
-            match_detail_df = match_detail_df.drop(columns=["series_short_name", "series_parent_series_id", "status_id", "series_name", "result_outcome"])
+            match_detail_df = match_detail_df.drop(
+                columns=["series_short_name", "series_parent_series_id", "status_id", "series_name", "result_outcome"])
 
             teams_data = temp.get("teams", {}).get("team", [])
 
@@ -895,14 +904,9 @@ class PKL:
                 raise ValueError("Expected data for exactly two teams")
 
             team1_df, team2_df = self.internal_process_team_data(teams_data)
-            
+
             events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
             zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
-
-            
-
-            
-
 
             breakdown_data = temp2.get("breakdownData", {})
             # print(f"Breakdown data: {breakdown_data}")
@@ -911,24 +915,24 @@ class PKL:
 
             if season == 4 or not breakdown_data:
                 breakdown_df = pd.DataFrame()
-            
+
             else:
-                
+
                 teams_data = temp2.get("gameData", "").get("teams", "").get("team", "")
                 # print(f"Teams data: {teams_data}")
                 # print(teams_data[:100])
 
-                team_name=[]
+                team_name = []
                 for t in teams_data:
                     # print(f"Team Name: {t.get('name', '')}, Team ID: {t.get('id', '')}")
                     team_name.append((t.get("name", ""), t.get("id", "")))
-                
+
                 # print(team_name)
-                
+
                 breakdown_list = []
                 # print("hi")
                 for team_id, team_data in breakdown_data.items():
-                    
+
                     # print(f"Team ID: {team_id}, Team Data: {team_data}")
                     # print("hi2")
                     # print("hi3")
@@ -944,7 +948,7 @@ class PKL:
                     else:
                         team_name_json = team_name[1][0]
                         # print(team_name_json)
-                    
+
                     # print(f"\n---\n-\n\nnn\Team Name: {team_name}")
                     team_breakdown = {
                         'team_id': team_id,
@@ -974,7 +978,6 @@ class PKL:
         except Exception as e:
             print(f"Error loading data from {file_path}: {str(e)}")
             return None, None, None, None, None, None
-
 
     def internal_process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
         """
@@ -1033,7 +1036,6 @@ class PKL:
 
         return tuple(team_dfs)
 
-    
     def load_pbp(self, season, match_id) -> DataFrame:
         """
         Load the play-by-play (PBP) data for a specific match in a given season.
@@ -1055,7 +1057,6 @@ class PKL:
         """
         _, events_df, _, _, _, _ = self.load_match_details(season, match_id)
         return events_df
-
 
     def internal_flatten_match_detail(self, match_detail: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -1083,11 +1084,9 @@ class PKL:
                 flattened[key] = value
         return flattened
 
-
     def internal_load_json_data(self, file_path):
         with open(file_path, 'r') as file:
             return json.loads(file.read())
-
 
     def internal_aggregate_player_data(self, directory_path, player_id):
         player_data = None
@@ -1115,7 +1114,6 @@ class PKL:
 
         return player_data, strong_zones, weak_zones
 
-
     def internal_plot_player_zones_grid(self, player_id, season, zone_type='strong', fig=None, ax=None):
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
@@ -1126,7 +1124,8 @@ class PKL:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
         # directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
-        directory_path = importlib_resources.files('kabaddiPy').joinpath(f"./MatchData_pbp/{season_directories[season]}")
+        directory_path = importlib_resources.files('kabaddiPy').joinpath(
+            f"./MatchData_pbp/{season_directories[season]}")
 
         player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
 
@@ -1145,11 +1144,13 @@ class PKL:
         line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
-        ax.add_patch(Rectangle((1, 0), court_width - 2, court_length, fill=True, color=court_color, ec=line_color, lw=2))
+        ax.add_patch(
+            Rectangle((1, 0), court_width - 2, court_length, fill=True, color=court_color, ec=line_color, lw=2))
 
         # Draw lobbies
         ax.add_patch(Rectangle((0, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
-        ax.add_patch(Rectangle((court_width - 1, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
+        ax.add_patch(
+            Rectangle((court_width - 1, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
 
         # Draw lines
         ax.axhline(y=(court_length), color=line_color, linewidth=3)
@@ -1159,18 +1160,18 @@ class PKL:
         # Line Labels
         label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 10, 'fontweight': 'bold'}
 
-        ax.text(7*(court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
-        ax.text(7*(court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
-        ax.text(7*(court_width / 8), 1, 'Bonus Line', **label_style)
-        
-        ax.text(0.5, 3*(court_length / 4), 'Left Lobby', **label_style, rotation=90)
-        ax.text(court_width - 0.5, 3*(court_length / 4), 'Right Lobby', **label_style, rotation=90)
+        ax.text(7 * (court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
+        ax.text(7 * (court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
+        ax.text(7 * (court_width / 8), 1, 'Bonus Line', **label_style)
 
+        ax.text(0.5, 3 * (court_length / 4), 'Left Lobby', **label_style, rotation=90)
+        ax.text(court_width - 0.5, 3 * (court_length / 4), 'Right Lobby', **label_style, rotation=90)
 
         # Plot player position
         player_x, player_y = court_width / 2, court_length / 2 + 0.8
-        jersey_circle = Circle((player_x, player_y), 0.4, fill=True, facecolor='#FFD700', edgecolor=line_color, linewidth=2,
-                            zorder=10)
+        jersey_circle = Circle((player_x, player_y), 0.4, fill=True, facecolor='#FFD700', edgecolor=line_color,
+                               linewidth=2,
+                               zorder=10)
         ax.add_patch(jersey_circle)
         ax.text(player_x, player_y, str(player_data['jersey']), ha='center', va='center', color=line_color, fontsize=14,
                 fontweight='bold', zorder=11)
@@ -1200,13 +1201,14 @@ class PKL:
                 if zone_id in [1, 2]:  # Lobby zones
                     if zone_id == 1:  # Left lobby
                         wedge = Wedge((1, court_length / 2), 0.9, 90, 270, color=color, alpha=0.7, ec=line_color, lw=1,
-                                    zorder=5)
+                                      zorder=5)
                     else:  # Right lobby
                         wedge = Wedge((court_width - 1, court_length / 2), 0.9, 270, 90, color=color, alpha=0.7,
-                                    ec=line_color, lw=1, zorder=5)
+                                      ec=line_color, lw=1, zorder=5)
                     ax.add_patch(wedge)
                 else:  # Inner court zones
-                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
+                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1,
+                                    zorder=5)
                     ax.add_patch(circle)
 
                 ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='black', fontsize=12,
@@ -1222,7 +1224,6 @@ class PKL:
         # plt.show()
         return fig, ax, player_data
 
-   
     def plot_player_zones(self, player_id, season, zone_type='strong'):
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
@@ -1233,7 +1234,8 @@ class PKL:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
         # directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
-        directory_path = importlib_resources.files('kabaddiPy').joinpath(f"./MatchData_pbp/{season_directories[season]}")
+        directory_path = importlib_resources.files('kabaddiPy').joinpath(
+            f"./MatchData_pbp/{season_directories[season]}")
 
         player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
 
@@ -1244,18 +1246,19 @@ class PKL:
         fig, ax = plt.subplots(figsize=(12, 8))
         court_width, court_length = 13, 10
 
-
         # Updated color schemes for better contrast
         court_color = '#B0D0E0'  # Darker blue for court
         lobby_color = '#FFB3B3'  # Darker red for lobby
         line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
-        ax.add_patch(Rectangle((1, 0), court_width - 2, court_length, fill=True, color=court_color, ec=line_color, lw=2))
+        ax.add_patch(
+            Rectangle((1, 0), court_width - 2, court_length, fill=True, color=court_color, ec=line_color, lw=2))
 
         # Draw lobbies
         ax.add_patch(Rectangle((0, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
-        ax.add_patch(Rectangle((court_width - 1, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
+        ax.add_patch(
+            Rectangle((court_width - 1, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
 
         # Draw lines
         ax.axhline(y=(court_length), color=line_color, linewidth=3)
@@ -1265,19 +1268,18 @@ class PKL:
         # Line Labels
         label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 10, 'fontweight': 'bold'}
 
-        ax.text(7*(court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
-        ax.text(7*(court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
-        ax.text(7*(court_width / 8), 1, 'Bonus Line', **label_style)
+        ax.text(7 * (court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
+        ax.text(7 * (court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
+        ax.text(7 * (court_width / 8), 1, 'Bonus Line', **label_style)
 
-
-        ax.text(0.5, 3*(court_length / 4), 'Left Lobby', **label_style, rotation=90)
-        ax.text(court_width - 0.5, 3*(court_length / 4), 'Right Lobby', **label_style, rotation=90)
-
+        ax.text(0.5, 3 * (court_length / 4), 'Left Lobby', **label_style, rotation=90)
+        ax.text(court_width - 0.5, 3 * (court_length / 4), 'Right Lobby', **label_style, rotation=90)
 
         # Plot player position
         player_x, player_y = court_width / 2, court_length / 2 + 0.8
-        jersey_circle = Circle((player_x, player_y), 0.4, fill=True, facecolor='#FFD700', edgecolor=line_color, linewidth=2,
-                            zorder=10)
+        jersey_circle = Circle((player_x, player_y), 0.4, fill=True, facecolor='#FFD700', edgecolor=line_color,
+                               linewidth=2,
+                               zorder=10)
         ax.add_patch(jersey_circle)
         ax.text(player_x, player_y, str(player_data['jersey']), ha='center', va='center', color=line_color, fontsize=14,
                 fontweight='bold', zorder=11)
@@ -1306,20 +1308,22 @@ class PKL:
                 if zone_id in [1, 2]:  # Lobby zones
                     if zone_id == 1:  # Left lobby
                         wedge = Wedge((1, court_length / 2), 0.9, 90, 270, color=color, alpha=0.7, ec=line_color, lw=1,
-                                    zorder=5)
+                                      zorder=5)
                     else:  # Right lobby
                         wedge = Wedge((court_width - 1, court_length / 2), 0.9, 270, 90, color=color, alpha=0.7,
-                                    ec=line_color, lw=1, zorder=5)
+                                      ec=line_color, lw=1, zorder=5)
                     ax.add_patch(wedge)
                 else:  # Inner court zones
-                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1, zorder=5)
+                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.7, ec=line_color, lw=1,
+                                    zorder=5)
                     ax.add_patch(circle)
 
                 ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='black', fontsize=12,
                         fontweight='bold', zorder=6)
 
         # Set title
-        plt.title(f"{player_data['name']}({player_id}) - Season {zone_type.capitalize()} Zones", fontsize=14, fontweight='bold', pad=20)
+        plt.title(f"{player_data['name']}({player_id}) - Season {zone_type.capitalize()} Zones", fontsize=14,
+                  fontweight='bold', pad=20)
 
         # Set axis limits and remove ticks
         ax.set_xlim(0, court_width)
@@ -1330,8 +1334,7 @@ class PKL:
         plt.tight_layout()
         plt.show()
 
-
-    def get_zone_coordinates(self,zone_id, court_width, court_length):
+    def get_zone_coordinates(self, zone_id, court_width, court_length):
         zones = {
             1: (0.5, court_length / 2),  # Left Lobby
             2: (court_width - 0.5, court_length / 2),  # Right Lobby
@@ -1349,7 +1352,6 @@ class PKL:
             11: (3 * court_width / 4, 1),  # Bonus Right
         }
         return zones.get(zone_id, (court_width / 2, court_length / 2))
-
 
     def internal_aggregate_team_data(self, directory_path, team_id):
         team_data = None
@@ -1377,7 +1379,6 @@ class PKL:
 
         return team_data, strong_zones, weak_zones
 
-
     def plot_team_zones(self, team_id, season, zone_type='strong'):
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
@@ -1388,7 +1389,8 @@ class PKL:
             raise ValueError(f"Invalid season number. Available seasons are: {list(season_directories.keys())}")
 
         # directory_path = resource_filename(__name__,f"./MatchData_pbp/{season_directories[season]}")
-        directory_path = importlib_resources.files('kabaddiPy').joinpath(f"./MatchData_pbp/{season_directories[season]}")
+        directory_path = importlib_resources.files('kabaddiPy').joinpath(
+            f"./MatchData_pbp/{season_directories[season]}")
 
         team_data, strong_zones, weak_zones = self.internal_aggregate_team_data(directory_path, team_id)
         team_id = str(team_id)
@@ -1405,11 +1407,13 @@ class PKL:
         line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
-        ax.add_patch(Rectangle((1, 0), court_width - 2, court_length, fill=True, color=court_color, ec=line_color, lw=2))
+        ax.add_patch(
+            Rectangle((1, 0), court_width - 2, court_length, fill=True, color=court_color, ec=line_color, lw=2))
 
         # Draw lobbies
         ax.add_patch(Rectangle((0, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
-        ax.add_patch(Rectangle((court_width - 1, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
+        ax.add_patch(
+            Rectangle((court_width - 1, 0), 1, court_length, fill=True, color=lobby_color, ec=line_color, lw=2))
 
         # Draw lines
         ax.axhline(y=court_length, color=line_color, linewidth=3)
@@ -1419,12 +1423,12 @@ class PKL:
         # Line Labels
         label_style = {'ha': 'center', 'va': 'center', 'color': line_color, 'fontsize': 11, 'fontweight': 'bold'}
 
-        ax.text(7*(court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
-        ax.text(7*(court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
-        ax.text(7*(court_width / 8), 1, 'Bonus Line', **label_style)
-        
-        ax.text(0.5, 3*(court_length / 4), 'Left Lobby', **label_style, rotation=90)
-        ax.text(court_width - 0.5, 3*(court_length / 4), 'Right Lobby', **label_style, rotation=90)
+        ax.text(7 * (court_width / 8), court_length + 0.1, 'Mid Line', **label_style)
+        ax.text(7 * (court_width / 8), (1.4 * court_length / 4) + 0.2, 'Baulk Line', **label_style)
+        ax.text(7 * (court_width / 8), 1, 'Bonus Line', **label_style)
+
+        ax.text(0.5, 3 * (court_length / 4), 'Left Lobby', **label_style, rotation=90)
+        ax.text(court_width - 0.5, 3 * (court_length / 4), 'Right Lobby', **label_style, rotation=90)
 
         # Plot heat map of selected zone type
         zones = strong_zones if zone_type == 'strong' else weak_zones
@@ -1450,13 +1454,14 @@ class PKL:
                 if zone_id in [1, 2]:  # Lobby zones
                     if zone_id == 1:  # Left lobby
                         wedge = Wedge((1, court_length / 2), 0.9, 90, 270, color=color, alpha=0.8, ec=line_color, lw=1,
-                                        zorder=5)
+                                      zorder=5)
                     else:  # Right lobby
                         wedge = Wedge((court_width - 1, court_length / 2), 0.9, 270, 90, color=color, alpha=0.8,
-                                        ec=line_color, lw=1, zorder=5)
+                                      ec=line_color, lw=1, zorder=5)
                     ax.add_patch(wedge)
                 else:  # Inner court zones
-                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.8, ec=line_color, lw=1, zorder=5)
+                    circle = Circle((zone_x, zone_y), 0.9, fill=True, color=color, alpha=0.8, ec=line_color, lw=1,
+                                    zorder=5)
                     ax.add_patch(circle)
 
                 ax.text(zone_x, zone_y, str(points), ha='center', va='center', color='black', fontsize=12,
@@ -1469,7 +1474,8 @@ class PKL:
             5: 'U Mumba', 30: 'U.P. Yoddha', 3: "Jaipur Pink Panthers"
         }
         team_name = team_id_map.get(int(team_id), f"Team {team_id}")
-        plt.title(f"{team_name} - Season {season} {zone_type.capitalize()} Zones", fontsize=14, fontweight='bold', pad=20)
+        plt.title(f"{team_name} - Season {season} {zone_type.capitalize()} Zones", fontsize=14, fontweight='bold',
+                  pad=20)
 
         # Set axis limits and remove ticks
         ax.set_xlim(0, court_width)
@@ -1486,7 +1492,6 @@ class PKL:
         plt.tight_layout()
         # plt.savefig(f"team_{team_id}_season_{season}_zones_{zone_type}.png", bbox_inches='tight', pad_inches=0, dpi=400)
         plt.show()
-
 
     def plot_point_progression(self, season, match_id):
         # file_path = resource_filename(__name__,"./MatchData_pbp/")
@@ -1511,9 +1516,9 @@ class PKL:
         data = self.internal_load_json_data(file_path)
 
         if data['gameData']:
-            data=data['gameData']
+            data = data['gameData']
 
-        home_team_id = int(data.get('teams',[]).get('home_team_id'))
+        home_team_id = int(data.get('teams', []).get('home_team_id'))
 
         teams = data.get('teams', []).get("team", [])
 
@@ -1524,10 +1529,7 @@ class PKL:
         for t in teams:
             team_pts_dict[int(t.get('id'))] = [0]
 
-        
-
         # print("^^^^^^^^^^^^")
-
 
         events = data['events']['event']
 
@@ -1545,16 +1547,12 @@ class PKL:
             #     team2_id = event['defending_team_id']
 
             if int(event['event_id']) == 1:
-
                 raid_events.append(i)
                 # print("*&*&*&*&*&*&*&*&*&*&")
                 # print(f"event['event_no']: {event['event_no']}")
                 # print(f"event['event_id']: {event['event_id']}")
                 # print(f"event['event_text']: {event['event_text']}")
                 # print(f"event['score']: {event['score']}")
-
-
-
 
             # print()
             # print(f"event['event_no']: {event['event_no']}")
@@ -1563,7 +1561,7 @@ class PKL:
             if event['score'] is not None:
                 # print(f"event['score']: {event['score']}")
                 pass
-            
+
             # print("key: ", keys_[0], "value: ", team_pts_dict[keys_[0]])
             # print("key: ", keys_[1], "value: ", team_pts_dict[keys_[1]])
             # print("--------------------------------\n")
@@ -1580,34 +1578,31 @@ class PKL:
                 else:
                     team_pts_dict[int(event['defending_team_id'])].append(event['score'][0])
                     team_pts_dict[int(event['raiding_team_id'])].append(event['score'][1])
-            
+
             else:
                 # print("no raiding_team_id, so subs or other")
                 team_pts_dict[keys_[0]].append(team_pts_dict[keys_[0]][-1])
                 team_pts_dict[keys_[1]].append(team_pts_dict[keys_[1]][-1])
-
-
 
             # if 'raid_points' in event: # to-remove-subs
 
             #     print("raid-points-in-event")
             #     print(f"event raid points: {event['raid_points']}", f"event defending points: {event['defending_points']}")
 
-
             #     if event['raid_points'] > 0 or event['defending_points'] > 0:
             #         raid_events.append(i)
 
             #         # print(len(team_pts_dict[int(event['raiding_team_id'])]))
             #         # print(team_pts_dict[int(event['raiding_team_id'])][-1])
-                    
+
             #         print(f"event['raid_points']: {event['raid_points']}")
             #         team_pts_dict[int(event['raiding_team_id'])].append(team_pts_dict[int(event['raiding_team_id'])][-1] + event['raid_points'])
-                    
+
             #         team_pts_dict[int(event['defending_team_id'])].append(team_pts_dict[int(event['defending_team_id'])][-1] + event['defending_points'])
-                
+
             #     else:
             #         team_pts_dict[int(event['raiding_team_id'])].append(team_pts_dict[int(event['raiding_team_id'])][-1])
-                    
+
             #         team_pts_dict[int(event['defending_team_id'])].append(team_pts_dict[int(event['defending_team_id'])][-1])
 
             # else:
@@ -1617,7 +1612,7 @@ class PKL:
 
         # Create the plot
         fig, ax = plt.subplots(figsize=(15, 8))
-        x = range(len(team_pts_dict[keys_[0]])-1)
+        x = range(len(team_pts_dict[keys_[0]]) - 1)
         # _ = x.pop(0)
 
         # Plot the lines with gradients
@@ -1638,19 +1633,13 @@ class PKL:
             3: "Jaipur Pink Panthers"
         }
 
-        
-
         team1_total_points = team_pts_dict[keys_[0]]
         team2_total_points = team_pts_dict[keys_[1]]
-
-        
 
         # print(len(team1_total_points))
         # print(len(team2_total_points))
         # print(len(events))
         # print(len(x))
-
-
 
         # print(sum(team1_total_points))
         # print(sum(team2_total_points))
@@ -1662,7 +1651,6 @@ class PKL:
         team1_total_points_plt = team1_total_points[:-1]
         # print(len(team1_total_points))
         # print(len(team1_total_points_plt))
-
 
         # print(team2_total_points)
         team2_total_points_plt = team2_total_points[:-1]
@@ -1698,10 +1686,12 @@ class PKL:
         ax.tick_params(axis='x', labelsize=13)
 
         # Add team names to the legend
-    # Create custom legend elements
+        # Create custom legend elements
         legend_elements = [
-            Patch(facecolor=team1_color, edgecolor=team1_color, label=f'{team_id_map[int(keys_[0])]} (Team {keys_[0]})'),
-            Patch(facecolor=team2_color, edgecolor=team2_color, label=f'{team_id_map[int(keys_[1])]} (Team {keys_[1]})'),
+            Patch(facecolor=team1_color, edgecolor=team1_color,
+                  label=f'{team_id_map[int(keys_[0])]} (Team {keys_[0]})'),
+            Patch(facecolor=team2_color, edgecolor=team2_color,
+                  label=f'{team_id_map[int(keys_[1])]} (Team {keys_[1]})'),
             Line2D([0], [0], color='gray', linestyle='--', label='Successful Raids'),
             Patch(facecolor='yellow', edgecolor='none', alpha=0.5, label='Significant point difference')
         ]
@@ -1738,7 +1728,7 @@ class PKL:
         threshold = max_diff * 0.95  # Highlight differences that are 95% of the maximum difference
 
         significant_diffs = []
-        for i in range(1, len(team1_total_points)-1):
+        for i in range(1, len(team1_total_points) - 1):
             diff = team1_total_points[i] - team2_total_points[i]
             if abs(diff) >= threshold:
                 ax.annotate(f"Δ{abs(diff)}", (i, max(team1_total_points[i], team2_total_points[i])),
@@ -1746,7 +1736,6 @@ class PKL:
                             bbox=dict(boxstyle='round,pad=0.5', fc='yellow', alpha=0.5),
                             arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0'))
                 significant_diffs.append(abs(diff))
-
 
         # Add explanation for yellow labels
         if significant_diffs:
@@ -1756,13 +1745,12 @@ class PKL:
                     fontstyle='italic', bbox=dict(facecolor='white', alpha=0.5, edgecolor='black'))
 
         plt.tight_layout()
-        
+
         # Remove the grid
         ax.grid(False)
         # plt.savefig(f"match_{match_id}.png", bbox_inches='tight', pad_inches=0, dpi=400)
-        
-        plt.show()
 
+        plt.show()
 
     def plot_player_zones_grid(self, player_ids, season, zone_type='strong', max_cols=4):
         n_plots = len(player_ids)
@@ -1806,21 +1794,13 @@ class PKL:
         # Adjust layout to prevent clipping of titles
         plt.tight_layout()
 
-
         # plt.savefig(f"player_zones_grid_season_{season}.png", bbox_inches='tight', pad_inches=0, dpi=400)
 
-
         plt.show()
-    
-
-
 
 
 if __name__ == "__main__":
-    
-    
     pkl = PKL()
-
 
     # pkl.plot_point_progression(season=10, match_id=3163)
 
@@ -1893,7 +1873,6 @@ if __name__ == "__main__":
     # print("\nBreakdown Data:")
     # print(breakdown_df.T)
 
-
     # print("\n10. Testing load_pbp".center(100, "-"))
     # pbp_df = api.load_pbp(season=9, match_id='2895')
     # print("Play-by-Play Data (first 5 rows):")
@@ -1912,11 +1891,8 @@ if __name__ == "__main__":
     # # api.plot_player_zones_grid([143, 12, 211, 322, 160], season=5, zone_type='strong', max_cols=2)
     # api.plot_player_zones_grid([143, 12, 211, 160], season=5, zone_type='strong', max_cols=2)
 
-
-
     # df = api.get_player_rvd(player_id=143, season=None)
     # print(df)
-
 
     # player_id = 143  # Example: Deepak Hooda
 
@@ -1926,8 +1902,6 @@ if __name__ == "__main__":
     # # print(strong_zones)
     # plot_team_zones(5,season=5, zone_type='strong')
     # plot_team_zones(5,season=5, zone_type='weak')
-
-
 
     # api.plot_player_zones(player_id=143, season=5, zone_type='strong')
     # api.plot_player_zones(player_id=143, season=5, zone_type='weak')
@@ -1943,27 +1917,25 @@ if __name__ == "__main__":
     # column_list = [143, 12, 211, 160]
     # api.plot_player_zones_grid(column_list, season=5, zone_type='strong', max_cols=2)
 
-
-
     # print("Testing get_matchwise_player_info".center(100, "-"))
     # player_id = 94
     # season = 6
-    
+
     # detailed_info = api.get_matchwise_player_info(player_id, season)
 
     # print(detailed_info)
     # detailed_info.to_csv("detailed_info.csv")
-    
+
     # if detailed_info is not None and not detailed_info.empty:
     #     print(f"Detailed info for player {player_id} in season {season}:")
     #     print(detailed_info)
-        
+
     #     print("\nSummary statistics:")
     #     print(f"Matches played: {detailed_info['matches_played'].iloc[0]}")
     #     print(f"Matches started: {detailed_info['matches_started'].iloc[0]}")
     #     print(f"Average points: {detailed_info['average_points'].iloc[0]:.2f}")
     #     print(f"Total substitutions: {detailed_info['total_substitutions'].iloc[0]}")
-        
+
     #     print("\nFirst few rows of detailed match data:")
     #     print(detailed_info.head())
     # else:
@@ -1988,9 +1960,6 @@ if __name__ == "__main__":
 
     # print("\n\nBreakdown Data:")
     # print(breakdown_df.T)
-
-
-
 
     # # ACTUAL TESTING ------------------------------------------------------------------------
 
@@ -2023,7 +1992,7 @@ if __name__ == "__main__":
     # print(team_ids)
 
     # print("\n4. Testing get_team_matches".center(150,"-"))
-    # team_matches = api.get_team_matches(season=9, team_id=3)
+    # team_matches = pkl.get_team_matches(season=10, team_id=3)
     # print(team_matches.head())
 
     # print("\n5. Testing build_team_roster".center(150,"-"))
@@ -2042,9 +2011,10 @@ if __name__ == "__main__":
     # print(rvd_extracted_df)
 
     # print("\n7. Testing load_match_details".center(150,"-"))
-    # match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=9, match_id='2895')
-    # print("Match Detail:")
-    # print(match_detail_df)
+    match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = pkl.load_match_details(season=9,
+                                                                                                    match_id='2895')
+    print("Match Detail:")
+    print(match_detail_df.iloc[:, : 50])
     # print("\nEvents (first 5 rows):")
     # if not events_df:
     #     print("No events data found for this match")
@@ -2075,7 +2045,6 @@ if __name__ == "__main__":
 
     # # END OF ACTUAL TESTING ------------------------------------------------------------------------
 
-
     # # MY OLD TESTING ------------------------------------------------------------------------
     # print("=="*100)
     # print("=="*100)
@@ -2091,12 +2060,9 @@ if __name__ == "__main__":
     # # # df.to_csv("pbp.csv")
     # # print(df.tail())
 
-
-
     # # print("get standings")
     # # # x = api.get_pkl_standings(season=10)
     # # # print(x)
-
 
     # qualified_df , all_standings_df = api.get_pkl_standings(season=9, qualified=True)
     # print("qualified_df")
@@ -2111,7 +2077,6 @@ if __name__ == "__main__":
     # matches = api.get_season_matches(season=6)
     # print(matches)
     # # print(len(x))
-
 
     # # print("-"*100)
     # print("team_info")
@@ -2155,13 +2120,10 @@ if __name__ == "__main__":
     # # team-avg-points-scored_value
     # # team-total-points-conceded_value
 
-
     # print("get_team_matches\n\n")
 
     # df = api.get_team_matches(season=9, team_id=3)
     # print(df)
-
-
 
     # print("build build_team_roster")
 
@@ -2170,7 +2132,6 @@ if __name__ == "__main__":
     # print(df)
 
     # ## df.to_csv("team_roster.csv")
-
 
     # print("build get_player_info")
 
@@ -2183,7 +2144,6 @@ if __name__ == "__main__":
     # print(_player_stats_df_per_match)
     # print("-"*100)
     # print(_rvd_extracted_df)
-
 
     # print("load_match_details-------\n\n\n")
     # _match_detail_df, _events_df, _zones_df, _team1_df, _team2_df, _breakdown_df = api.load_match_details(season='9', match_id='2895')
@@ -2200,26 +2160,16 @@ if __name__ == "__main__":
     # print("-"*100)
     # print(_breakdown_df)
 
-
     # print("load_pbp")
     # _pbp_df = api.load_pbp(season=9, match_id='2895')
     # print("-"*100)
     # print(_pbp_df)
 
-
-
-
     # print(api.get_available_seasons())
-
 
     # match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('Season_PKL_Season_4_2016',
     #                                                                                         '194')
     # print(events_df)
-
-
-
-
-
 
     # x = api.build_team_roster('4',9)
     # print(x)
@@ -2236,7 +2186,6 @@ if __name__ == "__main__":
     # print(player_stats)
     # print(rvd)
     # print(defend_df)
-
 
     # x = api.get_pkl_standings(season=7, qualified=False)
     # print(x)

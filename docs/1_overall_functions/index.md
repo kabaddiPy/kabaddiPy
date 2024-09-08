@@ -25,6 +25,7 @@ Retrieve the Pro Kabaddi League (PKL) standings for a specified season.
  
 ##### Parameters:
 {: .no_toc}
+{: .no_toc}
 - `season` : int, optional
     The season number for which to retrieve standings. Defaults to 10 if not specified.
 - `qualified` : bool, optional
