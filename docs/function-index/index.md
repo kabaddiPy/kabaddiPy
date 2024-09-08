@@ -9,7 +9,7 @@ nav_order: 2
 
 {: .fs-5 }
 
-[`get_standings()`](/KabaddiPy/overall-functions/get_standings.html) 
+[`get_standings()`](/kabaddiPy/overall-functions/get_standings.html) 
 
 
     
@@ -17,7 +17,7 @@ nav_order: 2
 
 {: .fs-5 }
 
-[`get_season_matches()`](/KabaddiPy/overall-functions/get_season_matches.html)
+[`get_season_matches()`](/kabaddiPy/overall-functions/get_season_matches.html)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Season Matches**
@@ -25,7 +25,7 @@ nav_order: 2
 
 {: .fs-5 }
 
-[`get_team_info()`](/docs/teamwise-docs//get_team_info.md)
+[`get_team_info()`](/kabaddiPy/teamwise-docs//get_team_info.md)
 
 
 

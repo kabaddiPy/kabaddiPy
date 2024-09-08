@@ -19,8 +19,8 @@ pkl.plot_team_zones(team_id=4, season=5, zone_type='strong')
 pkl.plot_team_zones(team_id=4, season=5, zone_type='weak')
 ```
 
-![img_2.png](/assets/images/plotting-fns-outputs/img_2.png)
-![img_3.png](/assets/images/plotting-fns-outputs/img_3.png)
+![img_2.png](../assets/images/plotting-fns-outputs/img_2.png)
+![img_3.png](../assets/images/plotting-fns-outputs/img_3.png)
 
 Notes:
 - The function creates a heatmap that visualizes the team's zone performance across the court.

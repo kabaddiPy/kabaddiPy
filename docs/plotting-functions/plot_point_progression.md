@@ -16,7 +16,7 @@ Plot the point progression for both teams throughout a specific match in a given
 ```python
 pkl.plot_point_progression(season=10, match_id=3165)
 ```
-![img_4.png](/assets/images/plotting-fns-outputs/img_4.png)
+![img_4.png](../assets/images/plotting-fns-outputs/img_4.png)
 Notes:
 - This function visualizes how the total points for each team progressed over the course of the match.
 - It highlights important raid events and significant point differences between teams.
