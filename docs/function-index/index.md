@@ -7,13 +7,20 @@ nav_order: 2
 ---
 
 
-{: .fs-6 }
+{: .fs-5 }
 
-[`get_pkl_standings()`](kabaddiPy/overall-functions/get_standings.html) 
+[`get_pkl_standings()`](/overall-functions/get_standings.md) 
 
 
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get standings**
+
+{: .fs-5 }
+
+[`get_season_matches()`](/overall-functions/get_season_matches.md)
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Season Matches**
 
 
 {: .fs-5 }
