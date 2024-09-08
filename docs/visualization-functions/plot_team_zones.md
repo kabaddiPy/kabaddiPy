@@ -1,7 +1,7 @@
 ---
 layout: default
 title: plot_team_zones
-parent: Plotting_Functions
+parent: Visualization_Functions
 nav_order: 2
 ---
 ## `plot_team_zones(team_id, season, zone_type='strong')`

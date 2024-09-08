@@ -1,7 +1,7 @@
 ---
 layout: default
 title: plot_point_progression
-parent: Plotting_Functions
+parent: Visualization_Functions
 nav_order: 4
 ---
 ## `plot_point_progression(season, match_id)`

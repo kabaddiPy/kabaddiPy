@@ -1,5 +1,5 @@
 ---
-title: Team_Functions
+title: Team Functions
 layout: default
 has_toc: true
 has_children: true

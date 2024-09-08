@@ -1,7 +1,7 @@
 ---
 layout: default
 title: plot_player_zones_grid
-parent: Plotting_Functions
+parent: Visualization_Functions
 nav_order: 4
 ---
 ## `plot_player_zones_grid(player_ids, season, zone_type='strong', max_cols=4)`
