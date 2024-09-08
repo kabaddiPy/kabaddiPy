@@ -44,4 +44,4 @@ Plot a grid of player zone heatmaps for multiple players in a specific season.
 
 #### NOTE
 
-This is an overview page. For detailed information for these functions, refer to their individual pages. Or refer to the [function index](/kabaddiPy/function-index.html)
+This is an overview page. For detailed information for these functions, refer to their individual pages. Or refer to the [function index](/kabaddiPy/function-index/)

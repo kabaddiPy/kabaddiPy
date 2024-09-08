@@ -16,9 +16,9 @@ Plot a grid of player zone heatmaps for multiple players in a specific season.
 
 ### Example Usage:
 ```python
-pkl.plot_player_zones_grid([143, 12, 211, 160,41,322], season=5, zone_type='strong', max_cols=2)```
+pkl.plot_player_zones_grid([143, 12, 211, 160, 41, 322], season=5, zone_type='strong', max_cols=2)```
 ```
-![img_7.png](../assets/images/plotting-fns-outputs/img_7.png)
+![plot_player_zones_grid_7.png](../assets/images/plotting-fns-outputs/plot_player_zones_grid_7.png)
 
 Notes:
 - This function generates a grid of player zone heatmaps, allowing for side-by-side comparisons of multiple players.

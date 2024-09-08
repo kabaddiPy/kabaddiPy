@@ -36,4 +36,8 @@ Team
 Fetches the complete team roster for a given team in a specific season.
 
 
+---
 
+#### NOTE
+
+This is an overview page. For detailed information for these functions, refer to their individual pages. Or refer to the [function index](/kabaddiPy/function-index/)

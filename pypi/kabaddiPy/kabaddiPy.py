@@ -1800,7 +1800,9 @@ class PKL:
 
 
 if __name__ == "__main__":
-    pkl = PKL()
+
+    
+    # pkl = PKL()
 
     # pkl.plot_point_progression(season=10, match_id=3163)
 
@@ -2011,10 +2013,10 @@ if __name__ == "__main__":
     # print(rvd_extracted_df)
 
     # print("\n7. Testing load_match_details".center(150,"-"))
-    match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = pkl.load_match_details(season=9,
-                                                                                                    match_id='2895')
-    print("Match Detail:")
-    print(match_detail_df.iloc[:, : 50])
+    # match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = pkl.load_match_details(season=9,
+    #                                                                                                 match_id='2895')
+    # print("Match Detail:")
+    # print(match_detail_df.iloc[:, : 50])
     # print("\nEvents (first 5 rows):")
     # if not events_df:
     #     print("No events data found for this match")
@@ -2144,6 +2146,11 @@ if __name__ == "__main__":
     # print(_player_stats_df_per_match)
     # print("-"*100)
     # print(_rvd_extracted_df)
+
+    # print("get_player_rvd")
+    # _rvd_df = pkl.get_player_rvd(player_id=142, season=None)
+    # print("-"*100)
+    # print(_rvd_df)
 
     # print("load_match_details-------\n\n\n")
     # _match_detail_df, _events_df, _zones_df, _team1_df, _team2_df, _breakdown_df = api.load_match_details(season='9', match_id='2895')

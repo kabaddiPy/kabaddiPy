@@ -9,7 +9,7 @@ has_children: false
 # `kabaddiPy`
 
 
-This documentation covers the main functions of the `kabaddiPy` class that return useful data for Kabaddi statistics and information.
+This documentation covers the main functions of the [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy/blob/main/pypi/kabaddiPy/kabaddiPy.py) class that return useful data for Kabaddi statistics and information.
 
 [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python package that is designed to pull **play-by-play**, **team**, **player** and **standings** data from the newest version of the [ProKabaddi League](https://www.prokabaddi.com/) website. In the past, there have been next to no scrapers for the sport.
 
@@ -22,8 +22,7 @@ With Season 11 of the Pro Kabaddi League set to begin on October 18, and the 202
 The lack of data and poor access to data have been the biggest barriers to entry in Kabaddi analytics, a barrier that this package intends to alleviate.
 
 
-
-This documentation covers the main functions of the `kabaddiPy` class that return useful data for Kabaddi statistics and information. [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python Package that is designed to pull play-by-play data from the newest version of the [ProKabaddi League](https://www.prokabaddi.com/).
+Here's a short WikiHow [article](https://www.wikihow.com/Play-Kabaddi) and [video](https://www.youtube.com/watch?v=ybdGREjvluU) as a guide to the sport of Kabaddi!
 
 
 
@@ -55,7 +54,7 @@ You can view CSVs of historical play-by-play on the [`kabaddiPy`](https://github
 
 ## Functions
 
-Refer to the [function index](/kabaddiPy/function-index.html)
+Refer to the [function index](/kabaddiPy/function-index/)
 
 
 
@@ -70,7 +69,7 @@ To cite the [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) package in pub
 
 ```
 @misc{kabaddiPy_2024,
-  author = {kabaddiPy},
+  author = {Bhaskar Lalwani and Aniruddha Mukherjee},
   title = {kabaddiPy: A Python Package for Kabaddi Analytics},
   url = {https://kabaddipy.github.io/kabaddiPy/},
   year = {2024}

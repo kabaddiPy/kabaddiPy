@@ -23,4 +23,4 @@ Fetches match data for a specific PKL season or all seasons, returning detailed 
 ---
 #### NOTE
 
-This is an overview page. For detailed information for these functions, refer to their individual pages. Or refer to the [function index](/kabaddiPy/function-index.html)
+This is an overview page. For detailed information for these functions, refer to their individual pages. Or refer to the [function index](/kabaddiPy/function-index/)
