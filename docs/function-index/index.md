@@ -9,7 +9,7 @@ nav_order: 2
 
 {: .fs-5 }
 
-[`get_standings()`](/docs/overall-functions/get_standings.md) 
+[`get_standings()`](/KabaddiPy/overall-functions/get_standings.md) 
 
 
     
