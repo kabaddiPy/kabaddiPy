@@ -3,10 +3,11 @@ title: Function Index
 layout: default
 has_toc: true
 has_children: false
-nav_order: 3
+nav_order: 2
 ---
 
-{: .fs-6 }
+
+{: .fs-5 }
 
 [`get_standings()`](/docs/overall-functions/get_standings.md) 
 
@@ -14,8 +15,15 @@ nav_order: 3
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get standings**
 
+{: .fs-5 }
 
-{: .fs-6 }
+[`get_season_matches()`](/overall-functions/get_season_matches.md)
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Season Matches**
+
+
+{: .fs-5 }
 
 [`get_team_info()`](/docs/teamwise-docs//get_team_info.md)
 
@@ -24,7 +32,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team Information**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 
 [`get_team_matches()`](/docs/teamwise-docs//get_team_matches.md)
@@ -33,7 +41,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team Matches**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 `get_team_roster()`
 
@@ -41,7 +49,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team Roster**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 `get_player_info()`
 
@@ -49,7 +57,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Player Information**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 
 `get_matchwise_player_info()`
@@ -57,7 +65,7 @@ nav_order: 3
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Matchwise Player Information**
 
-{: .fs-6 }
+{: .fs-5 }
 
 `get_player_rvd()`
 
@@ -66,7 +74,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get stats of raider vs number of defenders**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 `load_match_details()`
 
@@ -75,14 +83,14 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Match Details**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 `load_pbp()`
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Play-by-Play Data**
 
-{: .fs-6 }
+{: .fs-5 }
 
 `plot_point_progression()`
 
@@ -91,7 +99,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Point Progression**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 `plot_team_zones()`
 
@@ -100,7 +108,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Team Zones**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 
 `plot_player_zones()`
@@ -110,7 +118,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Player Zones**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 
 `plot_player_zones_grid()`
@@ -120,7 +128,7 @@ nav_order: 3
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Player Zones Grid**
 
 
-{: .fs-6 }
+{: .fs-5 }
 
 
 `get_team_ids()`
