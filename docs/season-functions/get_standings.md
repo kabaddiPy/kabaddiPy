@@ -7,7 +7,7 @@ nav_order: 1
 
 # Get PKL Standings 
 
-Overview
+Season
 {: .label .label-green }
 
 ## `get_pkl_standings(season=None, qualified=False, team_id=None)`

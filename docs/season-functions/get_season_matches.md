@@ -6,7 +6,7 @@ nav_order: 1
 ---
 # Get PKL Matches
 
-Overview
+Season
 {: .label .label-green }
 
 ## `get_season_matches(self, season="all")`
