@@ -1,4 +1,5 @@
 ---
+layout: default
 title: get_standings
 parent: Overall_Functions
 nav_order: 1

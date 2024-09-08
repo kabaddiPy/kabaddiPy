@@ -6,9 +6,10 @@ has_children: false
 nav_order: 2
 ---
 
+
 {: .fs-6 }
 
-[`get_standings()`](/docs/1_overall_functions) 
+[`get_pkl_standings()`](/overall-functions/get_standings.html) 
 
 
     
