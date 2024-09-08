@@ -18,9 +18,10 @@ Visualize a player's strong or weak zones on the kabaddi court for a specific se
 pkl.plot_player_zones(player_id=143, season=5, zone_type='strong')
 pkl.plot_player_zones(player_id=143, season=5, zone_type='weak')
 ```
-![img.png](/assets/images/plotting-fns-outputs/img.png)
-![img_1.png](/assets/images/plotting-fns-outputs/img_1.png)
-Notes:
+![img.png](/docs/assets/images/plotting-fns-outputs/img.png)
+![img_1.png](/docs/assets/images/plotting-fns-outputs/img_1.png)
+---
+#### Notes:
  - The function plots a heatmap of a player's strong or weak zones during a season on the kabaddi court.
  - Each zone's intensity reflects the player's performance in that zone.
  - Raises ValueError if the season is invalid or no data is found for the specified player.

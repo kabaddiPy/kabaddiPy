@@ -9,7 +9,7 @@ nav_order: 2
 
 {: .fs-5 }
 
-[`get_standings()`](/KabaddiPy/overall-functions/get_standings.md) 
+[`get_standings()`](/KabaddiPy/overall-functions/get_standings.html) 
 
 
     
@@ -17,7 +17,7 @@ nav_order: 2
 
 {: .fs-5 }
 
-[`get_season_matches()`](/overall-functions/get_season_matches.md)
+[`get_season_matches()`](/KabaddiPy/overall-functions/get_season_matches.html)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Season Matches**
