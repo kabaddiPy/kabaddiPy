@@ -1,9 +1,8 @@
 | <img width="200" alt="kabaddi_api_logo" src="https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0"> | <h2>kabaddiPy - Data collection and analysis tools for professional Kabaddi leagues</h3><p align="center"><a href="#features">Features</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#contributing">Contributing</a> • <a href="#license">License</a> • <a href="https://kabaddipy.github.io/kabaddiPy/">Documentation</a></p> |
 |:---:|:---|
 
-
-[![License](https://img.shields.io/pypi/l/kabaddiPy.svg)](https://github.com/kabaddiPy/kabaddiPy/blob/main/LICENSE)
 [![PyPI version](https://badge.fury.io/py/kabaddiPy.svg)](https://badge.fury.io/py/kabaddiPy)
+[![License](https://img.shields.io/pypi/l/kabaddiPy.svg)](https://github.com/kabaddiPy/kabaddiPy/blob/main/LICENSE)
 [![Python Versions](https://img.shields.io/pypi/pyversions/kabaddiPy.svg)](https://pypi.org/project/kabaddiPy/)
 
 
