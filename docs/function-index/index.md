@@ -3,7 +3,7 @@ title: Function Index
 layout: default
 has_toc: true
 has_children: false
-nav_order: 3
+nav_order: 2
 ---
 
 {: .fs-6 }
