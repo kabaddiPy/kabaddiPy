@@ -9,7 +9,7 @@ nav_order: 2
 
 {: .fs-5 }
 
-[`get_pkl_standings()`](/overall-functions/get_standings.md) 
+[`get_pkl_standings()`](/overall-functions/get_standings/) 
 
 
     

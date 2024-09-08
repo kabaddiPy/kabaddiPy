@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: get_season_matches
 parent: Overall_Functions
 nav_order: 1
