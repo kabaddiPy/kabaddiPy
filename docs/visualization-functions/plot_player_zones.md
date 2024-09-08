@@ -1,7 +1,7 @@
 ---
 layout: default
 title: plot_player_zones
-parent: Visualization_Functions
+parent: Visualization Functions
 nav_order: 1
 ---
 ## `plot_player_zones(player_id, season, zone_type='strong')`

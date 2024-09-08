@@ -1,7 +1,7 @@
 ---
 layout: default
 title: get_team_roster
-parent: Team_Functions
+parent: Team Functions
 nav_order: 4
 ---
 ### `get_team_roster`

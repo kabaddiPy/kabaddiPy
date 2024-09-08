@@ -1,7 +1,7 @@
 ---
 layout: default
 title: get_matchwise_player_info
-parent: Player_Functions
+parent: Player Functions
 nav_order: 1
 ---
 ## `get_matchwise_player_info(player_id, season)`

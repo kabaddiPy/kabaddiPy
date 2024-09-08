@@ -1,7 +1,7 @@
 ---
 layout: default
 title: load_pbp
-parent: PlayByPlay_Data
+parent: Match Functions
 nav_order: 1
 ---
 ## `load_pbp(season, match_id)`

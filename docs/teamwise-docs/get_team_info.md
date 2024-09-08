@@ -1,7 +1,7 @@
 ---
 layout: default
 title: get_team_info
-parent: Team_Functions
+parent: Team Functions
 nav_order: 1
 ---
 ### `get_team_info`

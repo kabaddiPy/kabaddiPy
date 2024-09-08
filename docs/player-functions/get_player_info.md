@@ -1,7 +1,7 @@
 ---
 layout: default
 title: get_player_info
-parent: Player_Functions
+parent: Player Functions
 nav_order: 2
 ---
 ## `get_player_info(player_id, season=None)`

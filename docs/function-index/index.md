@@ -9,6 +9,14 @@ nav_order: 2
 
 {: .fs-5 }
 
+[`load_pbp()`](/kabaddiPy/pbp-functions/load_pbp.html)
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Play-by-Play Data**
+
+
+{: .fs-5 }
+
 [`get_standings()`](/kabaddiPy/season-functions/get_standings.html) 
 
 
@@ -83,12 +91,7 @@ nav_order: 2
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Match Details**
 
 
-{: .fs-5 }
 
-[`load_pbp()`](/kabaddiPy/pbp-functions/load_pbp.html)
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Play-by-Play Data**
 
 {: .fs-5 }
 

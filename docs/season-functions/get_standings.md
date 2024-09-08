@@ -1,7 +1,7 @@
 ---
 layout: default
 title: get_standings
-parent: Overall_Functions
+parent: Season Functions
 nav_order: 1
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Player_Functions
+title: Player Functions
 layout: default
 has_toc: true
 has_children: true

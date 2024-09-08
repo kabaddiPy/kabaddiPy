@@ -1,7 +1,7 @@
 ---
 layout: default
 title: get_season_matches
-parent: Overall_Functions
+parent: Season Functions
 nav_order: 1
 ---
 # Get PKL Matches

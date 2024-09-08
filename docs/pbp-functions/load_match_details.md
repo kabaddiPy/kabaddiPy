@@ -1,7 +1,7 @@
 ---
 layout: default
 title: load_match_details
-parent: PlayByPlay_Data
+parent: Match Functions
 nav_order: 2
 ---
 ## `load_match_details(season, match_id)`

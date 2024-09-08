@@ -1,7 +1,7 @@
 ---
 layout: default
 title: get_team_matches
-parent: Team_Functions
+parent: Team Functions
 nav_order: 3
 ---
 ### `get_team_matches`
