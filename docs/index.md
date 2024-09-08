@@ -14,7 +14,7 @@ This documentation covers the main functions of the [`kabaddiPy`](https://github
 [`kabaddiPy`](https://github.com/kabaddiPy/kabaddiPy) is a python package that is designed to pull **play-by-play**, **team**, **player** and **standings** data from the newest version of the [ProKabaddi League](https://www.prokabaddi.com/) website. In the past, there have been next to no scrapers for the sport.
 
 <div style="float: right; margin-left: 15px;">
-    <img src='https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0' width="300px" />
+    <img src='https://github.com/user-attachments/assets/e074c4c2-18b3-4580-a9dd-1aa40f9495b0' width="250px" />
 </div>
 
 With Season 11 of the Pro Kabaddi League set to begin on October 18, and the 2025 Kabaddi World Cup on the horizon, this package was developed to provide access to detailed play-by-play data, aiming to energize & catalyze the Kabaddi analytics community.
@@ -23,6 +23,8 @@ The lack of data and poor access to data have been the biggest barriers to entry
 
 
 Here's a short WikiHow [article](https://www.wikihow.com/Play-Kabaddi) and [video](https://www.youtube.com/watch?v=ybdGREjvluU) as a guide to the sport of Kabaddi!
+
+
 
 
 
