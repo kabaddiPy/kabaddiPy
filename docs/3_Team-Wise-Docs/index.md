@@ -3,10 +3,17 @@ title: Team Functions
 layout: default
 has_toc: true
 has_children: false
-nav_order: 3
+nav_order: 4
 ---
 
 # Team Functions
+
+### Table of contents
+
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 
 ### `get_team_info`
