@@ -230,6 +230,7 @@ This function returns a `DataFrame` containing team IDs and names for the given 
 
 
 ### Example Usage
+{: .no_toc }
 
 
 ```python
