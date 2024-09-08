@@ -8,7 +8,7 @@ nav_order: 3
 
 {: .fs-6 }
 
-[`get_standings()`](/docs/1_overall_functions) 
+[`get_standings()`](/docs/overall-functions/get_standings.md) 
 
 
     
@@ -17,7 +17,7 @@ nav_order: 3
 
 {: .fs-6 }
 
-`get_team_info()`
+[`get_team_info()`](/docs/teamwise-docs//get_team_info.md)
 
 
 
@@ -27,7 +27,7 @@ nav_order: 3
 {: .fs-6 }
 
 
-`get_team_matches()`
+[`get_team_matches()`](/docs/teamwise-docs//get_team_matches.md)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team Matches**
