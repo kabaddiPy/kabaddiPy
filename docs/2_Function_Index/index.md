@@ -6,100 +6,126 @@ has_children: false
 nav_order: 3
 ---
 
-[`get_standings()`](/docs/1_overall_functions/index.md) 
-
 {: .fs-6 }
+
+[`get_standings()`](/docs/1_overall_functions) 
+
+
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get standings**
 
 
+{: .fs-6 }
+
 `get_team_info()`
 
-{: .fs-8 }
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team Information**
 
 
+{: .fs-6 }
+
+
 `get_team_matches()`
 
-{: .fs-8 }
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team Matches**
 
 
+{: .fs-6 }
+
 `get_team_roster()`
 
-{: .fs-8 }
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team Roster**
 
 
+{: .fs-6 }
+
 `get_player_info()`
 
-{: .fs-8 }
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Player Information**
 
 
+{: .fs-6 }
+
+
 `get_matchwise_player_info()`
 
-{: .fs-8 }
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Matchwise Player Information**
 
+{: .fs-6 }
 
 `get_player_rvd()`
 
-{: .fs-8 }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Player RVD**
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get stats of raider vs number of defenders**
+
+
+{: .fs-6 }
 
 `load_match_details()`
 
-{: .fs-8 }
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Match Details**
 
 
+{: .fs-6 }
+
 `load_pbp()`
 
-{: .fs-8 }
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Load Play-by-Play Data**
 
+{: .fs-6 }
 
 `plot_point_progression()`
 
-{: .fs-8 }
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Point Progression**
 
 
+{: .fs-6 }
+
 `plot_team_zones()`
 
-{: .fs-8 }
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Team Zones**
 
 
+{: .fs-6 }
+
+
 `plot_player_zones()`
 
-{: .fs-8 }
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Player Zones**
 
 
+{: .fs-6 }
+
+
 `plot_player_zones_grid()`
 
-{: .fs-8 }
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Plot Player Zones Grid**
 
 
+{: .fs-6 }
+
+
 `get_team_ids()`
 
-{: .fs-8 }
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Get Team IDs**
 
