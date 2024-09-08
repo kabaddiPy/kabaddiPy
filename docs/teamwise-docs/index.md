@@ -1,8 +1,8 @@
 ---
-title: Team Functions
+title: Team_Functions
 layout: default
 has_toc: true
-has_children: false
+has_children: true
 nav_order: 4
 ---
 

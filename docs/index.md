@@ -144,10 +144,10 @@ erDiagram
     OverviewData ||--o{ TeamData : "get_pkl_standings()"
     TeamData ||--o{ Play_By_Play : "get_team_matches()"
     TeamData ||--o{ PlayerData : "get_team_roster()"
-    PlayerData ||--o| Visualisations : "plot_player_zones()"
-    Play_By_Play ||--o| Visualisations : "plot_point_progression()"
-    TeamData ||--o| Visualisations : "plot_team_zones()"
-    PlayerData ||--o| Visualisations : "plot_player_zones_grid()"
+    PlayerData ||--o| Visualizations : "plot_player_zones()"
+    Play_By_Play ||--o| Visualizations : "plot_point_progression()"
+    TeamData ||--o| Visualizations : "plot_team_zones()"
+    PlayerData ||--o| Visualizations : "plot_player_zones_grid()"
 ```
 
 

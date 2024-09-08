@@ -1,8 +1,8 @@
 ---
-title: Play-by-Play Data
+title: PlayByPlay_Data
 layout: default
 has_toc: true
-has_children: false
+has_children: true
 nav_order: 5
 ---
 
