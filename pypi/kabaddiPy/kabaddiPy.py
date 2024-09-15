@@ -892,7 +892,7 @@ class PKL:
                 temp = temp['gameData']
 
             match_detail = temp.get("match_detail", {})
-            flattened_match_detail = self.internal_flatten_match_detail(match_detail)
+            flattened_match_detail = self._flatten_match_detail(match_detail)
             match_detail_df = pd.DataFrame([flattened_match_detail])
 
             match_detail_df = match_detail_df.drop(
@@ -903,7 +903,7 @@ class PKL:
             if len(teams_data) != 2:
                 raise ValueError("Expected data for exactly two teams")
 
-            team1_df, team2_df = self.internal_process_team_data(teams_data)
+            team1_df, team2_df = self._process_team_data(teams_data)
 
             events_df = pd.DataFrame(temp.get("events", {}).get("event", []))
             zones_df = pd.DataFrame(temp.get("zones", {}).get("zone", []))
@@ -979,7 +979,7 @@ class PKL:
             print(f"Error loading data from {file_path}: {str(e)}")
             return None, None, None, None, None, None
 
-    def internal_process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
+    def _process_team_data(self, teams_data: List[Dict[str, Any]]) -> Tuple[DataFrame, DataFrame]:
         """
         Process team data into DataFrames.
 
@@ -1058,7 +1058,7 @@ class PKL:
         _, events_df, _, _, _, _ = self.load_match_details(season, match_id)
         return events_df
 
-    def internal_flatten_match_detail(self, match_detail: Dict[str, Any]) -> Dict[str, Any]:
+    def _flatten_match_detail(self, match_detail: Dict[str, Any]) -> Dict[str, Any]:
         """
         Flatten nested dictionaries in match detail.
 
@@ -1084,11 +1084,11 @@ class PKL:
                 flattened[key] = value
         return flattened
 
-    def internal_load_json_data(self, file_path):
+    def _load_json_data(self, file_path):
         with open(file_path, 'r') as file:
             return json.loads(file.read())
 
-    def internal_aggregate_player_data(self, directory_path, player_id):
+    def _aggregate_player_data(self, directory_path, player_id):
         player_data = None
         strong_zones = {i: 0 for i in range(1, 12)}
         weak_zones = {i: 0 for i in range(1, 12)}
@@ -1096,7 +1096,7 @@ class PKL:
         for filename in os.listdir(directory_path):
             if filename.endswith('.json'):
                 file_path = os.path.join(directory_path, filename)
-                data = self.internal_load_json_data(file_path)
+                data = self._load_json_data(file_path)
                 data = data['gameData']
                 teams = data['teams']['team']
                 for team in teams:
@@ -1114,7 +1114,7 @@ class PKL:
 
         return player_data, strong_zones, weak_zones
 
-    def internal_plot_player_zones_grid(self, player_id, season, zone_type='strong', fig=None, ax=None):
+    def _plot_player_zones_grid(self, player_id, season, zone_type='strong', fig=None, ax=None):
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
             4: "Season_PKL_Season_4_2016",
@@ -1127,7 +1127,7 @@ class PKL:
         directory_path = importlib_resources.files('kabaddiPy').joinpath(
             f"./MatchData_pbp/{season_directories[season]}")
 
-        player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
+        player_data, strong_zones, weak_zones = self._aggregate_player_data(directory_path, player_id)
 
         if not player_data:
             print(f"Player with ID {player_id} not recorded for any match data.")
@@ -1170,11 +1170,11 @@ class PKL:
         # Plot player position
         player_x, player_y = court_width / 2, court_length / 2 + 0.8
         jersey_circle = Circle((player_x, player_y), 0.4, fill=True, facecolor='#FFD700', edgecolor=line_color,
-                               linewidth=2,
-                               zorder=10)
+                               linewidth = 2,
+                               zorder =1 0)
         ax.add_patch(jersey_circle)
         ax.text(player_x, player_y, str(player_data['jersey']), ha='center', va='center', color=line_color, fontsize=14,
-                fontweight='bold', zorder=11)
+                fontweight = 'bold', zorder=11)
 
         # Plot heat map of selected zone type
         zones = strong_zones if zone_type == 'strong' else weak_zones
@@ -1237,7 +1237,7 @@ class PKL:
         directory_path = importlib_resources.files('kabaddiPy').joinpath(
             f"./MatchData_pbp/{season_directories[season]}")
 
-        player_data, strong_zones, weak_zones = self.internal_aggregate_player_data(directory_path, player_id)
+        player_data, strong_zones, weak_zones = self._aggregate_player_data(directory_path, player_id)
 
         if not player_data:
             print(f"Player with ID {player_id} not found in any match data.")
@@ -1362,7 +1362,7 @@ class PKL:
         for filename in os.listdir(directory_path):
             if filename.endswith('.json'):
                 file_path = os.path.join(directory_path, filename)
-                data = self.internal_load_json_data(file_path)
+                data = self._load_json_data(file_path)
                 data = data['gameData']
                 teams = data['teams']['team']
                 for team in teams:
@@ -1513,7 +1513,7 @@ class PKL:
 
         # print(file_path)
 
-        data = self.internal_load_json_data(file_path)
+        data = self._load_json_data(file_path)
 
         if data['gameData']:
             data = data['gameData']
@@ -1759,7 +1759,7 @@ class PKL:
         for player_id in player_ids:
             try:
                 temp_fig, temp_ax = plt.subplots()
-                result = self.internal_plot_player_zones_grid(player_id, season, zone_type, fig=temp_fig, ax=temp_ax)
+                result = self._plot_player_zones_grid(player_id, season, zone_type, fig=temp_fig, ax=temp_ax)
                 if result is not None:
                     valid_plots.append(player_id)
                 else:
@@ -1787,7 +1787,7 @@ class PKL:
 
         for i, player_id in enumerate(valid_plots):
             ax = fig.add_subplot(gs[i // cols, i % cols])
-            f, ax, p_data = self.internal_plot_player_zones_grid(player_id, season, zone_type, fig=fig, ax=ax)
+            f, ax, p_data = self._plot_player_zones_grid(player_id, season, zone_type, fig=fig, ax=ax)
             if ax is not None:
                 ax.set_title(f"{p_data['name']} (ID: {p_data['id']})", fontsize=12)
 
@@ -1900,14 +1900,14 @@ if __name__ == "__main__":
 
     # plot_player_zones(player_id,season=5,zone_type='strong')
     # # plot_player_zones(directory_path,player_id,zone_type='weak')
-    # # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
+    # # player_data, strong_zones, weak_zones = _aggregate_player_data(directory_path, player_id)
     # # print(strong_zones)
     # plot_team_zones(5,season=5, zone_type='strong')
     # plot_team_zones(5,season=5, zone_type='weak')
 
     # api.plot_player_zones(player_id=143, season=5, zone_type='strong')
     # api.plot_player_zones(player_id=143, season=5, zone_type='weak')
-    # # player_data, strong_zones, weak_zones = internal_aggregate_player_data(directory_path, player_id)
+    # # player_data, strong_zones, weak_zones = _aggregate_player_data(directory_path, player_id)
     # # print(strong_zones)
 
     # api.plot_team_zones(team_id=4, season=5, zone_type='strong')
