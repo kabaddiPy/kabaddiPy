@@ -111,6 +111,6 @@ Provide:
    
 We recommend using GitHub’s Pull Request Template if available.
 
-License
+#### License
 By contributing to this project, you agree that your contributions will be licensed under the `GPL-2.0` License.
 
