@@ -1114,13 +1114,7 @@ class PKL:
 
         return player_data, strong_zones, weak_zones
 
-    def _plot_player_zones_grid(self, player_id, season, zone_type='strong', court_color = '#B0D0E0', lobby_color = '#FFB3B3', line_color = '#333333', fig=None, ax=None):
-        """
-        Default color scheme:
-            - Darker blue for court
-            - Darker red for lobby
-            - Dark gray for lines
-        """
+    def _plot_player_zones_grid(self, player_id, season, zone_type='strong', court_color, lobby_color, line_color, fig=None, ax=None):
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
             4: "Season_PKL_Season_4_2016",
@@ -1753,14 +1747,20 @@ class PKL:
 
         plt.show()
 
-    def plot_player_zones_grid(self, player_ids, season, zone_type='strong', max_cols=4):
+    def plot_player_zones_grid(self, player_id, season, zone_type='strong', court_color = '#B0D0E0', lobby_color = '#FFB3B3', line_color = '#333333', fig=None, ax=None):
+        """
+        Default color scheme:
+            - Darker blue for court
+            - Darker red for lobby
+            - Dark gray for lines
+        """
         n_plots = len(player_ids)
 
         valid_plots = []
         for player_id in player_ids:
             try:
                 temp_fig, temp_ax = plt.subplots()
-                result = self._plot_player_zones_grid(player_id, season, zone_type, fig=temp_fig, ax=temp_ax)
+                result = self._plot_player_zones_grid(player_id, season, zone_type, court_color=court_color, lobby_color=lobby_color, line_color=line_color, fig=temp_fig, ax=temp_ax)
                 if result is not None:
                     valid_plots.append(player_id)
                 else:
@@ -1788,7 +1788,7 @@ class PKL:
 
         for i, player_id in enumerate(valid_plots):
             ax = fig.add_subplot(gs[i // cols, i % cols])
-            f, ax, p_data = self._plot_player_zones_grid(player_id, season, zone_type, fig=fig, ax=ax)
+            f, ax, p_data = self._plot_player_zones_grid(player_id, season, zone_type, court_color=court_color, lobby_color=lobby_color, line_color=line_color, fig=fig, ax=ax)
             if ax is not None:
                 ax.set_title(f"{p_data['name']} (ID: {p_data['id']})", fontsize=12)
 
