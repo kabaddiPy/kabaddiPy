@@ -1219,7 +1219,13 @@ class PKL:
         # plt.show()
         return fig, ax, player_data
 
-    def plot_player_zones(self, player_id, season, zone_type='strong'):
+    def plot_player_zones(self, player_id, season, zone_type='strong', court_color = '#B0D0E0', lobby_color = '#FFB3B3', line_color = '#333333'):
+        """
+        Default color scheme:
+            - Darker blue for court
+            - Darker red for lobby
+            - Dark gray for lines
+        """ 
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
             4: "Season_PKL_Season_4_2016",
@@ -1374,7 +1380,13 @@ class PKL:
 
         return team_data, strong_zones, weak_zones
 
-    def plot_team_zones(self, team_id, season, zone_type='strong'):
+    def plot_team_zones(self, team_id, season, zone_type='strong', court_color = '#B0D0E0', lobby_color = '#FFB3B3'):
+        """
+        Default color scheme:
+            - Darker blue for court
+            - Darker red for lobby
+            - Dark gray for lines
+        """
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
             4: "Season_PKL_Season_4_2016", 5: "Season_PKL_Season_5_2017", 6: "Season_PKL_Season_6_2018",
@@ -1395,11 +1407,6 @@ class PKL:
 
         fig, ax = plt.subplots(figsize=(12, 8))
         court_width, court_length = 13, 10
-
-        # Updated color schemes for better contrast
-        court_color = '#B0D0E0'  # Darker blue for court
-        lobby_color = '#FFB3B3'  # Darker red for lobby
-        line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
         ax.add_patch(
