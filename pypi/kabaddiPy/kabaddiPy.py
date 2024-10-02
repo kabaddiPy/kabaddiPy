@@ -1114,7 +1114,13 @@ class PKL:
 
         return player_data, strong_zones, weak_zones
 
-    def _plot_player_zones_grid(self, player_id, season, zone_type='strong', fig=None, ax=None):
+    def _plot_player_zones_grid(self, player_id, season, zone_type='strong', court_color = '#B0D0E0', lobby_color = '#FFB3B3', line_color = '#333333', fig=None, ax=None):
+        """
+        Default color scheme:
+            - Darker blue for court
+            - Darker red for lobby
+            - Dark gray for lines
+        """
         season_directories = {
             1: "Season_PKL_Season_1_2014", 2: "Season_PKL_Season_2_2015", 3: "Season_PKL_Season_3_2016",
             4: "Season_PKL_Season_4_2016",
@@ -1137,11 +1143,6 @@ class PKL:
         if ax is None:
             fig, ax = plt.subplots(figsize=(6, 4))
         court_width, court_length = 13, 10
-
-        # Custom color schemes
-        court_color = '#B0D0E0'  # Darker blue for court
-        lobby_color = '#FFB3B3'  # Darker red for lobby
-        line_color = '#333333'  # Dark gray for lines
 
         # Draw court (main play area)
         ax.add_patch(
