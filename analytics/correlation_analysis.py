@@ -8,7 +8,7 @@ def prepare_data(season: int) -> pd.DataFrame:
     Load and merge player and match data for a given season.
     """
     # Load player stats
-    player_stats = pd.read_csv('all_seasons_player_stats_rounded.csv')
+    player_stats = pd.read_csv('Player-Wise-Data/all_seasons_player_stats_rounded.csv')
     player_stats = player_stats[player_stats['season'] == season]
 
     # Load match stats
