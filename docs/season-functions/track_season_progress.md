@@ -1,11 +1,11 @@
-```docs/visualization-functions/track_season_progress.md
 ---
 layout: default
 title: track_season_progress
 parent: Visualization Functions
-nav_order: 5
+nav_order: 1
 ---
-## `track_season_progress(season, team_id)`
+## `track_season_progress
+`
 
 Track a team's journey across the season, highlighting key wins, losses, and pivotal moments that impacted their standings.
 
