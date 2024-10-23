@@ -2,7 +2,7 @@ import warnings
 from typing import List, Tuple, Dict, Any
 
 import importlib.resources
-import importlib_resources
+import importlib.resources as importlib_resources
 
 import pandas as pd
 
@@ -1171,7 +1171,7 @@ class PKL:
         player_x, player_y = court_width / 2, court_length / 2 + 0.8
         jersey_circle = Circle((player_x, player_y), 0.4, fill=True, facecolor='#FFD700', edgecolor=line_color,
                                linewidth = 2,
-                               zorder =1 0)
+                               zorder =10)
         ax.add_patch(jersey_circle)
         ax.text(player_x, player_y, str(player_data['jersey']), ha='center', va='center', color=line_color, fontsize=14,
                 fontweight = 'bold', zorder=11)
@@ -1797,404 +1797,507 @@ class PKL:
         # plt.savefig(f"player_zones_grid_season_{season}.png", bbox_inches='tight', pad_inches=0, dpi=400)
 
         plt.show()
+    
+    def track_season_progress(self, season, team_id):
+        """
+        Track a team's journey across the season, highlighting key wins, losses, and pivotal moments that impacted their standings.
+        This function uses `get_season_matches` and `get_standings` to gather data and provides visualizations to show performance trends.
 
+        Parameters:
+        -----------
+        season : int
+            The season number for which to track the team's progress.
+        team_id : int
+            The ID of the team to track.
+
+        Returns:
+        --------
+        dict
+            A dictionary containing:
+            - matches_df: A DataFrame with all matches played by the team.
+            - standings_df: A DataFrame with the standings of the team throughout the season.
+            - visualizations: A list of visualizations showing the team's performance trends.
+        """
+        all_matches_df = self.get_season_matches(season)
+        matches_df = all_matches_df[(all_matches_df['team_id_1'] == str(team_id)) | (all_matches_df['team_id_2'] == str(team_id))]
+        if matches_df.empty:
+            print(f"No matches found for team ID {team_id} in season {season}.")
+            return {
+                'matches_df': matches_df,
+                'standings_df': pd.DataFrame(),
+                'visualizations': []
+            }
+        all_standings_df = self.get_standings(season)
+        standings_df = all_standings_df[(all_standings_df['Team_Id']==int(team_id))]
+        # Check if standings_df is empty
+        if standings_df.empty:
+            print(f"No standings found for team ID {team_id} in season {season}.")
+            return {
+                'matches_df': matches_df,
+                'standings_df': standings_df,
+                'visualizations': []
+            }
+
+        visualizations = self._create_visualizations(matches_df, standings_df, team_id)
+
+        return {
+            'matches_df': matches_df,
+            'standings_df': standings_df,
+            'visualizations': visualizations
+        }
+    def _create_visualizations(self, matches_df, standings_df, team_id):
+        """
+        Create visualizations to show performance trends.
+
+        Parameters:
+        -----------
+        matches_df : DataFrame
+            DataFrame containing all matches played by the team.
+        standings_df : DataFrame
+            DataFrame containing the standings of the team throughout the season.
+        team_id : Int
+            Id of the team 
+        Returns:
+        --------
+        list
+            A list of matplotlib figures showing the team's performance trends.
+        """
+        visualizations = []
+
+        # Win/Loss Trend
+        fig, ax = plt.subplots()
+        matches_df['Result'].value_counts().plot(kind='bar', ax=ax)
+        ax.set_title('Win/Loss Trend')
+        ax.set_xlabel('Result')
+        ax.set_ylabel('Count')
+        visualizations.append(fig)
+
+        # Points Accumulation
+        fig, ax = plt.subplots()
+        matches_df['Points'] = pd.NA
+
+        # Set 'Points' where the team is team_id_1
+        matches_df.loc[matches_df['team_id_1'] == str(team_id), 'Points'] = matches_df['team_score_1'].astype(int)
+
+        # Set 'Points' where the team is team_id_2
+        matches_df.loc[matches_df['team_id_2'] == str(team_id), 'Points'] = matches_df['team_score_2'].astype(int)
+        matches_df['Points'] = pd.to_numeric(matches_df['Points'], errors='coerce')
+        matches_df['Points'].cumsum().plot(ax=ax)
+        ax.set_title('Points Accumulation')
+        ax.set_xlabel('Match')
+        ax.set_ylabel('Cumulative Points')
+        visualizations.append(fig)
+
+        # League Position
+        fig, ax = plt.subplots()
+        standings_df['Matches_played'] = pd.to_numeric(standings_df['Matches_played'], errors='coerce')
+        standings_df['League_position'] = pd.to_numeric(standings_df['League_position'], errors='coerce')
+        ax.scatter(standings_df['Matches_played'], standings_df['League_position'], s=100)
+        ax.set_title('League Position')
+        ax.set_xlabel('Matches Played')
+        ax.set_ylabel('League Position')
+        ax.invert_yaxis()  # Invert y-axis to show 1 at the top
+        visualizations.append(fig)
+
+        return visualizations
+    
 
 if __name__ == "__main__":
 
-    
-    # pkl = PKL()
+        
+    pkl = PKL()
 
-    # pkl.plot_point_progression(season=10, match_id=3163)
+    pkl.plot_point_progression(season=10, match_id=3163)
 
-    # print(pkl.get_season_matches())
+    print(pkl.get_season_matches())
 
-    # print("1. Testing get_pkl_standings".center(100, "-"))
-    # qualified_df, all_standings_df = pkl.get_standings(season=9, qualified=True)
-    # print("Qualified teams:")
-    # print(qualified_df)
-    # print("\nAll standings:")
+    print("1. Testing get_pkl_standings".center(100, "-"))
+    qualified_df, all_standings_df = pkl.get_standings(season=9, qualified=True)
+    print("Qualified teams:")
+    print(qualified_df)
+    print("\nAll standings:")
+    print(all_standings_df)
+
+    print("\n2. Testing get_season_matches".center(100, "-"))
+    season_matches = pkl.get_season_matches(season=6)
+    print(season_matches.head())
+
+    print("\n3. Testing get_team_info".center(100, "-"))
+    df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
+    print("Team Rank:")
+    print(df_rank)
+    print("\nTeam Value:")
+    print(df_value)
+    print("\nTeam Per Match:")
+    print(df_per_match)
+    print("\nTeam Raider Skills:")
+    print(filtered_team_raider_skills)
+    print("\nTeam Defender Skills:")
+    print(filtered_team_defender_skills)
+
+    print("\n4. Testing get_team_ids".center(100, "-"))
+    team_ids = api.get_team_ids(season=5)
+    print("Team IDs:")
+    print(team_ids)
+
+    print("\n5. Testing get_team_matches".center(100, "-"))
+    team_matches = api.get_team_matches(season=9, team_id=3)
+    print(team_matches.head())
+
+    print("\n6. Testing build_team_roster".center(100, "-"))
+    team_roster = api.build_team_roster(team_id=3, season=1)
+    print(team_roster)
+
+    print("\n7. Testing get_player_info".center(100, "-"))
+    player_stats_df_rank, player_stats_df_value, player_stats_df_per_match, rvd_extracted_df = api.get_player_info(player_id=660, season=9)
+    print("Player Rank:")
+    print(player_stats_df_rank)
+    print("\nPlayer Value:")
+    print(player_stats_df_value)
+    print("\nPlayer Per Match:")
+    print(player_stats_df_per_match)
+    print("\nPlayer RVD:")
+    print(rvd_extracted_df)
+
+    print("\n8. Testing get_matchwise_player_info".center(100, "-"))
+    detailed_player_info = api.get_matchwise_player_info(player_id=197, season=9)
+    print(detailed_player_info.head())
+
+    print("\n9. Testing load_match_details".center(100, "-"))
+    match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=9, match_id='2895')
+    print("Match Detail:")
+    print(match_detail_df)
+    print("\nEvents (first 5 rows):")
+    print(events_df.head() if events_df is not None else "No events data found")
+    print("\nZones:")
+    print(zones_df)
+    print("\nTeam 1 (first 5 rows):")
+    print(team1_df.head() if team1_df is not None else "No team 1 data found")
+    print("\nTeam 2 (first 5 rows):")
+    print(team2_df.head() if team2_df is not None else "No team 2 data found")
+    print("\nBreakdown Data:")
+    print(breakdown_df.T)
+
+    print("\n10. Testing load_pbp".center(100, "-"))
+    pbp_df = api.load_pbp(season=9, match_id='2895')
+    print("Play-by-Play Data (first 5 rows):")
+    print(pbp_df.head() if pbp_df is not None else "No play-by-play data found")
+
+    print("\n11. Testing plot_player_zones".center(100, "-"))
+    api.plot_player_zones(player_id=143, season=5, zone_type='strong')
+
+    print("\n12. Testing plot_team_zones".center(100, "-"))
+    api.plot_team_zones(team_id=4, season=5, zone_type='strong')
+
+    print("\n13. Testing plot_point_progression".center(100, "-"))
+    api.plot_point_progression(season=10, match_id=3163)
+
+    print("\n14. Testing plot_player_zones_grid".center(100, "-"))
+    # api.plot_player_zones_grid([143, 12, 211, 322, 160], season=5, zone_type='strong', max_cols=2)
+    api.plot_player_zones_grid([143, 12, 211, 160], season=5, zone_type='strong', max_cols=2)
+
+    df = api.get_player_rvd(player_id=143, season=None)
+    print(df)
+
+    player_id = 143  # Example: Deepak Hooda
+
+    plot_player_zones(player_id,season=5,zone_type='strong')
+    # plot_player_zones(directory_path,player_id,zone_type='weak')
+    # player_data, strong_zones, weak_zones = _aggregate_player_data(directory_path, player_id)
+    # print(strong_zones)
+    plot_team_zones(5,season=5, zone_type='strong')
+    plot_team_zones(5,season=5, zone_type='weak')
+
+    api.plot_player_zones(player_id=143, season=5, zone_type='strong')
+    api.plot_player_zones(player_id=143, season=5, zone_type='weak')
+    # player_data, strong_zones, weak_zones = _aggregate_player_data(directory_path, player_id)
+    # print(strong_zones)
+
+    api.plot_team_zones(team_id=4, season=5, zone_type='strong')
+    api.plot_team_zones(team_id=4, season=5, zone_type='weak')
+
+    # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
+    api.plot_point_progression(season=10, match_id=3163)
+
+    column_list = [143, 12, 211, 160]
+    api.plot_player_zones_grid(column_list, season=5, zone_type='strong', max_cols=2)
+
+    print("Testing get_matchwise_player_info".center(100, "-"))
+    player_id = 94
+    season = 6
+
+    detailed_info = api.get_matchwise_player_info(player_id, season)
+
+    print(detailed_info)
+    detailed_info.to_csv("detailed_info.csv")
+
+    if detailed_info is not None and not detailed_info.empty:
+        print(f"Detailed info for player {player_id} in season {season}:")
+        print(detailed_info)
+
+        print("\nSummary statistics:")
+        print(f"Matches played: {detailed_info['matches_played'].iloc[0]}")
+        print(f"Matches started: {detailed_info['matches_started'].iloc[0]}")
+        print(f"Average points: {detailed_info['average_points'].iloc[0]:.2f}")
+        print(f"Total substitutions: {detailed_info['total_substitutions'].iloc[0]}")
+
+        print("\nFirst few rows of detailed match data:")
+        print(detailed_info.head())
+    else:
+        print(f"No data found for player {player_id} in season {season}")
+
+    match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=10, match_id='3125')
+
+    print("Match Detail Data:")
+    print(match_detail_df.T)
+
+    print("\n\nEvents Data:")
+    print(events_df)
+
+    print("\n\nZones Data:")
+    print(zones_df)
+
+    print("\n\nTeam 1 Data:")
+    print(team1_df.T)
+
+    print("\n\nTeam 2 Data:")
+    print(team2_df.T)
+
+    print("\n\nBreakdown Data:")
+    print(breakdown_df.T)
+
+    # ACTUAL TESTING ------------------------------------------------------------------------
+
+    print("1. Testing get_pkl_standings".center(150,"-"))
+    qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    print("Qualified teams:")
+    print(qualified_df)
+    print("\nAll standings:")
+    print(all_standings_df)
+
+    print("\n2. Testing get_season_matches".center(150,"-"))
+    season_matches = api.get_season_matches(season=6)
+    print(season_matches.head())
+
+    print("\n3. Testing get_team_info".center(150,"-"))
+    df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
+    print("Team Rank:")
+    print(df_rank)
+    print("\nTeam Value:")
+    print(df_value)
+    print("\nTeam Per Match:")
+    print(df_per_match)
+    print("\nTeam Raider Skills:")
+    print(filtered_team_raider_skills)
+    print("\nTeam Defender Skills:")
+    print(filtered_team_defender_skills)
+
+    team_ids = api.get_team_ids(season=5)
+    print("Team-IDs")
+    print(team_ids)
+
+    print("\n4. Testing get_team_matches".center(150,"-"))
+    team_matches = pkl.get_team_matches(season=10, team_id=3)
+    print(team_matches.head())
+
+    print("\n5. Testing build_team_roster".center(150,"-"))
+    team_roster = api.build_team_roster(season=9, team_id=3)
+    print(team_roster)
+
+    print("\n6. Testing get_player_info".center(150,"-"))
+    player_stats_df_rank, player_stats_df_value, player_stats_df_per_match, rvd_extracted_df = api.get_player_info(player_id=660, season=9)
+    print("Player Rank:")
+    print(player_stats_df_rank)
+    print("\nPlayer Value:")
+    print(player_stats_df_value)
+    print("\nPlayer Per Match:")
+    print(player_stats_df_per_match)
+    print("\nPlayer RVD:")
+    print(rvd_extracted_df)
+
+    print("\n7. Testing load_match_details".center(150,"-"))
+    match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = pkl.load_match_details(season=9,
+                                                                                                    match_id='2895')
+    print("Match Detail:")
+    print(match_detail_df.iloc[:, : 50])
+    print("\nEvents (first 5 rows):")
+    if not events_df:
+        print("No events data found for this match")
+    else:
+        print(events_df.head())
+    print("\nZones:")
+    print(zones_df)
+    print("\nTeam 1 (first 5 rows):")
+    if not team1_df:
+        print("No team 1 data found for this match")
+    else:
+        print(team1_df.head())
+    print("\nTeam 2 (first 5 rows):")
+    if not team2_df:
+        print("No team 2 data found for this match")
+    else:
+        print(team2_df.head())
+    print("\nBreakdown Data:")
+    print(breakdown_df)
+
+    print("\n8. Testing load_pbp".center(150,"-"))
+    pbp_df = api.load_pbp(season=9, match_id='2895')
+    print("Play-by-Play Data (first 5 rows):")
+    if not pbp_df:
+        print("No play-by-play data found for this match")
+    else:
+        print(pbp_df.head())
+
+    # END OF ACTUAL TESTING ------------------------------------------------------------------------
+
+    # MY OLD TESTING ------------------------------------------------------------------------
+    print("=="*100)
+    print("=="*100)
+    print("MY OLD TESTING".center(150,"-"))
+    print("=="*100)
+    print("=="*100)
+
+    # matches = api.get_season_matches(season=10)
+    # result = matches[(matches['League_Stage'] == 'Semi Final')]
+    # print(result)
+
+    # df = api.load_pbp(season=10, match_id=3164)
+    # # df.to_csv("pbp.csv")
+    # print(df.tail())
+
+    # print("get standings")
+    # # x = api.get_pkl_standings(season=10)
+    # # print(x)
+
+    qualified_df , all_standings_df = api.get_pkl_standings(season=9, qualified=True)
+    print("qualified_df")
+    print(qualified_df)
+    print()
+
+    # print("all_standings_df")
     # print(all_standings_df)
+    # print(len(all_standings_df))
 
-    # print("\n2. Testing get_season_matches".center(100, "-"))
-    # season_matches = pkl.get_season_matches(season=6)
-    # print(season_matches.head())
+    print("season_matches")
+    matches = api.get_season_matches(season=6)
+    print(matches)
+    # print(len(x))
 
-    # print("\n3. Testing get_team_info".center(100, "-"))
-    # df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
-    # print("Team Rank:")
-    # print(df_rank)
-    # print("\nTeam Value:")
-    # print(df_value)
-    # print("\nTeam Per Match:")
-    # print(df_per_match)
-    # print("\nTeam Raider Skills:")
-    # print(filtered_team_raider_skills)
-    # print("\nTeam Defender Skills:")
-    # print(filtered_team_defender_skills)
-
-    # print("\n4. Testing get_team_ids".center(100, "-"))
-    # team_ids = api.get_team_ids(season=5)
-    # print("Team IDs:")
-    # print(team_ids)
-
-    # print("\n5. Testing get_team_matches".center(100, "-"))
-    # team_matches = api.get_team_matches(season=9, team_id=3)
-    # print(team_matches.head())
-
-    # print("\n6. Testing build_team_roster".center(100, "-"))
-    # team_roster = api.build_team_roster(team_id=3, season=1)
-    # print(team_roster)
-
-    # print("\n7. Testing get_player_info".center(100, "-"))
-    # player_stats_df_rank, player_stats_df_value, player_stats_df_per_match, rvd_extracted_df = api.get_player_info(player_id=660, season=9)
-    # print("Player Rank:")
-    # print(player_stats_df_rank)
-    # print("\nPlayer Value:")
-    # print(player_stats_df_value)
-    # print("\nPlayer Per Match:")
-    # print(player_stats_df_per_match)
-    # print("\nPlayer RVD:")
-    # print(rvd_extracted_df)
-
-    # print("\n8. Testing get_matchwise_player_info".center(100, "-"))
-    # detailed_player_info = api.get_matchwise_player_info(player_id=197, season=9)
-    # print(detailed_player_info.head())
-
-    # print("\n9. Testing load_match_details".center(100, "-"))
-    # match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=9, match_id='2895')
-    # print("Match Detail:")
-    # print(match_detail_df)
-    # print("\nEvents (first 5 rows):")
-    # print(events_df.head() if events_df is not None else "No events data found")
-    # print("\nZones:")
-    # print(zones_df)
-    # print("\nTeam 1 (first 5 rows):")
-    # print(team1_df.head() if team1_df is not None else "No team 1 data found")
-    # print("\nTeam 2 (first 5 rows):")
-    # print(team2_df.head() if team2_df is not None else "No team 2 data found")
-    # print("\nBreakdown Data:")
-    # print(breakdown_df.T)
-
-    # print("\n10. Testing load_pbp".center(100, "-"))
-    # pbp_df = api.load_pbp(season=9, match_id='2895')
-    # print("Play-by-Play Data (first 5 rows):")
-    # print(pbp_df.head() if pbp_df is not None else "No play-by-play data found")
-
-    # print("\n11. Testing plot_player_zones".center(100, "-"))
-    # api.plot_player_zones(player_id=143, season=5, zone_type='strong')
-
-    # print("\n12. Testing plot_team_zones".center(100, "-"))
-    # api.plot_team_zones(team_id=4, season=5, zone_type='strong')
-
-    # print("\n13. Testing plot_point_progression".center(100, "-"))
-    # api.plot_point_progression(season=10, match_id=3163)
-
-    # print("\n14. Testing plot_player_zones_grid".center(100, "-"))
-    # # api.plot_player_zones_grid([143, 12, 211, 322, 160], season=5, zone_type='strong', max_cols=2)
-    # api.plot_player_zones_grid([143, 12, 211, 160], season=5, zone_type='strong', max_cols=2)
-
-    # df = api.get_player_rvd(player_id=143, season=None)
-    # print(df)
-
-    # player_id = 143  # Example: Deepak Hooda
-
-    # plot_player_zones(player_id,season=5,zone_type='strong')
-    # # plot_player_zones(directory_path,player_id,zone_type='weak')
-    # # player_data, strong_zones, weak_zones = _aggregate_player_data(directory_path, player_id)
-    # # print(strong_zones)
-    # plot_team_zones(5,season=5, zone_type='strong')
-    # plot_team_zones(5,season=5, zone_type='weak')
-
-    # api.plot_player_zones(player_id=143, season=5, zone_type='strong')
-    # api.plot_player_zones(player_id=143, season=5, zone_type='weak')
-    # # player_data, strong_zones, weak_zones = _aggregate_player_data(directory_path, player_id)
-    # # print(strong_zones)
-
-    # api.plot_team_zones(team_id=4, season=5, zone_type='strong')
-    # api.plot_team_zones(team_id=4, season=5, zone_type='weak')
-
-    # # plot_point_progression(r"./MatchData_pbp/Season_PKL_Season_5_2017/32_Match_32_ID_317.json", season=5, match_id=317)
-    # api.plot_point_progression(season=10, match_id=3163)
-
-    # column_list = [143, 12, 211, 160]
-    # api.plot_player_zones_grid(column_list, season=5, zone_type='strong', max_cols=2)
-
-    # print("Testing get_matchwise_player_info".center(100, "-"))
-    # player_id = 94
-    # season = 6
-
-    # detailed_info = api.get_matchwise_player_info(player_id, season)
-
-    # print(detailed_info)
-    # detailed_info.to_csv("detailed_info.csv")
-
-    # if detailed_info is not None and not detailed_info.empty:
-    #     print(f"Detailed info for player {player_id} in season {season}:")
-    #     print(detailed_info)
-
-    #     print("\nSummary statistics:")
-    #     print(f"Matches played: {detailed_info['matches_played'].iloc[0]}")
-    #     print(f"Matches started: {detailed_info['matches_started'].iloc[0]}")
-    #     print(f"Average points: {detailed_info['average_points'].iloc[0]:.2f}")
-    #     print(f"Total substitutions: {detailed_info['total_substitutions'].iloc[0]}")
-
-    #     print("\nFirst few rows of detailed match data:")
-    #     print(detailed_info.head())
-    # else:
-    #     print(f"No data found for player {player_id} in season {season}")
-
-    # match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = api.load_match_details(season=10, match_id='3125')
-
-    # print("Match Detail Data:")
-    # print(match_detail_df.T)
-
-    # print("\n\nEvents Data:")
-    # print(events_df)
-
-    # print("\n\nZones Data:")
-    # print(zones_df)
-
-    # print("\n\nTeam 1 Data:")
-    # print(team1_df.T)
-
-    # print("\n\nTeam 2 Data:")
-    # print(team2_df.T)
-
-    # print("\n\nBreakdown Data:")
-    # print(breakdown_df.T)
-
-    # # ACTUAL TESTING ------------------------------------------------------------------------
-
-    # print("1. Testing get_pkl_standings".center(150,"-"))
-    # qualified_df, all_standings_df = api.get_pkl_standings(season=9, qualified=True)
-    # print("Qualified teams:")
-    # print(qualified_df)
-    # print("\nAll standings:")
-    # print(all_standings_df)
-
-    # print("\n2. Testing get_season_matches".center(150,"-"))
-    # season_matches = api.get_season_matches(season=6)
-    # print(season_matches.head())
-
-    # print("\n3. Testing get_team_info".center(150,"-"))
-    # df_rank, df_value, df_per_match, filtered_team_raider_skills, filtered_team_defender_skills = api.get_team_info(season=6, team_id=29)
-    # print("Team Rank:")
-    # print(df_rank)
-    # print("\nTeam Value:")
-    # print(df_value)
-    # print("\nTeam Per Match:")
-    # print(df_per_match)
-    # print("\nTeam Raider Skills:")
-    # print(filtered_team_raider_skills)
-    # print("\nTeam Defender Skills:")
-    # print(filtered_team_defender_skills)
-
-    # team_ids = api.get_team_ids(season=5)
-    # print("Team-IDs")
-    # print(team_ids)
-
-    # print("\n4. Testing get_team_matches".center(150,"-"))
-    # team_matches = pkl.get_team_matches(season=10, team_id=3)
-    # print(team_matches.head())
-
-    # print("\n5. Testing build_team_roster".center(150,"-"))
-    # team_roster = api.build_team_roster(season=9, team_id=3)
-    # print(team_roster)
-
-    # print("\n6. Testing get_player_info".center(150,"-"))
-    # player_stats_df_rank, player_stats_df_value, player_stats_df_per_match, rvd_extracted_df = api.get_player_info(player_id=660, season=9)
-    # print("Player Rank:")
-    # print(player_stats_df_rank)
-    # print("\nPlayer Value:")
-    # print(player_stats_df_value)
-    # print("\nPlayer Per Match:")
-    # print(player_stats_df_per_match)
-    # print("\nPlayer RVD:")
-    # print(rvd_extracted_df)
-
-    # print("\n7. Testing load_match_details".center(150,"-"))
-    # match_detail_df, events_df, zones_df, team1_df, team2_df, breakdown_df = pkl.load_match_details(season=9,
-    #                                                                                                 match_id='2895')
-    # print("Match Detail:")
-    # print(match_detail_df.iloc[:, : 50])
-    # print("\nEvents (first 5 rows):")
-    # if not events_df:
-    #     print("No events data found for this match")
-    # else:
-    #     print(events_df.head())
-    # print("\nZones:")
-    # print(zones_df)
-    # print("\nTeam 1 (first 5 rows):")
-    # if not team1_df:
-    #     print("No team 1 data found for this match")
-    # else:
-    #     print(team1_df.head())
-    # print("\nTeam 2 (first 5 rows):")
-    # if not team2_df:
-    #     print("No team 2 data found for this match")
-    # else:
-    #     print(team2_df.head())
-    # print("\nBreakdown Data:")
-    # print(breakdown_df)
-
-    # print("\n8. Testing load_pbp".center(150,"-"))
-    # pbp_df = api.load_pbp(season=9, match_id='2895')
-    # print("Play-by-Play Data (first 5 rows):")
-    # if not pbp_df:
-    #     print("No play-by-play data found for this match")
-    # else:
-    #     print(pbp_df.head())
-
-    # # END OF ACTUAL TESTING ------------------------------------------------------------------------
-
-    # # MY OLD TESTING ------------------------------------------------------------------------
-    # print("=="*100)
-    # print("=="*100)
-    # print("MY OLD TESTING".center(150,"-"))
-    # print("=="*100)
-    # print("=="*100)
-
-    # # matches = api.get_season_matches(season=10)
-    # # result = matches[(matches['League_Stage'] == 'Semi Final')]
-    # # print(result)
-
-    # # df = api.load_pbp(season=10, match_id=3164)
-    # # # df.to_csv("pbp.csv")
-    # # print(df.tail())
-
-    # # print("get standings")
-    # # # x = api.get_pkl_standings(season=10)
-    # # # print(x)
-
-    # qualified_df , all_standings_df = api.get_pkl_standings(season=9, qualified=True)
-    # print("qualified_df")
-    # print(qualified_df)
-    # print()
-
-    # # print("all_standings_df")
-    # # print(all_standings_df)
-    # # print(len(all_standings_df))
-
-    # print("season_matches")
-    # matches = api.get_season_matches(season=6)
-    # print(matches)
-    # # print(len(x))
-
-    # # print("-"*100)
-    # print("team_info")
-
-    # df_rank_, df_value_, df_per_match_, filtered_team_raider_skills_, filtered_team_defender_skills_ = api.get_team_info(season=6,team_id=29)
-
-    # print("Rank DFs")
-    # print(df_rank_)
     # print("-"*100)
-    # print("Value DFs")
-    # print(df_value_)
-    # print("-"*100)
-    # print("Per Match DFs")
-    # print(df_per_match_)
-    # print("-"*100)
-    # print("Raider Skills")
-    # print(filtered_team_raider_skills_)
-    # print("-"*100)
-    # print("Defender Skills")
-    # print(filtered_team_defender_skills_)
+    print("team_info")
 
-    # #TODO: Fix the order of the columns in the output
-    # # team-successful-tackle-percent_value
-    # # team-super-tackles_value
-    # # team-tackle-points_value
-    # # team-successful-tackles-per-match_value
-    # # team-average-tackle-points_value
-    # # team-successful-tackles_value
-    # # Total_touch_points_value
-    # # Total_bonus_points_value
-    # # team-raid-points_value
-    # # team-average-raid-points_value
-    # # team-successful-raids_value
-    # # team-super-raid_value
-    # # team-raid_value
-    # # team-successful-raid-percent_value
-    # # team-dod-raid-points_value
-    # # team-total-points_value
-    # # team-all-outs-conceded_value
-    # # team-all-outs-inflicted_value
-    # # team-avg-points-scored_value
-    # # team-total-points-conceded_value
+    df_rank_, df_value_, df_per_match_, filtered_team_raider_skills_, filtered_team_defender_skills_ = api.get_team_info(season=6,team_id=29)
 
-    # print("get_team_matches\n\n")
+    print("Rank DFs")
+    print(df_rank_)
+    print("-"*100)
+    print("Value DFs")
+    print(df_value_)
+    print("-"*100)
+    print("Per Match DFs")
+    print(df_per_match_)
+    print("-"*100)
+    print("Raider Skills")
+    print(filtered_team_raider_skills_)
+    print("-"*100)
+    print("Defender Skills")
+    print(filtered_team_defender_skills_)
 
-    # df = api.get_team_matches(season=9, team_id=3)
-    # print(df)
+# #TODO: Fix the order of the columns in the output
+# # team-successful-tackle-percent_value
+# # team-super-tackles_value
+# # team-tackle-points_value
+# # team-successful-tackles-per-match_value
+# # team-average-tackle-points_value
+# # team-successful-tackles_value
+# # Total_touch_points_value
+# # Total_bonus_points_value
+# # team-raid-points_value
+# # team-average-raid-points_value
+# # team-successful-raids_value
+# # team-super-raid_value
+# # team-raid_value
+# # team-successful-raid-percent_value
+# # team-dod-raid-points_value
+# # team-total-points_value
+# # team-all-outs-conceded_value
+# # team-all-outs-inflicted_value
+# # team-avg-points-scored_value
+# # team-total-points-conceded_value
 
-    # print("build build_team_roster")
+# print("get_team_matches\n\n")
 
-    # df = api.build_team_roster(season=9, team_id='3')
-    # print("-"*100)
-    # print(df)
+# df = api.get_team_matches(season=9, team_id=3)
+# print(df)
 
-    # ## df.to_csv("team_roster.csv")
+# print("build build_team_roster")
 
-    # print("build get_player_info")
+# df = api.build_team_roster(season=9, team_id='3')
+# print("-"*100)
+# print(df)
 
-    # _player_stats_df_rank, _player_stats_df_value, _player_stats_df_per_match, _rvd_extracted_df = api.get_player_info(player_id=660, season=9)
-    # print("-"*100)
-    # print(_player_stats_df_rank)
-    # print("-"*100)
-    # print(_player_stats_df_value)
-    # print("-"*100)
-    # print(_player_stats_df_per_match)
-    # print("-"*100)
-    # print(_rvd_extracted_df)
+# ## df.to_csv("team_roster.csv")
 
-    # print("get_player_rvd")
-    # _rvd_df = pkl.get_player_rvd(player_id=142, season=None)
-    # print("-"*100)
-    # print(_rvd_df)
+# print("build get_player_info")
 
-    # print("load_match_details-------\n\n\n")
-    # _match_detail_df, _events_df, _zones_df, _team1_df, _team2_df, _breakdown_df = api.load_match_details(season='9', match_id='2895')
-    # print("-"*100)
-    # print(_match_detail_df)
-    # print("-"*100)
-    # print(_events_df)
-    # print("-"*100)
-    # print(_zones_df)
-    # print("-"*100)
-    # print(_team1_df)
-    # print("-"*100)
-    # print(_team2_df)
-    # print("-"*100)
-    # print(_breakdown_df)
+# _player_stats_df_rank, _player_stats_df_value, _player_stats_df_per_match, _rvd_extracted_df = api.get_player_info(player_id=660, season=9)
+# print("-"*100)
+# print(_player_stats_df_rank)
+# print("-"*100)
+# print(_player_stats_df_value)
+# print("-"*100)
+# print(_player_stats_df_per_match)
+# print("-"*100)
+# print(_rvd_extracted_df)
 
-    # print("load_pbp")
-    # _pbp_df = api.load_pbp(season=9, match_id='2895')
-    # print("-"*100)
-    # print(_pbp_df)
+# print("get_player_rvd")
+# _rvd_df = pkl.get_player_rvd(player_id=142, season=None)
+# print("-"*100)
+# print(_rvd_df)
 
-    # print(api.get_available_seasons())
+# print("load_match_details-------\n\n\n")
+# _match_detail_df, _events_df, _zones_df, _team1_df, _team2_df, _breakdown_df = api.load_match_details(season='9', match_id='2895')
+# print("-"*100)
+# print(_match_detail_df)
+# print("-"*100)
+# print(_events_df)
+# print("-"*100)
+# print(_zones_df)
+# print("-"*100)
+# print(_team1_df)
+# print("-"*100)
+# print(_team2_df)
+# print("-"*100)
+# print(_breakdown_df)
 
-    # match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('Season_PKL_Season_4_2016',
-    #                                                                                         '194')
-    # print(events_df)
+# print("load_pbp")
+# _pbp_df = api.load_pbp(season=9, match_id='2895')
+# print("-"*100)
+# print(_pbp_df)
 
-    # x = api.build_team_roster('4',9)
-    # print(x)
-    # x = api.get_team_matches('5','4')
-    # print(x)
+# print(api.get_available_seasons())
 
-    # x = api.get_season_matches('10')
-    # print(x)
+# match_detail_df, teams_df, events_df, zones_df, team1_df, team2_df = api.get_match_data('Season_PKL_Season_4_2016',
+#                                                                                         '194')
+# print(events_df)
 
-    # x = api.get_team_info(4)
-    # print(x)
+# x = api.build_team_roster('4',9)
+# print(x)
+# x = api.get_team_matches('5','4')
+# print(x)
 
-    # player_stats, rvd,defend_df= api.get_player_info(322,9)
-    # print(player_stats)
-    # print(rvd)
-    # print(defend_df)
+# x = api.get_season_matches('10')
+# print(x)
 
-    # x = api.get_pkl_standings(season=7, qualified=False)
-    # print(x)
-    # # print("-"*100)
-    # # print(y)
+# x = api.get_team_info(4)
+# print(x)
+
+# player_stats, rvd,defend_df= api.get_player_info(322,9)
+# print(player_stats)
+# print(rvd)
+# print(defend_df)
+
+# x = api.get_pkl_standings(season=7, qualified=False)
+# print(x)
+# # print("-"*100)
+# # print(y)

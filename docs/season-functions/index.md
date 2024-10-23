@@ -20,6 +20,12 @@ Season
 
 Fetches match data for a specific PKL season or all seasons, returning detailed information about each match in a pandas DataFrame.
 
+## [`track_season_progress(season, team_id)`](/kabaddiPy/season-functions/track_season_progress.html)
+Season
+{: .label .label-yellow }
+
+Track a team's journey across the season, highlighting key wins, losses, and pivotal moments that impacted their standings.
+
 ---
 #### NOTE
 
