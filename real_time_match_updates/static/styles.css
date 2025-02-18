@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#liveScore {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#playerStats {
+    list-style: none;
+    padding: 0;
+}
+
+#playerStats li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#teamPerformanceChart {
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}

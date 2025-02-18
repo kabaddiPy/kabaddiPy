@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Kabaddi Match</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Live Kabaddi Match Updates</h1>
+    <div id="liveScore">Score: Loading...</div>
+    <ul id="playerStats"></ul>
+    <img id="teamPerformanceChart" src="{{ url_for('static', filename='team_performance_chart.png') }}" alt="Team Performance Chart">
+
+    <button onclick="subscribeToPush()">Subscribe to Notifications</button>
+
+    <script src="{{ url_for('static', filename='liveUpdate.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        // Handle socket connection
+        socket.on('connected', function(data) {
+            console.log(data.message);
+        });
+
+        // Request live data via WebSocket
+        function fetchLiveData() {
+            socket.emit('request_live_data');
+        }
+
+        socket.on('live_data', function(data) {
+            document.getElementById('liveScore').innerText = `Score: ${data.score}`;
+            const playerStats = document.getElementById('playerStats');
+            playerStats.innerHTML = '';
+            data.players.forEach(player => {
+                playerStats.innerHTML += `<li>${player.name}: ${player.points} points</li>`;
+            });
+        });
+
+        setInterval(fetchLiveData, 10000);
+
+        // Subscribe to push notifications
+        function subscribeToPush() {
+            fetch('/subscribe')
+                .then(response => response.json())
+                .then(data => console.log(data.status));
+        }
+    </script>
+</body>
+</html>
