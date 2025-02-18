@@ -21,6 +21,9 @@ import matplotlib.ticker as ticker
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 
+# Import the visualization functions
+from kabaddiPy.visualisation import plot_player_zones, plot_team_zones  # Adjust the import based on your actual function names
+
 
 class PKL:
     def __init__(self):
@@ -1798,6 +1801,17 @@ class PKL:
 
         plt.show()
 
+    def visualize_player_zones(self, player_id, season, zone_type='strong'):
+        """
+        Visualize the zones for a specific player in a given season.
+        """
+        plot_player_zones(player_id, season, zone_type)  # Call the visualization function
+
+    def visualize_team_zones(self, team_id, season, zone_type='strong'):
+        """
+        Visualize the zones for a specific team in a given season.
+        """
+        plot_team_zones(team_id, season, zone_type)  # Call the visualization function
 
 if __name__ == "__main__":
 
