@@ -1798,6 +1798,141 @@ class PKL:
 
         plt.show()
 
+class AsianKabaddi:
+    """
+    A class to handle Kabaddi match data for Asian Kabaddi Championships.
+    """
+
+    def __init__(self):
+        """
+        Initializes the class by setting the base path to the resource directory
+        for storing and retrieving Kabaddi match data for men and women.
+        """
+        self.base_path = importlib_resources.files('kabaddiPy').joinpath('asian-kabaddi')
+
+    def load_all_data_men(self):
+        """
+        Loads all available men's Kabaddi match data.
+
+        Returns:
+            pd.DataFrame: A pandas DataFrame containing all men's match data.
+        """
+        return pd.read_csv('asian-kabaddi-men.csv')
+
+    def load_all_data_women(self):
+        """
+        Loads all available women's Kabaddi match data.
+
+        Returns:
+            pd.DataFrame: A pandas DataFrame containing all women's match data.
+        """
+        return pd.read_csv('asian-kabaddi-women.csv')
+
+    def load_match_men(self, year):
+        """
+        Retrieves men's Kabaddi match data for a specific year.
+
+        Args:
+            year (int): The year for which match data is to be retrieved.
+
+        Returns:
+            pd.DataFrame or str: A pandas DataFrame containing the match data for
+            the specified year or a string message if no data is found.
+        """
+        df = pd.read_csv('asian-kabaddi-men.csv')
+        try:
+            return df[df['year'] == year]
+        except:
+            return 'No match record for the specified year.'
+
+    def load_match_women(self, year):
+        """
+        Retrieves women's Kabaddi match data for a specific year.
+
+        Args:
+            year (int): The year for which match data is to be retrieved.
+
+        Returns:
+            pd.DataFrame or str: A pandas DataFrame containing the match data for
+            the specified year or a string message if no data is found.
+        """
+        df = pd.read_csv('asian-kabaddi-women.csv')
+        try:
+            return df[df['year'] == year]
+        except:
+            return 'No match record for the specified year.'
+
+    def get_standings_men(self, year):
+        """
+        Retrieves the standings (gold, silver, bronze) for men's Kabaddi for a specific year.
+
+        Args:
+            year (int): The year for which the standings are to be retrieved.
+
+        Returns:
+            pd.DataFrame or str: A pandas DataFrame containing the standings for
+            the specified year or a string message if no data is found.
+        """
+        df = pd.read_csv('asian-kabaddi-men.csv')
+        try:
+            row = df[df['year'] == year]
+            return row[['gold', 'silver', 'bronze']]
+        except:
+            return 'No match record for the specified year.'
+
+    def get_standings_women(self, year):
+        """
+        Retrieves the standings (gold, silver, bronze) for women's Kabaddi for a specific year.
+
+        Args:
+            year (int): The year for which the standings are to be retrieved.
+
+        Returns:
+            pd.DataFrame or str: A pandas DataFrame containing the standings for
+            the specified year or a string message if no data is found.
+        """
+        df = pd.read_csv('asian-kabaddi-women.csv')
+        try:
+            row = df[df['year'] == year]
+            return row[['gold', 'silver', 'bronze']]
+        except:
+            return 'No match record for the specified year.'
+
+    def get_venue_men(self, year):
+        """
+        Retrieves the venue details (city and country) for men's Kabaddi for a specific year.
+
+        Args:
+            year (int): The year for which the venue details are to be retrieved.
+
+        Returns:
+            pd.DataFrame or str: A pandas DataFrame containing the venue city and
+            country for the specified year or a string message if no data is found.
+        """
+        df = pd.read_csv('asian-kabaddi-men.csv')
+        try:
+            row = df[df['year'] == year]
+            return row[['venue_city', 'venue_country']]
+        except:
+            return 'No match record for the specified year.'
+
+    def get_venue_women(self, year):
+        """
+        Retrieves the venue details (city and country) for women's Kabaddi for a specific year.
+
+        Args:
+            year (int): The year for which the venue details are to be retrieved.
+
+        Returns:
+            pd.DataFrame or str: A pandas DataFrame containing the venue city and
+            country for the specified year or a string message if no data is found.
+        """
+        df = pd.read_csv('asian-kabaddi-women.csv')
+        try:
+            row = df[df['year'] == year]
+            return row[['venue_city', 'venue_country']]
+        except:
+            return 'No match record for the specified year.'
 
 if __name__ == "__main__":
 
